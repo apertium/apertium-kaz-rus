@@ -118,12 +118,30 @@
     <sdef n="inf" 	c=""/> 
   </sdefs>
 
+
+<!-- some magic from tat-rus to make transfer work -->
+<pardefs>
+<pardef n="__adj_sint">
+  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e>       <p><l><s n="subst"/></l><r><s n="m"/><s n="an"/></r></p></e>
+  <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>
+</pardef>
+</pardefs>
+
+
   <section id="main" type="standard">
-    <e>
-      <p>
-        <l>жер<s n="n"/></l>
-        <r>земля<s n="n"/><s n="f"/><s n="nn"/></r>
-      </p>
-   </e>
+ 
+<!-- nouns -->
+
+    <e><p><l>жер<s n="n"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>асқазан<s n="n"/></l><r>желудок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+
+<!-- adjectives -->
+
+   <e><p><l>үлкен<s n="adj"/></l><r>большой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+
+<!-- numerals -->
+
+<e><p><l>жеті<s n="num"/></l>   <r>семь<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
   </section>
 </dictionary>
