@@ -71,6 +71,8 @@ $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 ## Prob files for tagger
 ###############################################################################
 
+### MLF 20141127 : we don't have kaz probabilities for the time being
+###
 $(PREFIX1).prob: $(AP_SRC1)/$(LANG1).prob
 	cp $< $@
 
@@ -143,8 +145,11 @@ apertium_kaz_rusdir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_kaz_rus_DATA=$(TARGETS_COMMON) \
 	$(BASENAME).$(PREFIX1).t1x \
 	$(BASENAME).$(PREFIX1).t2x \
-	$(BASENAME).$(PREFIX1).t3x \
-                    $(PREFIX1).prob
+	$(BASENAME).$(PREFIX1).t3x 
+
+# MLF 20141127 we don't have probabilities in kaz for the time being
+#                    $(PREFIX1).prob
+#
 
 # All modes are created by the same goal, listing several will just give problems with make -j2
 noinst_DATA=modes/$(PREFIX1).mode
