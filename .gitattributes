@@ -1,1 +1,4 @@
 * text=auto !eol
+/Makefile.am -text
+/autogen.sh -text
+/configure.ac -text
