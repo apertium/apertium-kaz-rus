@@ -126,6 +126,13 @@
   <e>       <p><l><s n="subst"/></l><r><s n="m"/><s n="an"/></r></p></e>
   <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>
 </pardef>
+
+<pardef n="impf__verb">
+  <e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
+  <e r="LR"><p><l><s n="neg"/><s n="pres"/></l><r><s n="pres"/></r></p></e>
+  <e>       <p><l></l>          <r></r></p></e>
+</pardef>
+
 </pardefs>
 
 
@@ -135,6 +142,9 @@
 
     <e><p><l>жер<s n="n"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>асқазан<s n="n"/></l><r>желудок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<!-- to be activated when the word is added to apertium-rus
+<e><p><l>асқазан<s n="n"/></l><r>котел<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+-->
 
 <!-- adjectives -->
 
@@ -143,5 +153,14 @@
 <!-- numerals -->
 
 <e><p><l>жеті<s n="num"/></l>   <r>семь<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+
+<!-- verbs -->
+
+<e><p><l>же<s n="v"/><s n="tv"/></l>           <r>кушать<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
+
+<!-- adverbs -->
+
+<e>       <p><l>ертең<s n="adv"/></l>                 <r>завтра<s n="adv"/></r></p></e>
+
   </section>
 </dictionary>
