@@ -119,6 +119,11 @@
   </sdefs>
 
   <section id="main" type="standard">
-    <e><p><l></l>жер<s n="n"/><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+    <e>
+      <p>
+        <l>жер<s n="n"/></l>
+        <r>земля<s n="n"/><s n="f"/><s n="nn"/></r>
+      </p>
+   </e>
   </section>
 </dictionary>
