@@ -1,8 +1,15 @@
 * text=auto !eol
+/COPYING -text
+/ChangeLog -text
 /Makefile.am -text
+/NEWS -text
+/README -text
+/apertium-kaz-rus.kaz-rus.dix -text
+/apertium-kaz-rus.kaz-rus.lrx -text
 /apertium-kaz-rus.kaz-rus.t1x -text
 /apertium-kaz-rus.kaz-rus.t2x -text
 /apertium-kaz-rus.kaz-rus.t3x -text
 /apertium-kaz-rus.kaz-rus.t4x -text
 /autogen.sh -text
 /configure.ac -text
+/modes.xml -text

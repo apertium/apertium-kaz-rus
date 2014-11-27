@@ -1,0 +1,7 @@
+<rules>
+
+ <rule>
+    <match lemma="жер"><select lemma="земля"/></match>
+  </rule>
+
+</rules>
