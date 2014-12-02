@@ -157,12 +157,10 @@
     <e><p><l>жеті<s n="num"/></l>   <r>семь<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 
 <!-- verbs -->
-
+<!-- This entry gives trouble: check later
     <e><p><l>же<s n="v"/><s n="tv"/></l>           <r>кушать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-
+-->
 <!-- adverbs -->
-
     <e><p><l>ертең<s n="adv"/></l>                 <r>завтра<s n="adv"/></r></p></e>
-
   </section>
 </dictionary>

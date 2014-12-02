@@ -16,7 +16,8 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin \
 	$(PREFIX1).lrx.bin \
         $(PREFIX1).rlx.bin \
         $(PREFIX2).t1x.bin \
-        $(PREFIX2).autobil.bin 
+        $(PREFIX2).autobil.bin \
+	$(PREFIX2).rlx.bin
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
@@ -48,7 +49,7 @@ $(PREFIX1).autogen.bin: $(AP_SRC2)/$(LANG2).autogen.bin
 ## Russian→Kazakh monolingual transducers
 ###############################################################################
 
-$(PREFIX2).automorf.bin: $(AP_SRC2)/$(LANG2).autogen.bin
+$(PREFIX2).automorf.bin: $(AP_SRC2)/$(LANG2).automorf.bin
 	cp $< $@
 
 $(PREFIX2).autogen.hfst: $(AP_SRC1)/$(LANG1).autogen.hfst
@@ -83,6 +84,9 @@ $(PREFIX1).prob: $(AP_SRC1)/$(LANG1).prob
 ###############################################################################
 
 $(PREFIX1).rlx.bin: $(AP_SRC1)/apertium-$(LANG1).$(LANG1).rlx
+	cg-comp $< $@
+
+$(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 	cg-comp $< $@
 
 ###############################################################################
