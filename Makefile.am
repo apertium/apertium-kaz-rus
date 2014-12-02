@@ -14,7 +14,9 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin \
 	$(PREFIX1).automorf.bin $(PREFIX1).autogen.bin $(PREFIX1).t1x.bin $(PREFIX1).t2x.bin $(PREFIX1).t3x.bin $(PREFIX1).t4x.bin \
 	$(PREFIX2).automorf.bin $(PREFIX1).autopgen.bin \
 	$(PREFIX1).lrx.bin \
-        $(PREFIX1).rlx.bin 
+        $(PREFIX1).rlx.bin \
+        $(PREFIX2).t1x.bin \
+        $(PREFIX2).autobil.bin 
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
 @ap_include@
@@ -63,9 +65,9 @@ $(PREFIX1).autobil.bin: $(BASENAME).$(PREFIX1).dix
 	apertium-validate-dictionary $<
 	lt-comp lr $< $@
 
-#$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
-#	apertium-validate-dictionary $<
-#	lt-comp rl $< $@
+$(PREFIX2).autobil.bin: $(BASENAME).$(PREFIX1).dix
+	apertium-validate-dictionary $<
+	lt-comp rl $< $@
 
 ###############################################################################
 ## Prob files for tagger
@@ -108,6 +110,11 @@ $(PREFIX1).t3x.bin: $(BASENAME).$(PREFIX1).t3x
 
 $(PREFIX1).t4x.bin: $(BASENAME).$(PREFIX1).t4x
 	apertium-validate-postchunk $<
+	apertium-preprocess-transfer $< $@
+
+## MLF 20141202
+$(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
+	apertium-validate-transfer $<
 	apertium-preprocess-transfer $< $@
 
 ###############################################################################

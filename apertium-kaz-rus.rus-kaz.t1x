@@ -50,9 +50,11 @@
 
   <section-def-vars> 
     <def-var n="number"/>
+    <def-var n="possessive"/>
     <def-var n="current_verb"/>
+    <def-var n="NEW-noun_lu"/>    
+    <def-var n="case"/>  
   </section-def-vars>
-
 
   <section-def-macros>
     <def-macro n="test" npar="1">
@@ -61,7 +63,90 @@
             <lit v=""/>
           </let>
     </def-macro>
+
+    <!-- macro stolen from apertium-eng-kaz -->
+    <def-macro n="NEW-build-noun-lu-2-4-5" npar="1"> 
+     <let>
+           <var n="NEW-noun_lu"/>
+           <concat>
+               <clip pos="1" side="tl" part="lem"/> 
+               <clip pos="1" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- for number -->
+               <!-- no need to link person -->
+               <lit-tag v="4"/> <!-- for possessive -->
+               <lit-tag v="5"/> <!-- for case -->
+           </concat>  
+        </let>
+     </def-macro>
+
+
+   <def-macro n="select-case" npar="1">
+   <!-- ugly macro: can we use lists for tags? -->
+      <choose>
+         <when>
+           <test>
+             <equal>
+                <clip side="sl" pos="1" part="a_case"/>
+                <lit-tag v="nom"/>
+             </equal>
+            </test>
+             <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test>
+             <equal>
+                <clip side="sl" pos="1" part="a_case"/>
+                <lit-tag v="acc"/>
+             </equal>
+             </test>
+            <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test>
+             <equal>
+                <clip side="sl" pos="1" part="a_case"/>
+                <lit-tag v="dat"/>
+             </equal>
+            </test>
+             <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test>
+             <equal>
+                <clip side="sl" pos="1" part="a_case"/>
+                <lit-tag v="gen"/>
+             </equal>
+            </test>
+             <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test>
+             <equal>
+                <clip side="sl" pos="1" part="a_case"/>
+                <lit-tag v="prp"/>
+             </equal>
+             </test>
+            <let><var n="case"/><lit-tag v="CD"/></let>
+         </when>
+         <when>
+           <test>
+             <equal>
+                <clip side="sl" pos="1" part="a_case"/>
+                <lit-tag v="ins"/>
+             </equal>
+            </test>
+             <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise>
+             <let><var n="case"/><lit-tag v="CD"/></let>
+         </otherwise>
+      </choose>
+   </def-macro>
+
   </section-def-macros>
+
+
+
   <section-rules>
 
     <rule comment="RULE: SENT">
@@ -82,16 +167,34 @@
       </action>
     </rule>
 
-    <rule c="RULE: nom"> <!-- incomplete -->
-    <pattern> 
-        <pattern-item n="nom"/>
-    </pattern>
-    <action>
-    <!-- transfer attributes -->
-    
-    <!-- output -->
-    </action>
-    </rule>
+<!-- editing a rule stolen from apertium-eng-kaz -->
+<rule comment="RULE: noun">  
+  <pattern>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="1"/>
+  </call-macro> 
+    <let> <var n="possessive"/><lit-tag v="PXD"/></let>
+    <out>
+    <chunk name="noun">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><var n="possessive"/></tag> <!-- possessor placeholder -->
+    <tag><var n="case"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+      <var n="NEW-noun_lu"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
 
   </section-rules>
 </transfer>
