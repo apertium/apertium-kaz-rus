@@ -148,6 +148,12 @@
 <e><p><l>қалам<s n="n"/></l><r>карандаш<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>профессор<s n="n"/></l><r>профессор<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 
+
+<!-- nouns imported from KazNU SQLite files through CSV  -->
+
+<!-- imported nouns -->
+
+
 <!-- adjectives -->
 
     <e><p><l>үлкен<s n="adj"/></l><r>большой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
