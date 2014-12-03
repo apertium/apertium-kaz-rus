@@ -162,5 +162,22 @@
 -->
 <!-- adverbs -->
     <e><p><l>ертең<s n="adv"/></l>                 <r>завтра<s n="adv"/></r></p></e>
+
+<!-- Punctuation copied from tat→rus -->
+<e>       <p><l>,<s n="cm"/></l>                       <r>,<s n="cm"/></r></p></e>
+<e>       <p><l>(<s n="lpar"/></l>                     <r>(<s n="lpar"/></r></p></e>
+<e>       <p><l>)<s n="rpar"/></l>                     <r>)<s n="rpar"/></r></p></e>
+<e>       <p><l>[<s n="lpar"/></l>                     <r>[<s n="lpar"/></r></p></e>
+<e>       <p><l>]<s n="rpar"/></l>                     <r>]<s n="rpar"/></r></p></e>
+<e>       <p><l>«<s n="lquot"/></l>                    <r>«<s n="lquot"/></r></p></e>
+<e>       <p><l>»<s n="rquot"/></l>                    <r>»<s n="rquot"/></r></p></e>
+<e>       <p><l>“<s n="lquot"/></l>                    <r>“<s n="lquot"/></r></p></e>
+<e>       <p><l>”<s n="rquot"/></l>                    <r>”<s n="rquot"/></r></p></e>
+<e>       <p><l>-<s n="guio"/></l>                     <r>-<s n="guio"/></r></p></e>
+<e>       <p><l>—<s n="guio"/></l>                     <r>—<s n="guio"/></r></p></e>
+<e>       <p><l>'<s n="apos"/></l>                     <r>'<s n="apos"/></r></p></e>
+<e>       <re>[.\?;:!"]+</re><p><l><s n="sent"/></l>   <r><s n="sent"/></r></p></e>
+
+
   </section>
 </dictionary>

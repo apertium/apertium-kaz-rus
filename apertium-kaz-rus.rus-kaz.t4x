@@ -1,0 +1,991 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<transfer>
+  <section-def-cats>
+    
+ <def-cat n="np">
+      <cat-item tags="np.top"/>
+    </def-cat>
+
+    <def-cat n="perspron">
+      <cat-item tags="prn.pers.*"/>
+      <cat-item tags="prn.ref.*"/>
+    </def-cat>
+    <def-cat n="v">
+      <cat-item tags="vaux.*"/>      
+      <cat-item tags="v.*"/>      
+      <cat-item tags="cop.*"/>
+    </def-cat>
+ 
+    <def-cat n="shortcop">
+       <cat-item lemma="е" tags="cop.aor.p1.sg"/>
+       <cat-item lemma="е" tags="cop.aor.p2.sg"/>
+       <cat-item lemma="е" tags="cop.aor.p3.sg"/>
+       <cat-item lemma="е" tags="cop.aor.p1.pl"/>
+        <cat-item lemma="e" tags="cop.aor.p2.pl"/>
+       <cat-item lemma="е" tags="cop.aor.p3.pl"/>
+<cat-item lemma="е" tags="cop.aor.evid.p1.sg"/>
+       <cat-item lemma="е" tags="cop.aor.evid.p2.sg"/>
+       <cat-item lemma="е" tags="cop.aor.evid.p3.sg"/>
+       <cat-item lemma="е" tags="cop.aor.evid.p1.pl"/>
+        <cat-item lemma="e" tags="cop.aor.evid.p2.pl"/>
+       <cat-item lemma="е" tags="cop.aor.evid.p3.pl"/>
+    <cat-item lemma="е" tags="cop.past.p1.sg"/>
+       <cat-item lemma="е" tags="cop.past.p2.sg"/>
+       <cat-item lemma="е" tags="cop.past.p3.sg"/>
+       <cat-item lemma="е" tags="cop.past.p1.pl"/>
+        <cat-item lemma="e" tags="cop.past.p2.pl"/>
+       <cat-item lemma="е" tags="cop.past.p3.pl"/>
+    </def-cat>
+
+  <def-cat n="qst">
+       <cat-item lemma="ма" tags="qst"/>
+     
+    </def-cat>
+
+  <def-cat n="det">
+       <cat-item lemma="кейбір" tags="det.ind"/>
+     
+    </def-cat>
+    
+
+
+    <def-cat n="nomobject">
+       <cat-item tags="n.nom"/>
+       <cat-item tags="n.pl.*"/>
+       <cat-item tags="n.sg.px3sp.*"/>
+       <cat-item tags="n.*.loc"/> 
+       <cat-item tags="np.top"/>
+       <cat-item tags="n.*.nom"/>
+       <cat-item tags="adj"/>
+       <cat-item tags="post"/>
+       <cat-item tags="adj.nom"/>
+       <cat-item tags="adj.subst"/>
+       <cat-item tags="np.*"/>
+       <cat-item tags="vblex.ger"/>
+
+    </def-cat>
+  <def-cat n="ind">
+      <cat-item tags="det.ind.*"/>
+      <cat-item tags="prn.ind.*"/>
+    </def-cat>
+   
+    <def-cat n="default">
+      <cat-item tags="*"/>
+    </def-cat>
+   
+  </section-def-cats>
+  
+  <section-def-attrs>
+    <def-attr n="a_neg">
+      <attr-item tags="neg"/>
+      <attr-item tags="NXD"/>
+    </def-attr>
+<def-attr n="a_cop">
+      <attr-item tags="cop"/>
+    </def-attr>
+<def-attr n="a_evid">
+      <attr-item tags="evid"/>
+    </def-attr>
+
+<def-attr n="adj_sint">
+      <attr-item tags="sint"/>
+    </def-attr>
+
+<def-attr n="adj">
+      <attr-item tags="adj"/>
+    </def-attr>
+<def-attr n="a_comp">
+      <attr-item tags="sup"/>
+      <attr-item tags="comp"/>
+    </def-attr>
+<def-attr n="pron">
+      <attr-item tags="itg"/>
+      <attr-item tags="ind"/>
+      <attr-item tags="ref"/>
+      <attr-item tags="qnt"/>
+      <attr-item tags="recip"/>
+    </def-attr>
+
+<def-attr n="a_det">
+      <attr-item tags="dem"/>
+    </def-attr>
+<def-attr n="a_post">
+      <attr-item tags="post"/>
+    </def-attr>
+    <def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+      <attr-item tags="PD"/>
+    </def-attr>
+
+   <def-attr n="a_pers_num">
+      <attr-item tags="p1.sg"/>
+      <attr-item tags="p2.sg"/>
+      <attr-item tags="p3.sg"/>
+	<attr-item tags="p1.pl"/>
+	<attr-item tags="p2.pl"/>
+	<attr-item tags="p3.pl"/>	
+	<attr-item tags="p3.sp"/>
+	<attr-item tags="p2.sg.frm"/>
+	<attr-item tags="p2.pl.frm"/>
+      <attr-item tags="PD"/>
+    </def-attr>
+
+
+
+    <def-attr n="poss">
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px2sg.frm"/>
+      <attr-item tags="px3sp"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2sp"/>
+      <attr-item tags="PXD"/>
+    </def-attr>
+<def-attr n="a_nom">
+     <!-- <cat-item tags="n"/>
+      <cat-item tags="np.ant"/>
+      <cat-item tags="np.ant.m"/>
+      <cat-item tags="np.ant.f"/>
+      <cat-item tags="np.top"/>
+      <cat-item tags="np.org"/>-->
+      <attr-item tags="np.cog"/>
+      <attr-item tags="n.pl"/>
+      <attr-item tags="np.al"/>
+      <attr-item tags="abbr"/>
+    </def-attr>
+
+    <def-attr n="case">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="loc"/>
+      <attr-item tags="ins"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="CD"/>
+      <attr-item tags="Rnom"/>
+      <attr-item tags="Rdat"/>
+      <attr-item tags="Rabl"/>
+    </def-attr>
+
+<def-attr n="a_num">
+      <attr-item tags="ord"/>
+     
+    </def-attr>
+
+    <def-attr n="nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
+<def-attr n="subst">
+      <attr-item tags="subst"/>
+    </def-attr>
+<def-attr n="sep">
+      <attr-item tags="sep"/>
+    </def-attr>
+
+    <def-attr n="tense">
+      <attr-item tags="ger_impf"/>
+      <attr-item tags="ger_past"/>
+      <attr-item tags="prc_perf"/>
+           <attr-item tags="past"/>
+           <attr-item tags="ifi"/>
+           <attr-item tags="aor"/>
+           <attr-item tags="ger"/>
+           <attr-item tags="fut"/>
+           <attr-item tags="subs"/>
+           <attr-item tags="pprs"/>
+    </def-attr>
+       
+ <def-attr n="unknown">
+      <attr-item tags=""/>
+    </def-attr>
+
+  </section-def-attrs>
+ 
+  <section-def-vars>
+    <def-var n="number"/>
+  </section-def-vars>  
+
+  <section-rules>
+
+    <rule comment="verb">
+    <pattern>
+       <pattern-item n="v"/>
+    </pattern>
+    <action>
+      <choose><!--formality patch-->
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="1" side="tl" part="a_pers"/><lit-tag v="p2.frm"/></let>
+          </when>
+ 	</choose>
+       <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px2sg"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px2sg.frm"/></let>
+          </when>
+        </choose>
+     <choose>
+          <when>
+            <test>
+                 <equal>
+                     <clip pos="1" side="sl" part="tense"/><lit-tag v="ger_past"/>
+                  </equal>
+             </test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+           <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+          </when>
+        </choose>
+
+
+
+<!--<choose>
+          <when>
+            <test>
+<or>
+                 <equal>
+                     <clip pos="1" side="sl" part="tense"/><lit-tag v="subs"/>
+                  </equal>
+<equal>
+                     <clip pos="1" side="sl" part="tense"/><lit-tag v="pprs"/>
+                  </equal>
+</or>
+             </test>
+            <let><clip pos="1" side="tl" part="tense"/><lit-tag v="ger"/></let>
+          </when>
+        </choose>
+-->
+
+ <choose>
+          <when>
+            <test>
+                 <equal>
+                     <clip pos="1" side="sl" part="sep"/>
+                     <lit-tag v="sep"/>
+                 </equal>
+             </test>
+            <let><clip pos="1" side="tl" part="sep"/><lit v=""/></let>
+          </when>
+        </choose>
+
+        <choose>
+          <when>
+            <test>
+                 <equal>
+                     <clip pos="1" side="sl" part="nbr"/>
+                     <lit-tag v="ND"/>
+                 </equal>
+             </test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></let>
+          </when>
+        </choose>
+ 
+<choose>
+          <when>
+            <test>
+                 <equal>
+                     <clip pos="1" side="sl" part="nbr"/>
+                     <lit-tag v="sp"/>
+                 </equal>
+             </test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></let>
+          </when>
+        </choose>
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_neg"/><lit-tag v="NXD"/></equal></test>
+            <let><clip pos="1" side="tl" part="a_neg"/><lit v=""/></let>
+          </when>
+        </choose>
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="PD"/></equal></test>
+            <let><clip pos="1" side="tl" part="a_pers"/><lit-tag v="p3"/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="ND"/></equal></test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></let>
+          </when>
+        </choose>
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="PXD"/></equal></test>
+            <let><clip pos="1" side="tl" part="poss"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+<test>
+<and>
+            <equal><clip pos="1" side="sl" part="tense"/><lit-tag v="past"/></equal>
+           <equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal>
+</and>
+</test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+          </when>
+
+        </choose>
+<choose>
+          <when>
+<test>
+<and>
+            <equal><clip pos="1" side="sl" part="tense"/><lit-tag v="fut"/></equal>
+           <equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal>
+</and>
+</test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+          </when>
+
+        </choose>
+<choose>
+          <when>
+<test>
+<and>
+            <equal><clip pos="1" side="sl" part="tense"/><lit-tag v="aor"/></equal>
+           <equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal>
+</and>
+</test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+          </when>
+
+        </choose>
+<choose>
+          <when>
+<test>
+
+            <equal><clip pos="1" side="sl" part="tense"/><lit-tag v="prc_perf"/></equal>
+
+</test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+          </when>
+
+        </choose>
+<choose>
+          <when>
+<test>
+<and>
+            <equal><clip pos="1" side="sl" part="tense"/><lit-tag v="ifi"/></equal>
+           <equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal>
+</and>
+</test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+          </when>
+
+        </choose>
+
+<choose>
+          <when>
+<test>
+<and>
+            <equal><clip pos="1" side="sl" part="tense"/><lit-tag v="ger"/></equal>
+           <equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="ND"/></equal>
+</and>
+</test>
+	<let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+
+        </choose>
+ <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
+          </when>
+        </choose>
+
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="pronoun">
+    <pattern>
+       <pattern-item n="perspron"/>
+    </pattern>
+    <action>
+      <choose><!--formality patch-->
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.sg"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="1" side="tl" part="a_pers_num"/><lit-tag v="p2.sg.frm"/></let>
+          </when>
+ 	<when>
+            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.pl"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="1" side="tl" part="a_pers_num"/><lit-tag v="p2.pl.frm"/></let>
+          </when>
+        </choose>
+ <choose>
+          <when>
+            <test>
+<and>
+                 <equal>
+                     <clip pos="1" side="sl" part="nbr"/>
+                     <lit-tag v="ND"/>
+                 </equal>
+<equal>
+                     <clip pos="1" side="sl" part="pron"/>
+                     <lit-tag v="ref"/>
+                 </equal>
+</and>
+             </test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+        </choose>
+        <choose>
+          <when>
+            <test>
+                 <equal>
+                     <clip pos="1" side="sl" part="nbr"/>
+                     <lit-tag v="ND"/>
+                 </equal>
+             </test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit-tag v="sg"/></let>
+          </when>
+        </choose>
+
+  	<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px2sg"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px2sg.frm"/></let>
+          </when>
+        </choose>
+
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="PXD"/></equal></test>
+            <let><clip pos="1" side="tl" part="poss"/><lit v=""/></let>
+          </when>
+        </choose>
+        
+ <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
+          </when>
+        </choose>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    
+    <rule comment="present-tense copula hack"> <!-- MLF 20130605 not working yet! -->
+      <pattern>
+        <pattern-item n="nomobject"/>
+        <pattern-item n="shortcop"/>
+      </pattern>
+      <action>
+     <choose>
+     <when>
+        <test>
+          <equal>
+             <clip pos="1" part="nbr" side="sl"/>
+             <lit-tag v="sg"/>
+          </equal>
+        </test>
+        <let>
+           <clip pos="1" part="nbr" side="tl"/>
+           <lit v=""/>
+        </let>
+     </when>
+     </choose>
+ <choose>
+     <when>
+        <test>
+          <equal>
+             <clip pos="2" part="a_cop" side="sl"/>
+             <lit-tag v="cop"/>
+          </equal>
+        </test>
+        <let>
+           <clip pos="2" part="a_evid" side="tl"/>
+           <lit v=""/>
+        </let>
+     </when>
+     </choose>
+     <choose>
+     <when>
+        <test>
+          <equal>
+             <clip pos="1" part="poss" side="sl"/>
+             <lit-tag v="PXD"/>
+          </equal>
+        </test>
+        <let>
+           <clip pos="1" part="poss" side="tl"/>
+           <lit v=""/>
+        </let>
+     </when>
+
+     </choose>  
+ <choose>
+     <when>
+        <test>
+
+<and>
+          <equal>
+             <clip pos="1" part="case" side="sl"/>
+             <lit-tag v="nom"/>
+          </equal>
+ <equal>
+             <clip pos="1" part="adj" side="sl"/>
+             <lit-tag v="adj"/>
+          </equal>
+</and>
+        </test>
+        <let>
+           <clip pos="1" part="case" side="tl"/>
+           <lit v=""/>
+        </let>
+     </when>
+
+     </choose>      
+     <choose><!--formality patch-->
+       <when>
+         <test><equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="2" side="tl" part="a_pers"/><lit-tag v="p2.frm"/></let>
+          </when>
+ 	</choose> 
+    <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/></equal></test>
+            <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+          </when>
+        </choose>
+  <choose>
+          <when>
+            <test><equal><clip pos="2" side="sl" part="tense"/><lit-tag v="past"/></equal></test>
+            <let><clip pos="2" side="tl" part="tense"/><lit v=""/></let>
+          </when>
+        </choose>
+  <choose>
+     <when>
+        <test>
+          <equal>
+             <clip pos="2" part="nbr" side="sl"/>
+             <lit-tag v="ND"/>
+          </equal>
+        </test>
+        <let>
+           <clip pos="1" part="nbr" side="tl"/>
+           <lit v="sg"/>
+        </let>
+<let>
+           <clip pos="1" part="a_pers" side="tl"/>
+           <lit v="p3"/>
+        </let>
+     </when>
+     </choose>
+
+<choose>
+     <when>
+        <test>
+          <equal>
+             <clip pos="1" part="a_post" side="sl"/>
+             <lit-tag v="post"/>
+          </equal>
+        </test>
+        <out>
+          <lu>
+           <clip pos="1" side="tl" part="whole"/>
+         
+          </lu>
+
+        </out>
+     </when>
+
+      <otherwise>
+        <out>
+          <lu>
+           <clip pos="1" side="tl" part="whole"/>
+           <lit v="+"/>
+           <clip pos="2" side="tl" part="whole"/>
+          </lu>
+
+        </out>
+      </otherwise>
+     </choose>
+      </action>  
+    </rule>
+
+     
+   <rule comment="questions"> <!-- for Barasyn ma/ba/be? -->
+      <pattern>
+        <pattern-item n="v"/>
+        <pattern-item n="qst"/>
+      </pattern>
+      <action>
+ <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_neg"/><lit-tag v="NXD"/></equal></test>
+            <let><clip pos="1" side="tl" part="a_neg"/><lit v=""/></let>
+          </when>
+        </choose>
+ <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="PXD"/></equal></test>
+            <let><clip pos="1" side="tl" part="poss"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose><!--formality patch-->
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.sg"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="1" side="tl" part="a_pers_num"/><lit-tag v="p2.frm.sg"/></let>
+          </when>
+ 	<when>
+            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.pl"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="1" side="tl" part="a_pers_num"/><lit-tag v="p2.frm.pl"/></let>
+          </when>
+        </choose>
+
+        <out>
+          <lu>
+           <clip pos="1" side="tl" part="whole"/>
+           <lit v="+"/>
+           <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>  
+    </rule>
+
+   
+
+<rule comment="ind">  <!-- remove pl from "some" as бірнеше-->
+      <pattern>
+        <pattern-item n="ind"/>
+      </pattern>
+      <action>
+
+        <choose>
+          <when>
+            <test>
+<and>
+<equal><clip pos="1" side="sl" part="pron"/><lit-tag v="ind"/></equal>
+<not><equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="pl"/></equal></not>
+</and>
+</test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+          </when>
+        </choose>
+ <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="nbr"/><lit-tag v="sp"/></equal></test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_lem"/><lit v="some"/></equal></test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+        </choose>
+    <choose>
+          <when>
+            <test>
+<equal><clip pos="1" side="sl" part="case"/><lit-tag v="acc"/></equal>
+</test>
+            <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3sp"/></let>
+          </when>
+        </choose>
+       <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
+          </when>
+        </choose>
+ 
+<choose>
+          <when>
+            <test>
+<equal><clip pos="1" side="sl" part="poss"/><lit-tag v="PXD"/></equal>
+</test>
+            <let><clip pos="1" side="tl" part="poss"/><lit v=""/></let>
+          </when>
+        </choose>
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+
+
+
+
+
+
+    <rule comment="default"> 
+      <pattern>
+        <pattern-item n="default"/>
+      </pattern>
+      <action>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="adj_sint"/><lit-tag v="sint"/></equal></test>
+            <let><clip pos="1" side="tl" part="adj_sint"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+     <when>
+        <test>
+          <equal>
+             <clip pos="1" part="a_post" side="sl"/>
+             <lit-tag v="post"/>
+          </equal>
+        </test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+ </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="pron"/><lit-tag v="itg"/></equal></test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="pron"/><lit-tag v="qnt"/></equal></test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><and>
+		<equal><clip pos="1" side="sl" part="pron"/><lit-tag v="qnt"/></equal>
+            <not><equal><clip pos="1" side="sl" part="lem"/><lit v="бәрі"/></equal></not>
+</and>
+</test>
+
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
+          </when>
+
+        </choose>
+<choose>
+          <when>
+            <test>
+		<equal><clip pos="1" side="sl" part="pron"/><lit-tag v="qnt"/></equal>
+</test>
+
+            <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3sp"/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="case"/><lit-tag v="Rnom"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+          </when>
+        </choose>
+        <choose>
+          <when>
+            <test>
+               <or>
+                 <equal>
+                     <clip pos="1" side="sl" part="nbr"/>
+                     <lit-tag v="ND"/>
+                 </equal>
+                 <equal>
+                     <clip pos="1" side="sl" part="nbr"/>
+                     <lit-tag v="sg"/>
+                 </equal>  
+                </or>
+             </test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+        </choose>
+        <choose>
+          <when>
+            <test>
+<and>
+<equal><clip pos="1" side="sl" part="poss"/><lit-tag v="PXD"/></equal>
+           <not><equal><clip pos="1" side="sl" part="pron"/><lit-tag v="recip"/></equal></not>
+<not><equal><clip pos="1" side="sl" part="pron"/><lit-tag v="qnt"/></equal></not>
+
+</and>
+</test>
+
+            <let><clip pos="1" side="tl" part="poss"/><lit v=""/></let>
+          </when>
+        </choose>
+    <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_comp"/><lit-tag v="sup"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="a_comp"/><lit v=""/></let>
+          </when>
+        </choose>
+
+
+   <choose>
+          <when>
+<test>
+<and>
+<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/></equal>
+           <not><equal><clip pos="1" side="sl" part="pron"/><lit-tag v="ref"/></equal></not>
+
+</and>
+            </test>
+            <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+<test>
+<and>
+ <not><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/> </equal></not>
+           <equal><clip pos="1" side="sl" part="pron"/><lit-tag v="ref"/></equal>
+
+</and>
+            </test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
+          </when>
+        </choose>
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px2sg"/></equal></test>  <!-- if we generate no formality, add it -->
+            <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px2sg.frm"/></let>
+          </when>
+        </choose>
+ <choose>
+          <when>
+            <test>
+<and>
+<equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px3sp"/></equal>
+<equal><clip pos="1" side="sl" part="a_nom"/><lit-tag v="n.pl"/></equal>
+</and>
+</test> 
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test>
+<equal><clip pos="1" side="sl" part="a_nom"/><lit-tag v="abbr"/></equal>
+
+</test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test>
+<equal><clip pos="1" side="sl" part="a_nom"/><lit-tag v="np.al"/></equal>
+</test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test>
+<and>
+            <equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal>
+<equal><clip pos="1" side="sl" part="subst"/><lit-tag v="subst"/></equal>
+</and>
+            </test>
+            <let><clip pos="1" side="tl" part="subst"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_nom"/><lit-tag v="n.pl"/></equal></test>
+            <let><clip pos="1" side="tl" part="tense"/><lit v=""/></let>
+          </when>
+        </choose>
+       <choose>
+          <when>
+            <test>
+<and>
+<equal><clip pos="1" side="sl" part="case"/><lit-tag v="CD"/></equal>
+<not><equal><clip pos="1" side="sl" part="subst"/><lit-tag v="subst"/></equal></not>
+</and>
+
+</test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test>
+
+<equal><clip pos="1" side="sl" part="subst"/><lit-tag v="subst"/></equal>
+</test>
+            <let><clip pos="1" side="tl" part="a_comp"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="lem"/><lit v="төтенше"/></equal></test>
+            <let><clip pos="1" side="tl" part="subst"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+          </when>
+        </choose>
+  
+  <choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_comp"/><lit-tag v="comp"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_num"/><lit-tag v="ord"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
+          </when>
+        </choose>
+
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_det"/><lit-tag v="dem"/></equal></test>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="poss"/><lit v=""/></let>
+          </when>
+        </choose>
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="pron"/><lit-tag v="recip"/></equal></test>
+            <let><clip pos="1" side="tl" part="case"/><lit-tag v="acc"/></let>
+            <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px3sp"/></let>
+          </when>
+        </choose>
+
+<choose>
+          <when>
+            <test><equal><clip pos="1" side="sl" part="a_nom"/><lit-tag v="np.cog"/></equal></test>
+            <let><clip pos="1" side="tl" part="poss"/><lit v=""/></let>
+            <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
+          </when>
+        </choose>
+
+
+
+       <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+      </action>
+    </rule>
+    
+  </section-rules>
+</transfer>

@@ -2,14 +2,10 @@
 <!-- -*- nxml -*- -->
 <postchunk>
 
-<!-- copied from .t2x -->
+<!-- Mikel does not remember why this is done like this -->
  <section-def-cats>
-    <def-cat n="SN">
-      <cat-item tags="SN"/>
-      <cat-item tags="SN.*"/>
-    </def-cat>
     <def-cat n="SENT">
-      <cat-item tags="SENT"/>
+      <cat-item name="punt"/>
     </def-cat>
   </section-def-cats>
 
@@ -59,7 +55,7 @@
   <section-rules>
     <rule comment="CHUNK:">
       <pattern>
-        <pattern-item n="sent"/>
+        <pattern-item n="SENT"/>
       </pattern>
       <action>
         <out>

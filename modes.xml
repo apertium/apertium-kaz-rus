@@ -260,6 +260,55 @@
     </pipeline>
   </mode>
 
+
+ <mode name="rus-kaz-biltrans" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="rus-kaz.automorf.bin"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="rus-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+
+      <program name="lt-proc -b">
+        <file name="rus-kaz.autobil.bin"/>
+      </program>
+
+<!--
+      <program name="lrx-proc -m"> 
+        <file name="kaz-rus.lrx.bin"/> 
+      </program> 
+
+      <program name="apertium-transfer -b">
+        <file name="apertium-kaz-rus.rus-kaz.t1x"/>
+        <file name="rus-kaz.t1x.bin"/>
+      </program>
+
+      <program name="apertium-interchunk">
+        <file name="apertium-kaz-rus.kaz-rus.t2x"/>
+        <file name="kaz-rus.t2x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-kaz-rus.kaz-rus.t3x"/>
+        <file name="kaz-rus.t3x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-kaz-rus.kaz-rus.t4x"/>
+        <file name="kaz-rus.t4x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="kaz-rus.autogen.bin"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="kaz-rus.autopgen.bin"/>
+      </program>
+
+-->
+    </pipeline>
+  </mode>
+
+
   <mode name="rus-kaz-transfer" install="yes">
     <pipeline>
       <program name="lt-proc -w">
@@ -360,14 +409,16 @@
     </pipeline>
   </mode>
 
-  <mode name="rus-kaz-biltrans" install="yes">
+  <mode name="rus-kaz-postchunk" install="yes">
     <pipeline>
       <program name="lt-proc -w">
         <file name="rus-kaz.automorf.bin"/>
       </program>
+
       <program name="cg-proc  -n -w -1">
         <file name="rus-kaz.rlx.bin"/>
       </program>
+
       <program name="apertium-pretransfer"/>
 
       <program name="lt-proc -b">
@@ -376,22 +427,24 @@
 
 <!--
       <program name="lrx-proc -m"> 
-        <file name="kaz-rus.lrx.bin"/> 
+        <file name="rus-kaz.lrx.bin"/> 
       </program> 
-
+-->
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-rus.rus-kaz.t1x"/>
         <file name="rus-kaz.t1x.bin"/>
       </program>
 
       <program name="apertium-interchunk">
-        <file name="apertium-kaz-rus.kaz-rus.t2x"/>
-        <file name="kaz-rus.t2x.bin"/>
+        <file name="apertium-kaz-rus.rus-kaz.t2x"/>
+        <file name="rus-kaz.t2x.bin"/>
       </program>
-      <program name="apertium-interchunk">
-        <file name="apertium-kaz-rus.kaz-rus.t3x"/>
-        <file name="kaz-rus.t3x.bin"/>
+
+      <program name="apertium-postchunk">
+        <file name="apertium-kaz-rus.rus-kaz.t3x"/>
+        <file name="rus-kaz.t3x.bin"/>
       </program>
+<!--
       <program name="apertium-postchunk">
         <file name="apertium-kaz-rus.kaz-rus.t4x"/>
         <file name="kaz-rus.t4x.bin"/>
@@ -402,9 +455,107 @@
       <program name="lt-proc -p">
         <file name="kaz-rus.autopgen.bin"/>
       </program>
-
 -->
     </pipeline>
   </mode>
 
+  <mode name="rus-kaz-postchunk-and-cleanup" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="rus-kaz.automorf.bin"/>
+      </program>
+
+      <program name="cg-proc  -n -w -1">
+        <file name="rus-kaz.rlx.bin"/>
+      </program>
+
+      <program name="apertium-pretransfer"/>
+
+      <program name="lt-proc -b">
+        <file name="rus-kaz.autobil.bin"/>
+      </program>
+
+<!--
+      <program name="lrx-proc -m"> 
+        <file name="rus-kaz.lrx.bin"/> 
+      </program> 
+-->
+      <program name="apertium-transfer -b">
+        <file name="apertium-kaz-rus.rus-kaz.t1x"/>
+        <file name="rus-kaz.t1x.bin"/>
+      </program>
+
+      <program name="apertium-interchunk">
+        <file name="apertium-kaz-rus.rus-kaz.t2x"/>
+        <file name="rus-kaz.t2x.bin"/>
+      </program>
+
+      <program name="apertium-postchunk">
+        <file name="apertium-kaz-rus.rus-kaz.t3x"/>
+        <file name="rus-kaz.t3x.bin"/>
+      </program>
+
+      <program name="apertium-transfer -n">
+        <file name="apertium-kaz-rus.rus-kaz.t4x"/>
+        <file name="rus-kaz.t4x.bin"/>
+      </program>
+<!--
+      <program name="lt-proc $1">
+        <file name="kaz-rus.autogen.bin"/>
+      </program>
+      <program name="lt-proc -p">
+        <file name="kaz-rus.autopgen.bin"/>
+      </program>
+-->
+    </pipeline>
+  </mode>
+
+
+  <mode name="rus-kaz" install="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="rus-kaz.automorf.bin"/>
+      </program>
+
+      <program name="cg-proc  -n -w -1">
+        <file name="rus-kaz.rlx.bin"/>
+      </program>
+
+      <program name="apertium-pretransfer"/>
+
+      <program name="lt-proc -b">
+        <file name="rus-kaz.autobil.bin"/>
+      </program>
+
+<!--
+      <program name="lrx-proc -m"> 
+        <file name="rus-kaz.lrx.bin"/> 
+      </program> 
+-->
+      <program name="apertium-transfer -b">
+        <file name="apertium-kaz-rus.rus-kaz.t1x"/>
+        <file name="rus-kaz.t1x.bin"/>
+      </program>
+
+      <program name="apertium-interchunk">
+        <file name="apertium-kaz-rus.rus-kaz.t2x"/>
+        <file name="rus-kaz.t2x.bin"/>
+      </program>
+
+      <program name="apertium-postchunk">
+        <file name="apertium-kaz-rus.rus-kaz.t3x"/>
+        <file name="rus-kaz.t3x.bin"/>
+      </program>
+
+      <program name="apertium-transfer -n">
+        <file name="apertium-kaz-rus.rus-kaz.t4x"/>
+        <file name="rus-kaz.t4x.bin"/>
+      </program>
+
+      <program name="hfst-proc $1">
+        <file name="rus-kaz.autogen.hfst"/>
+      </program>
+    </pipeline>
+  </mode>
+ 
 </modes>

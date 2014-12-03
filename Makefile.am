@@ -17,7 +17,10 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin \
         $(PREFIX1).rlx.bin \
         $(PREFIX2).t1x.bin \
 	$(PREFIX2).t2x.bin \
+	$(PREFIX2).t3x.bin \
+	$(PREFIX2).t4x.bin \
         $(PREFIX2).autobil.bin \
+        $(PREFIX2).autogen.hfst \
 	$(PREFIX2).rlx.bin
 
 # This include defines goals for install-modes, .deps/.d and .mode files:
@@ -56,8 +59,6 @@ $(PREFIX2).automorf.bin: $(AP_SRC2)/$(LANG2).automorf.bin
 $(PREFIX2).autogen.hfst: $(AP_SRC1)/$(LANG1).autogen.hfst
 	cp $< $@
 
-$(PREFIX2).autogen.bin: $(AP_SRC1)/$(LANG1).autogen.bin
-	cp $< $@
 
 ###############################################################################
 ## Bilingual dictionaries
@@ -122,8 +123,17 @@ $(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
 	apertium-validate-transfer $<
 	apertium-preprocess-transfer $< $@
 
+## MLF 20141203
 $(PREFIX2).t2x.bin: $(BASENAME).$(PREFIX2).t2x
 	apertium-validate-interchunk $<
+	apertium-preprocess-transfer $< $@
+
+$(PREFIX2).t3x.bin: $(BASENAME).$(PREFIX2).t3x
+	apertium-validate-postchunk $<
+	apertium-preprocess-transfer $< $@
+
+$(PREFIX2).t4x.bin: $(BASENAME).$(PREFIX2).t4x
+	apertium-validate-transfer $<
 	apertium-preprocess-transfer $< $@
 
 ###############################################################################
