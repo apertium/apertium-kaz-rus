@@ -12,6 +12,8 @@
 /apertium-kaz-rus.kaz-rus.t3x -text
 /apertium-kaz-rus.kaz-rus.t4x -text
 /apertium-kaz-rus.rus-kaz.t1x -text
+/apertium-kaz-rus.rus-kaz.t2x -text
+/apertium-kaz-rus.rus-kaz.t3x -text
 /autogen.sh -text
 /configure.ac -text
 /modes.xml -text

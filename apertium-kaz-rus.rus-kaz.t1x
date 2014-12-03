@@ -176,9 +176,13 @@
   <call-macro n="NEW-build-noun-lu-2-4-5">
        <with-param pos="1"/>
   </call-macro> 
+  <call-macro n="select-case">
+       <with-param pos="1"/>
+  </call-macro> 
+
     <let> <var n="possessive"/><lit-tag v="PXD"/></let>
     <out>
-    <chunk name="noun">
+    <chunk name="nom">
     <tags>
     <tag><lit-tag v="NP"/></tag>
     <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->

@@ -16,6 +16,7 @@ TARGETS_COMMON = $(PREFIX1).autobil.bin \
 	$(PREFIX1).lrx.bin \
         $(PREFIX1).rlx.bin \
         $(PREFIX2).t1x.bin \
+	$(PREFIX2).t2x.bin \
         $(PREFIX2).autobil.bin \
 	$(PREFIX2).rlx.bin
 
@@ -119,6 +120,10 @@ $(PREFIX1).t4x.bin: $(BASENAME).$(PREFIX1).t4x
 ## MLF 20141202
 $(PREFIX2).t1x.bin: $(BASENAME).$(PREFIX2).t1x
 	apertium-validate-transfer $<
+	apertium-preprocess-transfer $< $@
+
+$(PREFIX2).t2x.bin: $(BASENAME).$(PREFIX2).t2x
+	apertium-validate-interchunk $<
 	apertium-preprocess-transfer $< $@
 
 ###############################################################################
