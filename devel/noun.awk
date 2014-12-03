@@ -12,5 +12,8 @@ a[4]="aa";
 a[""]="nn";
 } 
 
-{print "<e><p><l>" $4 "<s n=\"n\"/></l><r>" $2  "<s n=\"n\"/><s n=\"" g[$5] "\"/><s n=\"" a[$8] "\"/></r></p></e>"}
+# We export only nouns that have some gender ("rod" in $5) and
+# avoid exporting the first line which is a header
+# Avoid empty lemmas too
+NR>1 {if ($5~/[0-9]+/) print "<e><p><l>" $4 "<s n=\"n\"/></l><r>" $2  "<s n=\"n\"/><s n=\"" g[$5] "\"/><s n=\"" a[$8] "\"/></r></p></e>"}
 
