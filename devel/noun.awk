@@ -5,7 +5,7 @@ BEGIN{
 FS="(\",\"|\"$)";  # record separators: "," and " at end of file: 
 g[1]="m"; # gender
 g[2]="f";
-g[3]="n";
+g[3]="nt";
 a[0]="nn"; # animacy
 a[1]="nn";
 a[4]="aa";
