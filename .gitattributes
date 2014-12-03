@@ -17,5 +17,9 @@
 /apertium-kaz-rus.rus-kaz.t4x -text
 /autogen.sh -text
 /configure.ac -text
+devel/adjec1.awk -text
+devel/adjec2.awk -text
+devel/adjec3.awk -text
+devel/adjectives.csv -text
 devel/noun.awk -text
 /modes.xml -text
