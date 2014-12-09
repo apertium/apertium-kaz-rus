@@ -123,6 +123,9 @@
 <pardefs>
 <pardef n="__adj_sint">
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
   <e>       <p><l><s n="subst"/></l><r><s n="m"/><s n="an"/></r></p></e>
   <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>
 </pardef>
@@ -279,7 +282,7 @@
 <e><p><l>қапырық<s n="n"/></l><r>духота<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>қапылық<s n="n"/></l><r>внезапность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>қапталдық<s n="n"/></l><r>боковина<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<e><p><l><s n="n"/></l><r>бок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>жақ<s n="n"/></l><r>бок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қапсырма<s n="n"/></l><r>замок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қапас<s n="n"/></l><r>застенок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қапа<s n="n"/></l><r>огорчение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
@@ -715,7 +718,7 @@
 <e><p><l>кәрілік<s n="n"/></l><r>старость<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>кәмпит<s n="n"/></l><r>конфета<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>кәмпеске<s n="n"/></l><r>конфискация<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<e><p><l><s n="n"/></l><r>совершеннолетие<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+<e><p><l>кәмелет<s n="n"/></l><r>совершеннолетие<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>кәкпір<s n="n"/></l><r>шумовка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>кәззап<s n="n"/></l><r>бандит<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>кәде<s n="n"/></l><r>обычай<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -1507,7 +1510,7 @@
 <e><p><l>аламандық<s n="n"/></l><r>нападение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>алаң<s n="n"/></l><r>площадь<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>алаңғасарлық<s n="n"/></l><r>легкомысленность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<e><p><l> алаңдаушылық<s n="n"/></l><r>беспокойство<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+<e><p><l>алаңдаушылық<s n="n"/></l><r>беспокойство<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>алаңқай<s n="n"/></l><r>площадка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>алаңша<s n="n"/></l><r>площадка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>алаөкпе<s n="n"/></l><r>перипневмония<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -3436,7 +3439,7 @@
 <e><p><l>кекшілдік<s n="n"/></l><r>мстительность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>кекіл<s n="n"/></l><r>челка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>кекілдірік<s n="n"/></l><r>налобник<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l> кекілік<s n="n"/></l><r>куропатка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>кекілік<s n="n"/></l><r>куропатка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>кекіреюшілік<s n="n"/></l><r>претенциозность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>келбет<s n="n"/></l><r>облик<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>келбеттілік<s n="n"/></l><r>представительность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -3600,7 +3603,7 @@
 <e><p><l>көкжөтел<s n="n"/></l><r>коклюш<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>көкқұтан<s n="n"/></l><r>цапля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>көкмұз<s n="n"/></l><r>гололед<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l> көкнәр<s n="n"/></l><r>мак<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>көкнәр<s n="n"/></l><r>мак<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>көкпар<s n="n"/></l><r>кокпар<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>көктамыр<s n="n"/></l><r>вена<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>көкшандыр<s n="n"/></l><r>брюшина<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -6213,6 +6216,7 @@
 <!-- adjectives -->
 
     <e><p><l>үлкен<s n="adj"/></l><r>большой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>ақылсыз<s n="adj"/></l><r>глупый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 
 <!-- numerals -->
 
@@ -6226,19 +6230,20 @@
     <e><p><l>ертең<s n="adv"/></l>                 <r>завтра<s n="adv"/></r></p></e>
 
 <!-- Punctuation copied from tat→rus -->
-<e>       <p><l>,<s n="cm"/></l>                       <r>,<s n="cm"/></r></p></e>
-<e>       <p><l>(<s n="lpar"/></l>                     <r>(<s n="lpar"/></r></p></e>
-<e>       <p><l>)<s n="rpar"/></l>                     <r>)<s n="rpar"/></r></p></e>
-<e>       <p><l>[<s n="lpar"/></l>                     <r>[<s n="lpar"/></r></p></e>
-<e>       <p><l>]<s n="rpar"/></l>                     <r>]<s n="rpar"/></r></p></e>
-<e>       <p><l>«<s n="lquot"/></l>                    <r>«<s n="lquot"/></r></p></e>
-<e>       <p><l>»<s n="rquot"/></l>                    <r>»<s n="rquot"/></r></p></e>
-<e>       <p><l>“<s n="lquot"/></l>                    <r>“<s n="lquot"/></r></p></e>
-<e>       <p><l>”<s n="rquot"/></l>                    <r>”<s n="rquot"/></r></p></e>
-<e>       <p><l>-<s n="guio"/></l>                     <r>-<s n="guio"/></r></p></e>
-<e>       <p><l>—<s n="guio"/></l>                     <r>—<s n="guio"/></r></p></e>
-<e>       <p><l>'<s n="apos"/></l>                     <r>'<s n="apos"/></r></p></e>
-<e>       <re>[.\?;:!"]+</re><p><l><s n="sent"/></l>   <r><s n="sent"/></r></p></e>
+<e><p><l>,<s n="cm"/></l><r>,<s n="cm"/></r></p></e>
+<e><p><l>(<s n="lpar"/></l><r>(<s n="lpar"/></r></p></e>
+<e><p><l>)<s n="rpar"/></l><r>)<s n="rpar"/></r></p></e>
+<e><p><l>[<s n="lpar"/></l><r>[<s n="lpar"/></r></p></e>
+<e><p><l>]<s n="rpar"/></l><r>]<s n="rpar"/></r></p></e>
+<e><p><l>«<s n="lquot"/></l><r>«<s n="lquot"/></r></p></e>
+<e><p><l>»<s n="rquot"/></l><r>»<s n="rquot"/></r></p></e>
+<e><p><l>“<s n="lquot"/></l><r>“<s n="lquot"/></r></p></e>
+<e><p><l>”<s n="rquot"/></l><r>”<s n="rquot"/></r></p></e>
+<e><p><l>-<s n="guio"/></l><r>-<s n="guio"/></r></p></e>
+<e><p><l>—<s n="guio"/></l><r>—<s n="guio"/></r></p></e>
+<e><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
+
+<e><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
 
 
   </section>
