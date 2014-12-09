@@ -130,10 +130,23 @@
   <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>
 </pardef>
 
+    <!-- For verbs -->
+    
 <pardef n="impf__verb">
   <e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e r="LR"><p><l><s n="neg"/><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e>       <p><l></l>          <r></r></p></e>
+</pardef>
+<pardef n="perf__verb">
+  <e r="LR"><p><l><s n="fut"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="fut2"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="coop"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="coop"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="pass"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="pass"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
+  <e>       <p><l></l>          <r></r></p></e>
+  <e r="RL">       <p><l></l>          <r><s n="inf"/></r></p></e>
+
 </pardef>
 
 </pardefs>
@@ -6226,6 +6239,9 @@
 <!-- This entry gives trouble: check later
     <e><p><l>же<s n="v"/><s n="tv"/></l>           <r>кушать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 -->
+
+  <e><p><l>сындыр<s n="v"/><s n="tv"/></l><r>сломать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+
 <!-- adverbs -->
     <e><p><l>ертең<s n="adv"/></l>                 <r>завтра<s n="adv"/></r></p></e>
 

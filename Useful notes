@@ -1,0 +1,6 @@
+cat unk.txt|awk '{print "<e><p><l>" $1 "<s n=\"adj\"/></l><r>" $2 "<s n=\"adj\"/><s n=\"sint\"/></r></p><par n=\"__adj_sint\"/></e>"}'>newdix.txt
+
+Ошибка
+
+Error: Invalid dictionary (hint: the left side of an entry is empty)
+ubuntu@ubuntu-virtual-machine:~/Source/apertium-kaz-rus$ lt-comp -V lr apertium-kaz-rus.kaz-rus.dix g2.bi
