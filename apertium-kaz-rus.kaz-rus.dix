@@ -9702,8 +9702,28 @@
 <e>       <p><l>миллиард<s n="num"/></l>               <r>миллиард<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>триллион<s n="num"/></l>               <r>триллион<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>триллиард<s n="num"/></l>              <r>триллиард<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>       <p><l>бірінші<s n="num"/><s n="ord"/></l>        <r>первый<s n="det"/><s n="ord"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 
+<e>       <p><l>I<s n="num"/><s n="ord"/></l>          <r>I<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>II<s n="num"/><s n="ord"/></l>         <r>II<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>III<s n="num"/><s n="ord"/></l>        <r>III<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>IV<s n="num"/><s n="ord"/></l>         <r>IV<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>V<s n="num"/><s n="ord"/></l>          <r>V<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>VI<s n="num"/><s n="ord"/></l>         <r>VI<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>VII<s n="num"/><s n="ord"/></l>        <r>VII<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>VIII<s n="num"/><s n="ord"/></l>       <r>VIII<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>IX<s n="num"/><s n="ord"/></l>         <r>IX<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>X<s n="num"/><s n="ord"/></l>          <r>X<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XI<s n="num"/><s n="ord"/></l>         <r>XI<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XII<s n="num"/><s n="ord"/></l>        <r>XII<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XIII<s n="num"/><s n="ord"/></l>       <r>XIII<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XIV<s n="num"/><s n="ord"/></l>        <r>XIV<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XV<s n="num"/><s n="ord"/></l>         <r>XV<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XVI<s n="num"/><s n="ord"/></l>        <r>XVI<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XVII<s n="num"/><s n="ord"/></l>       <r>XVII<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XVIII<s n="num"/><s n="ord"/></l>      <r>XVIII<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XIX<s n="num"/><s n="ord"/></l>        <r>XIX<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XX<s n="num"/><s n="ord"/></l>         <r>XX<s n="num"/><s n="roman"/></r></p></e>
+<e>       <p><l>XXI<s n="num"/><s n="ord"/></l>        <r>XXI<s n="num"/><s n="roman"/></r></p></e>
 
 <!-- verbs -->
 <!-- This entry gives trouble: check later
