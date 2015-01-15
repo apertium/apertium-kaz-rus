@@ -417,16 +417,7 @@
        <pattern-item n="perspron"/>
     </pattern>
     <action>
-      <choose><!--formality patch-->
-          <when>
-            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.sg"/></equal></test>  <!-- if we generate no formality, add it -->
-            <let><clip pos="1" side="tl" part="a_pers_num"/><lit-tag v="p2.sg.frm"/></let>
-          </when>
- 	<when>
-            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.pl"/></equal></test>  <!-- if we generate no formality, add it -->
-            <let><clip pos="1" side="tl" part="a_pers_num"/><lit-tag v="p2.pl.frm"/></let>
-          </when>
-        </choose>
+     
  <choose>
           <when>
             <test>
@@ -456,13 +447,7 @@
           </when>
         </choose>
 
-  	<choose>
-          <when>
-            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px2sg"/></equal></test>  <!-- if we generate no formality, add it -->
-            <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px2sg.frm"/></let>
-          </when>
-        </choose>
-
+  	
         <choose>
           <when>
             <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="PXD"/></equal></test>

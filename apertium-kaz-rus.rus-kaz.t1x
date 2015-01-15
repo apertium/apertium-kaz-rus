@@ -7,6 +7,9 @@
     <def-cat n="nom">
       <cat-item tags="n.*"/>
     </def-cat>
+ <def-cat n="subj-pron">
+      <cat-item tags="prn.pers.*"/>
+    </def-cat>
     <def-cat n="sent">
       <cat-item tags="sent"/>
     </def-cat>
@@ -16,6 +19,15 @@
   <section-def-attrs>
     <def-attr n="a_nom">
       <attr-item tags="n"/>
+    </def-attr>
+<def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+ <def-attr n="a_kaz_perspron"> 
+      <attr-item tags="prn.pers"/>
+  
     </def-attr>
     <def-attr n="a_case">
       <attr-item tags="nom"/>
@@ -196,6 +208,67 @@
     </chunk>
     </out>
   </action>
+</rule>
+
+
+<rule comment="NEW RULE: subj-pron">
+  <pattern>
+    <pattern-item n="subj-pron"/>
+  </pattern>
+  <action>
+
+  <choose>
+    <when>
+      <test>
+       <equal>
+         <clip pos="1" side="sl" part="a_nbr"/>
+         <lit-tag v="sp"/>
+       </equal>
+      </test>
+       <let><var n="number"/><lit-tag v="sg"/></let> <!-- choosing singular in the absence of information -->
+    </when>
+       <otherwise>
+         <let>
+           <var n="number"/><clip pos="1" side="tl" part="a_nbr"/>
+         </let>
+       </otherwise>
+  </choose>
+  <!--<choose>
+    <when>
+     <test>  
+       <equal>
+          <clip pos="1" side="sl" part="a_pers"/>
+          <lit-tag v="p2"/>
+       </equal>
+     </test>
+     <let><var n="formality"/><lit-tag v="frm"/></let>
+    </when>
+     <otherwise>
+     <let><var n="formality"/><lit v="FD"/></let>
+     </otherwise>
+  </choose>-->
+
+  <out>
+   <chunk name="subj-pron" case="caseFirstWord">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><var n="number"/></tag>
+    <tag><clip pos="1" side="sl" part="a_pers"/></tag> 
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="nom"/></tag>
+     
+    </tags>
+    <lu>
+      <clip pos="1" side="tl" part="lem"/>
+      <clip pos="1" side="tl" part="a_kaz_perspron"/>
+      <clip pos="1" side="tl" part="a_pers"/>
+      <lit-tag v="2"/> <!-- number -->
+      <lit-tag v="4"/> <!-- possession -->
+      <lit-tag v="5"/> <!-- case -->
+    </lu>
+  </chunk>
+  </out>
+ </action>
 </rule>
 
 
