@@ -9688,8 +9688,8 @@
 <e>       <p><l>сексен<s n="num"/></l>                 <r>восемдесять<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>       <p><l>тоқсан<s n="num"/></l>                 <r>девяносто<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>       <p><l>жүз<s n="num"/></l>                    <r>сто<s n="num"/><s n="mfn"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>       <p><l>екі<b/>жүз<s n="num"/></l>             <r>двести<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>       <p><l>үш<b/>йөз<s n="num"/></l>              <r>триста<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>екі жүз<s n="num"/></l>             <r>двести<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>үш<b/>жүз<s n="num"/></l>              <r>триста<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>       <p><l>төрт<b/>жүз<s n="num"/></l>            <r>четыреста<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>       <p><l>бес<b/>жүз<s n="num"/></l>             <r>пятьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>       <p><l>алты<b/>жүз<s n="num"/></l>            <r>шестьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
@@ -9702,7 +9702,7 @@
 <e>       <p><l>миллиард<s n="num"/></l>               <r>миллиард<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>триллион<s n="num"/></l>               <r>триллион<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>триллиард<s n="num"/></l>              <r>триллиард<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
-
+<e>       <p><l>бірінші<s n="num"/><s n="ord"/></l>        <r>первый<s n="det"/><s n="ord"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 
 
 <!-- verbs -->
