@@ -165,7 +165,6 @@
 <e><p><l>қалам<s n="n"/></l><r>карандаш<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>профессор<s n="n"/></l><r>профессор<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 
-
 <!-- nouns imported from KazNU SQLite files through CSV  -->
 <e><p><l>азат жол<s n="n"/></l><r>абзац<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>өрік<s n="n"/></l><r>абрикос<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -9655,7 +9654,56 @@
 
 <!-- numerals -->
 
-    <e><p><l>жеті<s n="num"/></l>   <r>семь<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+   
+ <e><p><l>жеті<s n="num"/></l>   <r>семь<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+
+
+<e>       <p><l>нөл<s n="num"/></l>                    <r>ноль<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>бір<s n="num"/></l>                    <r>один<s n="num"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>екі<s n="num"/></l>                    <r>два<s n="num"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>екеу<s n="num"/><s n="subst"/></l>      <r>оба<s n="num"/><s n="m"/><s n="an"/><s n="pl"/></r></p></e>
+<e>       <p><l>үш<s n="num"/></l>                     <r>три<s n="num"/><s n="mfn"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>төрт<s n="num"/></l>                   <r>четыре<s n="num"/><s n="mfn"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>бес<s n="num"/></l>                    <r>пять<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>алты<s n="num"/></l>                   <r>шесть<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>жеті<s n="num"/></l>                   <r>семь<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>сегіз<s n="num"/></l>                  <r>восемь<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>тоғыз<s n="num"/></l>                  <r>девять<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он<s n="num"/></l>                     <r>десять<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он бір<s n="num"/></l>                  <r>одиннадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он екі<s n="num"/></l>                  <r>двенадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он үш<s n="num"/></l>                   <r>тринадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он төрт<s n="num"/></l>                 <r>четырнадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он бес<s n="num"/></l>                  <r>пятнадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он алты<s n="num"/></l>                 <r>шестнадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он жеті<s n="num"/></l>                 <r>семьнадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он сегіз<s n="num"/></l>                <r>восемнадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>он тоғыз<s n="num"/></l>                <r>девятнадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>жиырма<s n="num"/></l>                 <r>двадцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>отыз<s n="num"/></l>                   <r>тридцать<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>қырық<s n="num"/></l>                  <r>сорок<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>елу<s n="num"/></l>                   <r>пятьдесять<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>алпыс<s n="num"/></l>                 <r>шестьдесять<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>жетпіс<s n="num"/></l>                 <r>семьдесять<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>сексен<s n="num"/></l>                 <r>восемдесять<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>тоқсан<s n="num"/></l>                 <r>девяносто<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>жүз<s n="num"/></l>                    <r>сто<s n="num"/><s n="mfn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>екі<b/>жүз<s n="num"/></l>             <r>двести<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>үш<b/>йөз<s n="num"/></l>              <r>триста<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>төрт<b/>жүз<s n="num"/></l>            <r>четыреста<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>бес<b/>жүз<s n="num"/></l>             <r>пятьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>алты<b/>жүз<s n="num"/></l>            <r>шестьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>жеті<b/>жүз<s n="num"/></l>            <r>семьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>сегіз<b/>жүз<s n="num"/></l>           <r>восемьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>тоғыз<b/>жүз<s n="num"/></l>           <r>девятьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>мың<s n="num"/></l>                    <r>тысяча<s n="num"/><s n="f"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>он<b/>мың<s n="num"/></l>                  <r>десять<b/>тысяч<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>миллион<s n="num"/></l>                <r>миллион<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>миллиард<s n="num"/></l>               <r>миллиард<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>триллион<s n="num"/></l>               <r>триллион<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>триллиард<s n="num"/></l>              <r>триллиард<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+
+
 
 <!-- verbs -->
 <!-- This entry gives trouble: check later
