@@ -44,6 +44,7 @@
     <sdef n="mfn" 	c=""/> 
     <sdef n="aa" 	c="Одушевленное"/> 
     <sdef n="an" 	c="Одушевленное / неодушевленное"/> 
+    <sdef n="aor" 	c=""/> 
     <sdef n="nn" 	c="Неодушевленное"/> 
     <sdef n="impf" 	c=""/> 
     <sdef n="perf" 	c=""/> 
@@ -92,6 +93,7 @@
     <sdef n="acc" 	c=""/> 
     <sdef n="CD" 	c="Case to be determined"/> 
     <sdef n="top" 	c=""/> 
+    <sdef n="past" 	c=""/> 
     <sdef n="ger" 	c=""/> 
     <sdef n="pass" 	c=""/> 
     <sdef n="al" 	c=""/> 
@@ -134,18 +136,21 @@
     
 <pardef n="impf__verb">
   <e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
+  <e r="RL"><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
   <e r="LR"><p><l><s n="neg"/><s n="pres"/></l><r><s n="pres"/></r></p></e>
-  <e>       <p><l>a</l>          <r></r></p></e>
+  <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
+
 </pardef>
 <pardef n="perf__verb">
   <e r="LR"><p><l><s n="fut"/></l><r><s n="fut"/></r></p></e>
+  <e r="RL"><p><l><s n="aor"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="fut2"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="coop"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="coop"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="pass"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="pass"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
-  <e>       <p><l>a</l>          <r></r></p></e>
-  <e r="RL">       <p><l>a</l>          <r><s n="inf"/></r></p></e>
+  <e>       <p><l></l>          <r></r></p></e>
+  <e r="RL">       <p><l></l>          <r><s n="inf"/></r></p></e>
 
 </pardef>
 
@@ -154,6 +159,11 @@
 
   <section id="main" type="standard">
  <!-- verb -->
+<e>       <p><l>же<s n="v"/><s n="tv"/></l>           <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>поесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<!--
+<e>       <p><l>же<s n="v"/><s n="tv"/></l>           <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>поесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>-->
 <!-- v1 -->
 <e><p><l>сен<s n="v"/><s n="iv"/></l><r>верить<s n="vblex"/><s n="impf"/><s n="iv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>мұңа<s n="v"/><s n="iv"/></l><r>вздыхать<s n="vblex"/><s n="impf"/><s n="iv"/></r></p><par n="impf__verb"/></e>
@@ -2066,8 +2076,9 @@
 <e><p><l>толықтыр<s n="v"/><s n="iv"/></l><r>дополнять<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>түсір<s n="v"/><s n="iv"/></l><r>доставать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>түсір<s n="v"/><s n="iv"/></l><r>доставлять<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>же<s n="v"/><s n="iv"/></l><r>есть<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>же<s n="v"/><s n="iv"/></l><r>есть<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+
+
+
 <e><p><l>аңса<s n="v"/><s n="iv"/></l><r>жаждать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>күт<s n="v"/><s n="iv"/></l><r>ждать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>өрте<s n="v"/><s n="iv"/></l><r>жечь<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
