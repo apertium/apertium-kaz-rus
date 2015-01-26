@@ -26,6 +26,7 @@
     <sdef n="v" 	c="Глагол"/> 
     <sdef n="vblex" 	c="Глагол"/> 
     <sdef n="vbser" 	c="Глагол"/> 
+    <sdef n="ifi" 	c="Прошедшее время каз"/> 
     <sdef n="ij" 	c="Междометие или вводное слово"/> 
     <sdef n="post" 	c="Послелог"/> 
     <sdef n="postadv" 	c=""/> 
@@ -137,6 +138,7 @@
 <pardef n="impf__verb">
   <e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e r="RL"><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
+  <e r="RL"><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
   <e r="LR"><p><l><s n="neg"/><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
 
