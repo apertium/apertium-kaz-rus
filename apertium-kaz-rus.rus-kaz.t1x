@@ -13,6 +13,17 @@
     <def-cat n="sent">
       <cat-item tags="sent"/>
     </def-cat>
+
+ <def-cat n="pers-verb"> <!-- past and present tense -->
+      <cat-item tags="vblex.impf.pres.*"/>
+      <cat-item tags="vblex.impf.pres"/>
+      <cat-item tags="vblex.impf.past"/>
+     <cat-item tags="vblex.impf.past"/>
+    </def-cat>   
+    <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
+      <cat-item tags="vblex.inf"/> <!-- This may be dangerous and should be treated at tagger level -->      
+
+    </def-cat>
   </section-def-cats>
 
 
@@ -57,6 +68,15 @@
       <attr-item tags="mf"/>
       <attr-item tags="mfn"/>
     </def-attr>
+<def-attr n="a_kaz_verb"> 
+      <attr-item tags="v.tv"/>
+      <attr-item tags="v.iv"/>
+
+    </def-attr>
+ <def-attr n="a_tense">
+      <attr-item tags="pres"/>
+      <attr-item tags="past"/>
+    </def-attr> 
   </section-def-attrs>
 
 
@@ -65,7 +85,10 @@
     <def-var n="possessive"/>
     <def-var n="current_verb"/>
     <def-var n="NEW-noun_lu"/>    
-    <def-var n="case"/>  
+    <def-var n="case"/> 
+    <def-var n="tense"/>   
+<def-var n="verb-pers"/>
+<def-var n="verb-nbr"/>
   </section-def-vars>
 
   <section-def-macros>
@@ -154,6 +177,57 @@
          </otherwise>
       </choose>
    </def-macro>
+
+<def-macro n="default-nbr-pers" npar="0">
+    <choose>
+     <when>
+       <test>
+         <equal><var n="verb-pers"/><lit v=""/></equal></test>
+      <let>
+          <var n="verb-pers"/><lit-tag v="p3"/>
+      </let>
+     </when>
+    </choose>
+    <choose>
+     <when>
+       <test>
+         <equal><var n="verb-nbr"/><lit v=""/></equal></test>
+      <let>
+          <var n="verb-nbr"/><lit-tag v="sg"/>
+      </let>
+     </when>
+    </choose>
+</def-macro>    
+
+
+
+<def-macro n="NEW-gen-simple-verb" npar="1">  
+
+<out>
+      <chunk name="pers-verb">
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="6"/>
+          <lit-tag v="4"/>
+          <lit-tag v="5"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+          <lit-tag v="7"/>
+        </lu>
+      </chunk>
+        </out>
+</def-macro>
+
 
   </section-def-macros>
 
@@ -270,6 +344,54 @@
   </out>
  </action>
 </rule>
+
+<!-- Я ем\ел-->
+
+<rule comment="NEW RULE: verb"> 
+  <pattern>
+    <pattern-item n="pers-verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+
+      <when>
+        <test>
+          <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="pres"/>
+          </equal>
+        </test>
+        <let><var n="tense"/><lit-tag v="aor"/></let>
+      <call-macro n="NEW-gen-simple-verb">
+         <with-param pos="1"/> 
+     </call-macro>
+
+      </when>
+
+      <when>
+        <test>
+          <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="past"/>
+          </equal>
+        </test>
+        <let><var n="tense"/><lit-tag v="ifi"/></let>
+      <call-macro n="NEW-gen-simple-verb">
+         <with-param pos="1"/> 
+     </call-macro>
+      </when>
+
+      <otherwise>
+        <let><var n="tense"/><lit-tag v="aor"/></let>
+      <call-macro n="NEW-gen-simple-verb">
+         <with-param pos="1"/> 
+     </call-macro>
+      </otherwise> 
+    </choose>
+  </action>
+</rule>
+
 
 
 

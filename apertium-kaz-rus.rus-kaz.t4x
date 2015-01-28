@@ -219,18 +219,19 @@
        <pattern-item n="v"/>
     </pattern>
     <action>
-      <choose><!--formality patch-->
+<!--
+      <choose>
           <when>
-            <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test>  <!-- if we generate no formality, add it -->
+            <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test>  
             <let><clip pos="1" side="tl" part="a_pers"/><lit-tag v="p2.frm"/></let>
           </when>
  	</choose>
        <choose>
           <when>
-            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px2sg"/></equal></test>  <!-- if we generate no formality, add it -->
+            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px2sg"/></equal></test>  
             <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px2sg.frm"/></let>
           </when>
-        </choose>
+        </choose>-->
      <choose>
           <when>
             <test>

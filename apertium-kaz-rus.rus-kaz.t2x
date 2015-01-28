@@ -9,35 +9,78 @@
     <def-cat n="SENT">
       <cat-item tags="SENT"/>
     </def-cat>
+ <def-cat n="VP">
+      <cat-item tags="VP"/>
+      <cat-item tags="VP.*"/>
+    </def-cat>
   </section-def-cats>
 
  <!-- copied from .t1x -->
  <section-def-attrs>
-    <def-attr n="a_nom">
-      <attr-item tags="n"/>
-    </def-attr>
-    <def-attr n="a_case">
-      <attr-item tags="nom"/>
-      <attr-item tags="gen"/>
-      <attr-item tags="dat"/>
-      <attr-item tags="acc"/>
-      <attr-item tags="abl"/>
-      <attr-item tags="loc"/>
-      <attr-item tags="sim"/> 
-      <attr-item tags="ins"/>
-      <attr-item tags="prp"/>
-      <attr-item tags="CD"/>
+
+    <def-attr n="a_phrase">
+      <attr-item tags="GenP"/>
+      <attr-item tags="NP"/>
+      <attr-item tags="PP"/>
+      <attr-item tags="VP"/>
+      <attr-item tags="AdjP"/>
+      <attr-item tags="SupP"/>
+      <attr-item tags="IF"/>
     </def-attr>
     <def-attr n="a_nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
     </def-attr>
-    <def-attr n="a_anim">
-      <attr-item tags="aa"/>
-      <attr-item tags="an"/>
-      <attr-item tags="nn"/>
+    <def-attr n="a_cas">
+      <attr-item tags="nom"/>
+      <attr-item tags="acc"/>
+      <attr-item tags="dat"/>
+      <attr-item tags="gen"/>
+      <attr-item tags="ins"/>
+      <attr-item tags="loc"/>
+      <attr-item tags="abl"/>
+      <attr-item tags="CD"/>
     </def-attr>
-   <def-attr n="a_gender">
+    <def-attr n="a_possessive"> <!-- check if complete -->
+      <attr-item tags="PXD"/> <!-- to be determined -->
+      <attr-item tags="px3sp"/>
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
+    </def-attr>
+    <def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+      <attr-item tags="PD"/>
+    </def-attr>
+    <def-attr n="a_neg">
+      <attr-item tags="neg"/>
+      <attr-item tags="NXD"/>
+    </def-attr>
+ <def-attr n="a_adj">
+      <attr-item tags="subst"/>
+    </def-attr>
+    <def-attr n="a_tense"> <!-- CAREFUL: the list is not complete -->
+      <attr-item tags="aor"/>
+      <attr-item tags="ifi"/>
+      <attr-item tags="prc_perf"/>
+      <attr-item tags="past"/> 
+      <attr-item tags="ger_past"/>           
+      <attr-item tags="pres"/>
+      <attr-item tags="gna_cond"/>
+      <attr-item tags="ger_impf"/>
+      <attr-item tags="fut"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="TD"/>  <!-- For the future? -->
+    </def-attr>
+    <def-attr n="a_pass">
+       <attr-item tags="pass"/>
+    </def-attr>
+ <def-attr n="a_gender">
       <attr-item tags="m"/>
       <attr-item tags="f"/>
       <attr-item tags="nt"/>
@@ -49,8 +92,16 @@
   <section-def-vars>
     <def-var n="number"/>
     <def-var n="POST"/>
+    <def-var n="Coma"/>
+    <def-var n="possessive"/>
+    <def-var n="possessive1"/>
+    <def-var n="possessive2"/>
+    <def-var n="formality"/>
+    <def-var n="caseFirstWord"/>
   </section-def-vars>
+   
 
+ 
 <!-- not used,from Cheboksary templates, commented out
   <section-def-macros>
     <def-macro n="test1" npar="1">
@@ -79,6 +130,36 @@
         </out>
       </action>
     </rule>
+
+<rule comment="NEW RULE: agree person and number NP VP">
+    <!-- propagates person and number from NP to VP -->
+     <pattern>
+       <pattern-item n="NP"/>
+       <pattern-item n="VP"/>
+     </pattern>
+     <action>
+      <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <lit-tag v="VP"/>
+            <clip pos="1" part="a_nbr"/> <!-- agree number -->
+            <clip pos="1" part="a_pers"/> <!-- agree person -->
+            <clip pos="2" part="a_tense"/>
+            <clip pos="2" part="a_possessive"/> 
+            <clip pos="2" part="a_pass"/>
+            <clip pos="2" part="a_neg"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk> 
+      </out>
+     </action>
+    </rule>
+
   </section-rules>
 </interchunk>
 

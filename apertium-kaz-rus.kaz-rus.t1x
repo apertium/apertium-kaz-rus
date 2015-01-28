@@ -322,6 +322,7 @@
       <attr-item tags="nt"/>
       <attr-item tags="mf"/>
       <attr-item tags="mfn"/>
+      <attr-item tags="GN"/>
     </def-attr>
     <def-attr n="a_anim">
       <attr-item tags="aa"/>
@@ -353,6 +354,7 @@
     <def-attr n="a_nbr">
       <attr-item tags="sg"/>
       <attr-item tags="pl"/>
+      <attr-item tags="ND"/>
     </def-attr>
     <def-attr n="a_pers">
       <attr-item tags="p1"/>
@@ -859,12 +861,16 @@
 	  <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
 	</when>
       </choose>
+                          <let><var n="gender"/><lit-tag v="3"/></let>
       <choose>
         <when>
           <test>
-            <equal><clip pos="1" side="tl" part="a_tense"/><lit-tag v="past"/></equal>
+            <equal><clip pos="1" side="tl" part="a_tense"/><lit-tag v="ifi"/></equal>
           </test>
 	  <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+
+</when>
+</choose>
 	  <choose>
 	    <when>
 	      <test>
@@ -872,12 +878,9 @@
 	      </test>
               <let><var n="gender"/><lit-tag v="mfn"/></let>
             </when>
-            <otherwise>
-              <let><var n="gender"/><lit-tag v="m"/></let>
- 	    </otherwise>
-	  </choose>
-	</when>
-      </choose>
+</choose>
+                
+              <let><var n="number"/><lit-tag v="4"/></let>
       <let>
         <clip pos="1" side="tl" part="whole"/>
         <concat>
@@ -885,8 +888,8 @@
             <clip pos="1" side="tl" part="a_verb"/>
             <clip pos="1" side="tl" part="a_tense"/>
             <var n="gender"/>
-            <clip pos="1" side="tl" part="a_pers"/>
-            <clip pos="1" side="tl" part="a_nbr"/>
+            <var n="number"/>
+
             <clip pos="1" side="tl" part="lemq"/>
         </concat>
       </let>
@@ -2124,10 +2127,12 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <with-param pos="1"/>
         </call-macro>
         <out>
-          <chunk name="v">
+          <chunk name="v-neg-fin">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="sl" part="a_trans"/></tag>
+              <tag><lit-tag v="GN"/></tag>
+              <tag><lit-tag v="ND"/></tag>
             </tags>
             <var n="negation"/>
             <lu>
@@ -2158,7 +2163,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 	  </when>
 	</choose>
         <out>
-          <chunk name="v">
+          <chunk name="verb-fin-fut-plan">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_trans"/></tag>
@@ -2222,7 +2227,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <with-param pos="1"/>
             </call-macro>
             <out>
-              <chunk name="v">
+              <chunk name="verb-nonfin">
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
                 </tags>

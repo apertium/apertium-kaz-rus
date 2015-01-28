@@ -71,12 +71,30 @@
       <attr-item tags="CD"/>
       <attr-item tags="2"/>
     </def-attr>
-
+    <def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+      <attr-item tags="PD"/>
+    </def-attr>
+ <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="sp"/>
+      <attr-item tags="ND"/>
+    </def-attr>
     <def-attr n="a_trans">
       <attr-item tags="tv"/>
       <attr-item tags="iv"/>
     </def-attr>
-
+<def-attr n="a_gender">
+      <attr-item tags="m"/>
+      <attr-item tags="f"/>
+      <attr-item tags="nt"/>
+      <attr-item tags="mf"/>
+      <attr-item tags="mfn"/>
+      <attr-item tags="GN"/>
+    </def-attr>
     <def-attr n="a_neg">
       <attr-item tags="neg"/>
     </def-attr>
@@ -170,6 +188,38 @@
         </out>
       </action>
     </rule>      
+
+
+<rule comment="REGLA: SN SV -> SN SV">
+      <!--
+      INPUT:  ^n<SN><nom>{^Они<prn><pers><p3><mfn><pl><2>$}$ ^v<SV><tv>{^поесть<vblex><perf><past><m><sg>$}$^dot<SENT>{^.<sent>$}$
+
+      OUTPUT: ^n<SN><nom>{^Они<prn><pers><p3><mfn><pl><2>$}$ ^v<SV><tv>{^поесть<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+
+      -->
+      <pattern>
+        <pattern-item n="SN"/>
+        <pattern-item n="SV"/>
+      </pattern>
+      <action>
+	
+	    <let><clip pos="2" part="a_gender"/><lit-tag v="mfn"/></let>
+	<let><clip pos="2" part="a_nbr"/><lit-tag v="pl"/></let>
+	<let><clip pos="2" part="a_pers"/><lit v=""/></let>
+	
+        <out>
+          <chunk>
+	    <clip pos="1" part="whole"/>
+          </chunk>
+	 
+	  <b/>
+          <chunk>
+            <clip pos="2" part="whole"/>
+          </chunk>
+        </out>
+      </action>
+    </rule>      
+
 
     <rule comment="REGLA: SN SN PP SV -> SN SN SV PP">
       <!--
