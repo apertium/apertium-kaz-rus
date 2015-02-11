@@ -1526,7 +1526,7 @@
 <e><p><l>ашкөздену<s n="v"/><s n="iv"/></l><r>хапать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ашуландыр<s n="v"/><s n="iv"/></l><r>злить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ая<s n="v"/><s n="iv"/></l><r>беречь<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>әзірле<s n="v"/><s n="iv"/></l><r>готовить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>әзірле<s n="v"/><s n="tv"/></l><r>готовить<s n="vblex"/><s n="impf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>әйгіле<s n="v"/><s n="iv"/></l><r>извещать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>әлпеште<s n="v"/><s n="iv"/></l><r>лелеять<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>әңгімеле<s n="v"/><s n="iv"/></l><r>повествовать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
@@ -1546,7 +1546,7 @@
 <e><p><l>белгіле<s n="v"/><s n="iv"/></l><r>назначать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>бетте<s n="v"/><s n="iv"/></l><r>направлять<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>бопсала<s n="v"/><s n="iv"/></l><r>шантажировать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>боя<s n="v"/><s n="iv"/></l><r>красить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>боя<s n="v"/><s n="tv"/></l><r>красить<s n="vblex"/><s n="impf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>бөгелт<s n="v"/><s n="iv"/></l><r>задерживать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>будандастыр<s n="v"/><s n="iv"/></l><r>гибридизировать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>буындыр<s n="v"/><s n="iv"/></l><r>душить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
