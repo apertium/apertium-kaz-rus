@@ -13,6 +13,7 @@
 -->
 <dictionary>
   <alphabet></alphabet>
+
   <sdefs>
     <sdef n="n" 	c="Имя существительное"/> 
     <sdef n="np" 	c="Имя собственное"/> 
@@ -12189,6 +12190,8 @@
 <e><p><l>кішіпейіл<s n="adj"/></l><r>скромный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>кішірейген<s n="adj"/></l><r>уменьшенный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>кішірейтілген<s n="adj"/></l><r>уменьшенный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<!-- Ainur-adjectives -->
+
 <e><p><l>қаба<s n="adj"/></l><r>густой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қабаған<s n="adj"/></l><r>злой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қабақты<s n="adj"/></l><r>густобровый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -12262,7 +12265,7 @@
 <e><p><l>қалтылдақ<s n="adj"/></l><r>зыбкий<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қалтыраған<s n="adj"/></l><r>трепетный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қалшылдаған<s n="adj"/></l><r>судорожный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
-<e><p><l>қылың<s n="adj"/></l><r>густой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>қалың<s n="adj"/></l><r>густой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қалыпты<s n="adj"/></l><r>нормальный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қамалған<s n="adj"/></l><r>заключенный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қамқалы<s n="adj"/></l><r>парчовый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -13828,6 +13831,8 @@
 <e><p><l>эстетикалық<s n="adj"/></l><r>эстетический<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>этикалық<s n="adj"/></l><r>этический<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>этнографиялық<s n="adj"/></l><r>этнографический<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+
+
 
 <!-- numerals -->
 
