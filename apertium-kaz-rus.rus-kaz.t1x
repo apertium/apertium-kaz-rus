@@ -800,6 +800,47 @@
  </action>
 </rule>
 
+<!-- RULE noun`s noun ex: книга ученик -->
+<rule comment="NEW RULE: noun1 noun2">  <!-- football player-->
+  <pattern>
+    <pattern-item n="nom"/>
+ <pattern-item n="nom"/>
+  </pattern>
+  <action>
+
+    <out>
+    <chunk name="noun1-noun2">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_nbr"/>
+     <lit-tag v="gen"/>
+    </lu>
+   
+<b pos="1"/>
+            <lu>  <!-- build in situ for the time being -->
+               <clip pos="1" side="tl" part="lem"/> 
+               <clip pos="1" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <!-- no need to link person -->
+                <lit-tag v="px3sp"/><!-- for possessive, just in case -->
+               <lit-tag v="5"/> <!-- for case -->
+            </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+
+
 <!-- Я ем\ел-->
 
 <rule comment="NEW RULE: verb"> 
