@@ -28,10 +28,9 @@
    <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
-    </def-cat>
-    <def-cat n="num-det">
-      <cat-item tags="num"/>
       <cat-item tags="num.ord"/>
+      <cat-item tags="det.ord"/>
+      <cat-item tags="det.ord.*"/>
       <cat-item tags="num.itg"/>
     </def-cat>
 
@@ -708,36 +707,7 @@
       </action>
     </rule>
 
-<!-- editing a rule stolen from apertium-eng-kaz -->
-<rule comment="RULE: noun">  
-  <pattern>
-    <pattern-item n="nom"/>
-  </pattern>
-  <action>
-  <call-macro n="NEW-build-noun-lu-2-4-5">
-       <with-param pos="1"/>
-  </call-macro> 
-  <call-macro n="select-case">
-       <with-param pos="1"/>
-  </call-macro> 
 
-    <let> <var n="possessive"/><lit-tag v="PXD"/></let>
-    <out>
-    <chunk name="nom">
-    <tags>
-    <tag><lit-tag v="NP"/></tag>
-    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
-    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-    <tag><var n="possessive"/></tag> <!-- possessor placeholder -->
-    <tag><var n="case"/></tag> <!-- case placeholder -->
-    </tags>
-    <lu>
-      <var n="NEW-noun_lu"/>
-    </lu>
-    </chunk>
-    </out>
-  </action>
-</rule>
 
 
 <rule comment="NEW RULE: subj-pron">
@@ -1205,6 +1175,12 @@
        <with-param pos="2"/>
   </call-macro>  <!-- noun is built in singular as the NP contains numerals -->
 <call-macro n="build-num-lu"><with-param pos="1"/></call-macro> 
+<!--<choose>
+                <when>
+                   <test><equal><clip part="a_case" pos="1" side="tl"/><lit-tag v="ins"/></equal></test>
+                   <let><var n="case"/><lit-tag v="nom"/></let>
+                </when>
+</choose>-->
     <out>
     <chunk name="num-noun">
     <tags>
@@ -1212,7 +1188,7 @@
     <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
     <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
     <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
-    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    <tag><clip part="a_case" pos="1" side="sl"/></tag> <!-- case placeholder -->
     </tags>
     <lu>
       <var n="num_lu"/>
@@ -1323,6 +1299,37 @@
 
 
 <!-- rule for NUM the end-->
+
+<!-- editing a rule stolen from apertium-eng-kaz -->
+<rule comment="RULE: noun">  
+  <pattern>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="1"/>
+  </call-macro> 
+  <call-macro n="select-case">
+       <with-param pos="1"/>
+  </call-macro> 
+
+    <let> <var n="possessive"/><lit-tag v="PXD"/></let>
+    <out>
+    <chunk name="nom">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><var n="possessive"/></tag> <!-- possessor placeholder -->
+    <tag><var n="case"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+      <var n="NEW-noun_lu"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
 
 
   </section-rules>
