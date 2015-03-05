@@ -1,6 +1,6 @@
-DIX=/home/ubuntu/Source/apertium-rus/apertium-rus.rus.dix
-BIN=/home/ubuntu/Source/apertium-kaz-rus/kaz-rus.automorf.bin
-cat /home/ubuntu/Source/apertium-kaz-rus/texts/rus.txt | cut -f2 | grep -v '>(' | sed 's/&lt;/</g' | sed 's/&gt;/>/g' | apertium-destxt | lt-proc -w $BIN | apertium-retxt | sed 's/\$\W*\^/$\n^/g' > /tmp/rus.coverage.txt
+DIX=/home/apertium/apertium-testing/apertium-rus/apertium-rus.rus.dix
+BIN=/home/apertium/apertium-testing/apertium-kaz-rus/kaz-rus.automorf.bin
+cat /home/apertium/apertium-testing/apertium-kaz-rus/texts/rus.txt | cut -f2 | grep -v '>(' | sed 's/&lt;/</g' | sed 's/&gt;/>/g' | apertium-destxt | lt-proc -w $BIN | apertium-retxt | sed 's/\$\W*\^/$\n^/g' > /tmp/rus.coverage.txt
 
 EDICT=`cat $DIX | grep '<e lm' | wc -l`;
 EPAR=`cat $DIX | grep '<pardef n' | wc -l`;
