@@ -1,0 +1,13 @@
+nptype:loc,ant,al
+gender:m,f,mf,GD,nt
+numberat:sg,pl,sp,ND
+person:p1,p2,p3
+advtype:itg:adv
+prntype:itg,enc,pro,tn:prn
+verbtime:inf,ger,pp,pri,ifi,pii,fti,cni,prs,pis,fts,imp
+determinertype:def,ind,dem,pos:det
+adjtype:ind,itg,pos,sup:adj
+reltype:aa,an,nn,adv:rel
+ntype:acr
+isrefadv:ref,adv,pos:prn
+isv2:v2

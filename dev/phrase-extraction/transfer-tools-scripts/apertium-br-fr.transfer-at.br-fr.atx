@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<transfer-at source="Breton" target="French">
+<source>
+  <lexicalized-words>
+   <lexicalized-word tags="cnjsub"/>
+    <lexicalized-word tags="cnjcoo"/>
+     <lexicalized-word tags="det.*"/>
+     
+    <lexicalized-word tags="preadv"/>
+    <lexicalized-word tags="predet"/> 
+    <lexicalized-word tags="predet.*"/> 
+    <lexicalized-word tags="pr"/>
+
+    <lexicalized-word tags="prn.*"/>
+    <lexicalized-word tags="rel.*"/>
+    
+  
+    <lexicalized-word tags="vaux.*" />
+    <lexicalized-word tags="vbser.*" />
+    <lexicalized-word tags="vbdo.*" />
+    <lexicalized-word tags="vbhaver.*"/>
+    <lexicalized-word tags="vbmod.*" />    
+  </lexicalized-words>
+</source>
+<target>
+  <lexicalized-words>
+<lexicalized-word tags="cnjsub"/>
+    <lexicalized-word tags="cnjcoo"/>
+    <lexicalized-word tags="det.*"/>
+    <lexicalized-word tags="preadv"/>
+    <lexicalized-word tags="predet"/> 
+    <lexicalized-word tags="predet.*"/> 
+    <lexicalized-word tags="pr"/>
+
+    <lexicalized-word tags="prn.*"/>
+    <lexicalized-word tags="rel.*"/>
+    
+    <lexicalized-word tags="vbhaver.*"/>
+    <lexicalized-word tags="vbmod.*" />
+
+    <lexicalized-word tags="adj.itg.*"/>
+    
+     <lexicalized-word tags="vbser.*"/> 
+  </lexicalized-words>
+</target>
+</transfer-at>

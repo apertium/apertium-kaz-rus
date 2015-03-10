@@ -1,0 +1,15 @@
+adj:isadjsint,adjtype,gender,numberat
+adv:advtype
+det:determinertype,gender,numberat,synlabel
+n:ntype,gender,numberat
+np:nptype,gender,numberat
+num:numtype,gender,numberat
+predet:gender,numberat
+prn:prntype,isrefadv,person,gender,numberat,synlabel
+rel:reltype,gender,numberat
+vbhaver:verbtime,person,gender,numberat,synlabel
+vblex:istvv,verbtime,person,gender,numberat,isprvb,synlabel
+vbmod:verbtime,person,gender,numberat,synlabel
+vbser:verbtime,person,gender,numberat,synlabel
+vbloc:verbtime,person,gender,numberat,synlabel
+vpart:vtype

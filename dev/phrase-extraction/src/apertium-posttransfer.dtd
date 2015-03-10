@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- DTD for the apertium-posttransfer
+     2007.04.17. Felipe Sanchez Martinez
+-->
+
+<!-- root element must contain one or more multilexica units (mlu) -->
+<!ELEMENT posttransfer (mlu+)>
+
+<!-- a multilexical unit must coitain at lest 2 lexical units (lu) -->
+<!ELEMENT mlu (lu+)>
+
+<!-- lexical unit (lu) has a mandatory argument defining the 
+     sequence of tags defining it -->
+<!ELEMENT lu EMPTY>
+<!ATTLIST lu tags CDATA #REQUIRED>

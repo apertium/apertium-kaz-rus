@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- DTD for the apertium-transfer-tools.
+     2007.03.28. Felipe Sánchez Martínez
+-->
+
+<!ELEMENT transfer-at (source, target)>
+<!ATTLIST transfer-at source CDATA #REQUIRED
+                      target CDATA #REQUIRED>
+
+<!-- 'transfer-at' is the root element with two mandatory attributes
+     'source' and 'target'.  -->
+
+<!ELEMENT source (lexicalized-words)>
+<!ELEMENT target (lexicalized-words)>
+
+<!-- 'source' and 'target' sections are used to define the close-words
+     to be used in each case.  -->
+
+<!ELEMENT lexicalized-words (lexicalized-word+)>
+
+<!-- 'lexicalized-words' section defines the set of lexicalized words
+     to be used when automatically defining the word classes used to
+     extract the alignment templates.  -->
+
+<!ELEMENT lexicalized-word EMPTY>
+<!ATTLIST lexicalized-word tags CDATA #REQUIRED
+	                   lemma CDATA #IMPLIED>

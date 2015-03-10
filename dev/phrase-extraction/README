@@ -1,0 +1,138 @@
+apertium-transfer-tools
+
+This software is GPL. It is provided as is, WITHOUT any guarantee, in
+the hope that it will be useful.
+
+(c) 2006-2007 Felipe Sánchez Martínez
+---------------------------------------------------------------------
+
+This package provides a set of tools for the automatic generation of
+shallow-transfer machine translation (MT) rules from parallel
+corpora. Transfer rules are generated from alignment templates, like
+those used in statistical machine translation, that have been
+extracted from parallel corpora and extended with a set of
+restrictions controlling their application. The generate transfer
+rules (in XML format) can be directly used by the Apertium MT platform
+(http://www.apertium.org). Although this package is aimed at the
+generation of Apertium transfer rules it can be adapted to generate
+shallow-transfer rules for other MT platforms. Moreover, some of the
+tools it provides can be used for other purposes such as the
+extraction of bilingual phrase pairs or the symmetrization of
+previously computed alignments. This package depends on the GIZA++
+toolkit (http://www.fjoch.com/GIZA++.html) to compute word
+alignments; nevertheless, it can be easily adapted to use other
+aligners.
+
+Comments on this software are VERY welcome, do not hesitate to write
+me for comments, feedback or just to tell me that you found this
+software useful.
+
+If you use this software for research, or for any other particular
+purpose, I would be very grateful if you could cite one or both of the
+following research papers describing this software:
+
+* Felipe Sánchez-Martínez, Mikel L. Forcada. "Automatic induction of
+  shallow-transfer rules for open-source machine translation". In 
+  Proceedings of the 11th Conference on Theoretical and Methodological 
+  Issues in Machine Translation (TMI 2007) , p. 181-190, 
+  September 7-9, 2007, Skövde, Sweden.
+
+  @InProceedings{sanchezmartinez07c,
+  author = {S{\'{a}}nchez-Mart{\'{\i}}nez, Felipe
+            and Forcada, Mikel L.},
+  title = {Automatic induction of shallow-transfer rules 
+           for open-source machine translation},
+  booktitle = {Proceedings of the 11th Conference on Theoretical 
+               and Methodological Issues in Machine Translation (TMI 2007)},
+  year      = {2007},
+  month     = {September},
+  editor    = {Andy Way and Barbara Gawronska},
+  volume    = {2007:1},
+  series    = {},
+  pages        = {181--190},
+  organization = {},
+  publisher    = {Skövde University Studies in Informatics},
+  location     = {Skövde, Sweden},
+  issn         = {1653-2325},
+  isbn         = {978-91-977095-0-7},
+  }
+
+* Felipe Sánchez-Martínez, Hermann Ney. "Using alignment templates to
+  infer shallow-transfer machine translation rules". In Lecture Notes in
+  Computer Science 4139 (Advances in Natural Language Processing,
+  Proceedings of FinTAL 2006, 5th International Conference on Natural
+  Language Processing), p. 756-767, August 23-25, 2006, Turku,
+  Finland.
+
+  @incollection{sanchezmartinez06,
+  author    = {S{\'{a}}nchez-Mart{\'{\i}}nez, Felipe 
+               and Ney, Hermann},
+  title     = {Using Alignment Templates to Infer Shallow-Transfer 
+               Machine Translation Rules},
+  booktitle = {Advances in Natural Language Processing, Proceedings of 
+               5th International Conference on Natural Language 
+               Processing {FinTAL}},
+  publisher = {Springer-Verlag},
+  year      = {2006},
+  month     = {August},
+  volume  = {4139},
+  series  = {Lecture Notes in Computer Science},
+  pages   = {756--767},
+  address = {},
+  note    = {},
+  location     = {Turku, Finland},
+  copyright    = {Springer-Verlag},
+  isbn         = {3-540-37334-9},
+  issn         = {0302-9743},
+  }
+
+
+
+Contact information:
+---------------------------------------------------------------------
+
+Felipe Sánchez Martínez
+
+Departament de Llenguatges i Sistemes Informàtics
+Universitat d'Alacant
+E-03071 Alacant (Spain)
+
+fsanchez@dlsi.ua.es
+http://www.dlsi.ua.es/~fsanchez
+
+Installation
+---------------------------------------------------------------------
+To install apertium-transfer-tools you need to have installed the
+following packages:
+
+libxml2, at least version 2.6.17 
+lttoolbox, at least version 3.0.0
+apertium, at least version 3.0.0
+
+Once you have all the required software installed, install
+apertium-transfer-tools in the common way:
+
+$ ./configure && make
+
+and as a root
+
+# make install
+
+For more information on each program execute it without parameters.
+
+ Good luck!
+
+Acknowledgements
+---------------------------------------------------------------------
+Software funded by the Spanish Ministry of Science and Technology
+through project TIC2003-08681-C02-01, and by the Spanish Ministry of
+Education and Science and the European Social Found through research
+grant BES-2004-4711.
+
+References
+---------------------------------------------------------------------
+Please visit http://www.dlsi.ua.es/~fsanchez
+
+Example of use
+---------------------------------------------------------------------
+Have a look at the 'example' directory

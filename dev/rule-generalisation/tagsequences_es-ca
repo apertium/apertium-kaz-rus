@@ -1,0 +1,14 @@
+adj:adjtype,gender,numberat
+adv:advtype
+det:determinertype,gender,numberat
+n:ntype,gender,numberat
+np:nptype
+predet:gender,numberat
+prn:prntype,isrefadv,person,gender,numberat
+rel:reltype,gender,numberat
+vbhaver:verbtime,person,gender,numberat
+vblex:verbtime,person,gender,numberat
+vaux:verbtime,person,gender,numberat
+vbmod:verbtime,person,gender,numberat
+vbser:verbtime,person,gender,numberat
+num:gender,numberat

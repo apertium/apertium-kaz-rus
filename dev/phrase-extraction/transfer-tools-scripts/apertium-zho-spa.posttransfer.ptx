@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<posttransfer>
+<mlu>
+  <lu tags="vblex.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+<mlu>
+  <lu tags="vblex.*"/>
+  <lu tags="prn.enc.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+
+<mlu>
+  <lu tags="vbser.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+<mlu>
+  <lu tags="vbser.*"/>
+  <lu tags="prn.enc.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+
+<mlu>
+  <lu tags="vbhaver.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+<mlu>
+  <lu tags="vbhaver.*"/>
+  <lu tags="prn.enc.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+
+<mlu>
+  <lu tags="vbmod.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+<mlu>
+  <lu tags="vbmod.*"/>
+  <lu tags="prn.enc.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+
+<mlu>
+  <lu tags="vaux.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+<mlu>
+  <lu tags="vaux.*"/>
+  <lu tags="prn.enc.*"/>
+  <lu tags="prn.enc.*"/>
+</mlu>
+</posttransfer>

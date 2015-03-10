@@ -1,0 +1,16 @@
+adjtype:comp,pos,sup:adj
+isadjsint:sint:adj
+advtype:itg:adv
+determinertype:def,ind,dem,itg,ord,pos,qnt:det
+ntype:acr
+nptype:loc,ant,al,cog
+numtype:ord,percent,mon:num
+isprnref:ref:prn
+prntype:itg,obj,pos,subj,tn,enc,pro:prn
+reltype:aa,an,nn,adv:rel
+verbtime:inf,past,pres,subs,pprs,ger,pp,pri,ifi,pii,fti,cni,prs,pis,fts,imp
+isvbpron:pron,sep
+isvbneg:neg
+gender:m,f,mf,GD,nt
+numberat:sg,pl,sp,ND
+person:p1,p2,p3

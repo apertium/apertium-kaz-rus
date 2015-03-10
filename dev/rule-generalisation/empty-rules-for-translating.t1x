@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transfer>
+<section-def-cats>
+  <def-cat n="CAT__ND_GD">
+    <cat-item tags="*.mf.*"/>
+    <cat-item tags="*.sp.*"/>
+    <cat-item tags="*.mf.sp.*"/>
+    <cat-item tags="*.sp.mf.*"/>
+    <cat-item tags="*.mf.*.sp.*"/>
+    <cat-item tags="*.sp.*.mf.*"/>
+  </def-cat>
+<def-cat n="CAT__HASGENDER_NUMBER"><cat-item tags="*.m.*"/><cat-item tags="*.f.*"/><cat-item tags="*.sg.*"/><cat-item tags="*.pl.*"/></def-cat><def-cat n="sent"><cat-item tags="sent"/></def-cat>
+</section-def-cats>
+<section-def-attrs>
+  <def-attr n="gen">
+    <attr-item tags="m"/>
+    <attr-item tags="f"/>
+    <attr-item tags="mf"/>
+    <attr-item tags="GD"/>
+  </def-attr>
+  <def-attr n="num">
+    <attr-item tags="sg"/>
+    <attr-item tags="pl"/>
+    <attr-item tags="sp"/>
+    <attr-item tags="ND"/>
+  </def-attr>
+</section-def-attrs>
+<section-def-vars>
+  <def-var n="genre"/>
+  <def-var n="number"/>
+</section-def-vars>
+<section-def-macros>
+<def-macro n="f_bcond" npar="2">
+<!--To test whether a blank contains format information.
+If no format information is present it is removed. -->
+  <choose>
+    <when>
+      <test>
+        <not>
+	 <equal>
+	   <b pos="1"/>
+	   <lit v=" "/>
+	 </equal>
+	 </not>
+      </test>
+      <out>
+        <b pos="1"/>
+      </out>
+    </when>
+  </choose>
+</def-macro>
+<def-macro n="f_genre_num" npar="1">
+<!--To set the global value storing the TL genre of the last seen word. -->
+  <choose>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="gen"/>
+          <lit-tag v="m"/>
+        </equal>
+      </test>
+      <let><var n="genre"/><lit-tag v="m"/></let>
+    </when>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="gen"/>
+          <lit-tag v="f"/>
+        </equal>
+      </test>
+      <let><var n="genre"/><lit-tag v="f"/></let>
+    </when>
+    </choose>
+    <choose>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="num"/>
+          <lit-tag v="sg"/>
+        </equal>
+      </test>
+      <let><var n="number"/><lit-tag v="sg"/></let>
+    </when>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="num"/>
+          <lit-tag v="pl"/>
+        </equal>
+      </test>
+      <let><var n="number"/><lit-tag v="pl"/></let>
+    </when>
+  </choose>
+</def-macro>
+<def-macro n="f_set_genre_num" npar="1">
+<!--To set the genre of those words with GD, and the number of those words with ND. -->
+<!--This is only used in no alignment template at all is applied. -->
+  <choose>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="gen"/>
+          <lit-tag v="GD"/>
+        </equal>
+      </test>
+      <choose>
+        <when>
+          <test>
+            <equal>
+              <var n="genre"/>
+              <lit-tag v="f"/>
+            </equal>
+          </test>
+          <let><clip pos="1" side="tl" part="gen"/><lit-tag v="f"/></let>
+        </when>
+        <otherwise>
+          <let><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></let>
+        </otherwise>
+      </choose>
+    </when>
+  </choose>
+  <choose>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="num"/>
+          <lit-tag v="ND"/>
+        </equal>
+      </test>
+      <choose>
+        <when>
+          <test>
+            <equal>
+              <var n="number"/>
+              <lit-tag v="pl"/>
+            </equal>
+          </test>
+          <let><clip pos="1" side="tl" part="num"/><lit-tag v="pl"/></let>
+        </when>
+        <otherwise>
+          <let><clip pos="1" side="tl" part="num"/><lit-tag v="sg"/></let>
+        </otherwise>
+      </choose>
+    </when>
+  </choose>
+</def-macro>
+</section-def-macros>
+<section-rules>
+<rule>
+  <pattern>
+    <pattern-item n="CAT__ND_GD"/>
+  </pattern>
+  <action>
+  <call-macro n="f_set_genre_num">
+    <with-param pos="1"/>
+  </call-macro>
+  <out>
+    <lu>
+      <clip pos="1" side="tl" part="whole"/>
+    </lu>
+  </out>
+  </action>
+</rule>
+<rule><pattern><pattern-item n="CAT__HASGENDER_NUMBER"/></pattern><action> <call-macro n="f_genre_num"><with-param pos="1"/></call-macro> <call-macro n="f_set_genre_num"><with-param pos="1"/></call-macro> <out><lu> <clip pos="1" side="tl" part="whole"/></lu></out> </action></rule><rule><pattern><pattern-item n="sent"/></pattern><action> <let><var n="number"/> <lit-tag v="sg"/></let><let><var n="genre"/><lit-tag v="m"/></let> <out><lu> <clip pos="1" side="tl" part="whole"/></lu></out></action></rule>
+</section-rules>
+</transfer>

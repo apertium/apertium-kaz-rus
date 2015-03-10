@@ -1,0 +1,10 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: apertium-transfer-tools-generalisation
+Description: apertium's transfer XML-file generator based on generalised alignment templates
+Version: 1.0.0
+#Libs: -L${libdir} -l@GENERIC_LIBRARY_NAME@-1.0
+#Cflags: -I${includedir}/@GENERIC_LIBRARY_NAME@-1.0 -I${libdir}/@GENERIC_LIBRARY_NAME@-1.0/include

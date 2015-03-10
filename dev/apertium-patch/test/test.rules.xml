@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transfer>
+<section-def-cats>
+
+<def-cat n="CAT__n">
+	<cat-item tags="n.*"/>
+</def-cat>
+<def-cat n="CAT__num">
+	<cat-item tags="num"/>
+	<cat-item tags="num.*"/>
+</def-cat>
+<def-cat n="CAT__adv">
+	<cat-item tags="adv"/>
+	<cat-item tags="adv.*"/>
+</def-cat>
+<def-cat n="CAT__adj">
+	<cat-item tags="adj.*"/>
+</def-cat>
+<def-cat n="CAT__det">
+	<cat-item tags="det.*"/>
+</def-cat>
+<def-cat n="CAT__HASGENDER_NUMBER"><cat-item tags="*.m.*"/><cat-item tags="*.f.*"/><cat-item tags="*.sg.*"/><cat-item tags="*.pl.*"/></def-cat>  <def-cat n="CAT__ND_GD">
+    <cat-item tags="*.mf.*"/>
+    <cat-item tags="*.sp.*"/>
+    <cat-item tags="*.mf.sp.*"/>
+    <cat-item tags="*.sp.mf.*"/>
+    <cat-item tags="*.mf.*.sp.*"/>
+    <cat-item tags="*.sp.*.mf.*"/>
+  </def-cat>
+  <def-cat n="sent">
+    <cat-item tags="sent"/>
+    <cat-item tags="RESsent.sent"/>
+  </def-cat>
+  <def-cat n="any">
+    <cat-item tags="*"/>
+  </def-cat>
+</section-def-cats>
+<section-def-attrs>
+  <def-attr n="determinertype">
+    <attr-item tags="def"/>
+    <attr-item tags="dem"/>
+    <attr-item tags="ind"/>
+    <attr-item tags="pos"/>
+  </def-attr>
+  
+<def-attr n="nountype">
+    <attr-item tags="acr"/>
+</def-attr>
+  <def-attr n="gender">
+    <attr-item tags="GD"/>
+    <attr-item tags="f"/>
+    <attr-item tags="m"/>
+    <attr-item tags="mf"/>
+  </def-attr>
+  <def-attr n="isnum">
+    <attr-item tags="num"/>
+  </def-attr>
+  <def-attr n="isref">
+    <attr-item tags="ref"/>
+  </def-attr>
+  <def-attr n="isrel">
+    <attr-item tags="rel"/>
+  </def-attr>
+  <def-attr n="nptype">
+    <attr-item tags="al"/>
+    <attr-item tags="ant"/>
+    <attr-item tags="loc"/>
+  </def-attr>
+  <def-attr n="numberat">
+    <attr-item tags="ND"/>
+    <attr-item tags="pl"/>
+    <attr-item tags="sg"/>
+    <attr-item tags="sp"/>
+  </def-attr>
+  <def-attr n="person">
+    <attr-item tags="p1"/>
+    <attr-item tags="p2"/>
+    <attr-item tags="p3"/>
+  </def-attr>
+  <def-attr n="pos">
+    <attr-item tags="adj"/>
+    <attr-item tags="adv"/>
+    <attr-item tags="cnjcoo"/>
+    <attr-item tags="cnjsub"/>
+    <attr-item tags="det"/>
+    <attr-item tags="detnt"/>
+    <attr-item tags="n"/>
+    <attr-item tags="np"/>
+    <attr-item tags="pr"/>
+    <attr-item tags="preadv"/>
+    <attr-item tags="predet"/>
+    <attr-item tags="prn"/>
+    <attr-item tags="vbaux"/>
+    <attr-item tags="vbhaver"/>
+    <attr-item tags="vblex"/>
+    <attr-item tags="vbmod"/>
+    <attr-item tags="vbser"/>
+  </def-attr>
+  <def-attr n="prntype">
+    <attr-item tags="enc"/>
+    <attr-item tags="itg"/>
+    <attr-item tags="pro"/>
+    <attr-item tags="tn"/>
+  </def-attr>
+  <def-attr n="reltype">
+    <attr-item tags="aa"/>
+    <attr-item tags="an"/>
+    <attr-item tags="nn"/>
+  </def-attr>
+  <def-attr n="verbtime">
+    <attr-item tags="cni"/>
+    <attr-item tags="fti"/>
+    <attr-item tags="fts"/>
+    <attr-item tags="ger"/>
+    <attr-item tags="ifi"/>
+    <attr-item tags="imp"/>
+    <attr-item tags="inf"/>
+    <attr-item tags="pii"/>
+    <attr-item tags="pis"/>
+    <attr-item tags="pp"/>
+    <attr-item tags="pri"/>
+    <attr-item tags="prs"/>
+  </def-attr>
+  <def-attr n="gen">
+    <attr-item tags="m"/>
+    <attr-item tags="f"/>
+    <attr-item tags="mf"/>
+    <attr-item tags="GD"/>
+  </def-attr>
+  <def-attr n="num">
+    <attr-item tags="sg"/>
+    <attr-item tags="pl"/>
+    <attr-item tags="sp"/>
+    <attr-item tags="ND"/>
+  </def-attr>
+</section-def-attrs>
+<section-def-vars>
+  <def-var n="genre"/>
+  <def-var n="number"/>
+</section-def-vars>
+<section-def-macros>
+<def-macro n="f_bcond" npar="2">
+<!--To test whether a blank contains format information.
+If no format information is present it is removed. -->
+  <choose>
+    <when>
+      <test>
+        <not>
+	 <equal>
+	   <b pos="1"/>
+	   <lit v=" "/>
+	 </equal>
+	 </not>
+      </test>
+      <out>
+        <b pos="1"/>
+      </out>
+    </when>
+  </choose>
+</def-macro>
+<def-macro n="f_genre_num" npar="1">
+<!--To set the global value storing the TL genre of the last seen word. -->
+  <choose>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="gen"/>
+          <lit-tag v="m"/>
+        </equal>
+      </test>
+      <let><var n="genre"/><lit-tag v="m"/></let>
+    </when>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="gen"/>
+          <lit-tag v="f"/>
+        </equal>
+      </test>
+      <let><var n="genre"/><lit-tag v="f"/></let>
+    </when>
+  </choose>
+  <choose>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="num"/>
+          <lit-tag v="sg"/>
+        </equal>
+      </test>
+      <let><var n="number"/><lit-tag v="sg"/></let>
+    </when>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="num"/>
+          <lit-tag v="pl"/>
+        </equal>
+      </test>
+      <let><var n="number"/><lit-tag v="pl"/></let>
+    </when>
+  </choose>
+</def-macro>
+<def-macro n="f_set_genre_num" npar="1">
+<!--To set the genre of those words with GD, and the number of those words with ND. -->
+<!--This is only used in no alignment template at all is applied. -->
+  <choose>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="gen"/>
+          <lit-tag v="GD"/>
+        </equal>
+      </test>
+      <choose>
+        <when>
+          <test>
+            <equal>
+              <var n="genre"/>
+              <lit-tag v="f"/>
+            </equal>
+          </test>
+          <let><clip pos="1" side="tl" part="gen"/><lit-tag v="f"/></let>
+        </when>
+        <otherwise>
+          <let><clip pos="1" side="tl" part="gen"/><lit-tag v="m"/></let>
+        </otherwise>
+      </choose>
+    </when>
+  </choose>
+  <choose>
+    <when>
+      <test>
+        <equal>
+          <clip pos="1" side="tl" part="num"/>
+          <lit-tag v="ND"/>
+        </equal>
+      </test>
+      <choose>
+        <when>
+          <test>
+            <equal>
+              <var n="number"/>
+              <lit-tag v="pl"/>
+            </equal>
+          </test>
+          <let><clip pos="1" side="tl" part="num"/><lit-tag v="pl"/></let>
+        </when>
+        <otherwise>
+          <let><clip pos="1" side="tl" part="num"/><lit-tag v="sg"/></let>
+        </otherwise>
+      </choose>
+    </when>
+  </choose>
+</def-macro>
+</section-def-macros>
+<section-rules>
+
+<rule>
+  <pattern>
+    <pattern-item n="CAT__det"/>
+    <pattern-item n="CAT__n"/>
+    <pattern-item n="CAT__adj"/>
+  </pattern>
+  <action>
+         <out>
+          <lu>
+            <lit v="*rule1"/>
+          </lu>
+        </out>
+        
+        <reject-current-rule shifting="no"/>
+
+         <out>
+          <lu>
+            <lit v="*ERROR"/>
+          </lu>
+        </out>
+
+  </action>
+</rule>
+
+<rule>
+  <pattern>
+    <pattern-item n="CAT__n"/>
+    <pattern-item n="CAT__adj"/>
+  </pattern>
+  <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+        </out>
+       
+        <out>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        </out>
+         
+         <out>
+          <lu>
+            <lit v="*rule2"/>
+          </lu>
+        </out>
+       
+  </action>
+</rule>
+
+<rule>
+  <pattern>
+    <pattern-item n="CAT__det"/>
+    <pattern-item n="CAT__n"/>
+  </pattern>
+  <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+          <b pos="1"/>
+        </out>
+       
+        <out>
+          <lu>
+            <clip pos="2" side="tl" part="whole"/>
+          </lu>
+        </out>
+         
+         <out>
+          <lu>
+            <lit v="*rule3"/>
+          </lu>
+        </out>
+  </action>
+</rule>
+
+<rule>
+  <pattern>
+    <pattern-item n="CAT__num"/>
+  </pattern>
+  <action>
+        <reject-current-rule shifting="no"/>
+  </action>
+</rule>
+<!--
+<rule>
+  <pattern>
+    <pattern-item n="CAT__num"/>
+    <pattern-item n="CAT__adv"/>
+  </pattern>
+  <action>
+        <reject-current-rule shifting="no"/>
+  </action>
+</rule>
+-->
+<rule>
+  <pattern>
+    <pattern-item n="CAT__adv"/>
+  </pattern>
+  <action>
+        <out>
+          <lu>
+            <clip pos="1" side="tl" part="whole"/>
+          </lu>
+        </out>
+  </action>
+</rule>
+
+
+
+</section-rules>
+</transfer>
+

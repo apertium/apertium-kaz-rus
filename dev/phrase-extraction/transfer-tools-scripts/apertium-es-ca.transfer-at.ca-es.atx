@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<transfer-at source="Catalan" target="Spanish">
+<source>
+  <lexicalized-words>
+<!--    <lexicalized-word tags="prn.itg.*"/> -->
+<!--    <lexicalized-word tags="adv.itg.*"/> -->
+    <lexicalized-word tags="preadv"/>
+    <lexicalized-word tags="cnjsub"/>
+<!--    <lexicalized-word tags="cnjcoo"/> -->
+    <lexicalized-word tags="detnt.*"/>
+    <lexicalized-word tags="detnt"/>
+    <lexicalized-word tags="det.*"/>
+    <lexicalized-word tags="predet"/>
+    <lexicalized-word tags="predet.*"/>
+    <lexicalized-word tags="pr"/>
+<!--    <lexicalized-word tags="prn.tn"/> -->
+<!--    <lexicalized-word tags="prn.tn.*"/> -->
+    <lexicalized-word tags="prn.enc.*"/>
+    <lexicalized-word tags="prn.pro.*"/>
+    <lexicalized-word tags="rel.*"/>
+    <lexicalized-word tags="vbser.*"/>
+    <lexicalized-word tags="vbhaver.*"/>
+    <lexicalized-word tags="vbmod.*"/>
+<!--    <lexicalized-word tags="adv"/> -->
+<!--    <lexicalized-word tags="cnjadv"/> -->
+    <lexicalized-word tags="adj.itg.*"/>
+    <lexicalized-word tags="vblex.*" lemma="anar"/>
+    <lexicalized-word tags="vaux.*" lemma="anar"/>
+    <lexicalized-word tags="vblex.*" lemma="fer"/>
+  </lexicalized-words>
+</source>
+<target>
+  <lexicalized-words>
+<!--    <lexicalized-word tags="prn.itg.*"/> -->
+<!--    <lexicalized-word tags="adv.itg.*"/> -->
+    <lexicalized-word tags="preadv"/>
+    <lexicalized-word tags="cnjsub"/>
+<!--    <lexicalized-word tags="cnjcoo"/> -->
+    <lexicalized-word tags="detnt.*"/>
+    <lexicalized-word tags="detnt"/>
+    <lexicalized-word tags="det.*"/>
+    <lexicalized-word tags="predet"/> 
+    <lexicalized-word tags="predet.*"/> 
+    <lexicalized-word tags="pr"/>
+<!--    <lexicalized-word tags="prn.tn"/> -->
+<!--    <lexicalized-word tags="prn.tn.*"/> -->
+    <lexicalized-word tags="prn.enc.*"/>
+    <lexicalized-word tags="prn.pro.*"/>
+    <lexicalized-word tags="rel.*"/>
+    <lexicalized-word tags="vbser.*"/>
+    <lexicalized-word tags="vbhaver.*"/>
+    <lexicalized-word tags="vbmod.*"/>
+<!--    <lexicalized-word tags="adv"/> -->
+<!--    <lexicalized-word tags="cnjadv"/> -->
+    <lexicalized-word tags="adj.itg.*"/>
+    <lexicalized-word tags="vblex.*" lemma="dar"/>
+    <lexicalized-word tags="vblex.*" lemma="hacer"/>
+    <lexicalized-word tags="vblex.*" lemma="deber"/>
+  </lexicalized-words>
+</target>
+</transfer-at>
