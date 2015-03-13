@@ -207,7 +207,7 @@
   <e r="LR"><p><l><s n="coop"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="pass"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="pass"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
-  <e>       <p><l></l>          <r></r></p></e>
+
   <e r="RL">       <p><l></l>          <r><s n="inf"/></r></p></e>
 
 </pardef>
