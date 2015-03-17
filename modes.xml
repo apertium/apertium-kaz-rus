@@ -308,7 +308,23 @@
     </pipeline>
   </mode>
 
-
+<mode name="rus-kaz-lextor" install="no">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="rus-kaz.automorf.bin"/>
+      </program>
+      <program name="cg-proc  -n -w -1">
+        <file name="rus-kaz.rlx.bin"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="rus-kaz.autobil.bin"/>
+      </program>
+      <program name="lrx-proc -m -t">
+        <file name="rus-kaz.lrx.bin"/>
+      </program>
+    </pipeline>
+  </mode>
   <mode name="rus-kaz-transfer" install="yes">
     <pipeline>
       <program name="lt-proc -w">
@@ -325,11 +341,11 @@
         <file name="rus-kaz.autobil.bin"/>
       </program>
 
-<!--
+
       <program name="lrx-proc -m"> 
         <file name="rus-kaz.lrx.bin"/> 
       </program> 
--->
+
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-rus.rus-kaz.t1x"/>
         <file name="rus-kaz.t1x.bin"/>
@@ -527,11 +543,11 @@
         <file name="rus-kaz.autobil.bin"/>
       </program>
 
-<!--
+
       <program name="lrx-proc -m"> 
         <file name="rus-kaz.lrx.bin"/> 
       </program> 
--->
+
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-rus.rus-kaz.t1x"/>
         <file name="rus-kaz.t1x.bin"/>
