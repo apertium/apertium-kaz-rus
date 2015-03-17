@@ -392,11 +392,11 @@
         <file name="rus-kaz.autobil.bin"/>
       </program>
 
-<!--
+
       <program name="lrx-proc -m"> 
         <file name="rus-kaz.lrx.bin"/> 
       </program> 
--->
+
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-rus.rus-kaz.t1x"/>
         <file name="rus-kaz.t1x.bin"/>
@@ -441,11 +441,11 @@
         <file name="rus-kaz.autobil.bin"/>
       </program>
 
-<!--
+
       <program name="lrx-proc -m"> 
         <file name="rus-kaz.lrx.bin"/> 
       </program> 
--->
+
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-rus.rus-kaz.t1x"/>
         <file name="rus-kaz.t1x.bin"/>
@@ -491,11 +491,11 @@
         <file name="rus-kaz.autobil.bin"/>
       </program>
 
-<!--
+
       <program name="lrx-proc -m"> 
         <file name="rus-kaz.lrx.bin"/> 
       </program> 
--->
+
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-rus.rus-kaz.t1x"/>
         <file name="rus-kaz.t1x.bin"/>

@@ -99,6 +99,11 @@ $(PREFIX2).rlx.bin: $(AP_SRC2)/apertium-$(LANG2).$(LANG2).rlx
 $(PREFIX1).lrx.bin: $(BASENAME).$(PREFIX1).lrx
 	lrx-comp $< $@
 
+
+$(PREFIX2).lrx.bin: $(BASENAME).$(PREFIX2).lrx
+	lrx-comp $< $@
+
+
 ###############################################################################
 ## Structural transfer rules
 ###############################################################################
