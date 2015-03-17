@@ -1,0 +1,161 @@
+<rules>
+  <rule> <!-- to solve something that CG couldn't? -->
+    <match lemma="I" tags="prn.*"><select lemma="Мен" tags="prn.*"/></match>
+  </rule>
+  <rule> <!-- leftover example -->
+    <match lemma="dog" tags="n.*"><select lemma="ит" tags="n.*"/></match>
+  </rule>
+
+  <rule> <!-- probably does not belong here? -->
+    <match lemma="residence" tags="n.*"><select lemma="мекен" tags="n.*"/></match>
+  </rule>
+
+  <rule>
+    <match lemma="state" tags="n.*"><select lemma="мемлекет" tags="n.*"/></match>
+  </rule>
+
+
+
+  <rule>
+    <match lemma="number" tags="n.*"><select lemma="сан" tags="n.*"/></match>
+  </rule>
+<rule>
+    <match lemma="home" tags="n.*"><select lemma="үй" tags="n.*"/></match>
+  </rule>
+
+<rule>
+    <match lemma="call" tags="vblex.*"><select lemma="ата" tags="v.*"/></match>
+  </rule>
+
+<rule>
+    <match lemma="through" tags="pr"><select lemma="арқылы" tags="post.Rnom"/></match>
+  </rule>
+
+  <rule>
+    <match lemma="residence" tags="n.*"><select lemma="резиденция" tags="n.*"/></match>
+    <match lemma="of" tags="pr"/>
+    <match lemma="the" tags="det.*"/>
+    <match lemma="president" tags="n.*"/>
+  </rule>
+
+
+
+  <rule>
+ <match lemma="have" tags="vbhaver.*"/>
+    <match lemma="be" tags="vbser.pp"><select lemma="бол" tags="v.*"/></match>
+    
+  </rule>
+
+  <rule>
+
+    <match lemma="be" tags="vbser.pp"><select lemma="бол" tags="v.*"/></match>
+    
+  </rule>
+
+<rule>
+    <match lemma="boot" tags="n.*"><select lemma="жүксалғыш" tags="n.*"/></match>
+    <match lemma="of" tags="pr"/>
+    <match lemma="the" tags="det.*"/>
+    <match lemma="car" tags="n.*"/>
+  </rule>
+
+
+  <rule>
+    <match lemma="government" tags="n.*"/>
+    <match lemma="residence" tags="n.*"><select lemma="резиденция" tags="n.*"/></match>
+  </rule>
+
+ 
+
+ <rule> 
+  
+   
+<match lemma="not" tags="adv"/>
+<match lemma="*" tags="vblex.*"/>
+<match lemma="anything" tags="prn.*"><select lemma="ешнәрсе" tags="prn.*"/></match>    
+  
+
+   
+  </rule>
+<rule> 
+    <match lemma="anything" tags="prn.*"><select lemma="бір нәрсе" tags="prn.*"/></match>    
+  </rule>
+
+<rule>
+
+    <match lemma="woman" tags="n.*"><select lemma="әйел" tags="n.*"/></match>
+
+  </rule>
+
+<rule>
+
+    <match lemma="place" tags="n.*"><select lemma="орын" tags="n.*"/></match>
+
+  </rule>
+
+<rule>
+
+    <match lemma="beautiful" tags="adj"><select lemma="әдемі" tags="adj"/></match>
+
+  </rule>
+<rule>
+
+    <match lemma="strong" tags="adj"><select lemma="күшті" tags="adj"/></match>
+
+  </rule>
+
+  <rule>
+
+    <match lemma="beautiful" tags="adj"><select lemma="әдемі" tags="adj"/></match>
+
+    <match lemma="girl" tags="n.*"/>
+
+  </rule>
+
+<rule>
+
+    <match lemma="old" tags="adj.sint"><select lemma="кәрі" tags="adj"/></match>
+
+    <match lemma="woman" tags="n.*"><select lemma="әйел" tags="n.*"/></match>
+
+  </rule>
+
+
+ 
+<rule>
+    <match lemma="year" tags="n.pl"><select lemma="жыл" tags="n.*"/></match>
+  </rule>
+
+
+  <rule>
+    <match lemma="year" tags="n.pl"><select lemma="жас" tags="n.*"/></match>
+    <match lemma="old" tags="adj.*"/>
+   
+  </rule>
+
+  <rule>
+    <match lemma="sky" tags="n.*"><select lemma="аспан" tags="n.*"/></match>
+  </rule>
+
+<rule>
+    <match lemma="that" tags="det.*"><select lemma="осы" tags="det.*"/></match>
+    <match lemma="time" tags="n.*"><select lemma="уақыт" tags="n.*"/></match>
+     </rule>
+
+  <rule> <!-- default translation -->
+    <match lemma="possession" tags="n.pl"><select lemma="дүние" tags="n.*"/></match>
+  </rule>
+
+  <rule>  <!-- not completely sure about this -->
+    <match lemma="in" tags="pr"/>  
+    <match tags="det.pos.*"/>
+    <match lemma="possession" tags="n.sg"><select lemma="иеленушілік" tags="n.*"/></match>
+  </rule>
+
+
+ 
+
+
+
+
+</rules>
