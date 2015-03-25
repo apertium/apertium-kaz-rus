@@ -138,13 +138,15 @@
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="det"/></r></p></e>
 <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ord"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="prp"/></r></p></e>
  <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
  <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="dat"/></r></p></e>
  <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
  <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
   <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
  <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
@@ -158,6 +160,7 @@
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="pl"/><s n="gen"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="pl"/><s n="dat"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="pl"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="sg"/><s n="acc"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="sg"/><s n="prp"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="sg"/><s n="gen"/></r></p></e>
@@ -8751,7 +8754,7 @@
 
 <e><p><l>нөл<s n="num"/></l><r>ноль<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e><p><l>бір<s n="num"/></l><r>один<s n="num"/></r></p><par n="__num_gender"/></e>
-<e><p><l>екі<s n="num"/></l><r>два<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>екі<s n="num"/></l><r>два<s n="num"/></r></p></e>
 <e><p><l>екеу<s n="num"/><s n="subst"/></l><r>оба<s n="num"/><s n="m"/><s n="an"/><s n="pl"/></r></p></e>
 <e><p><l>үш<s n="num"/></l><r>три<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>төрт<s n="num"/></l><r>четыре<s n="num"/></r></p><par n="__num_gender"/></e>
@@ -8780,22 +8783,24 @@
 <e><p><l>тоқсан<s n="num"/></l><r>девяносто<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>жүз<s n="num"/></l><r>сто<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>екі жүз<s n="num"/></l><r>двести<s n="num"/></r></p><par n="__num_gender"/></e>
-<e><p><l>үш<b/>жүз<s n="num"/></l><r>триста<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e><p><l>төрт<b/>жүз<s n="num"/></l><r>четыреста<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e><p><l>бес<b/>жүз<s n="num"/></l><r>пятьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
+<e><p><l>үш<b/>жүз<s n="num"/></l><r>триста<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>төрт<b/>жүз<s n="num"/></l><r>четыреста<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>бес<b/>жүз<s n="num"/></l><r>пятьсот<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>алты<b/>жүз<s n="num"/></l><r>шестьсот<s n="num"/></r></p><par n="__num_gender"/></e>
-<e><p><l>жеті<b/>жүз<s n="num"/></l><r>семьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e><p><l>сегіз<b/>жүз<s n="num"/></l><r>восемьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e><p><l>тоғыз<b/>жүз<s n="num"/></l><r>девятьсот<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e><p><l>мың<s n="num"/></l><r>тысяча<s n="num"/><s n="f"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e><p><l>жеті<b/>жүз<s n="num"/></l><r>семьсот<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>сегіз<b/>жүз<s n="num"/></l><r>восемьсот<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>тоғыз<b/>жүз<s n="num"/></l><r>девятьсот<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>мың<s n="num"/></l><r>тысяча<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>мың<s n="n"/></l><r>тысяча<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+
 <e><p><l>он<b/>мың<s n="num"/></l><r>десять<b/>тысяч<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e><p><l>миллион<s n="num"/></l><r>миллион<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e><p><l>миллион<s n="num"/></l><r>миллион<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>миллиард<s n="num"/></l><r>миллиард<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e><p><l>триллион<s n="num"/></l><r>триллион<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e><p><l>триллиард<s n="num"/></l><r>триллиард<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 
 <e><p><l>бір<s n="num"/><s n="ord"/></l><r>первый<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
-<e><p><l>екі<s n="num"/><s n="ord"/></l><r>второй<s n="det"/><s n="ord"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e><p><l>екі<s n="num"/><s n="ord"/></l><r>второй<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
 <e><p><l>үш<s n="num"/><s n="ord"/></l><r>третий<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
 <e><p><l>төрт<s n="num"/><s n="ord"/></l><r>четвёртый<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
 <e><p><l>бес<s n="num"/><s n="ord"/></l><r>пятый<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
@@ -8830,9 +8835,9 @@
 <e><p><l>жеті<b/>жүз<s n="num"/><s n="ord"/></l><r>семисотый<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
 <e><p><l>сегіз<b/>жүз<s n="num"/><s n="ord"/></l><r>восьмисотый<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
 <e><p><l>тоғыз<b/>жүз<s n="num"/><s n="ord"/></l><r>девятисотый<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
-<e><p><l>мың<s n="num"/><s n="ord"/></l><r>тысячный<s n="det"/><s n="ord"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e><p><l>мың<s n="num"/><s n="ord"/></l><r>тысячный<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
 <e><p><l>миллион<s n="num"/><s n="ord"/></l><r>миллионный<s n="det"/><s n="ord"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
-<e><p><l>миллиард<s n="num"/><s n="ord"/></l><r>миллиардный<s n="det"/><s n="ord"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e><p><l>миллиард<s n="num"/><s n="ord"/></l><r>миллиардный<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
 
 
 <e>       <p><l>I<s n="num"/><s n="ord"/></l>          <r>I<s n="num"/><s n="roman"/></r></p></e>
