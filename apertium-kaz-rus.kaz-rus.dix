@@ -106,7 +106,8 @@
     <sdef n="pasv" 	c=""/> 
     <sdef n="pp" 	c=""/> 
     <sdef n="pprs" 	c=""/> 
-    <sdef n="ord" 	c=""/> 
+    <sdef n="ord" 	c=""/>
+    <sdef n="coll" 	c=""/> 
     <sdef n="dual" 	c=""/> 
     <sdef n="roman" 	c=""/> 
     <sdef n="qst" 	c=""/> 
@@ -8755,7 +8756,6 @@
 <e><p><l>нөл<s n="num"/></l><r>ноль<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e><p><l>бір<s n="num"/></l><r>один<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>екі<s n="num"/></l><r>два<s n="num"/></r></p></e>
-<e><p><l>екеу<s n="num"/><s n="subst"/></l><r>оба<s n="num"/><s n="m"/><s n="an"/><s n="pl"/></r></p></e>
 <e><p><l>үш<s n="num"/></l><r>три<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>төрт<s n="num"/></l><r>четыре<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>бес<s n="num"/></l><r>пять<s n="num"/></r></p><par n="__num_gender"/></e>
@@ -8839,6 +8839,17 @@
 <e><p><l>миллион<s n="num"/><s n="ord"/></l><r>миллионный<s n="det"/><s n="ord"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e><p><l>миллиард<s n="num"/><s n="ord"/></l><r>миллиардный<s n="det"/><s n="ord"/></r></p><par n="__det_attr"/></e>
 
+<!-- <e><p><l>нөл<s n="num"/></l><r>ноль<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e><p><l>бір<s n="num"/></l><r>один<s n="num"/></r></p><par n="__num_gender"/></e> -->
+<e><p><l>екеу<s n="num"/></l><r>двое<s n="num"/><s n="coll"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
+<e><p><l>үшеу<s n="num"/></l><r>трое<s n="num"/><s n="coll"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
+<e><p><l>төртеу<s n="num"/></l><r>четверо<s n="num"/><s n="coll"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
+<e><p><l>бесеу<s n="num"/></l><r>пятеро<s n="num"/><s n="coll"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
+<e><p><l>алтау<s n="num"/></l><r>шестеро<s n="num"/><s n="coll"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
+<e><p><l>жетеу<s n="num"/></l><r>семеро<s n="num"/><s n="coll"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
+<!--<e><p><l>сегіз<b/>шақты<s n="num"/></l><r>восьмеро<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>тоғыз<b/>шақты<s n="num"/></l><r>девятеро<s n="num"/></r></p><par n="__num_gender"/></e>
+<e><p><l>он<s n="num"/></l><r>десятеро<s n="num"/></r></p><par n="__num_gender"/></e> -->
 
 <e>       <p><l>I<s n="num"/><s n="ord"/></l>          <r>I<s n="num"/><s n="roman"/></r></p></e>
 <e>       <p><l>II<s n="num"/><s n="ord"/></l>         <r>II<s n="num"/><s n="roman"/></r></p></e>
