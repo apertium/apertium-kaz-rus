@@ -136,19 +136,19 @@
 </pardef>
 
 <pardef n="__num_gender">
-  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="det"/></r></p></e>
 <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ord"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="prp"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="dat"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
-  <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="prp"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="dat"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
@@ -170,26 +170,26 @@
 </pardef>
 
 <pardef n="__det_attr">
-<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="det"/></r></p></e>
 <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ord"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
-  <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="nt"/><s n="nn"/><s n="sg"/><s n="dat"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
-<e r="RL">       <p><l></l>          <r><s n="nt"/><s n="nn"/><s n="sg"/><s n="dat"/></r></p></e>
-<e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
+
  
 </pardef>
 
@@ -8755,7 +8755,7 @@
 
 <e><p><l>нөл<s n="num"/></l><r>ноль<s n="num"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e><p><l>бір<s n="num"/></l><r>один<s n="num"/></r></p><par n="__num_gender"/></e>
-<e><p><l>екі<s n="num"/></l><r>два<s n="num"/></r></p></e>
+<e><p><l>екі<s n="num"/></l><r>два<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>үш<s n="num"/></l><r>три<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>төрт<s n="num"/></l><r>четыре<s n="num"/></r></p><par n="__num_gender"/></e>
 <e><p><l>бес<s n="num"/></l><r>пять<s n="num"/></r></p><par n="__num_gender"/></e>
