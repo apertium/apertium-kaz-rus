@@ -644,6 +644,7 @@
 	  <let><clip pos="1" side="tl" part="a_gender"/><lit-tag v="mfn"/></let>
 	</when>
       </choose>
+
       <choose>
         <when>
           <test>
@@ -1470,7 +1471,55 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: N POST">
+
+
+
+    <rule comment="REGLA: N ADJ N"> <!--Aliya-->
+      <!--
+      INPUT:  ^сурет<n><px3sp><nom>/рисунок<n><m><nn><px3sp><nom>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$
+      OUTPUT: ^adj_n_n-nom<SN>{^имя<n><nt><nn><sg><nom>$ ^известный<adj><sint><m><an><sg><gen>$ ^поэт<n><m><aa><sg><gen>$}$
+      -->
+      <pattern>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n-nom"/>
+      </pattern>
+      <action>
+       
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        
+          <let><var n="preposition"/><concat><lit v="^с"/><lit-tag v="pr"/><lit v="$ "/></concat></let>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ins"/></let>
+          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ins"/></let>
+        <out>
+          <chunk name="n_adj_n-nom">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <var n="preposition"/>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+      <rule comment="REGLA: N POST">
       <!--
       INPUT:  ^мәктәп<n>/школа<n><f><nn>$ ^сыз<post>/без<pr><gen>$
       OUTPUT: ^pr_n<PP>{^без<pr>$ ^школа<n><f><nn><sg><gen>$}$
@@ -1610,6 +1659,49 @@
               <tag><lit-tag v="SN"/></tag>
             </tags>
             <var n="preposition"/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: ADJ N N"> <!--Aliya-->
+      <!--
+      INPUT:  ^қалалық<adj>/городской<adj><sint><m><an><sg><nom>$ ^ақын<n><gen>/поэт<n><m><aa><gen>$ ^есім<n><px3sp><nom>/имя<n><nt><nn><px3sp><nom>$
+      OUTPUT: ^adj_n_n<SN>{^имя<n><nt><nn><sg><nom>$ ^известный<adj><sint><m><an><sg><gen>$ ^поэт<n><m><aa><sg><gen>$}$
+      -->
+      <pattern>
+        <pattern-item n="adj"/>
+        <pattern-item n="n-attr-or-gen"/>
+        <pattern-item n="n-px3sp"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="adj_n_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
