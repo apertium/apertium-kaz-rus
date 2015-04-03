@@ -933,15 +933,16 @@
       <!--
       INPUT:  ^мәктәп<n><attr>/школьный<adj><m><an><sg><nom>$
       OUTPUT: ^adj<AdjP>{^школьный<adj><m><an><sg><nom>$}$
-      INPUT:  ^мәктәп<n><nom>/школа<n><f><nn><nom>$
+      INPUT:  ^мектеп<n><nom>/школа<n><f><nn><nom>$
       OUTPUT: ^n<SN><nom>{^школа<n><f><nn><sg><2>$}$
-      INPUT:  ^абый<n><px1sg><dat>/брат<n><m><aa><px1sg><dat>$
-      OUTPUT: ^n<SN><dat>{^мой<det><pos><m><an><sg><dat>$ ^брат<n><m><aa><sg><2>$}$
-      INPUT:  ^мәктәп<n><loc>/школа<n><f><nn><loc>$
+      INPUT:  ^аға<n><px1sg><dat>/брат<n><m><aa><px1sg><dat>$
+      OUTPUT: ^n<SN><dat>{^мой<det><pos><m><an><sg><dat>$ ^брат<n><m><aa><sg><dat>$}$
+      INPUT:  ^мектеп<n><loc>/школа<n><f><nn><loc>$
       OUTPUT: ^pr_n<PP>{^в<pr>$ ^школа<n><f><nn><sg><prp>$}$
-      INPUT:  ^яхшы<adj><subst><dat>/хороший<adj><m><an><dat>$
-      OUTPUT: ^n<SN><dat>{^хороший<adj><m><an><sg><2>$}$
-      INPUT:  ^ул<prn><dem><gen><@ADVL→>/он<prn><pers><p3><m><sg><gen><@ADVL→>$
+      INPUT:  ^жақсы<adj><subst><dat>/хороший<adj><sint><m><an><dat>$
+      OUTPUT: ^n<SN><dat>{^хороший<adj><sint><m><an><sg><dat>$}$
+      INPUT:  ^ол<prn><dem><gen>/его<det><pos>/он<prn><pers><p3><m><sg><gen>$ 
+^ул<prn><dem><gen><@ADVL→>/он<prn><pers><p3><m><sg><gen><@ADVL→>$
       OUTPUT: ^n<SN><gen><@ADVL→>{^он<prn><pers><p3><m><sg><2>$}$
       -->
       <pattern>
