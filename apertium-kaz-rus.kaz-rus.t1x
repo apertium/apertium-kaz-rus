@@ -146,7 +146,6 @@
     </def-cat>
 
 
-
 <!--
     <def-cat n="thousand-etc">
       <cat-item lemma="мең" tags="num"/>
@@ -1205,91 +1204,6 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: N N N (1)">
-      <!--
-      INPUT:  ^Қазақстан<np><top><attr>/Казахстан<np><top><m><attr>$ ^Республика<n><px3sp><nom>/Республика<n><f><nn><px3sp><nom>$ ^заң<n><pl><px3sp><nom>/закон<n><m><nn><pl><px3sp><nom>$
-      OUTPUT: ^n_n_n<SN>{^закон<n><m><nn><pl><nom>$ ^Республика<n><f><nn><sg><gen>$ ^Казахстан<np><top><m><sg><nom>$}$
-      INPUT:  ^мемлекет<n><attr>/государственный<adj><m><an><sg><nom>$ ^әкімшілік<n><px3sp><nom>/управление<n><nt><nn><px3sp><nom>$ ^орган<n><pl><px3sp><nom>/орган<n><m><nn><pl><px3sp><nom>$
-      OUTPUT: ^n_adj_n<SN>{^орган<n><m><nn><pl><nom>$ ^государственный<adj><nt><an><sg><gen>$ ^управление<n><nt><nn><sg><gen>$}$
-      -->
-      <pattern>
-        <pattern-item n="n-attr-or-gen"/>
-        <pattern-item n="n-px3sp"/>
-        <pattern-item n="n-px3sp"/>
-      </pattern>
-      <action>
-	<choose>
-	  <when c="n.attr is translated with an adjective">
-	    <test>
-	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adj"/></equal>
-	    </test>
-            <call-macro n="translate-noun">
-              <with-param pos="2"/>
-            </call-macro>
-            <call-macro n="translate-noun">
-              <with-param pos="3"/>
-            </call-macro>
-            <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let>
-	    <call-macro n="makeagree-det-noun">
-	      <with-param pos="1"/>
-	      <with-param pos="2"/>
-	    </call-macro>
-	    <out>
-	      <chunk name="n_adj_n">
-		<tags>
-                  <tag><lit-tag v="SN"/></tag>
-		</tags>
-		<var n="preposition"/>
-		<lu>
-                  <clip pos="3" side="tl" part="whole"/>
-		</lu>
-		<b/>
-		<lu>
-                  <clip pos="1" side="tl" part="whole"/>
-		</lu>
-		<b/>
-		<lu>
-                  <clip pos="2" side="tl" part="whole"/>
-		</lu>
-	      </chunk>
-	    </out>
-          </when>
-	  <otherwise>
-            <call-macro n="translate-noun">
-              <with-param pos="1"/>
-            </call-macro>
-            <call-macro n="translate-noun">
-              <with-param pos="2"/>
-            </call-macro>
-            <call-macro n="translate-noun">
-              <with-param pos="3"/>
-            </call-macro>
-            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
-            <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let>
-            <out>
-              <chunk name="n_n_n">
-		<tags>
-		  <tag><lit-tag v="SN"/></tag>
-		</tags>
-		<var n="preposition"/>
-		<lu>
-		  <clip pos="3" side="tl" part="whole"/>
-		</lu>
-		<b/>
-		<lu>
-		  <clip pos="2" side="tl" part="whole"/>
-		</lu>
-		<b/>
-		<lu>
-		  <clip pos="1" side="tl" part="whole"/>
-		</lu>
-              </chunk>
-            </out>
-	  </otherwise>
-	</choose>
-      </action>
-    </rule>
-
     <rule comment="REGLA: N N N (2)">
       <!--
       INPUT:  ^үй<n><attr>/дом<n><m><nn><attr>$ ^алд<n><px3sp><loc><attr>/перед<pr><ins><attr>$ ^бақша<n><loc>/сад<n><m><nn><loc>$
@@ -1334,7 +1248,7 @@
 
 
 
- <rule comment="REGLA: N N N (3)"> <!--оқушының кітабындағы сурет-->
+ <rule comment="REGLA: N N N (3)"> <!--Aliya-->
       <!--
       INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^кітап<n><px3sp><loc><attr>/книга<n><f><nn><px3sp><loc><attr>$ ^сурет<n><nom>/рисунок<n><m><nn><nom>$
       OUTPUT: ^n_n-loc_n<SN>{^рисунок<n><m><nn><sg><nom>$ ^в<pr>$ ^книга<n><f><nn><sg><prp>$ ^ученик<n><m><aa><sg><gen>$}$
@@ -1621,6 +1535,58 @@
               <tag><lit-tag v="SN"/></tag>
             </tags>
             <var n="preposition"/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: DET N ADJ N"> <!--Aliya-->
+      <!--
+      INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^кітап<n><gen>/книга<n><f><nn><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
+      OUTPUT: ^det_n<SN>{^каждый<det><def><nt><an><sg><nom>$ ^утро<n><nt><nn><sg><nom>$}$
+      -->
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="n"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="4"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
+        <out>
+          <chunk name="det_n_adj_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+            <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>

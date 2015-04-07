@@ -1565,7 +1565,6 @@
 <!-- v2 -->
 
 <e><p><l>анализде<s n="v"/><s n="tv"/></l><r>анализироваться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жылтыра<s n="v"/><s n="tv"/></l><r>блеснуть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ұмтыл<s n="v"/><s n="tv"/></l><r>броситься<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жүгіріп<b/>кір<s n="v"/><s n="tv"/></l><r>вбежать<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бұйыр<s n="v"/><s n="tv"/></l><r>велеть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
@@ -2906,10 +2905,10 @@
 
 <!-- nouns -->
 
-    <e><p><l>жер<s n="n"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>жер<s n="n"/></l><r>земля<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>оқушы<s n="n"/></l><r>ученик<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
-    <e><p><l>асқазан<s n="n"/></l><r>желудок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-    <e><p><l>асқазан<s n="n"/></l><r>котёл<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>асқазан<s n="n"/></l><r>желудок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>асқазан<s n="n"/></l><r>котёл<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>үстел<s n="n"/></l><r>стол<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>орындық<s n="n"/></l><r>стул<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қалам<s n="n"/></l><r>карандаш<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
