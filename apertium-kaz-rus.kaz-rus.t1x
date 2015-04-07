@@ -1550,7 +1550,7 @@
     <rule comment="REGLA: DET N ADJ N"> <!--Aliya-->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^кітап<n><gen>/книга<n><f><nn><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
-      OUTPUT: ^det_n<SN>{^каждый<det><def><nt><an><sg><nom>$ ^утро<n><nt><nn><sg><nom>$}$
+      OUTPUT: ^det_n_adj_n<SN>{^последний<adj><sint><nt><an><sg><nom>$ ^издание<n><nt><nn><sg><nom>$ ^этот<det><dem><f><an><sg><gen>$ ^книга<n><f><nn><sg><gen>$}$
       -->
       <pattern>
         <pattern-item n="det"/>
