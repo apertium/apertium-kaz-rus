@@ -26,3 +26,6 @@ devel/adjec3.awk -text
 devel/adjectives.csv -text
 devel/noun.awk -text
 /modes.xml -text
+texts/rus.txt -text svneol=unset#application/octet-stream
+texts/texts.kaz -text svneol=unset#application/octet-stream
+texts/texts.rus -text svneol=unset#application/octet-stream
