@@ -4,4 +4,18 @@
     <match lemma="жер"><select lemma="земля"/></match>
   </rule>
 
+<rule>
+	  <match lemma="демалыс" tags="adj.*"/>
+	  <match lemma="күн" tags="n.*">
+	    <select lemma="день" tags="n.*"/>
+	  </match>
+</rule>  
+
+<rule>
+	  <match lemma="ашық" tags="adj.*"/>
+	  <match lemma="күн" tags="n.*">
+	    <select lemma="солнце" tags="n.*"/>
+	  </match>
+</rule>  
+
 </rules>
