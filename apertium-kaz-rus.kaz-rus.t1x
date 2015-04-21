@@ -79,6 +79,10 @@
       <cat-item tags="v.*.ger.px3sp.*"/>
       <cat-item tags="v.*.ger.pl.px3sp.*"/>
     </def-cat>
+    <def-cat n="n-px3sp-gen">
+      <cat-item tags="n.px3sp.*"/>
+      <cat-item tags="n.px3sp.*.*.gen"/>
+    </def-cat>
     <def-cat n="n-px">
       <cat-item tags="n.px1sg.*"/>
       <cat-item tags="n.*.px1sg.*"/>
@@ -1333,6 +1337,52 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: N N N (4)"> <!-- Aliya kate -->
+      <!--
+      INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^үй<n><px3sp><gen>/дом<n><m><nn><px3sp><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
+      OUTPUT: ^n-gen_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^дом<n><f><an><sg><nom>$ ^ученик<n><m><aa><sg><gen>$}$
+      -->
+      <pattern>
+        <pattern-item n="n-gen"/>
+        <pattern-item n="n-px3sp-gen"/>
+        <pattern-item n="n-px3sp"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <chunk name="n-gen_n_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="REGLA: N N N N">
       <!--
       INPUT:  ^Тукай<np><ant><m><nom>/Тукай<np><ant><m><nom>$ ^исем<n><px3sp><loc><attr>/имя<n><nt><nn><sg><px3sp><loc><attr>$ ^Дәүләт<n><attr>/Государственный<adj><sint><m><an><sg><nom>$ ^бүләк<n><px3sp><acc>/премия<n><f><nn><sg><px3sp><acc>$
@@ -1386,13 +1436,13 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: N N ADJ N"> <!--Aliya-->
+    <rule comment="REGLA: N N ADJ N"> <!--Aliya kate-->
       <!--
-      INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^кітап<n><gen>/книга<n><f><nn><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
-      OUTPUT: ^det_n_adj_n<SN>{^последний<adj><sint><nt><an><sg><nom>$ ^издание<n><nt><nn><sg><nom>$ ^этот<det><dem><f><an><sg><gen>$ ^книга<n><f><nn><sg><gen>$}$
+      INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^кітап<n><px3sp><gen>/книга<n><f><nn><px3sp><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
+      OUTPUT: ^n_n_adj_n<SN>{^последний<adj><sint><nt><an><sg><nom>$ ^издание<n><nt><nn><sg><nom>$ ^книга<n><f><nn><sg><gen>$ ^ученик<n><f><an><sg><gen>$}$
       -->
       <pattern>
-        <pattern-item n="n"/>
+        <pattern-item n="n-gen"/>
         <pattern-item n="n-px3sp"/>
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
@@ -1406,6 +1456,9 @@
 		<not><equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal></not>
 	      </and>
 	    </test> -->
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
         <call-macro n="translate-noun">
           <with-param pos="2"/>
         </call-macro>
@@ -1571,6 +1624,49 @@
       </action>
     </rule>
 
+
+    <rule comment="REGLA: DET N N"> <!-- Aliya -->
+      <!--
+      INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^үй<n><px1sg><gen>/дом<n><m><nn><px1sg><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
+      OUTPUT: ^det_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^мой<det><pos><m><an><sg><gen>$ ^дом<n><m><nn><sg><gen>$}$
+      -->
+      <pattern>
+        <pattern-item n="prn-gen"/>
+        <pattern-item n="n-px"/>
+        <pattern-item n="n-px3sp"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="det_n_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="PRN N"> <!--Aliya-->
       <!--
@@ -1964,13 +2060,13 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET ADJ N">
+    <rule comment="REGLA: DET ADJ N"> <!-- Aliya -->
       <!--
-      INPUT:  ^иң<adv>/самый<det><def><m><an><sg><nom>$ ^тәмле<adj>/вкусный<adj><m><an><sg><nom>$ ^аш<n><nom>/еда<n><f><nn><nom>$
-      OUTPUT: ^det_adj_n<SN>{^самый<det><def><f><an><sg><nom>$ ^вкусный<adj><f><an><sg><nom>$ ^еда<n><f><nn><sg><nom>$}$
+      INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^қызыл<adj>/красный<adj><sint><m><an><sg><nom>$ ^сөмке<n><px1sg><nom>/сумка<n><f><nn><px1sg><nom>$
+      OUTPUT: ^det_adj_n<SN>{^мой<det><pos><f><an><sg><nom>$ ^красный<adj><sint><f><an><sg><nom>$ ^сумка<n><f><nn><sg><nom>$}$
       -->
       <pattern>
-        <pattern-item n="det"/>
+        <pattern-item n="prn-gen"/>
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
       </pattern>
