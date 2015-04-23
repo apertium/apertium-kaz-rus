@@ -2027,6 +2027,49 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: DET N POST"> <!-- Aliya -->
+      <!--
+      INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$ ^бойынша<post>/по<pr><dat>$
+      OUTPUT: ^pr_det_n<PP>{^по<pr>$ ^этот<det><dem><f><an><sg><dat>$ ^книга<n><f><nn><sg><dat>$}$
+      -->
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="n"/>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-pr-noun">
+          <with-param pos="3"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="pr_det_n">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
     <rule comment="REGLA: DET N ADJ N"> <!--Aliya-->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^кітап<n><gen>/книга<n><f><nn><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
