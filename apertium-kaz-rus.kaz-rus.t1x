@@ -1866,6 +1866,37 @@
       </action>
     </rule>
 
+      <rule comment="REGLA: DET POST"> <!-- Aliya -->
+      <!--
+      INPUT:  ^мәктәп<n>/школа<n><f><nn>$ ^сыз<post>/без<pr><gen>$
+      OUTPUT: ^pr_n<PP>{^без<pr>$ ^школа<n><f><nn><sg><gen>$}$
+      -->
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <call-macro n="makeagree-pr-noun">
+          <with-param pos="2"/>
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="det_post" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
 
     <rule comment="PRN N"> <!--Aliya-->
       <!--
@@ -1989,6 +2020,49 @@
             </choose>
           </otherwise>
         </choose>
+      </action>
+    </rule>
+
+    <rule comment="PRN N POST"> <!--Aliya-->
+      <!--
+      INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^жоспар<n><px1sg><nom>/план<n><m><nn><px1sg><nom>$ ^бойынша<post>/по<pr><dat>$
+      OUTPUT: ^pr_det_n<PP>{^по<pr>$ ^мой<det><pos><m><an><sg><dat>$ ^план<n><m><nn><sg><dat>$}$
+      -->
+      <pattern>
+        <pattern-item n="prn-gen"/>
+        <pattern-item n="n"/>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-pr-noun">
+          <with-param pos="3"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="pr_det_n">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
       </action>
     </rule>
 
