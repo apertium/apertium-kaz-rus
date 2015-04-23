@@ -1740,11 +1740,54 @@
     <rule comment="REGLA: DET N N"> <!-- Aliya -->
       <!--
       INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^үй<n><px1sg><gen>/дом<n><m><nn><px1sg><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
-      OUTPUT: ^det_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^мой<det><pos><m><an><sg><gen>$ ^дом<n><m><nn><sg><gen>$}$
+      OUTPUT: ^prn_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^мой<det><pos><m><an><sg><gen>$ ^дом<n><m><nn><sg><gen>$}$
       -->
       <pattern>
         <pattern-item n="prn-gen"/>
         <pattern-item n="n-px"/>
+        <pattern-item n="n-px3sp"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="prn_n_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: DET N N"> <!-- Aliya -->
+      <!--
+      INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^үй<n><gen>/дом<n><m><nn><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
+      OUTPUT: ^det_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^этот<det><dem><m><an><sg><gen>$ ^дом<n><m><nn><sg><gen>$}$
+      -->
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="n-attr-or-gen"/>
         <pattern-item n="n-px3sp"/>
       </pattern>
       <action>
@@ -1779,6 +1822,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule comment="PRN N"> <!--Aliya-->
       <!--
