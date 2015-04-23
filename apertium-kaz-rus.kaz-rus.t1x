@@ -2305,10 +2305,54 @@
     <rule comment="REGLA: DET ADJ N"> <!-- Aliya -->
       <!--
       INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^қызыл<adj>/красный<adj><sint><m><an><sg><nom>$ ^сөмке<n><px1sg><nom>/сумка<n><f><nn><px1sg><nom>$
-      OUTPUT: ^det_adj_n<SN>{^мой<det><pos><f><an><sg><nom>$ ^красный<adj><sint><f><an><sg><nom>$ ^сумка<n><f><nn><sg><nom>$}$
+      OUTPUT: ^prn_adj_n<SN>{^мой<det><pos><f><an><sg><nom>$ ^красный<adj><sint><f><an><sg><nom>$ ^сумка<n><f><nn><sg><nom>$}$
       -->
       <pattern>
         <pattern-item n="prn-gen"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <chunk name="prn_adj_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: DET ADJ N (2)"> <!-- Aliya -->
+      <!--
+      INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^үй<n><nom>/дом<n><m><nn><nom>$
+      OUTPUT: ^det_adj_n<SN>{^этот<det><dem><m><an><sg><nom>$ ^красивый<adj><sint><m><an><sg><nom>$ ^дом<n><m><nn><sg><nom>$}$
+      -->
+      <pattern>
+        <pattern-item n="det"/>
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
       </pattern>
@@ -2345,6 +2389,7 @@
         </out>
       </action>
     </rule>
+
 
     <rule comment="REGLA: NUM N">
       <!--
