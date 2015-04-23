@@ -1662,6 +1662,49 @@
       </action>
     </rule>
 
+      <rule comment="REGLA: N N POST">
+      <!--
+      INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^кітап<n><px3sp><nom>/книга<n><f><nn><px3sp><nom>$ ^бойынша<post>/по<pr><dat>$
+      OUTPUT: ^n_n_post<PP>{^по<pr>$ ^книга<n><f><nn><sg><dat>$ ^ученик<n><m><aa><sg><gen>$}$
+      -->
+      <pattern>
+        <pattern-item n="n-attr-or-gen"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-pr-noun">
+          <with-param pos="3"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="n_n_post" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
+
       <rule comment="REGLA: NUM POST">
       <!--
       INPUT:  ^жүз<num><subst><dat>/сто<num><m><an><sg><nom><subst><dat>/сто<num><m><an><sg><det><subst><dat>/сто<num><m><an><sg><ord><subst><dat>$ ^жуық<post>/около<pr><gen>$
@@ -1780,7 +1823,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET N N"> <!-- Aliya -->
+    <rule comment="REGLA: DET N N (2)"> <!-- Aliya -->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^үй<n><gen>/дом<n><m><nn><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
       OUTPUT: ^det_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^этот<det><dem><m><an><sg><gen>$ ^дом<n><m><nn><sg><gen>$}$
