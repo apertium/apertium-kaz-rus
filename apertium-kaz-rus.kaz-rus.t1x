@@ -1737,10 +1737,10 @@
     </rule>
 
 
-    <rule comment="REGLA: N POST N">
+    <rule comment="REGLA: N POST N"> <!-- Aliya -->
       <!--
-      INPUT:  ^азатлык<n><nom>/свобода<n><f><nn><sg><nom>$ ^өчен<post>/за<pr><acc>$ ^көрәш<n><loc>/борьба<n><f><nn><sg><loc>$
-      OUTPUT: ^n_pr_n<SN>{^в<pr>$ ^борьба<n><f><nn><sg><prp>$ ^за<pr>$ ^свобода<n><f><nn><sg><acc>$}$
+      INPUT:  ^тақырып<n><nom>/тема<n><f><nn><nom>$ ^бойынша<post>/по<pr><dat>$ ^мысал<n><nom>/пример<n><m><nn><nom>$
+      OUTPUT: ^n_post_n<SN>{^пример<n><m><nn><sg><nom>$ ^по<pr>$ ^тема<n><f><nn><sg><dat>$}$
       -->
       <pattern>
         <pattern-item n="n-nom"/>
@@ -1752,7 +1752,7 @@
           <with-param pos="3"/>
         </call-macro>
         <out>
-          <chunk name="n_pr_n">
+          <chunk name="n_post_n">
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
