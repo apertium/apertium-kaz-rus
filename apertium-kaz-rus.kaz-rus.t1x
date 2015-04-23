@@ -2519,10 +2519,10 @@
       </action>
     </rule>
 
-    <rule comment="ADJ N POST">
+    <rule comment="ADJ N POST"> <!-- Aliya -->
       <!--
-      INPUT:  ^ялкау<adj>/ленивый<adj><sint><m><an><sg><nom>$ ^эт<n><attr>/собака<n><f><aa><sg><attr>$ ^аркылы<post>/через<pr><acc>$
-      OUTPUT: ^pr_adj_n<PP>{^через<pr>$ ^ленивый<adj><sint><f><an><sg><acc>$ ^собака<n><f><aa><sg><acc>$}$
+      INPUT:  ^қызыл<adj>/красный<adj><sint><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$ ^туралы<post>/о<pr><prp>$
+      OUTPUT: ^pr_adj_n<PP>{^о<pr>$ ^красный<adj><sint><f><an><sg><prp>$ ^книга<n><f><nn><sg><prp>$}$
       -->
       <pattern>
         <pattern-item n="adj"/>
