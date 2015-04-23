@@ -1538,7 +1538,7 @@
     </rule>
 
 
-    <rule comment="REGLA: N ADJ N"> <!--Aliya-->
+    <rule comment="REGLA: N ADJ N"> <!--Aliya--><!--rody saikes kelmeid jenski-->
       <!--
       INPUT:  ^сурет<n><px3sp><nom>/рисунок<n><m><nn><px3sp><nom>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$
       OUTPUT: ^adj_n_n-nom<SN>{^имя<n><nt><nn><sg><nom>$ ^известный<adj><sint><m><an><sg><gen>$ ^поэт<n><m><aa><sg><gen>$}$
@@ -1575,6 +1575,49 @@
             </lu>
             <b/>
            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: N ADJ N (2)"> <!-- Aliya -->
+      <!--
+      INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^кітап<n><px3sp><nom>/книга<n><f><nn><px3sp><nom>$
+      OUTPUT: ^n_adj_n-px3sp<SN>{^красивый<adj><sint><f><an><sg><nom>$ ^книга<n><f><nn><sg><nom>$ ^ученик<n><m><aa><sg><gen>$}$
+      -->
+      <pattern>
+        <pattern-item n="n-attr-or-gen"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n-px3sp"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <chunk name="n_adj_n-px3sp">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
           </chunk>
