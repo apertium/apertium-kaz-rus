@@ -108,7 +108,6 @@
  <cat-item lemma="аст" tags="n.px3sp.loc.attr"/> 
     </def-cat>
 
-
     <def-cat n="prn-gen">
       <cat-item tags="prn.pers.*.*.gen"/>
 <!--      <cat-item lemma="ул" tags="prn.dem.gen"/> -->
@@ -1208,9 +1207,47 @@
       </action>
     </rule>
 
+    <rule comment="REGLA: N N (2)">    <!-- Aliya -->
+      <!--
+      INPUT:  ^үй<n><gen>/дом<n><m><nn><gen>$ ^алд<n><px3sp><loc>/перед<pr><ins>$
+      OUTPUT: ^n-gen_n<SN>{^перед<pr>$ ^дом<n><m><nn><sg><ins>$}$
+      -->
+      <pattern>
+        <pattern-item n="n-attr-or-gen"/>
+        <pattern-item n="n-px3sp"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="n-gen_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="2" side="tl" part="lem"/>
+              <clip pos="2" side="tl" part="a_pr"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_gender"/>
+              <clip pos="1" side="tl" part="a_anim"/>
+              <lit-tag v="sg"/>
+              <clip pos="2" side="tl" part="a_case"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
     <rule comment="REGLA: N N N (2)">
       <!--
-      INPUT:  ^үй<n><attr>/дом<n><m><nn><attr>$ ^алд<n><px3sp><loc><attr>/перед<pr><ins><attr>$ ^бақша<n><loc>/сад<n><m><nn><loc>$
+      INPUT:  ^үй<n><gen>/дом<n><m><nn><gen>$ ^алд<n><px3sp><loc><attr>/перед<pr><ins><attr>$ ^бақша<n><nom>/огород<n><m><nn><nom>$
       OUTPUT: ^n_pr_n<SN>{^в<pr>$ ^сад<n><m><nn><sg><loc>$ ^перед<pr>$ ^дом<n><m><nn><sg><ins>$}$
       -->
       <pattern>
@@ -1566,7 +1603,7 @@
           <with-param pos="1"/>
         </call-macro>
         <out>
-          <chunk name="pr_n" case="caseFirstWord">
+          <chunk name="n_post" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="PP"/></tag>
             </tags>
@@ -1581,6 +1618,38 @@
           </out>
       </action>
     </rule>
+
+      <rule comment="REGLA: NUM POST">
+      <!--
+      INPUT:  ^жүз<num><subst><dat>/сто<num><m><an><sg><nom><subst><dat>/сто<num><m><an><sg><det><subst><dat>/сто<num><m><an><sg><ord><subst><dat>$ ^жуық<post>/около<pr><gen>$
+      OUTPUT: ^num_post<PP>{^около<pr><nom>$ ^сто<num><m><an><gen><subst><dat>$}$
+      -->
+      <pattern>
+        <pattern-item n="num"/>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <call-macro n="makeagree-num-noun">
+          <with-param pos="2"/>
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="num_post" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: N POST N">
       <!--
