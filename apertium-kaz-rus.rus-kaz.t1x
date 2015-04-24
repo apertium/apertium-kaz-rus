@@ -18,10 +18,15 @@
       <cat-item tags="vblex.impf.pres.*"/>
       <cat-item tags="vblex.impf.pres"/>
       <cat-item tags="vblex.impf.past"/>
-     <cat-item tags="vblex.impf.past"/>
+     <cat-item tags="vblex.impf.past.*"/>
     </def-cat>   
+<def-cat n="budu-vbser"> <!-- past and present tense -->
+      <cat-item tags="vbser.fut.*"/>
+      <cat-item tags="vbser.fut"/>
+      
+    </def-cat> 
     <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
-      <cat-item tags="vblex.inf"/> <!-- This may be dangerous and should be treated at tagger level -->      
+      <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->      
 
     </def-cat>
 
@@ -857,6 +862,43 @@
     </choose>
   </action>
 </rule>
+
+
+<!-- я буду играть -->
+<rule comment="NEW RULE: fut-verb"> 
+  <pattern>
+    <pattern-item n="budu-vbser"/>
+<pattern-item n="approx-inf-verb"/> 
+
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+
+      <when>
+        <test>
+          <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="fut"/>
+          </equal>
+        </test>
+        <let><var n="tense"/><lit-tag v="aor"/></let>
+      <call-macro n="NEW-gen-simple-verb">
+         <with-param pos="2"/> 
+     </call-macro>
+
+      </when>
+
+          <otherwise>
+        <let><var n="tense"/><lit-tag v="aor"/></let>
+      <call-macro n="NEW-gen-simple-verb">
+         <with-param pos="2"/> 
+     </call-macro>
+      </otherwise> 
+    </choose>
+  </action>
+</rule>
+
 
 <!-- comment=¨REGLA: NUM¨-->
 

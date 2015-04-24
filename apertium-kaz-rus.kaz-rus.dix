@@ -232,6 +232,7 @@
   <e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e r="RL"><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
   <e r="RL"><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
+  <e r="RL"><p><l><s n="inf"/></l><r><s n="inf"/></r></p></e>
   <e r="LR"><p><l><s n="neg"/><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
 
@@ -262,6 +263,10 @@
 <!-- v1 17.02.2015-->
 
 <e><p><l>бол<s n="v"/><s n="iv"/></l><r>быть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>быть<s n="vbser"/><s n="fut"/></r></p></e>
+
+
 
 <e><p><l>шуылда<s n="v"/><s n="iv"/></l><r>шуметь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>күмандан<s n="v"/><s n="iv"/></l><r>сомневаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
