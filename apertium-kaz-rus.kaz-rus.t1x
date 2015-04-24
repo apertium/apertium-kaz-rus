@@ -1528,7 +1528,7 @@
     </rule>
 
 
-    <rule comment="REGLA: N ADJ N"> <!--Aliya--><!--rody saikes kelmeid jenski-->
+    <rule comment="REGLA: N ADJ N"> <!--Aliya-->
       <!--
       INPUT:  ^сурет<n><px3sp><nom>/рисунок<n><m><nn><px3sp><nom>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$
       OUTPUT: ^adj_n_n-nom<SN>{^имя<n><nt><nn><sg><nom>$ ^известный<adj><sint><m><an><sg><gen>$ ^поэт<n><m><aa><sg><gen>$}$
