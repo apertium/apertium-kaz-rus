@@ -1209,7 +1209,7 @@
     </rule>
 
 
-    <rule comment="REGLA: N N (2)">    <!-- Aliya -->
+    <rule comment="REGLA: N N (2)">    <!-- Aliya --> <!-- үйдің алдында -->
       <!--
       INPUT:  ^үй<n><gen>/дом<n><m><nn><gen>$ ^алд<n><px3sp><loc>/перед<pr><ins>$
       OUTPUT: ^n-gen_n<SN>{^перед<pr>$ ^дом<n><m><nn><sg><ins>$}$
@@ -1475,7 +1475,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: N N ADJ N"> <!-- Aliya -->
+    <rule comment="REGLA: N N ADJ N"> <!-- Aliya --> <!-- оқушының кітабының соңғы басылымы -->
       <!--
       INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^кітап<n><px3sp><gen>/книга<n><f><nn><px3sp><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
       OUTPUT: ^n_n_adj_n<SN>{^последний<adj><sint><nt><an><sg><nom>$ ^издание<n><nt><nn><sg><nom>$ ^книга<n><f><nn><sg><gen>$ ^ученик<n><f><an><sg><gen>$}$
@@ -1528,7 +1528,7 @@
     </rule>
 
 
-    <rule comment="REGLA: N ADJ N"> <!-- Aliya -->
+    <rule comment="REGLA: N ADJ N"> <!-- Aliya --> <!-- суреті әдемі кітап -->
       <!--
       INPUT:  ^сурет<n><px3sp><nom>/рисунок<n><m><nn><px3sp><nom>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$
       OUTPUT: ^adj_n_n-nom<SN>{^имя<n><nt><nn><sg><nom>$ ^известный<adj><sint><m><an><sg><gen>$ ^поэт<n><m><aa><sg><gen>$}$
@@ -1574,7 +1574,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: N ADJ N (2)"> <!-- Aliya -->
+    <rule comment="REGLA: N ADJ N (2)"> <!-- Aliya --> <!-- оқушының әдемі кітабы -->
       <!--
       INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^кітап<n><px3sp><nom>/книга<n><f><nn><px3sp><nom>$
       OUTPUT: ^n_adj_n-px3sp<SN>{^красивый<adj><sint><f><an><sg><nom>$ ^книга<n><f><nn><sg><nom>$ ^ученик<n><m><aa><sg><gen>$}$
@@ -1729,13 +1729,13 @@
     </rule>
 
 
-    <rule comment="REGLA: N POST N"> <!-- Aliya -->
+    <rule comment="REGLA: N POST N"> <!-- Aliya --> <!-- тақырып бойынша мысал -->
       <!--
       INPUT:  ^тақырып<n><nom>/тема<n><f><nn><nom>$ ^бойынша<post>/по<pr><dat>$ ^мысал<n><nom>/пример<n><m><nn><nom>$
       OUTPUT: ^n_post_n<SN>{^пример<n><m><nn><sg><nom>$ ^по<pr>$ ^тема<n><f><nn><sg><dat>$}$
       -->
       <pattern>
-        <pattern-item n="n-nom"/>
+        <pattern-item n="n"/>
         <pattern-item n="post"/>
         <pattern-item n="n"/>
       </pattern>
@@ -1771,8 +1771,7 @@
       </action>
     </rule>
 
-
-    <rule comment="REGLA: DET N N"> <!-- Aliya -->
+    <rule comment="REGLA: DET N N"> <!-- Aliya --> <!-- менің үйімнің есігі -->
       <!--
       INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^үй<n><px1sg><gen>/дом<n><m><nn><px1sg><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
       OUTPUT: ^prn_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^мой<det><pos><m><an><sg><gen>$ ^дом<n><m><nn><sg><gen>$}$
@@ -1815,7 +1814,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET N N (2)"> <!-- Aliya -->
+    <rule comment="REGLA: DET N N (2)"> <!-- Aliya --> <!-- осы үйдің есігі -->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^үй<n><gen>/дом<n><m><nn><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
       OUTPUT: ^det_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^этот<det><dem><m><an><sg><gen>$ ^дом<n><m><nn><sg><gen>$}$
@@ -1858,10 +1857,10 @@
       </action>
     </rule>
 
-      <rule comment="REGLA: DET POST"> <!-- Aliya -->
+      <rule comment="REGLA: DET POST"> <!-- Aliya --> <!-- осы бойынша -->
       <!--
-      INPUT:  ^мәктәп<n>/школа<n><f><nn>$ ^сыз<post>/без<pr><gen>$
-      OUTPUT: ^pr_n<PP>{^без<pr>$ ^школа<n><f><nn><sg><gen>$}$
+      INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^бойынша<post>/по<pr><dat>$
+      OUTPUT: ^det_post<PP>{^по<pr>$ ^этот<det><dem><m><an><sg><dat>$}$
       -->
       <pattern>
         <pattern-item n="det"/>
@@ -1890,7 +1889,7 @@
     </rule>
 
 
-    <rule comment="PRN N"> <!-- Aliya -->
+    <rule comment="PRN N"> <!-- Aliya --> <!-- менің кітабым -->
       <!--
       INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^кітап<n><px1sg><nom>/книга<n><f><nn><px1sg><nom>$
       OUTPUT: ^det_n_other_poss<SN><nom>{^мой<det><pos><f><an><sg><2>$ ^книга<n><f><nn><sg><nom>$}$
@@ -1932,7 +1931,7 @@
       </action>
     </rule>
 
-    <rule comment="PRN N POST"> <!-- Aliya -->
+    <rule comment="PRN N POST"> <!-- Aliya --> <!-- менің жоспарым бойынша -->
       <!--
       INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^жоспар<n><px1sg><nom>/план<n><m><nn><px1sg><nom>$ ^бойынша<post>/по<pr><dat>$
       OUTPUT: ^pr_det_n<PP>{^по<pr>$ ^мой<det><pos><m><an><sg><dat>$ ^план<n><m><nn><sg><dat>$}$
@@ -2010,10 +2009,10 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET N POST"> <!-- Aliya -->
+    <rule comment="REGLA: DET N POST"> <!-- Aliya --> <!-- осы кітап бойынша -->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$ ^бойынша<post>/по<pr><dat>$
-      OUTPUT: ^pr_det_n<PP>{^по<pr>$ ^этот<det><dem><f><an><sg><dat>$ ^книга<n><f><nn><sg><dat>$}$
+      OUTPUT: ^det_n_post<PP>{^по<pr>$ ^этот<det><dem><f><an><sg><dat>$ ^книга<n><f><nn><sg><dat>$}$
       -->
       <pattern>
         <pattern-item n="det"/>
@@ -2033,7 +2032,7 @@
           <with-param pos="2"/>
         </call-macro>
         <out>
-          <chunk name="pr_det_n">
+          <chunk name="det_n_post">
             <tags>
               <tag><lit-tag v="PP"/></tag>
             </tags>
@@ -2053,7 +2052,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET N ADJ N"> <!-- Aliya -->
+    <rule comment="REGLA: DET N ADJ N"> <!-- Aliya --> <!-- осы кітаптың соңғы басылымы -->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^кітап<n><gen>/книга<n><f><nn><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
       OUTPUT: ^det_n_adj_n<SN>{^последний<adj><sint><nt><an><sg><nom>$ ^издание<n><nt><nn><sg><nom>$ ^этот<det><dem><f><an><sg><gen>$ ^книга<n><f><nn><sg><gen>$}$
@@ -2144,7 +2143,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: ADJ N ADJ N"> <!-- Aliya -->
+    <rule comment="REGLA: ADJ N ADJ N"> <!-- Aliya --> <!-- қызыл кітаптың соңғы басылымы -->
       <!--
       INPUT:  ^қызыл<adj>/красный<adj><sint><m><an><sg><nom>$ ^кітап<n><gen>/книга<n><f><nn><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
       OUTPUT: ^adj_n_adj_n<SN>{^последний<adj><sint><nt><an><sg><nom>$ ^издание<n><nt><nn><sg><nom>$ ^красный<adj><sint><f><an><sg><gen>$ ^книга<n><f><nn><sg><gen>$}$
@@ -2196,7 +2195,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: ADJ N N"> <!-- Aliya -->
+    <rule comment="REGLA: ADJ N N"> <!-- Aliya --> <!-- қалалық ақынның есімі -->
       <!--
       INPUT:  ^қалалық<adj>/городской<adj><sint><m><an><sg><nom>$ ^ақын<n><gen>/поэт<n><m><aa><gen>$ ^есім<n><px3sp><nom>/имя<n><nt><nn><px3sp><nom>$
       OUTPUT: ^adj_n_n<SN>{^имя<n><nt><nn><sg><nom>$ ^известный<adj><sint><m><an><sg><gen>$ ^поэт<n><m><aa><sg><gen>$}$
@@ -2285,7 +2284,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET ADJ N"> <!-- Aliya -->
+    <rule comment="REGLA: DET ADJ N"> <!-- Aliya --> <!-- менің қызыл сөмкем -->
       <!--
       INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^қызыл<adj>/красный<adj><sint><m><an><sg><nom>$ ^сөмке<n><px1sg><nom>/сумка<n><f><nn><px1sg><nom>$
       OUTPUT: ^prn_adj_n<SN>{^мой<det><pos><f><an><sg><nom>$ ^красный<adj><sint><f><an><sg><nom>$ ^сумка<n><f><nn><sg><nom>$}$
@@ -2329,7 +2328,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET ADJ N (2)"> <!-- Aliya -->
+    <rule comment="REGLA: DET ADJ N (2)"> <!-- Aliya --> <!-- осы әдемі үй -->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^үй<n><nom>/дом<n><m><nn><nom>$
       OUTPUT: ^det_adj_n<SN>{^этот<det><dem><m><an><sg><nom>$ ^красивый<adj><sint><m><an><sg><nom>$ ^дом<n><m><nn><sg><nom>$}$
@@ -2590,7 +2589,7 @@
       </action>
     </rule>
 
-    <rule comment="ADJ N POST"> <!-- Aliya -->
+    <rule comment="ADJ N POST"> <!-- Aliya --> <!-- қызыл кітап туралы -->
       <!--
       INPUT:  ^қызыл<adj>/красный<adj><sint><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$ ^туралы<post>/о<pr><prp>$
       OUTPUT: ^pr_adj_n<PP>{^о<pr>$ ^красный<adj><sint><f><an><sg><prp>$ ^книга<n><f><nn><sg><prp>$}$
