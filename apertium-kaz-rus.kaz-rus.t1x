@@ -1062,20 +1062,19 @@
       </action>
     </rule>
 
-
     <rule comment="REGLA: N N">
       <!--
-      INPUT:  ^орындық<n><attr>/стул<n><m><nn><attr>$ ^аст<n><pl><px3sp><acc>/низ<n><m><nn><pl><px3sp><acc>$
+      INPUT:  ^урындык<n><attr>/стул<n><m><nn><attr>$ ^аст<n><pl><px3sp><acc>/низ<n><m><nn><pl><px3sp><acc>$
       OUTPUT: ^n_n<SN>{^низ<n><m><nn><pl><acc>$ ^стул<n><m><nn><sg><gen>$}$
-      INPUT:  ^Үй<n><attr>/Дом<n><m><nn><attr>$ ^алд<n><px3sp><loc>/перед<pr><ins>$
+      INPUT:  ^Өй<n><attr>/Дом<n><m><nn><attr>$ ^алд<n><px3sp><loc>/перед<pr><ins>$
       OUTPUT: ^pr_n<PP>{^Перед<pr>$ ^дом<n><m><nn><sg><ins>$}$
-      INPUT:  ^теңіз<n><attr>/морской<adj><m><an><sg><nom>$ ^флот<n><px3sp><acc>/флот<n><m><nn><px3sp><acc>$
+      INPUT:  ^диңгез<n><attr>/морской<adj><m><an><sg><nom>$ ^флот<n><px3sp><acc>/флот<n><m><nn><px3sp><acc>$
       OUTPUT: ^adj_n<SN>{^морской<adj><m><nn><sg><acc>$ ^флот<n><m><nn><sg><acc>$}$
-      INPUT:  ^Казан<np><top><attr>/Казань<np><top><f><attr>$ ^қала<n><px3sp><acc>/город<n><m><nn><px3sp><acc>$
+      INPUT:  ^Казан<np><top><attr>/Казань<np><top><f><attr>$ ^шәһәр<n><px3sp><acc>/город<n><m><nn><px3sp><acc>$
       OUTPUT: ^n_n<SN>{^город<n><m><nn><sg><acc>$ ^Казань<np><top><f><sg><acc>$}$
       -->
       <pattern>
-        <pattern-item n="prn-gen"/>
+        <pattern-item n="n-attr-or-gen"/>
         <pattern-item n="n-px3sp"/>
       </pattern>
       <action>
@@ -1209,44 +1208,6 @@
     </rule>
 
 
-    <rule comment="REGLA: N N (2)">    <!-- Aliya --> <!-- үйдің алдында -->
-      <!--
-      INPUT:  ^үй<n><gen>/дом<n><m><nn><gen>$ ^алд<n><px3sp><loc>/перед<pr><ins>$
-      OUTPUT: ^n-gen_n<SN>{^перед<pr>$ ^дом<n><m><nn><sg><ins>$}$
-      -->
-      <pattern>
-        <pattern-item n="n-attr-or-gen"/>
-        <pattern-item n="n-px3sp"/>
-      </pattern>
-      <action>
-        <call-macro n="translate-noun">
-          <with-param pos="1"/>
-        </call-macro>
-        <out>
-          <chunk name="n-gen_n">
-            <tags>
-              <tag><lit-tag v="SN"/></tag>
-            </tags>
-            <var n="preposition"/>
-            <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_pr"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gender"/>
-              <clip pos="1" side="tl" part="a_anim"/>
-              <lit-tag v="sg"/>
-              <clip pos="2" side="tl" part="a_case"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
     <rule comment="REGLA: N N N (2)">
       <!--
       INPUT:  ^үй<n><gen>/дом<n><m><nn><gen>$ ^алд<n><px3sp><loc><attr>/перед<pr><ins><attr>$ ^бақша<n><nom>/огород<n><m><nn><nom>$
@@ -1291,7 +1252,7 @@
 
 
 
- <rule comment="REGLA: N N N (3)"> <!-- Aliya -->
+ <rule comment="REGLA: N N N (3)"> <!-- Aliya --> <!-- оқушының кітабындағы сурет -->
       <!--
       INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^кітап<n><px3sp><loc><attr>/книга<n><f><nn><px3sp><loc><attr>$ ^сурет<n><nom>/рисунок<n><m><nn><nom>$
       OUTPUT: ^n_n-loc_n<SN>{^рисунок<n><m><nn><sg><nom>$ ^в<pr>$ ^книга<n><f><nn><sg><prp>$ ^ученик<n><m><aa><sg><gen>$}$
@@ -1376,7 +1337,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: N N N (4)"> <!-- Aliya kate -->
+    <rule comment="REGLA: N N N (4)"> <!-- Aliya --> <!-- оқушының үйінің кілті -->
       <!--
       INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^үй<n><px3sp><gen>/дом<n><m><nn><px3sp><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
       OUTPUT: ^n-gen_n_n<SN>{^дверь<n><f><nn><sg><nom>$ ^дом<n><f><an><sg><nom>$ ^ученик<n><m><aa><sg><gen>$}$
@@ -1396,19 +1357,20 @@
         <call-macro n="translate-noun">
           <with-param pos="3"/>
         </call-macro>
-        <call-macro n="makeagree-det-noun">
-          <with-param pos="2"/>
-          <with-param pos="3"/>
-        </call-macro>
+
+          <let><var n="preposition"/><concat><lit v="^от"/><lit-tag v="pr"/><lit v="$ "/></concat></let>
+          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
         <out>
           <chunk name="n-gen_n_n">
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
+            <b/>
+            <var n="preposition"/>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -1481,7 +1443,7 @@
       OUTPUT: ^n_n_adj_n<SN>{^последний<adj><sint><nt><an><sg><nom>$ ^издание<n><nt><nn><sg><nom>$ ^книга<n><f><nn><sg><gen>$ ^ученик<n><f><an><sg><gen>$}$
       -->
       <pattern>
-        <pattern-item n="n-gen"/>
+        <pattern-item n="n-attr-or-gen"/>
         <pattern-item n="n-px3sp"/>
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
@@ -1561,6 +1523,43 @@
               <clip pos="3" side="tl" part="whole"/>
             </lu>
             <b/>
+            <var n="preposition"/>
+           <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+           <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+    <rule comment="REGLA: N ADJ"> <!-- Aliya --> <!-- бойы ұзын -->
+      <!--
+      INPUT:  ^бой<n><px3sp><nom>/рост<n><m><nn><px3sp><nom>$ ^ұзын<adj>/длинный<adj><sint><m><an><sg><nom>$
+      OUTPUT: ^n_adj<SN>{^с<pr>$ ^длинный<adj><sint><m><an><sg><ins>$ ^рост<n><m><nn><sg><ins>$}$
+      -->
+      <pattern>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="adj"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        
+          <let><var n="preposition"/><concat><lit v="^с"/><lit-tag v="pr"/><lit v="$ "/></concat></let>
+          <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ins"/></let>
+          <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ins"/></let>
+          <let><clip pos="2" side="tl" part="a_gender"/><clip pos="1" side="tl" part="a_gender"/></let>
+        <out>
+
+          <chunk name="n_adj">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
             <var n="preposition"/>
            <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -2237,6 +2236,52 @@
         </out>
       </action>
     </rule>
+
+
+    <rule comment="REGLA: ADJ N N (2)"> <!-- Aliya --> <!-- үлкен қаладағы базар -->
+      <!--
+      INPUT:  ^үлкен<adj>/большой<adj><sint><m><an><sg><nom>$ ^қала<n><loc><attr>/город<n><m><nn><loc><attr>$ ^базар<n><nom>/рынок<n><m><nn><nom>$
+      OUTPUT: ^adj_n-loc_n<SN>{^рынок<n><m><nn><sg><nom>$ ^в<pr>$  ^большой<adj><sint><m><an><sg><prp>$ ^город<n><m><nn><sg><prp>$}$
+      -->
+      <pattern>
+        <pattern-item n="adj"/>
+        <pattern-item n="n"/>
+        <pattern-item n="n"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="adj_n-loc_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <var n="preposition"/>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: ADJ ADJ N">
       <!--
