@@ -4265,7 +4265,6 @@
 <e><p><l>зейін<s n="n"/></l><r>внимание<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>зекет<s n="n"/></l><r>милостыня<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>зеректік<s n="n"/></l><r>хваткость<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<e><p><l>зерттеу<s n="n"/></l><r>исследование<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>зерттеуші<s n="n"/></l><r>исследователь<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>зияндылық<s n="n"/></l><r>вредность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>зомбылық<s n="n"/></l><r>тирания<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -4596,7 +4595,6 @@
 <e><p><l>құт<s n="n"/></l><r>счастье<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>құттықтау<s n="n"/></l><r>поздравление<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>құтылыс<s n="n"/></l><r>спасение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
-<e><p><l>қыз<s n="n"/></l><r>девушка<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>қызанақ<s n="n"/></l><r>помидор<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қызғалдақ<s n="n"/></l><r>тюльпан<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қызғаншақтық<s n="n"/></l><r>ревность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -9385,7 +9383,7 @@
 <e>       <p><l>Александрия<s n="np"/><s n="top"/></l> <r>Александрия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Англия<s n="np"/><s n="top"/></l>      <r>Англия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Армения<s n="np"/><s n="top"/></l>   <r>Армения<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
-<e>       <p><l>Евразия<s n="np"/><s n="top"/></l>     <r>Евразия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e>       <p><l>Еуразия<s n="np"/><s n="top"/></l>     <r>Евразия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Беларуссия<s n="np"/><s n="top"/></l>   <r>Белоруссия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Бельгия<s n="np"/><s n="top"/></l>     <r>Бельгия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Болгария<s n="np"/><s n="top"/></l>    <r>Болгария<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
@@ -9462,6 +9460,15 @@
 <e>       <p><l>Ютландия<s n="np"/><s n="top"/></l>    <r>Ютландия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Якутия<s n="np"/><s n="top"/></l>      <r>Якутия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Япония<s n="np"/><s n="top"/></l>      <r>Япония<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+
+
+
+<!-- Anthroponyms -->
+<e>       <p><l>Айбек<s n="np"/><s n="ant"/><s n="m"/></l><r>Айбек<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+<e>       <p><l>Мәдина<s n="np"/><s n="ant"/><s n="f"/></l><r>Мадина<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+
+<e>       <p><l>Алма<s n="np"/><s n="ant"/><s n="f"/></l><r>Алма<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+
 
 
 
