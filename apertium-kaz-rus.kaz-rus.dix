@@ -230,9 +230,9 @@
     
 <pardef n="impf__verb">
   <e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
-  <e r="RL"><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
+  <e><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
   <e><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
-  <e r="RL"><p><l><s n="inf"/></l><r><s n="inf"/></r></p></e>
+  <e><p><l><s n="inf"/></l><r><s n="inf"/></r></p></e>
   <e r="LR"><p><l><s n="neg"/><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
 
@@ -2206,7 +2206,7 @@
 <e><p><l>жалбырат<s n="v"/><s n="iv"/></l><r>лохматить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>сүю<s n="v"/><s n="iv"/></l><r>любить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>кеңес<b/>ет<s n="v"/><s n="iv"/></l><r>советовать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>оқы<s n="v"/><s n="iv"/></l><r>читать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>оқы<s n="v"/><s n="iv"/></l><r>читать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>еске<b/>ал<s n="v"/><s n="iv"/></l><r>помнить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ұрла<s n="v"/><s n="iv"/></l><r>воровать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>шайна<s n="v"/><s n="iv"/></l><r>жевать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
