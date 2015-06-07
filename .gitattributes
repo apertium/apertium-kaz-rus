@@ -4,6 +4,7 @@
 /ChangeLog -text
 /Makefile.am -text
 /NEWS -text
+/NEWwords.txt -text
 /README -text
 /Useful[!!-~]notes -text
 /apertium-kaz-rus.kaz-rus.dix -text
