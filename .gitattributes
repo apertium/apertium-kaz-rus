@@ -27,6 +27,8 @@ devel/adjec3.awk -text
 devel/adjectives.csv -text
 devel/noun.awk -text
 /modes.xml -text
+texts/Kazakhstan.kaz.txt -text svneol=unset#application/octet-stream
+texts/Kazakhstan.rus.txt -text svneol=unset#application/octet-stream
 texts/rus.txt -text svneol=unset#application/octet-stream
 texts/texts.kaz -text svneol=unset#application/octet-stream
 texts/texts.rus -text svneol=unset#application/octet-stream
