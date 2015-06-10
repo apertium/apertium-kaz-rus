@@ -106,7 +106,7 @@
   </section-def-vars>
 
   <section-rules>
-
+    
     <rule comment="REGLA: * VBSER -> *">
       <!--
       INPUT:  ^n_n<SN>{^книга<n><f><nn><sg><nom>$ ^ученик<n><m><aa><sg><gen>$}$ ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
@@ -188,6 +188,8 @@
         </out>
       </action>
     </rule>      
+
+
 
 
 <rule comment="REGLA: SN SV -> SN SV">

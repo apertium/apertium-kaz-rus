@@ -10,6 +10,9 @@
  <def-cat n="subj-pron">
       <cat-item tags="prn.pers.*"/>
     </def-cat>
+<def-cat n="subj-pron-pos">
+      <cat-item tags="prn.pos.*"/>
+    </def-cat>
     <def-cat n="sent">
       <cat-item tags="sent"/>
     </def-cat>
@@ -28,8 +31,6 @@
     <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
       <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->      
 
-    </def-cat>
-
    <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
@@ -39,7 +40,17 @@
       <cat-item tags="num.itg"/>
     </def-cat>
 
+  <def-cat n="vbmod"> <!-- Буду -->
+      
+      <cat-item lemma="быть" tags="vblex.impf.fut.*"/>
+ 	<cat-item lemma="быть" tags="vblex.impf.fut"/>
+      
+    </def-cat>
 
+  <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
+      <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->    
+      <cat-item tags="vblex.perf.inf"/>  
+    </def-cat>
 
    <def-cat n="det">
       <cat-item tags="det.def.*"/>
@@ -64,9 +75,26 @@
       <attr-item tags="p2"/>
       <attr-item tags="p3"/>
     </def-attr>
+<def-attr n="a_pron">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
  <def-attr n="a_kaz_perspron"> 
       <attr-item tags="prn.pers"/>
   
+    </def-attr>
+ <def-attr n="a_kaz_pospron"> 
+      <attr-item tags="prn.pos"/>
+  
+    </def-attr>
+  <def-attr n="a_possessive"> <!-- check if complete -->
+      <attr-item tags="PXD"/> <!-- to be determined -->
+      <attr-item tags="px3sp"/>
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
     </def-attr>
     <def-attr n="a_case">
       <attr-item tags="nom"/>
@@ -261,6 +289,8 @@
       </chunk>
         </out>
 </def-macro>
+
+
 
 <!--Numerals def-macro-->
 
@@ -617,10 +647,11 @@
            <concat>
                <clip pos="1" side="tl" part="lem"/> 
                <clip pos="1" side="tl" part="a_nom"/>
-               <lit-tag v="2"/> <!-- for number -->
+               <lit-tag v="2"/> <!-- for number -->	
                <!-- no need to link person -->
-               <lit-tag v="4"/> <!-- for possessive -->
+ 		<lit-tag v="4"/> <!-- for possessive -->
                <lit-tag v="5"/> <!-- for case -->
+ <!-- for case -->
            </concat>  
         </let>
 </def-macro>
@@ -661,7 +692,7 @@
 <choose> 
 <when>
    <test>
-          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="my"/></equal>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="мой"/></equal>
     </test>      
           <let><var  n="possessive"/><lit-tag v="px1sg"/></let>
 </when>
@@ -755,7 +786,7 @@
   <out>
    <chunk name="subj-pron" case="caseFirstWord">
     <tags>
-    <tag><lit-tag v="NP"/></tag>
+    <tag><lit-tag v="NP-pron"/></tag>
     <tag><var n="number"/></tag>
     <tag><clip pos="1" side="sl" part="a_pers"/></tag> 
     <tag><lit-tag v="PXD"/></tag>
@@ -774,6 +805,8 @@
   </out>
  </action>
 </rule>
+
+
 
 <!-- RULE noun`s noun ex: книга ученик -->
 <rule comment="NEW RULE: noun1 noun2">  <!-- football player-->
@@ -813,7 +846,128 @@
   </action>
 </rule>
 
+ 
+<rule comment="NEW RULE: pos-pron noun">  <!-- мой друг-->
+  <pattern>
+    <pattern-item n="subj-pron-pos"/>  <!--есімдік -->
+ <pattern-item n="nom"/>  <!--зат есім -->
+  </pattern>
+  <action>  
+	<choose>
+  	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px1sg"/></let>
+	</when>
+ 	 <when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px1sg"/></let>
+	</when>
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px1pl"/></let>
+	</when>
 
+
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px1pl"/></let>
+	</when>
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+ 	 <when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px2pl"/></let>
+	</when>
+
+
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px2pl"/></let>
+	</when>
+		<otherwise><let><var n="a_possessive"/><lit-tag v="px3sp"/></let></otherwise>
+	</choose>
+    <out>
+    <chunk name="subj-pron-pos-noun">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> 
+    <tag><clip pos="2" side="tl" part="a_nbr"/></tag> 
+    <tag><clip pos="1" side="sl" part="a_pers"/></tag> 
+    <tag><var n="a_possessive"/> </tag> 
+    <tag><clip pos="2" side="tl" part="a_case"/></tag>
+    </tags>
+    <lu>
+    <clip pos="1" side="tl" part="lem"/>
+      <clip pos="1" side="tl" part="a_kaz_pospron"/>
+      <lit-tag v="4"/> <!-- number -->
+      <lit-tag v="3"/> <!-- person -->
+      <lit-tag v="nom"/> <!-- case -->
+    </lu>     <b pos="1"/>
+       <lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="3"/>                          
+ 	       <lit-tag v="5"/> 
+  	       <lit-tag v="6"/>
+    </lu>      		
+    </chunk>
+    </out>
+  </action>
+</rule>
 
 
 <!-- Я ем\ел-->
@@ -1339,10 +1493,61 @@
   </action>
 </rule>
 
+<rule comment="NEW RULE: infinitive - verb"> 
+  <pattern>
+    <pattern-item n="approx-inf-verb"/>
+  </pattern>
+  <action>
+     <let><var n="tense"/><lit-tag v="aor"/></let> 
+      <call-macro n="NEW-gen-simple-verb">
+         <with-param pos="1"/> 
+     </call-macro>
+ 
+  </action>
+</rule>
+<rule comment="NEW RULE: byt' + infinitive"> <!--я буду играть -->
+  <pattern>
+
+    <pattern-item n="vbmod"/>
+    <pattern-item n="approx-inf-verb"/>  <!--Я буду играть -  ен ойнаймын-->
+  </pattern>
+  <action>
+    <call-macro n="default-nbr-pers"/>
+        <out>
+      <chunk name="must-inf">
+      <tags>
+        <tag><lit-tag v="VP_byt'_inf"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><lit-tag v="ger"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessive-->
+        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+      </tags>
+      <b pos="1"/>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	         <clip pos="2" side="tl" part="a_kaz_verb"/>
+    	      <lit-tag v="4"/>
+           <lit-tag v="5"/>
+           <lit-tag v="nom"/>
+        </lu>
+        <b/> 
+        <lu>
+          <lit v="керек"/>
+         <lit-tag v="n"/>
+          <lit-tag v="nom"/>	
+        </lu>
+      </chunk>
+  </out>
+      
+  </action>
+</rule>
+
 
 <!-- rule for NUM the end-->
 
 <!-- editing a rule stolen from apertium-eng-kaz -->
+
 <rule comment="RULE: noun">  
   <pattern>
     <pattern-item n="nom"/>
@@ -1372,7 +1577,6 @@
     </out>
   </action>
 </rule>
-
 
   </section-rules>
 </transfer>

@@ -169,7 +169,9 @@
     <def-cat n="cop-ifi">
       <cat-item tags="cop.ifi.*.*"/>
     </def-cat>
-
+     <def-cat n="subj-pron">
+       <cat-item tags="prn.subj.*"/>
+    </def-cat>
     <def-cat n="verb-fin">
       <cat-item tags="v.*.pres.*"/>
       <cat-item tags="v.*.ifi.*"/>
@@ -192,6 +194,14 @@
     <def-cat n="verb-fin-fut-plan">
       <cat-item tags="v.*.fut_plan.*"/>
       <cat-item tags="v.*.neg.fut_plan.*"/>
+    </def-cat>
+     
+     <def-cat n="pers-verb-to-be"> <!-- past and present tense -->
+      <cat-item tags="vbser.pres"/>
+      <cat-item tags="vbser.pres.*"/>
+      <cat-item tags="vbser.past.*"/>
+      <cat-item tags="vbser.past"/>
+ <!-- <cat-item tags="vbser.pp"/> --> <!-- I think this does not belong here -->
     </def-cat>
 
     <def-cat n="verb-nonfin">
@@ -390,6 +400,11 @@
       <attr-item tags="fut"/>
       <attr-item tags="fut2"/>
       <attr-item tags="imp"/>
+    </def-attr>
+    <def-attr n="a_kaz_perspron"> 
+      <attr-item tags="prn.pers"/>
+      <attr-item tags="prn.ind"/>
+      <attr-item tags="prn.qnt"/>
     </def-attr>
     <def-attr n="a_neg">
       <attr-item tags="neg"/>
@@ -1061,6 +1076,140 @@
         </choose>
       </action>
     </rule>
+
+
+
+
+
+
+<rule comment="NEW RULE: subj-pron">
+  <pattern>
+    <pattern-item n="subj-pron"/>
+  </pattern>
+  <action>
+ 
+  <choose>
+    <when>
+      <test>
+       <equal>
+         <clip pos="1" side="sl" part="a_nbr"/>
+         <lit-tag v="sp"/>
+       </equal>
+      </test>
+       <let><var n="number"/><lit-tag v="sg"/></let> <!-- choosing singular in the absence of information -->
+    </when>
+       <otherwise>
+         <let>
+           <var n="number"/><clip pos="1" side="tl" part="a_nbr"/>
+         </let>
+       </otherwise>
+  </choose>
+  <choose>
+    <when>
+     <test>  
+       <equal>
+          <clip pos="1" side="sl" part="a_pers"/>
+          <lit-tag v="p2"/>
+       </equal>
+     </test>
+     <!--<let><var n="formality"/><lit-tag v="frm"/></let>-->
+    </when>
+     <!--<otherwise>
+     <let><var n="formality"/><lit v="FD"/></let>
+     </otherwise>-->
+  </choose>
+ <!-- <call-macro n="initialize_case_to_nominative"/> --> <!--will set it to nominative -->
+  <out>
+   <chunk name="subj-pron" case="caseFirstWord">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><var n="number"/></tag>
+    <tag><clip pos="1" side="sl" part="a_pers"/></tag> <!-- Formality 2nd will be set in .t4x -->
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+     
+    </tags>
+    <lu>
+      <clip pos="1" side="tl" part="lem"/>
+      <clip pos="1" side="tl" part="a_kaz_perspron"/>
+      <clip pos="1" side="tl" part="a_pers"/>
+      <lit-tag v="2"/> <!-- number -->
+      <lit-tag v="4"/> <!-- possession -->
+      <lit-tag v="5"/> <!-- case -->
+    </lu>
+  </chunk>
+  </out>
+ </action>
+</rule>
+
+
+
+<rule comment="NEW RULE: to be noun"> <!--I am a doctor - ^Мен/мен<post>/мен<prn><pers><p1><sg><nom>$ ^дәрігермін/дәрігер<n><nom>+е<cop><p1><sg>$^./.<sent>$
+-->
+  <pattern>
+    <pattern-item n="pers-verb-to-be"/>
+  </pattern>
+  <action>
+  <choose>
+    <when>
+      <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pres"/></equal></test>
+        <out>
+      <chunk name="verb-be">
+      <tags>
+        <tag><lit-tag v="VP_be"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><lit-tag v="aor"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+     </tags>
+<lu>
+         <lit v="е"/>
+        <lit-tag v="cop"/>
+       <lit-tag v="aor"/>
+       <lit-tag v="evid"/>
+        <lit-tag v="3"/>
+         <lit-tag v="2"/>
+       </lu>
+      </chunk>
+        </out>
+      </when>
+     <when>
+      <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="past"/></equal></test>
+        <out>
+      <chunk name="verb-past-be">
+      <tags>
+        <tag><lit-tag v="VP_past_be"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><lit-tag v="ifi"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+      </tags>
+
+          
+       <lu>
+         <lit v="бол"/>  <!-- Note this is a cyrillic е -->
+         <lit-tag v="vaux"/>
+         <lit-tag v="4"/>
+         <lit-tag v="3"/>
+         <lit-tag v="2"/>
+       </lu>
+      </chunk>
+        </out>
+      </when>
+       
+    </choose>   
+  </action>
+</rule>
+
+
+
+
+
+
+
+
 
     <rule comment="REGLA: N N">
       <!--
