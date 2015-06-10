@@ -397,7 +397,7 @@
              <test>
                <equal caseless="yes">
                   <clip pos="1" side="sl" part="lem"/>
-                  <lit v="from"/>
+                  <lit v="из"/>
                </equal>
              </test>
              <let>
@@ -447,7 +447,7 @@
             <test>
               <equal caseless="yes">
                 <clip pos="1" side="sl" part="lem"/>
-                <lit v="to"/>
+                <lit v="к"/>
               </equal>
             </test>
             <let>
@@ -460,7 +460,7 @@
              <test>
                 <equal caseless="yes">
                   <clip pos="1" side="sl" part="lem"/>
-                  <lit v="with"/>
+                  <lit v="с"/>
                 </equal>
              </test>
              <let>
