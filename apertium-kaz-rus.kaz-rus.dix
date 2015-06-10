@@ -3045,6 +3045,7 @@
 <e><p><l>ада<s n="n"/></l><r>завершение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>адалбақан<s n="n"/></l><r>адалбахан<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>адалдық<s n="n"/></l><r>верность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>адам<s n="n"/></l><r>человек<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>адамгершілік<s n="n"/></l><r>человечность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>адамзат<s n="n"/></l><r>человечество<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>адамсүйгіштік<s n="n"/></l><r>человеколюбивость<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -3558,7 +3559,7 @@
 <e><p><l>ат-көлік<s n="n"/></l><r>подвода<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>ат-тұрман<s n="n"/></l><r>сбруя<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>ата-тек<s n="n"/></l><r>предок<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
-<e><p><l>атазаң<s n="n"/></l><r>конституция<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>конституция<s n="n"/></l><r>конституция<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>атақ<s n="n"/></l><r>слава<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>атаққұмарлық<s n="n"/></l><r>тщеславность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>атақоныс<s n="n"/></l><r>прародина<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -4738,6 +4739,7 @@
 <e><p><l>нұсқа<s n="n"/></l><r>вариант<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>нұсқау<s n="n"/></l><r>инструкция<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>нысана<s n="n"/></l><r>мишень<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>нысан<s n="n"/></l><r>основа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>оба<s n="n"/></l><r>чума<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>облыс<s n="n"/></l><r>область<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>одақ<s n="n"/></l><r>союз<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -5266,6 +5268,14 @@
 <e><p><l>ішек<s n="n"/></l><r>кишка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>ішік<s n="n"/></l><r>шуба<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <!--i-->
+
+    <!-- Conjunctions -->
+
+<e>       <p><l>және<s n="cnjcoo"/></l>               <r>и<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>да<s n="cnjcoo"/></l>                  <r>тоже<s n="adv"/></r></p></e>
+<e>       <p><l>мен<s n="cnjcoo"/></l>                  <r>и<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>ал<s n="cnjcoo"/></l>                   <r>а<s n="cnjcoo"/></r></p></e>
+<e>       <p><l>бірақ<s n="cnjcoo"/></l>                   <r>однако<s n="cnjcoo"/></r></p></e>
 
 <!-- imported nouns -->
 <!-- Pronouns-->
@@ -6051,6 +6061,7 @@
 <e><p><l>біртекті<s n="adj"/></l><r>одинаковый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>біртума<s n="adj"/></l><r>неповторимый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>бірізді<s n="adj"/></l><r>однообразный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>біртұтас<s n="adj"/></l><r>унитарный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>біріккен<s n="adj"/></l><r>сплоченный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>бірікпеген<s n="adj"/></l><r>разрозненный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>бірінші<s n="adj"/></l><r>первичный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -7705,6 +7716,7 @@
 <e><p><l>постық<s n="adj"/></l><r>постовой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>поэтикалық<s n="adj"/></l><r>поэтический<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>практикалық<s n="adj"/></l><r>практический<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>президенттік<s n="adj"/></l><r>президентский<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>примитивті<s n="adj"/></l><r>примитивный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>принципті<s n="adj"/></l><r>принципиальный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>проблемалы<s n="adj"/></l><r>проблемный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -9420,6 +9432,16 @@
 <e>       <p><l>Карелия<s n="np"/><s n="top"/></l>     <r>Карелия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Кения<s n="np"/><s n="top"/></l>       <r>Кения<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Қырғызстан<s n="np"/><s n="top"/></l>  <r>Киргизия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+
+<e>       <p><l>Татарстан<s n="np"/><s n="top"/></l>   <r>Татарстан<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+<e>       <p><l>Қазақстан<s n="np"/><s n="top"/></l>   <r>Казахстан<s n="np"/><s n="top"/><s n="m"/></r></p></e>
+
+
+
+<!--<e>       <p><l>Қазақстан<s n="np"/><s n="top"/></l>  <r>Казахстан<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e> -->
+
+
+
 <e>       <p><l>Колумбия<s n="np"/><s n="top"/></l>    <r>Колумбия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Латвия<s n="np"/><s n="top"/></l>      <r>Латвия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Либерия<s n="np"/><s n="top"/></l>     <r>Либерия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
