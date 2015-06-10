@@ -30,7 +30,7 @@
     </def-cat> 
     <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
       <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->      
-
+</def-cat>
    <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
@@ -47,11 +47,7 @@
       
     </def-cat>
 
-  <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
-      <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->    
-      <cat-item tags="vblex.perf.inf"/>  
-    </def-cat>
-
+ 
    <def-cat n="det">
       <cat-item tags="det.def.*"/>
       <cat-item tags="det.ind.*"/>
