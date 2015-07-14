@@ -154,11 +154,11 @@
 </pardef>
 
 <pardef n="__adj_sint">
-  <e r="LR">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
- <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
-  <e>       <p><l><s n="subst"/></l><r><s n="m"/><s n="an"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="m"/><s n="an"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/></r></p></e>
+ <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="nom"/></r></p></e>
+  <e r="LR">       <p><l><s n="subst"/></l><r><s n="m"/><s n="an"/></r></p></e>
   <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>
 </pardef>
 
@@ -7937,6 +7937,7 @@
 <e><p><l>сапасыз<s n="adj"/></l><r>некачественный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>саптамалы<s n="adj"/></l><r>насадочный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>сараң<s n="adj"/></l><r>жадный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>сараң<s n="adj"/></l><r>скупой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>сарқылмас<s n="adj"/></l><r>неисчерпаемый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>сасыған<s n="adj"/></l><r>тухлый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>сасық<s n="adj"/></l><r>вонючий<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
