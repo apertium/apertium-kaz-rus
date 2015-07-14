@@ -7,6 +7,11 @@
     <def-cat n="nom">
       <cat-item tags="n.*"/>
     </def-cat>
+
+    <def-cat n="nom-gen">
+      <cat-item tags="n.*.*.*.gen"/>
+    </def-cat>
+
  <def-cat n="subj-pron">
       <cat-item tags="prn.pers.*"/>
     </def-cat>
@@ -879,7 +884,7 @@
 <rule comment="NEW RULE: noun1 noun2">  <!-- football player-->
   <pattern>
     <pattern-item n="nom"/>
- <pattern-item n="nom"/>
+ <pattern-item n="nom-gen"/>
   </pattern>
   <action>
 

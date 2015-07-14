@@ -4,8 +4,17 @@
 
   </rule>
  
+ <rule> 
+    <match lemma="ручка" tags="n.*"><select lemma="тұтқа" tags="n.*"/></match>
+<match lemma="дверь" tags="n.*"/>
 
+  </rule>
  
+ <rule> 
+    <match lemma="ручка" tags="n.*"><select lemma="қалам" tags="n.*"/></match>
+<match lemma="*" tags="n.aa.*"/>
+
+  </rule>
 
 
 
