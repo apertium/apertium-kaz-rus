@@ -157,6 +157,7 @@
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/></r></p></e>
  <e r="RL">       <p><l></l>          <r><s n="f"/><s n="an"/></r></p></e>
  <e r="RL">       <p><l></l>          <r><s n="m"/><s n="nn"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/></r></p></e>
  <e r="RL">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="nom"/></r></p></e>
   <e r="LR">       <p><l><s n="subst"/></l><r><s n="m"/><s n="an"/></r></p></e>
   <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>
@@ -3381,6 +3382,7 @@
 <e><p><l>алқым<s n="n"/></l><r>глотка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>Алла<s n="n"/></l><r>аллах<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>Аллаһ<b/>Тағала<s n="n"/></l><r>бог<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+<e><p><l>алма<s n="n"/></l><r>яблоко<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>алмаз<s n="n"/></l><r>алмаз<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>алмастырушы<s n="n"/></l><r>заменитель<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>алмасушылық<s n="n"/></l><r>сменяемость<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -6834,7 +6836,7 @@
 <e><p><l>кенеулі<s n="adj"/></l><r>сытный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>кенже<s n="adj"/></l><r>младший<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>кең<s n="adj"/></l><r>просторный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
-<e><p><l>кеңсе<s n="adj"/></l><r>канцелярский<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>кеңсе<s n="adj"/></l><r>канцелярский<s n="adj"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>кепкен<s n="adj"/></l><r>высохший<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>кептірген<s n="adj"/></l><r>сушеный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>кептіретін<s n="adj"/></l><r>сушильный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>

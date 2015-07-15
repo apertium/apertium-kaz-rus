@@ -3,17 +3,16 @@
     <match lemma="большой" tags="adj.*"><select lemma="алпамсадай" tags="adj.*"/></match>
 
   </rule>
- 
+<!-- ручка двери -->
  <rule> 
     <match lemma="ручка" tags="n.*"><select lemma="тұтқа" tags="n.*"/></match>
 <match lemma="дверь" tags="n.*"/>
-
   </rule>
- 
+
+<!-- ручка ученика/профессора--> 
  <rule> 
     <match lemma="ручка" tags="n.*"><select lemma="қалам" tags="n.*"/></match>
 <match lemma="*" tags="n.aa.*"/>
-
   </rule>
 
 
