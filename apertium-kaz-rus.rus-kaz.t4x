@@ -22,7 +22,7 @@
        <cat-item lemma="е" tags="cop.aor.p2.sg"/>
        <cat-item lemma="е" tags="cop.aor.p3.sg"/>
        <cat-item lemma="е" tags="cop.aor.p1.pl"/>
-        <cat-item lemma="e" tags="cop.aor.p2.pl"/>
+        <cat-item lemma="е" tags="cop.aor.p2.pl"/>
        <cat-item lemma="е" tags="cop.aor.p3.pl"/>
 <cat-item lemma="е" tags="cop.aor.evid.p1.sg"/>
        <cat-item lemma="е" tags="cop.aor.evid.p2.sg"/>
@@ -53,10 +53,12 @@
     <def-cat n="nomobject">
        <cat-item tags="n.nom"/>
        <cat-item tags="n.pl.*"/>
+       <cat-item tags="n.pl.nom"/>
        <cat-item tags="n.sg.px3sp.*"/>
        <cat-item tags="n.*.loc"/> 
        <cat-item tags="np.top"/>
        <cat-item tags="n.*.nom"/>
+       <cat-item tags="n.*.*.nom"/>
        <cat-item tags="adj"/>
        <cat-item tags="post"/>
        <cat-item tags="adj.nom"/>
@@ -541,12 +543,12 @@
      </when>
 
      </choose>      
-     <choose><!--formality patch-->
+     <!--<choose>
        <when>
-         <test><equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test>  <!-- if we generate no formality, add it -->
+         <test><equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test> 
             <let><clip pos="2" side="tl" part="a_pers"/><lit-tag v="p2.frm"/></let>
           </when>
- 	</choose> 
+ 	</choose>--> 
     <choose>
           <when>
             <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/></equal></test>

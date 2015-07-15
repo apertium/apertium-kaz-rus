@@ -462,9 +462,9 @@
            Sets the 'number' variable to '<pl>' if the word contains the '<pl>' tag,
            to '<sg>' otherwise (in context of Tatar, singular is the absence of the
            plural affix).
-           GIVEN:  ^мәктәп<n><nom>/школа<n><f><nn><nom>$
+           GIVEN:  ^мектеп<n><nom>/школа<n><f><nn><nom>$
            EXPECT: number = "<sg>"
-           GIVEN:  ^мәктәп<n><pl><nom>/школа<n><f><nn><pl><nom>$
+           GIVEN:  ^мектеп<n><pl><nom>/школа<n><f><nn><pl><nom>$
            EXPECT: number = "<pl>" -->
       <choose>
         <when>
@@ -878,10 +878,14 @@
       <!-- arg.1 finiteVerb -> v_negation finiteVerb
            Converts negation, tenses and features related to it (such as gender
            in the past tense). Strips transitivity tag (rus.dix doesn't support it yet).
-           GIVEN:  ^уйна<v><tv><pres><p1><sg>/играть<vblex><impf><tv><pres><p1><sg>$
-           EXPECT: ^уйна<v><tv><pres><p1><sg>/играть<vblex><impf><pres><p1><sg>$
-           GIVEN:  ^уйна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><tv><neg><ifi><p3><pl>$
-           EXPECT: ^уйна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><past><mfn><pl>$ negation = '^не<adv>$ ' -->
+           GIVEN:  ^ойна<v><tv><pres><p1><sg>/играть<vblex><impf><tv><pres><p1><sg>$
+           EXPECT: ^ойна<v><tv><pres><p1><sg>/играть<vblex><impf><pres><p1><sg>$
+           GIVEN:  ^ойна<v><tv><pres><p3><pl>/играть<vblex><impf><tv><pres><p3><pl>$
+           EXPECT: ^ойна<v><tv><pres><p1><sg>/играть<vblex><impf><pres><p3><sg>$
+
+
+           GIVEN:  ^ойна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><tv><neg><ifi><p3><pl>$
+           EXPECT: ^ойна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><past><mfn><pl>$ negation = '^не<adv>$ ' -->
       <let><var n="gender"/><lit v=""/></let>
       <call-macro n="convert-neg-to-ne.adv">
         <with-param pos="1"/>
@@ -948,7 +952,7 @@
 
     <rule comment="REGLA: N">
       <!--
-      INPUT:  ^мәктәп<n><attr>/школьный<adj><m><an><sg><nom>$
+      INPUT:  ^мектеп<n><attr>/школьный<adj><m><an><sg><nom>$
       OUTPUT: ^adj<AdjP>{^школьный<adj><m><an><sg><nom>$}$
       INPUT:  ^мектеп<n><nom>/школа<n><f><nn><nom>$
       OUTPUT: ^n<SN><nom>{^школа<n><f><nn><sg><2>$}$
@@ -959,7 +963,7 @@
       INPUT:  ^жақсы<adj><subst><dat>/хороший<adj><sint><m><an><dat>$
       OUTPUT: ^n<SN><dat>{^хороший<adj><sint><m><an><sg><dat>$}$
       INPUT:  ^ол<prn><dem><gen>/его<det><pos>/он<prn><pers><p3><m><sg><gen>$ 
-^ул<prn><dem><gen><@ADVL→>/он<prn><pers><p3><m><sg><gen><@ADVL→>$
+^ол<prn><dem><gen><@ADVL→>/он<prn><pers><p3><m><sg><gen><@ADVL→>$
       OUTPUT: ^n<SN><gen><@ADVL→>{^он<prn><pers><p3><m><sg><2>$}$
       -->
       <pattern>
@@ -1213,13 +1217,13 @@
 
     <rule comment="REGLA: N N">
       <!--
-      INPUT:  ^урындык<n><attr>/стул<n><m><nn><attr>$ ^аст<n><pl><px3sp><acc>/низ<n><m><nn><pl><px3sp><acc>$
+      INPUT:  ^орындық<n><attr>/стул<n><m><nn><attr>$ ^аст<n><pl><px3sp><acc>/низ<n><m><nn><pl><px3sp><acc>$
       OUTPUT: ^n_n<SN>{^низ<n><m><nn><pl><acc>$ ^стул<n><m><nn><sg><gen>$}$
-      INPUT:  ^Өй<n><attr>/Дом<n><m><nn><attr>$ ^алд<n><px3sp><loc>/перед<pr><ins>$
+      INPUT:  ^үй<n><attr>/Дом<n><m><nn><attr>$ ^алд<n><px3sp><loc>/перед<pr><ins>$
       OUTPUT: ^pr_n<PP>{^Перед<pr>$ ^дом<n><m><nn><sg><ins>$}$
-      INPUT:  ^диңгез<n><attr>/морской<adj><m><an><sg><nom>$ ^флот<n><px3sp><acc>/флот<n><m><nn><px3sp><acc>$
+      INPUT:  ^теңіз<n><attr>/морской<adj><m><an><sg><nom>$ ^флот<n><px3sp><acc>/флот<n><m><nn><px3sp><acc>$
       OUTPUT: ^adj_n<SN>{^морской<adj><m><nn><sg><acc>$ ^флот<n><m><nn><sg><acc>$}$
-      INPUT:  ^Казан<np><top><attr>/Казань<np><top><f><attr>$ ^шәһәр<n><px3sp><acc>/город<n><m><nn><px3sp><acc>$
+      INPUT:  ^Казан<np><top><attr>/Казань<np><top><f><attr>$ ^шаһар<n><px3sp><acc>/город<n><m><nn><px3sp><acc>$
       OUTPUT: ^n_n<SN>{^город<n><m><nn><sg><acc>$ ^Казань<np><top><f><sg><acc>$}$
       -->
       <pattern>
@@ -2522,7 +2526,7 @@
       </action>
     </rule>
 
-    <rule comment="REGLA: DET ADJ N (2)"> <!-- Aliya --> <!-- осы әдемі үй -->
+    <rule comment="REGLA: DET ADJ N (2)"> <!-- осы әдемі үй -->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^үй<n><nom>/дом<n><m><nn><nom>$
       OUTPUT: ^det_adj_n<SN>{^этот<det><dem><m><an><sg><nom>$ ^красивый<adj><sint><m><an><sg><nom>$ ^дом<n><m><nn><sg><nom>$}$
@@ -2964,9 +2968,9 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
     <rule comment="REGLA: V">
       <!--
-      INPUT:  ^уйна<v><tv><pres><p1><sg>/играть<vblex><impf><tv><pres><p1><sg>$
+      INPUT:  ^ойна<v><tv><pres><p1><sg>/играть<vblex><impf><tv><pres><p1><sg>$
       OUTPUT: ^v<SV><tv>{^играть<vblex><impf><pres><p1><sg>$}$
-      INPUT:  ^уйна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><tv><neg><ifi><p3><pl>$
+      INPUT:  ^ойна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><tv><neg><ifi><p3><pl>$
       OUTPUT: ^v<SV><tv>{^не<adv>$ ^играть<vblex><impf><past><mfn><pl>$}$
       -->
       <pattern>
@@ -2976,6 +2980,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         <call-macro n="translate-verb-fin">
           <with-param pos="1"/>
         </call-macro>
+
         <out>
           <chunk name="v-neg-fin">
             <tags>
@@ -2995,9 +3000,9 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
     <rule comment="REGLA: V">
       <!--
-      INPUT:  ^чакыр<v><tv><fut_plan><p1><sg>/позвать<vblex><perf><tv><fut_plan><p1><sg>$
+      INPUT:  ^шақыр<v><tv><fut_plan><p1><sg>/позвать<vblex><perf><tv><fut_plan><p1><sg>$
       OUTPUT: ^v<SV><tv>{^собираться<vblex><impf><pres><p1><sg>$ ^позвать<vblex><perf><inf>$}$
-      INPUT:  ^чакыр<v><tv><fut_plan><p2><frm><sg>/позвать<vblex><perf><tv><fut_plan><p2><frm><sg>$
+      INPUT:  ^шақыр<v><tv><fut_plan><p2><frm><sg>/позвать<vblex><perf><tv><fut_plan><p2><frm><sg>$
       OUTPUT: ^v<SV><tv>{^собираться<vblex><impf><pres><p2><pl>$ ^позвать<vblex><perf><inf>$}$
       -->
       <pattern>
@@ -3044,9 +3049,9 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 		   To translate every non-finite form with infinitive is not good,
                    but this is a temporal solution until things get sorted out.">
       <!--
-      INPUT:  ^уйна<v><tv><ger_past><px3sp><acc>/игра<n><f><nn><px3sp><acc>$
+      INPUT:  ^ойна<v><tv><ger_past><px3sp><acc>/игра<n><f><nn><px3sp><acc>$
       OUTPUT: ^n<SN>{^игра<n><f><nn><sg><acc>$}$
-      INPUT:  ^и<cop><ger_past><px3sp><acc>/быть<vbser><ger_past><px3sp><acc>$
+      INPUT:  ^и<бол><ger_past><px3sp><acc>/быть<vbser><ger_past><px3sp><acc>$
       OUTPUT: ^v<SV>{^быть<vbser><inf>$}$
       INPUT:  ^тап<v><tv><prc_impf>/найти<vblex><perf><tv><prc_impf>$
       OUTPUT: ^v<SV>{^найти<vblex><perf><inf>$}$
@@ -3097,7 +3102,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
     <rule comment="REGLA: V">
       <!--
-      INPUT:  ^кычкыр<v><iv><ger_past><acc>/кричать<vblex><impf><iv><ger_past><acc>$
+      INPUT:  ^айқайла<v><iv><ger_past><acc>/кричать<vblex><impf><iv><ger_past><acc>$
       OUTPUT: ^v<SV><ger_past><acc>{^кричать<vblex><impf><past><m><sg>$}$
       -->
       <pattern>
@@ -3151,7 +3156,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 <!-- SECTION: Modifiers -->
 
 <!--
-INPUT:  ^яхшы<adj>/хороший<adj><m><an><sg><nom>$
+INPUT:  ^жақсы<adj>/хороший<adj><m><an><sg><nom>$
 OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
 -->
     <rule comment="REGLA: ADJ">
@@ -3220,8 +3225,11 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
     </rule>
 
     <rule comment="REGLA: DET">
+
+
+
       <!--
-        INPUT:  ^бер<det><ind>/один<num><m><an><sg><nom>$
+        INPUT:  ^бір<det><ind>/один<num><m><an><sg><nom>$
         OUTPUT: ^det<DET>{^один<num><m><an><sg><nom>$}$
       -->
       <pattern>
@@ -3243,7 +3251,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
 
     <rule comment="REGLA: NUM">
       <!--
-        INPUT:  ^бер<num>/один<num><m><an><sg><nom>$
+        INPUT:  ^бір<num>/один<num><m><an><sg><nom>$
         OUTPUT: ^num<DET>{^один<num><m><an><sg><nom>$}$
       -->
       <pattern>
@@ -3279,9 +3287,9 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
 
     <rule comment="REGLA: POST">
       <!--
-        INPUT:  ^белән<post>/с<pr><ins>$
+        INPUT:  ^бірге<post>/с<pr><ins>$
         OUTPUT: ^pr<PREP>{^с<pr>$}$
-        INPUT:  ^бергә<post>/вместе<adv>$
+        INPUT:  ^бірге<post>/вместе<adv>$
         OUTPUT: ^pr<PREP>{^вместе<adv>$}$
       -->
       <pattern>
@@ -3321,7 +3329,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
 
     <rule comment="REGLA: ADV">
       <!--
-        INPUT:  ^кайда<adv><itg>/где<adv><itg>$
+        INPUT:  ^қайда<adv><itg>/где<adv><itg>$
         OUTPUT: ^adv<AdvP>{^где<adv><itg>$}$
       -->
       <pattern>
@@ -3368,7 +3376,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
 <!-- TODO: Consider handling issues below in the following transfer modules -->
 
 <!--
-        (^бел<v><tv><pres><p2><pl>/знать<vblex><impf><tv><pres><p2><pl>$)
+        (^біл<v><tv><pres><p2><pl>/знать<vblex><impf><tv><pres><p2><pl>$)
 INPUT:  ^мы<qst>/@мы<qst>$^?<sent>/?<sent>$
 OUTPUT: ^qst<SENT>{^?<sent>$}$
 -->

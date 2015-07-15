@@ -5396,8 +5396,8 @@
 <e>       <p><l>біз<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/></l><r>мы<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>сендер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>вы<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>олар<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>они<s n="prn"/><s n="pers"/><s n="p3"/><s n="mfn"/><s n="pl"/></r></p></e>
-<!--<e>       <p><l>Сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/></l><r>Вы<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-<e>       <p><l>Сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/><s n="gen"/></l><r>Ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>-->
+<e>       <p><l>Сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/></l><r>Вы<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
+<!--<e>       <p><l>Сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/><s n="gen"/></l><r>Вы<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>-->
 
 
 <e><p><l>бұл<s n="prn"/><s n="dem"/></l><r>это<s n="prn"/><s n="dem"/><s n="nt"/></r></p></e>
