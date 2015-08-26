@@ -174,6 +174,7 @@
     </def-cat>
     <def-cat n="verb-fin">
       <cat-item tags="v.*.pres.*"/>
+      <cat-item tags="v.*.aor.*"/>
       <cat-item tags="v.*.ifi.*"/>
       <cat-item tags="v.*.past.*"/>
       <cat-item tags="v.*.fut.*"/>
@@ -341,8 +342,8 @@
     <def-attr n="a_verb">
       <attr-item tags="vbser"/>
       <attr-item tags="vblex.impf"/>
-      <attr-item tags="vblex.perf"/>
-      <attr-item tags="vblex.dual"/>
+      <attr-item tags="vblex_perf"/>
+      <attr-item tags="vblex_dual"/>
       <attr-item tags="vbmod.impf.tv"/> <!-- Modal verbs already receive transitivity tags in rus.dix-->
       <attr-item tags="vbmod.impf.iv"/>
       <attr-item tags="vbmod.perf.tv"/>
@@ -1168,8 +1169,9 @@
         <tag><lit-tag v="NXD"/></tag> <!-- negative -->
      </tags>
 <lu>
-         <lit v="е"/>
-        <lit-tag v="cop"/>
+<!--Tekseru-->
+         <!--<lit v="е"/>
+        <lit-tag v="cop"/>-->
        <lit-tag v="aor"/>
        <lit-tag v="evid"/>
         <lit-tag v="3"/>
@@ -2438,7 +2440,7 @@
 
     <rule comment="REGLA: ADJ ADJ N">
       <!--
-      INPUT:  ^тиз<adj>/быстрый<adj><sint><m><an><sg><nom>$ ^коңгырт<adj>/коричневый<adj><sint><m><an><sg><nom>$ ^төлке<n><nom>/лиса<n><f><aa><sg><nom>$
+      INPUT:  ^тез<adj>/быстрый<adj><sint><m><an><sg><nom>$ ^қоңыр<adj>/коричневый<adj><sint><m><an><sg><nom>$ ^түлкі<n><nom>/лиса<n><f><aa><sg><nom>$
       OUTPUT: ^adj_adj_n<SN><nom>{^быстрый<adj><sint><f><an><sg><nom>$ ^коричневый<adj><sint><f><an><sg><nom>$ ^лиса<n><f><aa><sg><nom>$}$
       -->
       <pattern>
@@ -2573,9 +2575,9 @@
 
     <rule comment="REGLA: NUM N">
       <!--
-      INPUT:  ^биш<num>/пять<num><mfn><pl><nom>$ ^яшь<n><nom>/год<n><m><nn><nom>$
+      INPUT:  ^бес<num>/пять<num><mfn><pl><nom>$ ^жыл<n><nom>/год<n><m><nn><nom>$
       OUTPUT: ^num_n<SN>{^пять<num><mfn><pl><nom>$ ^год<n><m><nn><pl><gen>$}$
-      INPUT:  ^биш<num>/пять<num><mfn><pl><nom>$ ^яшь<n><dat>/год<n><m><nn><dat>$
+      INPUT:  ^бес<num>/пять<num><mfn><pl><nom>$ ^жыл<n><dat>/год<n><m><nn><dat>$
       OUTPUT: ^num_n<SN>{^пять<num><mfn><pl><dat>$ ^год<n><m><nn><pl><dat>$}$
       -->
       <pattern>
@@ -2618,11 +2620,11 @@
 
     <rule comment="REGLA: NUM N N">
       <!--
-      INPUT:  ^бер<num>/один<num><m><an><sg><nom>$ ^чиләк<n><nom>/ведро<n><nt><nn><nom>$ ^су<n><nom>/вода<n><f><nn><nom>$
+      INPUT:  ^бір<num>/один<num><m><an><sg><nom>$ ^шелек<n><nom>/ведро<n><nt><nn><nom>$ ^су<n><nom>/вода<n><f><nn><nom>$
       OUTPUT: ^num_n_n<SN>{^один<num><nt><an><sg><nom>$ ^ведро<n><nt><nn><sg><nom>$ ^вода<n><f><nn><sg><gen>$}$
-      INPUT:  ^биш<num>/пять<num><mfn><pl><nom>$ ^чиләк<n><nom>/ведро<n><nt><nn><nom>$ ^су<n><nom>/вода<n><f><nn><nom>$
+      INPUT:  ^бес<num>/пять<num><mfn><pl><nom>$ ^шелек<n><nom>/ведро<n><nt><nn><nom>$ ^су<n><nom>/вода<n><f><nn><nom>$
       OUTPUT: ^num_n_n<SN>{^пять<num><mfn><pl><nom>$ ^ведро<n><nt><nn><pl><gen>$ ^вода<n><f><nn><sg><gen>$}$
-      INPUT:  ^биш<num>/пять<num><mfn><pl><nom>$ ^чиләк<n><nom>/ведро<n><nt><nn><nom>$ ^су<n><loc>/вода<n><f><nn><loc>$
+      INPUT:  ^бес<num>/пять<num><mfn><pl><nom>$ ^шелек<n><nom>/ведро<n><nt><nn><nom>$ ^су<n><loc>/вода<n><f><nn><loc>$
       OUTPUT: ^num_n_n<SN>{^в<pr>$ ^пять<num><mfn><pl><prp>$ ^ведро<n><nt><nn><pl><prp>$ ^вода<n><f><nn><sg><gen>$}$
       -->
       <pattern>
@@ -2985,13 +2987,18 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <chunk name="v-neg-fin">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-              <tag><clip pos="1" side="sl" part="a_trans"/></tag>
-              <tag><lit-tag v="GN"/></tag>
-              <tag><lit-tag v="ND"/></tag>
+              <tag><clip pos="1" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="1" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
             </tags>
             <var n="negation"/>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+   <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+<lit-tag v="4"/>
+<lit-tag v="5"/>
+              <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
