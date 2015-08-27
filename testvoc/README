@@ -1,0 +1,16 @@
+Install 
+sudo apt-get install apcalc
+
+run testvoc:
+
+bash testvoc1.sh rus-kaz
+
+
+after statistics is showed:
+
+cat /tmp/rus-kaz.testvoc  | grep '> *#'
+
+
+get words with errors into file
+
+cat /tmp/rus-kaz.testvoc  | grep '> *#' >errors.txt
