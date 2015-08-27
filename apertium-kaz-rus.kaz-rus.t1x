@@ -3020,60 +3020,69 @@
 <!-- SECTION: Verbs -->
 
 
-<rule comment="RULE: VP-cop">  <!-- Мен дәрігермін ~Aliya~ -->
+<rule comment="RULE: VP-cop-pres"> <!-- Aliya --> <!-- Мен оқушымын-->
+
+      <!--
+      INPUT:  ^мен<prn><pers><p1><sg><nom>/я<prn><pers><p1><mf><sg><nom>$ ^оқушы<n><nom>/ученик<n><m><aa><nom>$ ^е<cop><aor><p1><sg>/@е<cop><aor><p1><sg>$
+      OUTPUT: ^vP-cop-present<SV-cop>{^я<prn><pers><p1><mf><sg><nom>$ ^ученик<n><m><aa><sg><nom>$ }$
+      -->
+
       <pattern>
+        <pattern-item n="n"/>
         <pattern-item n="n"/>
         <pattern-item n="cop"/>
       </pattern>
       <action>
         <call-macro n="translate-noun">
-          <with-param pos="1"/>
+          <with-param pos="2"/>
         </call-macro>
         <call-macro n="conv-case1">
-          <with-param pos="2"/>
+          <with-param pos="3"/>
         </call-macro>
         <call-macro n="conv-number1">
-          <with-param pos="2"/>
+          <with-param pos="3"/>
         </call-macro>
            <choose><!-- choosing correct to be-->
                <when>
                    <test>
                    <and>
-                       <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p3"/></equal>
-                       <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p3"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
                        <!-- <equal><clip pos="2" side="sl" part="a_gender"/><lit v="pl"/></equal> -->
                    </and>
                    </test>
-                   <let><clip pos="2" side="tl" part="a_nbr"/><lit v=""/></let>
-                   <let><clip pos="2" side="tl" part="a_pers"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
                    <!-- <let><clip pos="2" side="tl" part="a_gender"/><lit v=""/></let> -->
                </when>
                <when>
                    <test>
                    <and>
-                       <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
-                       <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
                    </and>
                    </test>
-                   <let><clip pos="2" side="tl" part="a_nbr"/><lit v=""/></let>
-                   <let><clip pos="2" side="tl" part="a_pers"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
                    <!-- <let><clip pos="2" side="tl" part="a_gender"/><lit v=""/></let> -->
                </when>
                <when>
                    <test>
                    <and>
-                       <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
-                       <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
                        <!-- <equal><clip pos="2" side="sl" part="a_gender"/><lit v="pl"/></equal> -->
                    </and>
                    </test>
-                   <let><clip pos="2" side="tl" part="a_nbr"/><lit v=""/></let>
-                   <let><clip pos="2" side="tl" part="a_pers"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
                    <!-- <let><clip pos="2" side="tl" part="a_gender"/><lit v=""/></let> -->
                 </when>
            </choose>
+
+          <let><clip pos="2" side="tl" part="a_nbr"/><clip pos="1" side="tl" part="a_nbr"/></let>
         <out>
-          <chunk name="VP-cop" case="caseFirstWord">
+          <chunk name="VP-cop-present" case="caseFirstWord">
             <tags>
               <tag> <lit-tag v="SV-cop"/></tag>
 
@@ -3083,12 +3092,16 @@
             </lu>
             <b/>
             <lu>
-              <clip pos="2" side="tl" part="a_verb"/>
+                  <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="a_verb"/>
             </lu>
           </chunk>
         </out>
         <call-macro n="reset-vars1">
-          <with-param pos="2"/>
+          <with-param pos="3"/>
         </call-macro>
       </action>
     </rule>
