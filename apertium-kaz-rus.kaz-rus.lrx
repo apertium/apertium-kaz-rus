@@ -5,17 +5,51 @@
   </rule>
 
 <rule>
-	  <match lemma="демалыс" tags="adj.*"/>
-	  <match lemma="күн" tags="n.*">
-	    <select lemma="день" tags="n.*"/>
-	  </match>
-</rule>  
+	  <match lemma="жарым" tags="*"><select lemma="полтора" tags="*"/></match>
+	  <match lemma="күн" tags="*"><select lemma="сутки" tags="n."/></match>
+</rule>
 
 <rule>
-	  <match lemma="ашық" tags="adj.*"/>
-	  <match lemma="күн" tags="n.*">
-	    <select lemma="солнце" tags="n.*"/>
-	  </match>
-</rule>  
+  <or>
+    <match lemma="ашық" tags="*"><select lemma="ясный" tags="*"/></match>
+    <match lemma="жаңбырлы" tags="*"><select lemma="дождливый" tags="*"/></match>
+  </or>
+    <match lemma="күн" tags="n.*"><select lemma="погода" tags="n.*"/></match>
+</rule> <!-- Күн сөзі ашық/жаңбырлы сөзімен бірге келсе погода деп, ал ашық сөзі ясный деп аударылады -->
+ 
+
+<rule>
+    <match lemma="ашық" tags="*">
+    <select lemma="открытый" tags="adj.*"/></match>
+</rule>    <!-- “Ашық” сөзін арқашан открытый деп аударады -->
+
+<rule>
+    <match lemma="демалыс" tags="*">
+    <select lemma="выходной" tags="adj.*"/></match>
+    <match lemma="күн" tags="n.*"><select lemma="день" tags="n.*"/></match>
+</rule> <!-- демалыс сөзі күн сөзімен бірге келгенде выходной деп аударылады -->
+
+<rule>
+    <match lemma="жазғы" tags="*"><select lemma="летний" tags="adj.*"/></match>
+    <match lemma="күн" tags="n.*"><select lemma="время" tags="n.*"/></match>
+</rule>  <!-- күн сөзі жаз сөзімен бірге келгенде время деп аударылады -->
+
+
+<rule>
+    <match lemma="ол" tags="prn.*"><select lemma="она" tags="prn.*"/> </match>
+    <match lemma="әдемі" tags="*"><select lemma="красивый" tags="adj.*"/></match>
+    <match lemma="қыз" tags="n.*"/>
+</rule> <!--ол сөзі он деп емес она деп аударылады-->
+
+
+<rule>
+    <match tags="num"/>
+    <match lemma="ай" tags="n.*"><select lemma="месяц"/></match>
+</rule> <!--num тәгі бар сөздер ай сөзімен бірге келгенде луна деп емес месяц деп аударылады-->
+
+<rule>
+    <match tags="num"/>
+    <match lemma="қабат" tags="n.*"><select lemma="этаж"/></match>
+</rule> <!-- num тәгі бар сөздер қабат сөзімен бірге келгенде слой деп емес этаж деп аударылады-->
 
 </rules>
