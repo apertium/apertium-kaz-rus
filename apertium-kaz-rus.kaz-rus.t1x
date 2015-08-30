@@ -40,8 +40,7 @@
       <cat-item tags="np.*.*.gen"/>
       <cat-item tags="v.*.ger.nom"/>
     </def-cat>
-
- <def-cat n="nom">
+    <def-cat n="nom">
        <cat-item tags="n.*"/>
       <cat-item tags="np.top"/>
       <cat-item tags="np.al"/>
@@ -49,16 +48,12 @@
       <cat-item tags="np.cog"/>
       <cat-item tags="np.cog.*"/>
       <cat-item tags="np.*"/>
-
       <cat-item tags="np.ant.*"/>
       <cat-item tags="np.top.*"/>
     </def-cat>
-
-  <def-cat n="prep">
+    <def-cat n="prep">
       <cat-item tags="pr"/>
-     </def-cat>
-
-
+    </def-cat>
     <def-cat n="n-nom">
       <cat-item tags="n.nom"/>
     </def-cat>
@@ -95,31 +90,19 @@
       <cat-item tags="n.px2pl.*"/>
       <cat-item tags="n.*.px2pl.*"/>
     </def-cat>
-
     <def-cat n="npost">
       <cat-item tags="n.px3sp.*"/>
     </def-cat>
-
     <def-cat n="npost-loc">
       <cat-item tags="n.px3sp.loc.attr"/>
     </def-cat>
-
     <def-cat n="npost-loc-attr">
- <cat-item lemma="аст" tags="n.px3sp.loc.attr"/> 
+      <cat-item lemma="аст" tags="n.px3sp.loc.attr"/> 
     </def-cat>
-
     <def-cat n="prn-gen">
       <cat-item tags="prn.pers.*.*.gen"/>
-<!--      <cat-item lemma="ул" tags="prn.dem.gen"/> -->
-<!--      <cat-item lemma="ул" tags="prn.dem.pl.gen"/> --> 
-<!--      <cat-item tags="prn.pers.*.*.gen"/> -->
-<!--      <cat-item lemma="ул" tags="prn.dem.gen"/> -->
-<!--      <cat-item lemma="ул" tags="prn.dem.pl.gen"/> -->
       <cat-item tags="prn.pers.*.*.gen.@ADVL→"/>
-<!--      <cat-item lemma="ул" tags="prn.dem.gen.@ADVL→"/> -->
-<!--      <cat-item lemma="ул" tags="prn.dem.pl.gen.@ADVL→"/> -->
-   </def-cat>
-
+    </def-cat>
     <def-cat n="adj">
       <cat-item tags="adj"/>
       <cat-item tags="adj.comp"/>
@@ -127,18 +110,10 @@
       <cat-item tags="adj.comp.advl"/>
       <cat-item tags="adv.attr"/>
     </def-cat>
-
-<!--
-    <def-cat n="yuq-adj">
-      <cat-item lemma="юк" tags="adj"/>
-    </def-cat>
--->
     <def-cat n="det">
       <cat-item tags="det.*"/>
-<!--      <cat-item lemma="иң" tags="adv"/> -->
     </def-cat>
-
-   <def-cat n="num">
+    <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
     </def-cat>
@@ -147,19 +122,9 @@
       <cat-item tags="num.ord"/>
       <cat-item tags="num.itg"/>
     </def-cat>
-
-
-<!--
-    <def-cat n="thousand-etc">
-      <cat-item lemma="мең" tags="num"/>
-      <cat-item lemma="миллион" tags="num"/>
-      <cat-item lemma="миллиард" tags="num"/>
-    </def-cat>
--->
     <def-cat n="cop">
       <cat-item tags="cop.*"/>
     </def-cat>
-
     <def-cat n="cop-p3">
       <cat-item tags="cop.p3.sg"/>
       <cat-item tags="cop.p3.pl"/>
@@ -173,7 +138,7 @@
     <def-cat n="cop-ifi">
       <cat-item tags="cop.ifi.*.*"/>
     </def-cat>
-     <def-cat n="subj-pron">
+    <def-cat n="subj-pron">
        <cat-item tags="prn.subj.*"/>
     </def-cat>
     <def-cat n="verb-fin">
@@ -195,20 +160,16 @@
       <cat-item tags="cop.*.ifi.*"/>
       <cat-item tags="cop.*.past.*"/>
     </def-cat>
-
     <def-cat n="verb-fin-fut-plan">
       <cat-item tags="v.*.fut_plan.*"/>
       <cat-item tags="v.*.neg.fut_plan.*"/>
     </def-cat>
-     
      <def-cat n="pers-verb-to-be"> <!-- past and present tense -->
       <cat-item tags="vbser.pres"/>
       <cat-item tags="vbser.pres.*"/>
       <cat-item tags="vbser.past.*"/>
       <cat-item tags="vbser.past"/>
- <!-- <cat-item tags="vbser.pp"/> --> <!-- I think this does not belong here -->
     </def-cat>
-
     <def-cat n="verb-nonfin">
       <cat-item tags="v.*.inf"/>
       <cat-item tags="v.*.prc_perf"/>
@@ -250,12 +211,10 @@
       <cat-item tags="cop.ger_perf.*"/>
       <cat-item tags="cop.*.ger_perf.*"/>
     </def-cat>
-
     <def-cat n="verb-nonfin-ger_past">
       <cat-item tags="v.*.ger_past.*"/>
       <cat-item tags="v.*.*.ger_past.*"/>
     </def-cat>
-
     <def-cat n="post">
       <cat-item tags="post"/>
     </def-cat>
@@ -263,12 +222,10 @@
       <cat-item tags="post"/>
       <cat-item tags="n.px3sp.*"/>
     </def-cat>
-
     <def-cat n="adv">
       <cat-item tags="adv"/>
       <cat-item tags="adv.itg"/>
     </def-cat>
-
     <def-cat n="qst">
       <cat-item tags="qst"/>
     </def-cat>
@@ -330,8 +287,6 @@
       <attr-item tags="det.qnt"/>
       <attr-item tags="num"/>
     </def-attr>
-  
-
     <def-attr n="a_adj">
       <attr-item tags="adj"/>
       <attr-item tags="adj.sint"/>

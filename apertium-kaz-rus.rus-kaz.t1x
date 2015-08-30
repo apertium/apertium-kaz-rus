@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- -*- nxml -*- -->
-<transfer default="chunk">
 
+<!-- -*- nxml -*- -->
+
+<transfer default="chunk">
 
   <section-def-cats>
 
@@ -17,40 +18,55 @@
       <cat-item tags="adv.subst"/>
       <cat-item tags="adv.subst.*"/>
     </def-cat>
-
     <def-cat n="nom">
-      <cat-item tags="n.*"/>
+       <cat-item tags="n.*"/>
+      <cat-item tags="np.top"/>
+      <cat-item tags="np.al"/>
+      <cat-item tags="np.al.*"/>
+      <cat-item tags="np.cog"/>
+      <cat-item tags="np.cog.*"/>
+      <cat-item tags="np.*"/>
+      <cat-item tags="np.ant.*"/>
+      <cat-item tags="np.top.*"/>
     </def-cat>
-
     <def-cat n="nom-gen">
       <cat-item tags="n.*.*.*.gen"/>
     </def-cat>
-
- <def-cat n="subj-pron">
-      <cat-item tags="prn.pers.*"/>
+    <def-cat n="prep">
+      <cat-item tags="pr"/>
     </def-cat>
-<def-cat n="subj-pron-pos">
-      <cat-item tags="prn.pos.*"/>
+    <def-cat n="n-px">
+      <cat-item tags="n.px1sg.*"/>
+      <cat-item tags="n.*.px1sg.*"/>
+      <cat-item tags="n.px2sg.*"/>
+      <cat-item tags="n.*.px2sg.*"/>
+      <cat-item tags="n.px3sp.*"/>
+      <cat-item tags="n.*.px3sp.*"/>
+      <cat-item tags="n.px1pl.*"/>
+      <cat-item tags="n.*.px1pl.*"/>
+      <cat-item tags="n.px2pl.*"/>
+      <cat-item tags="n.*.px2pl.*"/>
     </def-cat>
-    <def-cat n="sent">
-      <cat-item tags="sent"/>
+    <def-cat n="adj">
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.comp"/>
+      <cat-item tags="adj.advl"/>
+      <cat-item tags="adj.comp.advl"/>
+      <cat-item tags="adv.attr"/>
     </def-cat>
-
- <def-cat n="pers-verb"> <!-- past and present tense -->
-      <cat-item tags="vblex.impf.pres.*"/>
-      <cat-item tags="vblex.impf.pres"/>
-      <cat-item tags="vblex.impf.past"/>
-     <cat-item tags="vblex.impf.past.*"/>
-    </def-cat>   
-<def-cat n="budu-vbser"> <!-- past and present tense -->
-      <cat-item tags="vbser.fut.*"/>
-      <cat-item tags="vbser.fut"/>
-      
-    </def-cat> 
-    <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
-      <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->      
-</def-cat>
-   <def-cat n="num">
+    <def-cat n="adjec">
+      <cat-item tags="adj"/>
+      <cat-item tags="adj.sint"/>
+    </def-cat>
+    <def-cat n="det">
+      <cat-item tags="det.*"/>
+      <cat-item tags="det.def.*"/>
+      <cat-item tags="det.ind.*"/>
+      <cat-item tags="det.pos.*"/>
+      <cat-item tags="det.dem.*"/>
+      <cat-item tags="det.qnt.*"/>
+    </def-cat>
+    <def-cat n="num">
       <cat-item tags="num"/>
       <cat-item tags="num.*"/>
       <cat-item tags="num.ord"/>
@@ -58,59 +74,69 @@
       <cat-item tags="det.ord.*"/>
       <cat-item tags="num.itg"/>
     </def-cat>
-
-  <def-cat n="vbmod"> <!-- Буду -->
-      
+    <def-cat n="subj-pron">
+      <cat-item tags="prn.subj.*"/>
+      <cat-item tags="prn.pers.*"/>
+    </def-cat>
+    <def-cat n="subj-pron-pos">
+      <cat-item tags="prn.pos.*"/>
+    </def-cat>
+    <def-cat n="post">
+      <cat-item tags="post"/>
+    </def-cat>
+    <def-cat n="post-or-npost">
+      <cat-item tags="post"/>
+      <cat-item tags="n.px3sp.*"/>
+    </def-cat>
+    <def-cat n="adv">
+      <cat-item tags="adv"/>
+      <cat-item tags="adv.itg"/>
+    </def-cat>
+    <def-cat n="sent">
+      <cat-item tags="sent"/>
+    </def-cat>
+    <def-cat n="pers-verb"> <!-- past and present tense -->
+      <cat-item tags="vblex.impf.pres.*"/>
+      <cat-item tags="vblex.impf.pres"/>
+      <cat-item tags="vblex.impf.past"/>
+      <cat-item tags="vblex.impf.past.*"/>
+    </def-cat>   
+    <def-cat n="budu-vbser"> <!-- past and present tense -->
+      <cat-item tags="vbser.fut.*"/>
+      <cat-item tags="vbser.fut"/>      
+    </def-cat> 
+    <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
+      <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->      
+    </def-cat>
+    <def-cat n="vbmod"> <!-- Буду --> 
       <cat-item lemma="быть" tags="vblex.impf.fut.*"/>
- 	<cat-item lemma="быть" tags="vblex.impf.fut"/>
-      
+      <cat-item lemma="быть" tags="vblex.impf.fut"/>
     </def-cat>
-
- 
-   <def-cat n="det">
-      <cat-item tags="det.def.*"/>
-      <cat-item tags="det.ind.*"/>
-      <cat-item tags="det.pos.*"/>
-      <cat-item tags="det.dem.*"/>
-      <cat-item tags="det.qnt.*"/>
-    </def-cat>
- <def-cat n="prep">
-      <cat-item tags="pr"/>
-     </def-cat>
 
   </section-def-cats>
 
 
   <section-def-attrs>
-    <def-attr n="a_nom">
-      <attr-item tags="n"/>
+
+    <def-attr n="a_adj">
+      <attr-item tags="adj"/>
+      <attr-item tags="adj.sint"/>
     </def-attr>
-<def-attr n="a_pers">
-      <attr-item tags="p1"/>
-      <attr-item tags="p2"/>
-      <attr-item tags="p3"/>
+
+    <def-attr n="a_adjec">
+       <attr-item tags="adj"/>
     </def-attr>
-<def-attr n="a_pron">
-      <attr-item tags="p1"/>
-      <attr-item tags="p2"/>
-      <attr-item tags="p3"/>
+
+    <def-attr n="a_adv">
+      <attr-item tags="adv"/>
     </def-attr>
- <def-attr n="a_kaz_perspron"> 
-      <attr-item tags="prn.pers"/>
-  
+
+    <def-attr n="a_anim">
+      <attr-item tags="aa"/>
+      <attr-item tags="nn"/>
+      <attr-item tags="an"/>
     </def-attr>
- <def-attr n="a_kaz_pospron"> 
-      <attr-item tags="prn.pos"/>
-  
-    </def-attr>
-  <def-attr n="a_possessive"> <!-- check if complete -->
-      <attr-item tags="PXD"/> <!-- to be determined -->
-      <attr-item tags="px3sp"/>
-      <attr-item tags="px1sg"/>
-      <attr-item tags="px2sg"/>
-      <attr-item tags="px1pl"/>
-      <attr-item tags="px2pl"/>
-    </def-attr>
+
     <def-attr n="a_case">
       <attr-item tags="nom"/>
       <attr-item tags="gen"/>
@@ -118,38 +144,59 @@
       <attr-item tags="acc"/>
       <attr-item tags="abl"/>
       <attr-item tags="loc"/>
-      <attr-item tags="sim"/> 
+      <attr-item tags="sim"/>
       <attr-item tags="ins"/>
       <attr-item tags="prp"/>
       <attr-item tags="CD"/>
     </def-attr>
-    <def-attr n="a_nbr">
-      <attr-item tags="sg"/>
-      <attr-item tags="pl"/>
+
+    <def-attr n="a_det">
+      <attr-item tags="det.dem"/>
+      <attr-item tags="det.pos"/>
+      <attr-item tags="det.itg"/>
+      <attr-item tags="det.ind"/>
+      <attr-item tags="det.qnt"/>
+      <attr-item tags="num"/>
     </def-attr>
-    <def-attr n="a_anim">
-      <attr-item tags="aa"/>
-      <attr-item tags="an"/>
-      <attr-item tags="nn"/>
-    </def-attr>
-   <def-attr n="a_gender">
+
+    <def-attr n="a_gender">
       <attr-item tags="m"/>
       <attr-item tags="f"/>
       <attr-item tags="nt"/>
       <attr-item tags="mf"/>
       <attr-item tags="mfn"/>
+      <attr-item tags="GN"/>
     </def-attr>
-<def-attr n="a_kaz_verb"> 
-      <attr-item tags="v.tv"/>
-      <attr-item tags="v.iv"/>
 
+    <def-attr n="a_nbr">
+      <attr-item tags="sg"/>
+      <attr-item tags="pl"/>
+      <attr-item tags="ND"/>
     </def-attr>
- <def-attr n="a_tense">
-      <attr-item tags="pres"/>
-      <attr-item tags="past"/>
-    </def-attr> 
 
-<def-attr n="a_num">
+    <def-attr n="a_nom">
+      <attr-item tags="n"/>
+      <attr-item tags="np.ant"/>
+      <attr-item tags="np.top"/>
+      <attr-item tags="np.cog"/>
+      <attr-item tags="prn.pers.p1"/>
+      <attr-item tags="prn.pers.p2"/>
+      <attr-item tags="prn.pers.p3"/>
+      <attr-item tags="prn.dem"/>
+      <attr-item tags="prn.def"/>
+      <attr-item tags="prn.itg"/>
+      <attr-item tags="prn.neg"/>
+      <attr-item tags="prn.ind"/>
+      <attr-item tags="prn.ref"/>
+      <attr-item tags="adj"/>
+      <attr-item tags="adj.sint"/>
+      <attr-item tags="det.pos"/>
+      <attr-item tags="det.def"/>
+      <attr-item tags="det.ref"/>
+      <attr-item tags="num"/>
+    </def-attr>
+
+    <def-attr n="a_num">
       <attr-item tags="num"/>
       <attr-item tags="num.ord"/>
       <attr-item tags="num.ord.nom"/>
@@ -158,29 +205,118 @@
       <attr-item tags="num.coll"/>
     </def-attr>
 
+    <def-attr n="a_pers">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+
+    <def-attr n="a_pron">
+      <attr-item tags="p1"/>
+      <attr-item tags="p2"/>
+      <attr-item tags="p3"/>
+    </def-attr>
+
+    <def-attr n="a_pos">
+      <attr-item tags="n"/>
+      <attr-item tags="np"/>
+      <attr-item tags="np.cog"/>
+      <attr-item tags="adj"/>
+      <attr-item tags="adv"/>
+      <attr-item tags="pred"/>
+      <attr-item tags="pr"/>
+      <attr-item tags="det"/>
+      <attr-item tags="det.pos"/>
+    </def-attr>
+
+    <def-attr n="a_possessive"> 
+      <attr-item tags="PXD"/>
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px2pl"/>
+      <attr-item tags="px3sp"/>
+    </def-attr>
+
+    <def-attr n="a_pr">
+      <attr-item tags="pr"/>
+      <attr-item tags="adv.itg"/> <!-- for как -->
+    </def-attr>
+
+    <def-attr n="a_px">
+      <attr-item tags="px"/>
+    </def-attr>
+
+    <def-attr n="a_syntag">
+      <attr-item tags="advl"/>
+      <attr-item tags="attr"/>
+      <attr-item tags="subst"/>
+    </def-attr>
+
+    <def-attr n="a_subst">
+       <attr-item tags="subst"/>
+    </def-attr>
+
+    <def-attr n="a_tense">
+      <attr-item tags="pres"/>
+      <attr-item tags="ifi"/>
+      <attr-item tags="past"/>
+      <attr-item tags="fut"/>
+      <attr-item tags="fut2"/>
+      <attr-item tags="imp"/>
+    </def-attr>
+
+    <def-attr n="a_verb">
+      <attr-item tags="vbser"/>
+      <attr-item tags="vblex.impf"/>
+      <attr-item tags="vblex_perf"/>
+      <attr-item tags="vblex_dual"/>
+      <attr-item tags="vbmod.impf.tv"/> <!-- Modal verbs already receive transitivity tags in rus.dix-->
+      <attr-item tags="vbmod.impf.iv"/>
+      <attr-item tags="vbmod.perf.tv"/>
+      <attr-item tags="vbmod.perf.iv"/>
+    </def-attr>
+
+    <def-attr n="a_kaz_perspron"> 
+      <attr-item tags="prn.pers"/>
+    </def-attr>
+
+    <def-attr n="a_kaz_pospron"> 
+      <attr-item tags="prn.pos"/>
+    </def-attr>
+
+    <def-attr n="a_kaz_verb"> 
+      <attr-item tags="v.tv"/>
+      <attr-item tags="v.iv"/>
+    </def-attr>
+
   </section-def-attrs>
 
 
-  <section-def-vars> 
+  <section-def-vars>
+    <def-var n="adjec_lu"/>
+    <def-var n="animacy"/>
+    <def-var n="case"/>
+    <def-var n="current_verb"/>
+    <def-var n="formality"/>
+    <def-var n="gender"/>
+    <def-var n="genpp"/>
+    <def-var n="negation"/>
+    <def-var n="NEW-noun_lu"/>
+    <def-var n="num_lu"/>
     <def-var n="number"/>
     <def-var n="possessive"/>
-    <def-var n="current_verb"/>
-    <def-var n="NEW-noun_lu"/>    
-    <def-var n="case"/> 
-    <def-var n="tense"/>   
-<def-var n="verb-pers"/>
-<def-var n="verb-nbr"/>
-
-<def-var n="pptag"/> <!-- Will contain the tag of the next postpositional phrase generated (AdvP, GenP, etc.) -->
-<def-var n="genpp"/> <!-- yes: will generate postposition; no= won't -->
-
-<def-var n="num_lu"/>  
-<def-var n="postposition_lu"/> <!-- complete postposition ready for lu -->
-<def-var n="formality"/> <!-- Used to generate formal versions of 2nd person pronouns -->
-
+    <def-var n="postposition_lu"/>
+    <def-var n="pptag"/> 
+    <def-var n="preposition"/>
+    <def-var n="sntype"/>
+    <def-var n="tense"/> 
+    <def-var n="verb-nbr"/>     
+    <def-var n="verb-pers"/>
   </section-def-vars>
 
   <section-def-macros>
+
     <def-macro n="test" npar="1">
           <let>   <!-- number="" -->
             <var n="number"/>
@@ -189,8 +325,6 @@
     </def-macro>
 
     <!-- macro stolen from apertium-eng-kaz -->
-
-
 
    <def-macro n="select-case" npar="1">
    <!-- ugly macro: can we use lists for tags? -->
@@ -255,7 +389,7 @@
       </choose>
    </def-macro>
 
-<def-macro n="default-nbr-pers" npar="0">
+   <def-macro n="default-nbr-pers" npar="0">
     <choose>
      <when>
        <test>
@@ -274,13 +408,10 @@
       </let>
      </when>
     </choose>
-</def-macro>    
+   </def-macro>    
 
-
-
-<def-macro n="NEW-gen-simple-verb" npar="1">  
-
-<out>
+   <def-macro n="NEW-gen-simple-verb" npar="1">  
+	<out>
       <chunk name="pers-verb">
       <tags>
         <tag><lit-tag v="VP"/></tag>
@@ -303,12 +434,12 @@
         </lu>
       </chunk>
         </out>
-</def-macro>
+   </def-macro>
 
-<!-- macro from eng-kaz to prepositions-->
-<!--Numerals def-macro-->
+   <!-- macro from eng-kaz to prepositions-->
+   <!--Numerals def-macro-->
 
-<def-macro n="NEW-build-noun-lu-2-4-5-sg" npar="1"> 
+   <def-macro n="NEW-build-noun-lu-2-4-5-sg" npar="1"> 
      <let>
            <var n="NEW-noun_lu"/>
            <concat>
@@ -320,9 +451,9 @@
                <lit-tag v="5"/> <!-- for case -->
            </concat>  
         </let>
-</def-macro>
+   </def-macro>
 
-<def-macro n="NEW-build-noun-lu-2-4-5" npar="1"> 
+   <def-macro n="NEW-build-noun-lu-2-4-5" npar="1"> 
      <let>
            <var n="NEW-noun_lu"/>
            <concat>
@@ -332,12 +463,12 @@
                <!-- no need to link person -->
  		<lit-tag v="4"/> <!-- for possessive -->
                <lit-tag v="5"/> <!-- for case -->
- <!-- for case -->
+      <!-- for case -->
            </concat>  
         </let>
-</def-macro>
+   </def-macro>
 
-<def-macro n="build-num-lu" npar="1"> 
+   <def-macro n="build-num-lu" npar="1"> 
      <let>
            <var n="num_lu"/>
            <concat>
@@ -345,11 +476,11 @@
                <clip pos="1" side="tl" part="a_num"/>
            </concat>  
         </let>
-</def-macro>
+   </def-macro>
 
-<def-macro n="out-blank-if-not-single-space" npar="1">
-<!-- Outputs nothing if the blank is " " and the blank otherwise..-->
-<!-- Takes one position parameter -->
+   <def-macro n="out-blank-if-not-single-space" npar="1">
+      <!-- Outputs nothing if the blank is " " and the blank otherwise..-->
+      <!-- Takes one position parameter -->
       <choose>
         <when>
           <test>
@@ -365,45 +496,37 @@
           </out>
         </when>
       </choose>
-    </def-macro>
+   </def-macro>
 
-<def-macro n="build-possessive-from-possessive-determiner" npar="1">
-
-
-<choose> 
-<when>
-   <test>
+   <def-macro n="build-possessive-from-possessive-determiner" npar="1">
+	<choose> 
+	<when>
+         <test>
           <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="мой"/></equal>
-    </test>      
+         </test>      
           <let><var  n="possessive"/><lit-tag v="px1sg"/></let>
-</when>
-
-
-<when>
-   <test>
+	</when>
+	<when>
+         <test>
           <equal caseless="yes"><clip  pos="1" side="sl" part="lem"/><lit  v="our"/></equal>
-    </test>      
+         </test>      
           <let><var  n="possessive"/><lit-tag v="px1pl"/></let>
-</when>
-<when>
-   <test>
+	</when>
+	<when>
+         <test>
           <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="your"/></equal>
-    </test>      
-<let><var  n="possessive"/><lit-tag v="px2sg"/></let>
-</when>
+         </test>      
+	<let><var  n="possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+	<otherwise>
+	<let><var n="possessive"/><lit-tag v="px3sp"/></let> <!-- default value -->
+	</otherwise>
+	</choose>
+   </def-macro>
 
-<otherwise>
-<let><var n="possessive"/><lit-tag v="px3sp"/></let> <!-- default value -->
-</otherwise>
-
-</choose>
-
-</def-macro>
-
-<def-macro n="choose_case_and_postposition2" npar="2"> <!-- Aliya --> 
+   <def-macro n="choose_case_and_postposition2" npar="2"> <!-- Aliya --> 
     <let><var n="pptag"/><lit-tag v="PP"/></let> <!-- for most of them -->
     <let><var n="genpp"/><lit v="no"/></let> <!-- for simple cases -->
-
     <choose>
       <when> <!-- make genpp="yes" when a postposition is detected -->
         <test>
@@ -412,25 +535,21 @@
                <clip pos="1" side="tl" part="a_postposition"/>
                <lit-tag v="n"/>
             </equal>
-     
             <equal>
                <clip pos="1" side="tl" part="a_postposition"/>
                <lit-tag v="post"/>
             </equal>
-
           </or>  
         </test>
         <let><var n="genpp"/><lit v="yes"/></let> <!-- for simple cases -->
       </when>
     </choose>
-
     <choose>
       <when>
         <test>
           <equal><var n="genpp"/><lit v="no"/></equal>
         </test>
         <choose> <!-- no postpositions -->
-
           <when> 
             <test>
               <equal caseless="yes">
@@ -443,7 +562,6 @@
                <lit-tag v="abl"/>
             </let>
           </when>
-
           <when> 
             <test>
               <equal caseless="yes">
@@ -456,7 +574,6 @@
                <lit-tag v="abl"/>
             </let>
           </when>
-
           <when> 
             <test>
               <equal caseless="yes">
@@ -469,7 +586,6 @@
                <lit-tag v="ins"/>
             </let>
           </when>
-
           <when> 
             <test>
               <equal caseless="yes">
@@ -482,7 +598,6 @@
                <lit-tag v="ins"/>
             </let>
           </when>
-
           <when> 
             <test>
               <equal caseless="yes">
@@ -495,7 +610,6 @@
                <lit-tag v="loc"/>
             </let>
           </when>
- 
           <when> 
             <test>
               <equal caseless="yes">
@@ -508,7 +622,6 @@
                <lit-tag v="loc"/>
             </let>
           </when> 
-  
           <otherwise>
               <let>
                 <var n="case"/>
@@ -521,7 +634,6 @@
           </otherwise>
     </choose>
       </when> <!-- End of solutions without postpositions -->
-
       <when>  <!--- Now, with postpositions -->
         <test>
           <equal>
@@ -540,57 +652,45 @@
              <let><var n="case"/><lit-tag v="gen"/></let>
              <let><var n="pptag"/><lit-tag v="PP"/></let>
              <!-- we need to compute "possessive"  --> 
- 
-<let><var n="possessive"/><lit-tag v="px3sp"/></let> <!-- default value -->
-
-<choose> 
-<when>
-   <test>
-      <and>
+	<let><var n="possessive"/><lit-tag v="px3sp"/></let> <!-- default value -->
+	<choose> 
+	<when>
+         <test>
+         <and>
           <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag  v="p1"/></equal>
           <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
-       </and>
-    </test>      
+         </and>
+         </test>      
           <let><var  n="possessive"/><lit-tag v="px1sg"/></let>
-</when>
-
-
-<when>
-   <test>
-      <and>
+	</when>
+	<when>
+         <test>
+         <and>
           <equal><clip  pos="2" side="sl" part="a_pers"/><lit-tag  v="p1"/></equal>
           <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
-       </and>
-    </test>      
+         </and>
+         </test>      
           <let><var  n="possessive"/><lit-tag v="px1pl"/></let>
-</when>
-<when><!--under you-->
-   <test>
-      <and>
+	</when>
+	<when><!--under you-->
+         <test>
+         <and>
           <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag  v="p2"/></equal>
           <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sp"/></equal>
-	
-       </and>
-    </test>      
-<let><var  n="formality"/><lit-tag v="frm"/></let>
-<let><var  n="possessive"/><lit-tag v="px2sg.frm"/></let>
-</when>
-
-
-
-<!-- ...etc remaining cases ... -->
-</choose>
-                  
+	 </and>
+         </test>      
+	<let><var  n="formality"/><lit-tag v="frm"/></let>
+	<let><var  n="possessive"/><lit-tag v="px2sg.frm"/></let>
+	</when>
+		<!-- ...etc remaining cases ... -->
+	</choose>
               <!-- end of computation of "possessive" -->
              <let><var n="postposition_lu"/> <!-- ready for lu -->
                       <concat>
                         <clip pos="1" side="tl" part="lem"/>
                         <lit-tag v="n"/>
-			
                         <!-- <lit-tag v="px3sp"/>  -->
                      <var n="possessive"/>
-                        
-                        
                 <clip part="a_cas" side="tl" pos="1"/> 
                       </concat>
              </let>
@@ -643,9 +743,17 @@
     </choose>
        </when>
      </choose>
-    </def-macro>
+   </def-macro>
 
-
+   <def-macro n="build-adjec-lu" npar="1"> 
+     <let>
+           <var n="adjec_lu"/>
+           <concat>
+             <clip pos="1" side="tl" part="lem"/> 
+               <clip pos="1" side="tl" part="a_adjec"/>
+           </concat>  
+        </let>
+   </def-macro>
 
   </section-def-macros>
 
@@ -1506,8 +1614,179 @@
   </action>
 </rule>
 
+<rule comment="NEW RULE: adjec">  
+  <pattern>
+    <pattern-item n="adjec"/>
+  </pattern>
+  <action>
+   <call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro> 
+    <out>
+    <chunk name="adjec">
+    <tags>
+    <tag><lit-tag v="AdjP"/></tag>
+ <tag><lit-tag v="subst"/></tag>
+ <tag><lit-tag v="CD"/></tag>
+    </tags>
+    <lu>
+      <var n="adjec_lu"/>
+<lit-tag v="2"/>
+<lit-tag v="3"/>
+     </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
 
 <!-- Aliya's rules begin -->
+
+<rule comment="NEW RULE: adjec noun1 noun2">   <!-- tolyktyr -->
+  <pattern>
+    <pattern-item n="adjec"/>
+    <pattern-item n="nom"/>
+ <pattern-item n="nom"/>
+  </pattern>
+  <action>
+<call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="3"/>
+  </call-macro> 
+<call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro> 
+    <out>
+    <chunk name="adjec-noun">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="3" side="tl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="px3sp"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+      <var n="adjec_lu"/>
+     </lu>
+	<b pos="1"/>
+ <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_nbr"/>
+     <lit-tag v="nom"/>
+     </lu>
+<b pos="2"/>
+	<lu>
+      <var n="NEW-noun_lu"/>
+    </lu>
+    </chunk>
+    </out>
+      </action>
+</rule>
+
+
+<rule comment="NEW RULE: adjec noun">    <!-- tolyktyr -->
+  <pattern>
+    <pattern-item n="adjec"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+<call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="2"/>
+  </call-macro> 
+<call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro> 
+    <out>
+    <chunk name="adjec-noun">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+      <var n="adjec_lu"/>
+     </lu>
+	<b pos="1"/>
+	<lu>
+      <var n="NEW-noun_lu"/>
+    </lu>
+    </chunk>
+    </out>
+      </action>
+</rule>
+
+<rule comment="NEW RULE: prep adjec noun">   <!-- tolyktyr -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="adjec"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+     </call-macro>
+
+<call-macro n="build-adjec-lu"><with-param pos="2"/></call-macro> 
+ 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-adjec-nom">
+
+            <tags>
+                <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+ <b pos="1"/>
+            <lu>  
+               <var n="adjec_lu"/>
+            </lu>
+ <b pos="2"/>
+            <lu>  <!-- build in situ for the time being -->
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <!-- no need to link person -->
+               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="5"/> <!-- for case -->
+            </lu>
+            <b/>
+            <lu>  
+               <var n="postposition_lu"/>
+            </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-adjec-nom">
+            <tags>
+                <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+<b pos="1"/> 
+ <lu>  
+               <var n="adjec_lu"/>
+            </lu>
+ <b pos="2"/>
+            <lu>  <!-- build in situ for the time being -->
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <!-- no need to link person -->
+               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="5"/> <!-- for case -->
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
 
 
 <rule comment="NEW RULE: prep noun">
@@ -1703,10 +1982,41 @@
   </action>
 </rule>
 
+<!-- <rule comment="NEW RULE: post noun">
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="nom"/>
+   </pattern>
+  <action>
 
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="2"/>
+  </call-macro> 
+    <out>
+    <chunk name="post-noun">
+    <tags>
+    <tag><lit-tag v="PP"/></tag>
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag> 
+    <tag><lit-tag v="PXD"/></tag> 
+    <tag><lit-tag v="nom"/></tag> 
+    </tags>
+    <lu>
+      <var n="NEW-noun_lu"/>
+    </lu>
+   <b/> 
+    <lu>
+     <lit v="үшін"/>
+         <lit-tag v="post"/>
+
+    </lu>
+      </chunk>
+</out>
+  </action>
+</rule> -->
 <!-- Aliya's rules end -->
 
 
   </section-rules>
-</transfer>
 
+</transfer>
