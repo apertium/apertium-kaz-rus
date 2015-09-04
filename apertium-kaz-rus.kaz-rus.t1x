@@ -3249,12 +3249,36 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 <choose>
 <when>
 <test>
+<and>
+<equal>
+              <clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/>
+</equal>
+
 <equal>
               <clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/>
 </equal>
+</and>
 </test>
+
 <let>
 <var n="gender"/><lit-tag v="m"/>
+</let>
+</when>
+<when>
+<test>
+<and>
+<equal>
+              <clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/>
+</equal>
+
+<equal>
+              <clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/>
+</equal>
+</and>
+</test>
+
+<let>
+<var n="gender"/><lit-tag v="mfn"/>
 </let>
 </when>
 <otherwise>
