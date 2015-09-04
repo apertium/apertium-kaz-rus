@@ -141,6 +141,105 @@
     <def-cat n="subj-pron">
        <cat-item tags="prn.subj.*"/>
     </def-cat>
+
+<!--Zhadyra--><!--
+<def-cat n="v">
+      <cat-item tags="v.*"/>
+      <cat-item tags="vaux.*"/>
+      <cat-item tags="cop.*"/>
+    </def-cat>
+
+    <def-cat n="FourAuxiliaries">
+      <cat-item lemma="жат" tags="vaux.*"/>
+      <cat-item lemma="жүр" tags="vaux.*"/>
+      <cat-item lemma="отыр" tags="vaux.*"/>
+      <cat-item lemma="тұр" tags="vaux.*"/>
+    </def-cat>
+
+    <def-cat n="FourAuxiliaries.gpr_past">
+      <cat-item lemma="жат" tags="vaux.gpr_past"/>
+      <cat-item lemma="жүр" tags="vaux.gpr_past"/>
+      <cat-item lemma="отыр" tags="vaux.gpr_past"/>
+      <cat-item lemma="тұр" tags="vaux.gpr_past"/>
+    </def-cat>
+<def-cat n="Gerund">
+      <cat-item tags="v.*.*.ger.*"/>
+      <cat-item tags="v.*.*.ger_past.*"/>
+      <cat-item tags="v.*.*.ger_perf.*"/>
+      <cat-item tags="v.*.*.ger_ppot.*"/>
+      <cat-item tags="v.*.*.ger_abs.*"/>
+      <cat-item tags="v.*.*.ger_fut.*"/>
+      <cat-item tags="v.*.*.ger_impf.*"/>
+      <cat-item tags="vaux.ger.*"/>
+      <cat-item tags="vaux.ger_past.*"/>
+      <cat-item tags="vaux.ger_perf.*"/>
+      <cat-item tags="vaux.ger_ppot.*"/>
+      <cat-item tags="vaux.ger_abs.*"/>
+      <cat-item tags="vaux.ger_fut.*"/>
+      <cat-item tags="vaux.ger_impf.*"/>
+      <cat-item tags="vaux.neg.ger.*"/>
+      <cat-item tags="vaux.neg.ger_past.*"/>
+      <cat-item tags="vaux.neg.ger_perf.*"/>
+      <cat-item tags="vaux.neg.ger_ppot.*"/>
+      <cat-item tags="vaux.neg.ger_abs.*"/>
+      <cat-item tags="vaux.neg.ger_fut.*"/>
+      <cat-item tags="vaux.neg.ger_impf.*"/>
+      <cat-item tags="cop.ger_past.*"/>
+      <cat-item tags="cop.ger_perf.*"/>
+    </def-cat>
+<def-cat n="DefaultGerund.WithPossessives.Nominative">
+      <cat-item tags="v.*.ger.px1sg.nom"/>
+      <cat-item tags="v.*.ger.px2sg.nom"/>
+      <cat-item tags="v.*.ger.px3sp.nom"/>
+      <cat-item tags="v.*.ger.px1pl.nom"/>
+      <cat-item tags="v.*.ger.px2pl.nom"/>
+    </def-cat>
+
+    <def-cat n="DefaultGerund.WithoutPossessives.Nominative">
+      <cat-item tags="v.*.ger.nom"/>
+    </def-cat>
+
+    <def-cat n="DefaultGerund_SingularDative">
+      <cat-item tags="v.*.*.*.ger.dat"/>
+    </def-cat>
+
+    <def-cat n="керек">
+      <cat-item lemma="керек" tags="adj"/>
+    </def-cat>
+
+    <def-cat n="жоқ.adj">
+      <cat-item lemma="жоқ" tags="adj"/>
+    </def-cat>
+
+    <def-cat n="ImperfectOrPerfectParticiple">
+      <cat-item tags="v.*.prc_perf"/>
+      <cat-item tags="v.*.prc_impf"/>
+    </def-cat>
+<def-cat n="gpr-subst">
+      <cat-item tags="v.*.*.gpr_past.subst.*"/>
+      <cat-item tags="v.*.*.gpr_impf.subst.*"/>
+      <cat-item tags="v.*.*.gpr_pot.subst.*"/>
+      <cat-item tags="v.*.*.gpr_ppot.subst.*"/>
+      <cat-item tags="v.*.*.gpr_fut.subst.*"/>
+      <cat-item tags="v.*.*.gpr_fut2.subst.*"/>
+      <cat-item tags="v.*.*.gpr_fut3.subst.*"/>
+      <cat-item tags="vaux.gpr_past.subst.*"/>
+      <cat-item tags="vaux.gpr_impf.subst.*"/>
+      <cat-item tags="vaux.gpr_pot.subst.*"/>
+      <cat-item tags="vaux.gpr_ppot.subst.*"/>
+      <cat-item tags="vaux.gpr_fut.subst.*"/>
+      <cat-item tags="vaux.gpr_fut2.subst.*"/>
+      <cat-item tags="vaux.gpr_fut3.subst.*"/>
+      <cat-item tags="vaux.neg.gpr_past.subst.*"/>
+      <cat-item tags="vaux.neg.gpr_impf.subst.*"/>
+      <cat-item tags="vaux.neg.gpr_pot.subst.*"/>
+      <cat-item tags="vaux.neg.gpr_ppot.subst.*"/>
+      <cat-item tags="vaux.neg.gpr_fut.subst.*"/>
+      <cat-item tags="vaux.neg.gpr_fut2.subst.*"/>
+      <cat-item tags="vaux.neg.gpr_fut3.subst.*"/>
+    </def-cat>
+-->
+
     <def-cat n="verb-fin">
       <cat-item tags="v.*.pres.*"/>
       <cat-item tags="v.*.aor.*"/>
@@ -301,13 +400,43 @@
     <def-attr n="a_verb">
       <attr-item tags="vbser"/>
       <attr-item tags="vblex.impf"/>
-      <attr-item tags="vblex_perf"/>
+      <attr-item tags="vblex.perf"/>
       <attr-item tags="vblex_dual"/>
       <attr-item tags="vbmod.impf.tv"/> <!-- Modal verbs already receive transitivity tags in rus.dix-->
       <attr-item tags="vbmod.impf.iv"/>
       <attr-item tags="vbmod.perf.tv"/>
       <attr-item tags="vbmod.perf.iv"/>
     </def-attr>
+
+<!--Zhadyra--><!--
+<def-attr n="a_nonfin">
+      <attr-item tags="prc_impf"/>
+      <attr-item tags="prc_perf"/>
+      <attr-item tags="prc_plan"/>
+
+      <attr-item tags="gpr_past"/>
+      <attr-item tags="gpr_impf"/>
+      <attr-item tags="gpr_pot"/>
+      <attr-item tags="gpr_ppot"/>
+      <attr-item tags="gpr_fut"/>
+      <attr-item tags="gpr_fut2"/>
+      <attr-item tags="gpr_fut3"/>
+
+      <attr-item tags="inf"/>
+      <attr-item tags="ger1"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="ger_past"/>
+      <attr-item tags="ger_perf"/>
+      <attr-item tags="ger_ppot"/>
+      <attr-item tags="ger_abs"/>
+      <attr-item tags="ger_fut"/>
+      <attr-item tags="ger_fut2"/>
+      <attr-item tags="ger_fut3"/>
+      <attr-item tags="ger_impf"/>
+      <attr-item tags="ger_abs"/>
+    </def-attr>
+-->
+
     <def-attr n="a_gender">
       <attr-item tags="m"/>
       <attr-item tags="f"/>
@@ -360,6 +489,11 @@
       <attr-item tags="fut"/>
       <attr-item tags="fut2"/>
       <attr-item tags="imp"/>
+      <attr-item tags="cont"/>
+      <attr-item tags="aor"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="ifi_evid"/>
+      <attr-item tags="fut_plan"/>
     </def-attr>
     <def-attr n="a_kaz_perspron"> 
       <attr-item tags="prn.pers"/>
@@ -844,9 +978,8 @@
            GIVEN:  ^ойна<v><tv><pres><p3><pl>/играть<vblex><impf><tv><pres><p3><pl>$
            EXPECT: ^ойна<v><tv><pres><p1><sg>/играть<vblex><impf><pres><p3><sg>$
 
-
-           GIVEN:  ^ойна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><tv><neg><ifi><p3><pl>$
-           EXPECT: ^ойна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><past><mfn><pl>$ negation = '^не<adv>$ ' -->
+           GIVEN:  ^ойна<v><tv><past><ifi><p3><pl>/играть<vblex><impf><tv><past><ifi><p3><pl>$
+           EXPECT: ^ойна<v><tv><past><ifi><p3><sg>/играть<vblex><impf><past><p3><sg>$ -->
       <let><var n="gender"/><lit v=""/></let>
       <call-macro n="convert-neg-to-ne.adv">
         <with-param pos="1"/>
@@ -1227,15 +1360,21 @@
         <tag><lit-tag v="ifi"/></tag>  <!-- tense/conditionality -->
         <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
         <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+<tag><lit-tag v="CD"/></tag>
       </tags>
 
           
        <lu>
-         <lit v="бол"/>  <!-- Note this is a cyrillic е -->
-         <lit-tag v="vaux"/>
-         <lit-tag v="4"/>
+<clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_rus_verb"/>
+          <lit-tag v="4"/>
          <lit-tag v="3"/>
          <lit-tag v="2"/>
+         <lit-tag v="6"/>
+          <lit-tag v="5"/>
+          <lit-tag v="7"/>
+         <lit-tag v="бол"/>  <!-- Note this is a cyrillic е -->
+         <lit-tag v="vaux"/>
        </lu>
       </chunk>
         </out>
@@ -1245,7 +1384,7 @@
   </action>
 </rule>
 
-
+      
 
 
 
@@ -3097,8 +3236,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       <!--
       INPUT:  ^ойна<v><tv><pres><p1><sg>/играть<vblex><impf><tv><pres><p1><sg>$
       OUTPUT: ^v<SV><tv>{^играть<vblex><impf><pres><p1><sg>$}$
-      INPUT:  ^ойна<v><tv><neg><ifi><p3><pl>/играть<vblex><impf><tv><neg><ifi><p3><pl>$
-      OUTPUT: ^v<SV><tv>{^не<adv>$ ^играть<vblex><impf><past><mfn><pl>$}$
+      INPUT:  ^ойна<v><tv><past><ifi><p3><sg>/играть<vblex><impf><tv><past><ifi><p3><sg>$
+      OUTPUT: ^v<SV><tv>{^играть<vblex><impf><past><p3><sg>$}$
       -->
       <pattern>
         <pattern-item n="verb-fin"/>
@@ -3107,6 +3246,24 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         <call-macro n="translate-verb-fin">
           <with-param pos="1"/>
         </call-macro>
+<choose>
+<when>
+<test>
+<equal>
+              <clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/>
+</equal>
+</test>
+<let>
+<var n="gender"/><lit-tag v="m"/>
+</let>
+</when>
+<otherwise>
+<let>
+<var n="gender"/><lit-tag v="4"/>
+</let>
+</otherwise>
+</choose>
+
 
         <out>
           <chunk name="v-neg-fin">
@@ -3115,20 +3272,26 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <tag><clip pos="1" side="sl" part="a_verb"/></tag>
               <tag><clip pos="1" side="sl" part="a_pers"/></tag>
               <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
-            </tags>
+              </tags>
             <var n="negation"/>
             <lu>
    <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
               <clip pos="1" side="tl" part="a_tense"/>
-<lit-tag v="4"/>
+<var n="gender"/>
 <lit-tag v="5"/>
+
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
+ 
+
+
+
 
     <rule comment="REGLA: V">
       <!--
@@ -3222,6 +3385,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
                 <lu>
                   <clip pos="1" side="tl" part="lemh"/>
                   <clip pos="1" side="tl" part="a_verb"/>
+                  <clip pos="1" side="tl" part="a_pers"/>
                   <lit-tag v="inf"/>
                   <clip pos="1" side="tl" part="lemq"/>
                 </lu>
