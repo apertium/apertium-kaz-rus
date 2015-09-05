@@ -10459,6 +10459,10 @@
 <e><p><l>тіке<s n="adv"/></l><r>ровно<s n="adv"/></r></p></e>
 <e><p><l>ақырын<s n="adv"/></l><r>медленно<s n="adv"/></r></p></e>
 
+     <e r="LR"><p><l>е<s n="cop"/></l><r></r></p></e>
+    <e><p><l>емес<s n="adv"/></l><r>не<s n="adv"/></r></p></e>
+<e r="LR"><p><l>емес<s n="vaux"/></l><r></r></p></e>
+
     <!-- Adpositions -->
 
 <e c="алдына"><p><l>алд<s n="n"/><s n="px3sp"/><s n="dat"/></l><r>перед<s n="pr"/></r></p><par n="__LR_ins"/></e>

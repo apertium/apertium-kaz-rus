@@ -135,6 +135,12 @@
       <cat-item tags="cop.p3.*"/>
       <cat-item tags="cop.neg.p3.*"/>
     </def-cat>
+    <def-cat n="cop-neg">
+      <cat-item tags="cop.neg.*"/>
+      <cat-item tags="vaux.pres.*"/>
+      <cat-item tags="cop.neg"/>
+      <cat-item tags="vaux.pres"/>
+    </def-cat>
     <def-cat n="cop-ifi">
       <cat-item tags="cop.ifi.*.*"/>
     </def-cat>
@@ -3114,6 +3120,89 @@
 <!-- SECTION: Verbs -->
 
 
+
+<rule comment="RULE: VP-cop-neg">  <!-- Aliya --> <!-- Мен оқушы емеспін-->
+
+      <!--
+      INPUT:  ^мен<prn><pers><p1><sg><nom>/я<prn><pers><p1><mf><sg><nom>$ ^дәрігер<n><nom>/врач<n><m><aa><nom>$ ^е<cop><neg><aor><p1><sg>/<neg><aor><p1><sg>$
+      OUTPUT: ^vP-cop-neg<SV-cop><p1><sg>{^я<prn><pers><p1><mf><sg><nom>$ ^не<adv>$ ^врач<n><m><aa><sg><nom>$}$
+      -->
+
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="n"/>
+        <pattern-item n="cop-neg"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="conv-case1">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="conv-number1">
+          <with-param pos="3"/>
+        </call-macro>
+ <choose><!-- choosing correct to be-->
+               <when>
+                   <test>
+                   <and>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p3"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                   </and>
+                   </test>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
+               </when>
+               <when>
+                   <test>
+                   <and>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                   </and>
+                   </test>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
+               </when>
+               <when>
+                   <test>
+                   <and>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                   </and>
+                   </test>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
+                </when>
+           </choose>
+        <out>
+          <chunk name="VP-cop-neg" case="caseFirstWord">
+            <tags>
+              <tag> <lit-tag v="SV-cop"/></tag>
+              <tag><clip pos="1" side="tl" part="a_pers"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <lit v="не"/>
+              <lit-tag v="adv"/>
+            </lu>
+            <b/>
+            <lu>
+                  <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1">
+          <with-param pos="3"/>
+        </call-macro>
+      </action>
+    </rule>
+
+
 <rule comment="RULE: VP-cop-pres"> <!-- Aliya --> <!-- Мен оқушымын-->
 
       <!--
@@ -3179,7 +3268,6 @@
           <chunk name="VP-cop-present" case="caseFirstWord">
             <tags>
               <tag> <lit-tag v="SV-cop"/></tag>
-
             </tags>
             <lu>
                   <clip pos="1" side="tl" part="whole"/>
