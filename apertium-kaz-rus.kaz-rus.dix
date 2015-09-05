@@ -6395,6 +6395,7 @@
 <e><p><l>іссапар<s n="n"/></l><r>командировка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>іш<s n="n"/></l><r>живот<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <!--Aliya 1000-->
+<e><p><l>технология<s n="n"/></l><r>технология<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 
 
     <!-- Conjunctions -->
@@ -6511,6 +6512,8 @@
 <e><p><l>үлкен<s n="adj"/></l><r>большой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e><!-- кате -->
 <e><p><l>ақылсыз<s n="adj"/></l><r>глупый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 
+<!-- Aliya -->
+<e><p><l>ақпараттық<s n="adj"/></l><r>информационный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 
 <!-- adjectives from sql-->
 <e><p><l>атқарушы<s n="adj"/></l><r>исполнительный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
