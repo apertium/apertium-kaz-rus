@@ -30,6 +30,8 @@
     <sdef n="ij" 	c="Междометие или вводное слово"/> 
     <sdef n="post" 	c="Послелог"/> 
     <sdef n="postadv" 	c=""/> 
+    <sdef n="prc_impf" 	c=""/> 
+    <sdef n="prc_perf" 	c=""/> 
     <sdef n="cm" 	c="Запятая"/> 
     <sdef n="sent" 	c="Точка и другие знаки препинания"/> 
     <sdef n="pers" 	c="Личные"/> 
@@ -250,6 +252,7 @@
   <e><p><l><s n="inf"/></l><r><s n="inf"/></r></p></e>
   <e r="LR"><p><l><s n="neg"/><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
+  <e><p><l><s n="prc_perf"/></l><r><s n="prc_perf"/></r></p></e>
 
 </pardef>
 <pardef n="perf__verb">
@@ -257,6 +260,7 @@
   <e r="RL"><p><l><s n="aor"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="fut2"/></l><r><s n="fut"/></r></p></e>
   <e><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
+
   <e r="LR"><p><l><s n="coop"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="coop"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="pass"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
@@ -270,6 +274,10 @@
 
 
   <section id="main" type="standard">
+
+<!-- vaux-->
+
+    <e r="LR"><p><l>жат<s n="vaux"/></l><r></r></p></e>
  <!-- verb -->
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>           <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>поесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
@@ -1704,7 +1712,7 @@
 <e><p><l>болыс<s n="v"/><s n="tv"/></l><r>заступиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жақтас<s n="v"/><s n="tv"/></l><r>заступиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>болыс<s n="v"/><s n="tv"/></l><r>заступиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бар<s n="v"/><s n="tv"/></l><r>идти<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бар<s n="v"/><s n="iv"/></l><r>идти<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ашық<s n="v"/><s n="tv"/></l><r>изголодаться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жаура<s n="v"/><s n="tv"/></l><r>иззябнуть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жаура<s n="v"/><s n="tv"/></l><r>иззябнуть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
@@ -1902,8 +1910,8 @@
 <e><p><l>көтеріл<s n="v"/><s n="tv"/></l><r>подняться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ашулан<s n="v"/><s n="tv"/></l><r>подуться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>сарғыштан<s n="v"/><s n="tv"/></l><r>пожелтеть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бар<s n="v"/><s n="tv"/></l><r>пойти<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бар<s n="v"/><s n="tv"/></l><r>пойти<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бар<s n="v"/><s n="iv"/></l><r>пойти<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бар<s n="v"/><s n="iv"/></l><r>пойти<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>дөңгелеу<s n="v"/><s n="tv"/></l><r>покатиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>иіліп<b/>амандас<s n="v"/><s n="tv"/></l><r>поклониться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жуын<s n="v"/><s n="tv"/></l><r>покупаться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>

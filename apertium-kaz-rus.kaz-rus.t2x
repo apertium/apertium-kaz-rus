@@ -103,8 +103,17 @@
 
   <section-def-vars>
     <def-var n="varstub"/>
+  
+    <def-var n="PREP"/>
   </section-def-vars>
 
+
+ <section-def-macros>
+
+    <def-macro n="reset-case1" npar="1">
+          <let><var n="PREP"/><lit v=""/></let>
+    </def-macro>
+ </section-def-macros>
   <section-rules>
     
     <rule comment="REGLA: * VBSER -> *">
@@ -207,6 +216,20 @@
 	
 	   
 	
+       <choose>
+<when>
+<test>
+
+<and>
+             <equal>  <clip pos="1" part="a_pers"/><lit-tag v="p3"/></equal>
+            <equal>   <clip pos="1" part="a_nbr"/><lit-tag v="pl"/></equal>
+</and>
+    
+   </test>
+<let>     <clip pos="2" part="a_pers"/><lit-tag v="p3"/> </let>
+  <let>         <clip pos="2" part="a_nbr"/><lit-tag v="pl"/></let>
+</when>
+</choose>
         <out>
           <chunk>
             <clip pos="1" part="lem"/>
@@ -227,6 +250,9 @@
             <clip pos="2" part="chcontent"/>
           </chunk>
         </out>
+        <call-macro n="reset-case1">
+          <with-param pos="1"/>
+        </call-macro>
       </action>
     </rule>      
 

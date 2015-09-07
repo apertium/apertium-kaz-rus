@@ -23,6 +23,14 @@
     <select lemma="открытый" tags="adj.*"/></match>
 </rule>    <!-- “Ашық” сөзін арқашан открытый деп аударады -->
 
+
+<rule>
+
+    <match lemma="бар" tags="v.*"><select lemma="идти" tags="vblex.*"/></match>
+<match lemma="жат" tags="vaux.*"/>
+
+</rule> 
+
 <rule>
     <match lemma="демалыс" tags="*">
     <select lemma="выходной" tags="adj.*"/></match>

@@ -34,7 +34,6 @@ testvoc/testvoc-summary.rus-kaz.txt -text
 testvoc/testvoc1.sh -text
 texts/Kazakhstan.kaz.txt -text svneol=unset#application/octet-stream
 texts/Kazakhstan.rus.txt -text svneol=unset#application/octet-stream
-texts/rus.txt -text svneol=unset#application/octet-stream
 texts/text-kaz1.txt -text svneol=unset#application/octet-stream
 texts/text-kaz2.txt -text
 texts/text-kaz3.txt -text svneol=unset#application/octet-stream
@@ -45,5 +44,3 @@ texts/text-rus2.txt -text
 texts/text-rus3.txt -text svneol=unset#application/octet-stream
 texts/text-rus4.txt -text svneol=unset#application/octet-stream
 texts/text-rus5.txt -text svneol=unset#application/octet-stream
-texts/texts.kaz -text svneol=unset#application/octet-stream
-texts/texts.rus -text svneol=unset#application/octet-stream
