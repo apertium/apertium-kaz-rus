@@ -157,6 +157,7 @@
 
 <pardef n="__adj_sint">
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="acc"/></r></p></e>
   <e>       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
   <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
@@ -7590,7 +7591,7 @@
 <e><p><l>жастық<s n="adj"/></l><r>молодой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жасыған<s n="adj"/></l><r>забитый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жасық<s n="adj"/></l><r>безвольный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
-<e><p><l>жасыл<s n="adj"/></l><r>зеленый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>жасыл<s n="adj"/></l><r>зелёный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жасырын<s n="adj"/></l><r>тайный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жаттанды<s n="adj"/></l><r>заученный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жаттығатын<s n="adj"/></l><r>тренировочный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -8126,7 +8127,7 @@
 <e><p><l>қапалы<s n="adj"/></l><r>опечаленный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қаперсіз<s n="adj"/></l><r>беспечный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қапырықты<s n="adj"/></l><r>знойный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
-<e><p><l>қара<s n="adj"/></l><r>черный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>қара<s n="adj"/></l><r>чёрный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қарабет<s n="adj"/></l><r>бесчестный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қаражүрек<s n="adj"/></l><r>жестокий<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қарайтылған<s n="adj"/></l><r>затемненный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -8360,6 +8361,10 @@
 <e><p><l>қызықтырарлық<s n="adj"/></l><r>завлекательный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қызықтыратын<s n="adj"/></l><r>заманчивый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қызыл<s n="adj"/></l><r>красный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>сары<s n="adj"/></l><r>жёлтый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>қызғылт<s n="adj"/></l><r>оранжевый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+
+
 <e><p><l>қылдырықтай<s n="adj"/></l><r>тоненький<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қыли<s n="adj"/></l><r>косоглазый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>қылқанды<s n="adj"/></l><r>хвойный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
