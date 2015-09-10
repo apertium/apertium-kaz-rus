@@ -60,4 +60,19 @@
     <match lemma="қабат" tags="n.*"><select lemma="этаж"/></match>
 </rule> <!-- num тәгі бар сөздер қабат сөзімен бірге келгенде слой деп емес этаж деп аударылады-->
 
+
+<rule>
+
+    <match lemma="кепіл" tags="n.*"><select lemma="гарант"/></match>
+    <match tags="v.*.*"/>
+ </rule> <!-- v тәгі бар сөздер кепіл сөзімен бірге келгенде залог деп емес гарант деп аударылады-->
+
+<rule>
+  <or>
+    <match lemma="жер" tags="n.*.*"><select lemma="земля" tags="n.*.*"/></match>
+    <match lemma="ел" tags="n.*.*"><select lemma="страна" tags="n.*.*"/></match>
+  </or>
+    <match lemma="кет" tags="v.*.*"><select lemma="покидать" tags="v.*.*"/></match>
+</rule> <!-- Кет сөзі жер/ел сөзімен бірге келсе покидать болып аударылады -->
+
 </rules>
