@@ -251,9 +251,11 @@
   <e><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
   <e><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
   <e><p><l><s n="inf"/></l><r><s n="inf"/></r></p></e>
+
   <e r="LR"><p><l><s n="neg"/><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
   <e><p><l><s n="prc_perf"/></l><r><s n="prc_perf"/></r></p></e>
+<e><p><l><s n="prc_impf"/></l><r><s n="prc_impf"/></r></p></e>
 
 </pardef>
 <pardef n="perf__verb">
@@ -279,6 +281,9 @@
 <!-- vaux-->
 
     <e r="LR"><p><l>жат<s n="vaux"/></l><r></r></p></e>
+<e r="LR"><p><l>тұр<s n="vaux"/></l><r></r></p></e>
+<e r="LR"><p><l>отыр<s n="vaux"/></l><r></r></p></e>
+
  <!-- verb -->
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>           <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>поесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
@@ -809,7 +814,7 @@
 <e><p><l>өрмеле<s n="v"/><s n="tv"/></l><r>лазать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>өрмеле<s n="v"/><s n="tv"/></l><r>лезть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ұш<s n="v"/><s n="tv"/></l><r>летать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жат<s n="v"/><s n="tv"/></l><r>ложиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жат<s n="v"/><s n="tv"/></l><r>ложиться<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>бұлға<s n="v"/><s n="tv"/></l><r>махать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>тоң<s n="v"/><s n="tv"/></l><r>мерзнуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>арманда<s n="v"/><s n="tv"/></l><r>мечтать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>

@@ -28,8 +28,11 @@
 
     <match lemma="бар" tags="v.*"><select lemma="идти" tags="vblex.*"/></match>
 <match lemma="жат" tags="vaux.*"/>
-
+<match lemma="тұр" tags="vaux.*"/>
+<match lemma="отыр" tags="vaux.*"/>
 </rule> 
+
+
 
 <rule>
     <match lemma="демалыс" tags="*">

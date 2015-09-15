@@ -416,7 +416,7 @@
     <def-attr n="a_verb">
       <attr-item tags="vbser"/>
       <attr-item tags="vblex.impf"/>
-      <attr-item tags="vblex_perf"/>
+      <attr-item tags="vblex.perf"/>
       <attr-item tags="vblex_dual"/>
       <attr-item tags="vbmod.impf.tv"/> <!-- Modal verbs already receive transitivity tags in rus.dix-->
       <attr-item tags="vbmod.impf.iv"/>
@@ -3532,8 +3532,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </let>
 </otherwise>
 </choose>
-
-
         <out>
           <chunk name="v-neg-fin">
             <tags>
@@ -3547,8 +3545,11 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
    <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
               <clip pos="1" side="tl" part="a_tense"/>
-<lit-tag v="4"/>
+<var n="gender"/>
+<!--<lit-tag v="4"/>-->
 <lit-tag v="5"/>
+
+
 
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
