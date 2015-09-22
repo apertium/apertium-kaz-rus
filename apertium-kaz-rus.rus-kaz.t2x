@@ -5,29 +5,23 @@
     <def-cat n="NP">
       <cat-item tags="NP"/>
       <cat-item tags="NP.*"/>
- <cat-item tags="NP-pron"/>
+      <cat-item tags="NP-pron"/>
       <cat-item tags="NP-pron.*"/>
- 
     </def-cat>
 
     <def-cat n="NP-pron">  
- <cat-item tags="NP-pron"/>
+      <cat-item tags="NP-pron"/>
       <cat-item tags="NP-pron.*"/>
     </def-cat>
-
-
-
- 
-
 
     <def-cat n="SENT">
       <cat-item tags="SENT"/>
     </def-cat>
- <def-cat n="VP">
+    <def-cat n="VP">
       <cat-item tags="VP"/>
       <cat-item tags="VP.*"/>
     </def-cat>
- <def-cat n="PP">
+    <def-cat n="PP">
       <cat-item tags="PP"/>
       <cat-item tags="PP.*"/>
     </def-cat>

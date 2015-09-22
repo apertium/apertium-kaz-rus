@@ -10,7 +10,7 @@
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
-      <cat-item tags="prn.*"/>
+      <cat-item tags="prn.obj.*"/>
       <cat-item tags="adj.subst"/>
       <cat-item tags="adj.subst.*"/>
       <cat-item tags="adj.comp.subst"/>
@@ -150,6 +150,12 @@
       <attr-item tags="ins"/>
       <attr-item tags="prp"/>
       <attr-item tags="CD"/>
+    </def-attr>
+
+    <def-attr n="a_dem"> 
+      <attr-item tags="dem"/>
+      <attr-item tags="qnt"/>
+      <attr-item tags="ind"/>
     </def-attr>
 
     <def-attr n="a_det">
@@ -1931,7 +1937,7 @@
 
 
 
-<rule comment="NEW RULE: prep noun adj noun"> <!-- kormeid-->
+<rule comment="NEW RULE: prep noun adj noun"> 
   <pattern>
     <pattern-item n="prep"/>
     <pattern-item n="n"/>
@@ -2235,6 +2241,53 @@
         </out>
       </otherwise>
     </choose>
+  </action>
+</rule>
+
+
+
+
+
+<rule comment="NEW RULE: det noun">  <!-- kormeid--> 
+  <pattern>
+    <pattern-item n="det"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+    <call-macro n="NEW-build-noun-lu-2-4-5">
+      <with-param pos="2"/>
+    </call-macro>
+    
+<choose>
+  <when> 
+    <test>
+<or>
+<equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="dem"/></equal>
+ <equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="qnt"/></equal>
+</or>
+</test>
+    <out>
+    <chunk name="detdem-nom"  case="caseFirstWord">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+      <lu>
+      <clip pos="1" side="tl" part="lem"/>
+      <clip pos="1" side="tl" part="a_det"/>
+      <clip pos="1" side="tl" part="a_dem"/>
+    </lu>
+    <b pos="1"/>
+    <lu>  
+      <var n="NEW-noun_lu"/>
+     </lu>
+    </chunk>
+    </out>
+  </when>
+</choose>
   </action>
 </rule>
 
