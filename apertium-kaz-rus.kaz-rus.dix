@@ -157,24 +157,23 @@
 
 <pardef n="__adj_sint">
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="prp"/></r></p></e>
   <e>       <p><l></l>          <r><s n="m"/><s n="nn"/><s n="sg"/><s n="acc"/></r></p></e>
   <e>       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
   <e>       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="nt"/><s n="nn"/><s n="sg"/><s n="gen"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
   <e>       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="acc"/></r></p></e>
   <e>       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="acc"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="acc"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
   <e>       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="prp"/></r></p></e>
   <e>       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/><s n="prp"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="acc"/></r></p></e>
+  <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
   <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="prp"/></r></p></e>
   <e>       <p><l><s n="subst"/></l><r><s n="m"/><s n="an"/></r></p></e>
   <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>
@@ -4509,6 +4508,7 @@
 <e><p><l>күміс<s n="n"/></l><r>серебро<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>күн<s n="n"/></l><r>солнце<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>күн<s n="n"/></l><r>день<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>күн<s n="n"/></l><r>погода<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>күнә<s n="n"/></l><r>грех<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>күнделік<s n="n"/></l><r>дневник<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>күнтізбе<s n="n"/></l><r>календарь<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -7985,6 +7985,7 @@
 <e><p><l>антропологиялық<s n="adj"/></l><r>антропологический<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>антұрған<s n="adj"/></l><r>проклятый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>анық<s n="adj"/></l><r>ясный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>ашық<s n="adj"/></l><r>ясный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>анықталған<s n="adj"/></l><r>достоверный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>анықтамалық<s n="adj"/></l><r>справочный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>аңғал<s n="adj"/></l><r>наивный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -9867,7 +9868,7 @@
 <e><p><l>нанымпаз<s n="adj"/></l><r>доверчивый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>наразы<s n="adj"/></l><r>недовольный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>нарықтық<s n="adj"/></l><r>рыночный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
-<e><p><l>натуралды<s n="adj"/></l><r>натуральный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>табиғи<s n="adj"/></l><r>натуральный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>науқас<s n="adj"/></l><r>больной<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>нашар<s n="adj"/></l><r>плохой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>нәзік<s n="adj"/></l><r>чувствительный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>

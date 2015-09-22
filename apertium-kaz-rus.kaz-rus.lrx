@@ -6,13 +6,13 @@
 
 <rule>
 	  <match lemma="жарым" tags="*"><select lemma="полтора" tags="*"/></match>
-	  <match lemma="күн" tags="*"><select lemma="сутки" tags="n."/></match>
+	  <match lemma="күн" tags="*"><select lemma="сутки" tags="n.*"/></match>
 </rule>
 
 <rule>
   <or>
-    <match lemma="ашық" tags="*"><select lemma="ясный" tags="*"/></match>
-    <match lemma="жаңбырлы" tags="*"><select lemma="дождливый" tags="*"/></match>
+    <match lemma="ашық" tags="*"><select lemma="ясный" tags="adj.*"/></match>
+    <match lemma="жаңбырлы" tags="*"><select lemma="дождливый" tags="adj.*"/></match>
   </or>
     <match lemma="күн" tags="n.*"><select lemma="погода" tags="n.*"/></match>
 </rule> <!-- Күн сөзі ашық/жаңбырлы сөзімен бірге келсе погода деп, ал ашық сөзі ясный деп аударылады -->
