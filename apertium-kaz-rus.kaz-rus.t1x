@@ -15,11 +15,16 @@
 <transfer default="chunk">
 
   <section-def-cats>
+
 <def-cat n="v-ing">
       <cat-item tags="v.*.gna9"/>
       <cat-item tags="v.*.prc_impf"/>
  <cat-item tags="v.*.prc_perf"/>
     </def-cat>
+
+<def-cat n="v-fut-neg">
+      <cat-item tags="v.*.neg.fut.*.*"/>
+         </def-cat>
 
  <def-cat n="vaux">
       <cat-item tags="vaux.*"/>
@@ -158,103 +163,12 @@
        <cat-item tags="prn.subj.*"/>
     </def-cat>
 
-<!--Zhadyra--><!--
-<def-cat n="v">
-      <cat-item tags="v.*"/>
-      <cat-item tags="vaux.*"/>
-      <cat-item tags="cop.*"/>
-    </def-cat>
+<!--Zhadyra--><!--етістік болымсыз түріне-->
+<def-cat n="v-neg-fin">
+      <cat-item tags="v.*.neg.aor.*.*"/>
+      <cat-item tags="v.*.neg.ifi.*.*"/>
 
-    <def-cat n="FourAuxiliaries">
-      <cat-item lemma="жат" tags="vaux.*"/>
-      <cat-item lemma="жүр" tags="vaux.*"/>
-      <cat-item lemma="отыр" tags="vaux.*"/>
-      <cat-item lemma="тұр" tags="vaux.*"/>
     </def-cat>
-
-    <def-cat n="FourAuxiliaries.gpr_past">
-      <cat-item lemma="жат" tags="vaux.gpr_past"/>
-      <cat-item lemma="жүр" tags="vaux.gpr_past"/>
-      <cat-item lemma="отыр" tags="vaux.gpr_past"/>
-      <cat-item lemma="тұр" tags="vaux.gpr_past"/>
-    </def-cat>
-<def-cat n="Gerund">
-      <cat-item tags="v.*.*.ger.*"/>
-      <cat-item tags="v.*.*.ger_past.*"/>
-      <cat-item tags="v.*.*.ger_perf.*"/>
-      <cat-item tags="v.*.*.ger_ppot.*"/>
-      <cat-item tags="v.*.*.ger_abs.*"/>
-      <cat-item tags="v.*.*.ger_fut.*"/>
-      <cat-item tags="v.*.*.ger_impf.*"/>
-      <cat-item tags="vaux.ger.*"/>
-      <cat-item tags="vaux.ger_past.*"/>
-      <cat-item tags="vaux.ger_perf.*"/>
-      <cat-item tags="vaux.ger_ppot.*"/>
-      <cat-item tags="vaux.ger_abs.*"/>
-      <cat-item tags="vaux.ger_fut.*"/>
-      <cat-item tags="vaux.ger_impf.*"/>
-      <cat-item tags="vaux.neg.ger.*"/>
-      <cat-item tags="vaux.neg.ger_past.*"/>
-      <cat-item tags="vaux.neg.ger_perf.*"/>
-      <cat-item tags="vaux.neg.ger_ppot.*"/>
-      <cat-item tags="vaux.neg.ger_abs.*"/>
-      <cat-item tags="vaux.neg.ger_fut.*"/>
-      <cat-item tags="vaux.neg.ger_impf.*"/>
-      <cat-item tags="cop.ger_past.*"/>
-      <cat-item tags="cop.ger_perf.*"/>
-    </def-cat>
-<def-cat n="DefaultGerund.WithPossessives.Nominative">
-      <cat-item tags="v.*.ger.px1sg.nom"/>
-      <cat-item tags="v.*.ger.px2sg.nom"/>
-      <cat-item tags="v.*.ger.px3sp.nom"/>
-      <cat-item tags="v.*.ger.px1pl.nom"/>
-      <cat-item tags="v.*.ger.px2pl.nom"/>
-    </def-cat>
-
-    <def-cat n="DefaultGerund.WithoutPossessives.Nominative">
-      <cat-item tags="v.*.ger.nom"/>
-    </def-cat>
-
-    <def-cat n="DefaultGerund_SingularDative">
-      <cat-item tags="v.*.*.*.ger.dat"/>
-    </def-cat>
-
-    <def-cat n="керек">
-      <cat-item lemma="керек" tags="adj"/>
-    </def-cat>
-
-    <def-cat n="жоқ.adj">
-      <cat-item lemma="жоқ" tags="adj"/>
-    </def-cat>
-
-    <def-cat n="ImperfectOrPerfectParticiple">
-      <cat-item tags="v.*.prc_perf"/>
-      <cat-item tags="v.*.prc_impf"/>
-    </def-cat>
-<def-cat n="gpr-subst">
-      <cat-item tags="v.*.*.gpr_past.subst.*"/>
-      <cat-item tags="v.*.*.gpr_impf.subst.*"/>
-      <cat-item tags="v.*.*.gpr_pot.subst.*"/>
-      <cat-item tags="v.*.*.gpr_ppot.subst.*"/>
-      <cat-item tags="v.*.*.gpr_fut.subst.*"/>
-      <cat-item tags="v.*.*.gpr_fut2.subst.*"/>
-      <cat-item tags="v.*.*.gpr_fut3.subst.*"/>
-      <cat-item tags="vaux.gpr_past.subst.*"/>
-      <cat-item tags="vaux.gpr_impf.subst.*"/>
-      <cat-item tags="vaux.gpr_pot.subst.*"/>
-      <cat-item tags="vaux.gpr_ppot.subst.*"/>
-      <cat-item tags="vaux.gpr_fut.subst.*"/>
-      <cat-item tags="vaux.gpr_fut2.subst.*"/>
-      <cat-item tags="vaux.gpr_fut3.subst.*"/>
-      <cat-item tags="vaux.neg.gpr_past.subst.*"/>
-      <cat-item tags="vaux.neg.gpr_impf.subst.*"/>
-      <cat-item tags="vaux.neg.gpr_pot.subst.*"/>
-      <cat-item tags="vaux.neg.gpr_ppot.subst.*"/>
-      <cat-item tags="vaux.neg.gpr_fut.subst.*"/>
-      <cat-item tags="vaux.neg.gpr_fut2.subst.*"/>
-      <cat-item tags="vaux.neg.gpr_fut3.subst.*"/>
-    </def-cat>
--->
 
     <def-cat n="verb-fin">
       <cat-item tags="v.*.pres.*"/>
@@ -1931,8 +1845,6 @@
       </action>
     </rule>
 
-
-
     <rule comment="REGLA: N N ADJ N"> <!-- Aliya --> <!-- оқушының кітабының соңғы басылымы -->
       <!--
       INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^кітап<n><px3sp><gen>/книга<n><f><nn><px3sp><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
@@ -3480,6 +3392,12 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </action>
     </rule>
 
+
+
+
+
+<!--Zhadyra--><!--етістіктің шақтары,болымсыз түрлері-->
+
     <rule comment="REGLA: V">
       <!--
       INPUT:  ^ойна<v><tv><pres><p1><sg>/играть<vblex><impf><tv><pres><p1><sg>$
@@ -3494,6 +3412,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         <call-macro n="translate-verb-fin">
           <with-param pos="1"/>
         </call-macro>
+
 <choose>
 <when>
 <test>
@@ -3546,9 +3465,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
 
               </tags>
-                      
-            
-            <var n="negation"/>
+          <var n="negation"/>
 
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -3565,9 +3482,43 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </action>
     </rule>
 
+
  
-
-
+ <!--<rule comment="RULE: V-NEG-FIN"> Zhadyra етістіктің болымсыз түрі:ма,ме,ба,бе,па,пе
+      <pattern>
+        <pattern-item n="v-neg-fin"/>
+      </pattern>
+      <action>
+        <call-macro n="conv-temps1">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="v-neg-fin" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="1" side="tl" part="a_pers"/></tag>
+              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+            </tags>
+         
+            <lu>
+              <lit v="не"/>
+              <lit-tag v="adv"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1">
+          <with-param pos="1"/>
+        </call-macro>
+      </action>
+    </rule>-->
 
 
 
