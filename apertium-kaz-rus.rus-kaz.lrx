@@ -1,19 +1,106 @@
 <rules>
   <rule> 
     <match lemma="большой" tags="adj.*"><select lemma="алпамсадай" tags="adj.*"/></match>
-
   </rule>
+
 <!-- ручка двери -->
  <rule> 
     <match lemma="ручка" tags="n.*"><select lemma="тұтқа" tags="n.*"/></match>
 <match lemma="дверь" tags="n.*"/>
   </rule>
-
 <!-- ручка ученика/профессора--> 
  <rule> 
     <match lemma="ручка" tags="n.*"><select lemma="қалам" tags="n.*"/></match>
 <match lemma="*" tags="n.aa.*"/>
   </rule>
+
+<!-- соль нота -->
+ <rule> 
+    <match lemma="соль" tags="n.*"><select lemma="соль" tags="n.*"/></match>
+<match lemma="нота" tags="n.*"/>
+  </rule>
+<!-- пищевая соль -->
+ <rule> 
+    <match lemma="соль" tags="n.*"><select lemma="тұз" tags="n.*"/></match>
+<match lemma="пищевая" tags="adj.*"/>
+  </rule>
+
+
+<!-- лист дерева -->
+ <rule> 
+    <match lemma="лист" tags="n.*"><select lemma="жапырақ" tags="n.*"/></match>
+<match lemma="дерево" tags="n.*"/>
+  </rule>
+<!-- лист бумаги-->
+ <rule> 
+    <match lemma="лист" tags="n.*"><select lemma="парақ" tags="n.*"/></match>
+<match lemma="бумага" tags="n.*"/>
+  </rule>
+<!-- лист -->
+ <rule> 
+    <match lemma="лист" tags="n.*"><select lemma="бет" tags="n.*"/></match>
+<match lemma="книга" tags="n.*"/>
+  </rule>
+
+
+<!--лук стрела -->
+ <rule> 
+    <match lemma="лук" tags="n.*"><select lemma="садақ" tags="n.*"/></match>
+<match lemma="стрела" tags="n.*"/>
+  </rule>
+<!--лук овощ -->
+ <rule> 
+    <match lemma="лук" tags="n.*"><select lemma="пияз" tags="n.*"/></match>
+<match lemma="овощ" tags="n.*"/>
+  </rule>
+
+
+<!-- кисть ребенка -->
+ <rule> 
+    <match lemma="кисть" tags="n.*"><select lemma="білек" tags="n.*"/></match>
+<match lemma="рука" tags="n.*"/>
+  </rule>
+<!-- кисть -->
+ <rule> 
+    <match lemma="кисть" tags="n.*"><select lemma="қыл-қалам" tags="n.*"/></match>
+<match lemma="сурет" tags="n.*"/>
+  </rule>
+
+
+<!-- коса волосы-->
+ <rule> 
+    <match lemma="коса" tags="n.*"><select lemma="бұрым" tags="n.*"/></match>
+<match lemma="волосы" tags="n.*"/>
+  </rule>
+<!-- коса инструмент -->
+ <rule> 
+    <match lemma="коса" tags="n.*"><select lemma="орақ" tags="n.*"/></match>
+<match lemma="инструмент" tags="n.*"/>
+  </rule>
+
+<!-- предложение текста-->
+ <rule> 
+    <match lemma="предложение" tags="n.*"><select lemma="сөйлем" tags="n.*"/></match>
+<match lemma="текст" tags="n.*"/>
+  </rule>
+<!--деловое предложение-->
+ <rule> 
+    <match lemma="предложение" tags="n.*"><select lemma="ұсыныс" tags="n.*"/></match>
+<match lemma="деловое" tags="adj.*"/>
+  </rule>
+
+
+<!--клетка -->
+ <rule> 
+    <match lemma="клетка" tags="n.*"><select lemma="тор" tags="n.*"/></match>
+<match lemma=" " tags="n.*"/>
+  </rule>
+<!-- клетка -->
+ <rule> 
+    <match lemma="клетка" tags="n.*"><select lemma="жасуша" tags="n.*"/></match>
+<match lemma="дверь" tags="n.*"/>
+  </rule>
+
 
 
 

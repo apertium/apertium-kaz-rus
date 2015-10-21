@@ -1,6 +1,54 @@
 * text=auto !eol
 /AUTHORS -text
 /COPYING -text
+CORPUS/afn-kaz-1550 -text svneol=unset#application/octet-stream
+CORPUS/afn-ru -text svneol=unset#application/octet-stream
+CORPUS/akorda-kaz-12 -text svneol=unset#application/octet-stream
+CORPUS/akorda-rus -text svneol=unset#application/octet-stream
+CORPUS/almaty-gov-kaz-150 -text svneol=unset#application/octet-stream
+CORPUS/almatygov-ru -text svneol=unset#application/octet-stream
+CORPUS/bolashak-kaz-242 -text svneol=unset#application/octet-stream
+CORPUS/bolashak-ru -text svneol=unset#application/octet-stream
+CORPUS/conscouncil-kaz-250 -text svneol=unset#application/octet-stream
+CORPUS/constcouncil-ru -text svneol=unset#application/octet-stream
+CORPUS/dingov-kaz.tmx -text svneol=unset#application/octet-stream
+CORPUS/dingov-rus.tmx -text svneol=unset#application/octet-stream
+CORPUS/egov-kaz-130 -text svneol=unset#application/octet-stream
+CORPUS/egov-ru -text svneol=unset#application/octet-stream
+CORPUS/election-kaz-660 -text svneol=unset#application/octet-stream
+CORPUS/election-ru-660 -text svneol=unset#application/octet-stream
+CORPUS/enu1-kaz.tmx -text svneol=unset#application/octet-stream
+CORPUS/enu1-rus.tmx -text svneol=unset#application/octet-stream
+CORPUS/government-kaz-235 -text
+CORPUS/government-ru -text
+CORPUS/iak-kaz-125 -text svneol=unset#application/octet-stream
+CORPUS/iak-ru -text svneol=unset#application/octet-stream
+CORPUS/inform-kaz-370 -text svneol=unset#application/octet-stream
+CORPUS/inform-rus -text svneol=unset#application/octet-stream
+CORPUS/knb-kaz-1010 -text svneol=unset#application/octet-stream
+CORPUS/knb-ru -text svneol=unset#application/octet-stream
+CORPUS/kyzmet-kaz.tmx -text
+CORPUS/kyzmet-rus.tmx -text
+CORPUS/minplan-kaz-734 -text svneol=unset#application/octet-stream
+CORPUS/minplan-ru -text svneol=unset#application/octet-stream
+CORPUS/muftyat+kaz+500 -text svneol=unset#application/octet-stream
+CORPUS/muftyat-kaz-725 -text svneol=unset#application/octet-stream
+CORPUS/muftyat-ru -text svneol=unset#application/octet-stream
+CORPUS/muuftyat+ru -text svneol=unset#application/octet-stream
+CORPUS/nationalbank-kaz-530 -text svneol=unset#application/octet-stream
+CORPUS/nationalbank-ru -text svneol=unset#application/octet-stream
+CORPUS/pravstat-kaz-130 -text svneol=unset#application/octet-stream
+CORPUS/pravstat-ru -text svneol=unset#application/octet-stream
+CORPUS/primeminister-kaz-860 -text svneol=unset#application/octet-stream
+CORPUS/primeminister-ru -text svneol=unset#application/octet-stream
+CORPUS/prokuror-kaz-40 -text svneol=unset#application/octet-stream
+CORPUS/prokuror-ru -text svneol=unset#application/octet-stream
+CORPUS/resurs-kaz-300 -text svneol=unset#application/octet-stream
+CORPUS/resurs-ru -text svneol=unset#application/octet-stream
+CORPUS/supcourt-kaz-380 -text svneol=unset#application/octet-stream
+CORPUS/supcourt-ru -text svneol=unset#application/octet-stream
+CORPUS/udp+kaz. -text svneol=unset#application/octet-stream
+CORPUS/udp+ru+1435 -text svneol=unset#application/octet-stream
 /ChangeLog -text
 /Makefile.am -text
 /NEWS -text
