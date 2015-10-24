@@ -266,11 +266,21 @@
 
 </pardef>
 <pardef n="perf__verb">
+<e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
+  <e><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
+<e><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
   <e r="LR"><p><l><s n="fut"/></l><r><s n="fut"/></r></p></e>
   <e r="RL"><p><l><s n="aor"/></l><r><s n="fut"/></r></p></e>
 <e><p><l><s n="neg"/><s n="fut"/></l><r><s n="fut"/><s n="neg"/></r></p></e>
   <e r="LR"><p><l><s n="fut2"/></l><r><s n="fut"/></r></p></e>
-  <e><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
+   <e><p><l><s n="inf"/></l><r><s n="inf"/></r></p></e>
+
+  <e><p><l><s n="neg"/><s n="aor"/></l><r><s n="pres"/><s n="neg"/></r></p></e>
+<e><p><l><s n="neg"/><s n="ifi"/></l><r><s n="past"/><s n="neg"/></r></p></e>
+
+  <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
+  <e><p><l><s n="prc_perf"/></l><r><s n="prc_perf"/></r></p></e>
+<e><p><l><s n="prc_impf"/></l><r><s n="prc_impf"/></r></p></e>
 
   <e r="LR"><p><l><s n="coop"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
   <e r="LR"><p><l><s n="coop"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
@@ -1243,6 +1253,7 @@
 <e><p><l>бас<b/>сал<s n="v"/><s n="tv"/></l><r>сцапать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>тістеп<b/>шығар<s n="v"/><s n="tv"/></l><r>сцепить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>сана<s n="v"/><s n="tv"/></l><r>счесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>санал<s n="v"/><s n="iv"/></l><r>считаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>менсін<s n="v"/><s n="tv"/></l><r>соизволить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қысқарт<s n="v"/><s n="tv"/></l><r>сократить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қабыстыр<s n="v"/><s n="tv"/></l><r>сомкнуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
@@ -1499,6 +1510,7 @@
 <e><p><l>талқыла<s n="v"/><s n="tv"/></l><r>обсудить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ауыздықта<s n="v"/><s n="tv"/></l><r>обуздать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>орналас<s n="v"/><s n="tv"/></l><r>обустроить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>орнықтыр<s n="v"/><s n="tv"/></l><r>укреплять<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ескерту<s n="v"/><s n="tv"/></l><r>обусловить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>киіндір<s n="v"/><s n="tv"/></l><r>обуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>үйрет<s n="v"/><s n="tv"/></l><r>обучить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
@@ -1726,7 +1738,7 @@
 <e><p><l>болыс<s n="v"/><s n="tv"/></l><r>заступиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жақтас<s n="v"/><s n="tv"/></l><r>заступиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>болыс<s n="v"/><s n="tv"/></l><r>заступиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бар<s n="v"/><s n="iv"/></l><r>идти<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бар<s n="v"/><s n="iv"/></l><r>идти<s n="vblex"/><s n="impf"/><s n="iv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ашық<s n="v"/><s n="tv"/></l><r>изголодаться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жаура<s n="v"/><s n="tv"/></l><r>иззябнуть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жаура<s n="v"/><s n="tv"/></l><r>иззябнуть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
@@ -1816,7 +1828,7 @@
 <e><p><l>бол<s n="v"/><s n="tv"/></l><r>оказаться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қатып<b/>қал<s n="v"/><s n="tv"/></l><r>окаменеть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ес<b/>жина<s n="v"/><s n="tv"/></l><r>оклематься<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өл<s n="v"/><s n="tv"/></l><r>околеть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өл<s n="v"/><s n="iv"/></l><r>умереть<s n="vblex"/><s n="impf"/><s n="iv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>біт<s n="v"/><s n="tv"/></l><r>окончиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қаз<s n="v"/><s n="tv"/></l><r>окопаться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қата<s n="v"/><s n="tv"/></l><r>окостенеть<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
@@ -7650,6 +7662,7 @@
 <!-- Pronouns-->
 
 <e>       <p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>я<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
+<e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>я<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>ты<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>он<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 <e>       <p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>она<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>

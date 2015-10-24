@@ -3484,41 +3484,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 
  
- <!--<rule comment="RULE: V-NEG-FIN"> Zhadyra етістіктің болымсыз түрі:ма,ме,ба,бе,па,пе
-      <pattern>
-        <pattern-item n="v-neg-fin"/>
-      </pattern>
-      <action>
-        <call-macro n="conv-temps1">
-          <with-param pos="1"/>
-        </call-macro>
-        <out>
-          <chunk name="v-neg-fin" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><clip pos="1" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="1" side="tl" part="a_pers"/></tag>
-              <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-            </tags>
-         
-            <lu>
-              <lit v="не"/>
-              <lit-tag v="adv"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="1" side="tl" part="lemh"/>
-              <clip pos="1" side="tl" part="a_verb"/>
-              <lit-tag v="inf"/>
-              <clip pos="1" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
-        <call-macro n="reset-vars1">
-          <with-param pos="1"/>
-        </call-macro>
-      </action>
-    </rule>-->
 
 
 
