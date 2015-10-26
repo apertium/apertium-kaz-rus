@@ -14,6 +14,11 @@
       <cat-item tags="NP-pron.*"/>
     </def-cat>
 
+    <def-cat n="VP_have">
+      <cat-item tags="VP-vbhaver"/>
+      <cat-item tags="VP-vbhaver.*"/>
+    </def-cat>
+
     <def-cat n="SENT">
       <cat-item tags="SENT"/>
     </def-cat>
@@ -220,6 +225,48 @@
       </out>
      </action>
     </rule>
+
+
+    <!--я буду иметь дом  Балжан -->
+<rule comment="NEW RULE: NP VP_have NP">
+     <pattern>
+       <pattern-item n="NP"/>
+       <pattern-item n="VP_have"/>
+       <pattern-item n="NP"/>
+     </pattern>
+     <action>
+      <out>
+          <chunk>
+           <clip pos="1" part="lem"/>  
+            <lit-tag v="NP"/>
+            <clip pos="1" part="a_nbr"/> <!-- agree number -->
+            <clip pos="1" part="a_pers"/> <!-- agree person -->
+            <clip pos="1" part="a_possessive"/>
+            <lit-tag v="loc"/>
+            <clip pos="1" part="chcontent"/>         
+          </chunk>
+          <b pos="1"/>
+          <b pos="2"/>
+         <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="2" part="lem"/>  
+            <lit-tag v="VP"/>
+            <clip pos="3" part="a_nbr"/> <!-- agree number -->
+            <clip pos="3" part="a_pers"/> <!-- agree person -->
+            <clip pos="2" part="a_tense"/>
+            <clip pos="2" part="a_possessive"/> 
+            <clip pos="2" part="a_neg"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+      </out>
+     </action>
+    </rule>
+
 
 
 <rule comment="NEW RULE: NP-pron NP">

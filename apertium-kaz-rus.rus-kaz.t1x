@@ -102,14 +102,21 @@
       <cat-item tags="vblex.impf.pres"/>
       <cat-item tags="vblex.impf.past"/>
       <cat-item tags="vblex.impf.past.*"/>
+      <cat-item tags="vbhaver.impf.past.*"/>
+     <cat-item tags="vbhaver.impf.pres.*"/>
     </def-cat>   
     <def-cat n="budu-vbser"> <!-- past and present tense -->
       <cat-item tags="vbser.fut.*"/>
       <cat-item tags="vbser.fut"/>      
     </def-cat> 
     <def-cat n="approx-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) -->
-      <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->      
+      <cat-item tags="vblex.impf.inf"/> <!-- This may be dangerous and should be treated at tagger level -->   
     </def-cat>
+
+<def-cat n="vbhaver-inf-verb"> <!-- infinitive and present where infinitive should have been found (tagger error) --> 
+      <cat-item tags="vbhaver.impf.inf"/>   
+    </def-cat>
+
     <def-cat n="vbmod"> <!-- Буду --> 
       <cat-item lemma="быть" tags="vblex.impf.fut.*"/>
       <cat-item lemma="быть" tags="vblex.impf.fut"/>
@@ -1070,6 +1077,61 @@
   </action>
 </rule>
 
+
+<!-- я буду иметь  Балжан -->
+<rule comment="NEW RULE: vbhaver-verb"> 
+  <pattern>
+    <pattern-item n="budu-vbser"/>
+<pattern-item n="vbhaver-inf-verb"/> 
+
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+
+      <when>
+        <test>
+          <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="fut"/>
+          </equal>
+        </test>
+        <let><var n="tense"/><lit-tag v="aor"/></let>
+<out>
+      <chunk name="vbhaver-verb">
+      <tags>
+        <tag><lit-tag v="VP-vbhaver"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="6"/>
+          <lit-tag v="4"/>
+          <lit-tag v="5"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+          <lit-tag v="7"/>
+        </lu>
+      </chunk>
+        </out>
+
+      </when>
+
+          <otherwise>
+        <let><var n="tense"/><lit-tag v="aor"/></let>
+      <call-macro n="NEW-gen-simple-verb">
+         <with-param pos="2"/> 
+     </call-macro>
+      </otherwise> 
+    </choose>
+  </action>
+</rule>
 
 <!-- comment=¨REGLA: NUM¨-->
 

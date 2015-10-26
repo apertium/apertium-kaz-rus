@@ -25,7 +25,8 @@
     <sdef n="cnjsub" 	c="Союз подчинительный"/> 
     <sdef n="adv" 	c="Наречие"/> 
     <sdef n="v" 	c="Глагол"/> 
-    <sdef n="vblex" 	c="Глагол"/> 
+    <sdef n="vblex" 	c="Глагол"/>
+    <sdef n="vbhaver" 	c="Глагол"/> 
     <sdef n="vbser" 	c="Глагол"/> 
     <sdef n="ij" 	c="Междометие или вводное слово"/> 
     <sdef n="post" 	c="Послелог"/> 
@@ -290,6 +291,19 @@
   <e r="RL">       <p><l></l>          <r><s n="inf"/></r></p></e>
 
 </pardef>
+
+<pardef n="vbhaver_impf">
+  <e r="LR"><p><l><s n="fut"/></l><r><s n="fut"/></r></p></e>
+  <e r="RL"><p><l><s n="aor"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="fut2"/></l><r><s n="fut"/></r></p></e>
+  <e><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
+  <e r="LR"><p><l><s n="coop"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="coop"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="pass"/><s n="fut"/></l><r><s n="fut"/></r></p></e>
+  <e r="LR"><p><l><s n="pass"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
+  <e r="RL">       <p><l></l>          <r><s n="inf"/></r></p></e>
+</pardef>
+
 
 </pardefs>
 
@@ -2785,7 +2799,7 @@
 <e><p><l>кемір<s n="v"/><s n="iv"/></l><r>изъедать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>мәлімде<s n="v"/><s n="iv"/></l><r>изъявлять<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ата<s n="v"/><s n="iv"/></l><r>именовать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>бол<s n="v"/><s n="iv"/></l><r>иметь<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>иметь<s n="vbhaver"/><s n="impf"/></r></p></e>
 <e><p><l>бекіту<s n="v"/><s n="tv"/></l><r>утверждать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қызықтыр<s n="v"/><s n="iv"/></l><r>интересовать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ізде<s n="v"/><s n="iv"/></l><r>искать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
