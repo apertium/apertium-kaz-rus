@@ -462,6 +462,7 @@
 
       <attr-item tags="gna9"/>
       <attr-item tags="prc_impf"/>
+<attr-item tags="prc_perf"/>
       <attr-item tags="ger_past"/>
     </def-attr>
 </section-def-attrs>
