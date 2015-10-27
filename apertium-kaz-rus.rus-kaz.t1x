@@ -540,7 +540,9 @@
 	</choose>
    </def-macro>
 
-   <def-macro n="choose_case_and_postposition2" npar="2"> <!-- Aliya --> 
+<!-- form eng-kaz for prepositions rus-kaz -->
+
+   <def-macro n="choose_case_and_postposition2" npar="2"> 
     <let><var n="pptag"/><lit-tag v="PP"/></let> <!-- for most of them -->
     <let><var n="genpp"/><lit v="no"/></let> <!-- for simple cases -->
     <choose>
@@ -806,7 +808,7 @@
     </rule>
 
 
-<!-- from eng-kaz for в саду-->
+<!-- from eng-kaz for в саду    Балжан-->
 
 <rule comment="NEW RULE: subj-pron">
   <pattern>
