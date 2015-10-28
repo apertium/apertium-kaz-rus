@@ -101,6 +101,16 @@
 <match lemma="дверь" tags="n.*"/>
   </rule>
 
+<!--замок -->
+ <rule> 
+    <match lemma="замок" tags="n.*"><select lemma="қамал" tags="n.*"/></match>
+<match lemma="большой" tags="n.*"/>
+  </rule>
+<!-- замок -->
+ <rule> 
+    <match lemma="замок" tags="n.*"><select lemma="құлып" tags="n.*"/></match>
+<match lemma="дверь" tags="n.*"/>
+  </rule>
 
 
 
