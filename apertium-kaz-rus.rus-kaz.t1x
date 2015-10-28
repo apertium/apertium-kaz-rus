@@ -29,6 +29,9 @@
       <cat-item tags="np.ant.*"/>
       <cat-item tags="np.top.*"/>
     </def-cat>
+<def-cat n="NP">
+      <cat-item tags="np.ant.*"/>
+    </def-cat>
     <def-cat n="nom-gen">
       <cat-item tags="n.gen"/>
       <cat-item tags="n.*.*.*.gen"/>
@@ -105,6 +108,14 @@
       <cat-item tags="vbhaver.impf.past.*"/>
      <cat-item tags="vbhaver.impf.pres.*"/>
     </def-cat>   
+<def-cat n="zovut_pers-verb"> <!-- past and present tense -->
+      <cat-item lemma="звать" tags="vblex.impf.pres.*"/>
+      <cat-item lemma="звать" tags="vblex.impf.pres"/>
+      <cat-item lemma="звать" tags="vblex.impf.past"/>
+      <cat-item lemma="звать" tags="vblex.impf.past.*"/>
+
+    </def-cat>  
+
     <def-cat n="budu-vbser"> <!-- past and present tense -->
       <cat-item tags="vbser.fut.*"/>
       <cat-item tags="vbser.fut"/>      
@@ -455,12 +466,14 @@
    <!-- macro from eng-kaz to prepositions-->
    <!--Numerals def-macro-->
 
-   <def-macro n="NEW-build-noun-lu-2-4-5-sg" npar="1"> 
+   <def-macro n="NEW-build-noun-lu-2-4-5-sg" npar="1">
+ 
      <let>
            <var n="NEW-noun_lu"/>
            <concat>
                <clip pos="1" side="tl" part="lem"/> 
                <clip pos="1" side="tl" part="a_nom"/>
+               <clip pos="1" side="tl" part="a_gender"/>
                <lit-tag v="sg"/> <!-- force singular number (used with numerals) -->
                <!-- no need to link person -->
                <lit-tag v="4"/> <!-- for possessive -->
@@ -475,6 +488,7 @@
            <concat>
                <clip pos="1" side="tl" part="lem"/> 
                <clip pos="1" side="tl" part="a_nom"/>
+               <clip pos="1" side="tl" part="a_gender"/>
                <lit-tag v="2"/> <!-- for number -->	
                <!-- no need to link person -->
  		<lit-tag v="4"/> <!-- for possessive -->
@@ -531,6 +545,38 @@
 	<when>
          <test>
           <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="your"/></equal>
+         </test>      
+	<let><var  n="possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+	<otherwise>
+	<let><var n="possessive"/><lit-tag v="px3sp"/></let> <!-- default value -->
+	</otherwise>
+	</choose>
+   </def-macro>
+
+   <def-macro n="build-possessive-from-pron" npar="1">
+	<choose> 
+	<when>
+         <test>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="я"/></equal>
+         </test>      
+          <let><var  n="possessive"/><lit-tag v="px1sg"/></let>
+	</when>
+	<when>
+         <test>
+          <equal caseless="yes"><clip  pos="1" side="sl" part="lem"/><lit  v="мы"/></equal>
+         </test>      
+          <let><var  n="possessive"/><lit-tag v="px1pl"/></let>
+	</when>
+	<when>
+         <test>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="ты"/></equal>
+         </test>      
+	<let><var  n="possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+<when>
+         <test>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="вы"/></equal>
          </test>      
 	<let><var  n="possessive"/><lit-tag v="px2sg"/></let>
 	</when>
@@ -875,7 +921,7 @@
 <!-- RULE noun`s noun ex: книга ученик -->
 <rule comment="NEW RULE: pos-pron noun">  <!-- мой друг-->
   <pattern>
-    <pattern-item n="subj-pron-pos"/>  <!--есімдік -->
+ <pattern-item n="subj-pron-pos"/>  <!--есімдік -->
  <pattern-item n="nom"/>  <!--зат есім -->
   </pattern>
   <action>  
@@ -994,6 +1040,92 @@
     </out>
   </action>
 </rule>
+
+
+
+<!-- RULE noun`s noun ex: книга ученик -->
+<rule comment="NEW RULE: pos-pron noun">  <!-- меня зовут NP -->
+  <pattern>
+ <pattern-item n="subj-pron"/>  <!--есімдік -->
+ <pattern-item n="zovut_pers-verb"/>  <!--етістік --> 
+ <pattern-item n="NP"/>  <!--жалқы есім -->
+
+  </pattern>
+  <action>  
+<call-macro n="build-possessive-from-pron">
+         <with-param pos="1"/> 
+     </call-macro>
+
+ <call-macro n="NEW-build-noun-lu-2-4-5-sg">
+      <with-param pos="3"/>
+    </call-macro> 
+
+ <choose>
+    <when>
+      <test>
+       <equal>
+         <clip pos="1" side="sl" part="a_nbr"/>
+         <lit-tag v="sp"/>
+       </equal>
+      </test>
+       <let><var n="number"/><lit-tag v="sg"/></let> <!-- choosing singular in the absence of information -->
+    </when>
+       <otherwise>
+         <let>
+           <var n="number"/><clip pos="1" side="tl" part="a_nbr"/>
+         </let>
+       </otherwise>
+  </choose>
+  <!--<choose>
+    <when>
+     <test>  
+       <equal>
+          <clip pos="1" side="sl" part="a_pers"/>
+          <lit-tag v="p2"/>
+       </equal>
+     </test>
+     <let><var n="formality"/><lit-tag v="frm"/></let>
+    </when>
+     <otherwise>
+     <let><var n="formality"/><lit v="FD"/></let>
+     </otherwise>
+  </choose>-->
+
+  <out>
+    <chunk name="subj-pron-zovut-NP">
+    <tags>
+    <tag><lit-tag v="NP-pron"/></tag>
+    <tag><var n="number"/></tag>
+    <tag><clip pos="1" side="sl" part="a_pers"/></tag> 
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="nom"/></tag>
+     
+    </tags>
+    <lu>
+      <clip pos="1" side="tl" part="lem"/>
+      <clip pos="1" side="tl" part="a_kaz_perspron"/>
+      <clip pos="1" side="tl" part="a_pers"/>
+      <lit-tag v="2"/> <!-- number -->
+      <lit-tag v="4"/> <!-- possession -->
+      <lit-tag v="gen"/> <!-- case -->
+</lu>
+<b/>
+<lu>
+               <lit v="ат"/>                          
+ 	       <lit-tag v="n"/> 
+<var n="possessive"/>
+  	       <lit-tag v="nom"/>
+    </lu> 
+<b/>
+<lu>
+      <var n="NEW-noun_lu"/>
+    </lu>
+</chunk>
+</out>
+    </action>
+</rule>
+
+
 
 
 <!-- Я ем\ел-->
