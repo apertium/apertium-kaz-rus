@@ -33,10 +33,6 @@
 <def-cat n="v-fut-neg">
       <cat-item tags="v.*.neg.fut.*.*"/>
          </def-cat>
-<def-cat n="vbmod"> <!-- Буду --> 
-      <cat-item lemma="быть" tags="vblex.impf.fut.*"/>
-      <cat-item lemma="быть" tags="vblex.impf.fut"/>
-    </def-cat>
 <def-cat n="budu-vbser"> <!-- past and present tense -->
       <cat-item tags="vbser.fut.*"/>
       <cat-item tags="vbser.fut"/>      
@@ -46,7 +42,16 @@
       <cat-item tags="vaux.*"/>
     </def-cat>
 
+<def-cat n="atym_pers-verb"> <!-- past and present tense -->
+      <cat-item lemma="ат" tags="n.px1sg.nom.*"/>
+      <cat-item lemma="ат" tags="n.px2sg.nom.*"/>
+      <cat-item lemma="ат" tags="n.px3sg.nom.*"/>
+      
 
+    </def-cat>
+<!--<def-cat n="NP">
+      <cat-item tags="np.ant.*"/>
+</def-cat>-->
     <def-cat n="n">
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
@@ -781,6 +786,7 @@
 
       <choose>
         <when>
+
           <test>
 	    <and>
 	      <or>
@@ -824,6 +830,55 @@
         <with-param pos="1"/>
       </call-macro>
     </def-macro>
+
+<!--<def-macro n="NEW-build-noun-lu-2-4-5-sg" npar="1">
+ 
+     <let>
+           <var n="NEW-noun_lu"/>
+           <concat>
+               <clip pos="1" side="tl" part="lem"/> 
+               <clip pos="1" side="tl" part="a_nom"/>
+               <clip pos="1" side="tl" part="a_gender"/>
+               <lit-tag v="sg"/>--> <!-- force singular number (used with numerals) -->
+               <!-- no need to link person -->
+              <!-- <lit-tag v="4"/> 
+               <lit-tag v="5"/> 
+           </concat>  
+        </let>
+   </def-macro>
+
+ <def-macro n="build-possessive-from-pron" npar="1">
+	<choose> 
+	<when>
+         <test>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="я"/></equal>
+         </test>      
+          <let><var  n="possessive"/><lit-tag v="px1sg"/></let>
+	</when>
+	<when>
+         <test>
+          <equal caseless="yes"><clip  pos="1" side="sl" part="lem"/><lit  v="мы"/></equal>
+         </test>      
+          <let><var  n="possessive"/><lit-tag v="px1pl"/></let>
+	</when>
+	<when>
+         <test>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="ты"/></equal>
+         </test>      
+	<let><var  n="possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+<when>
+         <test>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="вы"/></equal>
+         </test>      
+	<let><var  n="possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+	<otherwise>
+	<let><var n="possessive"/><lit-tag v="px3sp"/></let> 
+	</otherwise>
+	</choose>
+   </def-macro>-->
+
 
     <def-macro n="makeagree-det-noun" npar="2">
       <!-- arg.1 determiner arg.2 noun -> determiner noun
@@ -1143,6 +1198,7 @@
     <def-macro n="reset-vars1" npar="1">
           <let><var n="sntype"/><lit v=""/></let>
           <let><var n="number"/><lit v=""/></let>
+<let><var n="possessive"/><lit v=""/></let>
     </def-macro>
   </section-def-macros>
 
@@ -3443,6 +3499,56 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 
 
+ <!--<rule comment="PRN N"> --><!-- Zhadyra --> <!-- менің атым NP -->
+      
+     <!-- <pattern>
+        <pattern-item n="subj-pron"/>
+        <pattern-item n="NP"/>
+<pattern-item n="atym_pers-verb"/>
+      </pattern>
+      <action>
+            <call-macro n="build-possessive-from-pron">
+              <with-param pos="2"/>
+<call-macro n="NEW-build-noun-lu-2-4-5-sg">
+      <with-param pos="3"/>
+    </call-macro>
+            </call-macro>
+                <out>
+                  <chunk name="subj-pron-atym">
+<tags>
+                    <tag><clip pos="2" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+
+              </tags>
+
+            <lu>
+                                <clip pos="1" side="tl" part="whole"/>
+            </lu>
+<b/>
+             <lu>
+              <lit v="звать"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="possessive"/>
+<lit-tag v="nom"/>
+ <lit-tag v="2"/>
+ <lit-tag v="3"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_pers"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1">
+          <with-param pos="1"/>
+        </call-macro>
+      </action>
+    </rule>-->
+
+
 
 
 <!--Zhadyra--><!--етістіктің шақтары,болымсыз түрлері-->
@@ -3539,7 +3645,9 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         <pattern-item n="verb-fin"/>
       </pattern>
       <action>
-      
+      <call-macro n="translate-verb-fin">
+          <with-param pos="2"/>
+        </call-macro>
 
 <choose>
 <when>
@@ -3568,25 +3676,30 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </otherwise>
 </choose>
 <out>
-         <chunk name="verb-budu-fut">
+         <chunk name="v-neg-fin">
             <tags>
               <tag><lit-tag v="SV"/></tag>
-
+<tag><clip pos="1" side="sl" part="a_verb"/></tag>
               <tag><clip pos="2" side="sl" part="a_pers"/></tag>
               <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
 
               </tags>
 
             <lu>
+
                                 <clip pos="1" side="tl" part="whole"/>
             </lu>
 <b/>
+<var n="negation"/>
+
              <lu>
               <lit v="быть"/>
               <lit-tag v="vbser"/>
               <lit-tag v="fut"/>
  <lit-tag v="2"/>
  <lit-tag v="3"/>
+<var n="gender"/>
+<lit-tag v="5"/>
             </lu>
             <b/>
             <lu>
@@ -3603,6 +3716,12 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </action>
     </rule>
 
+  
+                      
+              
+           
+       
+     
 
  
 
@@ -3902,7 +4021,6 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
     </rule>
 
     <rule comment="REGLA: DET">
-
 
 
       <!--
