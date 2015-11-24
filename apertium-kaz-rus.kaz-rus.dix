@@ -324,6 +324,9 @@
     <e r="LR"><p><l>жат<s n="vaux"/></l><r></r></p></e>
 <e r="LR"><p><l>тұр<s n="vaux"/></l><r></r></p></e>
 <e r="LR"><p><l>отыр<s n="vaux"/></l><r></r></p></e>
+<!--
+<e r="LR"><p><l>көр<s n="vaux"/></l><r></r></p></e>
+-->
 
  <!-- verb -->
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>           <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -420,6 +423,7 @@
 <e><p><l>жігерлен<s n="v"/><s n="tv"/></l><r>воодушевляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қиялдан<s n="v"/><s n="tv"/></l><r>воображаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қарулан<s n="v"/><s n="tv"/></l><r>вооружаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қара<s n="v"/><s n="tv"/></l><r>смотреть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жүзеге<b/>асырыл<s n="v"/><s n="tv"/></l><r>воплощаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ұрыс<s n="v"/><s n="tv"/></l><r>ворчать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>айқайла<s n="v"/><s n="tv"/></l><r>восклицать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -435,6 +439,7 @@
 <e><p><l>кіргіз<s n="v"/><s n="tv"/></l><r>вписывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>кіргізіл<s n="v"/><s n="tv"/></l><r>вписываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>сіңіріл<s n="v"/><s n="tv"/></l><r>впитываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сен<s n="v"/><s n="tv"/></l><r>верить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>өр<s n="v"/><s n="tv"/></l><r>вплетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жүзіп<b/>кір<s n="v"/><s n="tv"/></l><r>вплывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жорғала<s n="v"/><s n="tv"/></l><r>вползать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -1148,7 +1153,7 @@
 <e><p><l>алғыс<b/>айт<s n="v"/><s n="tv"/></l><r>поблагодарить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>оят<s n="v"/><s n="tv"/></l><r>побудить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>бұр<s n="v"/><s n="tv"/></l><r>повернуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
-<e><p><l>көру<s n="v"/><s n="tv"/></l><r>повидать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+
 <e><p><l>кеміт<s n="v"/><s n="tv"/></l><r>сбавить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>лақтыр<s n="v"/><s n="tv"/></l><r>сбросить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>түсір<s n="v"/><s n="tv"/></l><r>свергнуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
@@ -1216,7 +1221,7 @@
 <e><p><l>қорға<s n="v"/><s n="tv"/></l><r>уберечь<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ал<s n="v"/><s n="tv"/></l><r>убрать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>кемі<s n="v"/><s n="tv"/></l><r>убыть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
-<e><p><l>көр<s n="v"/><s n="tv"/></l><r>увидеть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>көр<s n="v"/><s n="tv"/></l><r>видеть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>шығар<s n="v"/><s n="tv"/></l><r>уволить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>болжа<s n="v"/><s n="tv"/></l><r>угадать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қара<s n="v"/><s n="tv"/></l><r>углядеть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
@@ -2444,7 +2449,9 @@
 <e><p><l>сатып<b/>ал<s n="v"/><s n="iv"/></l><r>скупать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қиыстыр<s n="v"/><s n="iv"/></l><r>слагать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>көндір<s n="v"/><s n="iv"/></l><r>смирить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<!--
 <e><p><l>қара<s n="v"/><s n="iv"/></l><r>смотреть<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+-->
 <e><p><l>жабдықтандыр<s n="v"/><s n="iv"/></l><r>снабжать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>төмендет<s n="v"/><s n="iv"/></l><r>снижать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>бұзба<s n="v"/><s n="iv"/></l><r>соблюдать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
@@ -3536,6 +3543,8 @@
 <e><p><l>ар-намыс<s n="n"/></l><r>честь<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>ар-ұят<s n="n"/></l><r>совесть<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>ара<s n="n"/></l><r>дистанция<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>ара<s n="n"/></l><r>пчела<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
+<e><p><l>ара<s n="n"/></l><r>пила<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>араз-құраз<s n="n"/></l><r>размолвка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>араздық<s n="n"/></l><r>рознь<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>арақ<s n="n"/></l><r>водка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -3936,6 +3945,7 @@
 <e><p><l>әшкерелеуші<s n="n"/></l><r>разоблачитель<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>баба<s n="n"/></l><r>прадед<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>баға<s n="n"/></l><r>оценка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>баға<s n="n"/></l><r>цена<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>баған<s n="n"/></l><r>стойка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>бағана<s n="n"/></l><r>колонна<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>бағасыздану<s n="n"/></l><r>обесценивание<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
@@ -3951,6 +3961,7 @@
 <e><p><l>байлық<s n="n"/></l><r>богатство<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>байтал<s n="n"/></l><r>кобылица<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>байыптылық<s n="n"/></l><r>сообразительность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>бақ<s n="n"/></l><r>сад<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>бақа<s n="n"/></l><r>жаба<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>бақсы<s n="n"/></l><r>гадалка<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>бақша<s n="n"/></l><r>огород<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -4725,7 +4736,6 @@
 <e><p><l>құлып<s n="n"/></l><r>замок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>құмар<s n="n"/></l><r>азарт<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>құмыра<s n="n"/></l><r>кувшин<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>құн<s n="n"/></l><r>цена<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 
 <e><p><l>қазына<s n="n"/></l><r>ценность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>құндылық<s n="n"/></l><r>ценность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -4786,6 +4796,7 @@
 <e><p><l>мата<s n="n"/></l><r>материал<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>маусым<s n="n"/></l><r>сезон<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>маусым<s n="n"/></l><r>июнь<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>маусым<s n="n"/></l><r>время<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>мәдениет<s n="n"/></l><r>культура<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>мәжбүрлік<s n="n"/></l><r>принудительность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>мәжіліс<s n="n"/></l><r>заседание<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
@@ -5015,7 +5026,7 @@
 <e><p><l>сай<s n="n"/></l><r>ущелье<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>сақал<s n="n"/></l><r>борода<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>сал<s n="n"/></l><r>паралич<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>сала<s n="n"/></l><r>область<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>сала<s n="n"/></l><r>сфера<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>салт<s n="n"/></l><r>традиция<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>салтанат<s n="n"/></l><r>торжество<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>салық<s n="n"/></l><r>налог<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -5574,6 +5585,7 @@
 <e><p><l>қыз<s n="n"/></l><r>девушка<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>қыз<s n="n"/></l><r>девочка<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>қыз<s n="n"/></l><r>девушка<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
+<e><p><l>қыз<s n="n"/></l><r>девочка<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>қызмет<s n="n"/></l><r>сервис<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қызмет<s n="n"/></l><r>деятельность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>қызметкер<s n="n"/></l><r>сотрудник<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
@@ -5664,6 +5676,7 @@
 <e><p><l>тарап<s n="n"/></l><r>сторона<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>тәртіп<s n="n"/></l><r>распорядок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>телефон<s n="n"/></l><r>телефон<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>теледидар<s n="n"/></l><r>телевизор<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>температура<s n="n"/></l><r>температура<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>теңге<s n="n"/></l><r>тенге<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>терминал<s n="n"/></l><r>терминал<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -5672,6 +5685,7 @@
 <e><p><l>түлкі<s n="n"/></l><r>лиса<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>түйе<s n="n"/></l><r>верблюд<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>тұз<s n="n"/></l><r>соль<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>соль<s n="n"/></l><r>соль<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>тұлға<s n="n"/></l><r>лицо<s n="n"/><s n="nt"/><s n="aa"/></r></p></e>
 <e><p><l>тұрғын<s n="n"/></l><r>население<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>тысыр<s n="n"/></l><r>шорох<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -6002,6 +6016,7 @@
 <e><p><l>нақыл<s n="n"/></l><r>афоризм<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>намаз<s n="n"/></l><r>молитва<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>намыс<s n="n"/></l><r>честь<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>мәртебе<s n="n"/></l><r>честь<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>наным<s n="n"/></l><r>вера<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>наразылық<s n="n"/></l><r>недовольство<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>насихат<s n="n"/></l><r>наставление<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
@@ -6088,6 +6103,7 @@
 <e><p><l>пері<s n="n"/></l><r>русалка<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>періште<s n="n"/></l><r>ангел<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>пияз<s n="n"/></l><r>лук<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>садақ<s n="n"/></l><r>лук<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>почташы<s n="n"/></l><r>почтальон<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>пысықтауыш<s n="n"/></l><r>обстоятельство<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>пікірсайыс<s n="n"/></l><r>дискуссия<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -6112,7 +6128,8 @@
 <e><p><l>сабырлылық<s n="n"/></l><r>спокойствие<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>сағатшы<s n="n"/></l><r>часовщик<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>сағым<s n="n"/></l><r>мираж<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>садақ<s n="n"/></l><r>лук<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+
+
 <e><p><l>сайлаушы<s n="n"/></l><r>избиратель<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>сайыс<s n="n"/></l><r>поединок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>сақина<s n="n"/></l><r>кольцо<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
@@ -6508,6 +6525,7 @@
 <e><p><l>асығыстық<s n="n"/></l><r>поспешность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>асық<s n="n"/></l><r>асык<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>ат<s n="n"/></l><r>название<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+<e><p><l>ат<s n="n"/></l><r>имя<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>ата<s n="n"/></l><r>дедушка<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>аталық<s n="n"/></l><r>тычинка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>аттан<s n="n"/></l><r>набат<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -7586,7 +7604,8 @@
 <e><p><l>көпіргіштік<s n="n"/></l><r>шипучесть<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>көпіршік<s n="n"/></l><r>пузырь<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>көпіршік<s n="n"/></l><r>пена<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<e><p><l>көр<s n="n"/></l><r>могила<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>көру<s n="v"/></l><r>смотреть<s n="v"/><s n="tv"/></r></p></e>
+<e><p><l>көру<s n="v"/></l><r>видеть<s n="v"/><s n="tv"/></r></p></e>
 <e><p><l>көргенділік<s n="n"/></l><r>воспитанность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>көргенсіздік<s n="n"/></l><r>пошлость<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>көргіштік<s n="n"/></l><r>зоркость<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -7703,7 +7722,6 @@
 <!-- Pronouns-->
 
 <e>       <p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/></l><r>я<s n="prn"/><s n="pers"/><s n="p1"/><s n="mf"/><s n="sg"/></r></p></e>
-<e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>я<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>ты<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/></r></p></e>
 <e>       <p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>он<s n="prn"/><s n="pers"/><s n="p3"/><s n="m"/><s n="sg"/></r></p></e>
 <e>       <p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/></l><r>она<s n="prn"/><s n="pers"/><s n="p3"/><s n="f"/><s n="sg"/></r></p></e>
@@ -7712,8 +7730,7 @@
 <e>       <p><l>сендер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>вы<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
 <e>       <p><l>олар<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/></l><r>они<s n="prn"/><s n="pers"/><s n="p3"/><s n="mfn"/><s n="pl"/></r></p></e>
 <e>       <p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/></l><r>вы<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>       <p><l>сіздер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/></l><r>вы<s n="prn"/><s n="pers"/><s n="p2"/><s n="mf"/><s n="pl"/></r></p></e>
-<e><p><l>бұл<s n="prn"/><s n="dem"/></l><r>это<s n="prn"/><s n="dem"/><s n="nt"/></r></p></e>
+<e>       <p><l>бұл<s n="prn"/><s n="dem"/></l><r>это<s n="prn"/><s n="dem"/><s n="nt"/></r></p></e>
 <e c="мұнда"><p><l>бұл<s n="prn"/><s n="dem"/><s n="loc"/></l><r>здесь<s n="adv"/></r></p></e>
 <e><p><l>анау<s n="prn"/><s n="dem"/></l><r>тот<s n="prn"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/></r></p></e>
 <e c="анау"><p><l>анау<s n="prn"/><s n="dem"/><s n="loc"/></l><r>там<s n="adv"/></r></p></e>
@@ -7745,6 +7762,7 @@
     <!-- Determiners -->
 <e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="сенің"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>твой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e c="сіздің"><p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="оның"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="gen"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
 <e c="біздің"><p><l>біз<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/><s n="gen"/></l><r>наш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="сіздердің"><p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="gen"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -7752,15 +7770,15 @@
 <e c="сенің"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/><s n="gen"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="оның"><p><l>ол<s n="prn"/><s n="dem"/><s n="gen"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
 <e c="олардың"><p><l>ол<s n="prn"/><s n="dem"/><s n="pl"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
-<e c="меніңкі"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="px"/></l><r>мой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/></r></p></e>
-<e c="сеніңкі"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="px"/></l><r>твой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/></r></p></e>
-<e c="оныңкі"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="px"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
-<e c="біздіңкі"><p><l>біз<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/><s n="px"/></l><r>наш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
-<e c="сіздердіңкі"><p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="px"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
-<e c="олардыңкі"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="px"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
-<e c="Сіздіңкі"><p><l>Сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/><s n="px"/></l><r>Ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
-<e c="оныңкі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
-<e c="олардыңкі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
+<e c="менікі"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="px"/></l><r>мой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/></r></p></e>
+<e c="сенікі"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="px"/></l><r>твой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/></r></p></e>
+<e c="оныкі"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="px"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
+<e c="біздікі"><p><l>біз<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/><s n="px"/></l><r>наш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
+<e c="сіздердікі"><p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="px"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
+<e c="олардікі"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="px"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
+<e c="Сіздікі"><p><l>Сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/><s n="px"/></l><r>Ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
+<e c="оныкі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
+<e c="олардікі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
 <e>       <p><l>бұл<s n="det"/><s n="dem"/></l>         <r>этот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>анау<s n="det"/><s n="dem"/></l>       <r>тот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>ол<s n="det"/><s n="dem"/></l>         <r>этот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -8053,6 +8071,7 @@
 <e><p><l>аралас-құралас<s n="adj"/></l><r>смешанный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>аралассыз<s n="adj"/></l><r>безучастный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>аралатпа<s n="adj"/></l><r>передвижной<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>демалыс<s n="n"/></l><r>выходной<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>арам<s n="adj"/></l><r>бесчестный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>арамза<s n="adj"/></l><r>подлый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>арбайтын<s n="adj"/></l><r>завораживающий<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -8992,6 +9011,7 @@
 <e><p><l>жылдам<s n="adj"/></l><r>быстрый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жылдамдықты<s n="adj"/></l><r>скоростной<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жылдық<s n="adj"/></l><r>годовой<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>тоқсандық<s n="adj"/></l><r>четвертная<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жылжымалы<s n="adj"/></l><r>передвижной<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жылмақай<s n="adj"/></l><r>скользкий<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>жылмаң<s n="adj"/></l><r>юркий<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>

@@ -14,33 +14,22 @@
 <match lemma="*" tags="n.aa.*"/>
   </rule>
 
-<!-- соль нота -->
- <rule> 
-    <match lemma="соль" tags="n.*"><select lemma="соль" tags="n.*"/></match>
-<match lemma="нота" tags="n.*"/>
+<rule> <!--jasamaidy -->
+    <match lemma="посадить" tags="v"><select lemma="отырғыз" tags="v"/></match>
+    <match lemma="лук" tags="n.*"><select lemma="пияз"/></match>
   </rule>
-<!-- пищевая соль -->
- <rule> 
-    <match lemma="соль" tags="n.*"><select lemma="тұз" tags="n.*"/></match>
-<match lemma="пищевая" tags="adj.*"/>
-  </rule>
-
-
-<!-- лист дерева -->
- <rule> 
+<rule> 
+    <match tags="adj.*"/>
+    <match lemma="лук" tags="n.*"><select lemma="пияз"/></match>
+ </rule> 
+<rule> 
+    <match lemma="большой" tags="adj.*"><select lemma="үлкен" tags="adj.*"/></match>
+    <match lemma="лук" tags="n.*"><select lemma="садақ" tags="n.*"/></match>
+ </rule> 
+<rule> 
+    <match lemma="сухой" tags="adj.*"><select lemma="құрғақ" tags="adj.*"/></match>
     <match lemma="лист" tags="n.*"><select lemma="жапырақ" tags="n.*"/></match>
-<match lemma="дерево" tags="n.*"/>
-  </rule>
-<!-- лист бумаги-->
- <rule> 
-    <match lemma="лист" tags="n.*"><select lemma="парақ" tags="n.*"/></match>
-<match lemma="бумага" tags="n.*"/>
-  </rule>
-<!-- лист -->
- <rule> 
-    <match lemma="лист" tags="n.*"><select lemma="бет" tags="n.*"/></match>
-<match lemma="книга" tags="n.*"/>
-  </rule>
+ </rule> 
 
 
 <!--лук стрела -->

@@ -476,6 +476,9 @@
     <def-attr n="a_neg">
       <attr-item tags="neg"/>
     </def-attr>
+    <def-attr n="_neg">
+      <attr-item tags="neg"/>
+    </def-attr>
     <def-attr n="a_trans">
       <attr-item tags="tv"/>
       <attr-item tags="iv"/>
@@ -1200,6 +1203,7 @@
           <let><var n="number"/><lit v=""/></let>
 <let><var n="possessive"/><lit v=""/></let>
     </def-macro>
+
   </section-def-macros>
 
   <section-rules>
@@ -2132,11 +2136,12 @@
 
       <rule comment="REGLA: N POST">
       <!--
-      INPUT:  ^мәктәп<n>/школа<n><f><nn>$ ^сыз<post>/без<pr><gen>$
+      INPUT:  ^мектеп<n>/школа<n><f><nn>$ ^сіз<post>/без<pr><gen>$
       OUTPUT: ^pr_n<PP>{^без<pr>$ ^школа<n><f><nn><sg><gen>$}$
-      INPUT:  ^яхшы<adj><subst><pl>/хороший<adj><m><an><pl>$ ^сыз<post>/без<pr><gen>$
+      INPUT:  ^жақсы<adj><subst><pl>/хороший<adj><m><an><pl>$ ^сыз<post>/без<pr><gen>$
       OUTPUT: ^pr_n<PP>{^без<pr>$ ^хороший<adj><mfn><an><pl><gen>$}$
       -->
+
       <pattern>
         <pattern-item n="n"/>
         <pattern-item n="post"/>
@@ -2145,6 +2150,7 @@
         <call-macro n="translate-noun">
           <with-param pos="1"/>
         </call-macro>
+
         <call-macro n="makeagree-pr-noun">
           <with-param pos="2"/>
           <with-param pos="1"/>
@@ -2165,6 +2171,7 @@
           </out>
       </action>
     </rule>
+
 
       <rule comment="REGLA: N N POST">
       <!--

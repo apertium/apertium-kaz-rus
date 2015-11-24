@@ -25,59 +25,106 @@
 
 
 <rule>
-
-    <match lemma="бар" tags="v.*"><select lemma="идти" tags="vblex.*"/></match>
-<match lemma="жат" tags="vaux.*"/>
-<match lemma="тұр" tags="vaux.*"/>
-<match lemma="отыр" tags="vaux.*"/>
-</rule> 
-
-
-
-<rule>
-    <match lemma="демалыс" tags="*">
+    <match lemma="демалыс" tags="n.*">
     <select lemma="выходной" tags="adj.*"/></match>
     <match lemma="күн" tags="n.*"><select lemma="день" tags="n.*"/></match>
 </rule> <!-- демалыс сөзі күн сөзімен бірге келгенде выходной деп аударылады -->
 
 <rule>
-    <match lemma="жазғы" tags="*"><select lemma="летний" tags="adj.*"/></match>
+    <match lemma="жазғы" tags="adj.*"><select lemma="летний" tags="adj.*"/></match>
     <match lemma="күн" tags="n.*"><select lemma="время" tags="n.*"/></match>
 </rule>  <!-- күн сөзі жаз сөзімен бірге келгенде время деп аударылады -->
-
-
-<rule>
-    <match lemma="ол" tags="prn.*"><select lemma="она" tags="prn.*"/> </match>
-    <match lemma="әдемі" tags="*"><select lemma="красивый" tags="adj.*"/></match>
-    <match lemma="қыз" tags="n.*"/>
-</rule> <!--ол сөзі он деп емес она деп аударылады-->
-
 
 <rule>
     <match tags="num"/>
     <match lemma="ай" tags="n.*"><select lemma="месяц"/></match>
 </rule> <!--num тәгі бар сөздер ай сөзімен бірге келгенде луна деп емес месяц деп аударылады-->
-
+ 
+<rule>
+  <or>
+   <match lemma="қаңтар" tags="n.*"/>
+  <match lemma="ақпан" tags="n.*"/>
+<match lemma="наурыз" tags="n.*"/>
+<match lemma="сәуір" tags="n.*"/>
+<match lemma="мамыр" tags="n.*"/>
+<match lemma="маусым" tags="n.*"/>
+<match lemma="шілде" tags="n.*"/>
+<match lemma="тамыз" tags="n.*"/>
+<match lemma="қыркүйек" tags="n.*"/>
+<match lemma="қазан" tags="n.*"/>
+<match lemma="қараша" tags="n.*"/>
+<match lemma="желтоқсан" tags="n.*"/>
+  </or>
+   <match lemma="ай" tags="n.px3sp.*"><select lemma="месяц" tags="n.*"/></match>
+ </rule>
 <rule>
     <match tags="num"/>
     <match lemma="қабат" tags="n.*"><select lemma="этаж"/></match>
 </rule> <!-- num тәгі бар сөздер қабат сөзімен бірге келгенде слой деп емес этаж деп аударылады-->
 
-
+<rule>  <!--ол сөзі он деп емес она деп аударылады-->
+    <match lemma="ол" tags="prn.*"><select lemma="она" tags="prn.*"/> </match>
+    <match lemma="қыз" tags="n.*"><select lemma="девочка" tags="n.*"/></match>
+</rule> 
 <rule>
+    <match lemma="ол" tags="prn.*"><select lemma="она" tags="prn.*"/> </match>
+    <match lemma="әдемі" tags="adj"><select lemma="красивый" tags="adj"/></match>
+    <match lemma="қыз" tags="n.*"><select lemma="девочка" tags="n.*"/></match>
+</rule> 
 
+<rule> <!-- v тәгі бар сөздер кепіл сөзімен бірге келгенде гарант деп аударылады-->
     <match lemma="кепіл" tags="n.*"><select lemma="гарант"/></match>
     <match tags="v.*.*"/>
- </rule> <!-- v тәгі бар сөздер кепіл сөзімен бірге келгенде залог деп емес гарант деп аударылады-->
+ </rule> 
 
-<rule>
+ <rule> 
+    <match lemma="түс" tags="n.*"><select lemma="сон" tags="n.*"/></match>
+    <match lemma="көру" tags="v.*.*"><select lemma="видеть" tags="v.*.*"/></match>
+  </rule>
+  <rule> 
+    <match lemma="көру" tags="v.*.*"><select lemma="смотреть" tags="v.*.*"/></match>
+
+  </rule>
+
+<rule> <!-- сала сөзі "білім,ғылым" сөздерімен келгенде-"отрасль" болып, қалған жағдайда "сфера" болып аударылады -->
+  <or>
+    <match lemma="ғылым" tags="n.*"><select lemma="наука" tags="n.*"/></match>
+    <match lemma="білім" tags="n.*"><select lemma="знание" tags="n.*"/></match>
+  </or>
+    <match lemma="сала" tags="n.*.*"><select lemma="отрасль" tags="n.*.*"/></match>
+</rule> 
+
+<rule> <!-- толық емес сала сөзі "биік" сөздерімен келгенде-"честь" болып, қалған жағдайда "статус" болып аударылады   -->
+    <match lemma="биік" tags="adj.*.*"><select lemma="высокий" tags="adj.*.*"/> </match>
+    <match lemma="мәртебе" tags="n.*"><select lemma="честь" tags="n.*"/></match>
+</rule> 
+
+<rule> <!-- маусым сөзі сын есіммен келсе сөздерімен келгенде-"сезон" болып, қалған жағдайда "июнь" болып аударылады   -->
+    <match tags="adj"/>
+    <match lemma="маусым" tags="n.*"><select lemma="сезон"/></match>
+</rule>
+
+<rule> <!-- маусым сөзі "жыл" сөздерімен келгенде-"время года" болып аударылады   -->
+    <match lemma="жыл" tags="n.*"><select lemma="год" tags="n.*"/> </match>
+    <match lemma="маусым" tags="n.*.*"><select lemma="время" tags="n.*.*"/></match>
+</rule> 
+
+<rule><!-- баға сөзі "тоқсандық" сөздерімен келгенде-"четвертная оценка" болып аударылады   -->
+    <match lemma="тоқсандық" tags="adj"><select lemma="четвертная" tags="adj"/> </match>
+    <match lemma="баға" tags="n.*"><select lemma="оценка"/></match>
+</rule> 
+
+<rule> <!-- баға сөзі етістікпен келсе «оценка» болып ауд. (баға алдым, баға бердім,баға қойдым)  аударылады   -->
+    <match lemma="баға" tags="n.*"><select lemma="оценка"/></match>
+    <match tags="v.*.*"/>
+</rule>
+<rule>  <!-- Кет сөзі жер/ел сөзімен бірге келсе покидать болып аударылады -->
   <or>
     <match lemma="жер" tags="n.*.*"><select lemma="земля" tags="n.*.*"/></match>
     <match lemma="ел" tags="n.*.*"><select lemma="страна" tags="n.*.*"/></match>
   </or>
     <match lemma="кет" tags="v.*.*"><select lemma="покидать" tags="v.*.*"/></match>
-</rule> <!-- Кет сөзі жер/ел сөзімен бірге келсе покидать болып аударылады -->
-
+</rule> 
 
 
 </rules>
