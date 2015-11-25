@@ -14,3 +14,11 @@ cat /tmp/rus-kaz.testvoc  | grep '> *#'
 get words with errors into file
 
 cat /tmp/rus-kaz.testvoc  | grep '> *#' >errors.txt
+
+
+
+cat /tmp/rus-kaz.testvoc  | grep "<adv>" |grep \#    --- is showed all "adv" words with #
+
+
+cat /tmp/rus-kaz.testvoc  | grep "<adv>" |grep \# | cut -f4 -d ">"     --- this mean cuting 
+
