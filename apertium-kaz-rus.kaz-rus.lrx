@@ -83,7 +83,6 @@
   </rule>
   <rule> 
     <match lemma="көру" tags="v.*.*"><select lemma="смотреть" tags="v.*.*"/></match>
-
   </rule>
 
 <rule> <!-- сала сөзі "білім,ғылым" сөздерімен келгенде-"отрасль" болып, қалған жағдайда "сфера" болып аударылады -->
@@ -98,6 +97,11 @@
     <match lemma="биік" tags="adj.*.*"><select lemma="высокий" tags="adj.*.*"/> </match>
     <match lemma="мәртебе" tags="n.*"><select lemma="честь" tags="n.*"/></match>
 </rule> 
+
+  <rule> 
+    <match lemma="мәртебе" tags="n.*"><select lemma="статус" tags="n.*"/></match>
+  </rule>
+
 
 <rule> <!-- маусым сөзі сын есіммен келсе сөздерімен келгенде-"сезон" болып, қалған жағдайда "июнь" болып аударылады   -->
     <match tags="adj"/>
@@ -126,5 +130,49 @@
     <match lemma="кет" tags="v.*.*"><select lemma="покидать" tags="v.*.*"/></match>
 </rule> 
 
+<rule>  <!--   -->
+    <match lemma="ақша" tags="adj"><select lemma="денежный" tags="adj"/></match>
+    <match lemma="бірлік" tags="n.*"><select lemma="единица" tags="n.*"/></match>
+</rule> 
+
+<rule>  <!-- етістікті дұрыстау кк:"уделять внимание"   -->
+    <match lemma="көңіл" tags="n.*"><select lemma="внимание" tags="n.*.*"/></match>
+    <match lemma="бөл" tags="v.*.*"><select lemma="делиться" tags="v.*.*"/></match>
+</rule>
+
+<rule>  <!--   -->
+    <match tags="adj"/>
+    <match lemma="маңыз" tags="n.*"><select lemma="значение" tags="n.*"/></match>
+</rule> 
+<rule>  <!--   -->
+    <match tags="n"/>
+    <match lemma="маңыз" tags="n.*"><select lemma="суть" tags="n.*"/></match>
+</rule> 
+  <rule> 
+    <match lemma="қызмет" tags="n.*"><select lemma="деятельность" tags="n.*"/></match>
+  </rule>
+<rule>
+  <or>
+<match lemma="пайда" tags="n.*"/>
+<match lemma="қуат" tags="n.*"/>
+<match lemma="ақпарат" tags="n.*"/>
+<match lemma="байлық" tags="n.*"/>
+<match lemma="негізгі" tags="adj"/>
+  </or>
+   <match lemma="көз" tags="n.*.*"><select lemma="источник" tags="n.*.*"/></match>
+ </rule>
+<rule>
+  <or>
+<match lemma="өндірістік" tags="adj"/>
+<match lemma="табиға" tags="adj"/>
+<match lemma="сарқылмас" tags="adj"/>
+<match lemma="барланған" tags="adj"/>
+  </or>
+   <match lemma="қор" tags="n.*"><select lemma="ресурс" tags="n.*"/></match>
+ </rule>
+<rule>  <!--   -->
+    <match tags="n.*"/>
+    <match lemma="қор" tags="n.*"><select lemma="ресурс" tags="n.*"/></match>
+</rule> 
 
 </rules>
