@@ -10,6 +10,8 @@ after statistics is showed:
 
 cat /tmp/rus-kaz.testvoc  | grep '> *#'
 
+cat /tmp/kaz-rus.testvoc  | grep "#"|grep "<n>"
+
 
 get words with errors into file
 
