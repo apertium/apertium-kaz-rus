@@ -1379,6 +1379,7 @@ If no format information is present it is removed. -->
       -->
       <pattern>
         <pattern-item n="n"/>
+<pattern-item n="cop"/>
       </pattern>
       <action>
         <choose>
@@ -3897,14 +3898,14 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 <!--extraction rules for kaz-rus-->
        
-<rule>
+<!--<rule>
   <pattern>
     <pattern-item n="CAT__adj_"/>
   </pattern>
   <action>
     <choose>
-      <when><!--12 | көркем<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | прекрасный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> действительность<n><(000issim><f><nn><sg><(000possessive><nom><(000attruse> | 0:0 0:1 | <adj><sint><m><an><sg><gen>-->
-        <test>
+      <when>--><!--12 | көркем<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | прекрасный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> действительность<n><(000issim><f><nn><sg><(000possessive><nom><(000attruse> | 0:0 0:1 | <adj><sint><m><an><sg><gen>-->
+       <!-- <test>
         <and>
            <and>
             <begins-with>
@@ -3980,8 +3981,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule1"/></lu></out></when>
-      <when><!--11 | ұлттық<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | национальный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> блюдо<n><(000issim><nt><nn><sg><(000possessive><nom><(000attruse> | 0:0 0:1 | <adj><sint><m><an><sg><gen>-->
-        <test>
+      <when>--><!--11 | ұлттық<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | национальный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> блюдо<n><(000issim><nt><nn><sg><(000possessive><nom><(000attruse> | 0:0 0:1 | <adj><sint><m><an><sg><gen>-->
+       <!-- <test>
         <and>
            <and>
             <begins-with>
@@ -4057,8 +4058,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule2"/></lu></out></when>
-      <when><!--10 | <adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><advl><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | <adj><sint><(000issim><f><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><advl><m><an><sg><gen>-->
-       <test>
+      <when>--><!--10 | <adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><advl><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | <adj><sint><(000issim><f><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><advl><m><an><sg><gen>-->
+       <!--<test>
         <and>
            <and>
             <begins-with>
@@ -4133,8 +4134,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule3"/></lu></out></when>
-      <when><!--9 | сау<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | до<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
-        <test>
+      <when>--><!--9 | сау<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | до<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
+        <!--<test>
         <and>
            <and>
             <begins-with>
@@ -4242,8 +4243,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule4"/></lu></out></when>
-      <when><!--8 | Сау<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | До<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
-        <test>
+      <when>--><!--8 | Сау<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | До<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
+        <!--<test>
         <and>
            <and>
             <begins-with>
@@ -4351,8 +4352,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule5"/></lu></out></when>
-      <when><!--7 | Жаңа<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | Новый<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><f><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
-        <test>
+      <when>--><!--7 | Жаңа<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | Новый<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><f><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
+        <!--<test>
         <and>
            <and>
             <begins-with>
@@ -4415,8 +4416,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule6"/></lu></out></when>
-      <when><!--6 | сүйікті<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | любимый<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
-        <test>
+      <when>--><!--6 | сүйікті<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | любимый<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
+        <!--<test>
         <and>
            <and>
             <begins-with>
@@ -4479,8 +4480,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule7"/></lu></out></when>
-      <when><!--5 | танымал<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | известный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
-        <test>
+      <when>--><!--5 | танымал<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | известный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
+        <!--<test>
         <and>
            <and>
             <begins-with>
@@ -4543,8 +4544,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule8"/></lu></out></when>
-      <when><!--4 | қарапайым<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | о<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
-        <test>
+      <when>--><!--4 | қарапайым<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | о<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
+        <!--<test>
         <and>
            <and>
             <begins-with>
@@ -4652,8 +4653,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule9"/></lu></out></when>
-      <when><!--3 | <adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | <adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><m><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
-        <test>
+      <when>--><!--3 | <adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | <adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><m><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
+        <!--<test>
         <and>
            <and>
             <begins-with>
@@ -4707,12 +4708,12 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </chunk>
       </out>
 <out><lu><lit v="*executedtule10"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
+      <otherwise>
         <reject-current-rule shifting="no" />
 <out><lu><lit v="*wordforword1"/></lu></out></otherwise>
     </choose>
   </action>
-</rule>
+</rule>-->
  
 
 
