@@ -1650,6 +1650,7 @@ If no format information is present it is removed. -->
       <pattern>
         <pattern-item n="n-attr-or-gen"/>
         <pattern-item n="n-px3sp"/>
+
       </pattern>
       <action>
         <choose>
@@ -1780,6 +1781,7 @@ If no format information is present it is removed. -->
         </choose>
       </action>
     </rule>
+
 
 
     <rule comment="REGLA: N N N (2)">
@@ -2775,7 +2777,7 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-    <!--<rule comment="REGLA: ADJ N">-->
+    <rule comment="REGLA: ADJ N">
       <!--
       INPUT:  ^карт<adj>/старый<adj><sint><m><an><sg><nom>$ ^агач<n><nom>/дерево<n><nt><nn><nom>$
       OUTPUT: ^adj_n<SN>{^старый<adj><sint><nt><an><sg><nom>$ ^дерево<n><nt><nn><sg><nom>$}$
@@ -2784,7 +2786,7 @@ If no format information is present it is removed. -->
       INPUT:  ^соң<adv><attr>/последний<adj><m><an><sg><nom>$ ^хат<n><nom>/письмо<n><nt><nn><nom>$
       OUTPUT: ^adj_n<SN>{^последний<adj><nt><an><sg><nom>$ ^письмо<n><nt><nn><sg><nom>$}$
       -->
-      <!--<pattern>
+      <pattern>
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
       </pattern>
@@ -2812,7 +2814,48 @@ If no format information is present it is removed. -->
           </chunk>
         </out>
       </action>
-    </rule>-->
+    </rule>
+
+<rule comment="REGLA: ADJ N">
+      <!--
+      INPUT:  ^карт<adj>/старый<adj><sint><m><an><sg><nom>$ ^агач<n><nom>/дерево<n><nt><nn><nom>$
+      OUTPUT: ^adj_n<SN>{^старый<adj><sint><nt><an><sg><nom>$ ^дерево<n><nt><nn><sg><nom>$}$
+      INPUT:  ^карт<adj>/старый<adj><sint><m><an><sg><nom>$ ^агач<n><nom>/дерево<n><nt><nn><dat>$
+      OUTPUT: ^adj_n<SN>{^старый<adj><sint><nt><an><sg><dat>$ ^дерево<n><nt><nn><sg><dat>$}$
+      INPUT:  ^соң<adv><attr>/последний<adj><m><an><sg><nom>$ ^хат<n><nom>/письмо<n><nt><nn><nom>$
+      OUTPUT: ^adj_n<SN>{^последний<adj><nt><an><sg><nom>$ ^письмо<n><nt><nn><sg><nom>$}$
+      -->
+      <pattern>
+        <pattern-item n="adj"/>
+        <pattern-item n="n"/>
+<pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="adj_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: ADJ N ADJ N"> <!-- Aliya --> <!-- қызыл кітаптың соңғы басылымы -->
       <!--
@@ -5061,9 +5104,10 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 INPUT:  ^жақсы<adj>/хороший<adj><m><an><sg><nom>$
 OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
 -->
-    <!--<rule comment="REGLA: ADJ">
+    <rule comment="REGLA: ADJ">
       <pattern>
         <pattern-item n="adj"/>
+<pattern-item n="cop"/>
       </pattern>
       <action>
         <choose>
@@ -5124,7 +5168,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
           </otherwise>
         </choose>
       </action>
-    </rule>-->
+    </rule>
 
     <rule comment="REGLA: DET">
 
