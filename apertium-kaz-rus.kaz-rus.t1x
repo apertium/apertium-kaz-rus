@@ -1379,7 +1379,6 @@ If no format information is present it is removed. -->
       -->
       <pattern>
         <pattern-item n="n"/>
-<pattern-item n="cop"/>
       </pattern>
       <action>
         <choose>
@@ -1495,6 +1494,139 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+<rule comment="REGLA: N">
+      <!--
+      INPUT:  ^мектеп<n><attr>/школьный<adj><m><an><sg><nom>$
+      OUTPUT: ^adj<AdjP>{^школьный<adj><m><an><sg><nom>$}$
+      INPUT:  ^мектеп<n><nom>/школа<n><f><nn><nom>$
+      OUTPUT: ^n<SN><nom>{^школа<n><f><nn><sg><2>$}$
+      INPUT:  ^аға<n><px1sg><dat>/брат<n><m><aa><px1sg><dat>$
+      OUTPUT: ^n<SN><dat>{^мой<det><pos><m><an><sg><dat>$ ^брат<n><m><aa><sg><dat>$}$
+      INPUT:  ^мектеп<n><loc>/школа<n><f><nn><loc>$
+      OUTPUT: ^pr_n<PP>{^в<pr>$ ^школа<n><f><nn><sg><prp>$}$
+      INPUT:  ^жақсы<adj><subst><dat>/хороший<adj><sint><m><an><dat>$
+      OUTPUT: ^n<SN><dat>{^хороший<adj><sint><m><an><sg><dat>$}$
+      INPUT:  ^ол<prn><dem><gen>/его<det><pos>/он<prn><pers><p3><m><sg><gen>$ 
+^ол<prn><dem><gen><@ADVL→>/он<prn><pers><p3><m><sg><gen><@ADVL→>$
+      OUTPUT: ^n<SN><gen><@ADVL→>{^он<prn><pers><p3><m><sg><2>$}$
+      -->
+      <pattern>
+        <pattern-item n="n"/>
+<pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <choose>
+          <when>
+            <test>
+	      <and>
+	        <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="attr"/></equal>
+	        <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adj"/></equal>
+	      </and>
+	    </test>
+            <out>
+              <chunk name="adj">
+                <tags>
+                  <tag><lit-tag v="AdjP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+
+                </lu>
+              </chunk>
+            </out>
+	  </when>
+          <when c="similative is translated with an adverb (happens in case of pronouns
+		   шундый->так)">
+	    <test>
+	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adv"/></equal>
+	    </test>
+	    <out>
+	      <chunk name="adv">
+                <tags>
+                  <tag><lit-tag v="AdvP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+	      </chunk>
+	    </out>
+          </when>
+          <when>
+	    <test>
+	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="det.pos"/></equal>
+	    </test>
+	    <out>
+	      <chunk name="det">
+                <tags>
+                  <tag><lit-tag v="DET"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+	      </chunk>
+	    </out>
+          </when>
+          <when c="n.px3sp.{dat/abl/loc} is translated with a preposition">
+            <test><equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="pr"/></equal></test>
+            <out>
+              <chunk name="pr">
+                <tags>
+                  <tag><lit-tag v="PREP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_pr"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+            <call-macro n="translate-noun">
+              <with-param pos="1"/>
+            </call-macro>
+            <choose>
+              <when>
+                <test><equal><var n="preposition"/><lit v=""/></equal></test>
+                <out>
+                  <chunk name="n">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+                    <var n="possessive"/>
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
+              <otherwise>
+                <out>
+                  <chunk name="pr_n">
+                    <tags>
+                      <tag><lit-tag v="PP"/></tag>
+                    </tags>
+                    <var n="preposition"/>
+                    <var n="possessive"/>
+                    <lu>
+		      <clip pos="1" side="tl" part="whole"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </otherwise>
+            </choose>
+          </otherwise>
+        </choose>
+      </action>
+    </rule>
 
 
 

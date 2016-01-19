@@ -412,7 +412,6 @@
 <e><p><l>жат<s n="v"/><s n="iv"/></l><r>лежать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
   
 <e><p><l>тірілт<s n="v"/><s n="tv"/></l><r>возрождать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тіріл<s n="v"/><s n="tv"/></l><r>возрождаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>уайымдат<s n="v"/><s n="tv"/></l><r>волновать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>уайымда<s n="v"/><s n="tv"/></l><r>волноваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>сүйрет<s n="v"/><s n="tv"/></l><r>волочить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -2997,7 +2996,7 @@
 <e><p><l>келіспе<s n="v"/><s n="iv"/></l><r>оспаривать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қалдыр<s n="v"/><s n="iv"/></l><r>оставлять<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>тоқтат<s n="v"/><s n="iv"/></l><r>останавливать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>абайла<s n="v"/><s n="iv"/></l><r>осторожничать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>абайла<s n="v"/><s n="tv"/></l><r>осторожничать<s n="vblex"/><s n="perf"/><s n="tv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қайра<s n="v"/><s n="iv"/></l><r>острить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>суыт<s n="v"/><s n="iv"/></l><r>остужать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 
