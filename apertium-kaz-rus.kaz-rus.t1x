@@ -4918,7 +4918,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 <rule>
 <pattern><pattern-item n="any"/></pattern><action>  <out><chunk name="any" case="caseFirstWord"><tags>             <tag><lit-tag v="LRN"/></tag>       </tags>   <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out> <out><lu><lit v="*isolatedword"/></lu></out></action>
 </rule>
--->
+
 <rule>
   <pattern>
     <pattern-item n="CAT__post_"/>
@@ -4926,7 +4926,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   </pattern>
   <action>
     <choose>
-      <when><!--1 | туралы<post><*posttransfer> <n><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><*form><acc><*attruse> | <n><(001issim><f><nn><sg><(001possessive><(001form><gen><(001attruse> | 1:0 | <pr><prp> <n><f><nn><empty_tag_numberat><acc>-->
+      <when>
         <test>
         <and>
            <and>
@@ -4996,12 +4996,12 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <with-param pos="2"/>
         </call-macro>
 <out><lu><lit v="*executedtule8"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
+      <otherwise>
         <reject-current-rule shifting="no" />
 <out><lu><lit v="*wordforword3"/></lu></out></otherwise>
     </choose>
   </action>
-</rule>
+</rule>-->
 
 
  

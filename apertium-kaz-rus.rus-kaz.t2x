@@ -115,11 +115,13 @@
     <def-var n="possessive2"/>
     <def-var n="formality"/>
     <def-var n="caseFirstWord"/>
+ <def-var n="case"/>
+
   </section-def-vars>
    
 
  
-<!-- not used,from Cheboksary templates, commented out
+
   <section-def-macros>
     <def-macro n="test1" npar="1">
       <let>
@@ -128,9 +130,40 @@
       </let>
     </def-macro>
 
+<def-macro n="build-case-ant" npar="1">
+<choose> 
+<when>
+   <test>
+     
+          <equal><clip pos="1"  part="a_np"/><lit-tag  v="np.ant.f"/></equal>
+     
+    </test>      
+          <let><var  n="case"/><lit-tag v="dat"/></let>
+</when>
+  <otherwise>
+          <let>
+            <var n="case"/><lit-tag v="acc"/>
+          </let>
+        </otherwise>
+</choose>
 
+</def-macro>
+
+<def-macro n="change-case-upper" npar="1">  <!--change case to upper for first word-->
+
+       <modify-case>
+        <clip pos="1" part="lem"/>
+          <lit v="Aa"/>
+        </modify-case>
+             <let>
+        <clip pos="1"  part="lem"/>
+		<lit v="Aa"/>
+	      </let>
+      </def-macro>
   </section-def-macros>
--->
+
+
+
   <section-rules>
     <rule comment="REGLA: SN">
       <pattern>
@@ -264,6 +297,56 @@
         </out>
      </action>
     </rule>
+
+
+<rule comment="NEW RULE: NP VP NP ; agree person and number NP VP, set NP accusative">
+    <!-- propagates person and number from NP to VP -->
+    <!--Я соблюдаю тишину/чистоту -->
+     <pattern>
+       <pattern-item n="NP"/>
+       <pattern-item n="VP"/>
+       <pattern-item n="NP"/>
+     </pattern>
+     <action>
+<call-macro n="change-case-upper">  
+<with-param pos="1"/>
+  </call-macro> 
+<call-macro n="build-case-ant">
+        <with-param pos="3"/>
+     </call-macro>
+      <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+          <b pos="1"/>
+          <b pos="2"/>
+          <chunk>
+            <clip pos="3" part="lem"/>  
+            <lit-tag v="NP"/>
+            <clip pos="3" part="a_nbr"/> <!-- agree number -->
+            <clip pos="3" part="a_pers"/> <!-- agree person -->
+            <clip pos="3" part="a_tense"/>
+            <clip pos="3" part="a_possessive"/>
+            <var n="case"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="2" part="lem"/>  
+            <lit-tag v="VP"/>
+            <clip pos="1" part="a_nbr"/> <!-- agree number -->
+            <clip pos="1" part="a_pers"/> <!-- agree person -->
+            <clip pos="2" part="a_tense"/>
+            <clip pos="2" part="a_possessive"/> 
+            <clip pos="2" part="a_neg"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+      </out>
+     </action>
+    </rule>
+    
 
     <!--я буду иметь дом  Балжан -->
 <rule comment="NEW RULE: NP VP_have NP">
