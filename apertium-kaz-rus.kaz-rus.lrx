@@ -83,6 +83,7 @@
   </rule>
   <rule> 
     <match lemma="көру" tags="v.*.*"><select lemma="смотреть" tags="v.*.*"/></match>
+
   </rule>
 
 <rule> <!-- сала сөзі "білім,ғылым" сөздерімен келгенде-"отрасль" болып, қалған жағдайда "сфера" болып аударылады -->
@@ -97,11 +98,6 @@
     <match lemma="биік" tags="adj.*.*"><select lemma="высокий" tags="adj.*.*"/> </match>
     <match lemma="мәртебе" tags="n.*"><select lemma="честь" tags="n.*"/></match>
 </rule> 
-
-  <rule> 
-    <match lemma="мәртебе" tags="n.*"><select lemma="статус" tags="n.*"/></match>
-  </rule>
-
 
 <rule> <!-- маусым сөзі сын есіммен келсе сөздерімен келгенде-"сезон" болып, қалған жағдайда "июнь" болып аударылады   -->
     <match tags="adj"/>
@@ -129,7 +125,6 @@
   </or>
     <match lemma="кет" tags="v.*.*"><select lemma="покидать" tags="v.*.*"/></match>
 </rule> 
-
 <rule>  <!--   -->
     <match lemma="ақша" tags="adj"><select lemma="денежный" tags="adj"/></match>
     <match lemma="бірлік" tags="n.*"><select lemma="единица" tags="n.*"/></match>
