@@ -254,17 +254,18 @@
     <!-- For verbs -->
     
 <pardef n="impf__verb">
-  <e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
-  <e><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
+<e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
+<e><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
 <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
 <e r="LR"><p><l><s n="fut"/></l><r><s n="fut"/></r></p></e>
 <e><p><l><s n="fut2"/></l><r><s n="fut"/></r></p></e>
 <e><p><l><s n="ifi"/></l><r><s n="past"/></r></p></e>
 <e><p><l><s n="inf"/></l><r><s n="inf"/></r></p></e>
+<e><p><l><s n="imp"/></l><r><s n="imp"/></r></p></e>
 <e><p><l><s n="neg"/><s n="aor"/></l><r><s n="pres"/><s n="neg"/></r></p></e>
 <e><p><l><s n="neg"/><s n="ifi"/></l><r><s n="past"/><s n="neg"/></r></p></e>
 <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
-  <e><p><l><s n="prc_perf"/></l><r><s n="prc_perf"/></r></p></e>
+<e><p><l><s n="prc_perf"/></l><r><s n="prc_perf"/></r></p></e>
 <e><p><l><s n="prc_impf"/></l><r><s n="prc_impf"/></r></p></e>
 
 </pardef>
