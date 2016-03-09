@@ -57,6 +57,7 @@
       <program name="lrx-proc -m"> 
         <file name="kaz-rus.lrx.bin"/> 
       </program> 
+	<program name="java -jar maximalEntropy.jar"></program>
       <program name="apertium-transfer -b">
         <file name="apertium-kaz-rus.kaz-rus.t1x"/>
         <file name="kaz-rus.t1x.bin"/>
