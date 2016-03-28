@@ -888,17 +888,17 @@ If no format information is present it is removed. -->
         </when>
         <when>
           <test><equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="abl"/></equal></test>
-          <let><var n="preposition"/><concat><lit v="^из"/><lit-tag v="pr"/><lit v="$ "/></concat></let>
+          <let><var n="preposition"/><concat><lit v="из"/><lit-tag v="pr"/></concat></let>
           <let><var n="case"/><lit-tag v="gen"/></let>
         </when>
 	<when>
           <test><equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ins"/></equal></test>
-          <let><var n="preposition"/><concat><lit v="^с"/><lit-tag v="pr"/><lit v="$ "/></concat></let>
+          <let><var n="preposition"/><concat><lit v="с"/><lit-tag v="pr"/></concat></let>
           <let><var n="case"/><lit-tag v="ins"/></let>
         </when>
         <when>
           <test><equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></equal></test>
-	  <let><var n="preposition"/><concat><lit v="^в"/><lit-tag v="pr"/><lit v="$ "/></concat></let>
+	  <let><var n="preposition"/><concat><lit v="в"/><lit-tag v="pr"/></concat></let>
 	  <choose>
 	    <when>
 	      <test><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="nouns-with-loc-case"/></in></test>
@@ -911,7 +911,7 @@ If no format information is present it is removed. -->
 	</when>
         <when>
           <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="sim"/></equal></test>
-          <let><var n="preposition"/><concat><lit v="^как"/><lit-tag v="adv"/><lit-tag v="rel"/><lit v="$ "/></concat></let>
+          <let><var n="preposition"/><concat><lit v="как"/><lit-tag v="adv"/><lit-tag v="rel"/></concat></let>
           <let><var n="case"/><lit-tag v="nom"/></let>
         </when>
         <when>
@@ -4908,9 +4908,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 <out><lu><lit v="*isolatedword"/></lu></out></action><!--isolated word-->
 </rule>
 
-<rule>
-<pattern><pattern-item n="CAT__HASGENDER_NUMBER"/></pattern><action> <call-macro n="f_genre_num"><with-param pos="1"/></call-macro> <call-macro n="f_set_genre_num"><with-param pos="1"/></call-macro> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out> <out><lu><lit v="*isolatedword"/></lu></out></action><!--isolated word-->
-</rule>
 
 <!--<rule>
 <pattern><pattern-item n="sent"/></pattern><action> <let><var n="number"/> <lit-tag v="sg"/></let><let><var n="gender"/><lit-tag v="m"/></let> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out><out><lu><lit v="*isolatedword"/></lu></out></action>
@@ -5177,7 +5174,15 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </action>
     </rule>
 
-    <rule comment="REGLA: V">
+
+
+
+      <!--
+      INPUT:  барғандарға
+      OUTPUT: к ходившим
+      -->
+
+    <rule comment="REGLA: IN V-ger_past+loc R-KL">
       <!--
       INPUT:  ^айқайла<v><iv><ger_past><acc>/кричать<vblex><impf><iv><ger_past><acc>$
       OUTPUT: ^v<SV><ger_past><acc>{^кричать<vblex><impf><past><m><sg>$}$
@@ -5186,47 +5191,68 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         <pattern-item n="verb-nonfin-ger_past"/>
       </pattern>
       <action>
-        <choose>
-          <when>
-            <test><equal><clip pos="1" side="tl" part="a_nom"/><lit-tag v="n"/></equal></test>
+        
             <call-macro n="translate-noun">
               <with-param pos="1"/>
             </call-macro>
-            <out>
-              <chunk name="n">
-                <tags>
-                  <tag><lit-tag v="SN"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="whole"/>
-                </lu>
-              </chunk>
-            </out>
+            <choose>
+<when>
+<test>
+<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/>
+</equal>
+</test>
+ <let><var n="preposition"/><concat><lit v="к"/><lit-tag v="pr"/></concat></let>
           </when>
-	  <otherwise>
+<when>
+<test>
+<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/>
+</equal>
+</test>
+ <let><var n="preposition"/><concat><lit v="у"/><lit-tag v="pr"/></concat></let>
+          </when>
+<when>
+<test>
+<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/>
+</equal>
+</test>
+ <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+          </when>
+</choose>
+
             <call-macro n="convert-neg-to-ne.adv">
               <with-param pos="1"/>
             </call-macro>
             <out>
-              <chunk name="v">
+              <chunk name="R-KL">
 		<tags>
 		  <tag><lit-tag v="SV"/></tag>
 		  <tag><lit-tag v="ger_past"/></tag>
-		  <tag><clip pos="1" side="sl" part="a_case"/></tag>
+		  <tag><clip pos="1" side="tl" part="a_case"/></tag>
 		</tags>
+<lu>
+		<var n="preposition"/>
+</lu>
+<b/>
+<lu>
+
 		<var n="negation"/>
+</lu>
+<b/>
 		<lu>
 		  <clip pos="1" side="tl" part="lemh"/>
-		  <clip pos="1" side="tl" part="a_verb"/>
-		  <lit-tag v="past"/>
-		  <lit-tag v="m"/>
-		  <lit-tag v="sg"/>
+		  <lit-tag v="vblex"/>
+		  <lit-tag v="impf"/>
+		  <lit-tag v="pp"/>
+		  <lit-tag v="actv"/>
+		  <lit-tag v="mfn"/>
+		  <lit-tag v="an"/>
+		  <lit-tag v="pl"/>
+		  <lit-tag v="3"/>
 		  <clip pos="1" side="tl" part="lemq"/>
 		</lu>
               </chunk>
             </out>
-	  </otherwise>
-	</choose>
+	 
       </action>
     </rule>
 
