@@ -493,6 +493,7 @@
       <attr-item tags="imp"/>
       <attr-item tags="cont"/>
       <attr-item tags="aor"/>
+      <attr-item tags="pp"/>
       <attr-item tags="inf"/>
       <attr-item tags="ifi_evid"/>
       <attr-item tags="fut_plan"/>
@@ -5325,12 +5326,12 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 <b/>
 		<lu>
 		  <clip pos="1" side="tl" part="lemh"/>
-		  <lit-tag v="vblex"/>
-		  <lit-tag v="impf"/>
+		  <clip pos="1" side="sl" part="a_verb"/>
 		  <lit-tag v="pp"/>
+
 		  <lit-tag v="actv"/>
 		  <lit-tag v="mfn"/>
-		  <lit-tag v="pl"/>
+		  <clip pos="1" side="tl" part="a_nbr"/>
 		  <lit-tag v="3"/>
 		  <clip pos="1" side="tl" part="lemq"/>
 		</lu>
@@ -5357,8 +5358,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 <b/>
 		<lu>
 		  <clip pos="1" side="tl" part="lemh"/>
-		  <lit-tag v="vblex"/>
-		  <lit-tag v="impf"/>
+		  <clip pos="1" side="sl" part="a_verb"/>
 		  <lit-tag v="pp"/>
 		  <lit-tag v="actv"/>
 		  <lit-tag v="m"/>
