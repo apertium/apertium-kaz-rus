@@ -118,6 +118,7 @@
     <sdef n="sp" 	c=""/> 
     <sdef n="frm" 	c=""/> 
     <sdef n="def" 	c=""/> 
+<sdef n="px1sg" 	c=""/> 
     <sdef n="px1pl" 	c=""/> 
     <sdef n="px2pl" 	c=""/> 
     <sdef n="sim" 	c=""/> 
@@ -502,6 +503,7 @@
 <e><p><l>сықылда<s n="v"/><s n="tv"/></l><r>хихикать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>балшылда<s n="v"/><s n="tv"/></l><r>хлюпать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бар<s n="v"/><s n="iv"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>бар<s n="v"/><s n="iv"/><s n="ger_past"/><s n="px1sg"/></l><r>хождение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 
 
 <e><p><l>жүр<s n="v"/><s n="iv"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>

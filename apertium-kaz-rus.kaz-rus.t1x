@@ -15,6 +15,11 @@
 <transfer default="chunk">
 
   <section-def-cats>
+<def-cat n="verb-nonfin-ger_bar">
+<cat-item lemma="бар" tags="v.*.ger_past.px1sg.*"/>
+<cat-item lemma="бар" tags="v.*.ger_past.px2sg.*"/>
+<cat-item lemma="бар" tags="v.*.ger_past.px1pl.*"/>
+ </def-cat>
  
 <def-cat n="CAT__adj_">
     <cat-item tags="adj.*"/>
@@ -5183,7 +5188,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       OUTPUT: к ходившим
       -->
 
-    <rule comment="REGLA: IN V-ger_past+loc R-KL">
+   <!-- <rule comment="REGLA: IN V-ger_past+loc R-KL">
       
       <pattern>
         <pattern-item n="verb-nonfin-ger_past"/>
@@ -5252,22 +5257,101 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
             </out>
 	 
       </action>
+    </rule>-->
+
+
+
+<rule comment="REGLA: IN V-ger_past+loc R-KL">
+      <!--
+   Aidana
+      -->
+      <pattern>
+        <pattern-item n="verb-nonfin-ger_bar"/>
+      </pattern>
+      <action>
+        
+            <call-macro n="translate-noun">
+              <with-param pos="1"/>
+            </call-macro>
+            <choose>
+<when>
+<test>
+<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/>
+</equal>
+</test>
+ <let><var n="preposition"/><concat><lit v="к"/><lit-tag v="pr"/></concat></let>
+          </when>
+<when>
+<test>
+<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/>
+</equal>
+</test>
+ <let><var n="preposition"/><concat><lit v="у"/><lit-tag v="pr"/></concat></let>
+          </when>
+<when>
+<test>
+<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/>
+</equal>
+</test>
+ <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+          </when>
+</choose>
+
+          <!--  <call-macro n="convert-neg-to-ne.adv">
+              <with-param pos="1"/>
+            </call-macro>-->
+
+<!--<when>
+<test>
+<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/>
+</equal>
+</test>
+</when>-->
+            <out>
+              <chunk name="r-Koptik-barrr">
+		
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+	
+<tag><clip pos="1" side="tl" part="a_gender"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+<tag><clip pos="1" side="tl" part="a_case"/></tag>
+                    </tags>
+                    
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			
+		      <lit-tag v="3"/>
+<lit-tag v="4"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+     </action>
     </rule>
+
+
+
 
 
 
 
  <!--
       INPUT:  барғанымға
-      OUTPUT: к моему хождению
+      OUTPUT: к моему хождению-->
       
 
-    <rule comment="REGLA: IN V-ger_past+loc R-KL">-->
+    <rule comment="REGLA: IN V-ger_past+loc R-KL">
       <!--
       INPUT:  ^айқайла<v><iv><ger_past><acc>/кричать<vblex><impf><iv><ger_past><acc>$
       OUTPUT: ^v<SV><ger_past><acc>{^кричать<vblex><impf><past><m><sg>$}$
       -->
-      <!--<pattern>
+      <pattern>
         <pattern-item n="verb-nonfin-ger_past"/>
       </pattern>
       <action>
@@ -5372,7 +5456,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </choose>
 
       </action>
-    </rule>-->
+    </rule>
 
 
 <!-- SECTION: Modifiers -->
