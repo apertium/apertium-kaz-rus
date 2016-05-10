@@ -1438,7 +1438,7 @@ If no format information is present it is removed. -->
 	      </chunk>
 	    </out>
           </when>
-          <when c="n.px3sp.{dat/abl/loc} is translated with a preposition">
+          <when c="n.px3sp.{dat/abl/loc} is translated with a preposition"><!--what is that?? /AS 10.05.2016 -->
             <test><equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="pr"/></equal></test>
             <out>
               <chunk name="pr">
@@ -1482,12 +1482,19 @@ If no format information is present it is removed. -->
               </when>
               <otherwise>
                 <out>
-                  <chunk name="pr_n">
+                  <chunk name="pr_n1">
                     <tags>
                       <tag><lit-tag v="PP"/></tag>
                     </tags>
+<lu> <!-- put VARIABLES into lex units <lu> / AS-->
                     <var n="preposition"/>
-                    <var n="possessive"/>
+</lu>
+<b/>
+<lu>
+                    <var n="possessive"/> <!--what does it produce? tag or word? -->
+</lu>
+<!-- need blank space here, I put /AS 10.05.2016-->
+<b/>
                     <lu>
 		      <clip pos="1" side="tl" part="whole"/>
                     </lu>
@@ -1616,13 +1623,19 @@ If no format information is present it is removed. -->
               </when>
               <otherwise>
                 <out>
-                  <chunk name="pr_n">
+                  <chunk name="pr_n2">
                     <tags>
                       <tag><lit-tag v="PP"/></tag>
                     </tags>
+ <lu> <!-- put VARIABLES into lex units <lu> / AS-->
                     <var n="preposition"/>
-                    <var n="possessive"/>
-                    <lu>
+</lu>
+<b/>
+<lu>
+                    <var n="possessive"/> <!--what does it produce? tag or word? -->
+</lu>
+<!-- need blank space here, I put /AS 10.05.2016-->
+<b/>    <lu>
 		      <clip pos="1" side="tl" part="whole"/>
                     </lu>
                   </chunk>
@@ -1795,7 +1808,7 @@ If no format information is present it is removed. -->
           <when c="n.px3sp.{dat/abl/loc} is translated with a preposition">
             <test><equal><clip pos="2" side="tl" part="a_pos"/><lit-tag v="pr"/></equal></test>
             <out>
-              <chunk name="pr_n">
+              <chunk name="pr_n3">
                 <tags>
                   <tag><lit-tag v="PP"/></tag>
                 </tags>
