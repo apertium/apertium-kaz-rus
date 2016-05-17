@@ -4067,7 +4067,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </when>
 <otherwise>
 <let>
-<var n="gender"/><lit-tag v="4"/>
+<var n="gender"/><lit-tag v="5"/>
 </let>
 </otherwise>
 </choose>
@@ -4076,6 +4076,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="sl" part="a_verb"/></tag>
+<tag><clip pos="1" side="sl" part="a_trans"/></tag>
               <tag><clip pos="1" side="sl" part="a_pers"/></tag>
               <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
 
@@ -4085,10 +4086,11 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
+<lit-tag v="4"/>
               <clip pos="1" side="tl" part="a_tense"/>
 
 		<var n="gender"/>
-		<lit-tag v="5"/>
+		<lit-tag v="6"/>
 
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
