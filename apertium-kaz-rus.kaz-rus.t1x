@@ -885,24 +885,49 @@ If no format information is present it is removed. -->
             <or>
               <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></equal>
               <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></equal>
-              <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="dat"/></equal>
+              <!--<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="dat"/></equal>-->
               <equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="acc"/></equal>
             </or>
           </test>
           <let><var n="preposition"/><lit v=""/></let>
           <let><var n="case"/><clip pos="1" side="tl" part="a_case"/></let>
         </when>
-        <when>
+       <!-- <when>
           <test><equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="abl"/></equal></test>
           <let><var n="preposition"/><concat><lit v="из"/><lit-tag v="pr"/></concat></let>
           <let><var n="case"/><lit-tag v="gen"/></let>
+        </when>-->
+
+        <when>
+          <test>
+<and>
+<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="abl"/></equal>
+<equal><clip pos="1" side="tl" part="a_anim"/><lit-tag v="nn"/></equal>
+</and>
+</test>
+
+          <let><var n="preposition"/><concat><lit v="из"/><lit-tag v="pr"/></concat></let>
+          <let><var n="case"/><lit-tag v="gen"/></let>
+
         </when>
+<when>
+          <test>
+<and>
+<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="abl"/></equal>
+<equal><clip pos="1" side="tl" part="a_anim"/><lit-tag v="aa"/></equal>
+</and>
+</test>
+          <let><var n="preposition"/><concat><lit v="от"/><lit-tag v="pr"/></concat></let>
+          <let><var n="case"/><lit-tag v="gen"/></let>
+
+        </when>
+
 	<when>
           <test><equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="ins"/></equal></test>
           <let><var n="preposition"/><concat><lit v="с"/><lit-tag v="pr"/></concat></let>
           <let><var n="case"/><lit-tag v="ins"/></let>
         </when>
-        <when>
+        <!--<when>
           <test><equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></equal></test>
 	  <let><var n="preposition"/><concat><lit v="в"/><lit-tag v="pr"/></concat></let>
 	  <choose>
@@ -914,7 +939,68 @@ If no format information is present it is removed. -->
               <let><var n="case"/><lit-tag v="prp"/></let>
 	    </otherwise>
 	  </choose>
+	</when>-->
+
+ <when>
+          
+ <test>
+<and>
+<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></equal>
+<equal><clip pos="1" side="tl" part="a_anim"/><lit-tag v="nn"/></equal>
+</and>
+</test>
+	  <let><var n="preposition"/><concat><lit v="в"/><lit-tag v="pr"/></concat></let>
+<let><var n="case"/><lit-tag v="gen"/></let>
+	  <choose>
+	    <when>
+	      <test><in caseless="yes"><clip pos="1" side="tl" part="lem"/><list n="nouns-with-loc-case"/></in></test>
+              <let><var n="case"/><lit-tag v="loc"/></let>
+            </when>
+	    <otherwise>
+              <let><var n="case"/><lit-tag v="prp"/></let>
+	    </otherwise>
+	  </choose>
 	</when>
+
+ <when>
+          
+<test>
+<and>
+<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></equal>
+<equal><clip pos="1" side="tl" part="a_anim"/><lit-tag v="aa"/></equal>
+</and>
+</test>
+	  <let><var n="preposition"/><concat><lit v="у"/><lit-tag v="pr"/></concat></let>
+<let><var n="case"/><lit-tag v="gen"/></let>
+</when>
+
+<when>
+          <test>
+<and>
+<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="dat"/></equal>
+<equal><clip pos="1" side="tl" part="a_anim"/><lit-tag v="aa"/></equal>
+</and>
+</test>
+
+          <let><var n="preposition"/><concat><lit v="к"/><lit-tag v="pr"/></concat></let>
+          <let><var n="case"/><lit-tag v="dat"/></let>
+
+        </when>
+
+<when>
+          <test>
+<and>
+<equal><clip pos="1" side="tl" part="a_case"/><lit-tag v="dat"/></equal>
+<equal><clip pos="1" side="tl" part="a_anim"/><lit-tag v="nn"/></equal>
+</and>
+</test>
+
+          <let><var n="preposition"/><concat><lit v="в"/><lit-tag v="pr"/></concat></let>
+          <let><var n="case"/><lit-tag v="dat"/></let>
+
+        </when>
+
+
         <when>
           <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="sim"/></equal></test>
           <let><var n="preposition"/><concat><lit v="как"/><lit-tag v="adv"/><lit-tag v="rel"/></concat></let>
