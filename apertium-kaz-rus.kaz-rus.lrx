@@ -2,7 +2,7 @@
 
  <rule>
     <match lemma="жер"><select lemma="земля"/></match>
-  </rule>
+  </rule> 
 
 <rule>
 	  <match lemma="жарым" tags="*"><select lemma="полтора" tags="*"/></match>

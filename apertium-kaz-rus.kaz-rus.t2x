@@ -68,6 +68,11 @@
       <cat-item tags="SENT"/>
     </def-cat>
 
+ <def-cat n="SV-vaux">
+      <cat-item tags="SV-vaux"/>
+      <cat-item tags="SV-vaux.*"/>
+    </def-cat>
+
   </section-def-cats>
 
   <section-def-attrs>
@@ -213,6 +218,7 @@
  </section-def-macros>
   <section-rules>
     
+
     <rule comment="REGLA: * VBSER -> *">
       <!--
       INPUT:  ^n_n<SN>{^книга<n><f><nn><sg><nom>$ ^ученик<n><m><aa><sg><gen>$}$ ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$

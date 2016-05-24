@@ -5811,6 +5811,1211 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
       </action>
     </rule>
 
+
+
+
+
+<!-- Asyls' rules begin-->
+
+<rule comment="RULE: VP-cop-pres"> <!-- 4-ereje --><!-- Aliya --> <!-- Мен оқушымын // Сен оқушысың ба?-->
+
+      <!--
+      INPUT:  ^мен<prn><pers><p1><sg><nom>/я<prn><pers><p1><mf><sg><nom>$ ^оқушы<n><nom>/ученик<n><m><aa><nom>$ ^е<cop><aor><p1><sg>/@е<cop><aor><p1><sg>$
+      OUTPUT: ^vP-cop-present<SV-cop>{^я<prn><pers><p1><mf><sg><nom>$ ^ученик<n><m><aa><sg><nom>$ }$
+      -->
+
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="conv-case1">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="conv-number1">
+          <with-param pos="3"/>
+        </call-macro>
+           <choose><!-- choosing correct to be-->
+               <when>
+                   <test>
+                   <and>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p3"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                       <!-- <equal><clip pos="2" side="sl" part="a_gender"/><lit v="pl"/></equal> -->
+                   </and>
+                   </test>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
+                   <!-- <let><clip pos="2" side="tl" part="a_gender"/><lit v=""/></let> -->
+               </when>
+               <when>
+                   <test>
+                   <and>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                   </and>
+                   </test>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
+                   <!-- <let><clip pos="2" side="tl" part="a_gender"/><lit v=""/></let> -->
+               </when>
+               <when>
+                   <test>
+                   <and>
+                       <equal><clip pos="3" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+                       <equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+                       <!-- <equal><clip pos="2" side="sl" part="a_gender"/><lit v="pl"/></equal> -->
+                   </and>
+                   </test>
+                   <let><clip pos="3" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="3" side="tl" part="a_pers"/><lit v=""/></let>
+                   <!-- <let><clip pos="2" side="tl" part="a_gender"/><lit v=""/></let> -->
+                </when>
+           </choose>
+
+          <let><clip pos="2" side="tl" part="a_nbr"/><clip pos="1" side="tl" part="a_nbr"/></let>
+        <out>
+          <chunk name="VP-cop-present" case="caseFirstWord">
+            <tags>
+              <tag> <lit-tag v="SV-cop"/></tag>
+            </tags>
+            <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+                  <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="a_verb"/>
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1">
+          <with-param pos="3"/>
+        </call-macro>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: tip5-r1 N itg V"> <!-- 1-ereje -->
+
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="itg"/>
+        <pattern-item n="verb-fin"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="3"/>
+        </call-macro>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+<equal><clip pos="3" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+</and></test>
+<let><clip pos="3" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+</when></choose>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="m"/></let>
+</when>
+<when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="mfn"/></let>
+</when>
+<otherwise>
+<let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+        <out>
+          <chunk name="n-itg-verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="3" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="3" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="3" side="sl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_verb"/>
+              <clip pos="3" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="5"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: tip1-r2 N adj qst"> <!-- 7-ereje -->
+
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="cop"/>
+        <pattern-item n="qst"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+          <let><clip pos="2" side="tl" part="a_gender"/><clip pos="1" side="tl" part="a_gender"/></let>
+          <let><clip pos="2" side="tl" part="a_case"/><clip pos="1" side="tl" part="a_case"/></let>
+        <out>
+          <chunk name="n-adj-qst">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <lu>
+              <clip pos="5" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: tip1-r1 N N V qst"> <!-- 3-ereje -->
+
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="n"/>
+        <pattern-item n="verb-fin"/>
+        <pattern-item n="qst"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="3"/>
+        </call-macro>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+<equal><clip pos="3" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+</and></test>
+<let><clip pos="3" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+</when></choose>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="m"/></let>
+</when>
+<when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="mfn"/></let>
+</when>
+<otherwise>
+<let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+        <out>
+          <chunk name="n-n-v-qst">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="3" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="3" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="3" side="sl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_verb"/>
+              <clip pos="3" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="5"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+            <b/>
+            <lu>
+            <var n="preposition"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <lu>
+              <clip pos="5" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: tip2-r1 PRN adv-itg V"> <!-- 2-ereje -->
+
+      <pattern>
+        <pattern-item n="prn"/>
+        <pattern-item n="adv"/>
+        <pattern-item n="verb-fin"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="3"/>
+        </call-macro>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+<equal><clip pos="3" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+</and></test>
+<let><clip pos="3" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+</when></choose>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="m"/></let>
+</when>
+<when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="mfn"/></let>
+</when>
+<otherwise>
+<let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+        <out>
+          <chunk name="prn-advitg-verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="3" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="3" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="3" side="sl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_verb"/>
+              <clip pos="3" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="5"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: tip2-r2 N adv-itg V"> <!-- 9-ereje -->
+
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="adv"/>
+        <pattern-item n="verb-fin"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="3"/>
+        </call-macro>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+<equal><clip pos="3" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+</and></test>
+<let><clip pos="3" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+</when></choose>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="m"/></let>
+</when>
+<when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="mfn"/></let>
+</when>
+<otherwise>
+<let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+        <out>
+          <chunk name="n-advitg-verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="3" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="3" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="3" side="sl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_verb"/>
+              <clip pos="3" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="5"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: tip4-r1 N n V"> <!-- 8-ereje -->
+
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="n"/>
+        <pattern-item n="verb-fin"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="3"/>
+        </call-macro>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+<equal><clip pos="3" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+</and></test>
+<let><clip pos="3" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+</when></choose>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="m"/></let>
+</when>
+<when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="mfn"/></let>
+</when>
+<otherwise>
+<let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+        <out>
+          <chunk name="n-n-verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="3" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="3" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="3" side="sl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_verb"/>
+              <clip pos="3" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="5"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="ITG N N"> <!-- 10-ereje --><!-- Aliya --> <!-- қай елдің орталығы? -->
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="n-gen"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="cop"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+            <call-macro n="translate-noun">
+              <with-param pos="2"/>
+            </call-macro>
+            <call-macro n="translate-noun">
+              <with-param pos="3"/>
+            </call-macro>
+          <let><clip pos="3" side="tl" part="a_gender"/><clip pos="2" side="tl" part="a_gender"/></let>
+          <let><clip pos="3" side="tl" part="a_poss"/><clip pos="2" side="tl" part="a_poss"/></let>
+          <let><clip pos="1" side="tl" part="a_case"/><clip pos="2" side="tl" part="a_case"/></let>
+                <out>
+                  <chunk name="detitg_n_n">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                    </tags>
+                    <var n="preposition"/>
+                    <lu>
+                      <clip pos="3" side="tl" part="whole"/>
+                    </lu>
+                    <b/>
+                    <lu>
+                      <clip pos="1" side="tl" part="whole"/>
+                    </lu>
+                    <b/>
+                    <lu>
+                      <clip pos="2" side="tl" part="whole"/>
+                    </lu>
+                    <lu>
+                      <clip pos="5" side="tl" part="whole"/>
+                    </lu>
+                  </chunk>
+                </out>
+      </action>
+    </rule>
+
+
+    <rule comment="PRN N ADV-ITG"> <!-- 5-ereje --><!-- Aliya --> <!-- менің кітабым қайда? -->
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="prn-gen"/>
+        <pattern-item n="n-px"/>
+        <pattern-item n="adv"/>
+        <pattern-item n="cop"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+            <call-macro n="translate-noun">
+              <with-param pos="2"/>
+            </call-macro>
+            <call-macro n="makeagree-det-noun">
+              <with-param pos="1"/>
+              <with-param pos="2"/>
+            </call-macro>
+                <out>
+                  <chunk name="prn_n_advitg">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                    </tags>
+                    <var n="preposition"/>
+                    <lu>
+                      <clip pos="3" side="tl" part="whole"/>
+                    </lu>
+                    <b/>
+                    <lu>
+                      <clip pos="1" side="tl" part="lem"/>
+                      <clip pos="1" side="tl" part="a_det"/>
+                      <clip pos="1" side="tl" part="a_gender"/>
+                      <clip pos="1" side="tl" part="a_anim"/>
+
+                      <clip pos="1" side="tl" part="a_nbr"/>
+			<lit-tag v="2"/>
+                    </lu>
+                    <b/>
+                    <lu>
+                      <clip pos="2" side="tl" part="whole"/>
+                    </lu>
+                    <lu>
+                      <clip pos="5" side="tl" part="whole"/>
+                    </lu>
+                  </chunk>
+                </out>
+      </action>
+    </rule>
+
+
+    <rule comment="PRN ADJ N adv-ITG"> <!-- 6-ereje --><!-- Aliya --> <!-- менің қызыл көйлегім қайда? -->
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="prn-gen"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n-px"/>
+        <pattern-item n="adv"/>
+        <pattern-item n="cop"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+            <call-macro n="translate-noun">
+              <with-param pos="3"/>
+            </call-macro>
+            <call-macro n="makeagree-det-noun">
+              <with-param pos="2"/>
+              <with-param pos="3"/>
+            </call-macro>
+            <call-macro n="makeagree-det-noun">
+              <with-param pos="1"/>
+              <with-param pos="3"/>
+            </call-macro>
+                <out>
+                  <chunk name="prn_adj_n_advitg">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                    </tags>
+                    <var n="preposition"/>
+                    <lu>
+                      <clip pos="4" side="tl" part="whole"/>
+                    </lu>
+                    <b/>
+                    <lu>
+                      <clip pos="1" side="tl" part="lem"/>
+                      <clip pos="1" side="tl" part="a_det"/>
+                      <clip pos="1" side="tl" part="a_gender"/>
+                      <clip pos="1" side="tl" part="a_anim"/>
+                      <clip pos="1" side="tl" part="a_nbr"/>
+			<lit-tag v="2"/>
+                    </lu>
+                    <b/>
+                    <lu>
+                      <clip pos="2" side="tl" part="whole"/>
+                    </lu>
+                    <b/>
+                    <lu>
+                      <clip pos="3" side="tl" part="whole"/>
+                    </lu>
+                    <lu>
+                      <clip pos="6" side="tl" part="whole"/>
+                    </lu>
+                  </chunk>
+                </out>
+      </action>
+    </rule>
+
+<!-- Asyls' rules end -->
+
+<!-- Dinas' rules begin -->
+
+
+    <rule comment="REGLA: NP N"> <!-- Aliya --> <!-- Мәдинаның кітабы -->
+      <!--
+      INPUT: 
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="cop"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="np_n-px3sp">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="REGLA: NP N N"> <!-- Aliya --> <!-- Мәдинаның ұлының үйі -->
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="n-px"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <chunk name="np_n_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+      <rule comment="REGLA: NP N N POST"> <!-- Aliya --> <!-- Мәдинаның ұлының үйі туралы -->
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="n-px"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-pr-noun">
+          <with-param pos="4"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <chunk name="np_n_n_post" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+              <lu>
+                <clip pos="4" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: NP ADJ N"> <!-- Aliya --> <!-- Мәдинаның қызыл көйлегі -->
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <out>
+          <chunk name="np_adj_n-px3sp">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+ <rule comment="REGLA: NP N N (2)"> <!-- Aliya --> <!-- Мәдинаның кітабындағы сурет -->
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="npost-loc"/>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+            <call-macro n="translate-noun">
+              <with-param pos="1"/>
+            </call-macro>
+            <call-macro n="translate-noun">
+              <with-param pos="3"/>
+            </call-macro>
+            <call-macro n="translate-noun">
+              <with-param pos="2"/><!--oryn auystyrdy -->
+            </call-macro>
+            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+
+            <out>
+              <chunk name="np_n-loc_n">
+		<tags>
+		  <tag><lit-tag v="SN"/></tag>
+		</tags>
+
+		<lu>
+		  <clip pos="3" side="tl" part="whole"/>
+		</lu>
+		<b/>
+		<lu>
+            <var n="preposition"/>
+		</lu>
+		<b/>
+		<lu>
+		  <clip pos="2" side="tl" part="whole"/>
+		</lu>
+		<b/>
+		<lu>
+		  <clip pos="1" side="tl" part="whole"/>
+		</lu>
+              </chunk>
+            </out>
+      </action>
+    </rule>
+
+
+
+
+    <rule comment="REGLA: NP N ADJ N"> <!-- Aliya --> <!-- Мәдинаның кітабының соңғы басылымы -->
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="4"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
+        <out>
+          <chunk name="np_n_adj_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+            <var n="preposition"/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: np-ant V">
+
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="verb-fin"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="2"/>
+        </call-macro>
+<choose><when>
+<test><and>
+<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+<equal><clip pos="2" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+</and></test>
+<let><clip pos="2" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+</when></choose>
+<choose><when>
+<test><and>
+<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="m"/></let>
+</when>
+<when>
+<test><and>
+<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="mfn"/></let>
+</when>
+<otherwise>
+<let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+        <out>
+          <chunk name="np-ant-verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="2" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_verb"/>
+              <clip pos="2" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="5"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: np V">
+
+      <pattern>
+        <pattern-item n="np-top"/>
+        <pattern-item n="verb-fin"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="2"/>
+        </call-macro>
+<choose><when>
+<test><and>
+<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+<equal><clip pos="2" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+</and></test>
+<let><clip pos="2" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+</when></choose>
+<choose><when>
+<test><and>
+<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="m"/></let>
+</when>
+<when>
+<test><and>
+<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="mfn"/></let>
+</when>
+<otherwise>
+<let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+        <out>
+          <chunk name="np-verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="2" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_verb"/>
+              <clip pos="2" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="5"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+            <b/>
+            <lu>
+            <var n="preposition"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: np np V">
+
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="np-top"/>
+        <pattern-item n="verb-fin"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="3"/>
+        </call-macro>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+<equal><clip pos="3" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+</and></test>
+<let><clip pos="3" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+</when></choose>
+<choose><when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="m"/></let>
+</when>
+<when>
+<test><and>
+<equal><clip pos="3" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+<equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+</and></test>
+<let><var n="gender"/><lit-tag v="mfn"/></let>
+</when>
+<otherwise>
+<let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+        <out>
+          <chunk name="np-np-verb">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="3" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="3" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="3" side="sl" part="a_nbr"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="lemh"/>
+              <clip pos="3" side="tl" part="a_verb"/>
+              <clip pos="3" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="5"/>
+              <clip pos="3" side="tl" part="lemq"/>
+            </lu>
+            <b/>
+            <lu>
+            <var n="preposition"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+      <rule comment="REGLA: NP N POST">
+      <!--
+      INPUT:  
+      OUTPUT: 
+      -->
+      <pattern>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="post"/>
+        <pattern-item n="sent"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-pr-noun">
+          <with-param pos="3"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="np_n_post" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+              <b/>
+              <lu>
+                <clip pos="1" side="tl" part="whole"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
+<!-- Dinas' rules end -->
+
+
   </section-rules>
 
 </transfer>
