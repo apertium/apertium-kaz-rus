@@ -15,6 +15,25 @@
 <transfer default="chunk">
 
   <section-def-cats>
+    <def-cat n="np-ant"> 
+      <cat-item tags="np.ant"/>
+      <cat-item tags="np.ant.*"/>
+      <cat-item tags="np.ant.*.*"/>
+   </def-cat> 
+    <def-cat n="np-top"> 
+      <cat-item tags="np.top"/>
+      <cat-item tags="np.top.*"/>
+      <cat-item tags="np.top.*.*"/>
+   </def-cat> 
+    <def-cat n="itg"> 
+      <cat-item tags="prn.itg"/>
+      <cat-item tags="prn.itg.*"/>
+   </def-cat>
+    <def-cat n="prn">
+      <cat-item tags="prn"/>
+      <cat-item tags="prn.*"/>
+      <cat-item tags="prn.dem"/>
+    </def-cat>
 <def-cat n="verb-nonfin-ger_bar">
 <cat-item lemma="бар" tags="v.*.ger_past.px1sg.*"/>
 <cat-item lemma="бар" tags="v.*.ger_past.px2sg.*"/>
