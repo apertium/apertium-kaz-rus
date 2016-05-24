@@ -320,10 +320,9 @@
 
 <!-- vaux-->
 
-    <e r="LR"><p><l>жат<s n="vaux"/></l><r></r></p></e>
+<e r="LR"><p><l>жат<s n="vaux"/></l><r></r></p></e>
 <e r="LR"><p><l>тұр<s n="vaux"/></l><r></r></p></e>
 <e r="LR"><p><l>отыр<s n="vaux"/></l><r></r></p></e>
-
 <e r="LR"><p><l>жүр<s n="vaux"/></l><r></r></p></e>
 
 <!--
@@ -334,17 +333,10 @@
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>поесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 
-<!-- v1 17.02.2015-->
-<e><p><l>шуылда<s n="v"/><s n="iv"/></l><r>шуметь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күмәндан<s n="v"/><s n="iv"/></l><r>сомневаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>босат<s n="v"/><s n="tv"/></l><r>освободить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шығарыл<s n="v"/><s n="iv"/></l><r>выходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүгір<s n="v"/><s n="iv"/></l><r>бегать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүгір<s n="v"/><s n="iv"/></l><r>бежать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e> 
+
+<!-- tv impf 253 -->
+<e><p><l>босат<s n="v"/><s n="tv"/></l><r>освободить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e> 
 <e><p><l>оят<s n="v"/><s n="tv"/></l><r>будить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қайт<s n="v"/><s n="iv"/></l><r>возвращаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарсылас<s n="v"/><s n="iv"/></l><r>возникать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарсылас<s n="v"/><s n="iv"/></l><r>возражать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>алғыс<b/>білдір<s n="v"/><s n="tv"/></l><r>благодарить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e> 
 <e><p><l>тірілт<s n="v"/><s n="tv"/></l><r>возрождать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>тірілт<s n="v"/><s n="tv"/></l><r>воскрешать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -354,75 +346,37 @@
 <e><p><l>орнат<s n="v"/><s n="tv"/></l><r>всаживать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ұсын<s n="v"/><s n="tv"/></l><r>выдвигать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қазбала<s n="v"/><s n="tv"/></l><r>выкапываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бол<s n="v"/><s n="iv"/></l><r>быть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бол<s n="v"/><s n="iv"/></l><r>быть<s n="vbser"/><s n="fut"/></r></p></e>
 <e><p><l>сен<s n="v"/><s n="tv"/></l><r>верить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>іл<s n="v"/><s n="tv"/></l><r>висеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұйықта<s n="v"/><s n="iv"/></l><r>спать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қина<s n="v"/><s n="tv"/></l><r>мучить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қоректен<s n="v"/><s n="iv"/></l><r>питаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айнал<s n="v"/><s n="iv"/></l><r>превращаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>айнал<s n="v"/><s n="tv"/></l><r>вращаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айыр<s n="v"/><s n="iv"/></l><r>лишать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>шеш<s n="v"/><s n="tv"/></l><r>разбираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қызар<s n="v"/><s n="iv"/></l><r>краснеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қызар<s n="v"/><s n="iv"/></l><r>покраснеть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
-<e><p><l>алқын<s n="v"/><s n="iv"/></l><r>задыхаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>амандас<s n="v"/><s n="iv"/></l><r>здороваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>амандас<s n="v"/><s n="iv"/></l><r>поздороваться<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
-<e><p><l>ұял<s n="v"/><s n="iv"/></l><r>стесняться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бас<b/>тарт<s n="v"/><s n="tv"/></l><r>отказываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>арттыр<s n="v"/><s n="tv"/></l><r>повышать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>үлкейт<s n="v"/><s n="tv"/></l><r>увеличивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ашулан<s n="v"/><s n="iv"/></l><r>злиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айқайла<s n="v"/><s n="iv"/></l><r>кричать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бас<b/>тарт<s n="v"/><s n="tv"/></l><r>отказываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тербел<s n="v"/><s n="iv"/></l><r>качаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>дамы<s n="v"/><s n="iv"/></l><r>развиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарастыр<s n="v"/><s n="tv"/></l><r>рассматривать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>иелен<s n="v"/><s n="tv"/></l><r>владеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айқайла<s n="v"/><s n="iv"/></l><r>орать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>айқайла<s n="v"/><s n="tv"/></l><r>восклицать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>төменде<s n="v"/><s n="iv"/></l><r>опускаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>киін<s n="v"/><s n="iv"/></l><r>одеваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>білдір<s n="v"/><s n="tv"/></l><r>означать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жыла<s n="v"/><s n="iv"/></l><r>плакать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жігерлендір<s n="v"/><s n="tv"/></l><r>воодушевлять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>уайымдат<s n="v"/><s n="tv"/></l><r>волновать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>сүйрет<s n="v"/><s n="tv"/></l><r>волочить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>сүйрет<s n="v"/><s n="tv"/></l><r>волочить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сүйретіл<s n="v"/><s n="iv"/></l><r>волочиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жігерлендір<s n="v"/><s n="tv"/></l><r>воодушевлять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жігерлен<s n="v"/><s n="iv"/></l><r>воодушевляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарулан<s n="v"/><s n="iv"/></l><r>вооружаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүзеге<b/>асырыл<s n="v"/><s n="iv"/></l><r>воплощаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>білдір<s n="v"/><s n="tv"/></l><r>означать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қарастыр<s n="v"/><s n="tv"/></l><r>рассматривать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>иелен<s n="v"/><s n="tv"/></l><r>владеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қалпына<b/>келтір<s n="v"/><s n="tv"/></l><r>восстанавливать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>алда<s n="v"/><s n="tv"/></l><r>врать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>басып<b/>кір<s n="v"/><s n="iv"/></l><r>ворваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұрыс<s n="v"/><s n="tv"/></l><r>ворчать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қалпына<b/>келтір<s n="v"/><s n="tv"/></l><r>востанавливать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қорқыт<s n="v"/><s n="tv"/></l><r>вспугивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>хат<b/>алыс<s n="v"/><s n="tv"/></l><r>переписываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жұмыс<b/>істе<s n="v"/><s n="tv"/></l><r>работать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>көңіл<b/>ау<s n="v"/><s n="tv"/></l><r>симпатизировать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ренж<s n="v"/><s n="iv"/></l><r>обижаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұрыс<s n="v"/><s n="tv"/></l><r>ворчать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қалпына<b/>келтір<s n="v"/><s n="tv"/></l><r>востанавливать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>түсініс<s n="v"/><s n="iv"/></l><r>объясняться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бөлін<s n="v"/><s n="tv"/></l><r>делиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жорғала<s n="v"/><s n="tv"/></l><r>вползать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>шатас<s n="v"/><s n="tv"/></l><r>впутываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жаулас<s n="v"/><s n="tv"/></l><r>враждовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>орналас<s n="v"/><s n="iv"/></l><r>вселять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>секір<s n="v"/><s n="iv"/></l><r>вскакивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>таңырқат<s n="v"/><s n="tv"/></l><r>восхищать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>секір<s n="v"/><s n="tv"/></l><r>вспрыгивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қуант<s n="v"/><s n="tv"/></l><r>восторгать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>таңырқат<s n="v"/><s n="tv"/></l><r>восхищать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>таңырқа<s n="v"/><s n="iv"/></l><r>восхищаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кіргізіл<s n="v"/><s n="tv"/></l><r>вписываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сіңіріл<s n="v"/><s n="tv"/></l><r>впитываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>итеріл<s n="v"/><s n="tv"/></l><r>вталкиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ағып<b/>кет<s n="v"/><s n="tv"/></l><r>втекать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жағыл<s n="v"/><s n="tv"/></l><r>втираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кездес<s n="v"/><s n="iv"/></l><r>встречаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қатыстырыл<s n="v"/><s n="tv"/></l><r>втягиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қайна<s n="v"/><s n="iv"/></l><r>вскипать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жүзіп<b/>шығ<s n="v"/><s n="tv"/></l><r>всплывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жүгіріп<b/>шығ<s n="v"/><s n="tv"/></l><r>выбегать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қағыл<s n="v"/><s n="tv"/></l><r>выбиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -430,111 +384,419 @@
 <e><p><l>лақтырылып<b/>тастал<s n="v"/><s n="tv"/></l><r>выбрасываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>шығып<b/>кет<s n="v"/><s n="tv"/></l><r>выбывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қопарыл<s n="v"/><s n="tv"/></l><r>выворачиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>иіл<s n="v"/><s n="iv"/></l><r>выгибаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>көрін<s n="v"/><s n="iv"/></l><r>выглядеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кіргізіл<s n="v"/><s n="tv"/></l><r>вписываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ағып<b/>кет<s n="v"/><s n="tv"/></l><r>втекать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жағыл<s n="v"/><s n="tv"/></l><r>втираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>айтыл<s n="v"/><s n="tv"/></l><r>выговариваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жанып<b/>кет<s n="v"/><s n="tv"/></l><r>выгорать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұсыныл<s n="v"/><s n="iv"/></l><r>выдвигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шарша<s n="v"/><s n="iv"/></l><r>выдыхаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қатыстырыл<s n="v"/><s n="tv"/></l><r>втягиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>домалан<s n="v"/><s n="tv"/></l><r>выкатываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жығ<s n="v"/><s n="tv"/></l><r>падать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жылж<s n="v"/><s n="tv"/></l><r>передвигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жылж<s n="v"/><s n="tv"/></l><r>сдвигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жақындат<s n="v"/><s n="tv"/></l><r>сближать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жылтыра<s n="v"/><s n="iv"/></l><r>светить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жарқыра<s n="v"/><s n="iv"/></l><r>сверкать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>аяқтал<s n="v"/><s n="tv"/></l><r>свершаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бүгіл<s n="v"/><s n="tv"/></l><r>сгибаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>келіс<s n="v"/><s n="iv"/></l><r>сговариваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ағар<s n="v"/><s n="iv"/></l><r>седеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жалтыра<s n="v"/><s n="tv"/></l><r>серебриться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ренж<s n="v"/><s n="iv"/></l><r>серчать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қайғыр<s n="v"/><s n="iv"/></l><r>сетовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>егіл<s n="v"/><s n="tv"/></l><r>сеяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>отырыңқыра<s n="v"/><s n="tv"/></l><r>сиживать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>зорлан<s n="v"/><s n="tv"/></l><r>силиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>көгер<s n="v"/><s n="tv"/></l><r>синеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қырылда<s n="v"/><s n="tv"/></l><r>сипеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шалағай<b/>істе<s n="v"/><s n="tv"/></l><r>халтурить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сырқаттан<s n="v"/><s n="tv"/></l><r>хворать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қулан<s n="v"/><s n="tv"/></l><r>хитрить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>босатыл<s n="v"/><s n="tv"/></l><r>уволиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өш<s n="v"/><s n="tv"/></l><r>угасать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жинақтал<s n="v"/><s n="tv"/></l><r>скапливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жылын<s n="v"/><s n="tv"/></l><r>теплиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>секіріп<b/>өт<s n="v"/><s n="tv"/></l><r>скакать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тісін<b/>ақсит<s n="v"/><s n="tv"/></l><r>скалиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>адақта<s n="v"/><s n="tv"/></l><r>скитаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>дарылда<s n="v"/><s n="tv"/></l><r>тарахтеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бүктел<s n="v"/><s n="tv"/></l><r>складываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сықырла<s n="v"/><s n="tv"/></l><r>скрипеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кішіпейіл<b/>бол<s n="v"/><s n="tv"/></l><r>скромничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>мерекеле<s n="v"/><s n="tv"/></l><r>торжествовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>асығ<s n="v"/><s n="tv"/></l><r>торопиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүрек<b/>айн<s n="v"/><s n="tv"/></l><r>тошнить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қажет<b/>бол<s n="v"/><s n="tv"/></l><r>требоваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айығ<s n="v"/><s n="tv"/></l><r>трезветь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тарт<s n="v"/><s n="tv"/></l><r>удаваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кешкі<b/>ас<b/>іш<s n="v"/><s n="tv"/></l><r>ужинать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сықылда<s n="v"/><s n="tv"/></l><r>хихикать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>балшылда<s n="v"/><s n="tv"/></l><r>хлюпать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+
+<e><p><l>бар<s n="v"/><s n="iv"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>бар<s n="v"/><s n="iv"/><s n="ger_past"/><s n="px1sg"/></l><r>хождение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+
+
+<e><p><l>жүр<s n="v"/><s n="iv"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+
+<e><p><l>басқар<s n="v"/><s n="tv"/></l><r>хозяйничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бұзақылық<b/>жаса<s n="v"/><s n="tv"/></l><r>хулиганить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кішірей<s n="v"/><s n="tv"/></l><r>уменьшаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тоңа<b/>баста<s n="v"/><s n="tv"/></l><r>холодеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қарқылдап<b/>күл<s n="v"/><s n="tv"/></l><r>хохотать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>түтінде<s n="v"/><s n="tv"/></l><r>чадить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>көзде<s n="v"/><s n="tv"/></l><r>целиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сүйіс<s n="v"/><s n="tv"/></l><r>целоваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сіресіп<b/>қал<s n="v"/><s n="tv"/></l><r>цепенеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+
+<e><p><l>қарайт<s n="v"/><s n="tv"/></l><r>чернеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>наздан<s n="v"/><s n="tv"/></l><r>церемониться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айналып<b/>жүр<s n="v"/><s n="tv"/></l><r>циркулировать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тоқылда<s n="v"/><s n="tv"/></l><r>цокать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қасын<s n="v"/><s n="tv"/></l><r>чесаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сылпылдат<s n="v"/><s n="tv"/></l><r>чавкать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шиқылда<s n="v"/><s n="tv"/></l><r>чирикать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>есептел<s n="v"/><s n="tv"/></l><r>числиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>оқыл<s n="v"/><s n="tv"/></l><r>читаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қағыстыр<s n="v"/><s n="tv"/></l><r>чокаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сезіл<s n="v"/><s n="tv"/></l><r>чувствоваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жатырқа<s n="v"/><s n="tv"/></l><r>чуждаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бойды<b/>аулай<b/>ұста<s n="v"/><s n="tv"/></l><r>чураться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тіміскіле<s n="v"/><s n="tv"/></l><r>шарить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>былқылда<s n="v"/><s n="tv"/></l><r>шататься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ақырын<b/>желпін<s n="v"/><s n="tv"/></l><r>шелохнуться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>пышылда<s n="v"/><s n="tv"/></l><r>шипеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ысылда<s n="v"/><s n="tv"/></l><r>шипить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кеңейт<s n="v"/><s n="tv"/></l><r>шириться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қалжыңда<s n="v"/><s n="tv"/></l><r>шутить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>былдырла<s n="v"/><s n="tv"/></l><r>щебетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шерт<s n="v"/><s n="tv"/></l><r>щелкать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тікірейіп<b/>тұр<s n="v"/><s n="tv"/></l><r>щериться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жұмыл<s n="v"/><s n="tv"/></l><r>щуриться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жеделден<s n="v"/><s n="tv"/></l><r>учащаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>аударыл<s n="v"/><s n="tv"/></l><r>сваливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ежелен<s n="v"/><s n="tv"/></l><r>яриться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>аударыл<s n="v"/><s n="tv"/></l><r>ссылаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>құйыл<s n="v"/><s n="tv"/></l><r>ссыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жарамсыздан<s n="v"/><s n="tv"/></l><r>срабатывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бітіс<s n="v"/><s n="tv"/></l><r>срастаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тегістел<s n="v"/><s n="tv"/></l><r>срываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>құтқарыл<s n="v"/><s n="tv"/></l><r>спасаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жаяу<b/>жүр<s n="v"/><s n="tv"/></l><r>спешиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бар<b/>бол<s n="v"/><s n="tv"/></l><r>существовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сығылыс<s n="v"/><s n="tv"/></l><r>ютиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қосылдар<s n="v"/><s n="tv"/></l><r>совокупляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жасырма<s n="v"/><s n="tv"/></l><r>сознаваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сәкестел<s n="v"/><s n="tv"/></l><r>соответствовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өзара<b/>қатынаста<b/>бол<s n="v"/><s n="tv"/></l><r>соотноситься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бақталас<s n="v"/><s n="tv"/></l><r>соперничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>пысылда<s n="v"/><s n="tv"/></l><r>сопеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қарсы<b/>тұр<s n="v"/><s n="tv"/></l><r>сопротивляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>іргелес<s n="v"/><s n="tv"/></l><r>соседствовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>құрыл<s n="v"/><s n="tv"/></l><r>состоять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қайғысына<b/>ортақтас<s n="v"/><s n="tv"/></l><r>сострадать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қызмет<b/>істе<s n="v"/><s n="tv"/></l><r>сотрудничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>аш<s n="v"/><s n="tv"/></l><r>открываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>биле<s n="v"/><s n="tv"/></l><r>танцевать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сіңіріл<s n="v"/><s n="tv"/></l><r>впитываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>итеріл<s n="v"/><s n="tv"/></l><r>вталкиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жорғалап<b/>шығ<s n="v"/><s n="tv"/></l><r>выползать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>көмектес<s n="v"/><s n="tv"/></l><r>помогать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>дәмдел<s n="v"/><s n="tv"/></l><r>лакомиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>байқал<s n="v"/><s n="tv"/></l><r>замечаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жина<s n="v"/><s n="tv"/></l><r>убираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қарсы<b/>шығ<s n="v"/><s n="tv"/></l><r>противоречить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>артын<s n="v"/><s n="tv"/></l><r>грузиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>піс<s n="v"/><s n="tv"/></l><r>зреть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өт<s n="v"/><s n="tv"/></l><r>проходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>дүрліктір<s n="v"/><s n="tv"/></l><r>паниковать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>була<s n="v"/><s n="tv"/></l><r>парить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қылжақта<s n="v"/><s n="tv"/></l><r>паясничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айыр<s n="v"/><s n="tv"/></l><r>лишать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұста<s n="v"/><s n="tv"/></l><r>держаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>рұқсат<b/>етіл<s n="v"/><s n="tv"/></l><r>позволяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жобалан<s n="v"/><s n="tv"/></l><r>подразумеваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>түсініл<s n="v"/><s n="tv"/></l><r>пониматься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>оқытыл<s n="v"/><s n="tv"/></l><r>преподаваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ілін<s n="v"/><s n="tv"/></l><r>подвешиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>иіріл<s n="v"/><s n="tv"/></l><r>прясться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бұзыл<s n="v"/><s n="tv"/></l><r>портиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ойыл<s n="v"/><s n="tv"/></l><r>проламываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>мүңк<s n="v"/><s n="tv"/></l><r>вонять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұшып<b/>кет<s n="v"/><s n="tv"/></l><r>вылетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жағыл<s n="v"/><s n="tv"/></l><r>вымазывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сыпырыл<s n="v"/><s n="tv"/></l><r>выметаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бас<s n="v"/><s n="tv"/></l><r>ступать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>отырғызыл<s n="v"/><s n="tv"/></l><r>высаживаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айту<s n="v"/><s n="tv"/></l><r>высказываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тыңда<s n="v"/><s n="tv"/></l><r>выслушиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айда<s n="v"/><s n="tv"/></l><r>высылать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шаш<s n="v"/><s n="tv"/></l><r>высыпать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ақылсыздан<s n="v"/><s n="tv"/></l><r>глупеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>іріңде<s n="v"/><s n="tv"/></l><r>гноить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жарқылда<s n="v"/><s n="tv"/></l><r>греметь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қорқыт<s n="v"/><s n="tv"/></l><r>грозить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>көңілсізден<s n="v"/><s n="tv"/></l><r>грустить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кірле<s n="v"/><s n="tv"/></l><r>грязнеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қыдыр<s n="v"/><s n="tv"/></l><r>гулять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қозғал<s n="v"/><s n="tv"/></l><r>двигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қос<b/>көрін<s n="v"/><s n="tv"/></l><r>двоиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кезекте<b/>бол<s n="v"/><s n="tv"/></l><r>дежурить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>әрекет<b/>ет<s n="v"/><s n="tv"/></l><r>действовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жетіп<b/>ал<s n="v"/><s n="tv"/></l><r>добираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сен<s n="v"/><s n="tv"/></l><r>доверять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жеткіз<s n="v"/><s n="tv"/></l><r>доводить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жеткіз<s n="v"/><s n="tv"/></l><r>доносить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қу<s n="v"/><s n="tv"/></l><r>догонять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>күт<s n="v"/><s n="tv"/></l><r>дожидать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+
+<e><p><l>дос<b/>бол<s n="v"/><s n="tv"/></l><r>дружить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>дем<b/>ал<s n="v"/><s n="tv"/></l><r>дышать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>түтінде<s n="v"/><s n="tv"/></l><r>дымиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шағым<b/>айт<s n="v"/><s n="tv"/></l><r>жаловаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сарғай<s n="v"/><s n="tv"/></l><r>желтеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өмір<b/>сүр<s n="v"/><s n="tv"/></l><r>жить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>біте<s n="v"/><s n="tv"/></l><r>забивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қамқор<b/>бол<s n="v"/><s n="tv"/></l><r>заботиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>күнге<b/>күй<s n="v"/><s n="tv"/></l><r>загорать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>дуала<s n="v"/><s n="tv"/></l><r>заклинать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жұл<s n="v"/><s n="tv"/></l><r>щипать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қараңғылат<s n="v"/><s n="tv"/></l><r>затемнять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бәсеңде<s n="v"/><s n="tv"/></l><r>затихать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>естіл<s n="v"/><s n="tv"/></l><r>звучать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ойна<s n="v"/><s n="tv"/></l><r>играть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>емдел<s n="v"/><s n="tv"/></l><r>излечиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сенбе<s n="v"/><s n="tv"/></l><r>извериться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бұралаңда<s n="v"/><s n="tv"/></l><r>извиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жалтар<s n="v"/><s n="tv"/></l><r>изворачиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бұрмала<s n="v"/><s n="tv"/></l><r>извращать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бүк<s n="v"/><s n="tv"/></l><r>изгибать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұмыттырыл<s n="v"/><s n="tv"/></l><r>изглаживаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>мазақ<b/>ет<s n="v"/><s n="tv"/></l><r>издеваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жұлқылан<s n="v"/><s n="tv"/></l><r>издергиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қайтыс<b/>бол<s n="v"/><s n="tv"/></l><r>издыхать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>құжыраңда<s n="v"/><s n="tv"/></l><r>изловчаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>нұр<b/>шашыл<s n="v"/><s n="tv"/></l><r>излучаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шаршат<s n="v"/><s n="tv"/></l><r>изматывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өзгертіл<s n="v"/><s n="tv"/></l><r>изменяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қажыл<s n="v"/><s n="tv"/></l><r>измочаливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қалжыра<s n="v"/><s n="tv"/></l><r>изнуряться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>таңқал<s n="v"/><s n="tv"/></l><r>изумляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жөтел<s n="v"/><s n="tv"/></l><r>кашлять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тісте<s n="v"/><s n="tv"/></l><r>кусаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тоң<s n="v"/><s n="tv"/></l><r>мерзнуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кедергі<b/>жаса<s n="v"/><s n="tv"/></l><r>мешаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жыпылықтат<s n="v"/><s n="tv"/></l><r>мигать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сулан<s n="v"/><s n="tv"/></l><r>мокнуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жалбарын<s n="v"/><s n="tv"/></l><r>молить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жалбарын<s n="v"/><s n="tv"/></l><r>молиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>үндеме<s n="v"/><s n="tv"/></l><r>молчать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жыпылықта<s n="v"/><s n="tv"/></l><r>моргать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ойла<s n="v"/><s n="tv"/></l><r>мыслить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>толтыр<s n="v"/><s n="tv"/></l><r>набираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>киліг<s n="v"/><s n="tv"/></l><r>налетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>меңзе<s n="v"/><s n="tv"/></l><r>намекать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шабуыл<b/>жаса<s n="v"/><s n="tv"/></l><r>нападать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>еске<b/>сал<s n="v"/><s n="tv"/></l><r>напоминать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айтқанын<b/>істет<s n="v"/><s n="tv"/></l><r>настаивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шапқыла<s n="v"/><s n="tv"/></l><r>носиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+
+<e><p><l>қажетсін<s n="v"/><s n="tv"/></l><r>нуждаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>күйдір<s n="v"/><s n="tv"/></l><r>обжигать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>иелен<s n="v"/><s n="tv"/></l><r>обзаводиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+
+<!-- iv impf 184 -->
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>быть<s n="vbser"/><s n="fut"/></r></p></e>
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>быть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шығарыл<s n="v"/><s n="iv"/></l><r>выходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шуылда<s n="v"/><s n="iv"/></l><r>шуметь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>күмәндан<s n="v"/><s n="iv"/></l><r>сомневаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүгір<s n="v"/><s n="iv"/></l><r>бегать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүгір<s n="v"/><s n="iv"/></l><r>бежать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қайт<s n="v"/><s n="iv"/></l><r>возвращаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қарсылас<s n="v"/><s n="iv"/></l><r>возникать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қарсылас<s n="v"/><s n="iv"/></l><r>возражать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұйықта<s n="v"/><s n="iv"/></l><r>спать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қоректен<s n="v"/><s n="iv"/></l><r>питаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айнал<s n="v"/><s n="iv"/></l><r>превращаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айыр<s n="v"/><s n="iv"/></l><r>лишать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қызар<s n="v"/><s n="iv"/></l><r>краснеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>алқын<s n="v"/><s n="iv"/></l><r>задыхаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>амандас<s n="v"/><s n="iv"/></l><r>здороваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұял<s n="v"/><s n="iv"/></l><r>стесняться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ашулан<s n="v"/><s n="iv"/></l><r>злиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айқайла<s n="v"/><s n="iv"/></l><r>кричать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тербел<s n="v"/><s n="iv"/></l><r>качаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>дамы<s n="v"/><s n="iv"/></l><r>развиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айқайла<s n="v"/><s n="iv"/></l><r>орать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>төменде<s n="v"/><s n="iv"/></l><r>опускаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>киін<s n="v"/><s n="iv"/></l><r>одеваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жыла<s n="v"/><s n="iv"/></l><r>плакать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сүйретіл<s n="v"/><s n="iv"/></l><r>волочиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жігерлен<s n="v"/><s n="iv"/></l><r>воодушевляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қарулан<s n="v"/><s n="iv"/></l><r>вооружаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүзеге<b/>асырыл<s n="v"/><s n="iv"/></l><r>воплощаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>басып<b/>кір<s n="v"/><s n="iv"/></l><r>ворваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ренж<s n="v"/><s n="iv"/></l><r>обижаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>түсініс<s n="v"/><s n="iv"/></l><r>объясняться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>таңырқа<s n="v"/><s n="iv"/></l><r>восхищаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>орналас<s n="v"/><s n="iv"/></l><r>вселять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>секір<s n="v"/><s n="iv"/></l><r>вскакивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кездес<s n="v"/><s n="iv"/></l><r>встречаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>келіс<s n="v"/><s n="iv"/></l><r>сговариваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қайна<s n="v"/><s n="iv"/></l><r>вскипать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>иіл<s n="v"/><s n="iv"/></l><r>выгибаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>көрін<s n="v"/><s n="iv"/></l><r>выглядеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұсыныл<s n="v"/><s n="iv"/></l><r>выдвигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шарша<s n="v"/><s n="iv"/></l><r>выдыхаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жылтыра<s n="v"/><s n="iv"/></l><r>светить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жарқыра<s n="v"/><s n="iv"/></l><r>сверкать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ағар<s n="v"/><s n="iv"/></l><r>седеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ренж<s n="v"/><s n="iv"/></l><r>серчать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қайғыр<s n="v"/><s n="iv"/></l><r>сетовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>киін<s n="v"/><s n="iv"/></l><r>переодеваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жыла<s n="v"/><s n="iv"/></l><r>плакать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>отыр<s n="v"/><s n="iv"/></l><r>садиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>отыр<s n="v"/><s n="iv"/></l><r>сидеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>аңса<s n="v"/><s n="iv"/></l><r>скучать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жарқыра<s n="v"/><s n="iv"/></l><r>сиять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>секіріп<b/>өт<s n="v"/><s n="tv"/></l><r>скакать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тісін<b/>ақсит<s n="v"/><s n="tv"/></l><r>скалиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жанжалдас<s n="v"/><s n="iv"/></l><r>скандалить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жинақтал<s n="v"/><s n="tv"/></l><r>скапливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>адақта<s n="v"/><s n="tv"/></l><r>скитаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бүктел<s n="v"/><s n="tv"/></l><r>складываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сықырла<s n="v"/><s n="tv"/></l><r>скрипеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кішіпейіл<b/>бол<s n="v"/><s n="tv"/></l><r>скромничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>әлсізден<s n="v"/><s n="iv"/></l><r>слабеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>күл<s n="v"/><s n="iv"/></l><r>смеяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>айтыс<s n="v"/><s n="iv"/></l><r>спорить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жағдай<b/>жаса<s n="v"/><s n="iv"/></l><r>способствовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>дарылда<s n="v"/><s n="tv"/></l><r>тарахтеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ері<s n="v"/><s n="iv"/></l><r>таять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қараңғылан<s n="v"/><s n="iv"/></l><r>темнеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жылын<s n="v"/><s n="tv"/></l><r>теплиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>сорғала<s n="v"/><s n="iv"/></l><r>течь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>семір<s n="v"/><s n="iv"/></l><r>толстеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бат<s n="v"/><s n="iv"/></l><r>тонуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>мерекеле<s n="v"/><s n="tv"/></l><r>торжествовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>асығ<s n="v"/><s n="tv"/></l><r>торопиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүрек<b/>айн<s n="v"/><s n="tv"/></l><r>тошнить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қажет<b/>бол<s n="v"/><s n="tv"/></l><r>требоваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айығ<s n="v"/><s n="tv"/></l><r>трезветь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қорқ<s n="v"/><s n="iv"/></l><r>трусить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>тырыс<s n="v"/><s n="iv"/></l><r>тщиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қаш<s n="v"/><s n="iv"/></l><r>убегать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>босатыл<s n="v"/><s n="tv"/></l><r>уволиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ері<s n="v"/><s n="iv"/></l><r>увязываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өш<s n="v"/><s n="tv"/></l><r>угасать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тарт<s n="v"/><s n="tv"/></l><r>удаваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кешкі<b/>ас<b/>іш<s n="v"/><s n="tv"/></l><r>ужинать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жалтар<s n="v"/><s n="tv"/></l><r>уклониться<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ұш<s n="v"/><s n="iv"/></l><r>улетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>күл<s n="v"/><s n="iv"/></l><r>улыбаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кішірей<s n="v"/><s n="tv"/></l><r>уменьшаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>пысқыр<s n="v"/><s n="iv"/></l><r>фыркать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шалағай<b/>істе<s n="v"/><s n="tv"/></l><r>халтурить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сырқаттан<s n="v"/><s n="tv"/></l><r>хворать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қулан<s n="v"/><s n="tv"/></l><r>хитрить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сықылда<s n="v"/><s n="tv"/></l><r>хихикать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>балшылда<s n="v"/><s n="tv"/></l><r>хлюпать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бар<s n="v"/><s n="iv"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p></e>
-<e><p><l>бар<s n="v"/><s n="iv"/><s n="ger_past"/><s n="px1sg"/></l><r>хождение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
-
-
 <e><p><l>жүр<s n="v"/><s n="iv"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>басқар<s n="v"/><s n="tv"/></l><r>хозяйничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тоңа<b/>баста<s n="v"/><s n="tv"/></l><r>холодеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарқылдап<b/>күл<s n="v"/><s n="tv"/></l><r>хохотать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>батылдан<s n="v"/><s n="iv"/></l><r>храбриться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қорылда<s n="v"/><s n="iv"/></l><r>храпеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ақса<s n="v"/><s n="iv"/></l><r>хромать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қорсылда<s n="v"/><s n="iv"/></l><r>хрюкнуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>арықта<s n="v"/><s n="iv"/></l><r>худеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бұзақылық<b/>жаса<s n="v"/><s n="tv"/></l><r>хулиганить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>адымда<s n="v"/><s n="iv"/></l><r>шагать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>гүлде<s n="v"/><s n="iv"/></l><r>цвести<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>көзде<s n="v"/><s n="tv"/></l><r>целиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сүйіс<s n="v"/><s n="tv"/></l><r>целоваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сіресіп<b/>қал<s n="v"/><s n="tv"/></l><r>цепенеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>наздан<s n="v"/><s n="tv"/></l><r>церемониться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айналып<b/>жүр<s n="v"/><s n="tv"/></l><r>циркулировать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тоқылда<s n="v"/><s n="tv"/></l><r>цокать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>түшкір<s n="v"/><s n="iv"/></l><r>чихать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жекір<s n="v"/><s n="iv"/></l><r>цыкнуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сылпылдат<s n="v"/><s n="tv"/></l><r>чавкать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>түтінде<s n="v"/><s n="tv"/></l><r>чадить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сол<s n="v"/><s n="iv"/></l><r>чахнуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>алмас<s n="v"/><s n="iv"/></l><r>чередоваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарайт<s n="v"/><s n="tv"/></l><r>чернеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қасын<s n="v"/><s n="tv"/></l><r>чесаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сызда<s n="v"/><s n="iv"/></l><r>щемить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қаңғыр<s n="v"/><s n="iv"/></l><r>шляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шула<s n="v"/><s n="iv"/></l><r>шуметь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қимылда<s n="v"/><s n="iv"/></l><r>шевелиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұйықта<s n="v"/><s n="iv"/></l><r>спаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қатыс<s n="v"/><s n="iv"/></l><r>участвовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>араздас<s n="v"/><s n="iv"/></l><r>ссориться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айқас<s n="v"/><s n="iv"/></l><r>сражаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жетіл<s n="v"/><s n="iv"/></l><r>созревать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қысқар<s n="v"/><s n="iv"/></l><r>сокращаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қайғыр<s n="v"/><s n="iv"/></l><r>сокрушаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>күмәндан<s n="v"/><s n="iv"/></l><r>сомневаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жалғас<s n="v"/><s n="iv"/></l><r>соприкасаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ілес<s n="v"/><s n="iv"/></l><r>сопутствовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жарыс<s n="v"/><s n="iv"/></l><r>соревноваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жылжы<s n="v"/><s n="iv"/></l><r>соскальзывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шайқал<s n="v"/><s n="iv"/></l><r>сотрясать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тамшыла<s n="v"/><s n="iv"/></l><r>сочиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>оқы<s n="v"/><s n="iv"/></l><r>читать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 
+<e><p><l>кел<s n="v"/><s n="iv"/></l><r>прийти<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<!--<e><p><l>кел<s n="v"/><s n="iv"/></l><r>приходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кел<s n="v"/><s n="iv"/></l><r>являться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кел<s n="v"/><s n="iv"/></l><r>пребывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кел<s n="v"/><s n="iv"/></l><r>наступить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>кел<s n="v"/><s n="iv"/></l><r>приехать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>-->
+<e><p><l>оқы<s n="v"/><s n="iv"/></l><r>учиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тұр<s n="v"/><s n="iv"/></l><r>стоить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<!--<e><p><l>тұр<s n="v"/><s n="iv"/></l><r>стоять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тұр<s n="v"/><s n="iv"/></l><r>жить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>-->
+<e><p><l>ұна<s n="v"/><s n="iv"/></l><r>нравиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ауна<s n="v"/><s n="iv"/></l><r>перекатываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жасырын<s n="v"/><s n="iv"/></l><r>прятаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>секір<s n="v"/><s n="iv"/></l><r>прыгать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айналыс<s n="v"/><s n="iv"/></l><r>заниматься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шығарыл<s n="v"/><s n="iv"/></l><r>высовываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұмтыл<s n="v"/><s n="iv"/></l><r>стремиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>булан<s n="v"/><s n="iv"/></l><r>париться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>көбіктен<s n="v"/><s n="iv"/></l><r>пениться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>еңкей<s n="v"/><s n="iv"/></l><r>наклоняться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қана<s n="v"/><s n="iv"/></l><r>кровоточить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тарал<s n="v"/><s n="iv"/></l><r>распространяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жан<s n="v"/><s n="iv"/></l><r>гореть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сүйретіл<s n="v"/><s n="iv"/></l><r>тащиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тыйыл<s n="v"/><s n="iv"/></l><r>воздерживаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>без<s n="v"/><s n="iv"/></l><r>отрекаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>көтеріл<s n="v"/><s n="iv"/></l><r>подыматься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жайыл<s n="v"/><s n="iv"/></l><r>расползаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сырғана<s n="v"/><s n="iv"/></l><r>скользить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тырыс<s n="v"/><s n="iv"/></l><r>стараться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ісін<s n="v"/><s n="iv"/></l><r>разбухать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>гүлде<s n="v"/><s n="iv"/></l><r>процветать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұшыра<s n="v"/><s n="iv"/></l><r>подвергаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жазыл<s n="v"/><s n="iv"/></l><r>подписываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>оян<s n="v"/><s n="iv"/></l><r>просыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қарсылас<s n="v"/><s n="iv"/></l><r>противиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұсыныл<s n="v"/><s n="iv"/></l><r>предлагаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сұран<s n="v"/><s n="iv"/></l><r>вымаливать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жау<s n="v"/><s n="iv"/></l><r>выпадать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сұран<s n="v"/><s n="iv"/></l><r>выпрашиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>секір<s n="v"/><s n="iv"/></l><r>выпрыгивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>секір<s n="v"/><s n="iv"/></l><r>выскакивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шығарыл<s n="v"/><s n="iv"/></l><r>выставляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шашыл<s n="v"/><s n="iv"/></l><r>высыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>адымда<s n="v"/><s n="iv"/></l><r>вышагивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сол<s n="v"/><s n="iv"/></l><r>вянуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қара<s n="v"/><s n="iv"/></l><r>глядеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тартын<s n="v"/><s n="iv"/></l><r>дергаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>созыл<s n="v"/><s n="iv"/></l><r>длиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұш<s n="v"/><s n="iv"/></l><r>долетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жет<s n="v"/><s n="iv"/></l><r>достигать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>дірілде<s n="v"/><s n="iv"/></l><r>дрожать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүр<s n="v"/><s n="iv"/></l><r>идти<s n="vblex"/><s n="impf"/><s n="iv"/></r></p><par n="impf__verb"/></e>
+<!--<e><p><l>жүр<s n="v"/><s n="iv"/></l><r>наезжать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүр<s n="v"/><s n="iv"/></l><r>ехать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүр<s n="v"/><s n="iv"/></l><r>ездить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүр<s n="v"/><s n="iv"/></l><r>двигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>-->
+<e><p><l>семір<s n="v"/><s n="iv"/></l><r>жиреть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүгір<s n="v"/><s n="iv"/></l><r>забегать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жазыл<s n="v"/><s n="iv"/></l><r>записываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жүз<s n="v"/><s n="iv"/></l><r>заплывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қалтыра<s n="v"/><s n="iv"/></l><r>знобить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ашуланып<b/>кет<s n="v"/><s n="iv"/></l><r>негодовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өрмеле<s n="v"/><s n="iv"/></l><r>лазить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өрмеле<s n="v"/><s n="iv"/></l><r>лезть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ұш<s n="v"/><s n="iv"/></l><r>летать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бұлға<s n="v"/><s n="iv"/></l><r>махать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>арманда<s n="v"/><s n="iv"/></l><r>мечтать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>татулас<s n="v"/><s n="iv"/></l><r>мириться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>абырж<s n="v"/><s n="iv"/></l><r>нервничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ызаландыр<s n="v"/><s n="iv"/></l><r>нервировать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ықылықта<s n="v"/><s n="iv"/></l><r>икать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>әлсізден<s n="v"/><s n="iv"/></l><r>изнывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>күйре<s n="v"/><s n="iv"/></l><r>изводить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шығындан<s n="v"/><s n="iv"/></l><r>издерживаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>төгіл<s n="v"/><s n="iv"/></l><r>изливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жетіл<s n="v"/><s n="iv"/></l><r>изощряться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шарша<s n="v"/><s n="iv"/></l><r>изматываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>тоз<s n="v"/><s n="iv"/></l><r>изнашиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>ти<s n="v"/><s n="iv"/></l><r>касаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сырғана<s n="v"/><s n="iv"/></l><r>кататься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қайна<s n="v"/><s n="iv"/></l><r>кипеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шомыл<s n="v"/><s n="iv"/></l><r>купаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өс<s n="v"/><s n="iv"/></l><r>нарастать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>арсыздан<s n="v"/><s n="iv"/></l><r>наглеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>сүңг<s n="v"/><s n="iv"/></l><r>нырять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айыптал<s n="v"/><s n="iv"/></l><r>обвиняться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>күйдіріл<s n="v"/><s n="iv"/></l><r>обжигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 
+<e><p><l>жалтар<s n="v"/><s n="tv"/></l><r>уклониться<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>қызар<s n="v"/><s n="iv"/></l><r>покраснеть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>амандас<s n="v"/><s n="iv"/></l><r>поздороваться<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>сол<s n="v"/><s n="iv"/></l><r>чахнуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 
-
+<!-- kate basy-->
 <e><p><l>еңбектен<s n="v"/><s n="iv"/></l><r>трудиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>соғыс<s n="v"/><s n="iv"/></l><r>воевать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>күрес<s n="v"/><s n="iv"/></l><r>бороться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -578,7 +840,6 @@
 <e><p><l>ашыл<s n="v"/><s n="tv"/></l><r>вскрываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e><!-- * -->
 <e><p><l>жүзеге<b/>ас<s n="v"/><s n="tv"/></l><r>осуществляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e><!-- *жүзеге еда -->
 <e><p><l>сығыл<s n="v"/><s n="tv"/></l><r>сжиматься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e><!-- * -->
-<e><p><l>кел<s n="v"/><s n="iv"/></l><r>наступить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>жина<s n="v"/><s n="tv"/></l><r>обзаводиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>тірі<b/>қал<s n="v"/><s n="tv"/></l><r>выживать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>су<s n="v"/><s n="tv"/></l><r>остывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -596,311 +857,47 @@
 <e><p><l>тұр<s n="v"/><s n="iv"/></l><r>становиться<b/><s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жөндел<s n="v"/><s n="iv"/></l><r>чиниться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 
-
-
-<e><p><l>шиқылда<s n="v"/><s n="tv"/></l><r>чирикать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>есептел<s n="v"/><s n="tv"/></l><r>числиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>оқыл<s n="v"/><s n="tv"/></l><r>читаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>түшкір<s n="v"/><s n="tv"/></l><r>чихать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қағыстыр<s n="v"/><s n="tv"/></l><r>чокаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сезіл<s n="v"/><s n="tv"/></l><r>чувствоваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жатырқа<s n="v"/><s n="tv"/></l><r>чуждаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бойды<b/>аулай<b/>ұста<s n="v"/><s n="tv"/></l><r>чураться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>адымда<s n="v"/><s n="tv"/></l><r>шагать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тіміскіле<s n="v"/><s n="tv"/></l><r>шарить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>былқылда<s n="v"/><s n="tv"/></l><r>шататься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қимылда<s n="v"/><s n="tv"/></l><r>шевелиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ақырын<b/>желпін<s n="v"/><s n="tv"/></l><r>шелохнуться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қабыршықтан<s n="v"/><s n="tv"/></l><r>шелушиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>қабыршықтан<s n="v"/><s n="tv"/></l><r>шелушиться<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>сақаулан<s n="v"/><s n="tv"/></l><r>шепелявить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>пышылда<s n="v"/><s n="tv"/></l><r>шипеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ысылда<s n="v"/><s n="tv"/></l><r>шипить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кеңейт<s n="v"/><s n="tv"/></l><r>шириться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>шылпылда<s n="v"/><s n="tv"/></l><r>шлепаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қаңғыр<s n="v"/><s n="tv"/></l><r>шляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шула<s n="v"/><s n="tv"/></l><r>шуметь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қалжыңда<s n="v"/><s n="tv"/></l><r>шутить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>былдырла<s n="v"/><s n="tv"/></l><r>щебетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шерт<s n="v"/><s n="tv"/></l><r>щелкать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сызда<s n="v"/><s n="tv"/></l><r>щемить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тікірейіп<b/>тұр<s n="v"/><s n="tv"/></l><r>щериться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жұмыл<s n="v"/><s n="tv"/></l><r>щуриться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сығылыс<s n="v"/><s n="tv"/></l><r>ютиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кекет<s n="v"/><s n="tv"/></l><r>язвить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ежелен<s n="v"/><s n="tv"/></l><r>яриться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қатыс<s n="v"/><s n="tv"/></l><r>участвовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жеделден<s n="v"/><s n="tv"/></l><r>учащаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>аударыл<s n="v"/><s n="tv"/></l><r>сваливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>араздас<s n="v"/><s n="tv"/></l><r>ссориться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>аударыл<s n="v"/><s n="tv"/></l><r>ссылаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>құйыл<s n="v"/><s n="tv"/></l><r>ссыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жарамсыздан<s n="v"/><s n="tv"/></l><r>срабатывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айқас<s n="v"/><s n="tv"/></l><r>сражаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бітіс<s n="v"/><s n="tv"/></l><r>срастаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тегістел<s n="v"/><s n="tv"/></l><r>срываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>құтқарыл<s n="v"/><s n="tv"/></l><r>спасаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұйықта<s n="v"/><s n="tv"/></l><r>спаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жаяу<b/>жүр<s n="v"/><s n="tv"/></l><r>спешиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бар<b/>бол<s n="v"/><s n="tv"/></l><r>существовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жарас<s n="v"/><s n="tv"/></l><r>сходиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қосылдар<s n="v"/><s n="tv"/></l><r>совокупляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жасырма<s n="v"/><s n="tv"/></l><r>сознаваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жетіл<s n="v"/><s n="tv"/></l><r>созревать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қысқар<s n="v"/><s n="tv"/></l><r>сокращаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қайғыр<s n="v"/><s n="tv"/></l><r>сокрушаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күмәндан<s n="v"/><s n="tv"/></l><r>сомневаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сәкестел<s n="v"/><s n="tv"/></l><r>соответствовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өзара<b/>қатынаста<b/>бол<s n="v"/><s n="tv"/></l><r>соотноситься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бақталас<s n="v"/><s n="tv"/></l><r>соперничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>пысылда<s n="v"/><s n="tv"/></l><r>сопеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жалғас<s n="v"/><s n="tv"/></l><r>соприкасаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жарас<s n="v"/><s n="iv"/></l><r>сходиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кекет<s n="v"/><s n="tv"/></l><r>язвить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>беріл<s n="v"/><s n="tv"/></l><r>сопровождаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарсы<b/>тұр<s n="v"/><s n="tv"/></l><r>сопротивляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ілес<s n="v"/><s n="tv"/></l><r>сопутствовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жарыс<s n="v"/><s n="tv"/></l><r>соревноваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>іргелес<s n="v"/><s n="tv"/></l><r>соседствовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жылжы<s n="v"/><s n="tv"/></l><r>соскальзывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>құрыл<s n="v"/><s n="tv"/></l><r>состоять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қайғысына<b/>ортақтас<s n="v"/><s n="tv"/></l><r>сострадать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қызмет<b/>істе<s n="v"/><s n="tv"/></l><r>сотрудничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шайқал<s n="v"/><s n="tv"/></l><r>сотрясать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кеуіп<b/>кет<s n="v"/><s n="tv"/></l><r>сохнуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тамшыла<s n="v"/><s n="tv"/></l><r>сочиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>оқы<s n="v"/><s n="tv"/></l><r>читать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>аш<s n="v"/><s n="tv"/></l><r>открываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>биле<s n="v"/><s n="tv"/></l><r>танцевать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бол<s n="v"/><s n="tv"/></l><r>стать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күрес<s n="v"/><s n="tv"/></l><r>бороться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күрес<s n="v"/><s n="tv"/></l><r>бороться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>төгіл<s n="v"/><s n="tv"/></l><r>рассыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кел<s n="v"/><s n="tv"/></l><r>являться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>оқы<s n="v"/><s n="tv"/></l><r>учиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тұр<s n="v"/><s n="tv"/></l><r>жить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұна<s n="v"/><s n="tv"/></l><r>нравиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ауна<s n="v"/><s n="tv"/></l><r>перекатываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тұр<s n="v"/><s n="tv"/></l><r>стоять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тұр<s n="v"/><s n="tv"/></l><r>стоить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жасырын<s n="v"/><s n="tv"/></l><r>прятаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>төгіл<s n="v"/><s n="tv"/></l><r>рассыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>секір<s n="v"/><s n="tv"/></l><r>прыгать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>көмектес<s n="v"/><s n="tv"/></l><r>помогать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>кеуіп<b/>кет<s n="v"/><s n="tv"/></l><r>сохнуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>становится<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>стать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>күрес<s n="v"/><s n="iv"/></l><r>бороться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>төгіл<s n="v"/><s n="iv"/></l><r>рассыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>төгіл<s n="v"/><s n="iv"/></l><r>рассыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ашыл<s n="v"/><s n="tv"/></l><r>открываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жорғалап<b/>шығ<s n="v"/><s n="tv"/></l><r>выползать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>себіл<s n="v"/><s n="tv"/></l><r>посыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>төгіл<s n="v"/><s n="tv"/></l><r>посыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>дәмдел<s n="v"/><s n="tv"/></l><r>лакомиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айналыс<s n="v"/><s n="tv"/></l><r>заниматься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шығарыл<s n="v"/><s n="tv"/></l><r>высовываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бол<s n="v"/><s n="tv"/></l><r>становится<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>байқал<s n="v"/><s n="tv"/></l><r>замечаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>төгіл<s n="v"/><s n="iv"/></l><r>посыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>тиесілі<b/><s n="v"/><s n="tv"/></l><r>принадлежать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұмтыл<s n="v"/><s n="tv"/></l><r>стремиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жина<s n="v"/><s n="tv"/></l><r>убираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айналаны<b/>байқа<s n="v"/><s n="tv"/></l><r>осмотреться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өт<s n="v"/><s n="tv"/></l><r>проходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өт<s n="v"/><s n="tv"/></l><r>проходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>дүрліктір<s n="v"/><s n="tv"/></l><r>паниковать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>була<s n="v"/><s n="tv"/></l><r>парить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>булан<s n="v"/><s n="tv"/></l><r>париться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қылжақта<s n="v"/><s n="tv"/></l><r>паясничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>көбіктен<s n="v"/><s n="tv"/></l><r>пениться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұста<s n="v"/><s n="tv"/></l><r>держаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кел<s n="v"/><s n="tv"/></l><r>пребывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>піс<s n="v"/><s n="tv"/></l><r>зреть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>еңкей<s n="v"/><s n="tv"/></l><r>наклоняться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айыр<s n="v"/><s n="tv"/></l><r>лишать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қана<s n="v"/><s n="tv"/></l><r>кровоточить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тарал<s n="v"/><s n="tv"/></l><r>распространяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жан<s n="v"/><s n="tv"/></l><r>гореть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кел<s n="v"/><s n="tv"/></l><r>приходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бол<s n="v"/><s n="tv"/></l><r>приходится<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сүйретіл<s n="v"/><s n="tv"/></l><r>тащиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тыйыл<s n="v"/><s n="tv"/></l><r>воздерживаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>без<s n="v"/><s n="tv"/></l><r>отрекаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айт<s n="v"/><s n="tv"/></l><r>высказывать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>засыпать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>приходиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>шір<s n="v"/><s n="iv"/></l><r>гнить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>тоң<s n="v"/><s n="tv"/></l><r>замерзать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарсы<b/>шығ<s n="v"/><s n="tv"/></l><r>противоречить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>көтеріл<s n="v"/><s n="tv"/></l><r>подыматься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>соғыл<s n="v"/><s n="tv"/></l><r>ударяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>артын<s n="v"/><s n="tv"/></l><r>грузиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>рұқсат<b/>етіл<s n="v"/><s n="tv"/></l><r>позволяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өндіріл<s n="v"/><s n="tv"/></l><r>производиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жобалан<s n="v"/><s n="tv"/></l><r>подразумеваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>түсініл<s n="v"/><s n="tv"/></l><r>пониматься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>оқытыл<s n="v"/><s n="tv"/></l><r>преподаваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жайыл<s n="v"/><s n="tv"/></l><r>расползаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сырғана<s n="v"/><s n="tv"/></l><r>скользить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ілін<s n="v"/><s n="tv"/></l><r>подвешиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>иіріл<s n="v"/><s n="tv"/></l><r>прясться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бұзыл<s n="v"/><s n="tv"/></l><r>портиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ойыл<s n="v"/><s n="tv"/></l><r>проламываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>мүңк<s n="v"/><s n="tv"/></l><r>вонять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тырыс<s n="v"/><s n="tv"/></l><r>стараться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ісін<s n="v"/><s n="tv"/></l><r>разбухать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>гүлде<s n="v"/><s n="tv"/></l><r>процветать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бас<s n="v"/><s n="tv"/></l><r>ступать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұшыра<s n="v"/><s n="tv"/></l><r>подвергаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жазыл<s n="v"/><s n="tv"/></l><r>подписываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жойыл<s n="v"/><s n="tv"/></l><r>уничтожаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>оян<s n="v"/><s n="tv"/></l><r>просыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қарсылас<s n="v"/><s n="tv"/></l><r>противиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұсыныл<s n="v"/><s n="tv"/></l><r>предлагаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұшып<b/>кет<s n="v"/><s n="tv"/></l><r>вылетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>құй<s n="v"/><s n="tv"/></l><r>выливать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>құйыл<s n="v"/><s n="tv"/></l><r>выливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жағыл<s n="v"/><s n="tv"/></l><r>вымазывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сұран<s n="v"/><s n="tv"/></l><r>вымаливать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сыпырыл<s n="v"/><s n="tv"/></l><r>выметаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жау<s n="v"/><s n="tv"/></l><r>выпадать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сұран<s n="v"/><s n="tv"/></l><r>выпрашиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>секір<s n="v"/><s n="tv"/></l><r>выпрыгивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>отырғызыл<s n="v"/><s n="tv"/></l><r>высаживаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айт<s n="v"/><s n="tv"/></l><r>высказывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айту<s n="v"/><s n="tv"/></l><r>высказываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>секір<s n="v"/><s n="tv"/></l><r>выскакивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тыңда<s n="v"/><s n="tv"/></l><r>выслушиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шығарыл<s n="v"/><s n="tv"/></l><r>выставляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айда<s n="v"/><s n="tv"/></l><r>высылать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шаш<s n="v"/><s n="tv"/></l><r>высыпать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шашыл<s n="v"/><s n="tv"/></l><r>высыпаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>адымда<s n="v"/><s n="tv"/></l><r>вышагивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сол<s n="v"/><s n="tv"/></l><r>вянуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қара<s n="v"/><s n="tv"/></l><r>глядеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ақылсыздан<s n="v"/><s n="tv"/></l><r>глупеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шір<s n="v"/><s n="tv"/></l><r>гнить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>іріңде<s n="v"/><s n="tv"/></l><r>гноить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жарқылда<s n="v"/><s n="tv"/></l><r>греметь<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қорқыт<s n="v"/><s n="tv"/></l><r>грозить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>көңілсізден<s n="v"/><s n="tv"/></l><r>грустить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кірле<s n="v"/><s n="tv"/></l><r>грязнеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қыдыр<s n="v"/><s n="tv"/></l><r>гулять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қозғал<s n="v"/><s n="tv"/></l><r>двигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүр<s n="v"/><s n="tv"/></l><r>двигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қос<b/>көрін<s n="v"/><s n="tv"/></l><r>двоиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кезекте<b/>бол<s n="v"/><s n="tv"/></l><r>дежурить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>әрекет<b/>ет<s n="v"/><s n="tv"/></l><r>действовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тартын<s n="v"/><s n="tv"/></l><r>дергаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>созыл<s n="v"/><s n="tv"/></l><r>длиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жетіп<b/>ал<s n="v"/><s n="tv"/></l><r>добираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сен<s n="v"/><s n="tv"/></l><r>доверять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жеткіз<s n="v"/><s n="tv"/></l><r>доводить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жеткіз<s n="v"/><s n="tv"/></l><r>доносить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қу<s n="v"/><s n="tv"/></l><r>догонять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күт<s n="v"/><s n="tv"/></l><r>дожидать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұш<s n="v"/><s n="tv"/></l><r>долетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жет<s n="v"/><s n="tv"/></l><r>достигать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>дірілде<s n="v"/><s n="tv"/></l><r>дрожать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>дос<b/>бол<s n="v"/><s n="tv"/></l><r>дружить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>дем<b/>ал<s n="v"/><s n="tv"/></l><r>дышать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>түтінде<s n="v"/><s n="tv"/></l><r>дымиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүр<s n="v"/><s n="tv"/></l><r>ехать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүр<s n="v"/><s n="tv"/></l><r>ездить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүр<s n="v"/><s n="tv"/></l><r>ездить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шағым<b/>айт<s n="v"/><s n="tv"/></l><r>жаловаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сарғай<s n="v"/><s n="tv"/></l><r>желтеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өмір<b/>сүр<s n="v"/><s n="tv"/></l><r>жить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>семір<s n="v"/><s n="tv"/></l><r>жиреть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүгір<s n="v"/><s n="tv"/></l><r>забегать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>біте<s n="v"/><s n="tv"/></l><r>забивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>біте<s n="v"/><s n="tv"/></l><r>забивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>алып<b/><b/>қой<s n="v"/><s n="tv"/></l><r>забирать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>алып<b/>қой<s n="v"/><s n="tv"/></l><r>забирать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қамқор<b/>бол<s n="v"/><s n="tv"/></l><r>заботиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қамқор<b/>бол<s n="v"/><s n="tv"/></l><r>заботиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күнге<b/>күй<s n="v"/><s n="tv"/></l><r>загорать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>дуала<s n="v"/><s n="tv"/></l><r>заклинать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жазыл<s n="v"/><s n="tv"/></l><r>записываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүз<s n="v"/><s n="tv"/></l><r>заплывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жұл<s n="v"/><s n="tv"/></l><r>щипать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>засыпать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қараңғылат<s n="v"/><s n="tv"/></l><r>затемнять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қараңғылат<s n="v"/><s n="tv"/></l><r>затемнять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бәсеңде<s n="v"/><s n="tv"/></l><r>затихать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>естіл<s n="v"/><s n="tv"/></l><r>звучать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>естіл<s n="v"/><s n="tv"/></l><r>звучать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қалтыра<s n="v"/><s n="tv"/></l><r>знобить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ойна<s n="v"/><s n="tv"/></l><r>играть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-
-<e><p><l>сенбе<s n="v"/><s n="tv"/></l><r>извериться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бұралаңда<s n="v"/><s n="tv"/></l><r>извиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күйре<s n="v"/><s n="tv"/></l><r>изводить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күйре<s n="v"/><s n="tv"/></l><r>изводить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жалтар<s n="v"/><s n="tv"/></l><r>изворачиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бұрмала<s n="v"/><s n="tv"/></l><r>извращать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бүк<s n="v"/><s n="tv"/></l><r>изгибать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұмыттырыл<s n="v"/><s n="tv"/></l><r>изглаживаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>мазақ<b/>ет<s n="v"/><s n="tv"/></l><r>издеваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жұлқылан<s n="v"/><s n="tv"/></l><r>издергиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шығындан<s n="v"/><s n="tv"/></l><r>издерживаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қайтыс<b/>бол<s n="v"/><s n="tv"/></l><r>издыхать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>емдел<s n="v"/><s n="tv"/></l><r>излечиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>төгіл<s n="v"/><s n="tv"/></l><r>изливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>құжыраңда<s n="v"/><s n="tv"/></l><r>изловчаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>нұр<b/>шашыл<s n="v"/><s n="tv"/></l><r>излучаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шаршат<s n="v"/><s n="tv"/></l><r>изматывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шарша<s n="v"/><s n="tv"/></l><r>изматываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өзгертіл<s n="v"/><s n="tv"/></l><r>изменяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қажыл<s n="v"/><s n="tv"/></l><r>измочаливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тоз<s n="v"/><s n="tv"/></l><r>изнашиваться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қалжыра<s n="v"/><s n="tv"/></l><r>изнуряться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>әлсізден<s n="v"/><s n="tv"/></l><r>изнывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жетіл<s n="v"/><s n="tv"/></l><r>изощряться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>таңқал<s n="v"/><s n="tv"/></l><r>изумляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ықылықта<s n="v"/><s n="tv"/></l><r>икать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жөндел<s n="v"/><s n="tv"/></l><r>исправляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ти<s n="v"/><s n="tv"/></l><r>касаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сырғана<s n="v"/><s n="tv"/></l><r>кататься<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жөтел<s n="v"/><s n="tv"/></l><r>кашлять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>құйыл<s n="v"/><s n="tv"/></l><r>выливаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жойыл<s n="v"/><s n="tv"/></l><r>уничтожаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>өндіріл<s n="v"/><s n="tv"/></l><r>производиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>құй<s n="v"/><s n="tv"/></l><r>выливать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>соғыл<s n="v"/><s n="tv"/></l><r>ударяться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>айналаны<b/>байқа<s n="v"/><s n="tv"/></l><r>осмотреться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жат<s n="v"/><s n="iv"/></l><r>ложиться<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>басын<b/>изе<s n="v"/><s n="tv"/></l><r>кивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қайна<s n="v"/><s n="tv"/></l><r>кипеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шомыл<s n="v"/><s n="iv"/></l><r>купаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тісте<s n="v"/><s n="tv"/></l><r>кусаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өрмеле<s n="v"/><s n="tv"/></l><r>лазить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өрмеле<s n="v"/><s n="tv"/></l><r>лазать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өрмеле<s n="v"/><s n="tv"/></l><r>лезть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ұш<s n="v"/><s n="iv"/></l><r>летать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жат<s n="v"/><s n="tv"/></l><r>ложиться<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
-<e><p><l>бұлға<s n="v"/><s n="tv"/></l><r>махать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>тоң<s n="v"/><s n="tv"/></l><r>мерзнуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>арманда<s n="v"/><s n="tv"/></l><r>мечтать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кедергі<b/>жаса<s n="v"/><s n="tv"/></l><r>мешаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жыпылықтат<s n="v"/><s n="tv"/></l><r>мигать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>татулас<s n="v"/><s n="tv"/></l><r>мириться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сулан<s n="v"/><s n="tv"/></l><r>мокнуть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жалбарын<s n="v"/><s n="tv"/></l><r>молить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жалбарын<s n="v"/><s n="tv"/></l><r>молиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>үндеме<s n="v"/><s n="tv"/></l><r>молчать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жыпылықта<s n="v"/><s n="tv"/></l><r>моргать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ойла<s n="v"/><s n="tv"/></l><r>мыслить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жуын<s n="v"/><s n="tv"/></l><r>мыться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жуын<s n="v"/><s n="tv"/></l><r>мыться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>толтыру<s n="v"/><s n="tv"/></l><r>набираться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>арсыздан<s n="v"/><s n="tv"/></l><r>наглеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жүр<s n="v"/><s n="tv"/></l><r>наезжать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>киліг<s n="v"/><s n="tv"/></l><r>налетать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>меңзе<s n="v"/><s n="tv"/></l><r>намекать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шабуыл<b/>жаса<s n="v"/><s n="tv"/></l><r>нападать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шабуыл<b/>жаса<s n="v"/><s n="tv"/></l><r>нападать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>еске<b/>сал<s n="v"/><s n="tv"/></l><r>напоминать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>өс<s n="v"/><s n="tv"/></l><r>нарастать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айтқанын<b/>істет<s n="v"/><s n="tv"/></l><r>настаивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>табыл<s n="v"/><s n="iv"/></l><r>находиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бастал<s n="v"/><s n="tv"/></l><r>начинаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ашуланып<b/>кет<s n="v"/><s n="iv"/></l><r>негодовать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>абыржу<s n="v"/><s n="iv"/></l><r>нервничать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>ызаландыру<s n="v"/><s n="iv"/></l><r>нервировать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>шапқыла<s n="v"/><s n="iv"/></l><r>носиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>қажетсін<s n="v"/><s n="tv"/></l><r>нуждаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-
 <e><p><l>қақса<s n="v"/><s n="iv"/></l><r>ныть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>сүңг<s n="v"/><s n="iv"/></l><r>нырять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>айыптал<s n="v"/><s n="iv"/></l><r>обвиняться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күйдір<s n="v"/><s n="tv"/></l><r>обжигать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>күйдіріл<s n="v"/><s n="iv"/></l><r>обжигаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>иелен<s n="v"/><s n="iv"/></l><r>обзаводиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жөндел<s n="v"/><s n="iv"/></l><r>исправляться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>табыл<s n="v"/><s n="iv"/></l><r>находиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жуын<s n="v"/><s n="iv"/></l><r>мыться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<!-- kate sony -->
 
 <!--18.02.2014-->
+<e><p><l>қайтар<s n="v"/><s n="iv"/></l><r>возвращать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 
-<e><p><l>қайтар<s n="v"/><s n="tv"/></l><r>вернуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>қайтар<s n="v"/><s n="iv"/></l><r>вернуть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>сергіт<s n="v"/><s n="tv"/></l><r>взбодрить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>өлше<s n="v"/><s n="tv"/></l><r>взвесить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>араластыр<s n="v"/><s n="tv"/></l><r>взболтать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
@@ -1967,6 +1964,11 @@
 <e><p><l>керек<b/>бол<s n="v"/><s n="tv"/></l><r>понадобиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>керек<b/>бол<s n="v"/><s n="tv"/></l><r>понадобиться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>керек<s n="vblex"/></l><r>нужно<s n="vaux"/><s n="pres"/></r></p></e>
+<e r="LR"><p><l>ма<s n="qst"/></l><r></r></p></e>
+<e r="LR"><p><l>ба<s n="qst"/></l><r></r></p></e>
+<e r="LR"><p><l>па<s n="qst"/></l><r></r></p></e>
+<e r="LR"><p><l>ғой<s n="mod_ass"/></l><r></r></p></e>
+<e><p><l>үлгер<s n="v"/><s n="iv"/></l><r>успеть<s n="vblex"/><s n="perf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ұна<s n="v"/><s n="tv"/></l><r>понравиться<b/><s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>туғыз<s n="v"/><s n="tv"/></l><r>порождаться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қаран<s n="v"/><s n="tv"/></l><r>посмотреться<s n="vblex"/><s n="impf"/><s n="tv"/></r></p><par n="impf__verb"/></e>
@@ -2326,7 +2328,6 @@
 <e><p><l>кіргіз<s n="v"/><s n="iv"/></l><r>вносить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>жүргіз<s n="v"/><s n="iv"/></l><r>водить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>тұрғыз<s n="v"/><s n="iv"/></l><r>возводить<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>қайтар<s n="v"/><s n="iv"/></l><r>возвращать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>өте<s n="v"/><s n="iv"/></l><r>возмещать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>орнат<s n="v"/><s n="iv"/></l><r>воздвигать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>арт<s n="v"/><s n="iv"/></l><r>возлагать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
@@ -4490,7 +4491,7 @@
 <e><p><l>бекерлік<s n="n"/></l><r>тщетность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>тәте<s n="n"/></l><r>тетя<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 
-<!--Balzhan-->
+
 
 
 
@@ -4782,7 +4783,7 @@
 <e><p><l>дұшпан<s n="n"/></l><r>враг<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>дүбір<s n="n"/></l><r>топот<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>дүйсенбі<s n="n"/></l><r>понедельник<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>дүкен<s n="n"/></l><r>магазин<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>дүкен<s n="n"/></l><r>лавка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>дүрсіл<s n="n"/></l><r>стук<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>дыбыс<s n="n"/></l><r>звук<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>дым<s n="n"/></l><r>влага<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -9672,11 +9673,12 @@
 <e c="барлығы"><p><l>барлығы<s n="prn"/><s n="qnt"/><s n="px3sp"/></l><r>весь<s n="prn"/><s n="def"/><s n="mfn"/><s n="an"/><s n="pl"/></r></p></e>
 <e c="барлығын"><p><l>барлығы<s n="prn"/><s n="qnt"/><s n="px3sp"/><s n="acc"/></l><r>весь<s n="prn"/><s n="def"/><s n="mfn"/><s n="aa"/><s n="pl"/><s n="acc"/></r></p></e>
 <e c="барлығын"><p><l>барлығы<s n="prn"/><s n="qnt"/><s n="px3sp"/><s n="acc"/></l><r>весь<s n="prn"/><s n="def"/><s n="mfn"/><s n="nn"/><s n="pl"/><s n="acc"/></r></p></e>
-<e>       <p><l>әркім<s n="prn"/><s n="qnt"/></l>     <r>каждый<s n="det"/><s n="def"/><s n="m"/><s n="an"/></r></p></e>
-<e>       <p><l>ешнәрсе<s n="prn"/><s n="neg"/></l>   <r>ничто<s n="prn"/><s n="neg"/><s n="nt"/><s n="nn"/></r></p></e>
+<e>       <p><l>әркім<s n="prn"/><s n="qnt"/></l>      <r>каждый<s n="det"/><s n="def"/><s n="m"/><s n="an"/></r></p></e>
+<e>       <p><l>ешнәрсе<s n="prn"/><s n="neg"/></l>    <r>ничто<s n="prn"/><s n="neg"/><s n="nt"/><s n="nn"/></r></p></e>
 <e>       <p><l>кім<s n="prn"/><s n="itg"/></l>        <r>кто<s n="prn"/><s n="itg"/><s n="m"/><s n="aa"/></r></p></e>
+<e><p><l>кім<s n="prn"/><s n="itg"/><s n="gen"/></l>   <r>чей<s n="pos"/><s n="itg"/><s n="m"/><s n="an"/></r></p></e>
 <e>       <p><l>қанша<s n="prn"/><s n="itg"/></l>      <r>сколько<s n="prn"/><s n="itg"/><s n="mfn"/><s n="sg"/></r></p></e>
-<e>       <p><l>не<s n="prn"/><s n="itg"/></l>      <r>что<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p></e>
+<e>       <p><l>не<s n="prn"/><s n="itg"/></l>         <r>что<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p></e>
 <e>       <p><l>өз<s n="prn"/><s n="ref"/></l>         <r>сам<s n="det"/><s n="ref"/><s n="m"/><s n="an"/></r></p></e>
     <!-- Determiners -->
 <e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -9698,7 +9700,7 @@
 <e c="Сіздікі"><p><l>Сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/><s n="px"/></l><r>Ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
 <e c="оныкі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
 <e c="олардікі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
-<e>       <p><l>бұл<s n="det"/><s n="dem"/></l>         <r>этот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>бұл<s n="det"/><s n="dem"/></l>        <r>этот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>анау<s n="det"/><s n="dem"/></l>       <r>тот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>ол<s n="det"/><s n="dem"/></l>         <r>этот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>сол<s n="det"/><s n="dem"/></l>        <r>тот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -9711,8 +9713,8 @@
 <e>       <p><l>әрбір<s n="det"/><s n="qnt"/></l>     <r>каждый<s n="det"/><s n="def"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>бір<s n="det"/><s n="ind"/></l>        <r>один<s n="num"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>бірер<s n="det"/><s n="ind"/></l>      <r>какой<s n="det"/><s n="itg"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>       <p><l>қай<s n="det"/><s n="ind"/></l>        <r>какой<s n="det"/><s n="ind"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>       <p><l>қайсы<s n="det"/><s n="ind"/></l>      <r>какой<s n="det"/><s n="ind"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>қай<s n="det"/><s n="itg"/></l>        <r>какой<s n="det"/><s n="itg"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e>       <p><l>қайсы<s n="det"/><s n="itg"/></l>      <r>какой<s n="det"/><s n="ind"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>ешқандай<s n="det"/><s n="ind"/></l>   <r>никакой<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e> 
 <e>       <p><l>ешбір<s n="det"/><s n="ind"/></l>     <r>никакой<s n="det"/><s n="ind"/><s n="m"/>><s n="sg"/><s n="nom"/></r></p></e> 
 <e>       <p><l>ешқай<s n="det"/><s n="ind"/></l>   <r>никакой<s n="det"/><s n="ind"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e> 
@@ -13209,6 +13211,7 @@
 <e><p><l>қайдан<s n="adv"/></l><r>откуда<s n="adv"/></r></p></e>
 <e><p><l>қайтадан<s n="adv"/></l><r>снова<s n="adv"/></r></p></e>
 <e><p><l>қалай<s n="adv"/></l><r>как<s n="adv"/></r></p></e>
+<e><p><l>қашан<s n="adv"/></l><r>когда<s n="adv"/></r></p></e>
 <e><p><l>қарапайым<s n="adv"/></l><r>элементарно<s n="adv"/></r></p></e>
 <e><p><l>қарсы<s n="adv"/></l><r>навстречу<s n="adv"/></r></p></e>
 <e><p><l>қатты<s n="adv"/></l><r>сильно<s n="adv"/></r></p></e>
@@ -13383,7 +13386,8 @@
 <e><p><l>мөлшерсіз<s n="adv"/></l><r>несоразмерно<s n="adv"/></r></p></e>
 <e><p><l>кейбір<s n="adv"/></l><r>некоторое<s n="adv"/></r></p></e>
 <e><p><l>түрлі-түсті<s n="adv"/></l><r>многоцветно<s n="adv"/></r></p></e>
-<e><p><l>кайда<s n="adv"/></l><r>где<s n="adv"/></r></p></e>
+<e><p><l>қайда<s n="adv"/></l><r>где<s n="adv"/></r></p></e>
+<e><p><l>неге<s n="adv"/></l><r>почему<s n="adv"/></r></p></e>
 <e><p><l>қайдан<s n="adv"/></l><r>откуда<s n="adv"/></r></p></e>
 <e><p><l>тек<s n="adv"/></l><r>только<s n="adv"/></r></p></e>
 <e><p><l>алайда<s n="adv"/></l><r>только<s n="adv"/></r></p></e>
