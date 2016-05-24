@@ -1594,6 +1594,7 @@ If no format information is present it is removed. -->
     </rule>
 
 <rule comment="REGLA: N">
+      <!-- Jansaya -->
       <!--
       INPUT:  ^мектеп<n><attr>/школьный<adj><m><an><sg><nom>$
       OUTPUT: ^adj<AdjP>{^школьный<adj><m><an><sg><nom>$}$
@@ -3054,6 +3055,7 @@ If no format information is present it is removed. -->
     </rule>
 
 <rule comment="REGLA: ADJ N">
+      <!-- Jansaya -->
       <!--
       INPUT:  ^карт<adj>/старый<adj><sint><m><an><sg><nom>$ ^агач<n><nom>/дерево<n><nt><nn><nom>$
       OUTPUT: ^adj_n<SN>{^старый<adj><sint><nt><an><sg><nom>$ ^дерево<n><nt><nn><sg><nom>$}$
@@ -3370,16 +3372,13 @@ If no format information is present it is removed. -->
     </rule>
 
 
+
     <rule comment="REGLA: NUM N">
-      <!--
-      INPUT:  ^бес<num>/пять<num><mfn><pl><nom>$ ^жыл<n><nom>/год<n><m><nn><nom>$
-      OUTPUT: ^num_n<SN>{^пять<num><mfn><pl><nom>$ ^год<n><m><nn><pl><gen>$}$
-      INPUT:  ^бес<num>/пять<num><mfn><pl><nom>$ ^жыл<n><dat>/год<n><m><nn><dat>$
-      OUTPUT: ^num_n<SN>{^пять<num><mfn><pl><dat>$ ^год<n><m><nn><pl><dat>$}$
-      -->
+      <!-- Jansaya -->
       <pattern>
         <pattern-item n="num-det"/>
         <pattern-item n="n"/>
+        <pattern-item n="cop"/>
       </pattern>
       <action>
         <call-macro n="translate-noun">
@@ -3414,6 +3413,104 @@ If no format information is present it is removed. -->
         </out>
       </action>
     </rule>
+
+
+
+    <rule comment="REGLA: NUM N ADV">
+      <!-- Jansaya -->
+      <pattern>
+        <pattern-item n="num-det"/>
+        <pattern-item n="n"/>
+        <pattern-item n="adv"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-num-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num.digit"/></equal></test>
+	    <call-macro n="leave-only-lemma-and-num-tag">
+              <with-param pos="1"/>
+            </call-macro>
+	  </when>
+	</choose>
+        <out>
+	  <chunk name="num_n_adv">
+	    <tags>
+	      <tag><lit-tag v="SN"/></tag>
+	    </tags>
+	    <var n="preposition"/>
+	    <lu>
+	      <clip pos="1" side="tl" part="whole"/>
+	    </lu>
+	    <b/>
+	    <lu>
+	      <clip pos="2" side="tl" part="whole"/>
+	    </lu>
+	    <b/>
+	    <lu>
+	      <clip pos="3" side="tl" part="whole"/>
+	    </lu>
+	  </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+      <rule comment="REGLA: NUM N POST">
+      <!-- Jansaya -->
+      <pattern>
+        <pattern-item n="num-det"/>
+        <pattern-item n="n"/>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-num-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-pr-noun">
+          <with-param pos="3"/>
+          <with-param pos="1"/>
+        </call-macro>
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num.digit"/></equal></test>
+	    <call-macro n="leave-only-lemma-and-num-tag">
+              <with-param pos="1"/>
+            </call-macro>
+	  </when>
+	</choose>
+        <out>
+          <chunk name="num_n_post" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+              <b/>
+              <lu>
+                <clip pos="2" side="tl" part="whole"/>
+              </lu>
+            </chunk>
+          </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: NUM N N">
       <!--
@@ -5740,6 +5837,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
     </rule>
 
     <rule comment="REGLA: ADV">
+      <!-- Jansaya -->
       <!--
         INPUT:  ^қайда<adv><itg>/где<adv><itg>$
         OUTPUT: ^adv<AdvP>{^где<adv><itg>$}$
