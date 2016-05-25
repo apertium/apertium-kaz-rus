@@ -3820,6 +3820,7 @@ If no format information is present it is removed. -->
 
 
 <rule comment="RULE: prn v fut"> 
+<!-- Jansaya -->
 
       <pattern>
         <pattern-item n="prn"/>
