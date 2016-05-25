@@ -208,8 +208,10 @@
     </def-cat>
     <def-cat n="num-det">
       <cat-item tags="num"/>
-      <cat-item tags="num.ord"/>
       <cat-item tags="num.itg"/>
+    </def-cat>
+    <def-cat n="num-ord">
+      <cat-item tags="num.ord"/>
     </def-cat>
     <def-cat n="cop">
       <cat-item tags="cop.*"/>
@@ -2658,49 +2660,6 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-
-    <!--<rule comment="REGLA: N POST N">--> <!-- Aliya --> <!-- тақырып бойынша мысал -->
-      <!--
-      INPUT:  ^тақырып<n><nom>/тема<n><f><nn><nom>$ ^бойынша<post>/по<pr><dat>$ ^мысал<n><nom>/пример<n><m><nn><nom>$
-      OUTPUT: ^n_post_n<SN>{^пример<n><m><nn><sg><nom>$ ^по<pr>$ ^тема<n><f><nn><sg><dat>$}$
-      -->
-      <!--<pattern>
-        <pattern-item n="n"/>
-        <pattern-item n="post"/>
-        <pattern-item n="n"/>
-      </pattern>
-      <action>
-        <call-macro n="translate-noun">
-          <with-param pos="3"/>
-        </call-macro>
-        <out>
-          <chunk name="n_post_n">
-            <tags>
-              <tag><lit-tag v="SN"/></tag>
-            </tags>
-            <var n="preposition"/>
-            <lu>
-              <clip pos="3" side="tl" part="whole"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="2" side="tl" part="lem"/>
-              <clip pos="2" side="tl" part="a_pr"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_nom"/>
-              <clip pos="1" side="tl" part="a_gender"/>
-              <clip pos="1" side="tl" part="a_anim"/>
-              <lit-tag v="sg"/>
-              <clip pos="2" side="tl" part="a_case"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>-->
-
     <rule comment="REGLA: DET N N"> <!-- Aliya --> <!-- менің үйімнің есігі -->
       <!--
       INPUT:  ^мен<prn><pers><p1><sg><gen>/мой<det><pos><m><an><sg><nom>$ ^үй<n><px1sg><gen>/дом<n><m><nn><px1sg><gen>$ ^есік<n><px3sp><nom>/дверь<n><f><nn><px3sp><nom>$
@@ -3435,6 +3394,99 @@ If no format information is present it is removed. -->
 
 
 
+    <rule comment="REGLA: NUM-ord N">
+      <!-- Jansaya -->
+      <pattern>
+        <pattern-item n="num-ord"/>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-num-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num.digit"/></equal></test>
+	    <call-macro n="leave-only-lemma-and-num-tag">
+              <with-param pos="1"/>
+            </call-macro>
+	  </when>
+	</choose>
+          <let><clip pos="1" side="tl" part="a_case"/><clip pos="2" side="tl" part="a_case"/></let>
+        <out>
+	  <chunk name="num-ord_n">
+	    <tags>
+	      <tag><lit-tag v="SN"/></tag>
+	    </tags>
+	    <var n="preposition"/>
+	    <lu>
+	      <clip pos="1" side="tl" part="whole"/>
+	    </lu>
+	    <b/>
+	    <lu>
+	      <clip pos="2" side="tl" part="whole"/>
+	    </lu>
+	  </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+    <rule comment="REGLA: NUM NUM-ord N">
+      <!-- Jansaya ### -->
+      <pattern>
+        <pattern-item n="num-det"/>
+        <pattern-item n="num-ord"/>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-num-noun">
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+        <choose>
+          <when>
+            <test><equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num.digit"/></equal></test>
+	    <call-macro n="leave-only-lemma-and-num-tag">
+              <with-param pos="1"/>
+            </call-macro>
+	  </when>
+	</choose>
+          <let><clip pos="2" side="tl" part="a_case"/><clip pos="3" side="tl" part="a_case"/></let>
+        <out>
+	  <chunk name="num_num-ord_n">
+	    <tags>
+	      <tag><lit-tag v="SN"/></tag>
+	    </tags>
+	    <var n="preposition"/>
+	    <lu>
+	      <clip pos="1" side="tl" part="whole"/>
+	    </lu>
+	    <b/>
+	    <lu>
+	      <clip pos="2" side="tl" part="whole"/>
+	    </lu>
+	    <b/>
+	    <lu>
+	      <clip pos="3" side="tl" part="whole"/>
+	    </lu>
+	  </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
     <rule comment="REGLA: NUM N ADV">
       <!-- Jansaya -->
       <pattern>
@@ -3588,60 +3640,7 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-<!--
-      INPUT:  ^100<num>/100<num><digit><mfn><pl><nom>/100<num><digit><m><an><sg><nom>$ ^мең<num>/тысяча<num><f><nn><sg><nom>$ ^сум<n><nom>/рубль<n><m><nn><sg><nom>$
-      OUTPUT: ^num_num_n<SN>{^100<num>$ ^тысяча<num><f><nn><pl><gen>$ ^рубль<n><m><nn><pl><gen>$}$
 
-    <rule comment="REGLA: NUM NUM N">
-      <pattern>
-        <pattern-item n="num-det"/>
-        <pattern-item n="thousand-etc"/>
-        <pattern-item n="n"/>
-      </pattern>
-      <action>
-        <call-macro n="translate-noun">
-          <with-param pos="2"/>
-        </call-macro>
-        <call-macro n="translate-noun">
-          <with-param pos="3"/>
-        </call-macro>
-        <let><clip pos="2" side="tl" part="a_case"/><clip pos="3" side="tl" part="a_case"/></let>
-        <let><clip pos="3" side="tl" part="a_case"/><lit-tag v="gen"/></let>
-        <let><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
-        <call-macro n="makeagree-num-noun">
-          <with-param pos="1"/>
-          <with-param pos="2"/>
-        </call-macro>
-        <choose>
-          <when>
-            <test><equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num.digit"/></equal></test>
-	    <call-macro n="leave-only-lemma-and-num-tag">
-              <with-param pos="1"/>
-            </call-macro>
-	  </when>
-	</choose>
-        <out>
-          <chunk name="num_num_n">
-            <tags>
-              <tag><lit-tag v="SN"/></tag>
-            </tags>
-            <var n="preposition"/>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="3" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
--->
     <rule comment="NUM N NUM N">
       <!--
       INPUT:  ^1918<num>/1918<num><digit><mfn><pl><nom>$ ^ел<n><gen>/год²<n><m><nn><sg><gen>$ ^28<num>/28<num><digit><mfn><pl><nom>$ ^май<n><px3sp><loc>/май<n><m><nn><sg><px3sp><loc>$
@@ -4054,55 +4053,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 
 
- <!--<rule comment="PRN N"> --><!-- Zhadyra --> <!-- менің атым NP -->
-      
-     <!-- <pattern>
-        <pattern-item n="subj-pron"/>
-        <pattern-item n="NP"/>
-<pattern-item n="atym_pers-verb"/>
-      </pattern>
-      <action>
-            <call-macro n="build-possessive-from-pron">
-              <with-param pos="2"/>
-<call-macro n="NEW-build-noun-lu-2-4-5-sg">
-      <with-param pos="3"/>
-    </call-macro>
-            </call-macro>
-                <out>
-                  <chunk name="subj-pron-atym">
-<tags>
-                    <tag><clip pos="2" side="sl" part="a_pers"/></tag>
-              <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
-
-              </tags>
-
-            <lu>
-                                <clip pos="1" side="tl" part="whole"/>
-            </lu>
-<b/>
-             <lu>
-              <lit v="звать"/>
-              <lit-tag v="vblex"/>
-              <lit-tag v="possessive"/>
-<lit-tag v="nom"/>
- <lit-tag v="2"/>
- <lit-tag v="3"/>
-            </lu>
-            <b/>
-            <lu>
-              <clip pos="2" side="tl" part="lemh"/>
-              <clip pos="2" side="tl" part="a_pers"/>
-              <lit-tag v="inf"/>
-              <clip pos="2" side="tl" part="lemq"/>
-            </lu>
-          </chunk>
-        </out>
-        <call-macro n="reset-vars1">
-          <with-param pos="1"/>
-        </call-macro>
-      </action>
-    </rule>-->
-
 
 
 
@@ -4296,824 +4246,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 <!--extraction rules for kaz-rus-->
        
-<!--<rule>
-  <pattern>
-    <pattern-item n="CAT__adj_"/>
-  </pattern>
-  <action>
-    <choose>
-      <when>--><!--12 | көркем<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | прекрасный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> действительность<n><(000issim><f><nn><sg><(000possessive><nom><(000attruse> | 0:0 0:1 | <adj><sint><m><an><sg><gen>-->
-       <!-- <test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="көркем"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Көркем"/>
-            </equal>
-            </or>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <lit v="прекрасный"/>
-            <lit-tag v="adj"/>
-            <lit-tag v="sint"/>
-            <clip pos="1" side="sl" part="learned_iscmp"/>
-            <clip pos="1" side="sl" part="learned_isshort"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="nt"/>
-            <lit-tag v="an"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_atadvl"/>
-            <lit v=""/>
-          </lu>
-          <b/>
-          <lu>
-            <lit v="действительность"/>
-            <lit-tag v="n"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="f"/>
-            <lit-tag v="nn"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <lit v=""/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule1"/></lu></out></when>
-      <when>--><!--11 | ұлттық<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | национальный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> блюдо<n><(000issim><nt><nn><sg><(000possessive><nom><(000attruse> | 0:0 0:1 | <adj><sint><m><an><sg><gen>-->
-       <!-- <test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="ұлттық"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Ұлттық"/>
-            </equal>
-            </or>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <lit v="национальный"/>
-            <lit-tag v="adj"/>
-            <lit-tag v="sint"/>
-            <clip pos="1" side="sl" part="learned_iscmp"/>
-            <clip pos="1" side="sl" part="learned_isshort"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="nt"/>
-            <lit-tag v="an"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_atadvl"/>
-            <lit v=""/>
-          </lu>
-          <b/>
-          <lu>
-            <lit v="блюдо"/>
-            <lit-tag v="n"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="nt"/>
-            <lit-tag v="nn"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <lit v=""/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule2"/></lu></out></when>
-      <when>--><!--10 | <adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><advl><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | <adj><sint><(000issim><f><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><advl><m><an><sg><gen>-->
-       <!--<test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_iscmp"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isshort"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_attruse"/>
-                 <lit-tag v="advl"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_iscmp" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isshort" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_attruse" />
-              <lit-tag v="advl"/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <clip pos="1" side="tl" part="lemh"/>
-            <lit-tag v="adj"/>
-            <lit-tag v="sint"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="f"/>
-            <lit-tag v="an"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_atadvl"/>
-            <clip pos="1" side="tl" part="lemq"/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule3"/></lu></out></when>
-      <when>--><!--9 | сау<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | до<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
-        <!--<test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_iscmp"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isshort"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_attruse"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_issim"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_possessive"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="сау"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Сау"/>
-            </equal>
-            </or>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_iscmp" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isshort" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_attruse" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_issim" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_gender" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_reltype" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_numberat" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_possessive" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_case" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <lit v="до"/>
-            <lit-tag v="pr"/>
-            <lit v=""/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule4"/></lu></out></when>
-      <when>--><!--8 | Сау<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | До<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
-        <!--<test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_iscmp"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isshort"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_attruse"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_issim"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_possessive"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Сау"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Сау"/>
-            </equal>
-            </or>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_iscmp" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isshort" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_attruse" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_issim" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_gender" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_reltype" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_numberat" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_possessive" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_case" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <lit v="До"/>
-            <lit-tag v="pr"/>
-            <lit v=""/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule5"/></lu></out></when>
-      <when>--><!--7 | Жаңа<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | Новый<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><f><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
-        <!--<test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Жаңа"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Жаңа"/>
-            </equal>
-            </or>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <lit v="Новый"/>
-            <lit-tag v="adj"/>
-            <lit-tag v="sint"/>
-            <clip pos="1" side="sl" part="learned_iscmp"/>
-            <clip pos="1" side="sl" part="learned_isshort"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="f"/>
-            <lit-tag v="an"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_atadvl"/>
-            <lit v=""/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule6"/></lu></out></when>
-      <when>--><!--6 | сүйікті<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | любимый<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
-        <!--<test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="сүйікті"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Сүйікті"/>
-            </equal>
-            </or>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <lit v="любимый"/>
-            <lit-tag v="adj"/>
-            <lit-tag v="sint"/>
-            <clip pos="1" side="sl" part="learned_iscmp"/>
-            <clip pos="1" side="sl" part="learned_isshort"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="nt"/>
-            <lit-tag v="an"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_atadvl"/>
-            <lit v=""/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule7"/></lu></out></when>
-      <when>--><!--5 | танымал<adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | известный<adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><nt><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
-        <!--<test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="танымал"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Танымал"/>
-            </equal>
-            </or>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <lit v="известный"/>
-            <lit-tag v="adj"/>
-            <lit-tag v="sint"/>
-            <clip pos="1" side="sl" part="learned_iscmp"/>
-            <clip pos="1" side="sl" part="learned_isshort"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="nt"/>
-            <lit-tag v="an"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_atadvl"/>
-            <lit v=""/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule8"/></lu></out></when>
-      <when>--><!--4 | қарапайым<adj><empty_tag_isadjsint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><empty_tag_possessive><empty_tag_case><*atadvl> | о<pr> | 0:0 | <adj><sint><empty_tag_iscmp><empty_tag_isshort><empty_tag_attruse><empty_tag_issim><m><an><sg><empty_tag_possessive><gen>-->
-        <!--<test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_iscmp"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isshort"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_attruse"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_issim"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_possessive"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="қарапайым"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Қарапайым"/>
-            </equal>
-            </or>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_iscmp" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isshort" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_attruse" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_issim" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_gender" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_reltype" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_numberat" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_possessive" />
-              <lit v=""/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="learned_case" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <lit v="о"/>
-            <lit-tag v="pr"/>
-            <lit v=""/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule9"/></lu></out></when>
-      <when>--><!--3 | <adj><empty_tag_isadjsint><*iscmp><*isshort><*attruse><*issim><empty_tag_gender><empty_tag_reltype><empty_tag_numberat><*possessive><empty_tag_case><*atadvl> | <adj><sint><(000iscmp><(000isshort><(000attruse><(000issim><m><an><sg><(000possessive><nom><(000atadvl> | 0:0 | <adj><sint><m><an><sg><gen>-->
-        <!--<test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="adj"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_isadjsint"/>
-                 <lit-tag v="sint"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_gender"/>
-                 <lit-tag v="m"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_reltype"/>
-                 <lit-tag v="an"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
-                 <lit-tag v="sg"/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="gen"/>
-               </equal>
-           </and>
-            <equal>
-              <clip pos="1" side="sl" part="learned_isadjsint" />
-              <lit v=""/>
-            </equal>
-        </and>
-        </test>
-       <out>
-       <chunk name="__adj_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <clip pos="1" side="tl" part="lemh"/>
-            <lit-tag v="adj"/>
-            <lit-tag v="sint"/>
-            <clip pos="1" side="sl" part="learned_iscmp"/>
-            <clip pos="1" side="sl" part="learned_isshort"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <clip pos="1" side="sl" part="learned_issim"/>
-            <lit-tag v="m"/>
-            <lit-tag v="an"/>
-            <lit-tag v="sg"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <lit-tag v="nom"/>
-            <clip pos="1" side="sl" part="learned_atadvl"/>
-            <clip pos="1" side="tl" part="lemq"/>
-          </lu>
-      </chunk>
-      </out>
-<out><lu><lit v="*executedtule10"/></lu></out></when>
-      <otherwise>
-        <reject-current-rule shifting="no" />
-<out><lu><lit v="*wordforword1"/></lu></out></otherwise>
-    </choose>
-  </action>
-</rule>-->
- 
-
 
 <rule>
   <pattern>
@@ -5130,101 +4262,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   </out>
 <out><lu><lit v="*isolatedword"/></lu></out></action><!--isolated word-->
 </rule>
-
-
-<!--<rule>
-<pattern><pattern-item n="sent"/></pattern><action> <let><var n="number"/> <lit-tag v="sg"/></let><let><var n="gender"/><lit-tag v="m"/></let> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out><out><lu><lit v="*isolatedword"/></lu></out></action>
-</rule>--><!--
-<rule>
-<pattern><pattern-item n="any"/></pattern><action>  <out><chunk name="any" case="caseFirstWord"><tags>             <tag><lit-tag v="LRN"/></tag>       </tags>   <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out> <out><lu><lit v="*isolatedword"/></lu></out></action>
-</rule>
-
-<rule>
-  <pattern>
-    <pattern-item n="CAT__post_"/>
-    <pattern-item n="CAT__n_"/>
-  </pattern>
-  <action>
-    <choose>
-      <when>
-        <test>
-        <and>
-           <and>
-            <begins-with>
-              <clip pos="1" side="tl" part="tags" />
-              <lit-tag v="pr"/>
-            </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
-                 <lit-tag v="prp"/>
-               </equal>
-           </and>
-            <or>            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="туралы"/>
-            </equal>
-            <equal>
-              <clip pos="1" side="sl" part="lem" />
-              <lit v="Туралы"/>
-            </equal>
-            </or>
-          
-           <and>
-            <begins-with>
-              <clip pos="2" side="tl" part="tags" />
-              <lit-tag v="n"/>
-            </begins-with>
-               <equal>
-                 <clip pos="2" side="tl" part="learned_gender"/>
-                 <lit-tag v="f"/>
-               </equal>
-               <equal>
-                 <clip pos="2" side="tl" part="learned_reltype"/>
-                 <lit-tag v="nn"/>
-               </equal>
-               <equal>
-                 <clip pos="2" side="tl" part="learned_numberat"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="2" side="tl" part="learned_case"/>
-                 <lit-tag v="acc"/>
-               </equal>
-           </and>
-          
-        </and>
-        </test>
-       <out>
-       <chunk name="__post___n_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
-            <clip pos="2" side="tl" part="lemh"/>
-            <lit-tag v="n"/>
-            <clip pos="2" side="sl" part="learned_issim"/>
-            <lit-tag v="f"/>
-            <lit-tag v="nn"/>
-            <lit-tag v="sg"/>
-            <clip pos="2" side="sl" part="learned_possessive"/>
-            <clip pos="2" side="sl" part="learned_form"/>
-            <lit-tag v="gen"/>
-            <clip pos="2" side="sl" part="learned_attruse"/>
-            <clip pos="2" side="tl" part="lemq"/>
-          </lu>
-          <b pos="1"/>
-      </chunk>
-      </out>
-        <call-macro n="f_bcond">
-          <with-param pos="1"/>
-          <with-param pos="2"/>
-        </call-macro>
-<out><lu><lit v="*executedtule8"/></lu></out></when>
-      <otherwise>
-        <reject-current-rule shifting="no" />
-<out><lu><lit v="*wordforword3"/></lu></out></otherwise>
-    </choose>
-  </action>
-</rule>-->
-
-
- 
 
 
           
@@ -5398,83 +4435,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
     </rule>
 
 
-
-
-      <!--
-      INPUT:  барғандарға
-      OUTPUT: к ходившим
-      -->
-
-   <!-- <rule comment="REGLA: IN V-ger_past+loc R-KL">
-      
-      <pattern>
-        <pattern-item n="verb-nonfin-ger_past"/>
-      </pattern>
-      <action>
-        
-            <call-macro n="translate-noun">
-              <with-param pos="1"/>
-            </call-macro>
-            <choose>
-<when>
-<test>
-<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/>
-</equal>
-</test>
- <let><var n="preposition"/><concat><lit v="к"/><lit-tag v="pr"/></concat></let>
-          </when>
-<when>
-<test>
-<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/>
-</equal>
-</test>
- <let><var n="preposition"/><concat><lit v="у"/><lit-tag v="pr"/></concat></let>
-          </when>
-<when>
-<test>
-<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/>
-</equal>
-</test>
- <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
-          </when>
-</choose>
-
-            <call-macro n="convert-neg-to-ne.adv">
-              <with-param pos="1"/>
-            </call-macro>
-            <out>
-              <chunk name="R-KL">
-		<tags>
-		  <tag><lit-tag v="SV"/></tag>
-		  <tag><lit-tag v="ger_past"/></tag>
-		  <tag><clip pos="1" side="tl" part="a_case"/></tag>
-		</tags>
-<lu>
-		<var n="preposition"/>
-</lu>
-<b/>
-<lu>
-
-		<var n="negation"/>
-</lu>
-<b/>
-		<lu>
-		  <clip pos="1" side="tl" part="lemh"/>
-		  <lit-tag v="vblex"/>
-		  <lit-tag v="impf"/>
-		  <lit-tag v="pp"/>
-		  <lit-tag v="actv"/>
-		  <lit-tag v="mfn"/>
-		  <lit-tag v="an"/>
-		  <lit-tag v="pl"/>
-		  <lit-tag v="3"/>
-		  <clip pos="1" side="tl" part="lemq"/>
-		</lu>
-              </chunk>
-            </out>
-	 
-      </action>
-    </rule>-->
 
 
 
@@ -5934,7 +4894,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
 
 <!-- Asyls' rules begin-->
 
-<rule comment="RULE: VP-cop-pres"> <!-- 4-ereje --><!-- Aliya --> <!-- Мен оқушымын // Сен оқушысың ба?-->
+<rule comment="RULE: VP-cop-pres"> <!-- 4-ereje --> <!-- Мен оқушымын // Сен оқушысың ба?-->
 
       <!--
       INPUT:  ^мен<prn><pers><p1><sg><nom>/я<prn><pers><p1><mf><sg><nom>$ ^оқушы<n><nom>/ученик<n><m><aa><nom>$ ^е<cop><aor><p1><sg>/@е<cop><aor><p1><sg>$
@@ -6428,7 +5388,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
     </rule>
 
 
-    <rule comment="ITG N N"> <!-- 10-ereje --><!-- Aliya --> <!-- қай елдің орталығы? -->
+    <rule comment="ITG N N"> <!-- 10-ereje --> <!-- қай елдің орталығы? -->
       <!--
       INPUT:  
       OUTPUT: 
@@ -6476,7 +5436,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
     </rule>
 
 
-    <rule comment="PRN N ADV-ITG"> <!-- 5-ereje --><!-- Aliya --> <!-- менің кітабым қайда? -->
+    <rule comment="PRN N ADV-ITG"> <!-- 5-ereje --> <!-- менің кітабым қайда? -->
       <!--
       INPUT:  
       OUTPUT: 
@@ -6529,7 +5489,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
     </rule>
 
 
-    <rule comment="PRN ADJ N adv-ITG"> <!-- 6-ereje --><!-- Aliya --> <!-- менің қызыл көйлегім қайда? -->
+    <rule comment="PRN ADJ N adv-ITG"> <!-- 6-ereje --> <!-- менің қызыл көйлегім қайда? -->
       <!--
       INPUT:  
       OUTPUT: 
@@ -6594,7 +5554,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
 <!-- Dinas' rules begin -->
 
 
-    <rule comment="REGLA: NP N"> <!-- Aliya --> <!-- Мәдинаның кітабы -->
+    <rule comment="REGLA: NP N">  <!-- Мәдинаның кітабы -->
       <!--
       INPUT: 
       OUTPUT: 
@@ -6632,7 +5592,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
 
 
 
-    <rule comment="REGLA: NP N N"> <!-- Aliya --> <!-- Мәдинаның ұлының үйі -->
+    <rule comment="REGLA: NP N N">  <!-- Мәдинаның ұлының үйі -->
       <!--
       INPUT:  
       OUTPUT: 
@@ -6676,7 +5636,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
     </rule>
 
 
-      <rule comment="REGLA: NP N N POST"> <!-- Aliya --> <!-- Мәдинаның ұлының үйі туралы -->
+      <rule comment="REGLA: NP N N POST">  <!-- Мәдинаның ұлының үйі туралы -->
       <!--
       INPUT:  
       OUTPUT: 
@@ -6727,7 +5687,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
     </rule>
 
 
-    <rule comment="REGLA: NP ADJ N"> <!-- Aliya --> <!-- Мәдинаның қызыл көйлегі -->
+    <rule comment="REGLA: NP ADJ N">  <!-- Мәдинаның қызыл көйлегі -->
       <!--
       INPUT:  
       OUTPUT: 
@@ -6773,7 +5733,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
 
 
 
- <rule comment="REGLA: NP N N (2)"> <!-- Aliya --> <!-- Мәдинаның кітабындағы сурет -->
+ <rule comment="REGLA: NP N N (2)">  <!-- Мәдинаның кітабындағы сурет -->
       <!--
       INPUT:  
       OUTPUT: 
@@ -6825,7 +5785,7 @@ OUTPUT: ^qst<SENT>{^?<sent>$}$
 
 
 
-    <rule comment="REGLA: NP N ADJ N"> <!-- Aliya --> <!-- Мәдинаның кітабының соңғы басылымы -->
+    <rule comment="REGLA: NP N ADJ N">  <!-- Мәдинаның кітабының соңғы басылымы -->
       <!--
       INPUT:  
       OUTPUT: 

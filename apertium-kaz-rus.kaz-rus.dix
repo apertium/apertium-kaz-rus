@@ -113,6 +113,7 @@
     <sdef n="coll" 	c=""/> 
     <sdef n="dual" 	c=""/> 
     <sdef n="roman" 	c=""/> 
+    <sdef n="arabian" 	c=""/> 
     <sdef n="qst" 	c=""/> 
     <sdef n="px" 	c=""/> 
     <sdef n="sp" 	c=""/> 
