@@ -430,7 +430,7 @@
 
 <e><p><l>бар<s n="v"/><s n="iv"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p></e>
 <e><p><l>бар<s n="v"/><s n="iv"/><s n="ger_past"/><s n="px1sg"/></l><r>хождение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
-
+<e><p><l>кел<s n="v"/><s n="iv"/><s n="ger_past"/><s n="px1sg"/></l><r>приход<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 
 <e><p><l>жүр<s n="v"/><s n="iv"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 
@@ -7257,7 +7257,6 @@
 <e><p><l>нашақор<s n="n"/></l><r>наркоман<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>нәресте<s n="n"/></l><r>младенец<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>нәсіл<s n="n"/></l><r>происхождение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
-<e><p><l>бар<s n="v"/><s n="iv"/><s n="ger_past"/><s n="px1sg"/></l><r>хождение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>негіздеме<s n="n"/></l><r>обоснование<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>неке<s n="n"/></l><r>брак<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>немере<s n="n"/></l><r>внук<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
@@ -9683,7 +9682,10 @@
 <e>       <p><l>өз<s n="prn"/><s n="ref"/></l>         <r>сам<s n="det"/><s n="ref"/><s n="m"/><s n="an"/></r></p></e>
     <!-- Determiners -->
 <e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="сенің"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>твой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e c="сенің"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>твоя<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="сіздің"><p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="оның"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="gen"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
 <e c="біздің"><p><l>біз<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/><s n="gen"/></l><r>наш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>

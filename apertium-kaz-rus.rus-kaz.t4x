@@ -629,18 +629,18 @@
             <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="PXD"/></equal></test>
             <let><clip pos="1" side="tl" part="poss"/><lit v=""/></let>
           </when>
-        </choose>
-<choose><!--formality patch-->
+        </choose><!--
+<choose>
           <when>
-            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.sg"/></equal></test>  <!-- if we generate no formality, add it -->
+            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.sg"/></equal></test> 
             <let><clip pos="1" side="tl" part="a_pers_num"/><lit-tag v="p2.frm.sg"/></let>
           </when>
  	<when>
-            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.pl"/></equal></test>  <!-- if we generate no formality, add it -->
+            <test><equal><clip pos="1" side="sl" part="a_pers_num"/><lit-tag v="p2.pl"/></equal></test>  
             <let><clip pos="1" side="tl" part="a_pers_num"/><lit-tag v="p2.frm.pl"/></let>
-          </when>
+          </when>formality patch
         </choose>
-
+-->
         <out>
           <lu>
            <clip pos="1" side="tl" part="whole"/>
@@ -845,12 +845,12 @@
             <let><clip pos="1" side="tl" part="case"/><lit-tag v="nom"/></let>
           </when>
         </choose>
-        <choose>
+      <!--  <choose>
           <when>
-            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px2sg"/></equal></test>  <!-- if we generate no formality, add it -->
+            <test><equal><clip pos="1" side="sl" part="poss"/><lit-tag v="px2sg"/></equal></test>   if we generate no formality, add it 
             <let><clip pos="1" side="tl" part="poss"/><lit-tag v="px2sg.frm"/></let>
           </when>
-        </choose>
+        </choose> -->
  <choose>
           <when>
             <test>

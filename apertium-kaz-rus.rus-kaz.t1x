@@ -294,7 +294,9 @@
       <attr-item tags="p2"/>
       <attr-item tags="p3"/>
     </def-attr>
-
+<def-attr n="a_poss">
+     <attr-item tags="pos"/>
+    </def-attr>
     <def-attr n="a_pos">
       <attr-item tags="n"/>
       <attr-item tags="np"/>
@@ -393,9 +395,33 @@
     <def-var n="tense"/> 
     <def-var n="verb-nbr"/>     
     <def-var n="verb-pers"/>
+   <def-var n="preblank-1"/>
   </section-def-vars>
 
   <section-def-macros>
+
+<def-macro n="process-preblank-1" npar="2">
+<!-- Sets preblank-1 to null if it is just a single blank;
+     sets it to superblank 1 otherwise -->
+      <choose>
+        <when>
+          <test>
+              <equal>
+                <b pos="1"/>
+                <lit v=" "/>
+              </equal>
+          </test>
+          <let>
+            <var n="preblank-1"/><lit v=""/>
+          </let>
+        </when>
+        <otherwise>
+          <let>
+            <var n="preblank-1"/><b pos="1"/>
+          </let>
+        </otherwise>
+      </choose>
+    </def-macro>
 
     <def-macro n="test" npar="1">
           <let>   <!-- number="" -->
@@ -542,7 +568,7 @@
                <clip pos="1" side="tl" part="lem"/> 
                <clip pos="1" side="tl" part="a_nom"/>
                <clip pos="1" side="tl" part="a_gender"/>
-               <lit-tag v="2"/> <!-- for number -->	
+              <!-- <lit-tag v="2"/>  for number -->
                <!-- no need to link person -->
  		<lit-tag v="4"/> <!-- for possessive -->
                <lit-tag v="5"/> <!-- for case -->
@@ -591,13 +617,13 @@
 	</when>
 	<when>
          <test>
-          <equal caseless="yes"><clip  pos="1" side="sl" part="lem"/><lit  v="our"/></equal>
+          <equal caseless="yes"><clip  pos="1" side="sl" part="lem"/><lit  v="наш"/></equal>
          </test>      
           <let><var  n="possessive"/><lit-tag v="px1pl"/></let>
 	</when>
 	<when>
          <test>
-          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="your"/></equal>
+          <equal caseless="yes"><clip pos="1" side="sl" part="lem"/><lit  v="твой"/></equal>
          </test>      
 	<let><var  n="possessive"/><lit-tag v="px2sg"/></let>
 	</when>
@@ -2729,7 +2755,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule>
+<!--<rule>
   <pattern>
     <pattern-item n="CAT__adj_"/>
     <pattern-item n="CAT__n_"/>
@@ -2800,7 +2826,7 @@ If no format information is present it is removed. -->
       <clip pos="1" side="tl" part="whole"/>
     </lu>
   </out>
-<out><lu><lit v="*isolatedword"/></lu></out></action><!--isolated word-->
+<out><lu><lit v="*isolatedword"/></lu></out></action>
 </rule>
 
 
@@ -2811,17 +2837,17 @@ If no format information is present it is removed. -->
 <call-macro n="f_genre_num">
 <with-param pos="1"/></call-macro> 
 <call-macro n="f_set_genre_num"><with-param pos="1"/></call-macro> <out><lu><clip pos="1" side="tl" part="whole"/></lu></out> 
-<out><lu><lit v="*isolatedword"/></lu></out></action><!--isolated word-->
-</rule>
+<out><lu><lit v="*isolatedword"/></lu></out></action>
+</rule>-->
 
 
-<rule>
+<!--<rule>
 <pattern>
 <pattern-item n="sent"/></pattern>
 <action> <let><var n="number"/> <lit-tag v="sg"/></let>
 <let><var n="genre"/><lit-tag v="m"/></let> 
 <out><lu><clip pos="1" side="tl" part="whole"/></lu></out>
-<out><lu><lit v="*isolatedword"/></lu></out></action><!--isolated word-->
+<out><lu><lit v="*isolatedword"/></lu></out></action>
 </rule>
 
 
@@ -2830,8 +2856,8 @@ If no format information is present it is removed. -->
 <pattern-item n="any"/></pattern>
 <action>  <out><chunk name="any" case="caseFirstWord"><tags>             <tag><lit-tag v="LRN"/></tag>       </tags>  
  <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out> 
-<out><lu><lit v="*isolatedword"/></lu></out></action><!--isolated word-->
-</rule>
+<out><lu><lit v="*isolatedword"/></lu></out></action>
+</rule>-->
 
 
 
@@ -3484,24 +3510,49 @@ If no format information is present it is removed. -->
 
 
 
-<rule comment="NEW RULE: det noun">  <!-- kormeid--> 
+<rule comment="NEW RULE: det noun">  <!-- 19.05.2016 tolyk durys emes--> 
   <pattern>
     <pattern-item n="det"/>
-    <pattern-item n="n"/>
+    <pattern-item n="nom"/>
   </pattern>
   <action>
     <call-macro n="NEW-build-noun-lu-2-4-5">
       <with-param pos="2"/>
     </call-macro>
     
+
+<!-- *** -->
 <choose>
-  <when> 
+  <when> <!-- Demonstrative -->
+    <test>
+<and>
+<equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="dem"/></equal>
+
+<or>
+ <equal><clip pos="1" side="sl" part="lem"/><lit v="This"/></equal>
+ <equal><clip pos="1" side="sl" part="lem"/><lit v="this"/></equal>
+</or>
+</and>
+</test>
+<let>
+<var n="case"/><lit-tag v="nom"/>
+</let>
+</when>
+<otherwise>
+<let>
+<var n="case"/><lit v=""/>
+</let>
+</otherwise>
+</choose>
+<choose>
+  <when> <!-- Demonstrative -->
     <test>
 <or>
 <equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="dem"/></equal>
  <equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="qnt"/></equal>
 </or>
 </test>
+
     <out>
     <chunk name="detdem-nom"  case="caseFirstWord">
     <tags>
@@ -3515,6 +3566,7 @@ If no format information is present it is removed. -->
       <clip pos="1" side="tl" part="lem"/>
       <clip pos="1" side="tl" part="a_det"/>
       <clip pos="1" side="tl" part="a_dem"/>
+<var n="case"/>
     </lu>
     <b pos="1"/>
     <lu>  
@@ -3523,6 +3575,73 @@ If no format information is present it is removed. -->
     </chunk>
     </out>
   </when>
+  
+  <when> 
+    <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="pos"/></equal></test>
+    <call-macro n="build-possessive-from-possessive-determiner">
+       <with-param pos="1"/>
+    </call-macro>
+    <out>
+    <chunk name="detpos-nom" case="caseFirstWord">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+
+  
+<tag><var n="possessive"/></tag> 
+    <tag><lit-tag v="CD"/></tag>  
+    </tags>
+    <lu>
+      <clip pos="1" side="tl" part="whole"/>
+    </lu>
+    <b pos="1"/>
+    <lu> 
+      <var n="NEW-noun_lu"/>
+     </lu>
+    </chunk>
+    </out>
+  </when>
+
+  <otherwise>
+    <call-macro n="process-preblank-1">
+       <with-param pos="1"/>
+       <with-param pos="2"/>
+    </call-macro>
+    <out>
+    <chunk name="detart-nom">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+  
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+
+    </tags>
+<lu>
+<clip pos="1" side="tl" part="lem"/>
+      <clip pos="1" side="tl" part="a_kaz_perspron"/>
+      <clip pos="1" side="tl" part="a_pers"/>
+<clip pos="1" side="tl" part="a_nbr"/>
+<clip pos="1" side="tl" part="a_case"/>
+      
+</lu>
+<b/>
+<!--    <b pos="1"/> -->
+     <var n="preblank-1"/>
+     <lu>  
+     <get-case-from pos="1">
+      <var n="NEW-noun_lu"/>
+     </get-case-from>
+     </lu>
+    </chunk>
+    </out>
+    <call-macro n="out-blank-if-not-single-space"> 
+        <with-param pos="1"/>
+    </call-macro>
+  </otherwise>
 </choose>
   </action>
 </rule>
