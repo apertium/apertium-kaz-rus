@@ -568,9 +568,11 @@
                <clip pos="1" side="tl" part="lem"/> 
                <clip pos="1" side="tl" part="a_nom"/>
                <clip pos="1" side="tl" part="a_gender"/>
-              <!-- <lit-tag v="2"/>  for number -->
+              
+
                <!-- no need to link person -->
  		<lit-tag v="4"/> <!-- for possessive -->
+ <lit-tag v="2"/>
                <lit-tag v="5"/> <!-- for case -->
       <!-- for case -->
            </concat>  
@@ -1988,6 +1990,8 @@ If no format information is present it is removed. -->
     </tags>
     <lu>
       <var n="NEW-noun_lu"/>
+
+
     </lu>
     </chunk>
     </out>
