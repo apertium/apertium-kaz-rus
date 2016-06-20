@@ -870,6 +870,18 @@ If no format information is present it is removed. -->
             <test>
               <equal caseless="yes">
                 <clip pos="1" side="sl" part="lem"/>
+                <lit v="к"/>
+              </equal>
+            </test>
+            <let>
+              <var n="case"/>
+              <lit-tag v="dat"/>
+            </let>
+      </when> 
+          <when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
                 <lit v="в"/>
               </equal>
             </test>
@@ -3589,13 +3601,14 @@ If no format information is present it is removed. -->
     <chunk name="detpos-nom" case="caseFirstWord">
     <tags>
     <tag><lit-tag v="NP"/></tag>
-    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
-    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-
-  
 <tag><var n="possessive"/></tag> 
+   <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+   <tag><var n="case"/></tag> <!-- case placeholder -->
     <tag><lit-tag v="CD"/></tag>  
     </tags>
+
     <lu>
       <clip pos="1" side="tl" part="whole"/>
     </lu>

@@ -164,6 +164,7 @@
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/><s n="gen"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/><s n="ins"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/><s n="prp"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="aa"/><s n="pl"/><s n="acc"/></r></p></e>
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
@@ -369,7 +370,7 @@
 <e><p><l>қалпына<b/>келтір<s n="v"/><s n="tv"/></l><r>востанавливать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қорқыт<s n="v"/><s n="tv"/></l><r>вспугивать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>хат<b/>алыс<s n="v"/><s n="tv"/></l><r>переписываться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>жұмыс<b/>істе<s n="v"/><s n="tv"/></l><r>работать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e><p><l>жұмыс<b/>істе<s n="v"/><s n="iv"/></l><r>работать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>көңіл<b/>ау<s n="v"/><s n="tv"/></l><r>симпатизировать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бөлін<s n="v"/><s n="tv"/></l><r>делиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>жорғала<s n="v"/><s n="tv"/></l><r>вползать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -702,10 +703,10 @@
 <e><p><l>шайқал<s n="v"/><s n="iv"/></l><r>сотрясать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>тамшыла<s n="v"/><s n="iv"/></l><r>сочиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>оқы<s n="v"/><s n="iv"/></l><r>читать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>являться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>кел<s n="v"/><s n="iv"/></l><r>прийти<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <!--<e><p><l>кел<s n="v"/><s n="iv"/></l><r>приходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>кел<s n="v"/><s n="iv"/></l><r>являться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+
 <e><p><l>кел<s n="v"/><s n="iv"/></l><r>пребывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>кел<s n="v"/><s n="iv"/></l><r>наступить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>кел<s n="v"/><s n="iv"/></l><r>приехать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>-->
@@ -2815,7 +2816,7 @@
 <e><p><l>кемір<s n="v"/><s n="iv"/></l><r>изъедать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>мәлімде<s n="v"/><s n="iv"/></l><r>изъявлять<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ата<s n="v"/><s n="iv"/></l><r>именовать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<!--<e><p><l>бол<s n="v"/><s n="iv"/></l><r>иметь<s n="vbhaver"/><s n="impf"/></r></p></e>-->
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>иметь<s n="vbhaver"/><s n="impf"/></r></p></e>
 <e><p><l>бекіту<s n="v"/><s n="tv"/></l><r>утверждать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>қызықтыр<s n="v"/><s n="iv"/></l><r>интересовать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>ізде<s n="v"/><s n="iv"/></l><r>искать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
@@ -4627,7 +4628,7 @@
 <e><p><l>бұзау<s n="n"/></l><r>теленок<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>бұзушылық<s n="n"/></l><r>нарушение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>бұйрық<s n="n"/></l><r>приказ<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>тенге<s n="n"/></l><r>тенге<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+
 <e><p><l>бұйым<s n="n"/></l><r>изделие<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>бұқа<s n="n"/></l><r>бык<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>бұлан<s n="n"/></l><r>лось<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
@@ -5926,7 +5927,7 @@
 <e><p><l>құбылыс<s n="n"/></l><r>явление<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>құбыр<s n="n"/></l><r>труба<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>құдық<s n="n"/></l><r>колодец<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>кепіл<s n="n"/></l><r>гарант<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>кепіл<s n="n"/></l><r>гарант<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>нышан<s n="n"/></l><r>символ<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>құдірет<s n="n"/></l><r>божество<s n="n"/><s n="nt"/><s n="aa"/></r></p></e>
 <e><p><l>құжат<s n="n"/></l><r>документ<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -9638,6 +9639,7 @@
 <e>       <p><l>ал<s n="cnjcoo"/></l>                   <r>а<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>бірақ<s n="cnjcoo"/></l>                   <r>однако<s n="cnjcoo"/></r></p></e>
 
+
 <!-- imported nouns -->
 <!-- Pronouns-->
 
@@ -9684,6 +9686,7 @@
 <e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="f"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="nt"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
 <e c="сенің"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>твой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="сенің"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>твоя<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e c="сіздің"><p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="nn"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -9738,7 +9741,7 @@
 <e><p><l>ақпараттық<s n="adj"/></l><r>информационный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 
 <!-- adjectives from sql-->
-<e><p><l>атқарушы<s n="adj"/></l><r>исполнительный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>атқарушылық<s n="adj"/></l><r>исполнительный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>заңшығару<s n="adj"/></l><r>законодательный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>абадан<s n="adj"/></l><r>лучший<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>абажадай<s n="adj"/></l><r>громадный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -12502,7 +12505,7 @@
 <e><p><l>темір<s n="adj"/></l><r>железный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>тентек<s n="adj"/></l><r>шаловливый<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>тең<s n="adj"/></l><r>равноправный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
-<e><p><l>ақша<s n="adj"/></l><r>денежный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
+<e><p><l>ақшалай<s n="adj"/></l><r>денежный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>теңдес<s n="adj"/></l><r>равный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>теңеусіз<s n="adj"/></l><r>несравненный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
 <e><p><l>теңсіз<s n="adj"/></l><r>неравный<s n="adj"/><s n="sint"/></r></p><par n="__adj_sint"/></e>
@@ -13035,7 +13038,7 @@
   <e><p><l>сындыр<s n="v"/><s n="tv"/></l><r>сломать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 
 <!-- adverbs -->
-
+<e><p><l>сонымен<b/>қатар<s n="adv"/></l><r>также<s n="adv"/></r></p></e>
 <!-- Aliya adverb -->
 
 <e><p><l>абайсызда<s n="adv"/></l><r>неожиданно<s n="adv"/></r></p></e>
