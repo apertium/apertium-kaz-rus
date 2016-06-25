@@ -47,7 +47,7 @@ CORPUS/resurs-kaz-300 -text svneol=unset#application/octet-stream
 CORPUS/resurs-ru -text svneol=unset#application/octet-stream
 CORPUS/supcourt-kaz-380 -text svneol=unset#application/octet-stream
 CORPUS/supcourt-ru -text svneol=unset#application/octet-stream
-CORPUS/udp+kaz. -text svneol=unset#application/octet-stream
+CORPUS/udp+kaz -text svneol=unset#application/octet-stream
 CORPUS/udp+ru+1435 -text svneol=unset#application/octet-stream
 /ChangeLog -text
 /Makefile.am -text
