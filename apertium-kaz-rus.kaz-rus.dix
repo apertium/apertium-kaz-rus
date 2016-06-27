@@ -119,8 +119,7 @@
     <sdef n="sp" 	c=""/> 
     <sdef n="frm" 	c=""/> 
     <sdef n="def" 	c=""/>
-<sdef n="px1sg" 	c=""/>  
-
+    <sdef n="px1sg" 	c=""/>  
     <sdef n="px1pl" 	c=""/> 
     <sdef n="px2pl" 	c=""/> 
     <sdef n="sim" 	c=""/> 
@@ -129,8 +128,6 @@
     <sdef n="ifi" 	c=""/> 
     <sdef n="rel" 	c=""/> 
   </sdefs>
-
-
 
 
 <!-- some magic from tat-rus to make transfer work -->
@@ -244,8 +241,6 @@
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
 <e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
-
- 
 </pardef>
   
   <!-- For proper nouns -->
@@ -271,8 +266,8 @@
 <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
 <e><p><l><s n="prc_perf"/></l><r><s n="prc_perf"/></r></p></e>
 <e><p><l><s n="prc_impf"/></l><r><s n="prc_impf"/></r></p></e>
-
 </pardef>
+
 <pardef n="perf__verb">
 <e r="LR"><p><l><s n="pres"/></l><r><s n="pres"/></r></p></e>
   <e><p><l><s n="aor"/></l><r><s n="pres"/></r></p></e>
@@ -282,10 +277,8 @@
 <e><p><l><s n="neg"/><s n="fut"/></l><r><s n="fut"/><s n="neg"/></r></p></e>
   <e r="LR"><p><l><s n="fut2"/></l><r><s n="fut"/></r></p></e>
    <e><p><l><s n="inf"/></l><r><s n="inf"/></r></p></e>
-
   <e><p><l><s n="neg"/><s n="aor"/></l><r><s n="pres"/><s n="neg"/></r></p></e>
 <e><p><l><s n="neg"/><s n="ifi"/></l><r><s n="past"/><s n="neg"/></r></p></e>
-
   <e r="LR"><p><l><s n="past"/></l><r><s n="past"/></r></p></e>
   <e><p><l><s n="prc_perf"/></l><r><s n="prc_perf"/></r></p></e>
 <e><p><l><s n="prc_impf"/></l><r><s n="prc_impf"/></r></p></e>
@@ -296,7 +289,6 @@
   <e r="LR"><p><l><s n="pass"/><s n="fut2"/></l><r><s n="fut"/></r></p></e>
 
   <e r="RL">       <p><l></l>          <r><s n="inf"/></r></p></e>
-
 </pardef>
 
 <pardef n="vbhaver_impf">
@@ -311,14 +303,10 @@
   <e r="RL">       <p><l></l>          <r><s n="inf"/></r></p></e>
 </pardef>
 
-
 </pardefs>
 
 
   <section id="main" type="standard">
-
-
-
 
 <!-- vaux-->
 
@@ -327,14 +315,9 @@
 <e r="LR"><p><l>отыр<s n="vaux"/></l><r></r></p></e>
 <e r="LR"><p><l>жүр<s n="vaux"/></l><r></r></p></e>
 
-<!--
-<e r="LR"><p><l>көр<s n="vaux"/></l><r></r></p></e>
--->
-
 <!-- verb -->
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>поесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
-
 
 <!-- tv impf 253 -->
 <e><p><l>босат<s n="v"/><s n="tv"/></l><r>освободить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e> 
