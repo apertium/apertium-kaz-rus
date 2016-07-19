@@ -79,6 +79,9 @@
       <cat-item tags="det.ord.*"/>
       <cat-item tags="num.itg"/>
     </def-cat>
+<def-cat n="vbmod-want-to"> <!-- want -->
+      <cat-item lemma="хотеть" tags="vbmod.*"/>
+    </def-cat>
     <def-cat n="subj-pron">
       <cat-item tags="prn.subj.*"/>
       <cat-item tags="prn.pers.*"/>
@@ -878,7 +881,23 @@ If no format information is present it is removed. -->
               <lit-tag v="dat"/>
             </let>
       </when> 
-          <when> 
+ <when> 
+            <test> <and>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="в"/>
+              </equal> 
+ <equal caseless="yes">
+                <clip pos="2" side="sl" part="a_case"/>
+                <lit-tag v="acc"/>
+              </equal> </and>
+            </test>
+            <let>
+               <var n="case"/>
+               <lit-tag v="dat"/>
+            </let>
+          </when>      
+    <when> 
             <test>
               <equal caseless="yes">
                 <clip pos="1" side="sl" part="lem"/>
@@ -890,6 +909,7 @@ If no format information is present it is removed. -->
                <lit-tag v="loc"/>
             </let>
           </when>
+
           <when> 
             <test>
               <equal caseless="yes">
@@ -1132,7 +1152,208 @@ If no format information is present it is removed. -->
  </action>
 </rule>
 
+<!-- я хочу гулять -->
 
+<rule comment="NEW RULE: want to + infinitive"> <!--want to verb -->
+  <pattern>
+
+    <pattern-item n="vbmod-want-to"/>
+    <pattern-item n="approx-inf-verb"/>  <!--I want to go - Менің барғым келеді-->
+  </pattern>
+<action>
+  <call-macro n="default-nbr-pers"/>
+<choose>
+      <when>
+        <test>
+<or>
+          <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="pres"/>
+          </equal>
+ <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="inf"/>
+          </equal>
+</or>
+        </test>
+            
+        <out>
+      <chunk name="VP_want_to">
+      <tags>
+        <tag><lit-tag v="VP_wantto"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><lit-tag v="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessive-->
+        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+	
+      </tags>
+      <b pos="1"/>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+    	   <lit-tag v="prc_vol"/>
+	 <lit-tag v="3"/>
+           <lit-tag v="2"/>
+                  
+        </lu>
+        <b/> 
+        <lu>
+          <lit v="кел"/>
+          <lit-tag v="vaux"/>
+          <lit-tag v="aor"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="2"/>
+        </lu>
+      </chunk>
+  </out>
+       
+  </when> 
+      <when>
+        <test>
+
+          <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="past"/>
+          </equal>
+        </test>
+        <out>
+      <chunk name="VP_want_to">
+        <tags>
+        <tag><lit-tag v="VP_wantto"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><lit-tag v="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessive-->
+        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+
+      </tags>
+      <b pos="1"/>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+    	   <lit-tag v="prc_vol"/>
+           <lit-tag v="3"/>
+           <lit-tag v="2"/>
+           
+        </lu>
+        <b/> 
+        <lu>
+          <lit v="кел"/>
+         <lit-tag v="vaux"/>
+	 <lit-tag v="ifi"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="2"/>
+        </lu>
+      </chunk>
+  </out>
+      </when>
+    </choose>
+      </action>
+</rule>
+
+<!-- я хочу домой/ручку    али катееееееееееееееееееееееееееееееее -->
+
+<rule comment="NEW RULE: want to + NP"> 
+  <pattern>
+
+    <pattern-item n="vbmod-want-to"/>
+    <pattern-item n="nom"/>
+  </pattern>
+<action>
+  <call-macro n="default-nbr-pers"/>
+<call-macro n="choose_case_and_postposition2">
+        <with-param pos="2"/>
+      </call-macro>
+<choose>
+      <when>
+        <test>
+<or>
+          <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="pres"/>
+          </equal>
+ <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="inf"/>
+          </equal>
+</or>
+        </test>
+            
+        <out>
+      <chunk name="VP_want_to_nom">
+      <tags>
+        <tag><lit-tag v="VP_wantto"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><lit-tag v="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessive-->
+        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+	
+      </tags>
+      <b pos="1"/>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+    	   <lit-tag v="prc_vol"/>
+	 <lit-tag v="3"/>
+           <lit-tag v="2"/>
+                  
+        </lu>
+        <b/> 
+        <lu>
+          <lit v="кел"/>
+          <lit-tag v="vaux"/>
+          <lit-tag v="aor"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="2"/>
+        </lu>
+      </chunk>
+  </out>
+       
+  </when> 
+      <when>
+        <test>
+
+          <equal>
+             <clip pos="1" side="sl" part="a_tense"/>
+             <lit-tag v="past"/>
+          </equal>
+        </test>
+        <out>
+      <chunk name="VP_want_to">
+        <tags>
+        <tag><lit-tag v="VP_wantto"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><lit-tag v="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessive-->
+        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+
+      </tags>
+      <b pos="1"/>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+    	   <lit-tag v="prc_vol"/>
+           <lit-tag v="3"/>
+           <lit-tag v="2"/>
+           
+        </lu>
+        <b/> 
+        <lu>
+          <lit v="кел"/>
+         <lit-tag v="vaux"/>
+	 <lit-tag v="ifi"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="2"/>
+        </lu>
+      </chunk>
+  </out>
+      </when>
+    </choose>
+      </action>
+</rule>
 
 <!-- RULE noun`s noun ex: книга ученик -->
 <rule comment="NEW RULE: pos-pron noun">  <!-- мой друг-->
