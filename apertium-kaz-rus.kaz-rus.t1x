@@ -2142,11 +2142,14 @@ If no format information is present it is removed. -->
 	      <with-param pos="2"/>
 	    </call-macro>
 	    <out>
-	      <chunk name="adj_n">
+	      <chunk name="n_n_cop">
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                 </tags>
+                <lu>
                 <var n="preposition"/>
+                </lu>
+                <b/>
                 <lu>
                   <clip pos="1" side="tl" part="whole"/>
                 </lu>
@@ -3369,11 +3372,23 @@ If no format information is present it is removed. -->
           <with-param pos="2"/>
         </call-macro>
         <out>
-          <chunk name="adj_n">
+          <chunk name="adj_n_cop">
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
+<!--2016-08-09 AS: put vars into <lu> </lu> 
+before output:
+^adj_n_cop<SN>{из<pr>^старший<adj><sint><m><an><sg><gen>$ ^город<n><m><nn><sg><gen>$}$^dot<SENT>{^.<sent>$}$
+
+after:
+^adj_n_cop<SN>{^из<pr>$  ^старший<adj><sint><m><an><sg><gen>$ ^город<n><m><nn><sg><gen>$}$^dot<SENT>{^.<sent>$}$
+
+-->
+            <lu>
             <var n="preposition"/>
+            </lu>
+            <b pos="1"/>
+            <b pos="2"/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
