@@ -3336,7 +3336,24 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
+<!--AS 2016-08-15: check all <var> should be in lu
+before output:
+        <var n="preposition"/>
+
+^adj_n<SN>{к<pr>^дорогой<adj><sint><m><an><sg><dat>$ ^гусь<n><m><aa><sg><dat>$}$
+
+after putting 
+<lu>
             <var n="preposition"/>
+</lu>
+<b/>
+
+^adj_n<SN>{^к<pr>$ ^дорогой<adj><sint><m><an><sg><dat>$ ^гусь<n><m><aa><sg><dat>$}$
+ -->
+<lu>
+            <var n="preposition"/>
+</lu>
+<b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -3530,7 +3547,17 @@ after:
               <clip pos="3" side="tl" part="whole"/>
             </lu>
             <b/>
+<!--AS 2016-08-15: 
+output before:
+^adj_n-loc_n<SN>{^Казахстан<np><top><m><sg><gen>$ в<pr> ^международный<adj><sint><mfn><an><pl><prp>$ ^общение<n><nt><nn><pl><prp>$}$ 
+
+output after:
+^adj_n-loc_n<SN>{^Казахстан<np><top><m><sg><gen>$ ^в<pr>$ ^международный<adj><sint><mfn><an><pl><prp>$ ^общение<n><nt><nn><pl><prp>$}$ ^
+
+ -->
+<lu><!--just put var in <lu> -->
             <var n="preposition"/>
+</lu>
             <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
