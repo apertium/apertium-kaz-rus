@@ -2176,7 +2176,10 @@ If no format information is present it is removed. -->
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                 </tags>
+                <lu>
                 <var n="preposition"/>
+                </lu>
+                <b/>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
                 </lu>
@@ -2214,7 +2217,10 @@ If no format information is present it is removed. -->
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                 </tags>
+                <lu>
                 <var n="preposition"/>
+                </lu>
+                <b/>
                 <lu>
                   <clip pos="2" side="tl" part="whole"/>
                 </lu>
@@ -2256,7 +2262,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -2313,7 +2322,10 @@ If no format information is present it is removed. -->
 		<tags>
                   <tag><lit-tag v="SN"/></tag>
 		</tags>
-		<var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
 		<lu>
                   <clip pos="3" side="tl" part="whole"/>
 		</lu>
@@ -2351,7 +2363,10 @@ If no format information is present it is removed. -->
 		  <clip pos="3" side="tl" part="whole"/>
 		</lu>
 		<b/>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
 		<lu>
 		  <clip pos="2" side="tl" part="whole"/>
 		</lu>
@@ -2401,7 +2416,10 @@ If no format information is present it is removed. -->
 		<tags>
                   <tag><lit-tag v="SN"/></tag>
 		</tags>
-		<var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
 		<lu>
                   <clip pos="3" side="tl" part="whole"/>
 		</lu>
@@ -2433,7 +2451,10 @@ If no format information is present it is removed. -->
 		<tags>
 		  <tag><lit-tag v="SN"/></tag>
 		</tags>
-		<var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
 		<lu>
 		  <clip pos="3" side="tl" part="whole"/>
 		</lu>
@@ -2484,7 +2505,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -2631,7 +2655,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -2686,7 +2713,10 @@ If no format information is present it is removed. -->
               <clip pos="3" side="tl" part="whole"/>
             </lu>
             <b/>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
            <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
@@ -2723,7 +2753,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
            <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
@@ -2762,7 +2795,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
@@ -2912,7 +2948,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -3003,7 +3042,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -3046,7 +3088,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -3118,7 +3163,10 @@ If no format information is present it is removed. -->
                       <tag><lit-tag v="SN"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_case"/></tag>
                     </tags>
-                    <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
                     <lu>
                       <clip pos="1" side="tl" part="lem"/>
                       <clip pos="1" side="tl" part="a_det"/>
@@ -3202,7 +3250,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -3289,7 +3340,10 @@ If no format information is present it is removed. -->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -3405,7 +3459,6 @@ after:
             <var n="preposition"/>
             </lu>
             <b pos="1"/>
-            <b pos="2"/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -3451,7 +3504,10 @@ after:
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -3499,7 +3555,10 @@ after:
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
@@ -3601,7 +3660,10 @@ output after:
               <tag><clip pos="3" side="tl" part="a_case"/></tag>
               <tag><clip pos="3" side="sl" part="a_SYNLABEL"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -3645,7 +3707,10 @@ output after:
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -3689,7 +3754,10 @@ output after:
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -3741,7 +3809,10 @@ output after:
 	    <tags>
 	      <tag><lit-tag v="SN"/></tag>
 	    </tags>
-	    <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
 	    <lu>
 	      <clip pos="1" side="tl" part="whole"/>
 	    </lu>
@@ -3794,7 +3865,10 @@ output after:
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -3849,7 +3923,10 @@ output after:
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="1" side="tl" part="whole"/>
             </lu>
@@ -3960,7 +4037,10 @@ output after:
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
-            <var n="preposition"/>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>
