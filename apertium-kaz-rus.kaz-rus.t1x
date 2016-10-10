@@ -254,6 +254,18 @@
       <cat-item tags="cop.*.ifi.*"/>
       <cat-item tags="cop.*.past.*"/>
     </def-cat>
+    <def-cat n="verb-fut">
+      <cat-item tags="v.*.fut.*"/>
+      <cat-item tags="v.*.fut2.*"/>
+    </def-cat>
+    <def-cat n="verb-past">
+      <cat-item tags="v.*.past.*"/>
+      <cat-item tags="vaux.past.*"/>
+      <cat-item tags="vaux.neg.past.*"/>
+      <cat-item tags="cop.past.*"/>
+      <cat-item tags="cop.*.past.*"/>
+    </def-cat>
+
     <def-cat n="verb-fin-fut-plan">
       <cat-item tags="v.*.fut_plan.*"/>
       <cat-item tags="v.*.neg.fut_plan.*"/>
@@ -4495,7 +4507,153 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 
 
-<!--Zhadyra--><!--етістіктің шақтары,болымсыз түрлері-->
+<!--etistik shaktary-->
+
+
+
+    <rule comment="REGLA: V1">
+      <pattern>
+        <pattern-item n="verb-past"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="1"/>
+        </call-macro>
+
+<choose>
+   <when>
+      <test><and>
+	<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="past"/></equal>
+      </and></test>
+      <let><var n="gender"/><lit-tag v="m"/></let>
+   </when>
+
+   <when>
+      <test><and>
+	<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="past"/></equal>
+      </and></test>
+      <let><var n="gender"/><lit-tag v="mfn"/></let>
+   </when>
+
+<otherwise>
+      <let><var n="gender"/><lit-tag v="5"/></let>
+</otherwise>
+</choose>
+
+        <out>
+          <chunk name="v-neg-past">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="1" side="sl" part="a_trans"/></tag>
+              <tag><clip pos="1" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
+              </tags>
+          <var n="negation"/>
+
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+		<var n="gender"/>
+		<lit-tag v="6"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: V2">
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="verb-fut"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="2"/>
+        </call-macro>
+<choose>
+   <when>
+      <test><and>
+	<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+	<equal><clip pos="2" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+      </and></test>
+      <let><clip pos="2" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+   </when>
+</choose>
+
+<choose>
+   <when>
+      <test><and>
+	<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+	<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="fut"/></equal>
+      </and></test>
+      <let><var n="gender"/><lit-tag v="m"/></let>
+   </when>
+
+   <when>
+      <test><and>
+	<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	<equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="fut"/></equal>
+      </and></test>
+      <let><var n="gender"/><lit-tag v="mfn"/></let>
+   </when>
+
+<otherwise>
+      <let><var n="gender"/><lit-tag v="5"/></let>
+</otherwise>
+</choose>
+
+        <out>
+          <chunk name="v-neg-fut">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="2" side="sl" part="a_trans"/></tag>
+              <tag><clip pos="2" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+              </tags>
+          <var n="negation"/>
+
+             <lu>
+              <lit v="Возможно"/>
+              <lit-tag v="adv"/>
+            </lu>
+             <lu>
+              <lit v=","/>
+              <lit-tag v="cm"/>
+            </lu>
+            <b/>
+            <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+             <lu>
+              <lit v="быть"/>
+              <lit-tag v="vbser"/>
+              <lit-tag v="fut"/>
+              <lit-tag v="4"/>
+              <lit-tag v="5"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_verb"/>
+              <lit-tag v="inf"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: V">
       <!--
@@ -4512,96 +4670,61 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <with-param pos="1"/>
         </call-macro>
 <choose>
-<when>
-<test>
-<and>
-<equal>
-              <clip pos="1" side="sl" part="a_tense"/><lit-tag v="aor"/>
-</equal>
-<equal>
-              <clip pos="1" side="sl" part="a_aspec"/><lit-tag v="perf"/>
-</equal>
-</and>
-</test>
-
-<let>
-              <clip pos="1" side="tl" part="a_tense"/><lit-tag v="fut"/>
-</let>
-</when>
+   <when>
+      <test><and>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+	<equal><clip pos="1" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+      </and></test>
+      <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+   </when>
 </choose>
+
 <choose>
-<when>
-<test>
-<and>
-<equal>
-              <clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/>
-</equal>
+   <when>
+      <test><and>
+	<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+      </and></test>
+      <let><var n="gender"/><lit-tag v="m"/></let>
+   </when>
 
-<equal>
-              <clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/>
-</equal>
+   <when>
+      <test><and>
+	<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+      </and></test>
+      <let><var n="gender"/><lit-tag v="mfn"/></let>
+   </when>
 
-
-</and>
-</test>
-
-<let>
-<var n="gender"/><lit-tag v="m"/>
-</let>
-
-
-</when>
-
-
-<when>
-<test>
-<and>
-<equal>
-              <clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/>
-</equal>
-
-<equal>
-              <clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/>
-</equal>
-</and>
-</test>
-
-<let>
-<var n="gender"/><lit-tag v="mfn"/>
-</let>
-</when>
 <otherwise>
-<let>
-<var n="gender"/><lit-tag v="5"/>
-</let>
+      <let><var n="gender"/><lit-tag v="5"/></let>
 </otherwise>
 </choose>
+
         <out>
           <chunk name="v-neg-fin">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="sl" part="a_verb"/></tag>
-<tag><clip pos="1" side="sl" part="a_trans"/></tag>
+              <tag><clip pos="1" side="sl" part="a_trans"/></tag>
               <tag><clip pos="1" side="sl" part="a_pers"/></tag>
               <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
-
               </tags>
           <var n="negation"/>
 
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
-
               <clip pos="1" side="tl" part="a_tense"/>
 		<var n="gender"/>
 		<lit-tag v="6"/>
-
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
 
 
@@ -4641,7 +4764,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </otherwise>
 </choose>
 <out>
-         <chunk name="v-neg-fin">
+         <chunk name="v-neg-fin1">
             <tags>
               <tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="sl" part="a_verb"/></tag>

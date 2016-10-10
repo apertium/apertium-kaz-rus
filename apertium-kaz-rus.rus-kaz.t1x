@@ -833,6 +833,18 @@ If no format information is present it is removed. -->
                <lit-tag v="abl"/>
             </let>
           </when>
+<when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="без"/>
+              </equal>
+            </test>
+            <let>
+               <var n="case"/>
+               <lit-tag v="gen"/>
+            </let>
+          </when>
           <when> 
             <test>
               <equal caseless="yes">
