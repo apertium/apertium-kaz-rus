@@ -227,6 +227,7 @@
     </def-cat>
 
 
+
 <!--Zhadyra--><!--етістік болымсыз түріне-->
 <def-cat n="v-neg-fin">
       <cat-item tags="v.*.neg.aor.*.*"/>
@@ -581,6 +582,7 @@
     <def-var n="possessive"/>
 <def-var n="pronoun"/>
     <def-var n="animacy"/>
+    <def-var n="trans"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -2609,7 +2611,22 @@ If no format information is present it is removed. -->
 
                 </when>
            </choose>
---> 
+
+-->
+<!--AS:2016-12-07 choose transitive intransitive verbs -->
+	 <choose> 
+
+<when>
+                   <test>
+                   
+                       <equal><clip pos="1" side="sl" part="a_trans"/><lit-tag v="iv"/></equal>
+                      </test>
+                 <let><var n="trans"/><lit-tag v="iv"/></let>
+                </when>
+<otherwise>
+                 <let><var n="trans"/><lit-tag v="tv"/></let>
+</otherwise>
+</choose>
        <out>
           <chunk name="verb-ing-cont" case="caseFirstWord">
             <tags>
@@ -2622,6 +2639,7 @@ If no format information is present it is removed. -->
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
+              <var n="trans"/>
               <lit-tag v="2"/>
               <lit-tag v="3"/>
               <lit-tag v="4"/>
@@ -4715,6 +4733,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
+		<lit-tag v="4"/>
               <clip pos="1" side="tl" part="a_tense"/>
 		<var n="gender"/>
 		<lit-tag v="6"/>
