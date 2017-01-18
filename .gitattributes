@@ -69,12 +69,14 @@ CORPUS/udp+ru+1435 -text svneol=unset#application/octet-stream
 /autogen.sh -text
 /configure.ac -text
 /cover-rus.sh -text
+dev/Regression_tests.html -text
 devel/adjec1.awk -text
 devel/adjec2.awk -text
 devel/adjec3.awk -text
 devel/adjectives.csv -text
 devel/noun.awk -text
 /modes.xml -text
+/regression-tests-rus-kaz.sh -text
 testvoc/README -text
 testvoc/inconsistency-summary1.sh -text
 testvoc/inconsistency1.sh -text
@@ -92,3 +94,4 @@ texts/text-rus2.txt -text
 texts/text-rus3.txt -text svneol=unset#application/octet-stream
 texts/text-rus4.txt -text svneol=unset#application/octet-stream
 texts/text-rus5.txt -text svneol=unset#application/octet-stream
+/wiki-tests.sh -text
