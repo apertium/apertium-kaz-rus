@@ -171,4 +171,10 @@
     <match lemma="қор" tags="n.*"><select lemma="ресурс" tags="n.*"/></match>
 </rule> 
 
+<rule>  <!--  увидеть -->
+
+    <match lemma="көр" tags="v.tv.aor.*"><select lemma="увидеть2" tags="vblex.*"/></match>
+</rule> 
+
+
 </rules>
