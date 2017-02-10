@@ -156,13 +156,15 @@
 </pardef>
 
 <pardef n="__adj_sint">
-<e r="RL">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
-<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
-<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/><s n="gen"/></r></p></e>
-<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/><s n="ins"/></r></p></e>
-<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/><s n="prp"/></r></p></e>
-<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="aa"/><s n="pl"/><s n="acc"/></r></p></e>
-  <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+<e r="LR">       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/></r></p></e>
+<e r="LR">       <p><l></l>          <r><s n="f"/><s n="an"/><s n="sg"/></r></p></e>
+<e r="LR">       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="an"/><s n="pl"/></r></p></e>
+<e r="RL">       <p><l></l>          <r><s n="mfn"/><s n="aa"/><s n="pl"/></r></p></e>
+ <!--<e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="gen"/></r></p></e>
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="dat"/></r></p></e>
   <e>       <p><l></l>          <r><s n="m"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
@@ -182,7 +184,7 @@
   <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="ins"/></r></p></e>
   <e>       <p><l></l>          <r><s n="nt"/><s n="an"/><s n="sg"/><s n="prp"/></r></p></e>
   <e>       <p><l><s n="subst"/></l><r><s n="m"/><s n="an"/></r></p></e>
-  <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>
+  <e>       <p><l><s n="comp"/></l><r><s n="comp"/></r></p></e>-->
 </pardef>
 
 <pardef n="__num_gender">
@@ -10720,7 +10722,7 @@
 <e><p><l>батометр<s n="n"/></l><r>батометр<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>батон<s n="n"/></l><r>батон<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>батут<s n="n"/></l><r>батут<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>бақша<s n="n"/></l><r>баштан<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<!--<e><p><l>бақша<s n="n"/></l><r>баштан<s n="n"/><s n="m"/><s n="nn"/></r></p></e>-->
 <e><p><l>баян<s n="n"/></l><r>баян<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>бедекер<s n="n"/></l><r>бедекер<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>безбен<s n="n"/></l><r>безмен<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -28799,7 +28801,7 @@
 <e><p><l>ұрындыр<s n="v"/><s n="tv"/></l><r>угораздить<s n="vblex"/></r></p></e>
 <e><p><l>ұшыра<s n="v"/><s n="iv"/></l><r>угораздить<s n="vblex"/></r></p></e>
 <e><p><l>же<s n="v"/><s n="iv"/></l><r>съесть<s n="vblex"/></r></p></e>
-<e><p><l>ойна<s n="v"/><s n="iv"/></l><r>сыграть<s n="vblex"/></r></p></e>
+<!--<e><p><l>ойна<s n="v"/><s n="iv"/></l><r>сыграть<s n="vblex"/></r></p></e>-->
 <e><p><l>түрт<s n="v"/><s n="iv"/></l><r>ткнуть<s n="vblex"/></r></p></e>
 <e><p><l>тигіз<s n="v"/><s n="tv"/></l><r>тронуть<s n="vblex"/></r></p></e>
 <e><p><l>ұста<s n="v"/><s n="iv"/></l><r>тронуть<s n="vblex"/></r></p></e>

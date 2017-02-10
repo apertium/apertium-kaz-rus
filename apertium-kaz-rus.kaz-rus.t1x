@@ -1622,7 +1622,7 @@ If no format information is present it is removed. -->
 	      </and>
 	    </test>
             <out>
-              <chunk name="adj">
+              <chunk name="adj2">
                 <tags>
                   <tag><lit-tag v="AdjP"/></tag>
                 </tags>
@@ -1796,7 +1796,7 @@ If no format information is present it is removed. -->
 	      </and>
 	    </test>
             <out>
-              <chunk name="adj">
+              <chunk name="adj3">
                 <tags>
                   <tag><lit-tag v="AdjP"/></tag>
                 </tags>
@@ -3297,7 +3297,49 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-    <rule comment="REGLA: DET N POST"> <!-- Aliya --> <!-- осы кітап бойынша -->
+
+
+    <rule comment="REGLA: DET N COP">
+      <!--
+      INPUT:  ^һәр<det><qnt>/каждый<det><def><m><an><sg><nom>$ ^иртә<n><nom>/утро<n><nt><nn><nom>$
+      OUTPUT: ^det_n<SN>{^каждый<det><def><nt><an><sg><nom>$ ^утро<n><nt><nn><sg><nom>$}$
+      -->
+      <pattern>
+        <pattern-item n="det"/>
+        <pattern-item n="n"/>
+ <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="det_n-cop">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+    <rule comment="REGLA: DET N POST "> <!-- Aliya --> <!-- осы кітап бойынша -->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^кітап<n><nom>/книга<n><f><nn><nom>$ ^бойынша<post>/по<pr><dat>$
       OUTPUT: ^det_n_post<PP>{^по<pr>$ ^этот<det><dem><f><an><sg><dat>$ ^книга<n><f><nn><sg><dat>$}$
@@ -6279,6 +6321,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_pos"/>
+                   <clip pos="1" side="tl" part="a_case"/>
                   <clip pos="1" side="tl" part="a_gender"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
                 </lu>
@@ -6287,12 +6330,17 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
           </when>
           <otherwise>
             <out>
-              <chunk name="adj">
+              <chunk name="adj1">
                 <tags>
                   <tag><lit-tag v="AdjP"/></tag>
                 </tags>
                 <lu>
-                  <clip pos="1" side="tl" part="whole"/>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                   <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+<lit-tag v="nom"/>
                 </lu>
               </chunk>
             </out>
