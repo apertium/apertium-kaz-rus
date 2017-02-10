@@ -1,0 +1,4 @@
+
+Sun Nov  8 11:54:16 CET 2015
+-e ===============================================
+-e POS	Total	Clean	With @	With #	Clean %

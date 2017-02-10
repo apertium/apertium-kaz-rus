@@ -70,6 +70,15 @@ CORPUS/udp+ru+1435 -text svneol=unset#application/octet-stream
 /configure.ac -text
 /cover-rus.sh -text
 dev/Regression_tests.html -text
+dev/testvoc2/lite/inconsistency.sh -text
+dev/testvoc2/lite/testvoc-summary.kaz-eng.txt -text
+dev/testvoc2/lite/testvoc-summary.kaz-rus.txt -text
+dev/testvoc2/lite/testvoc.sh -text
+dev/testvoc2/standard/inconsistency-summary.sh -text
+dev/testvoc2/standard/inconsistency.sh -text
+dev/testvoc2/standard/testvoc-summary..txt -text
+dev/testvoc2/standard/testvoc-summary.kaz-eng.txt -text
+dev/testvoc2/standard/testvoc.sh -text
 devel/adjec1.awk -text
 devel/adjec2.awk -text
 devel/adjec3.awk -text
