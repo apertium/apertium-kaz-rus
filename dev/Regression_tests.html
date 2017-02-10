@@ -5,7 +5,7 @@
 <head>
 <title>Kazakh and Russian/Regression tests - Apertium</title>
 <meta charset="UTF-8" />
-<meta name="generator" content="MediaWiki 1.19.20+dfsg-0+deb7u2" />
+<meta name="generator" content="MediaWiki 1.19.20+dfsg-0+deb7u3" />
 <link rel="alternate" type="application/x-wiki" title="Edit" href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit" />
 <link rel="edit" title="Edit" href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit" />
 <link rel="shortcut icon" href="/favicon.ico" />
@@ -24,7 +24,7 @@
 
 <script src="http://wiki.apertium.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Kazakh_and_Russian/Regression_tests","wgTitle":"Kazakh and Russian/Regression tests","wgCurRevisionId":61252,"wgArticleId":7236,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Kazakh_and_Russian/Regression_tests","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Kazakh_and_Russian/Regression_tests","wgTitle":"Kazakh and Russian/Regression tests","wgCurRevisionId":61415,"wgArticleId":7236,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Kazakh_and_Russian/Regression_tests","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":
 0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
@@ -61,11 +61,42 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <li class="toclevel-1 tocsection-8"><a href="#Kazakh_to_Russian"><span class="tocnumber">2</span> <span class="toctext">Kazakh to Russian</span></a>
 <ul>
 <li class="toclevel-2 tocsection-9"><a href="#Verbs_2"><span class="tocnumber">2.1</span> <span class="toctext">Verbs</span></a></li>
-<li class="toclevel-2 tocsection-10"><a href="#Noun_phrases_.28SN.29_2"><span class="tocnumber">2.2</span> <span class="toctext">Noun phrases (SN)</span></a></li>
-<li class="toclevel-2 tocsection-11"><a href="#Prepositional_phrases_.28AdvP.29_2"><span class="tocnumber">2.3</span> <span class="toctext">Prepositional phrases (AdvP)</span></a></li>
-<li class="toclevel-2 tocsection-12"><a href="#Generating_postpositions_2"><span class="tocnumber">2.4</span> <span class="toctext">Generating postpositions</span></a></li>
-<li class="toclevel-2 tocsection-13"><a href="#Possessives_and_demonstratives_2"><span class="tocnumber">2.5</span> <span class="toctext">Possessives and demonstratives</span></a></li>
-<li class="toclevel-2 tocsection-14"><a href="#Simple_sentences_2"><span class="tocnumber">2.6</span> <span class="toctext">Simple sentences</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#Verbs.28n-dfsd_.26.26_v-neg-fin.29"><span class="tocnumber">2.2</span> <span class="toctext">Verbs(n-dfsd &amp;&amp; v-neg-fin)</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Verbs.28n-dfsd_.26.26_v-ing-cont.29"><span class="tocnumber">2.3</span> <span class="toctext">Verbs(n-dfsd &amp;&amp; v-ing-cont)</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Verbs.28n-dfsd_.26.26_v-neg-past.29"><span class="tocnumber">2.4</span> <span class="toctext">Verbs(n-dfsd &amp;&amp; v-neg-past)</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Verbs.28v-neg-fut.29"><span class="tocnumber">2.5</span> <span class="toctext">Verbs(v-neg-fut)</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Verbs.28n-dsfsd_.26.26_verb-nonfin_.26.26_v-neg-fin.29"><span class="tocnumber">2.6</span> <span class="toctext">Verbs(n-dsfsd &amp;&amp; verb-nonfin &amp;&amp; v-neg-fin)</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Verbs.28n-dfsd_.26.26_pr_n1_.26.26_v-neg-fin.29"><span class="tocnumber">2.7</span> <span class="toctext">Verbs(n-dfsd &amp;&amp; pr_n1 &amp;&amp; v-neg-fin)</span></a></li>
+<li class="toclevel-2 tocsection-16"><a href="#Verbs.28n-dsfsd_.26.26_n-dsfsd_.26.26_v-neg-fin.29"><span class="tocnumber">2.8</span> <span class="toctext">Verbs(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; v-neg-fin)</span></a></li>
+<li class="toclevel-2 tocsection-17"><a href="#Verbs.28n-dsfsd_.26.26_num_.26.26_pr_n1_.26.26_v-neg-fin.29"><span class="tocnumber">2.9</span> <span class="toctext">Verbs(n-dsfsd &amp;&amp; num &amp;&amp; pr_n1 &amp;&amp; v-neg-fin)</span></a></li>
+<li class="toclevel-2 tocsection-18"><a href="#Noun.28n-dfsd_.26.26_adj_n_cop.29"><span class="tocnumber">2.10</span> <span class="toctext">Noun(n-dfsd &amp;&amp; adj_n_cop)</span></a></li>
+<li class="toclevel-2 tocsection-19"><a href="#Noun.28n-dsfsd_.26.26_num_n.29"><span class="tocnumber">2.11</span> <span class="toctext">Noun(n-dsfsd &amp;&amp; num_n)</span></a></li>
+<li class="toclevel-2 tocsection-20"><a href="#Noun.28n-dsfsd_.26.26_num.29"><span class="tocnumber">2.12</span> <span class="toctext">Noun(n-dsfsd &amp;&amp; num)</span></a></li>
+<li class="toclevel-2 tocsection-21"><a href="#Noun.28n-dsfsd_.26.26_n-dsfsd_.26.26_det_.26.26_adj.29"><span class="tocnumber">2.13</span> <span class="toctext">Noun(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; det &amp;&amp; adj)</span></a></li>
+<li class="toclevel-2 tocsection-22"><a href="#Noun.28n-dsfsd_.26.26_n-dsfsd_.26.26_verb-need_.26.26_adv.29"><span class="tocnumber">2.14</span> <span class="toctext">Noun(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; verb-need &amp;&amp; adv)</span></a></li>
+<li class="toclevel-2 tocsection-23"><a href="#AdVerb"><span class="tocnumber">2.15</span> <span class="toctext">AdVerb</span></a></li>
+<li class="toclevel-2 tocsection-24"><a href="#AdVerb.28n-dsfsd_.26.26_n-dsfsd_.26.26_adv.29"><span class="tocnumber">2.16</span> <span class="toctext">AdVerb(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; adv)</span></a></li>
+<li class="toclevel-2 tocsection-25"><a href="#Det"><span class="tocnumber">2.17</span> <span class="toctext">Det</span></a></li>
+<li class="toclevel-2 tocsection-26"><a href="#v-neg-fin"><span class="tocnumber">2.18</span> <span class="toctext">v-neg-fin</span></a></li>
+<li class="toclevel-2 tocsection-27"><a href="#pr_n2"><span class="tocnumber">2.19</span> <span class="toctext">pr_n2</span></a></li>
+<li class="toclevel-2 tocsection-28"><a href="#Noun_phrases_.28SN.29_2"><span class="tocnumber">2.20</span> <span class="toctext">Noun phrases (SN)</span></a></li>
+<li class="toclevel-2 tocsection-29"><a href="#Noun_phrases_.28n-dsfsd.29"><span class="tocnumber">2.21</span> <span class="toctext">Noun phrases (n-dsfsd)</span></a></li>
+<li class="toclevel-2 tocsection-30"><a href="#Noun_phrases_.28pr_n2.29"><span class="tocnumber">2.22</span> <span class="toctext">Noun phrases (pr_n2)</span></a></li>
+<li class="toclevel-2 tocsection-31"><a href="#Noun_phrases_.28pr_n1.29"><span class="tocnumber">2.23</span> <span class="toctext">Noun phrases (pr_n1)</span></a></li>
+<li class="toclevel-2 tocsection-32"><a href="#Noun_phrases_.28adj_n_cop.29"><span class="tocnumber">2.24</span> <span class="toctext">Noun phrases (adj_n_cop)</span></a></li>
+<li class="toclevel-2 tocsection-33"><a href="#Noun_phrases_.28num_n.29"><span class="tocnumber">2.25</span> <span class="toctext">Noun phrases (num_n)</span></a></li>
+<li class="toclevel-2 tocsection-34"><a href="#Noun_phrases_.28num_.26.26_adj_n_cop_.29"><span class="tocnumber">2.26</span> <span class="toctext">Noun phrases (num  &amp;&amp;  adj_n_cop )</span></a></li>
+<li class="toclevel-2 tocsection-35"><a href="#Noun_phrases_.28vP-cop-present.29"><span class="tocnumber">2.27</span> <span class="toctext">Noun phrases (vP-cop-present)</span></a></li>
+<li class="toclevel-2 tocsection-36"><a href="#Generating_postpositions_.28pr_n3.29"><span class="tocnumber">2.28</span> <span class="toctext">Generating postpositions (pr_n3)</span></a></li>
+<li class="toclevel-2 tocsection-37"><a href="#Generating_postpositions_.28adj_n_n.29"><span class="tocnumber">2.29</span> <span class="toctext">Generating postpositions (adj_n_n)</span></a></li>
+<li class="toclevel-2 tocsection-38"><a href="#Generating_postpositions_.28n_post.29"><span class="tocnumber">2.30</span> <span class="toctext">Generating postpositions (n_post)</span></a></li>
+<li class="toclevel-2 tocsection-39"><a href="#Generating_postpositions_.28num_.26.26_adj_n_n.29"><span class="tocnumber">2.31</span> <span class="toctext">Generating postpositions (num   &amp;&amp;  adj_n_n)</span></a></li>
+<li class="toclevel-2 tocsection-40"><a href="#from_eng-kaz_regression_test"><span class="tocnumber">2.32</span> <span class="toctext">from eng-kaz regression test</span></a></li>
+<li class="toclevel-2 tocsection-41"><a href="#from_eng-kaz_regression_test_.28n-dsfsd_.26.26_adj.29"><span class="tocnumber">2.33</span> <span class="toctext">from eng-kaz regression test  (n-dsfsd &amp;&amp; adj)</span></a></li>
+<li class="toclevel-2 tocsection-42"><a href="#from_eng-kaz_regression_test_.28vP-cop-neg.29"><span class="tocnumber">2.34</span> <span class="toctext">from eng-kaz regression test  (vP-cop-neg)</span></a></li>
+<li class="toclevel-2 tocsection-43"><a href="#from_eng-kaz_regression_test_.28n-dsfsd_.26.26_n-dsfsd_.26.26_v-neg-fin_.29"><span class="tocnumber">2.35</span> <span class="toctext">from eng-kaz regression test  (n-dsfsd &amp;&amp;  n-dsfsd  &amp;&amp; v-neg-fin )</span></a></li>
+<li class="toclevel-2 tocsection-44"><a href="#Possessives_and_demonstratives_2"><span class="tocnumber">2.36</span> <span class="toctext">Possessives and demonstratives</span></a></li>
+<li class="toclevel-2 tocsection-45"><a href="#Simple_sentences_2"><span class="tocnumber">2.37</span> <span class="toctext">Simple sentences</span></a></li>
 </ul>
 </li>
 </ul>
@@ -91,41 +122,322 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=7" title="Edit section: Simple sentences">edit</a>]</span> <span class="mw-headline" id="Simple_sentences"> Simple sentences </span></h3>
 <ul><li> (rus) <i>Он играет во дворе.</i> → Ол қорадай ойнайды
 </li></ul>
-<p><br />
-</p>
 <h2><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=8" title="Edit section: Kazakh to Russian">edit</a>]</span> <span class="mw-headline" id="Kazakh_to_Russian"> Kazakh to Russian </span></h2>
 <h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=9" title="Edit section: Verbs">edit</a>]</span> <span class="mw-headline" id="Verbs_2"> Verbs </span></h3>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=10" title="Edit section: Verbs(n-dfsd &amp;&amp; v-neg-fin)">edit</a>]</span> <span class="mw-headline" id="Verbs.28n-dfsd_.26.26_v-neg-fin.29"> Verbs(n-dfsd &amp;&amp; v-neg-fin) </span></h3>
 <ul><li> (kaz) <i>Мен ойнаймын.</i> → Я играю.
+</li><li> (kaz) <i>Мен ойнамаймын.</i> → Я не играю.
+</li><li> (kaz) <i>Мен ойнадым.</i> → Я играл.
+</li><li> (kaz) <i>Мен ойнамадым.</i> → Я не играл.
+</li><li> (kaz) <i>Сіз ойнайсыз.</i> → Вы играете.
+</li><li> (kaz) <i>Сіз ойнамайсыз.</i> → Вы не играете.
+</li><li> (kaz) <i>Сіз ойнадыңыз.</i> → Вы играли.
+</li><li> (kaz) <i>Сіз ойнамадыңыз.</i> → Вы не играли.
+</li><li> (kaz) <i>Ол ойнайды.</i> → Он играет.
+</li><li> (kaz) <i>Ол ойнамайды.</i> → Он не играет.
+</li><li> (kaz) <i>Ол ойнады.</i> → Он играл.
+</li><li> (kaz) <i>Ол ойнамады.</i> → Он не играл.
+</li><li> (kaz) <i>Біз ойнаймыз.</i> → Мы играем.
+</li><li> (kaz) <i>Біз ойнамаймыз.</i> → Мы не играем.
+</li><li> (kaz) <i>Біз ойнадық.</i> → Мы играли.
+</li><li> (kaz) <i>Біз ойнамадық.</i> → Мы не играли.
+</li><li> (kaz) <i>Олар ойнайды.</i> → Они играют.
+</li><li> (kaz) <i>Олар ойнамайды.</i> → Они не играют.
+</li><li> (kaz) <i>Олар ойнады.</i> → Они играли.
+</li><li> (kaz) <i>Олар ойнамады.</i> → Они не играли.
+</li><li> (kaz) <i>Мен дәрігер болдым.</i> → Я был врачом.
+</li><li> (kaz) <i>Сіз дәрігер болдыңыз.</i> → Вы были врачом.
+</li><li> (kaz) <i>Ол дәрігер болды.</i> → Он был врачом.
+</li><li> (kaz) <i>Біз дәрігерлер болдық.</i> → Мы были врачами.
+</li><li> (kaz) <i>Олар дәрігерлер болды.</i> → Они были врачами.
+</li><li> (kaz) <i>Мен дәрігер болмадым.</i> → Я не был врачом.
+</li><li> (kaz) <i>Сіз дәрігер болмадыңыз.</i> → Вы не были врачом.
+</li><li> (kaz) <i>Біз дәрігерлер болмадық.</i> → Мы не были врачами.
+</li><li> (kaz) <i>Олар дәрігерлер болмады.</i> → Они не были врачами.
 </li></ul>
 <p><br />
 </p>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=10" title="Edit section: Noun phrases (SN)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28SN.29_2"> Noun phrases (SN) </span></h3>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=11" title="Edit section: Verbs(n-dfsd &amp;&amp; v-ing-cont)">edit</a>]</span> <span class="mw-headline" id="Verbs.28n-dfsd_.26.26_v-ing-cont.29"> Verbs(n-dfsd &amp;&amp; v-ing-cont) </span></h3>
+<ul><li> (kaz) <i>Мен ойнап отырамын.</i> → Я буду играть.
+</li><li> (kaz) <i>Мен ойнап отырмаймын.</i> → Я не буду играть.
+</li><li> (kaz) <i>Мен ойнап жатырмын.</i> → Я играю.
+</li><li> (kaz) <i>Мен ойнап жатқан жоқпын.</i> → Я не играю.
+</li><li> (kaz) <i>Мен ойнап отырдым.</i> → Я играл.
+</li><li> (kaz) <i>Мен ойнап отырмадым.</i> → Я не играл.
+</li><li> (kaz) <i>Мен ойнап отырғанмын.</i> → Я играл.
+</li><li> (kaz) <i>Сіз ойнап жатырсыз.</i> → Вы играете.
+</li><li> (kaz) <i>Сіз ойнап жатқан жоқсыз.</i> → Вы не играете.
+</li><li> (kaz) <i>Сіз ойнап отырдыңыз.</i> → Вы играли.
+</li><li> (kaz) <i>Сіз ойнап отырмадыңыз.</i> → Вы не играли.
+</li><li> (kaz) <i>Сіз ойнап отырғансыз.</i> → Вы играли.
+</li><li> (kaz) <i>Ол ойнап жатыр.</i> → Он играет.
+</li><li> (kaz) <i>Ол ойнап жатқан жоқ.</i> → Он не играет.
+</li><li> (kaz) <i>Ол ойнап отырды.</i> → Он играл.
+</li><li> (kaz) <i>Ол ойнап отырмады.</i> → Он не играл.
+</li><li> (kaz) <i>Ол ойнап отырған.</i> → Он играл.
+</li><li> (kaz) <i>Біз ойнап отырдық.</i> → Мы играли.
+</li><li> (kaz) <i>Біз ойнап отырмадық.</i> → Мы не играли.
+</li><li> (kaz) <i>Біз ойнап жатырмыз.</i> → Мы играем.
+</li><li> (kaz) <i>Біз ойнап жатқан жоқпыз.</i> → Мы не играем.
+</li><li> (kaz) <i>Біз ойнап отырғанбыз.</i> → Мы играли.
+</li><li> (kaz) <i>Олар ойнап отырды.</i> → Они играли
+</li><li> (kaz) <i>Олар ойнап отырмады.</i> → Они не играли.
+</li><li> (kaz) <i>Олар ойнап жатыр.</i> → Они играют.
+</li><li> (kaz) <i>Олар ойнап жатқан жоқ.</i> → Они не играют.
+</li><li> (kaz) <i>Олар ойнап отырған.</i> → Они играли.
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=12" title="Edit section: Verbs(n-dfsd &amp;&amp; v-neg-past)">edit</a>]</span> <span class="mw-headline" id="Verbs.28n-dfsd_.26.26_v-neg-past.29"> Verbs(n-dfsd &amp;&amp; v-neg-past) </span></h3>
+<ul><li> (kaz) <i>Мен ойнағанмын.</i> → Я играл.
+</li><li> (kaz) <i>Мен ойнамағанмын.</i> → Я не играл.
+</li><li> (kaz) <i>Сіз ойнағансыз.</i> → Вы играли.
+</li><li> (kaz) <i>Сіз ойнамағансыз.</i> → Вы не играли.
+</li><li> (kaz) <i>Ол ойнаған.</i> → Он играл.
+</li><li> (kaz) <i>Ол ойнамаған.</i> → Он не играл.
+</li><li> (kaz) <i>Біз ойнағанбыз.</i> → Мы играли.
+</li><li> (kaz) <i>Біз ойнамағанбыз.</i> → Мы не играли.
+</li><li> (kaz) <i>Олар ойнаған.</i> → Они играли.
+</li><li> (kaz) <i>Олар ойнамаған.</i> → Они не играли
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=13" title="Edit section: Verbs(v-neg-fut)">edit</a>]</span> <span class="mw-headline" id="Verbs.28v-neg-fut.29"> Verbs(v-neg-fut) </span></h3>
+<ul><li> (kaz) <i>Мен ойнармын.</i> → Я буду играть.
+</li><li> (kaz) <i>Сіз ойнарсыз.</i> → Вы будете играть.
+</li><li> (kaz) <i>Ол ойнар.</i> → Он будет играть.
+</li><li> (kaz) <i>Біз ойнармыз.</i> → Мы будем играть.
+</li><li> (kaz) <i>Олар ойнар.</i> → Они будут играть.
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=14" title="Edit section: Verbs(n-dsfsd &amp;&amp; verb-nonfin &amp;&amp; v-neg-fin)">edit</a>]</span> <span class="mw-headline" id="Verbs.28n-dsfsd_.26.26_verb-nonfin_.26.26_v-neg-fin.29"> Verbs(n-dsfsd &amp;&amp; verb-nonfin &amp;&amp; v-neg-fin) </span></h3>
+<ul><li> (kaz) <i>Мен ойнай аламын.</i> → Я могу играть
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=15" title="Edit section: Verbs(n-dfsd &amp;&amp; pr n1 &amp;&amp; v-neg-fin)">edit</a>]</span> <span class="mw-headline" id="Verbs.28n-dfsd_.26.26_pr_n1_.26.26_v-neg-fin.29"> Verbs(n-dfsd &amp;&amp; pr_n1 &amp;&amp; v-neg-fin) </span></h3>
+<ul><li> (kaz) <i>Мен бақшада ойнамадым.</i> → Я не играл в саду.
+</li><li> (kaz) <i>Мен бақшада ойнадым.</i> → Я играл в саду.
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=16" title="Edit section: Verbs(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; v-neg-fin)">edit</a>]</span> <span class="mw-headline" id="Verbs.28n-dsfsd_.26.26_n-dsfsd_.26.26_v-neg-fin.29"> Verbs(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; v-neg-fin) </span></h3>
+<ul><li> (kaz) <i>Менде кітап бар.</i> → У меня есть книга. 
+</li><li> (kaz) <i>Сенде кітап бар.</i> → У тебя есть книга. 
+</li><li> (kaz) <i>Сізде кітап бар.</i> → У вас есть книга. 
+</li><li> (kaz) <i>Онда кітап бар.</i> → У него есть книга. 
+</li><li> (kaz) <i>Бізде кітаптар бар.</i> → У нас есть книги. 
+</li><li> (kaz) <i>Оларда кітаптар бар.</i> → У них есть книги.
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=17" title="Edit section: Verbs(n-dsfsd &amp;&amp; num &amp;&amp; pr n1 &amp;&amp; v-neg-fin)">edit</a>]</span> <span class="mw-headline" id="Verbs.28n-dsfsd_.26.26_num_.26.26_pr_n1_.26.26_v-neg-fin.29"> Verbs(n-dsfsd &amp;&amp; num &amp;&amp; pr_n1 &amp;&amp; v-neg-fin) </span></h3>
+<ul><li> (kaz) <i>Ол жеті жаста болды.</i> → Он был в семь лет 
+</li><li> (kaz) <i>Олар жеті жаста болды.</i> → Они были в семь лет
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=18" title="Edit section: Noun(n-dfsd &amp;&amp; adj n cop)">edit</a>]</span> <span class="mw-headline" id="Noun.28n-dfsd_.26.26_adj_n_cop.29"> Noun(n-dfsd &amp;&amp; adj_n_cop) </span></h3>
+<ul><li> (kaz) <i>Мен әдемі қызбын.</i> → Я красивая девушка.
+</li><li> (kaz) <i>Сіз әдемі қызсыз.</i> → Вы красивая девушка.
+</li><li> (kaz) <i>Ол әдемі қыз.</i> → Она красивая девушка.
+</li><li> (kaz) <i>Біз әдемі қыздармыз.</i> → Мы красивые девушки.
+</li><li> (kaz) <i>Олар әдемі қыздар.</i> → Мы красивые девушки.
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=19" title="Edit section: Noun(n-dsfsd &amp;&amp; num n)">edit</a>]</span> <span class="mw-headline" id="Noun.28n-dsfsd_.26.26_num_n.29"> Noun(n-dsfsd &amp;&amp; num_n) </span></h3>
+<ul><li> (kaz) <i>Мен жеті жастамын.</i> → Мне семь лет
+</li><li> (kaz) <i>Сен жеті жастасың.</i> → Тебе семь лет 
+</li><li> (kaz) <i>Сіз жеті жастасыз.</i> → Вам семь лет
+</li><li> (kaz) <i>Біз жеті жастамыз.</i> → Нам семь лет
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=20" title="Edit section: Noun(n-dsfsd &amp;&amp; num)">edit</a>]</span> <span class="mw-headline" id="Noun.28n-dsfsd_.26.26_num.29"> Noun(n-dsfsd &amp;&amp; num) </span></h3>
+<ul><li> (kaz) <i>Олар жеті жаста.</i> → Им семь лет 
+</li><li> (kaz) <i>Ол жеті жаста.</i> → Ему семь лет
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=21" title="Edit section: Noun(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; det &amp;&amp; adj)">edit</a>]</span> <span class="mw-headline" id="Noun.28n-dsfsd_.26.26_n-dsfsd_.26.26_det_.26.26_adj.29"> Noun(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; det &amp;&amp; adj) </span></h3>
+<ul><li> (kaz) <i>Маған сөмке керек.</i> → Мне нужна сумка 
+</li><li> (kaz) <i>Саған сөмке керек.</i> → Тебе нужна сумка
+</li><li> (kaz) <i>Сізге сөмке керек.</i> → Вам нужна сумка
+</li><li> (kaz) <i>Оған сөмке керек.</i> → Ему нужна сумка
+</li><li> (kaz) <i>Бізге сөмкелер керек.</i> → Нам нужны сумки
+</li><li> (kaz) <i>Оларға сөмкелер керек.</i> → Им не нужна сумки
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=22" title="Edit section: Noun(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; verb-need &amp;&amp; adv)">edit</a>]</span> <span class="mw-headline" id="Noun.28n-dsfsd_.26.26_n-dsfsd_.26.26_verb-need_.26.26_adv.29"> Noun(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; verb-need &amp;&amp; adv) </span></h3>
+<ul><li> (kaz) <i>Маған сөмке керек емес.</i> → Мне не нужна сумка 
+</li><li> (kaz) <i>Саған сөмке керек емес.</i> → Тебе не нужна сумка
+</li><li> (kaz) <i>Сізге сөмке керек емес.</i> → Вам не нужна сумка
+</li><li> (kaz) <i>Оған сөмке керек емес.</i> → Ему не нужна сумка
+</li><li> (kaz) <i>Бізге сөмкелер керек емес.</i> → Нам не нужны сумки
+</li><li> (kaz) <i>Оларға сөмкелер керек емес.</i> → Им не нужны сумки
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=23" title="Edit section: AdVerb">edit</a>]</span> <span class="mw-headline" id="AdVerb"> AdVerb </span></h3>
+<ul><li> (kaz) <i>ең</i> → самый
+</li><li> (kaz) <i>жоғары ағысқа</i> → высший поток
+</li><li> (kaz) <i>қайда</i> → где
+</li><li> (kaz) <i>алайда</i> → однако
+</li><li> (kaz) <i>ең бақытты</i> → самый счастливый
+</li><li> (kaz) <i>бүгін</i> → сегодня
+</li><li> (kaz) <i>қашан сабақ</i> → когда урок
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=24" title="Edit section: AdVerb(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; adv)">edit</a>]</span> <span class="mw-headline" id="AdVerb.28n-dsfsd_.26.26_n-dsfsd_.26.26_adv.29"> AdVerb(n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; adv) </span></h3>
+<ul><li> (kaz) <i>Менде кітап жоқ.</i> → У меня нету книги 
+</li><li> (kaz) <i>Сенде кітап жоқ.</i> → У тебя нету книги 
+</li><li> (kaz) <i>Сізде кітап жоқ.</i> → У вас нету книги 
+</li><li> (kaz) <i>Онда кітап жоқ.</i> → У него нету книги 
+</li><li> (kaz) <i>Бізде кітаптар жоқ.</i> → У нас нету книг 
+</li><li> (kaz) <i>Оларда кітаптар жоқ.</i> → У них нету книг
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=25" title="Edit section: Det">edit</a>]</span> <span class="mw-headline" id="Det"> Det </span></h3>
+<ul><li> (kaz) <i>мынау</i> → этот
+</li><li> (kaz) <i>бұл компания</i> → эта компания
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=26" title="Edit section: v-neg-fin">edit</a>]</span> <span class="mw-headline" id="v-neg-fin"> v-neg-fin </span></h3>
+<ul><li> (kaz) <i>Сен</i> → Ты
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=27" title="Edit section: pr n2">edit</a>]</span> <span class="mw-headline" id="pr_n2"> pr_n2 </span></h3>
+<ul><li> (kaz) <i>Ол</i> → Он
+</li><li> (kaz) <i>Біз</i> → Мы
+</li><li> (kaz) <i>Олар</i> → Они
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=28" title="Edit section: Noun phrases (SN)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28SN.29_2"> Noun phrases (SN) </span></h3>
 <ul><li> (kaz) <i>бақша</i> → сад
 </li></ul>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=11" title="Edit section: Prepositional phrases (AdvP)">edit</a>]</span> <span class="mw-headline" id="Prepositional_phrases_.28AdvP.29_2"> Prepositional phrases (AdvP) </span></h3>
-<ul><li> (kaz) <i>бақшада</i> → в саду
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=29" title="Edit section: Noun phrases (n-dsfsd)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28n-dsfsd.29"> Noun phrases (n-dsfsd) </span></h3>
+<ul><li> (kaz) <i>Мен</i> → Я
+</li><li> (kaz) <i>бала</i> → сын
+</li><li> (kaz) <i>мен бала</i> → я сын
+</li><li> (kaz) <i>сен бала</i> → ты сын
+</li><li> (kaz) <i>ол бала</i> → он сын
+</li><li> (kaz) <i>баланың</i> → сын
+</li><li> (kaz) <i>Мәдина қыз</i> → Мадина дочка
+</li><li> (kaz) <i>Мәдина қызбен</i> → Мадина с дочка
+</li><li> (kaz) <i>үйлердің</i> → домов
+</li><li> (kaz) <i>үйлерді</i> → дома
 </li></ul>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=12" title="Edit section: Generating postpositions">edit</a>]</span> <span class="mw-headline" id="Generating_postpositions_2"> Generating postpositions </span></h3>
-<ul><li> (kaz) <i>бақшаның астында</i> → под садом
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=30" title="Edit section: Noun phrases (pr n2)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28pr_n2.29"> Noun phrases (pr_n2) </span></h3>
+<ul><li> (kaz) <i>үй</i> → дом
+</li><li> (kaz) <i>үйлер</i> → дома
+</li><li> (kaz) <i>үйлерде</i> → в домах
+</li><li> (kaz) <i>үйлерден</i> → из домов
+</li><li> (kaz) <i>үйің</i> → твой дом
+</li><li> (kaz) <i>үйі</i> → дом
+</li><li> (kaz) <i>үйіміз</i> → дом
+</li><li> (kaz) <i>үйлерің</i> → ваши дома
+</li><li> (kaz) <i>үйлеріңіз</i> → ваши дома
+</li><li> (kaz) <i>үйлері</i> →  дома
+</li><li> (kaz) <i>бақшада</i> → в огороде
+</li><li> (kaz) <i>бақшадан</i> → из огорода
 </li></ul>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=13" title="Edit section: Possessives and demonstratives">edit</a>]</span> <span class="mw-headline" id="Possessives_and_demonstratives_2"> Possessives and demonstratives </span></h3>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=31" title="Edit section: Noun phrases (pr n1)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28pr_n1.29"> Noun phrases (pr_n1) </span></h3>
+<ul><li> (kaz) <i>үйлерге</i> → в дома
+</li><li> (kaz) <i>үйлермен</i> → с домами
+</li><li> (kaz) <i>бақшаға</i> → в огород
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=32" title="Edit section: Noun phrases (adj n cop)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28adj_n_cop.29"> Noun phrases (adj_n_cop) </span></h3>
+<ul><li> (kaz) <i>жақсы бақшада</i> → в хорошем огороде
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=33" title="Edit section: Noun phrases (num n)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28num_n.29"> Noun phrases (num_n) </span></h3>
+<ul><li> (kaz) <i>бір бақша</i> → один огород
+</li><li> (kaz) <i>алты бақша</i> → шесть огородов
+</li><li> (kaz) <i>бір бақшада</i> → в одном огороде
+</li><li> (kaz) <i>алты бақшада</i> → в шести огородах
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=34" title="Edit section: Noun phrases (num &amp;&amp; adj n cop )">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28num_.26.26_adj_n_cop_.29"> Noun phrases (num  &amp;&amp;  adj_n_cop ) </span></h3>
+<ul><li> (kaz) <i>бір жақсы бақшада</i> → в одном хорошем огороде
+</li><li> (kaz) <i>алты жақсы бақшаларда</i> → в шести хороших огородах
+</li><li> (kaz) <i>бір жақсы адам</i> → один хороший человек
+</li><li> (kaz) <i>бір жақсы әйел</i> → одна хорошая женщина
+</li><li> (kaz) <i>бір жақсы сөз</i> → одно хорошее слово
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=35" title="Edit section: Noun phrases (vP-cop-present)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28vP-cop-present.29"> Noun phrases (vP-cop-present)</span></h3>
+<ul><li> (kaz) <i>менің бақшам</i> → мой огород
+</li><li> (kaz) <i>сенің бақшаң</i> → твой огород
+</li><li> (kaz) <i>оның бақшасы</i> → его огород
+</li><li> (kaz) <i>біздің үйіміз</i> → наш дом
+</li><li> (kaz) <i>сіздің үйіңіз</i> → ваш дом
+</li><li> (kaz) <i>Мен дәрігермін.</i> → Я врач.
+</li><li> (kaz) <i>Сіз дәрігерсіз.</i> → Вы врач.
+</li><li> (kaz) <i>Ол дәрігер.</i> → Он врач.
+</li><li> (kaz) <i>Біз дәрігерлерміз.</i> → Мы врачи.
+</li><li> (kaz) <i>Олар дәрігерлер.</i> → Они врачи.
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=36" title="Edit section: Generating postpositions (pr n3)">edit</a>]</span> <span class="mw-headline" id="Generating_postpositions_.28pr_n3.29"> Generating postpositions (pr_n3) </span></h3>
+<ul><li> (kaz) <i>бақшаның астында</i> → под огородом
+</li><li> (kaz) <i>бақшаның үстінде</i> → над огородом
+</li><li> (kaz) <i>бақшалардың үстінде</i> → над огородами
+</li><li> (kaz) <i>бақшалардың астында</i> → под огородами
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=37" title="Edit section: Generating postpositions (adj n n)">edit</a>]</span> <span class="mw-headline" id="Generating_postpositions_.28adj_n_n.29"> Generating postpositions (adj_n_n) </span></h3>
+<ul><li> (kaz) <i>әдемі бақшаның үстінде</i> → над красивым огородом
+</li><li> (kaz) <i>әдемі бақшалардың үстінде</i> → над красивыми огородами
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=38" title="Edit section: Generating postpositions (n post)">edit</a>]</span> <span class="mw-headline" id="Generating_postpositions_.28n_post.29"> Generating postpositions (n_post) </span></h3>
+<ul><li> (kaz) <i>бақша арқылы</i> → через огород
+</li><li> (kaz) <i>бақшадан кейін</i> → за огородом
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=39" title="Edit section: Generating postpositions (num &amp;&amp; adj n n)">edit</a>]</span> <span class="mw-headline" id="Generating_postpositions_.28num_.26.26_adj_n_n.29"> Generating postpositions (num   &amp;&amp;  adj_n_n) </span></h3>
+<ul><li> (kaz) <i>бір әдемі бақшаның үстінде</i> → над одним красивым огородом
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=40" title="Edit section: from eng-kaz regression test">edit</a>]</span> <span class="mw-headline" id="from_eng-kaz_regression_test"> from eng-kaz regression test </span></h3>
+<ul><li> (kaz) <i>жеті әдемі бақшалардың үстінде.</i> → над семи красивыми огородами
+</li><li> (kaz) <i>бір әдемі бақшаның астында.</i> → под одним красивым огородом
+</li><li> (kaz) <i>жеті әдемі бақшалардың астында.</i> → под семью красивыми огородами
+</li><li> (kaz) <i>бір бақша арқылы.</i> → через один огород
+</li><li> (kaz) <i>жеті бақшалар арқылы.</i> → через семь огородов
+</li><li> (kaz) <i>бір әдемі бақша арқылы.</i> → через один красивый огород
+</li><li> (kaz) <i>жеті әдемі бақшалар арқылы.</i> → через семь красивых огородов
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=41" title="Edit section: from eng-kaz regression test (n-dsfsd &amp;&amp; adj)">edit</a>]</span> <span class="mw-headline" id="from_eng-kaz_regression_test_.28n-dsfsd_.26.26_adj.29"> from eng-kaz regression test  (n-dsfsd &amp;&amp; adj)</span></h3>
+<ul><li> (kaz) <i>Мен бақыттымын.</i> → Я счастлив.
+</li><li> (kaz) <i>Сіз бақыттысыз.</i> → Вы счастливы.
+</li><li> (kaz) <i>Ол бақытты.</i> → Он счастлив.
+</li><li> (kaz) <i>Біз бақыттымыз.</i> → Мы счастливы.
+</li><li> (kaz) <i>Олар бақытты.</i> → Они счастливы.
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=42" title="Edit section: from eng-kaz regression test (vP-cop-neg)">edit</a>]</span> <span class="mw-headline" id="from_eng-kaz_regression_test_.28vP-cop-neg.29"> from eng-kaz regression test  (vP-cop-neg)</span></h3>
+<ul><li> (kaz) <i>Мен бақытты емеспін.</i> → Я не счастлив.
+</li><li> (kaz) <i>Сіз бақытты емессіз.</i> → Вы не счастливы.
+</li><li> (kaz) <i>Ол бақытты емес.</i> → Он не счастлив.
+</li><li> (kaz) <i>Біз бақытты емеспіз.</i> → Мы не счастливы.
+</li><li> (kaz) <i>Олар бақытты емес.</i> → Они не счастливы.
+</li><li> (kaz) <i>Мен дәрігер емеспін.</i> → Я не врач.
+</li><li> (kaz) <i>Сіз дәрігер емессіз.</i> → Вы не врач.
+</li><li> (kaz) <i>Біз дәрігерлер емеспіз.</i> → Мы не врачи.
+</li><li> (kaz) <i>Олар дәрігерлер емес.</i> → Они не врачи.
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=43" title="Edit section: from eng-kaz regression test (n-dsfsd &amp;&amp; n-dsfsd &amp;&amp; v-neg-fin )">edit</a>]</span> <span class="mw-headline" id="from_eng-kaz_regression_test_.28n-dsfsd_.26.26_n-dsfsd_.26.26_v-neg-fin_.29"> from eng-kaz regression test  (n-dsfsd &amp;&amp;  n-dsfsd  &amp;&amp; v-neg-fin )</span></h3>
+<ul><li> (kaz) <i>Мен бақытты болдым.</i> → Я был счастлив.
+</li><li> (kaz) <i>Сіз бақытты болдыңыз.</i> → Вы были счастливы.
+</li><li> (kaz) <i>Ол бақытты болды.</i> → Он был счастлив.
+</li><li> (kaz) <i>Біз бақытты болдық.</i> → Мы были счастливы.
+</li><li> (kaz) <i>Олар бақытты болды.</i> → Они были счастливы.
+</li><li> (kaz) <i>Мен бақытты болмадым.</i> → Я не был счастлив.
+</li><li> (kaz) <i>Сіз бақытты болмадыңыз.</i> → Вы не были счастливы.
+</li><li> (kaz) <i>Ол бақытты болмады.</i> → Он не был счастлив.
+</li><li> (kaz) <i>Біз бақытты болмадық.</i> → Мы были счастливы.
+</li><li> (kaz) <i>Олар бақытты болмады.</i> → Они не были счастливы.
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=44" title="Edit section: Possessives and demonstratives">edit</a>]</span> <span class="mw-headline" id="Possessives_and_demonstratives_2"> Possessives and demonstratives </span></h3>
 <ul><li> (kaz) <i>сіздің бақшаңыз</i> → Ваш сад
 </li></ul>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=14" title="Edit section: Simple sentences">edit</a>]</span> <span class="mw-headline" id="Simple_sentences_2"> Simple sentences </span></h3>
-<ul><li> (kaz) <i>Ол қорадай ойнайды</i> → Он играет во дворе.
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=45" title="Edit section: Simple sentences">edit</a>]</span> <span class="mw-headline" id="Simple_sentences_2"> Simple sentences </span></h3>
+<ul><li> (kaz) <i>Ол қорада ойнайды</i> → Он играет во дворе.
 </li></ul>
 
 <!-- 
 NewPP limit report
-Preprocessor node count: 268/1000000
-Post‐expand include size: 1308/2097152 bytes
-Template argument size: 546/2097152 bytes
+Preprocessor node count: 4101/1000000
+Post‐expand include size: 29358/2097152 bytes
+Template argument size: 12717/2097152 bytes
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key wikidb:pcache:idhash:7236-0!*!*!!en!*!* and timestamp 20170126043654 -->
+<!-- Saved in parser cache with key wikidb:pcache:idhash:7236-0!*!*!!en!*!* and timestamp 20170209081318 -->
 </div><div class="printfooter">
-Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=61252">http://wiki.apertium.org/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=61252</a>"</div>
+Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=61415">http://wiki.apertium.org/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=61415</a>"</div>
 		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
 				<div class="visualClear"></div>
 	</div>
@@ -184,7 +496,7 @@ Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_R
 				<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Kazakh_and_Russian/Regression_tests" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
 				<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
 				<li><a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;printable=yes" rel="alternate">Printable version</a></li>
-				<li id="t-permalink"><a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=61252" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-permalink"><a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=61415" title="Permanent link to this revision of the page">Permanent link</a></li>
 			</ul>
 		</div>
 	</div>
@@ -198,8 +510,8 @@ Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_R
 		<a href="//www.mediawiki.org/"><img src="/w/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
 	</div>
 	<ul id="f-list">
-		<li id="lastmod"> This page was last modified on 18 January 2017, at 12:45.</li>
-		<li id="viewcount">This page has been accessed 21 times.</li>
+		<li id="lastmod"> This page was last modified on 3 February 2017, at 09:21.</li>
+		<li id="viewcount">This page has been accessed 115 times.</li>
 		<li id="copyright">Content is available under <a class="external" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
 		<li id="privacy"><a href="/wiki/Apertium:Privacy_policy" title="Apertium:Privacy policy">Privacy policy</a></li>
 		<li id="about"><a href="/wiki/Apertium:About" title="Apertium:About">About Apertium</a></li>
@@ -211,4 +523,4 @@ Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_R
 mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
 }</script>
 <script src="http://wiki.apertium.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=monobook&amp;*"></script>
-<!-- Served in 8.360 secs. --></body></html>
+<!-- Served in 2.013 secs. --></body></html>

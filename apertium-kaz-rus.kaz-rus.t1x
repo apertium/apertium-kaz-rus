@@ -3530,15 +3530,22 @@ after:
 -->
             <lu>
             <var n="preposition"/>
+
             </lu>
             <b pos="1"/>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
+  <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                   <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+ <var n="case"/>
+                </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
             </lu>
+
           </chunk>
         </out>
       </action>
@@ -6338,7 +6345,6 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
                    <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
 <lit-tag v="nom"/>
                 </lu>
