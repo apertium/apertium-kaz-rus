@@ -9,6 +9,10 @@
 	  <match lemma="күн" tags="*"><select lemma="сутки" tags="n.*"/></match>
 </rule>
 
+<rule>
+	  <match lemma="бақша" tags="n.abl"/>
+	  <match lemma="кейін" tags="post"><select lemma="за" tags="pr.ins"/></match>
+</rule>
 
 <rule>
   <or>

@@ -1253,7 +1253,9 @@ If no format information is present it is removed. -->
       <let><clip pos="1" side="tl" part="a_anim"/><clip pos="2" side="tl" part="a_anim"/></let>
       <let><clip pos="1" side="tl" part="a_nbr"/><clip pos="2" side="tl" part="a_nbr"/></let>
       <let><clip pos="1" side="tl" part="a_case"/><clip pos="2" side="tl" part="a_case"/></let>
+      <let> <var n="case"/><clip pos="2" side="tl" part="a_case"/></let>
       <!-- Now adjust -->
+
       <choose>
         <when>
           <test><equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal></test>
@@ -2116,7 +2118,9 @@ If no format information is present it is removed. -->
 
       </pattern>
       <action>
-
+ <call-macro n="return-number-of-sl-word">
+              <with-param pos="1"/>
+            </call-macro>
         <choose>
           <when c="n.px3sp.{dat/abl/loc} is translated with a preposition">
             <test><equal><clip pos="2" side="tl" part="a_pos"/><lit-tag v="pr"/></equal></test>
@@ -2139,7 +2143,8 @@ If no format information is present it is removed. -->
                   <clip pos="1" side="tl" part="a_nom"/>
                   <clip pos="1" side="tl" part="a_gender"/>
                   <clip pos="1" side="tl" part="a_anim"/>
-                  <lit-tag v="sg"/>
+                  <var n="number"/>
+
                   <clip pos="2" side="tl" part="a_case"/>
                 </lu>
               </chunk>
@@ -4172,9 +4177,15 @@ output after:
               <clip pos="3" side="tl" part="whole"/>
             </lu>
             <b/>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
+           
+           <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <var n="case"/>
+                </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
