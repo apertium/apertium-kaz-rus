@@ -4776,7 +4776,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
    </when>
 
 <otherwise>
-      <let><var n="gender"/><lit-tag v="5"/></let>
+      <let><var n="gender"/><lit-tag v="4"/></let>
 </otherwise>
 </choose>
 
