@@ -416,6 +416,9 @@
     <def-attr n="a_adv">
       <attr-item tags="adv"/>
     </def-attr>
+ <def-attr n="a_num">
+      <attr-item tags="num"/>
+    </def-attr>
     <def-attr n="a_pr">
       <attr-item tags="pr"/>
       <attr-item tags="adv.itg"/> <!-- for как -->
@@ -986,6 +989,19 @@ If no format information is present it is removed. -->
     </def-macro>
 
 
+<def-macro n="num-gender" npar="1">
+     <choose> 
+<when>
+          <test><equal><clip pos="1" side="sl" part="a_gender"/><lit v=""/></equal></test>
+    
+          <let><var n="gender"/><lit-tag v="m"/></let>
+        </when>
+<otherwise>
+          <let><var n="gender"/><clip pos="1" side="sl" part="a_gender"/></let>
+</otherwise>
+</choose>
+    </def-macro>
+
     <def-macro n="translate-noun" npar="1"> 
       <!-- arg.1 noun -> v_preposition v_possessive noun
            Translates ablative, locative, similiative cases with the variable 'preposition'
@@ -1377,6 +1393,23 @@ If no format information is present it is removed. -->
           <lit-tag v="num"/>
         </concat>
       </let>
+    </def-macro>
+
+
+
+<def-macro n="makeagree-pr-n-adj" npar="2">
+      <!-- arg.1 pr 2 noun arg.3 adj -> pr noun-->
+      <let><clip pos="3" side="tl" part="a_case"/><clip pos="2" side="tl" part="a_case"/></let>
+<choose> 
+<when>
+          <test><equal><clip pos="2" side="tl" part="a_case"/><lit-tag v="acc"/></equal></test>
+    
+          <let><var n="animacy"/><lit-tag v="nn"/></let>
+        </when>
+<otherwise>
+          <let><var n="animacy"/><clip pos="2" side="tl" part="a_anim"/></let>
+</otherwise>
+</choose>
     </def-macro>
 
 <!-- SECTION: Prepositional phrases -->
@@ -3644,6 +3677,9 @@ after:
           <with-param pos="1"/>
           <with-param pos="2"/>
         </call-macro>
+
+
+ 
         <out>
           <chunk name="adj_n_pr">
             <tags>
@@ -4214,12 +4250,18 @@ output after:
         <pattern-item n="post"/>
       </pattern>
       <action>
+
         <call-macro n="translate-noun">
           <with-param pos="2"/>
         </call-macro>
         <call-macro n="makeagree-pr-noun">
           <with-param pos="3"/>
           <with-param pos="2"/>
+        </call-macro>
+ <call-macro n="makeagree-pr-n-adj">
+          <with-param pos="3"/>
+          <with-param pos="2"/>
+          <with-param pos="1"/>
         </call-macro>
         <call-macro n="makeagree-det-noun">
           <with-param pos="1"/>
@@ -4239,13 +4281,75 @@ output after:
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
                   <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
+                 <var n="animacy"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
                   <var n="case"/>
                 </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+<rule comment="NUM ADJ N POST"> 
+      <pattern>
+      <pattern-item n="num"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n"/>
+        <pattern-item n="post"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-noun">
+          <with-param pos="3"/>
+        </call-macro>
+        <call-macro n="makeagree-pr-noun">
+          <with-param pos="4"/>
+          <with-param pos="3"/>
+        </call-macro>
+ <call-macro n="makeagree-pr-n-adj">
+          <with-param pos="4"/>
+          <with-param pos="3"/>
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="2"/>
+          <with-param pos="3"/>
+        </call-macro>
+ <call-macro n="num-gender">
+          <with-param pos="1"/>
+        </call-macro>
+        <out>
+          <chunk name="num_adj_n_pr">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_num"/>
+              <var n="gender"/>
+              <var n="animacy"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+<var n="case"/>
+            </lu>
+<b/>
+           <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_adj"/>
+                  <clip pos="2" side="tl" part="a_gender"/>
+                 <var n="animacy"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <var n="case"/>
+                </lu>
+            <b/>
+            <lu>
+              <clip pos="3" side="tl" part="whole"/>
             </lu>
           </chunk>
         </out>
@@ -4545,6 +4649,15 @@ output after:
             <lu>
                   <clip pos="2" side="tl" part="whole"/>
             </lu>
+ <!-- <lu>
+                  <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_adj"/>
+                   <clip pos="2" side="tl" part="a_gender"/>
+                   <clip pos="2" side="tl" part="a_anim"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
+                 <clip pos="2" side="tl" part="a_syntag"/>
+<lit-tag v="nom"/>
+                </lu>-->
             <b/>
             <lu>
               <clip pos="3" side="tl" part="a_verb"/>
@@ -6413,6 +6526,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
                    <clip pos="1" side="tl" part="a_gender"/>
+                   <clip pos="1" side="tl" part="a_anim"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
 <lit-tag v="nom"/>
                 </lu>
@@ -6469,6 +6583,19 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
             </call-macro>
 	  </when>
 	</choose>
+<call-macro n="num-gender">
+          <with-param pos="1"/>
+        </call-macro>
+<choose> 
+<when>
+          <test><equal><clip pos="1" side="sl" part="a_case"/><lit v=""/></equal></test>
+    
+          <let><var n="case"/><lit-tag v="nom"/></let>
+        </when>
+<otherwise>
+          <let><var n="case"/><clip pos="1" side="sl" part="a_case"/></let>
+</otherwise>
+</choose>
         <out>
           <chunk name="num">
             <tags>
@@ -6477,10 +6604,10 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_num"/>
-              <clip pos="1" side="tl" part="a_gender"/>
+              <var n="gender"/>
               <clip pos="1" side="tl" part="a_anim"/>
               <clip pos="1" side="tl" part="a_nbr"/>
-              <clip pos="1" side="tl" part="a_case"/>
+<var n="case"/>
             </lu>
           </chunk>
         </out>
