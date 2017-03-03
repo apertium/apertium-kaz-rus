@@ -15,6 +15,16 @@
 </rule>
 
 <rule>
+	  <match lemma="*" tags="num"/>
+	  <match lemma="жас" tags="n.loc"><select lemma="лет" tags="n.*"/></match>
+</rule>
+
+<rule>
+	  <match lemma="кітап" tags="n.gen"/>
+	  <match lemma="бет" tags="n.pl.*"><select lemma="страница" tags="n.*"/></match>
+</rule>
+
+<rule>
   <or>
     <match lemma="ашық" tags="*"><select lemma="ясный" tags="adj.*"/></match>
     <match lemma="жаңбырлы" tags="*"><select lemma="дождливый" tags="adj.*"/></match>

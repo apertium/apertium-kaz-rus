@@ -95,13 +95,13 @@
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
-      <cat-item tags="prn.*"/>
+     <!-- <cat-item tags="prn.*"/>
       <cat-item tags="adj.subst"/>
       <cat-item tags="adj.subst.*"/>
       <cat-item tags="adj.comp.subst"/>
       <cat-item tags="adj.comp.subst.*"/>
       <cat-item tags="adv.subst"/>
-      <cat-item tags="adv.subst.*"/>
+      <cat-item tags="adv.subst.*"/>-->
     </def-cat>
     <def-cat n="n-attr-or-gen">
       <cat-item tags="n.attr"/>
@@ -126,6 +126,15 @@
       <cat-item tags="np.ant.*"/>
       <cat-item tags="np.top.*"/>
     </def-cat>
+ <def-cat n="prn">
+<cat-item tags="prn"/>
+<cat-item tags="prn.*"/>
+<cat-item tags="prn.dem"/>
+<cat-item tags="prn.dem.*"/>
+<cat-item tags="prn.ind.*"/>
+<cat-item tags="prn.neg.*"/>
+<cat-item tags="prn.qnt.*.*"/>
+         </def-cat>
     <def-cat n="prep">
       <cat-item tags="pr"/>
     </def-cat>
@@ -184,6 +193,10 @@
       <cat-item tags="adj.advl"/>
       <cat-item tags="adj.comp.advl"/>
       <cat-item tags="adv.attr"/>
+<cat-item tags="adj.subst"/>
+      <cat-item tags="adj.subst.*"/>
+      <cat-item tags="adj.comp.subst"/>
+      <cat-item tags="adj.comp.subst.*"/>
     </def-cat>
 <def-cat n="tomorrow-adv">
            <cat-item lemma="ертең" tags="adv"/>
@@ -3528,9 +3541,17 @@ after putting
             <var n="preposition"/>
 </lu>
 <b/>
-            <lu>
+           <!-- <lu>
               <clip pos="1" side="tl" part="whole"/>
-            </lu>
+            </lu>-->
+<lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                   <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+ <var n="case"/>
+                </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -3724,6 +3745,10 @@ after:
         <call-macro n="translate-noun">
           <with-param pos="3"/>
         </call-macro>
+<call-macro n="makeagree-det-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
  
         <out>
           <chunk name="adj_n_n">
@@ -3740,9 +3765,17 @@ after:
             </lu>
             <b/>
 
-            <lu>
+           <!-- <lu>
               <clip pos="1" side="tl" part="whole"/>
-            </lu>
+            </lu>-->
+<lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                   <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+ <var n="case"/>
+                </lu>
             <b/>
  
        <lu>
@@ -3951,7 +3984,6 @@ output after:
         </out>
       </action>
     </rule>
-
 
     <rule comment="REGLA: NUM N">
       <!--
@@ -4335,7 +4367,8 @@ output after:
               <clip pos="1" side="tl" part="a_num"/>
               <var n="gender"/>
               <var n="animacy"/>
-              <clip pos="1" side="tl" part="a_nbr"/>
+ <var n="number"/>
+             <!-- <clip pos="1" side="tl" part="a_nbr"/>-->
 <var n="case"/>
             </lu>
 <b/>
@@ -4646,10 +4679,10 @@ output after:
                   <clip pos="1" side="tl" part="whole"/>
             </lu>
             <b/>
-            <lu>
+          <lu>
                   <clip pos="2" side="tl" part="whole"/>
-            </lu>
- <!-- <lu>
+            </lu> 
+  <!--<lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_adj"/>
                    <clip pos="2" side="tl" part="a_gender"/>
@@ -4657,7 +4690,7 @@ output after:
                   <clip pos="2" side="tl" part="a_nbr"/>
                  <clip pos="2" side="tl" part="a_syntag"/>
 <lit-tag v="nom"/>
-                </lu>-->
+                </lu> -->
             <b/>
             <lu>
               <clip pos="3" side="tl" part="a_verb"/>
@@ -6560,6 +6593,27 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
         </out>
       </action>
     </rule>
+
+
+    <rule comment="REGLA: PRN">
+      <pattern>
+        <pattern-item n="prn"/>
+<pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="prn">
+            <tags>
+              <tag><lit-tag v="PRN"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
 
     <rule comment="REGLA: NUM">
       <!--
