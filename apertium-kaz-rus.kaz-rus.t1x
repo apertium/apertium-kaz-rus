@@ -333,7 +333,11 @@
       <cat-item tags="cop.ger_perf.*"/>
       <cat-item tags="cop.*.ger_perf.*"/>
     </def-cat>
-    <def-cat n="verb-nonfin-ger_past">
+    <def-cat n="verb-nonfin-gpr_fut">
+      <cat-item tags="v.*.gpr_fut.*"/>
+      <cat-item tags="v.*.*.gpr_fut.*"/>
+    </def-cat>
+<def-cat n="verb-nonfin-ger_past">
       <cat-item tags="v.*.ger_past.*"/>
       <cat-item tags="v.*.*.ger_past.*"/>
     </def-cat>
@@ -6145,6 +6149,40 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </action>
     </rule>
 
+
+<!-- шақырардан-->
+<rule comment="REGLA: IN V-gpr_fut+loc R-KL">
+      
+      <pattern>
+        <pattern-item n="verb-nonfin-gpr_fut"/>
+      </pattern>
+      <action>
+        
+                       <out>
+              <chunk name="verb-nonfin-gpr_fut">
+		<tags>
+		  <tag><lit-tag v="SV"/></tag>
+		  <tag><lit-tag v="impf"/></tag>
+		  <tag><clip pos="1" side="tl" part="a_case"/></tag>
+		</tags>
+
+
+		<lu>
+		  <clip pos="1" side="tl" part="lemh"/>
+		  <lit-tag v="vblex"/>
+		  <lit-tag v="impf"/>
+		  <lit-tag v="iv"/>
+		  <lit-tag v="inf"/>
+		  
+		  <clip pos="1" side="tl" part="lemq"/>
+		</lu>
+              </chunk>
+            </out>
+	 
+      </action>
+    </rule>
+
+
     <rule comment="REGLA: V
 		   To translate every non-finite form with infinitive is not good,
                    but this is a temporal solution until things get sorted out.">
@@ -6279,6 +6317,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 	 
       </action>
     </rule>-->
+
 
 
 

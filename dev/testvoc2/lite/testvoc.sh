@@ -30,7 +30,7 @@ function extract_lexical_units {
 # Kazakh->English testvoc
 #-------------------------------------------------------------------------------
 
-PARDEF_FILES=../../../../apertium-kaz/tests/morphotactics/kaz-eng/*.txt.gz
+PARDEF_FILES=../../../../apertium-kaz/tests/morphotactics/kaz-rus/*.txt.gz
 
 echo "==Kazakh->Russian==========================="
 
