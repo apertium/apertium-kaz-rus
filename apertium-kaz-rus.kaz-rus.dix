@@ -29856,7 +29856,8 @@
 <e>       <p><l>үшін<s n="post"/></l>                  <r>за<s n="pr"/></r></p><par n="__LR_acc"/></e>
 <e>       <p><l>үшін<s n="post"/></l>                  <r>ради<s n="pr"/></r></p><par n="__LR_acc"/></e>
 
-
+<!-- Тествок Ернур postadv слова -->
+<e r = "LR"><p><l>-ақ<s n="postadv"/></l><r><s n="pr"/></r></p></e>
 
 <!-- Proper nouns -->
 
@@ -30101,7 +30102,7 @@ zloy_zhake
 <e><p><l>'<s n="apos"/></l><r>'<s n="apos"/></r></p></e>
 
 <e><re>[.\?;:!"]+</re><p><l><s n="sent"/></l><r><s n="sent"/></r></p></e>
-
+<e>       <re>%?[0-9]+([.,][0-9]+)*[.,]*</re><p><l><s n="num"/></l><r><s n="num"/></r></p></e> 
 
   </section>
 </dictionary>
