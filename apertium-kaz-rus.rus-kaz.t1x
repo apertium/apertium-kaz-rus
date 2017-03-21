@@ -103,17 +103,18 @@
     <def-cat n="sent">
       <cat-item tags="sent"/>
     </def-cat>
-    <def-cat n="pers-verb"> <!-- past and present tense -->
+<def-cat n="pers-verb"> <!-- past and present tense -->
       <cat-item tags="vblex.impf.pres.*"/>
       <cat-item tags="vblex.impf.pres"/>
       <cat-item tags="vblex.impf.past"/>
       <cat-item tags="vblex.impf.past.*"/>
+      <cat-item tags="vblex.perf.pres.*"/>
+      <cat-item tags="vblex.perf.pres"/>
       <cat-item tags="vblex.perf.past"/>
       <cat-item tags="vblex.perf.past.*"/>
       <cat-item tags="vbhaver.impf.past.*"/>
      <cat-item tags="vbhaver.impf.pres.*"/>
-
-    </def-cat>   
+    </def-cat>  
 <def-cat n="zovut_pers-verb"> <!-- past and present tense -->
       <cat-item lemma="звать" tags="vblex.impf.pres.*"/>
       <cat-item lemma="звать" tags="vblex.impf.pres"/>
@@ -187,6 +188,13 @@
     <cat-item tags="vblex.*"/>
     <cat-item tags="vblex"/>
   </def-cat>
+
+    <def-cat n="verb"> <!-- for verbs -->
+      <cat-item tags="vblex.impf.*.*"/>
+      <cat-item tags="vblex.impf.*.*.*"/>
+      <cat-item tags="vblex.perf.*.*"/>
+      <cat-item tags="vblex.perf.*.*.*"/>
+    </def-cat> 
 
   </section-def-cats>
 
@@ -340,13 +348,20 @@
        <attr-item tags="subst"/>
     </def-attr>
 
-    <def-attr n="a_tense">
+ <def-attr n="a_tense">
       <attr-item tags="pres"/>
       <attr-item tags="ifi"/>
       <attr-item tags="past"/>
       <attr-item tags="fut"/>
       <attr-item tags="fut2"/>
       <attr-item tags="imp"/>
+      <attr-item tags="cont"/>
+      <attr-item tags="aor"/>
+      <attr-item tags="pprs"/>
+      <attr-item tags="pp"/>
+      <attr-item tags="inf"/>
+      <attr-item tags="ifi_evid"/>
+      <attr-item tags="fut_plan"/>
     </def-attr>
 
     <def-attr n="a_verb">
@@ -1101,7 +1116,190 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+<rule comment="NEW RULE: verb"> <!-- Aliya 20.03.17 -->
+  <pattern>
+    <pattern-item n="verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pres"/></equal></test>
+        <let><var n="tense"/><lit-tag v="aor"/></let>
+    <out>
+    <chunk name="verb-pres"> <!-- Он зовет - Ол шақырады -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="6"/>
+          <lit-tag v="4"/>
+          <lit-tag v="5"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+          <lit-tag v="7"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
 
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="past"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ifi"/></let>
+    <out>
+    <chunk name="verb-past"> <!-- Он звал - Ол шақырған -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+	  <clip pos="1" side="tl" part="a_tense"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+    <out>
+    <chunk name="verb-inf"> <!-- звать - шақыру -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="imp"/></equal></test>
+        <let><var n="tense"/><lit-tag v="imp"/></let>
+    <out>
+    <chunk name="verb-imp"> <!-- зови - шақыр -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="imp"/>
+          <lit-tag v="p2"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pprs"/></equal></test>
+        <let><var n="tense"/><lit-tag v="pprs"/></let>
+    <out>
+    <chunk name="verb-pprs"> <!-- зовя - шақыра -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="pprs"/>
+          <lit-tag v="actv"/>
+          <lit-tag v="adv"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pp"/></equal></test>
+        <let><var n="tense"/><lit-tag v="pp"/></let>
+    <out>
+    <chunk name="verb-pp"> <!-- зовя - шақыра -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="pp"/>
+          <lit-tag v="actv"/>
+          <lit-tag v="adv"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="tense"/><lit-tag v="aor"/></let>
+    <out>
+    <chunk name="verb">
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+	  <clip pos="1" side="tl" part="a_tense"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+  </action>
+</rule>
 <!-- from eng-kaz for в саду    Балжан-->
 
 <rule comment="NEW RULE: subj-pron">
