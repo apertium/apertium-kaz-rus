@@ -195,6 +195,14 @@
       <cat-item tags="vblex.perf.*.*"/>
       <cat-item tags="vblex.perf.*.*.*"/>
     </def-cat> 
+   <def-cat n="v-pp_pprs"> <!-- for verbs -->
+      <cat-item tags="vblex.pp.*"/>
+      <cat-item tags="vblex.pp.*.*"/>
+      <cat-item tags="vblex.pp.*.*.*"/>
+      <cat-item tags="vblex.pprs.*"/>
+      <cat-item tags="vblex.pprs.*.*"/>
+      <cat-item tags="vblex.pprs.*.*.*"/>
+    </def-cat>
 
   </section-def-cats>
 
@@ -388,6 +396,15 @@
       <attr-item tags="v.iv"/>
     </def-attr>
 
+ <def-attr n="a_tns-prc">
+      <attr-item tags="pri"/>
+       <attr-item tags="prc_pers"/>
+      <attr-item tags="gna9"/>
+      <attr-item tags="prc_impf"/>
+      <attr-item tags="prc_perf"/>
+      <attr-item tags="ger_past"/>
+      <attr-item tags="gpr_pot"/>
+    </def-attr>
   </section-def-attrs>
 
 
@@ -1227,7 +1244,7 @@ If no format information is present it is removed. -->
 
       <when>
         <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pprs"/></equal></test>
-        <let><var n="tense"/><lit-tag v="pprs"/></let>
+        <let><var n="tense"/><lit-tag v="prc_impf"/></let>
     <out>
     <chunk name="verb-pprs"> <!-- зовя - шақыра -->
       <tags>
@@ -1242,9 +1259,7 @@ If no format information is present it is removed. -->
         <lu>
           <clip pos="1" side="tl" part="lem"/>
 	  <clip pos="1" side="tl" part="a_kaz_verb"/>
-          <lit-tag v="pprs"/>
-          <lit-tag v="actv"/>
-          <lit-tag v="adv"/>
+          <lit-tag v="prc_impf"/>
         </lu>
     </chunk>
     </out>
@@ -1252,9 +1267,9 @@ If no format information is present it is removed. -->
 
       <when>
         <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pp"/></equal></test>
-        <let><var n="tense"/><lit-tag v="pp"/></let>
+        <let><var n="tense"/><lit-tag v="prc_perf"/></let>
     <out>
-    <chunk name="verb-pp"> <!-- зовя - шақыра -->
+    <chunk name="verb-pp"> <!-- звав - шақырып -->
       <tags>
         <tag><lit-tag v="VP"/></tag>
         <tag><lit-tag v="ND"/></tag> <!-- number -->
@@ -1267,9 +1282,7 @@ If no format information is present it is removed. -->
         <lu>
           <clip pos="1" side="tl" part="lem"/>
 	  <clip pos="1" side="tl" part="a_kaz_verb"/>
-          <lit-tag v="pp"/>
-          <lit-tag v="actv"/>
-          <lit-tag v="adv"/>
+          <lit-tag v="prc_perf"/>
         </lu>
     </chunk>
     </out>
@@ -1300,6 +1313,88 @@ If no format information is present it is removed. -->
     </choose>
   </action>
 </rule>
+
+<rule comment="NEW RULE: verb1"> <!-- Aliya 21.03.17 -->
+  <pattern>
+    <pattern-item n="v-pp_pprs"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pprs"/></equal></test>
+        <let><var n="tense"/><lit-tag v="gpr_pot"/></let>
+    <out>
+    <chunk name="v-pprs-actv_pasv"> <!-- зовущий-шақырушы -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="gpr_pot"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pp"/></equal></test>
+        <let><var n="tense"/><lit-tag v="past"/></let>
+    <out>
+    <chunk name="v-pp-actv_pasv"> <!-- звавший-шақырған -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="past"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="tense"/><lit-tag v="aor"/></let>
+    <out>
+    <chunk name="verb-pp_pprs">
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+	  <clip pos="1" side="tl" part="a_tense"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+  </action>
+</rule>
+
 <!-- from eng-kaz for в саду    Балжан-->
 
 <rule comment="NEW RULE: subj-pron">
