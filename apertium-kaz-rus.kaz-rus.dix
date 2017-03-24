@@ -19631,7 +19631,7 @@
     <!-- Conjunctions -->
 
 <e>       <p><l>және<s n="cnjcoo"/></l>               <r>и<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>да<s n="cnjcoo"/></l>                  <r>тоже<s n="adv"/></r></p></e>
+<e>       <p><l>да<s n="cnjcoo"/></l>                  <r>тоже<s n="postadv"/></r></p></e>
 
 <e>       <p><l>мен<s n="cnjcoo"/></l>                  <r>и<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>ал<s n="cnjcoo"/></l>                   <r>а<s n="cnjcoo"/></r></p></e>
@@ -29819,8 +29819,11 @@
 <e>       <p><l>үшін<s n="post"/></l>                  <r>ради<s n="pr"/></r></p><par n="__LR_acc"/></e>
 
 <!-- Тествок Ернур postadv слова -->
-<e r = "LR"><p><l>-ақ<s n="postadv"/></l><r><s n="pr"/></r></p></e>
-<e r = "LR"><p><l>ғана<s n="postadv"/></l><r><s n="pr"/></r></p></e>
+  <e r = "LR"><p><l>-ақ<s n="postadv"/></l><r><s n="pr"/></r></p></e>
+  <e r = "LR"><p><l>да<s n="post"/></l><r><s n="pr"/></r></p></e>
+<e r = "LR"><p><l>ғана<s n="postadv"/></l><r>только<s n="adv"/></r></p></e>
+  <e r = "LR"><p><l>сыз<s n="post"/></l><r><s n="pr"/></r></p></e>
+  <e r = "LR"><p><l>лы<s n="post"/></l><r><s n="pr"/></r></p></e>
 
 <!-- Proper nouns -->
 
