@@ -246,6 +246,20 @@
       <attr-item tags="qnt"/>
       <attr-item tags="ind"/>
     </def-attr>
+<def-attr n="a_Rcas">
+      <attr-item tags="Rnom"/>
+      <attr-item tags="Racc"/>
+      <attr-item tags="Rdat"/>
+      <attr-item tags="Rgen"/>
+      <attr-item tags="Rloc"/>
+      <attr-item tags="Rins"/>
+      <attr-item tags="Rabl"/>
+    </def-attr>
+<def-attr n="a_postposition"> <!-- Kazakh postposition indicators -->
+      <attr-item tags="n"/> 
+      <attr-item tags="post"/>
+	 
+    </def-attr>
 
     <def-attr n="a_det">
       <attr-item tags="det.dem"/>
@@ -389,6 +403,7 @@
 
     <def-attr n="a_kaz_pospron"> 
       <attr-item tags="prn.pos"/>
+<attr-item tags="prn.pers"/>
     </def-attr>
 
     <def-attr n="a_kaz_verb"> 
@@ -966,6 +981,8 @@ If no format information is present it is removed. -->
                <lit-tag v="loc"/>
             </let>
           </when> 
+
+
           <otherwise>
               <let>
                 <var n="case"/>
@@ -1698,8 +1715,26 @@ If no format information is present it is removed. -->
 	   </test>
 		     <let><var n="a_possessive"/><lit-tag v="px1pl"/></let>
 	</when>
-
-
+<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px1pl"/></let>
+	</when>
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px1sg"/></let>
+	</when>
 	<when> 
  	   <test>
 		<and>    
@@ -1758,7 +1793,7 @@ If no format information is present it is removed. -->
     <chunk name="subj-pron-pos-noun">
     <tags>
     <tag><lit-tag v="NP"/></tag>
-    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> 
+    <tag><clip pos="1" side="tl" part="a_nbr"/></tag> 
     <tag><clip pos="2" side="tl" part="a_nbr"/></tag> 
     <tag><clip pos="1" side="sl" part="a_pers"/></tag> 
     <tag><var n="a_possessive"/> </tag> 
@@ -1768,14 +1803,15 @@ If no format information is present it is removed. -->
     <clip pos="1" side="tl" part="lem"/>
       <clip pos="1" side="tl" part="a_kaz_pospron"/>
       <lit-tag v="4"/> <!-- number -->
-      <lit-tag v="3"/> <!-- person -->
-      <lit-tag v="nom"/> <!-- case -->
+      <lit-tag v="2"/> <!-- person -->
+     <!-- <lit-tag v="nom"/>   -->
+        <lit-tag v="gen"/> <!-- for мой дом -->
     </lu>     <b pos="1"/>
        <lu>
                <clip pos="2" side="tl" part="lem"/> 
                <clip pos="2" side="tl" part="a_nom"/>
                <lit-tag v="3"/>                          
- 	       <lit-tag v="5"/> 
+ 	       <var n="a_possessive"/> 
   	       <lit-tag v="6"/>
     </lu>      		
     </chunk>
@@ -3987,6 +4023,7 @@ If no format information is present it is removed. -->
 <rule comment="NEW RULE: prep noun"> 
   <pattern>
     <pattern-item n="prep"/>
+ <!--<pattern-item n="det"/>-->
     <pattern-item n="n"/>
   </pattern>
   <action>
