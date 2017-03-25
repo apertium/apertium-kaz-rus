@@ -374,7 +374,16 @@
     <def-cat n="cm">
       <cat-item tags="cm"/>
     </def-cat>
-
+<def-cat n="adj-subst">
+<cat-item tags="adj.subst"/>
+      <cat-item tags="adj.subst.*"/>
+      <cat-item tags="adj.comp.subst"/>
+      <cat-item tags="adj.comp.subst.*"/>
+    </def-cat>
+ <def-cat n="postadv">
+<cat-item tags="postadv"/>
+      <cat-item tags="postadv.*"/>
+    </def-cat>
   </section-def-cats>
 
   <section-def-attrs>
@@ -2910,6 +2919,99 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+<rule comment="RULE: ADJ+сыз/сіз"> <!-- Akbota  -->
+<pattern>
+ <pattern-item n="adj-subst"/>
+ <pattern-item n="cop"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="adj-subst" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <lit-tag v="adj"/>
+ <lit-tag v="sint"/>
+ <lit-tag v="mfn"/>
+ <lit-tag v="an"/>
+ <lit-tag v="pl"/>
+ <lit-tag v="gen"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule>
+<rule comment="RULE: ADJ+сыз/сіз-ақ"> <!-- Akbota  -->
+<pattern>
+ <pattern-item n="adj-subst"/>
+ <pattern-item n="cop"/>
+<pattern-item n="postadv"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="adj-subst" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <lit-tag v="adj"/>
+ <lit-tag v="sint"/>
+ <lit-tag v="mfn"/>
+ <lit-tag v="an"/>
+ <lit-tag v="pl"/>
+ <lit-tag v="gen"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule> 
+
+<rule comment="RULE: ADJ+postadv"> <!-- Akbota  -->
+<pattern>
+ <pattern-item n="adj-subst"/>
+<pattern-item n="postadv"/>
+</pattern>
+  <action>
+<choose>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+<let><var n="case"/><lit-tag v="dat"/></let>
+</when>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal></test>
+<let><var n="case"/><lit-tag v="gen"/> </let>
+</when>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="abl"/></equal></test>
+<let><var n="preposition"/><concat><lit v="^от"/><lit-tag v="pr"/><lit v="$"/></concat></let>
+<let><var n="case"/><lit-tag v="ins"/></let>
+</when>
+<otherwise>
+<let><var n="case"/><lit-tag v="nom"/></let>
+</otherwise>
+</choose>
+ <out>
+       <chunk name="adj+postadv" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <lit-tag v="adj"/>
+ <lit-tag v="sint"/>
+<lit-tag v="case"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule> 
 
       <rule comment="REGLA: N POST">
       <!--
@@ -6654,7 +6756,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
     </rule>
 
 
-    <rule comment="REGLA: NUM">
+   <rule comment="REGLA: NUM">
       <!--
         INPUT:  ^бір<num>/один<num><m><an><sg><nom>$
         OUTPUT: ^num<DET>{^один<num><m><an><sg><nom>$}$
@@ -6662,6 +6764,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
       <pattern>
 
         <pattern-item n="num"/>
+        <pattern-item n="cop"/>
       </pattern>
       <action>
 <call-macro n="makeagree-num-noun">
@@ -6670,10 +6773,10 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
         </call-macro>
         <choose>
           <when>
-            <test><equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num.digit"/></equal></test>
-	    <call-macro n="leave-only-lemma-and-num-tag">
-              <with-param pos="1"/>
-            </call-macro>
+            <test>   
+             <equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num"/></equal>
+            </test>
+	    <let><var n="case"/><lit-tag v="num"/></let>
 	  </when>
 	</choose>
 <call-macro n="num-gender">
@@ -6697,10 +6800,12 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_num"/>
+               
+              
               <var n="gender"/>
               <clip pos="1" side="tl" part="a_anim"/>
               <clip pos="1" side="tl" part="a_nbr"/>
-<var n="case"/>
+              <var n="case"/>
             </lu>
           </chunk>
         </out>
