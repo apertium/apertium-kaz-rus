@@ -5636,7 +5636,7 @@
 <e><p><l>тіміскілеу<s n="n"/></l><r>происки<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>тіміскілік<s n="n"/></l><r>происки<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>жарқыл<s n="n"/></l><r>сполохи<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>субтропиктер<s n="n"/><s n="pl"/></l><r>субтропики<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>субтропик<s n="n"/><s n="pl"/></l><r>субтропики<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>атауыз<s n="n"/></l><r>тиски<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қысқыш<s n="n"/></l><r>тиски<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>іскенже<s n="n"/></l><r>тиски<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -19577,6 +19577,12 @@
 <e>       <p><l>не<s n="prn"/><s n="itg"/></l>         <r>что<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p></e>
 <e>       <p><l>өз<s n="prn"/><s n="ref"/></l>         <r>сам<s n="det"/><s n="ref"/><s n="m"/><s n="an"/></r></p></e>
 <e><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="prn"/><s n="pos"/></r></p></e>
+<e><p><l>сен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>твой<s n="prn"/><s n="pos"/></r></p></e>
+<e><p><l>ол<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>его<s n="prn"/><s n="pos"/></r></p></e>
+<e><p><l>біз<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>наш<s n="prn"/><s n="pos"/></r></p></e>
+<e><p><l>сіз<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>ваш<s n="prn"/><s n="pos"/></r></p></e>
+<e><p><l>ол<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>их<s n="prn"/><s n="pos"/></r></p></e>
+
 <!--<e><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="prn"/><s n="pos"/><s n="m"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>-->
     <!-- Determiners -->
 <e c="менің"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>

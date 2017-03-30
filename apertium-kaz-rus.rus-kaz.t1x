@@ -122,7 +122,15 @@
       <cat-item lemma="звать" tags="vblex.impf.past.*"/>
 
     </def-cat>  
-
+   <def-cat n="sam-sg">
+      <cat-item lemma="сам" tags="det.*.sg.*"/>
+    </def-cat>
+    <def-cat n="sam-pl">
+      <cat-item lemma="сам" tags="det.*.pl.*"/>
+    </def-cat>
+    <def-cat n="moi">
+      <cat-item lemma="мой" tags="prn.*"/>
+    </def-cat>
     <def-cat n="budu-vbser"> <!-- past and present tense -->
       <cat-item tags="vbser.fut.*"/>
       <cat-item tags="vbser.fut"/>      
@@ -372,6 +380,7 @@
       <attr-item tags="px2sg"/>
       <attr-item tags="px2pl"/>
       <attr-item tags="px3sp"/>
+ <attr-item tags="px3pl"/>
     </def-attr>
 
     <def-attr n="a_pr">
@@ -1839,6 +1848,299 @@ If no format information is present it is removed. -->
   </action>
 </rule>
 
+
+<rule comment="RULE: sam-sg"> <!-- Aliya 29.03.17 -->
+      <pattern>
+        <pattern-item n="sam-sg"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal></test>
+        <let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="sam-nom">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="gen"/></let>
+    <out>
+    <chunk name="sam-gen">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="sam-dat">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="dat"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="sam-ins">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="ins"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="case"/><lit-tag v="prp"/></let>
+    <out>
+    <chunk name="sam-prp">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="loc"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: sam-pl"> <!-- Aliya 29.03.17 -->
+      <pattern>
+        <pattern-item n="sam-pl"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal></test>
+        <let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="sam-pl-nom">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3pl"/>
+          <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="gen"/></let>
+    <out>
+    <chunk name="sam-pl-gen">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3pl"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="sam-pl-dat">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3pl"/>
+          <lit-tag v="dat"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="sam-pl-ins">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3pl"/>
+          <lit-tag v="ins"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="case"/><lit-tag v="prp"/></let>
+    <out>
+    <chunk name="sam-pl-prp">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3pl"/>
+          <lit-tag v="loc"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+
+
+<rule comment="RULE: moi"> <!-- Aliya 29.03.17 -->
+      <pattern>
+        <pattern-item n="moi"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal></test>
+        <let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="moi-nom">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="мен"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p1"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="gen"/></let>
+    <out>
+    <chunk name="moi-gen">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="мен"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p1"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="acc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="moi-dat">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="мен"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p1"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="dat"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="moi-ins">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="мен"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p1"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="ins"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="case"/><lit-tag v="prp"/></let>
+    <out>
+    <chunk name="moi-prp">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="мен"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p1"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="loc"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
 
 <!-- from eng-kaz for в саду    Балжан-->
 
