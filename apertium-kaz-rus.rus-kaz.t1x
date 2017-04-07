@@ -299,6 +299,7 @@
       <attr-item tags="det.ind"/>
       <attr-item tags="det.qnt"/>
       <attr-item tags="num"/>
+ <attr-item tags="prn"/>
     </def-attr>
 
     <def-attr n="a_gender">
@@ -3599,7 +3600,7 @@ If no format information is present it is removed. -->
         </and>
         </test>
        <out>
-       <chunk name="__prn_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
+       <chunk name="__prn_1" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
             <lit v="бұл"/>
             <lit-tag v="prn"/>
             <clip pos="1" side="sl" part="learned_prntype"/>
@@ -3642,7 +3643,7 @@ If no format information is present it is removed. -->
         </and>
         </test>
        <out>
-       <chunk name="__prn_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
+       <chunk name="__prn_2" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
             <lit v="бұл"/>
             <lit-tag v="det"/>
             <lit-tag v="dem"/>
@@ -3666,7 +3667,7 @@ If no format information is present it is removed. -->
            </and>
         </test>
        <out>
-       <chunk name="__prn_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
+       <chunk name="__prn_3" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
             <clip pos="1" side="tl" part="lemh"/>
             <lit-tag v="prn"/>
             <clip pos="1" side="sl" part="learned_prntype"/>
@@ -4834,22 +4835,30 @@ If no format information is present it is removed. -->
 <choose>
   <when> <!-- Demonstrative -->
     <test>
-<and>
-<equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="dem"/></equal>
 
 <or>
- <equal><clip pos="1" side="sl" part="lem"/><lit v="This"/></equal>
- <equal><clip pos="1" side="sl" part="lem"/><lit v="this"/></equal>
+ <equal><clip pos="1" side="sl" part="lem"/><lit v="их"/></equal>
+ <equal><clip pos="1" side="sl" part="lem"/><lit v="Их"/></equal>
 </or>
-</and>
+
 </test>
 <let>
-<var n="case"/><lit-tag v="nom"/>
+<var n="case"/><lit-tag v="gen"/>
+</let>
+
+<let>
+<var n="number"/><lit-tag v="pl"/>
+</let>
+<let>
+<var n="possessive"/><lit-tag v="px3sp"/>
 </let>
 </when>
 <otherwise>
 <let>
 <var n="case"/><lit v=""/>
+</let>
+<let>
+<var n="possessive"/><lit-tag v="PXD"/>
 </let>
 </otherwise>
 </choose>
@@ -4866,15 +4875,16 @@ If no format information is present it is removed. -->
     <chunk name="detdem-nom"  case="caseFirstWord">
     <tags>
     <tag><lit-tag v="NP"/></tag>
-    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><clip pos="2" side="tl" part="a_nbr"/></tag> <!-- number placeholder -->
     <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><var n="possessive"/></tag> <!-- possessor placeholder -->
     <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
     </tags>
       <lu>
       <clip pos="1" side="tl" part="lem"/>
       <clip pos="1" side="tl" part="a_det"/>
       <clip pos="1" side="tl" part="a_dem"/>
+<var n="number"/>
 <var n="case"/>
     </lu>
     <b pos="1"/>
