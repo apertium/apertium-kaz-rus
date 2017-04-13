@@ -216,6 +216,9 @@
     <def-cat n="num-ord">
             <cat-item tags="num.ord"/>
         </def-cat>
+    <def-cat n="num-subst">
+            <cat-item tags="num.subst"/>
+        </def-cat>
     <def-cat n="cop">
       <cat-item tags="cop.*"/>
     </def-cat>
@@ -3614,6 +3617,307 @@ If no format information is present it is removed. -->
         </out>
       </action>
     </rule>
+
+
+
+  <rule comment="RULE:n-px postadv"> 
+<!-- Ernur 
+  ~мектебімдегіден-ақ:мектеп<n><px1sg><loc><subst><abl>+-ақ<postadv>
+Правильный вывод: даже из моей школы -->
+<pattern>
+ <pattern-item n="n-px"/>
+ <pattern-item n="cop"/>
+ <pattern-item n="postadv"/> <!-- sozdan cat postadv -->
+</pattern>
+  <action>
+    <out>
+       <chunk name="n_px-postadv" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+              <lit v="даже"/>
+              <lit-tag v="adv"/>
+ </lu>
+ <b/>
+  <lu>
+              <lit v="из"/>
+              <lit-tag v="pr"/>
+ </lu>
+ <b/>
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="gen"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+<rule comment="RULE: ADJ+cnjcoo"> <!--  Ernur 
+    ^жақсы<adj><subst><dat>+да<cnjcoo>$      ^хороший<adj><sint><subst><dat>$ ^тоже<postadv>$    #хороший\<adj\>\<sint\>\<dat\> #тоже -->
+
+<pattern>
+ <pattern-item n="adj-subst"/>
+<pattern-item n="cnjcoo"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="adj-subst" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <lit-tag v="adj"/>
+ <lit-tag v="sint"/>
+ <lit-tag v="m"/>
+ <lit-tag v="an"/>
+ <lit-tag v="sg"/>
+ <lit-tag v="dat"/>
+ </lu>
+ <b/>
+<lu>
+   <lit v="тоже"/>
+  <lit-tag v="adv"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule>      
+
+
+<rule comment="RULE: ADJ+сыз/сіз+cnjcoo"> <!--  ADJ Ernur 
+жақсыдағыданбыз да:жақсы<adj><subst><loc><subst><abl>+е<cop><aor><p1><pl>+да<cnjcoo>
+ -->
+<pattern>
+ <pattern-item n="adj-subst"/>
+ <pattern-item n="cop"/>
+<pattern-item n="cnjcoo"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="adj-subst сыз/сіз" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <lit-tag v="adj"/>
+ <lit-tag v="sint"/>
+ <lit-tag v="mfn"/>
+ <lit-tag v="an"/>
+ <lit-tag v="pl"/>
+   <lit-tag v="gen"/>
+ </lu>
+ <b/>
+<lu>
+   <lit v="тоже"/>
+  <lit-tag v="adv"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule> 
+
+
+
+    <rule comment="RULE:n-px postadv"> 
+<!--  Ernur мектептеріңіздей ғана:мектеп<n><pl><px2sg><frm><sim>+ғана<postadv>-->
+<pattern>
+ <pattern-item n="n-px"/>
+ <pattern-item n="postadv"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="n-px px2sp postadv" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+       <lit v="только"/>
+              <lit-tag v="adv"/>
+ </lu>
+ <b/>
+  <lu>
+              <lit v="как"/>
+              <lit-tag v="adv"/>
+ </lu>
+ <b/>
+  <lu>  <clip pos="1" side="tl" part="lem"/>
+
+    <clip pos="1" side="tl" part="a_nom"/>
+              <lit-tag v="f"/>
+              <lit-tag v="an"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="nom"/>
+  </lu>
+  <b/>
+    <lu> 
+   <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="nom"/></lu> </chunk></out>
+</action></rule> 
+
+<rule comment="RULE:Nums"> 
+<!-- Ernur Nums-->
+<pattern>
+ <pattern-item n="num-subst"/>
+ <pattern-item n="cop"/>
+</pattern>
+  <action>
+    <out>
+       <chunk name="Numdar" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+                <!--  
+                 <clip pos="1" side="tl" part="a_gender"/>
+                 <clip pos="1" side="tl" part="a_nbr"/> -->
+               <!--   <clip pos="1" side="tl" part="a_case"/> -->
+               
+               <clip pos="1" side="tl" part="a_num"/>
+               <lit-tag v="mfn"/>
+                <lit-tag v="pl"/>
+               <clip pos="1" side="tl" part="a_case"/>
+
+
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+  <rule comment="RULE:n-px cnjcoo"> 
+<!-- Ernur 
+  ~мектебімдегі де:мектеп<n><px1sg><loc><subst><nom>+е<cop><aor><p3><sg>+да<cnjcoo>
+-->
+<pattern>
+ <pattern-item n="n-px"/>
+ <pattern-item n="cop"/>
+ <pattern-item n="cnjcoo"/> <!-- sozdan cat postadv -->
+</pattern>
+  <action>
+    <out>
+       <chunk name="n_px-cnjcoo" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+      <lu>
+              <lit v="в"/>
+              <lit-tag v="pr"/>
+ </lu>
+ <b/>  
+  <lu>
+   <!--  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/> -->
+<!--     prn.pers.p1
+prn-gen
+ --> <lit v="моей"/>
+              <lit-tag v="prn-gen"/>
+</lu>
+ <b/>
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="dat"/>
+ </lu> 
+ <b/>
+   <lu>
+              <lit v="тоже"/>
+              <lit-tag v="adv"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+<rule comment="RULE:n-px3sp cnjcoo"> 
+<!-- Ernur 
+  ~мектебі де:^мектеп<n><px3sp><nom>$ ^е<cop><aor><p3><sg>$ ^да<cnjcoo>$
+-->
+<pattern>
+ <pattern-item n="n-px3sp"/>
+ <pattern-item n="cop"/>
+ <pattern-item n="cnjcoo"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="n-px3sp cnjcoo" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+  
+<!--     <clip pos="1" side="tl" part="a_nbr"/>
+    <clip pos="1" side="tl" part="a_case"/> -->
+              <lit-tag v="sg"/>
+              <lit-tag v="nom"/>
+
+ </lu>
+  <b/>
+  <lu>
+              <lit v="тоже"/>
+              <lit-tag v="adv"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+
+<rule comment="RULE:n-px3sp postadv"> 
+<!-- Ernur 
+  ~мектептерінікін-ақ:мектеп<n><px1sg><loc><subst><abl>+-ақ<postadv> 
+                      мектеп<n><pl><px3sp><gen><subst><nom>+е<cop><aor><p3><pl>+-ақ<postadv>-->
+<pattern>
+ <pattern-item n="n-px3sp"/>
+ <pattern-item n="postadv"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="n-px3sp postadv" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+              <lit v="даже"/>
+              <lit-tag v="adv"/>
+ </lu>
+ <b/>
+  <lu>
+              <lit v="у"/>
+              <lit-tag v="pr"/>
+ </lu>
+ <b/>
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+              <lit-tag v="pl"/>
+              <lit-tag v="gen"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+        
+
 
     <rule comment="REGLA: ADJ N">
       <!--
