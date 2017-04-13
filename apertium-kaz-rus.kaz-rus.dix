@@ -19599,7 +19599,7 @@
 <e c="олардың"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
 <e c="сенің"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/><s n="gen"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/><s n="nom"/></r></p></e>
 <e><p><l>ол<s n="prn"/><s n="dem"/><s n="gen"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
-<e c="олардың"><p><l>ол<s n="prn"/><s n="dem"/><s n="pl"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
+<!--<e r="LR" c="олардың"><p><l>ол<s n="prn"/><s n="dem"/><s n="pl"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>-->
 <e c="менікі"><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="px"/></l><r>мой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/></r></p></e>
 <e c="сенікі"><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="px"/></l><r>твой<s n="det"/><s n="pos"/><s n="m"/><s n="an"/><s n="sg"/></r></p></e>
 <e c="оныкі"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="px"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
@@ -19607,8 +19607,8 @@
 <e c="сіздердікі"><p><l>сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="px"/></l><r>ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
 <e c="олардікі"><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="px"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
 <e c="Сіздікі"><p><l>Сіз<s n="prn"/><s n="pers"/><s n="p2"/><s n="sp"/><s n="frm"/><s n="px"/></l><r>Ваш<s n="det"/><s n="pos"/><s n="m"/><s n="sg"/></r></p></e>
-<e c="оныкі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
-<e c="олардікі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>
+<!--<e c="оныкі"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/></l><r>его<s n="det"/><s n="pos"/></r></p></e>
+<e c="олардікі" r="LR"><p><l>ол<s n="prn"/><s n="dem"/><s n="px"/><s n="gen"/></l><r>их<s n="det"/><s n="pos"/></r></p></e>-->
 <e>       <p><l>бұл<s n="det"/><s n="dem"/></l>        <r>этот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>анау<s n="det"/><s n="dem"/></l>       <r>тот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>ол<s n="det"/><s n="dem"/></l>         <r>этот<s n="det"/><s n="dem"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>

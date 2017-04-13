@@ -128,8 +128,19 @@
     <def-cat n="sam-pl">
       <cat-item lemma="сам" tags="det.*.pl.*"/>
     </def-cat>
-    <def-cat n="moi">
+  <def-cat n="p123sp">   
       <cat-item lemma="мой" tags="prn.*"/>
+      <cat-item lemma="мой" tags="det.*"/>
+      <cat-item lemma="твой" tags="prn.*"/>
+      <cat-item lemma="твой" tags="det.*"/>
+      <cat-item lemma="его" tags="prn.*"/>
+      <cat-item lemma="его" tags="det.*"/>
+      <cat-item lemma="наш" tags="prn.*"/>
+      <cat-item lemma="наш" tags="det.*"/>
+      <cat-item lemma="ваш" tags="prn.*"/>
+      <cat-item lemma="ваш" tags="det.*"/>
+      <cat-item lemma="их" tags="prn.*"/>
+      <cat-item lemma="их" tags="det.*"/>
     </def-cat>
     <def-cat n="budu-vbser"> <!-- past and present tense -->
       <cat-item tags="vbser.fut.*"/>
@@ -228,6 +239,35 @@
     </def-cat>
     <def-cat n="toje">
       <cat-item lemma="тоже" tags="adv"/>
+    </def-cat>
+
+<def-cat n="ves">
+      <cat-item lemma="весь" tags="prn.def.*"/>
+    </def-cat>
+
+    <def-cat n="prn_itg-neg">
+      <cat-item tags="prn.itg.*"/>
+      <cat-item tags="prn.neg.*"/>
+    </def-cat>
+
+    <def-cat n="samyi">
+      <cat-item lemma="самый" tags="det.def.*"/>
+    </def-cat>
+
+    <def-cat n="prn_ind-dem">
+      <cat-item tags="prn.ind.*"/>
+      <cat-item tags="prn.dem.*"/>
+    </def-cat>
+
+    <def-cat n="det-def">
+      <cat-item tags="det.def.*"/>
+    </def-cat>
+ <def-cat n="num-coll">
+      <cat-item tags="num.coll.*"/>
+    </def-cat>
+
+    <def-cat n="vy">
+      <cat-item lemma="вы" tags="prn.pers.*"/>
     </def-cat>
 
   </section-def-cats>
@@ -331,11 +371,13 @@
       <attr-item tags="prn.neg"/>
       <attr-item tags="prn.ind"/>
       <attr-item tags="prn.ref"/>
+<attr-item tags="prn.qnt"/>
       <attr-item tags="adj"/>
       <attr-item tags="adj.sint"/>
       <attr-item tags="det.pos"/>
       <attr-item tags="det.def"/>
       <attr-item tags="det.ref"/>
+<attr-item tags="det.qnt"/>
       <attr-item tags="num"/>
     </def-attr>
 
@@ -1180,6 +1222,126 @@ If no format information is present it is removed. -->
             </lu>
           </chunk>
         </out>
+      </action>
+    </rule>
+
+<rule comment="RULE: samyi"> <!-- Aliya 30.03.17-->
+      <pattern>
+        <pattern-item n="samyi"/>
+      </pattern>
+      <action>
+    <out>
+    <chunk name="samyi">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu><lit v="ең"/><lit-tag v="adv"/></lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+<rule comment="RULE: vy"> <!-- Aliya 31.03.17 -->
+      <pattern>
+        <pattern-item n="vy"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let>
+    <out>
+    <chunk name="vy-prp">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="сіз"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p2"/> <lit-tag v="sg"/>
+          <lit-tag v="frm"/> <lit-tag v="loc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="acc"/></let>
+    <out>
+    <chunk name="vy-gen">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="сіз"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p2"/> <lit-tag v="sg"/>
+          <lit-tag v="frm"/> <lit-tag v="acc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="vy-dat">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="сіз"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p2"/> <lit-tag v="sg"/>
+          <lit-tag v="frm"/> <lit-tag v="dat"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="vy-ins">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="сіз"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p2"/> <lit-tag v="sg"/>
+          <lit-tag v="frm"/> <lit-tag v="ins"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="vy-nom">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="сіз"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p2"/> <lit-tag v="sg"/>
+          <lit-tag v="frm"/> <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: num coll"> <!-- Aliya 31.03.17-->
+      <pattern>
+        <pattern-item n="num-coll"/>
+      </pattern>
+      <action>
+    <out>
+    <chunk name="num-coll">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="num.coll"/>
+              <lit-tag v="advl"/>
+        </lu>
+    </chunk>
+    </out>
       </action>
     </rule>
 
@@ -2035,28 +2197,358 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-
-
-
-<rule comment="RULE: moi"> <!-- Aliya 29.03.17 -->
+<rule comment="RULE: ves' "> <!-- Aliya 30.03.17-->
       <pattern>
-        <pattern-item n="moi"/>
+        <pattern-item n="ves"/>
       </pattern>
       <action>
     <choose>
       <when>
-        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="nom"/></equal></test>
-        <let><var n="case"/><lit-tag v="nom"/></let>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="acc"/></let>
     <out>
-    <chunk name="moi-nom">
+    <chunk name="ves'-gen">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.qnt"/>
+              <clip pos="1" side="tl" part="a_possessive"/>
+              <lit-tag v="acc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="ves'-dat">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.qnt"/>
+              <clip pos="1" side="tl" part="a_possessive"/>
+              <lit-tag v="dat"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="ves'-ins">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.qnt"/>
+              <clip pos="1" side="tl" part="a_possessive"/>
+              <lit-tag v="ins"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let>
+    <out>
+    <chunk name="ves'-prp">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.qnt"/>
+              <clip pos="1" side="tl" part="a_possessive"/>
+              <lit-tag v="loc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="ves'-nom">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.qnt"/>
+              <clip pos="1" side="tl" part="a_possessive"/>
+              <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: prn_itg-neg"> <!-- Aliya 30.03.17-->
+      <pattern>
+        <pattern-item n="prn_itg-neg"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="acc"/></let>
+    <out>
+    <chunk name="prn_itg-neg-gen">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="acc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="prn_itg-neg-dat">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="dat"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="prn_itg-neg-ins">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="ins"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let>
+    <out>
+    <chunk name="prn_itg-neg-prp">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="loc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="prn_itg-neg-nom">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: prn_ind-dem"> <!-- Aliya 30.03.17-->
+      <pattern>
+        <pattern-item n="prn_ind-dem"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let>
+    <out>
+    <chunk name="prn_ind-dem-prp">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <lit-tag v="loc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="acc"/></let>
+    <out>
+    <chunk name="prn_ind-dem-gen">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="prn_ind-dem-dat">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="prn_ind-dem-ins">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="prn_ind-dem-nom">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: det-def"> <!-- Aliya 30.03.17-->
+      <pattern>
+        <pattern-item n="det-def"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="acc"/></let>
+    <out>
+    <chunk name="det-def-gen">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="det-def-dat">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="det-def-ins">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let>
+    <out>
+    <chunk name="det-def-prp">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="loc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+      <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="det-def-nom">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: moi, tvoi, ego"> <!-- Aliya 30.03.17 -->
+      <pattern>
+        <pattern-item n="p123sp"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let>
+    <out>
+    <chunk name="p123sp-prp">
       <tags>
         <tag><lit-tag v="NP"/></tag></tags>
         <lu>
-          <lit v="мен"/>
+              <clip pos="1" side="tl" part="lem"/>
           <lit-tag v="prn.pers"/>
-          <lit-tag v="p1"/>
-          <lit-tag v="sg"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="loc"/>
         </lu>
     </chunk>
     </out>
@@ -2066,14 +2558,14 @@ If no format information is present it is removed. -->
         <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
         <let><var n="case"/><lit-tag v="gen"/></let>
     <out>
-    <chunk name="moi-gen">
+    <chunk name="p123sp-gen">
       <tags>
         <tag><lit-tag v="NP"/></tag></tags>
         <lu>
-          <lit v="мен"/>
+              <clip pos="1" side="tl" part="lem"/>
           <lit-tag v="prn.pers"/>
-          <lit-tag v="p1"/>
-          <lit-tag v="sg"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="gen"/>
           <lit-tag v="subst"/>
           <lit-tag v="acc"/>
@@ -2086,14 +2578,14 @@ If no format information is present it is removed. -->
         <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
         <let><var n="case"/><lit-tag v="dat"/></let>
     <out>
-    <chunk name="moi-dat">
+    <chunk name="p123sp-dat">
       <tags>
         <tag><lit-tag v="NP"/></tag></tags>
         <lu>
-          <lit v="мен"/>
+              <clip pos="1" side="tl" part="lem"/>
           <lit-tag v="prn.pers"/>
-          <lit-tag v="p1"/>
-          <lit-tag v="sg"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="gen"/>
           <lit-tag v="subst"/>
           <lit-tag v="dat"/>
@@ -2106,14 +2598,14 @@ If no format information is present it is removed. -->
         <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
         <let><var n="case"/><lit-tag v="ins"/></let>
     <out>
-    <chunk name="moi-ins">
+    <chunk name="p123sp-ins">
       <tags>
         <tag><lit-tag v="NP"/></tag></tags>
         <lu>
-          <lit v="мен"/>
+              <clip pos="1" side="tl" part="lem"/>
           <lit-tag v="prn.pers"/>
-          <lit-tag v="p1"/>
-          <lit-tag v="sg"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="gen"/>
           <lit-tag v="subst"/>
           <lit-tag v="ins"/>
@@ -2122,19 +2614,17 @@ If no format information is present it is removed. -->
     </out>
       </when>
 
-      <otherwise><let><var n="case"/><lit-tag v="prp"/></let>
+      <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
     <out>
-    <chunk name="moi-prp">
+    <chunk name="p123sp-nom">
       <tags>
         <tag><lit-tag v="NP"/></tag></tags>
         <lu>
-          <lit v="мен"/>
-          <lit-tag v="prn.pers"/>
-          <lit-tag v="p1"/>
-          <lit-tag v="sg"/>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_prn-pers_dem"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="gen"/>
-          <lit-tag v="subst"/>
-          <lit-tag v="loc"/>
         </lu>
     </chunk>
     </out>
@@ -2142,6 +2632,8 @@ If no format information is present it is removed. -->
     </choose>
       </action>
     </rule>
+
+
 
 <!-- from eng-kaz for в саду    Балжан-->
 
