@@ -59,7 +59,8 @@
     <sdef n="nom" 	c=""/> 
     <sdef n="pr" 	c=""/> 
     <sdef n="loc" 	c=""/> 
-    <sdef n="mod_ind" 	c=""/> 
+    <sdef n="mod_ind" 	c=""/>
+<sdef n="mod" 	c=""/> 
     <sdef n="cop" 	c=""/> 
     <sdef n="abl" 	c=""/> 
     <sdef n="ref" 	c=""/> 
@@ -328,6 +329,7 @@
 <e r="LR"><p><l>ба<s n="qst"/></l><r></r></p></e>
 <e r="LR"><p><l>па<s n="qst"/></l><r></r></p></e>
 <e r="LR"><p><l>ғой<s n="mod_ass"/></l><r></r></p></e>
+<e r="LR"><p><l>шығар<s n="mod"/></l><r></r></p></e>
 
 <!-- verb -->
 <e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>

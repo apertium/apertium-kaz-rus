@@ -213,6 +213,9 @@
       <cat-item tags="num.ord"/>
       <cat-item tags="num.itg"/>
     </def-cat>
+    <def-cat n="num-ord">
+            <cat-item tags="num.ord"/>
+        </def-cat>
     <def-cat n="cop">
       <cat-item tags="cop.*"/>
     </def-cat>
@@ -262,12 +265,14 @@
       <cat-item tags="vaux.neg.ifi.*"/>
       <cat-item tags="vaux.past.*"/>
       <cat-item tags="vaux.neg.past.*"/>
-      <cat-item tags="v.*.imp.*"/>
       <cat-item tags="cop.ifi.*"/>
       <cat-item tags="cop.past.*"/>
       <cat-item tags="cop.*.ifi.*"/>
       <cat-item tags="cop.*.past.*"/>
     </def-cat>
+<def-cat n="verb-fin-imp">
+      <cat-item tags="v.*.imp.*"/>
+     </def-cat>
     <def-cat n="verb-fut">
       <cat-item tags="v.*.fut.*"/>
       <cat-item tags="v.*.fut2.*"/>
@@ -350,6 +355,9 @@
 <cat-item lemma="керек" tags="vaux"/>
 <cat-item lemma="керек" tags="vaux.*"/>
     </def-cat>
+<def-cat n="cnjcoo">
+      <cat-item tags="cnjcoo"/>
+    </def-cat>
     <def-cat n="post">
       <cat-item tags="post"/>
     </def-cat>
@@ -377,6 +385,10 @@
 <def-cat n="adj-subst">
 <cat-item tags="adj.subst"/>
       <cat-item tags="adj.subst.*"/>
+      <cat-item tags="adj.comp.subst"/>
+      <cat-item tags="adj.comp.subst.*"/>
+    </def-cat>
+<def-cat n="adj-comp">
       <cat-item tags="adj.comp.subst"/>
       <cat-item tags="adj.comp.subst.*"/>
     </def-cat>
@@ -4091,6 +4103,155 @@ output after:
       </action>
     </rule>
 
+<rule comment="REGLA: ADJ+post">
+      <pattern>
+        <pattern-item n="adj"/>
+<pattern-item n="post"/>
+      </pattern>
+      <action>
+       
+ <choose>
+          <when>
+   <test><equal><clip pos="1" side="tl" part="a_case"/><lit v=""/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+          </when>
+<otherwise>
+           <let><var n="case"/><clip pos="1" side="tl" part="a_case"/></let>
+</otherwise>
+ </choose>
+            <out>
+              <chunk name="adj+post">
+                <tags>
+                  <tag><lit-tag v="AdjP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <var n="case"/>
+                </lu>
+              </chunk>
+            </out>
+        
+      </action>
+    </rule>
+
+<rule comment="REGLA: ADJ+case">
+      <pattern>
+        <pattern-item n="adj"/>
+      </pattern>
+      <action>
+       
+ <choose>
+          <when>
+   <test><equal><clip pos="1" side="tl" part="a_case"/><lit v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+          </when>
+<otherwise>
+           <let><var n="case"/><clip pos="1" side="tl" part="a_case"/></let>
+</otherwise>
+ </choose>
+            <out>
+              <chunk name="adj+case">
+                <tags>
+                  <tag><lit-tag v="AdjP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <var n="case"/>
+                </lu>
+              </chunk>
+            </out>
+        
+      </action>
+    </rule>
+
+<rule comment="REGLA: ADJ+post+cnjcoo">
+      <pattern>
+        <pattern-item n="adj"/>
+<pattern-item n="post"/>
+<pattern-item n="cnjcoo"/>
+      </pattern>
+      <action>
+   
+ <choose>
+          <when>
+   <test><equal><clip pos="1" side="tl" part="a_case"/><lit v=""/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+          </when>
+<otherwise>
+           <let><var n="case"/><clip pos="1" side="tl" part="a_case"/></let>
+</otherwise>
+ </choose>
+            <out>
+              <chunk name="adj+post+cnj">
+                <tags>
+                  <tag><lit-tag v="AdjP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <var n="case"/>
+                </lu>
+                 <b/>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <lit-tag v="adv"/>
+                  </lu>
+
+              </chunk>
+            </out>
+         
+      </action>
+    </rule>
+
+<rule comment="REGLA: ADJ+comp">
+      <pattern>
+        <pattern-item n="adj-comp"/>
+        <pattern-item n="cop"/>
+        <pattern-item n="postadv"/>
+      </pattern>
+      <action>
+       
+ <choose>
+          <when>
+   <test><equal><clip pos="1" side="tl" part="a_case"/><lit v=""/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+          </when>
+<otherwise>
+           <let><var n="case"/><clip pos="1" side="tl" part="a_case"/></let>
+</otherwise>
+ </choose>
+            <out>
+              <chunk name="adj+comp">
+                <tags>
+                  <tag><lit-tag v="AdjP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <var n="case"/>
+                </lu>
+              </chunk>
+            </out>
+        
+      </action>
+    </rule>
+
+
+
     <rule comment="REGLA: NUM N">
       <!--
       INPUT:  ^бес<num>/пять<num><mfn><pl><nom>$ ^жыл<n><nom>/год<n><m><nn><nom>$
@@ -4258,6 +4419,56 @@ output after:
         </out>
       </action>
     </rule>
+ <rule comment="REGLA: NUM ORD"> <!-- Akbota -->
+      
+      <pattern>
+        <pattern-item n="num-ord"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+<call-macro n="makeagree-num-noun">
+          <with-param pos="1"/>
+          <with-param pos="2"/>
+        </call-macro>
+       <!-- <choose>
+          <when>
+            <test>   
+             <equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num"/></equal>
+            </test>
+	    <let><var n="case"/><lit-tag v="num"/></let>
+	  </when>
+	</choose>
+-->
+<call-macro n="num-gender">
+          <with-param pos="1"/>
+        </call-macro>
+<!-- <choose> 
+<when>
+          <test><equal><clip pos="1" side="sl" part="a_case"/><lit v=""/></equal></test>
+          <let><var n="case"/><lit-tag v="nom"/></let>
+        </when>
+<otherwise>
+          <let><var n="case"/><clip pos="1" side="sl" part="a_case"/></let>
+</otherwise>
+</choose> -->
+        <out>
+          <chunk name="num ord">
+            <tags>
+              <tag><lit-tag v="DET"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+               <lit-tag v="det"/>
+              <lit-tag v="ord"/>
+               <var n="gender"/>
+               <lit-tag v="an"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="nom"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>           
 
 
 <!--
@@ -5113,6 +5324,69 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </action>
     </rule>
 
+<rule comment="REGLA: V-imp">
+         <pattern>
+        <pattern-item n="verb-fin-imp"/>
+      </pattern>
+      <action>
+        <call-macro n="translate-verb-fin">
+          <with-param pos="1"/>
+        </call-macro>
+<choose>
+   <when>
+      <test><and>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+	<equal><clip pos="1" side="sl" part="a_aspec"/><lit-tag v="perf"/></equal>
+      </and></test>
+      <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
+   </when>
+</choose>
+
+<choose>
+   <when>
+      <test><and>
+	<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+      </and></test>
+      <let><var n="gender"/><lit-tag v="m"/></let>
+   </when>
+
+   <when>
+      <test><and>
+	<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="ifi"/></equal>
+      </and></test>
+      <let><var n="gender"/><lit-tag v="mfn"/></let>
+   </when>
+
+<otherwise>
+      <let><var n="gender"/><lit-tag v="4"/></let>
+</otherwise>
+</choose>
+
+        <out>
+          <chunk name="v-neg-fin-imp">
+            <tags>
+              <tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="1" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
+              </tags>
+          <var n="negation"/>
+
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_trans"/>
+           
+		
+	      <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
 
