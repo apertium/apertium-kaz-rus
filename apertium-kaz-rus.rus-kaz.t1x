@@ -1212,6 +1212,14 @@ If no format information is present it is removed. -->
         <pattern-item n="sent"/>
       </pattern>
       <action>
+<!--
+<choose>
+<when>
+
+        <test><equal><clip pos="1" side="sl" part="lem"/><lit v=".."/></equal></test>
+        <let><clip pos="1" side="tl" part="lem"/><lit v="."/></let>
+</when>    
+</choose>-->
         <out>
           <chunk name="sent" case="caseFirstWord">
             <tags>
