@@ -205,11 +205,28 @@
       <cat-item tags="det.*"/>
     </def-cat>
     <def-cat n="num">
-      <cat-item tags="num"/>
-      <cat-item tags="num.*"/>
+      <cat-item lemma="жиырма" tags="num"/>
+      <cat-item lemma="алты" tags="num"/>
+      <cat-item lemma="жеті" tags="num"/>
+      <cat-item lemma="үш" tags="num"/>  
+      <cat-item lemma="төрт" tags="num"/>
+      <cat-item lemma="бес" tags="num"/>
+      <cat-item lemma="сегіз" tags="num"/>
+      <cat-item lemma="тоғыз" tags="num"/>
+      <cat-item lemma="он" tags="num"/>
+      <cat-item lemma="он бір" tags="num"/>
+      <cat-item lemma="он екі" tags="num"/>
+      <cat-item lemma="он алты" tags="num"/>
+      <cat-item lemma="он бес" tags="num"/>
+
+    <cat-item lemma="он жеті" tags="num"/>
+    <cat-item lemma="он сегіз" tags="num"/>  
+    <cat-item lemma="он тоғыз" tags="num"/>
+    <cat-item lemma="он төрт" tags="num"/>
+    <cat-item lemma="он үш" tags="num"/>
+ <cat-item tags="num.*"/>
     </def-cat>
     <def-cat n="num-det">
-      <cat-item tags="num"/>
       <cat-item tags="num.ord"/>
       <cat-item tags="num.itg"/>
     </def-cat>
@@ -475,7 +492,10 @@
       <attr-item tags="vbmod.perf.tv"/>
       <attr-item tags="vbmod.perf.iv"/>
     </def-attr>
-
+<def-attr n="a_num_sp"> 
+      <attr-item tags="sp"/>
+ <attr-item tags="sp1"/>
+    </def-attr>
 
 
 
@@ -1647,7 +1667,9 @@ If no format information is present it is removed. -->
 
   <section-rules>
 
-           
+
+
+
 
 
 <!-- SECTION: Noun phrases -->
@@ -1842,6 +1864,176 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+<rule comment="REGLA: N post">
+    
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="postadv"/>
+      </pattern>
+      <action>
+        <choose>
+          <when>
+            <test>
+	      <and>
+	        <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="attr"/></equal>
+	        <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adj"/></equal>
+	      </and>
+	    </test>
+            <out>
+              <chunk name="adj2">
+                <tags>
+                  <tag><lit-tag v="AdjP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+
+                </lu>
+              </chunk>
+            </out>
+	  </when>
+          <when c="similative is translated with an adverb (happens in case of pronouns
+		   шундый->так)">
+	    <test>
+	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adv"/></equal>
+	    </test>
+	    <out>
+	      <chunk name="adv">
+                <tags>
+                  <tag><lit-tag v="AdvP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+	      </chunk>
+	    </out>
+          </when>
+          <when>
+	    <test>
+	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="det.pos"/></equal>
+	    </test>
+	    <out>
+	      <chunk name="det">
+                <tags>
+                  <tag><lit-tag v="DET"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+	      </chunk>
+	    </out>
+          </when>
+          <when c="n.px3sp.{dat/abl/loc} is translated with a preposition"><!--what is that?? /AS 10.05.2016 -->
+            <test><equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="pr"/></equal></test>
+            <out>
+              <chunk name="pr">
+                <tags>
+                  <tag><lit-tag v="PREP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_pr"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+            <call-macro n="translate-noun">
+              <with-param pos="1"/>
+            </call-macro>
+            <choose>
+              <when>
+                <test><equal><var n="preposition"/><lit v=""/></equal></test>
+                <out>
+                  <chunk name="n-postadv">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+                    <var n="possessive"/>
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
+
+<otherwise>
+            <call-macro n="convert-pers-affix-to-pers-determiner">
+              <with-param pos="1"/>
+            </call-macro>
+            <choose>
+              <when>
+                <test><equal><var n="preposition"/><lit v=""/></equal></test>
+                <out>
+                  <chunk name="n_pers">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+                    <var n="pronoun"/>
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
+          
+              <otherwise>
+                <out>
+                 <chunk name="pr_n3">
+                    <tags>
+                      <tag><lit-tag v="PP"/></tag>
+                    </tags>
+
+<var n="pronoun"/>
+
+
+ <lu> <!-- put VARIABLES into lex units <lu> / AS-->
+
+
+                    <var n="preposition"/>
+
+
+</lu>
+<b/>
+
+
+                    <var n="possessive"/> <!--what does it produce? tag or word? -->
+
+<b/>
+
+
+<!-- need blank space here, I put /AS 10.05.2016-->
+   <lu>
+		      <clip pos="1" side="tl" part="whole"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </otherwise>
+            </choose>
+          </otherwise>
+        </choose>
+ </otherwise>
+        </choose>
+      </action>
+    </rule>
+
 <rule comment="REGLA: N">
       <!--
       INPUT:  ^мектеп<n><attr>/школьный<adj><m><an><sg><nom>$
@@ -1860,7 +2052,7 @@ If no format information is present it is removed. -->
       -->
       <pattern>
         <pattern-item n="n"/>
-<pattern-item n="cop"/>
+        <pattern-item n="cop"/>
       </pattern>
       <action>
         <choose>
@@ -2033,6 +2225,211 @@ If no format information is present it is removed. -->
         </choose>
       </action>
     </rule>
+
+
+<rule comment="REGLA: N cop post">
+ 
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+         <pattern-item n="postadv"/>
+      </pattern>
+      <action>
+        <choose>
+<when>
+                <test><equal><var n="preposition"/><lit v=""/></equal></test>
+                <out>
+                  <chunk name="np-dsfsd">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+                    <var n="possessive"/>
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
+          <when>
+            <test>
+	      <and>
+	        <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="attr"/></equal>
+	        <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adj"/></equal>
+	      </and>
+	    </test>
+            <out>
+              <chunk name="adj3">
+                <tags>
+                  <tag><lit-tag v="AdjP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+
+                </lu>
+              </chunk>
+            </out>
+	  </when>
+          <when c="similative is translated with an adverb (happens in case of pronouns
+		   шундый->так)">
+	    <test>
+	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adv"/></equal>
+	    </test>
+	    <out>
+	      <chunk name="adv">
+                <tags>
+                  <tag><lit-tag v="AdvP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+	      </chunk>
+	    </out>
+          </when>
+          <when>
+	    <test>
+	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="det.pos"/></equal>
+	    </test>
+	    <out>
+	      <chunk name="det">
+                <tags>
+                  <tag><lit-tag v="DET"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="whole"/>
+                </lu>
+	      </chunk>
+	    </out>
+          </when>
+          <when c="n.px3sp.{dat/abl/loc} is translated with a preposition">
+            <test><equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="pr"/></equal></test>
+            <out>
+              <chunk name="pr">
+                <tags>
+                  <tag><lit-tag v="PREP"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_pr"/>
+                </lu>
+              </chunk>
+            </out>
+          </when>
+          <otherwise>
+            <call-macro n="translate-noun">
+              <with-param pos="1"/>
+            </call-macro>
+<call-macro n="convert-pers-affix-to-pers-determiner">
+              <with-param pos="2"/>
+            </call-macro>
+
+            <choose>
+   
+<when>
+<test>
+             
+<and>
+                <not><equal><var n="possessive"/><lit v=""/></equal></not>
+                <not><equal><var n="pronoun"/><lit v=""/></equal></not>
+</and>
+</test>
+ 
+                <out>
+                  <chunk name="n-poss">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+
+                    <var n="possessive"/>
+
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
+              <when>
+
+                <test><not><equal><var n="pronoun"/><lit v=""/></equal></not></test>
+                <out>
+                  <chunk name="n_pers">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+
+                   <var n="pronoun"/>
+
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
+          
+              <otherwise>
+                <out>
+                  <chunk name="n_post">
+                    <tags>
+                      <tag><lit-tag v="PP"/></tag>
+                    </tags>
+
+<var n="pronoun"/>
+
+
+ <lu> <!-- put VARIABLES into lex units <lu> / AS-->
+
+
+                    <var n="preposition"/>
+
+
+</lu>
+<b/>
+
+
+                    <var n="possessive"/> <!--what does it produce? tag or word? -->
+
+<b/>
+
+
+<!-- need blank space here, I put /AS 10.05.2016-->
+   <lu>
+		      <clip pos="1" side="tl" part="whole"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </otherwise>
+           </choose>
+          </otherwise>
+        </choose>
+      </action>
+    </rule>
+
 
 
 
@@ -3880,6 +4277,7 @@ prn-gen
  </rule>
 
 
+
 <rule comment="RULE:n-px3sp postadv"> 
 <!-- Ernur 
   ~мектептерінікін-ақ:мектеп<n><px1sg><loc><subst><abl>+-ақ<postadv> 
@@ -4517,6 +4915,124 @@ output after:
          
       </action>
     </rule>
+
+<rule comment="REGLA: n+cnjcoo"> <!--Bota 13.04-->
+      <pattern>
+        <pattern-item n="n"/>
+<pattern-item n="cop"/>
+<pattern-item n="cnjcoo"/>
+      </pattern>
+      <action>
+   
+   <call-macro n="translate-noun">
+              <with-param pos="1"/>
+            </call-macro>
+<call-macro n="convert-pers-affix-to-pers-determiner">
+              <with-param pos="2"/>
+            </call-macro>
+
+            <choose>
+<when>
+<test>
+             
+<and>
+                <not><equal><var n="possessive"/><lit v=""/></equal></not>
+                <not><equal><var n="pronoun"/><lit v=""/></equal></not>
+</and>
+</test>
+ 
+                <out>
+                  <chunk name="n-poss">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+
+                    <var n="possessive"/>
+
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
+              <when>
+
+                <test><not><equal><var n="pronoun"/><lit v=""/></equal></not></test>
+                <out>
+                  <chunk name="n_pers">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+
+                   <var n="pronoun"/>
+
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
+          
+              <otherwise>
+                <out>
+                  <chunk name="n+cnj">
+                    <tags>
+                      <tag><lit-tag v="PP"/></tag>
+                    </tags>
+
+<var n="pronoun"/>
+
+
+ <lu> <!-- put VARIABLES into lex units <lu> / AS-->
+
+
+                    <var n="preposition"/>
+
+
+</lu>
+<b/>
+
+
+                    <var n="possessive"/> <!--what does it produce? tag or word? -->
+
+<b/>
+
+
+<!-- need blank space here, I put /AS 10.05.2016-->
+   <lu>
+		      <clip pos="1" side="tl" part="whole"/>
+                    </lu>
+   <b/>
+                <lu>
+                  <clip pos="3" side="tl" part="lem"/>
+                  <lit-tag v="adv"/>
+                  </lu>
+                  </chunk>
+                </out>
+              </otherwise>
+           </choose>
+      </action>
+    </rule>
+
+
 
 <rule comment="REGLA: ADJ+comp">
       <pattern>
@@ -7280,7 +7796,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
                    <clip pos="1" side="tl" part="a_gender"/>
                    <clip pos="1" side="tl" part="a_anim"/>
                   <clip pos="1" side="tl" part="a_nbr"/>
-<lit-tag v="nom"/>
+                   <lit-tag v="nom"/>
                 </lu>
               </chunk>
             </out>
@@ -7366,30 +7882,195 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
     
           <let><var n="case"/><lit-tag v="nom"/></let>
         </when>
-<otherwise>
-          <let><var n="case"/><clip pos="1" side="sl" part="a_case"/></let>
-</otherwise>
+
+<when>
+           <test><equal><clip pos="1" side="sl" part="a_nbr"/><lit v="pl"/></equal></test>
+    
+          <let><var n="gender"/><lit-tag v="mfn"/></let>
+        </when>
 </choose>
-        <out>
-          <chunk name="num">
+<choose>
+<when>
+<test>
+<or>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="төрт"/></equal>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="үш"/></equal>
+   </or>                   
+                   </test>
+                <out>
+    <chunk name="num_lu3-4">
+    <tags>
+    <tag><lit-tag v="SN-NUM"/></tag>
+    </tags>
+    <lu>
+<clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_num"/>
+              
+              <lit-tag v="mfn"/>
+              <clip pos="1" side="tl" part="a_anim"/>
+             <lit-tag v="pl"/>
+             <lit-tag v="nom"/>
+     </lu>
+    </chunk>
+    </out>
+</when>
+<when>
+<test>
+<or>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="бір"/></equal>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="екі"/></equal>
+   </or>                   
+                   </test>
+          <out>
+          <chunk name="num1-2">
             <tags>
               <tag><lit-tag v="DET"/></tag>
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_num"/>
-               
-              
               <var n="gender"/>
               <clip pos="1" side="tl" part="a_anim"/>
               <clip pos="1" side="tl" part="a_nbr"/>
-              <var n="case"/>
+              <lit-tag v="nom"/>
             </lu>
           </chunk>
         </out>
-      </action>
-    </rule>
 
+            </when>
+
+<otherwise>
+   <out>
+    <chunk name="num_lu">
+    <tags>
+    <tag><lit-tag v="SN-NUM"/></tag>
+    </tags>
+    <lu>
+<clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_num"/>
+              
+              <lit-tag v="mfn"/>
+
+             <lit-tag v="pl"/>
+             <lit-tag v="nom"/>
+     </lu>
+    </chunk>
+    </out>
+</otherwise>
+</choose>
+</action>
+</rule>
+
+
+ <rule comment="REGLA: NUM">
+      <!--
+        INPUT:  ^бір<num>/один<num><m><an><sg><nom>$
+        OUTPUT: ^num<DET>{^один<num><m><an><sg><nom>$}$
+      -->
+      <pattern>
+
+        <pattern-item n="num"/>
+
+      </pattern>
+      <action>
+
+        <choose>
+          <when>
+            <test>   
+             <equal><clip pos="1" side="tl" part="a_num"/><lit-tag v="num"/></equal>
+            </test>
+	    <let><var n="case"/><lit-tag v="num"/></let>
+	  </when>
+	</choose>
+<call-macro n="num-gender">
+          <with-param pos="1"/>
+        </call-macro>
+<choose> 
+<when>
+          <test><equal><clip pos="1" side="sl" part="a_case"/><lit v=""/></equal></test>
+    
+          <let><var n="case"/><lit-tag v="nom"/></let>
+        </when>
+
+<when>
+           <test><equal><clip pos="1" side="sl" part="a_nbr"/><lit v="pl"/></equal></test>
+    
+          <let><var n="gender"/><lit-tag v="mfn"/></let>
+        </when>
+</choose>
+<choose>
+<when>
+<test>
+<or>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="төрт"/></equal>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="үш"/></equal>
+   </or>                   
+                   </test>
+                <out>
+    <chunk name="num_lu3-4">
+    <tags>
+    <tag><lit-tag v="SN-NUM"/></tag>
+    </tags>
+    <lu>
+<clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_num"/>
+              
+              <lit-tag v="mfn"/>
+              <clip pos="1" side="tl" part="a_anim"/>
+             <lit-tag v="pl"/>
+             <lit-tag v="nom"/>
+     </lu>
+    </chunk>
+    </out>
+</when>
+<when>
+<test>
+<or>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="бір"/></equal>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="екі"/></equal>
+   </or>                   
+                   </test>
+          <out>
+          <chunk name="num1-2">
+            <tags>
+              <tag><lit-tag v="DET"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_num"/>
+              <var n="gender"/>
+              <clip pos="1" side="tl" part="a_anim"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+              <lit-tag v="nom"/>
+            </lu>
+          </chunk>
+        </out>
+
+            </when>
+
+<otherwise>
+   <out>
+    <chunk name="num_lu">
+    <tags>
+    <tag><lit-tag v="SN-NUM"/></tag>
+    </tags>
+    <lu>
+<clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_num"/>
+              
+              <lit-tag v="mfn"/>
+
+             <lit-tag v="pl"/>
+             <lit-tag v="nom"/>
+     </lu>
+    </chunk>
+    </out>
+</otherwise>
+</choose>
+</action>
+</rule>
+
+  
 
     <rule comment="REGLA: POST">
       <!--
