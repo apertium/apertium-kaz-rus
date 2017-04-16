@@ -10,6 +10,7 @@
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
+<cat-item tags="n.*.*.*"/>
       <cat-item tags="prn.obj.*"/>
       <cat-item tags="adj.subst"/>
       <cat-item tags="adj.subst.*"/>
@@ -5543,7 +5544,7 @@ If no format information is present it is removed. -->
       <when>  
        <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
         <out> <!-- with postposition -->
-          <chunk name="prep-nom-post">
+          <chunk name="prep-nom-post2">
             <tags>
                 <tag><var n="pptag"/></tag>
                 <tag><clip pos="2" part="a_nbr" side="sl"/></tag> <!-- number -->

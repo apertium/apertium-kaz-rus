@@ -224,7 +224,11 @@
     <cat-item lemma="он тоғыз" tags="num"/>
     <cat-item lemma="он төрт" tags="num"/>
     <cat-item lemma="он үш" tags="num"/>
- <cat-item tags="num.*"/>
+    <cat-item tags="num.*"/>
+    </def-cat>
+   <def-cat n="num1">
+      <cat-item lemma="2" tags="num"/>
+      <cat-item lemma="3" tags="num"/>
     </def-cat>
     <def-cat n="num-det">
       <cat-item tags="num.ord"/>
@@ -392,6 +396,12 @@
     <def-cat n="qst">
       <cat-item tags="qst"/>
     </def-cat>
+ <def-cat n="mod">
+      <cat-item tags="mod"/>
+    </def-cat>
+ <def-cat n="mod_ass">
+      <cat-item tags="mod_ass"/>
+    </def-cat>
     <def-cat n="sent">
     <cat-item tags="sent"/>
     <cat-item tags="RESsent.sent"/>
@@ -414,7 +424,7 @@
     </def-cat>
  <def-cat n="postadv">
 <cat-item tags="postadv"/>
-      <cat-item tags="postadv.*"/>
+     
     </def-cat>
   </section-def-cats>
 
@@ -2227,7 +2237,7 @@ If no format information is present it is removed. -->
     </rule>
 
 
-<rule comment="REGLA: N cop post">
+<rule comment="REGLA: N cop post"> <!-- Bota 13.04-->
  
       <pattern>
         <pattern-item n="n"/>
@@ -2235,201 +2245,141 @@ If no format information is present it is removed. -->
          <pattern-item n="postadv"/>
       </pattern>
       <action>
-        <choose>
-<when>
-                <test><equal><var n="preposition"/><lit v=""/></equal></test>
-                <out>
-                  <chunk name="np-dsfsd">
+        <out>
+                  <chunk name="n-postadv">
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
-                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
-                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
-		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                     
                     </tags>
                     <var n="possessive"/>
-                    <lu>
-		      <clip pos="1" side="tl" part="lem"/>
-		      <clip pos="1" side="tl" part="a_nom"/>
-		      <clip pos="1" side="tl" part="a_gender"/>
-		      <clip pos="1" side="tl" part="a_anim"/>
-			<lit-tag v="3"/>
-		      <clip pos="1" side="tl" part="a_case"/>
-		      <clip pos="1" side="tl" part="lemq"/>
-                    </lu>
+                     <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_pos"/>
+ <clip pos="1" side="tl" part="a_gender"/>
+ <clip pos="1" side="tl" part="a_anim"/>
+  <lit-tag v="sg"/>
+ <lit-tag v="gen"/>
+ </lu>
                   </chunk>
                 </out>
-              </when>
-          <when>
-            <test>
-	      <and>
-	        <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="attr"/></equal>
-	        <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adj"/></equal>
-	      </and>
-	    </test>
-            <out>
-              <chunk name="adj3">
-                <tags>
-                  <tag><lit-tag v="AdjP"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="whole"/>
-
-                </lu>
-              </chunk>
-            </out>
-	  </when>
-          <when c="similative is translated with an adverb (happens in case of pronouns
-		   шундый->так)">
-	    <test>
-	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="adv"/></equal>
-	    </test>
-	    <out>
-	      <chunk name="adv">
-                <tags>
-                  <tag><lit-tag v="AdvP"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="whole"/>
-                </lu>
-	      </chunk>
-	    </out>
-          </when>
-          <when>
-	    <test>
-	      <equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="det.pos"/></equal>
-	    </test>
-	    <out>
-	      <chunk name="det">
-                <tags>
-                  <tag><lit-tag v="DET"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="whole"/>
-                </lu>
-	      </chunk>
-	    </out>
-          </when>
-          <when c="n.px3sp.{dat/abl/loc} is translated with a preposition">
-            <test><equal><clip pos="1" side="tl" part="a_pos"/><lit-tag v="pr"/></equal></test>
-            <out>
-              <chunk name="pr">
-                <tags>
-                  <tag><lit-tag v="PREP"/></tag>
-                </tags>
-                <lu>
-                  <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_pr"/>
-                </lu>
-              </chunk>
-            </out>
-          </when>
-          <otherwise>
-            <call-macro n="translate-noun">
-              <with-param pos="1"/>
-            </call-macro>
-<call-macro n="convert-pers-affix-to-pers-determiner">
-              <with-param pos="2"/>
-            </call-macro>
-
-            <choose>
-   
-<when>
-<test>
-             
-<and>
-                <not><equal><var n="possessive"/><lit v=""/></equal></not>
-                <not><equal><var n="pronoun"/><lit v=""/></equal></not>
-</and>
-</test>
+                
+      </action>
+    </rule>
+<rule comment="REGLA: N cop qst"> <!-- Bota 13.04-->
  
-                <out>
-                  <chunk name="n-poss">
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+         <pattern-item n="qst"/>
+      </pattern>
+      <action>
+        <out>
+                  <chunk name="n-qst">
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
-                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
-                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
-		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
-
                     <var n="possessive"/>
-
-                    <lu>
-		      <clip pos="1" side="tl" part="lem"/>
-		      <clip pos="1" side="tl" part="a_nom"/>
-		      <clip pos="1" side="tl" part="a_gender"/>
-		      <clip pos="1" side="tl" part="a_anim"/>
-			<lit-tag v="3"/>
-		      <clip pos="1" side="tl" part="a_case"/>
-		      <clip pos="1" side="tl" part="lemq"/>
-                    </lu>
-                  </chunk>
-                </out>
-              </when>
-              <when>
-
-                <test><not><equal><var n="pronoun"/><lit v=""/></equal></not></test>
-                <out>
-                  <chunk name="n_pers">
-                    <tags>
-                      <tag><lit-tag v="SN"/></tag>
-                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
-                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
-		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
-                    </tags>
-
-                   <var n="pronoun"/>
-
-                    <lu>
-		      <clip pos="1" side="tl" part="lem"/>
-		      <clip pos="1" side="tl" part="a_nom"/>
-		      <clip pos="1" side="tl" part="a_gender"/>
-		      <clip pos="1" side="tl" part="a_anim"/>
-			<lit-tag v="3"/>
-		      <clip pos="1" side="tl" part="a_case"/>
-		      <clip pos="1" side="tl" part="lemq"/>
-                    </lu>
-                  </chunk>
-                </out>
-              </when>
-          
-              <otherwise>
-                <out>
-                  <chunk name="n_post">
-                    <tags>
-                      <tag><lit-tag v="PP"/></tag>
-                    </tags>
-
-<var n="pronoun"/>
-
-
- <lu> <!-- put VARIABLES into lex units <lu> / AS-->
-
-
-                    <var n="preposition"/>
-
-
-</lu>
+                     <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
 <b/>
-
-
-                    <var n="possessive"/> <!--what does it produce? tag or word? -->
-
-<b/>
-
-
-<!-- need blank space here, I put /AS 10.05.2016-->
-   <lu>
-		      <clip pos="1" side="tl" part="whole"/>
-                    </lu>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_pos"/>
+ <clip pos="1" side="tl" part="a_gender"/>
+ <clip pos="1" side="tl" part="a_anim"/>
+  <lit-tag v="sg"/>
+ <lit-tag v="gen"/>
+ </lu>
                   </chunk>
                 </out>
-              </otherwise>
-           </choose>
-          </otherwise>
-        </choose>
+                
       </action>
     </rule>
 
+<rule comment="REGLA: N cop mod_ass"> <!-- Bota 13.04-->
+ 
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+         <pattern-item n="mod_ass"/>
+      </pattern>
+      <action>
+        <out>
+                  <chunk name="n-mod_ass">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                     
+                    </tags>
+                    <var n="possessive"/>
+                     <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_pos"/>
+ <clip pos="1" side="tl" part="a_gender"/>
+ <clip pos="1" side="tl" part="a_anim"/>
+  <lit-tag v="sg"/>
+ <lit-tag v="gen"/>
+ </lu>
+<b/>
+  <lu>
+  <lit v="же"/>
+  <lit-tag v="part"/>
+ </lu>
+
+                  </chunk>
+                </out>
+                
+      </action>
+    </rule>
+<rule comment="REGLA: N cop cnjcoo"> <!-- Bota 13.04-->
+ 
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+         <pattern-item n="cnjcoo"/>
+      </pattern>
+      <action>
+        <out>
+                  <chunk name="n-cnjcoo">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                     
+                    </tags>
+                    <var n="possessive"/>
+                     <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_pos"/>
+ <clip pos="1" side="tl" part="a_gender"/>
+ <clip pos="1" side="tl" part="a_anim"/>
+  <lit-tag v="sg"/>
+ <lit-tag v="gen"/>
+ </lu>
+<b/>
+  <lu>
+  <clip pos="3" side="tl" part="lem"/>
+ <lit-tag v="adv"/>
+ </lu>
+</chunk>
+</out>
+                
+      </action>
+    </rule>
 
 
 
@@ -3337,6 +3287,26 @@ If no format information is present it is removed. -->
  <pattern-item n="cop"/>
 </pattern>
   <action>
+<choose>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+<let><var n="case"/><lit-tag v="dat"/></let>
+</when>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal></test>
+<let><var n="case"/><lit-tag v="gen"/> </let>
+</when>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="abl"/></equal></test>
+<let><var n="preposition"/><concat><lit v="^от"/><lit-tag v="pr"/><lit v="$"/></concat></let>
+<let><var n="case"/><lit-tag v="ins"/></let>
+</when>
+<otherwise>
+<let><var n="case"/><lit-tag v="nom"/></let>
+</otherwise>
+</choose>
+
+
  <out>
        <chunk name="adj-subst" case="caseFirstWord"> 
       <tags><tag><lit-tag v="NP"/></tag>       </tags>   
@@ -3352,12 +3322,15 @@ If no format information is present it is removed. -->
  <lit-tag v="mfn"/>
  <lit-tag v="an"/>
  <lit-tag v="pl"/>
- <lit-tag v="gen"/>
+<var n="case"/>
  </lu>
  </chunk>
   </out>
  </action>
  </rule>
+
+
+
 <rule comment="RULE: ADJ+сыз/сіз-ақ"> <!-- Akbota  -->
 <pattern>
  <pattern-item n="adj-subst"/>
@@ -3365,8 +3338,26 @@ If no format information is present it is removed. -->
 <pattern-item n="postadv"/>
 </pattern>
   <action>
+<choose>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+<let><var n="case"/><lit-tag v="dat"/></let>
+</when>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal></test>
+<let><var n="case"/><lit-tag v="gen"/> </let>
+</when>
+<when>
+<test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="abl"/></equal></test>
+<let><var n="preposition"/><concat><lit v="^от"/><lit-tag v="pr"/><lit v="$"/></concat></let>
+<let><var n="case"/><lit-tag v="ins"/></let>
+</when>
+<otherwise>
+<let><var n="case"/><lit-tag v="nom"/></let>
+</otherwise>
+</choose>
  <out>
-       <chunk name="adj-subst" case="caseFirstWord"> 
+       <chunk name="adj-subst1" case="caseFirstWord"> 
       <tags><tag><lit-tag v="NP"/></tag>       </tags>   
   <lu>
   <lit v="без"/>
@@ -3380,12 +3371,14 @@ If no format information is present it is removed. -->
  <lit-tag v="mfn"/>
  <lit-tag v="an"/>
  <lit-tag v="pl"/>
- <lit-tag v="gen"/>
+ <var n="case"/>
  </lu>
  </chunk>
   </out>
  </action>
  </rule> 
+
+
 
 <rule comment="RULE: ADJ+postadv"> <!-- Akbota  -->
 <pattern>
@@ -7726,17 +7719,10 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </action>
     </rule>
 
-
-<!-- SECTION: Modifiers -->
-
-<!--
-INPUT:  ^жақсы<adj>/хороший<adj><m><an><sg><nom>$
-OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
--->
-    <rule comment="REGLA: ADJ">
+   <rule comment="REGLA: ADJ">
       <pattern>
         <pattern-item n="adj"/>
-<pattern-item n="cop"/>
+        <pattern-item n="cop"/>
       </pattern>
       <action>
         <choose>
@@ -7795,7 +7781,7 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
                   <clip pos="1" side="tl" part="a_adj"/>
                    <clip pos="1" side="tl" part="a_gender"/>
                    <clip pos="1" side="tl" part="a_anim"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
+                   <clip pos="1" side="tl" part="a_nbr"/>
                    <lit-tag v="nom"/>
                 </lu>
               </chunk>
@@ -7804,6 +7790,8 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
         </choose>
       </action>
     </rule>
+
+
 
     <rule comment="REGLA: DET">
 
@@ -8070,6 +8058,28 @@ OUTPUT: ^adj<AdjP>{^хороший<adj><m><an><sg><nom>$}$
 </action>
 </rule>
 
+
+ <rule comment="REGLA: NUM">
+     
+      <pattern>
+      <pattern-item n="num1"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="num2-3">
+            <tags>
+              <tag><lit-tag v="DET"/></tag>
+            </tags>
+            <lu>
+              
+              <clip pos="1" side="tl" part="whole"/>
+
+            </lu>
+          </chunk>
+        </out>
+
+</action>
+</rule>
   
 
     <rule comment="REGLA: POST">
