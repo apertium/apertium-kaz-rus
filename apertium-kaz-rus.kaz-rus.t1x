@@ -4647,6 +4647,10 @@ prn-gen
           <with-param pos="1"/>
           <with-param pos="2"/>
         </call-macro>
+       <call-macro n="set-animacy">
+          <with-param pos="2"/>
+        </call-macro>
+
         <out>
           <chunk name="adj_n">
             <tags>
@@ -4676,9 +4680,9 @@ after putting
 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                   <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
+                   <clip pos="2" side="tl" part="a_gender"/>
+                <var n="animacy"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
  <var n="case"/>
                 </lu>
             <b/>
@@ -8095,9 +8099,9 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                   <clip pos="1" side="tl" part="a_gender"/>
-                   <clip pos="1" side="tl" part="a_anim"/>
-                   <clip pos="1" side="tl" part="a_nbr"/>
+                    <lit-tag v="m"/> 
+                    <lit-tag v="an"/> 
+                  <lit-tag v="sg"/> 
                    <lit-tag v="nom"/>
                 </lu>
               </chunk>
