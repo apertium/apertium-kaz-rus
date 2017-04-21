@@ -29678,7 +29678,7 @@
 
 <!-- Тествок Ернур postadv слова -->
 <e r = "LR"><p><l>-ақ<s n="postadv"/></l><r></r></p></e>
-  <e r = "LR"><p><l>да<s n="post"/></l><r></r></p></e>
+  <e r = "LR"><p><l>да<s n="postadv"/></l><r></r></p></e>
 <e r = "LR"><p><l>ғана<s n="postadv"/></l><r>только<s n="adv"/></r></p></e>
   <e r = "LR"><p><l>сыз<s n="post"/></l><r></r></p></e>
   <e r = "LR"><p><l>лы<s n="post"/></l><r></r></p></e>

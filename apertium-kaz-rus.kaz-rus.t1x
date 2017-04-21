@@ -55,11 +55,7 @@
     <cat-item tags="post.*"/>
     <cat-item tags="post"/>
   </def-cat>
-<def-cat n="v-ing">
-      <cat-item tags="v.*.gna9"/>
-      <cat-item tags="v.*.prc_impf"/>
- <cat-item tags="v.*.prc_perf"/>
-    </def-cat>
+
 <def-cat n="v-fut">
       <cat-item tags="v.*.fut.*"/>
          </def-cat>
@@ -87,6 +83,116 @@
       <cat-item lemma="ат" tags="n.px3sg.nom.*"/>
       
 
+    </def-cat>
+    <def-cat n="n-poss">
+      <cat-item tags="n.*.loc.subst.*"/>
+     </def-cat>
+    <def-cat n="n-poss-nom">
+      <cat-item tags="n.*.nom"/>
+      </def-cat>
+    <def-cat n="v-ing">
+      <cat-item tags="v.*.prc_perf"/>
+      <cat-item tags="v.*.prc_impf"/>
+      <cat-item tags="v.*.prc_perf.*"/>
+      <cat-item tags="v.*.prc_impf.*"/>
+      <cat-item tags="v.*.gna_after"/>
+      <cat-item tags="v.*.gna_after.*"/>
+      <cat-item tags="v.*.gna9"/>
+    </def-cat>
+
+<def-cat n="v-ing1">
+      <cat-item tags="v.*.aor"/>
+      <cat-item tags="v.*.aor.*"/>
+      <cat-item tags="v.*.ifi"/>
+      <cat-item tags="v.*.ifi.*"/>
+      <cat-item tags="v.*.fut"/>
+      <cat-item tags="v.*.fut.*"/>
+      <cat-item tags="v.*.ger_fut"/>
+      <cat-item tags="v.*.ger_fut.*"/>
+
+    </def-cat>
+<def-cat n="v-ing2">
+      <cat-item tags="v.*.aor"/>
+      <cat-item tags="v.*.aor.*"/>
+      <cat-item tags="v.*.gna9"/>
+      <cat-item tags="v.*.gna9.*"/>
+      <cat-item tags="v.*.gna_cond"/>
+      <cat-item tags="v.*.gna_cond.*"/>
+      <cat-item tags="v.*.prc_vol.*"/>
+      <cat-item tags="v.*.prc_vol"/>
+      <cat-item tags="v.*.prc_cond.*"/>
+      <cat-item tags="v.*.prc_cond"/>
+      <cat-item tags="v.*.prc_fplan"/>  
+      <cat-item tags="v.*.prc_fplan.*"/>
+
+    </def-cat>
+    <def-cat n="v-ing3">
+      <cat-item tags="v.*.opt"/>
+      <cat-item tags="v.*.opt.*"/>
+      <cat-item tags="v.*.gpr_ppot"/>
+      <cat-item tags="v.*.gpr_ppot.*"/>
+      <cat-item tags="v.*.ger_fut"/>
+      <cat-item tags="v.*.ger_fut.*"/>
+      <cat-item tags="v.*.gpr_impf"/>
+      <cat-item tags="v.*.gpr_impf.*"/>
+      <cat-item tags="v.*.ger_impf"/>
+      <cat-item tags="v.*.ger_impf.*"/>
+      <cat-item tags="v.*.gpr_past"/>
+      <cat-item tags="v.*.gpr_past.*"/>
+      <cat-item tags="v.*.ger_past"/>
+      <cat-item tags="v.*.ger_past.*"/>
+      <cat-item tags="v.*.ger_perf"/>
+      <cat-item tags="v.*.ger_perf.*"/>
+      <cat-item tags="v.*.gpr_pot"/>
+      <cat-item tags="v.*.gpr_pot.*"/>
+      <cat-item tags="v.*.gpr_pot"/>
+      <cat-item tags="v.*.gpr_pot.*"/>
+      <cat-item tags="v.*.coop"/>
+      <cat-item tags="v.*.coop.*"/><!-- 
+      <cat-item tags="v.*.pass"/>
+      <cat-item tags="v.*.pass.*"/> -->
+
+          </def-cat>
+ <def-cat n="v-ing4">
+      <cat-item tags="v.*.pih"/>
+      <cat-item tags="v.*.pih.*"/>
+
+    </def-cat>
+
+    <def-cat n="v-ing5">
+      <cat-item tags="v.*.pih"/>
+      <cat-item tags="v.*.pih.*"/>
+
+    </def-cat>
+    <def-cat n="v-ing6">
+      <cat-item tags="v.*.neg"/>
+      <cat-item tags="v.*.neg.*"/>
+
+    </def-cat>
+     <def-cat n="v-ing7">
+      <cat-item tags="v.*.evid"/>
+      <cat-item tags="v.*.evid.*"/>
+
+    </def-cat>
+    <def-cat n="prn_vars">
+     <!--  <cat-item lemma="ғой" tags="mod_ass"/>
+      -->
+       <cat-item lemma="ғана" tags="postadv"/>
+      <cat-item lemma="шығар" tags="mod"/>
+    </def-cat>
+    <def-cat n="prn_vars1">
+      <cat-item lemma="ғой" tags="mod_ass"/>
+      <cat-item lemma="мекен" tags="qst"/>
+    </def-cat>
+    <def-cat n="v_vars">
+      <cat-item lemma="-ақ" tags="postadv"/>
+      <cat-item lemma="шығар" tags="mod"/>
+      <cat-item lemma="да" tags="postadv"/>
+      <cat-item lemma="да" tags="cnjcoo"/>
+      <cat-item lemma="ғана" tags="postadv"/>
+      <cat-item lemma="ма" tags="qst"/>
+      <cat-item lemma="мекен" tags="qst"/>
+      <cat-item lemma="ғой" tags="mod_ass"/>
     </def-cat>
 <!--<def-cat n="NP">
       <cat-item tags="np.ant.*"/>
@@ -1901,7 +2007,759 @@ If no format information is present it is removed. -->
   <section-rules>
 
 
+<rule comment="RULE: V+v_vars7"> 
+<!-- шақырады екенбіз бе: -->
+<pattern>
+ <pattern-item n="v-ing7"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars7" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+    <lu> 
+      <lit v="оказываться"/>
 
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="pres"/>
+              <lit-tag v="p3"/>
+              <lit-tag v="sg"/>
+ </lu>
+  <b/>
+ <lu>
+  <clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> 
+
+              <clip pos="1" side="sl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_trans"/>
+              <clip pos="1" side="sl" part="a_pers"/>
+              <clip pos="1" side="sl" part="a_nbr"/> -->
+     <lit v="звать1"/>
+
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="pres"/>
+              <lit-tag v="p2"/>
+              <lit-tag v="pl"/>
+              <!-- <clip pos="1" side="tl" part="a_gender"/>
+<clip pos="1" side="tl" part="a_nbr"/>  -->
+
+</lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+
+<rule comment="RULE: V+v_vars2"> 
+<!-- шақырса ма:шақыр<v><tv><prc_cond><p3><sg>+ма<qst> -->
+<pattern>
+ <pattern-item n="v-ing1"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars1" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> 
+
+              <clip pos="1" side="sl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_trans"/>
+              <clip pos="1" side="sl" part="a_pers"/>
+              <clip pos="1" side="sl" part="a_nbr"/> -->
+     <lit v="звать1"/>
+
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="pres"/>
+              <lit-tag v="p2"/>
+              <lit-tag v="pl"/>
+            </lu>
+             <b/>
+            <lu>
+<clip pos="2" side="tl" part="whole"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+
+<rule comment="RULE: V+v_vars2"> 
+<!-- шақырса ма:шақыр<v><tv><prc_cond><p3><sg>+ма<qst> 
+-->
+<pattern>
+ <pattern-item n="v-ing2"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars2" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+    <lu>
+              <lit v="если"/>
+              <lit-tag v="cnjsub"/>
+ </lu>
+  <b/>
+ <lu>
+<clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> 
+
+              <clip pos="1" side="sl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_trans"/>
+              <clip pos="1" side="sl" part="a_pers"/>
+              <clip pos="1" side="sl" part="a_nbr"/> -->
+     <lit v="звать1"/>
+
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="pres"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+<clip pos="1" side="tl" part="a_nbr"/> </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+<rule comment="RULE: V+v_vars3"> 
+<!-- шақырса ма:шақыр<v><tv><prc_cond><p3><sg>+ма<qst> -->
+<pattern>
+ <pattern-item n="v-ing3"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars3" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+    <lu>
+              <lit v="если"/>
+              <lit-tag v="cnjsub"/>
+ </lu>
+  <b/>
+ <lu>
+<clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> 
+
+              <clip pos="1" side="sl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_trans"/>
+              <clip pos="1" side="sl" part="a_pers"/>
+              <clip pos="1" side="sl" part="a_nbr"/> -->
+     <lit v="звать1"/>
+
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="past"/>
+              <lit-tag v="mfn"/>
+              <lit-tag v="pl"/>
+              <!-- <clip pos="1" side="tl" part="a_gender"/>
+<clip pos="1" side="tl" part="a_nbr"/>  -->
+
+</lu>
+ <b/>
+  <lu><lit v="бы"/>
+              <lit-tag v="part"/>
+    </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+ <rule comment="RULE: V+v_vars4"> 
+<!-- шақырса ма:шақыр<v><tv><prc_cond><p3><sg>+ма<qst> -->
+<pattern>
+ <pattern-item n="v-ing3"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars4" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+    <lu>
+              <lit v="если"/>
+              <lit-tag v="cnjsub"/>
+ </lu>
+  <b/>
+ <lu>
+    <clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+ <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/> </lu>
+ <b/>
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> 
+
+              <clip pos="1" side="sl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_trans"/>
+              <clip pos="1" side="sl" part="a_pers"/>
+              <clip pos="1" side="sl" part="a_nbr"/> -->
+     <lit v="звать1"/>
+
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="past"/>
+              <lit-tag v="mfn"/>
+              <lit-tag v="pl"/>
+              <!-- <clip pos="1" side="tl" part="a_gender"/>
+<clip pos="1" side="tl" part="a_nbr"/>  -->
+
+</lu>
+ <b/>
+  <lu><lit v="бы"/>
+              <lit-tag v="part"/>
+    </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+<rule comment="RULE: V+v_vars3"> 
+<!-- шақырса ма:шақыр<v><tv><prc_cond><p3><sg>+ма<qst> -->
+<pattern>
+ <pattern-item n="v-ing3"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars3" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+    <lu>
+              <lit v="если"/>
+              <lit-tag v="cnjsub"/>
+ </lu>
+  <b/>
+ <lu>
+<clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> 
+
+              <clip pos="1" side="sl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_trans"/>
+              <clip pos="1" side="sl" part="a_pers"/>
+              <clip pos="1" side="sl" part="a_nbr"/> -->
+     <lit v="звать1"/>
+
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="past"/>
+              <lit-tag v="mfn"/>
+              <lit-tag v="pl"/>
+              <!-- <clip pos="1" side="tl" part="a_gender"/>
+<clip pos="1" side="tl" part="a_nbr"/>  -->
+
+</lu>
+ <b/>
+  <lu><lit v="бы"/>
+              <lit-tag v="part"/>
+    </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+<rule comment="RULE: V+v_vars"> 
+<!-- шақыра да:шақыр<v><tv><prc_impf>+да<cnjcoo> -->
+<pattern>
+ <pattern-item n="v-ing"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+<clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> -->
+     <lit v="вызвать1"/>
+
+              <lit-tag v="vblex"/>
+              <lit-tag v="perf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="inf"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+  
+  <rule comment="RULE: V+v_vars"> 
+<!-- шақыратын ғой:шақыр<v><tv><pih><p3><pl>+ғой<mod_ass> -->
+<pattern>
+ <pattern-item n="v-ing4"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars4" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>  
+      <lu>
+        <lit v="можно"/>
+              <lit-tag v="part"/>
+    </lu>
+    <b/> 
+  <lu>
+<clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> -->
+     <lit v="звать1"/>
+
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="inf"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+<rule comment="RULE:n-px postadv"> 
+<!-- Ernur 
+  ~мектебімдегіден-ақ:мектеп<n><px1sg><loc><subst><abl>+-ақ<postadv>
+  ~мектептерімдегі-ақ:мектеп<n><pl><px1sg><loc><subst><nom>+-ақ<postadv> -->
+<pattern>
+ <pattern-item n="n-poss"/>
+ <pattern-item n="cop"/>
+ <pattern-item n="postadv"/> <!-- sozdan cat postadv -->
+</pattern>
+  <action>
+    <out>
+       <chunk name="n_px-postadv" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+              <lit v="даже"/>
+              <lit-tag v="adv"/>
+ </lu>
+ <b/>
+  <lu>
+              <lit v="из"/>
+              <lit-tag v="pr"/>
+ </lu>
+ <b/>
+  <lu>
+              <lit v="мой"/>
+              <lit-tag v="det"/>
+              <lit-tag v="pos"/>
+              <lit-tag v="f"/>
+              <lit-tag v="an"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="gen"/>
+ </lu>
+ <b/>
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="gen"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+<rule comment="RULE:n-poss-nom postadv"> 
+
+<!--  мектебім-ақ:мектеп<n><px1sg><nom>+-ақ<postadv>
+ -->   
+ <pattern>
+ <pattern-item n="n-poss-nom"/>
+ <pattern-item n="cop"/>
+ <pattern-item n="postadv"/> <!-- sozdan cat postadv -->
+</pattern>
+  <action>
+    <out>
+       <chunk name="n_px-postadv" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags> 
+      <lu>
+              <lit v="даже"/>
+              <lit-tag v="adv"/>
+ </lu> 
+ <b/>
+   <lu>
+  <lit v="мой"/>
+              <lit-tag v="det"/>
+              <lit-tag v="pos"/>
+              <lit-tag v="f"/>
+              <lit-tag v="an"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="nom"/>
+</lu>
+ <b/>
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="nom"/>
+ </lu> 
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+  <rule comment="RULE:n-pos cnjcoo"> 
+<!-- Ernur 
+  ~мектебімдегі де:мектеп<n><px1sg><loc><subst><nom>+е<cop><aor><p3><sg>+да<cnjcoo>
+-->
+<pattern>
+ <pattern-item n="n-poss"/>
+ <pattern-item n="cop"/>
+ <pattern-item n="cnjcoo"/> <!-- sozdan cat postadv -->
+</pattern>
+  <action>
+    <out>
+       <chunk name="n_poss-cnjcoo" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+      <lu>
+              <lit v="из"/>
+              <lit-tag v="pr"/>
+ </lu>
+<b/>  
+   <lu>
+  <lit v="мой"/>
+              <lit-tag v="det"/>
+              <lit-tag v="pos"/>
+              <lit-tag v="f"/>
+              <lit-tag v="an"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="gen"/>
+</lu>
+ <b/>
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+              <lit-tag v="pl"/>
+              <lit-tag v="nom"/>
+ </lu> 
+ <b/>
+   <lu>
+              <lit v="тоже"/>
+              <lit-tag v="adv"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+<rule comment="RULE:Nums"> 
+<!-- Ernur Nums-->
+<pattern>
+ <pattern-item n="num-subst"/>
+ <pattern-item n="cop"/>
+</pattern>
+  <action>
+    <out>
+       <chunk name="Numdar" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+                <!--  
+                 <clip pos="1" side="tl" part="a_gender"/>
+                 <clip pos="1" side="tl" part="a_nbr"/> -->
+               <!--   <clip pos="1" side="tl" part="a_case"/> -->
+               
+<lit-tag v="num"/>
+<lit-tag v="m"/>
+               <lit-tag v="an"/>
+               <lit-tag v="sg"/>
+                <lit-tag v="nom"/>
+
+
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+  <rule comment="RULE: ADJ+cnjcoo"> <!--  Ernur 
+    ^жақсы<adj><subst><dat>+да<cnjcoo>$      ^хороший<adj><sint><subst><dat>$ ^тоже<postadv>$    #хороший\<adj\>\<sint\>\<dat\> #тоже -->
+
+<pattern>
+ <pattern-item n="adj"/>
+<pattern-item n="cnjcoo"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="adj" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <lit-tag v="adj"/>
+ <lit-tag v="sint"/>
+ <lit-tag v="m"/>
+ <lit-tag v="an"/>
+ <lit-tag v="sg"/>
+ <lit-tag v="dat"/>
+ </lu>
+ <b/>
+<lu>
+   <lit v="тоже"/>
+  <lit-tag v="adv"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule>   
+
+<rule comment="RULE:prn+postadv"> <!--  өздері мекен:өз<prn><ref><px3pl><nom>+ғана<postadv>
+ -->
+<pattern>
+ <pattern-item n="prn"/>
+ <pattern-item n="cop"/>
+<pattern-item n="prn_vars1"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="prn+prn_vars1" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  <lu><!-- 
+  det><ref><mfn><an><pl><nom -->
+  <clip pos="1" side="tl" part="lem"/><!-- 
+  <clip pos="1" side="tl" part="a_nom"/> -->
+  <lit-tag v="det.ref"/>
+ <!--  <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+      <clip pos="1" side="tl" part="a_nbr"/> 
+        <clip pos="1" side="tl" part="a_case"/> -->
+        <lit-tag v="mfn"/>
+        <lit-tag v="an"/>
+        <lit-tag v="pl"/>
+ <lit-tag v="nom"/>
+ </lu>
+ <b/>
+ <lu>
+  <clip pos="3" side="tl" part="whole"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule>
+
+<rule comment="RULE:prn+postadv"> <!--  өздері ғана:өз<prn><ref><px3pl><nom>+ғана<postadv>
+ -->
+<pattern>
+ <pattern-item n="prn"/>
+ <pattern-item n="cop"/>
+<pattern-item n="prn_vars"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="prn+prn_vars" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  <lu>
+  <clip pos="3" side="tl" part="whole"/>
+ </lu>
+<b/>
+<lu><!-- 
+  det><ref><mfn><an><pl><nom -->
+  <clip pos="1" side="tl" part="lem"/><!-- 
+  <clip pos="1" side="tl" part="a_nom"/> -->
+  <lit-tag v="det.ref"/>
+ <!--  <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+      <clip pos="1" side="tl" part="a_nbr"/> 
+        <clip pos="1" side="tl" part="a_case"/> -->
+        <lit-tag v="mfn"/>
+        <lit-tag v="an"/>
+        <lit-tag v="pl"/>
+<lit-tag v="nom"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule>
+
+<rule comment="RULE: ADJ+сыз/сіз+cnjcoo"> <!--  ADJ Ernur 
+жақсыдағыданбыз да:жақсы<adj><subst><loc><subst><abl>+е<cop><aor><p1><pl>+да<cnjcoo>
+ -->
+<pattern>
+ <pattern-item n="adj-subst"/>
+ <pattern-item n="cop"/>
+<pattern-item n="cnjcoo"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="adj-subst сыз/сіз" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <lit-tag v="adj"/>
+ <lit-tag v="sint"/>
+ <lit-tag v="mfn"/>
+ <lit-tag v="an"/>
+ <lit-tag v="pl"/>
+   <lit-tag v="gen"/>
+ </lu>
+ <b/>
+<lu>
+   <lit v="тоже"/>
+  <lit-tag v="adv"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule>
+
+<rule comment="RULE:n-poss-nom cnjcoo"> 
+<!-- Ernur 
+  ~мектебі де:^мектеп<n><px3sp><nom>$ ^е<cop><aor><p3><sg>$ ^да<cnjcoo>$
+-->
+<pattern>
+ <pattern-item n="n-poss-nom"/>
+ <pattern-item n="cop"/>
+ <pattern-item n="cnjcoo"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="n-px3sp cnjcoo" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="a_nom"/>
+    <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+  
+<!--     <clip pos="1" side="tl" part="a_nbr"/>
+    <clip pos="1" side="tl" part="a_case"/> -->
+              <lit-tag v="sg"/>
+              <lit-tag v="nom"/>
+
+ </lu>
+  <b/>
+  <lu>
+              <lit v="тоже"/>
+              <lit-tag v="adv"/>
+ </lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+
+ <rule comment="RULE: V+v_vars7"> 
+<!-- шақырады екенбіз бе: -->
+<pattern>
+ <pattern-item n="v-ing7"/>
+ <pattern-item n="v_vars"/> 
+</pattern>
+  <action>
+    <out>
+       <chunk name="V+v_vars7" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>
+      </tags>   
+    <lu> 
+      <lit v="оказываться"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="pres"/>
+              <lit-tag v="p3"/>
+              <lit-tag v="sg"/>
+ </lu>
+  <b/>
+ <lu>
+  <clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+  <lu>
+    <!-- 
+    <clip pos="1" side="tl" part="lem"/>
+    <clip pos="1" side="tl" part="vbmod"/> 
+||||||| .r77539
+           
+=======
+>>>>>>> .r78045
+
+              <clip pos="1" side="sl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_tense"/>
+              <clip pos="1" side="sl" part="a_trans"/>
+              <clip pos="1" side="sl" part="a_pers"/>
+              <clip pos="1" side="sl" part="a_nbr"/> -->
+     <lit v="звать1"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="pres"/>
+              <lit-tag v="p2"/>
+              <lit-tag v="pl"/>
+              <!-- <clip pos="1" side="tl" part="a_gender"/>
+<clip pos="1" side="tl" part="a_nbr"/>  -->
+
+</lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
 
 
 
