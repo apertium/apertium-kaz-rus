@@ -1128,7 +1128,7 @@ If no format information is present it is removed. -->
                         <lit-tag v="n"/>
                         <!-- <lit-tag v="px3sp"/>  -->
                      <var n="possessive"/>
-                <clip part="a_cas" side="tl" pos="1"/> 
+                <clip part="a_case" side="tl" pos="1"/> 
                       </concat>
              </let>
       </when>

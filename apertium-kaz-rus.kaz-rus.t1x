@@ -433,6 +433,7 @@
       <attr-item tags="n"/>
       <attr-item tags="np"/>
       <attr-item tags="np.cog"/>
+ <attr-item tags="np.ant"/>
       <attr-item tags="adj"/>
       <attr-item tags="adv"/>
       <attr-item tags="pred"/>
@@ -582,7 +583,6 @@
     </def-attr>
     <def-attr n="a_pers">
       <attr-item tags="p1"/>
-<attr-item tags="p1sg"/>
       <attr-item tags="p2"/>
       <attr-item tags="p3"/>
 <attr-item tags="p4"/>
@@ -657,6 +657,9 @@
 <def-var n="pronoun"/>
     <def-var n="animacy"/>
     <def-var n="trans"/>
+<def-var n="pptag"/> <!-- Will contain the tag of the next postpositional phrase generated (AdvP, GenP, etc.) -->
+    <def-var n="genpp"/> <!-- yes: will generate postposition; no= won't -->
+   <def-var n="postposition_lu"/>
   </section-def-vars>
 
   <section-def-lists>
@@ -1208,7 +1211,7 @@ If no format information is present it is removed. -->
 
         <when>
           <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="sim"/></equal></test>
-          <let><var n="preposition"/><concat><lit v="как"/><lit-tag v="adv"/><lit-tag v="rel"/></concat></let>
+          <let><var n="preposition"/><concat><lit v="как"/><lit-tag v="adv"/></concat></let>
           <let><var n="case"/><lit-tag v="nom"/></let>
         </when>
         <when>
@@ -1364,6 +1367,226 @@ If no format information is present it is removed. -->
           <let><clip pos="1" side="tl" part="a_anim"/><lit-tag v="an"/></let>
         </when>
       </choose>
+    </def-macro>
+
+<def-macro n="choose_case_and_postposition2" npar="2">  
+    <let><var n="pptag"/><lit-tag v="PP"/></let> 
+    <let><var n="genpp"/><lit v="no"/></let> 
+    <choose>
+      <when> <!-- make genpp="yes" when a postposition is detected -->
+        <test>
+          <or>
+            <equal>
+               <clip pos="1" side="tl" part="a_postposition"/>
+               <lit-tag v="n"/>
+            </equal>
+     
+            <equal>
+               <clip pos="1" side="tl" part="a_postposition"/>
+               <lit-tag v="post"/>
+            </equal>
+
+          </or>  
+        </test>
+        <let><var n="genpp"/><lit v="yes"/></let> <!-- for simple cases -->
+      </when>
+    </choose>
+
+    <choose>
+      <when>
+        <test>
+          <equal><var n="genpp"/><lit v="no"/></equal>
+        </test>
+        <choose> <!-- no postpositions -->
+          <when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="a_cas"/>
+                <lit-tag v="loc"/>
+              </equal>
+            </test>
+            <let><var n="postposition_lu"/> <!-- ready for lu -->
+                      <concat>
+                       <lit v="in"/>
+                        <lit-tag v="pr"/>          
+                      </concat>
+             </let>
+       </when> 
+
+<when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="a_case"/>
+                <lit-tag v="abl"/>
+              </equal>
+            </test>
+            <let><var n="postposition_lu"/> <!-- ready for lu -->
+                      <concat>
+                       <lit v="из"/>
+                        <lit-tag v="pr"/>          
+                      </concat>
+             </let>
+       </when> 
+<when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="a_case"/>
+                <lit-tag v="dat"/>
+              </equal>
+            </test>
+            <let><var n="postposition_lu"/> <!-- ready for lu -->
+                      <concat>
+                       <lit v="к"/>
+                        <lit-tag v="pr"/>          
+                      </concat>
+             </let>
+       </when> 
+<when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="a_cas"/>
+                <lit-tag v="gen"/>
+              </equal>
+            </test>
+            <let><var n="postposition_lu"/> <!-- ready for lu -->
+                      <concat>
+                       <lit v="of"/>
+                        <lit-tag v="pr"/>          
+                      </concat>
+             </let>
+       </when> 
+
+     
+  <when>   
+        <test>
+          <equal caseless="yes">
+            <clip pos="1" side="sl" part="a_cas"/>
+            <lit-tag v="ins"/>
+          </equal>
+        </test>
+       <let><var n="postposition_lu"/> <!-- ready for lu -->
+                      <concat>
+                       <lit v="with"/>
+                        <lit-tag v="pr"/>          
+                      </concat>
+             </let>
+    </when> 
+                  <when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="a_cas"/>
+                <lit-tag v="dat"/>
+              </equal>
+            </test>
+            <let>
+              <var n="case"/>
+              <lit v="to"/>
+            </let>
+      </when>    
+
+           <when> 
+             <test>
+                <equal caseless="yes">
+                  <clip pos="1" side="sl" part="a_cas"/>
+                  <lit-tag v="ins"/>
+                </equal>
+             </test>
+             <let>
+               <var n="case"/>
+               <lit v="with"/>
+             </let>
+              </when>    
+
+           <when> 
+             <test>
+                <equal caseless="yes">
+                  <clip pos="1" side="sl" part="a_cas"/>
+                  <lit-tag v="gen"/>
+                 </equal>
+              </test>
+              <let>
+                <var n="case"/>
+                <lit-tag v="of"/>
+              </let>
+              <let>
+                 <var n="pptag"/>
+                 <lit v="GenP"/>   
+              </let>
+       </when>    
+
+           <otherwise>
+              <let>
+                <var n="case"/>
+                <lit-tag v="ins"/> 
+              </let>
+              <let>
+                <var n="pptag"/>
+                <lit-tag v="PP"/>  
+              </let>
+<let><var n="postposition_lu"/> <!-- ready for lu -->
+
+                       <lit v=""/>
+                        
+             </let>
+            </otherwise>
+    </choose>
+      </when> 
+
+      <when>  <!--- Now, with postpositions -->
+        <test>
+          <equal>
+             <var n="genpp"/>
+             <lit v="yes"/>
+          </equal>
+        </test>
+        <choose> <!-- Generate postposition --> 
+          <when> <!-- noun-based postpositions -->
+             <test>
+               <equal>
+                 <clip side="tl" part="a_postposition" pos="1"/>
+                 <lit-tag v="n"/>
+           </equal>
+             </test>
+             <let><var n="case"/><lit-tag v="gen"/></let>
+             <let><var n="pptag"/><lit-tag v="PP"/></let>
+             <!-- we need to compute "possessive"  --> 
+ 
+<let><var n="a_pos"/><lit-tag v="px3sp"/></let> <!-- default value -->
+
+<choose> 
+<when>
+   <test>
+      <and>
+          <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag  v="p1"/></equal>
+          <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+       </and>
+    </test>      
+          <let><var  n="a_pos"/><lit-tag v="px1sg"/></let>
+</when>
+
+
+<when>
+   <test>
+      <and>
+          <equal><clip  pos="2" side="sl" part="a_pers"/><lit-tag  v="p1"/></equal>
+          <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+       </and>
+    </test>      
+          <let><var  n="a_pos"/><lit-tag v="px1pl"/></let>
+</when>
+               
+             </choose>
+             <let><var n="pptag"/><lit-tag v="PP"/></let>
+             <let><var n="postposition_lu"/> <!-- ready for lu -->
+                      <concat>
+                        <clip pos="1" side="tl" part="lem"/>
+                        <lit-tag v="post"/>
+                      </concat>
+             </let>
+      </when>
+    </choose>
+       </when>
+     </choose>
     </def-macro>
 
     <def-macro n="makeagree-num-noun" npar="2">
@@ -1699,6 +1922,137 @@ If no format information is present it is removed. -->
   </out>
  </action>
  </rule> 
+
+<rule comment="REGLA: N cop mod_ass"> <!--   мектепсіз ғой / мектептен ғой-->
+ 
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="cop"/>
+         <pattern-item n="mod_ass"/>
+      </pattern>
+      <action>
+<choose>
+    <when>
+      <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="abl"/></equal></test>
+<let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let></when>
+<otherwise>
+<let><clip pos="1" side="tl" part="a_case"/><clip pos="1" side="sl" part="a_case"/></let></otherwise>
+</choose>
+<call-macro n="return-number-of-sl-word">
+ <with-param pos="1"/>
+            </call-macro>
+<call-macro n="choose_case_and_postposition2">
+ <with-param pos="1"/>
+            </call-macro>
+<choose>
+    <when>
+      <test><equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2.frm"/></equal></test>
+        <out>
+                  <chunk name="n-mod_ass">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                     
+                    </tags>
+                    <var n="possessive"/>
+                     <lu>
+  <lit v="без"/>
+  <lit-tag v="pr"/>
+ </lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_pos"/>
+ <clip pos="1" side="tl" part="a_gender"/>
+ <clip pos="1" side="tl" part="a_anim"/>
+  <lit-tag v="sg"/>
+ <lit-tag v="gen"/>
+ </lu>
+<b/>
+  <lu>
+  <lit v="же"/>
+  <lit-tag v="part"/>
+ </lu>
+
+                  </chunk>
+  
+              </out></when>
+<otherwise>
+     <out>
+                  <chunk name="n-mod_ass1"> <!-- мектеп қой-->
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+           </tags>
+                  <lu>
+                    <var n="postposition_lu"/>
+</lu>
+                    
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_pos"/>
+ <clip pos="1" side="tl" part="a_gender"/>
+ <clip pos="1" side="tl" part="a_anim"/>
+<var n="number"/>
+ <clip pos="1" side="tl" part="a_case"/>
+ </lu>
+<b/>
+  <lu>
+  <lit v="же"/>
+  <lit-tag v="part"/>
+ </lu>
+
+                  </chunk>
+                </out>
+</otherwise>
+</choose>
+                
+      </action>
+    </rule>
+
+
+<rule comment="REGLA: N cop mod_ass"> <!-- мектепке ғой/ мектепті ғой-->
+ 
+      <pattern>
+        <pattern-item n="n"/>
+         <pattern-item n="mod_ass"/>
+      </pattern>
+      <action>
+<let><clip pos="1" side="tl" part="a_case"/><clip pos="1" side="sl" part="a_case"/></let>
+<call-macro n="return-number-of-sl-word">
+ <with-param pos="1"/>
+            </call-macro>
+<call-macro n="choose_case_and_postposition2">
+ <with-param pos="1"/>
+            </call-macro>
+     <out>
+                  <chunk name="n-mod_ass2">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+           </tags>
+<lu>
+                    <var n="postposition_lu"/>
+</lu>
+                    
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_pos"/>
+ <clip pos="1" side="tl" part="a_gender"/>
+ <clip pos="1" side="tl" part="a_anim"/>
+<var n="number"/>
+ <clip pos="1" side="tl" part="a_case"/>
+ </lu>
+<b/>
+  <lu>
+  <lit v="же"/>
+  <lit-tag v="part"/>
+ </lu>
+
+                  </chunk>
+                </out>
+               
+      </action>
+    </rule>
 
 
     <rule comment="REGLA: N">
@@ -2237,7 +2591,7 @@ If no format information is present it is removed. -->
     </rule>
 
 
-<rule comment="REGLA: N cop post"> <!-- Bota 13.04-->
+<rule comment="REGLA: N cop post"> <!-- Bota 13.04  мектепсіз-ақ-->
  
       <pattern>
         <pattern-item n="n"/>
@@ -2246,7 +2600,7 @@ If no format information is present it is removed. -->
       </pattern>
       <action>
         <out>
-                  <chunk name="n-postadv">
+                  <chunk name="n-postadv1">
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
                      
@@ -2270,7 +2624,7 @@ If no format information is present it is removed. -->
                 
       </action>
     </rule>
-<rule comment="REGLA: N cop qst"> <!-- Bota 13.04-->
+<rule comment="REGLA: N cop qst"> <!-- Bota 13.04  мектепсіз бе-->
  
       <pattern>
         <pattern-item n="n"/>
@@ -2303,45 +2657,7 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-<rule comment="REGLA: N cop mod_ass"> <!-- Bota 13.04-->
- 
-      <pattern>
-        <pattern-item n="n"/>
-        <pattern-item n="cop"/>
-         <pattern-item n="mod_ass"/>
-      </pattern>
-      <action>
-        <out>
-                  <chunk name="n-mod_ass">
-                    <tags>
-                      <tag><lit-tag v="SN"/></tag>
-                     
-                    </tags>
-                    <var n="possessive"/>
-                     <lu>
-  <lit v="без"/>
-  <lit-tag v="pr"/>
- </lu>
-<b/>
-<lu>
-  <clip pos="1" side="tl" part="lem"/>
- <clip pos="1" side="tl" part="a_pos"/>
- <clip pos="1" side="tl" part="a_gender"/>
- <clip pos="1" side="tl" part="a_anim"/>
-  <lit-tag v="sg"/>
- <lit-tag v="gen"/>
- </lu>
-<b/>
-  <lu>
-  <lit v="же"/>
-  <lit-tag v="part"/>
- </lu>
 
-                  </chunk>
-                </out>
-                
-      </action>
-    </rule>
 <rule comment="REGLA: N cop cnjcoo"> <!-- Bota 13.04-->
  
       <pattern>
