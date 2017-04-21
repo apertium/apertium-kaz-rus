@@ -3516,7 +3516,7 @@ If no format information is present it is removed. -->
     </rule>
 
 
-<rule comment="REGLA: N cop cnjcoo"> <!-- Bota 13.04-->
+<rule comment="REGLA: N cop cnjcoo"> <!-- Bota 13.04  мектебімдегі де-->
  
       <pattern>
         <pattern-item n="n"/>
@@ -3524,38 +3524,86 @@ If no format information is present it is removed. -->
          <pattern-item n="cnjcoo"/>
       </pattern>
       <action>
+<call-macro n="translate-noun">
+              <with-param pos="1"/>
+            </call-macro>
+<call-macro n="convert-pers-affix-to-pers-determiner">
+              <with-param pos="1"/>
+            </call-macro>
         <out>
-                  <chunk name="n-cnjcoo">
+                    <chunk name="n-cnjcoo">
                     <tags>
-                      <tag><lit-tag v="SN"/></tag>
-                     
+                      <tag><lit-tag v="PP"/></tag>
                     </tags>
-                    <var n="possessive"/>
-                     <lu>
-  <lit v="без"/>
-  <lit-tag v="pr"/>
- </lu>
-<b/>
-<lu>
-  <clip pos="1" side="tl" part="lem"/>
- <clip pos="1" side="tl" part="a_pos"/>
- <clip pos="1" side="tl" part="a_gender"/>
- <clip pos="1" side="tl" part="a_anim"/>
-  <lit-tag v="sg"/>
- <lit-tag v="gen"/>
- </lu>
-<b/>
-  <lu>
-  <clip pos="3" side="tl" part="lem"/>
- <lit-tag v="adv"/>
- </lu>
+
+                <var n="pronoun"/>
+                <lu> <!-- put VARIABLES into lex units <lu> / AS-->
+                  <var n="preposition"/>
+                  </lu>
+                <b/>
+                <var n="possessive"/> <!--what does it produce? tag or word? -->
+
+                  <b/>
+
+
+            <!-- need blank space here, I put /AS 10.05.2016-->
+                  <lu>
+		      <clip pos="1" side="tl" part="whole"/>
+                    </lu>
+                  
+               <b/>
+                 <lu>
+           <clip pos="3" side="tl" part="lem"/>
+            <lit-tag v="adv"/>
+             </lu>
 </chunk>
 </out>
-                
-      </action>
-    </rule>
+</action>
+</rule>
+
+<rule comment="REGLA: N cnjcoo"> <!-- Bota 13.04  мектебімдегі де/-->
+ 
+      <pattern>
+        <pattern-item n="n"/>
+        <pattern-item n="cnjcoo"/>
+      </pattern>
+      <action>
+<call-macro n="translate-noun">
+              <with-param pos="1"/>
+            </call-macro>
+<call-macro n="convert-pers-affix-to-pers-determiner">
+              <with-param pos="1"/>
+            </call-macro>
+        <out>
+                    <chunk name="n-cnjcoo2">
+                    <tags>
+                      <tag><lit-tag v="PP"/></tag>
+                    </tags>
+
+                <var n="pronoun"/>
+                <lu> <!-- put VARIABLES into lex units <lu> / AS-->
+                  <var n="preposition"/>
+                  </lu>
+                <b/>
+                <var n="possessive"/> <!--what does it produce? tag or word? -->
+
+                  <b/>
 
 
+            <!-- need blank space here, I put /AS 10.05.2016-->
+                  <lu>
+		      <clip pos="1" side="tl" part="whole"/>
+                    </lu>
+                  
+               <b/>
+                 <lu>
+           <clip pos="2" side="tl" part="lem"/>
+            <lit-tag v="adv"/>
+             </lu>
+</chunk>
+</out>
+</action>
+</rule>
 
 
 
@@ -8996,24 +9044,57 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
     </rule>
 
 
-    <rule comment="REGLA: PRN">
+    <rule comment="REGLA: PRN"> <!--Bota -->
       <pattern>
-        <pattern-item n="prn"/>
-<pattern-item n="cop"/>
+     <pattern-item n="prn"/>
+     <pattern-item n="cop"/>
       </pattern>
       <action>
+      <choose>
+       <when>
+       <test> <or>  
+             <equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px3pl"/></equal>
+              <equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px1pl"/></equal>
+              <equal><clip pos="1" side="tl" part="a_poss"/><lit-tag v="px2pl"/></equal>
+            </or></test>
+	   
         <out>
-          <chunk name="prn">
-            <tags>
-              <tag><lit-tag v="PRN"/></tag>
-            </tags>
-            <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
+              <chunk name="prn1">  <!--өздері-->
+                <tags>
+                  <tag><lit-tag v="PRN"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <lit-tag v="mfn"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <lit-tag v="pl"/>
+                  <clip pos="1" side="tl" part="a_case"/>
+                </lu>
+              </chunk>
+            </out>
+      </when>
+<otherwise>
+ <out>
+              <chunk name="prn">  <!--өзі  -->
+                <tags>
+                  <tag><lit-tag v="PRN"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <lit-tag v="sg"/>
+                  <clip pos="1" side="tl" part="a_case"/>
+                </lu>
+              </chunk>
+            </out>
+</otherwise>
+ </choose>
+            </action>
+</rule>
+
 
 
    <rule comment="REGLA: NUM">
