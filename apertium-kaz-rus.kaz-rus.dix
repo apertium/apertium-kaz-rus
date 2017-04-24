@@ -129,6 +129,8 @@
     <sdef n="rel" 	c=""/> 
 <sdef n="interj" 	c=""/> 
 <sdef n="Rnom" 	c=""/> 
+<sdef n="Rins" 	c=""/> 
+<sdef n="Rabl" 	c=""/> 
   </sdefs>
 
 
@@ -4668,6 +4670,7 @@
 <e><p><l>үйме<s n="n"/></l><r>куча<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>шалшық<s n="n"/></l><r>лужа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>шаңғы<s n="n"/></l><r>лыжа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>шақыру<s n="n"/></l><r>звание<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>айырма<s n="n"/></l><r>маржа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>тапшылық<s n="n"/></l><r>лыжа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>жеткіліксіздік<s n="n"/></l><r>маржа<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -19601,7 +19604,7 @@
 <e>       <p><l>өз<s n="prn"/><s n="ref"/></l>         <r>сам<s n="det"/><s n="ref"/><s n="m"/><s n="an"/></r></p></e>
 <e><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="prn"/><s n="pos"/></r></p></e>
 <e><p><l>сен<s n="prn"/><s n="pers"/><s n="p2"/><s n="sg"/><s n="gen"/></l><r>твой<s n="prn"/><s n="pos"/></r></p></e>
-<e><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="gen"/></l><r>его<s n="prn"/><s n="pos"/></r></p></e>
+<e><p><l>ол<s n="prn"/><s n="pers"/><s n="p3"/><s n="sg"/><s n="gen"/></l><r>его<s n="prn"/><s n="pers"/></r></p></e>
 <e><p><l>біз<s n="prn"/><s n="pers"/><s n="p1"/><s n="pl"/><s n="gen"/></l><r>наш<s n="prn"/><s n="pos"/></r></p></e>
 <e><p><l>сендер<s n="prn"/><s n="pers"/><s n="p2"/><s n="pl"/><s n="gen"/></l><r>ваш<s n="prn"/><s n="pos"/></r></p></e>
 <e><p><l>олар<s n="prn"/><s n="pers"/><s n="p3"/><s n="pl"/><s n="gen"/></l><r>их<s n="prn"/><s n="pers"/></r></p></e>
@@ -29608,7 +29611,7 @@
 
 
 <e>       <p><l>арқылы<s n="post"/><s n="Rnom"/></l>                <r>через<s n="pr"/></r></p></e>
-<e>       <p><l>кейін<s n="post"/><s n="Rnom"/></l>                 <r>за<s n="pr"/></r></p></e>
+<e>       <p><l>кейін<s n="post"/><s n="Rabl"/></l>                 <r>за<s n="pr"/></r></p></e>
 <e>       <p><l>әрі<s n="post"/></l>                   <r>дальше<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e>       <p><l>басқа<s n="post"/></l>                 <r>кроме<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e>       <p><l>бері<s n="post"/></l>                  <r>с<s n="pr"/></r></p><par n="__LR_gen"/></e>

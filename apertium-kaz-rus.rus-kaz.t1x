@@ -2537,7 +2537,7 @@ If no format information is present it is removed. -->
     </rule>
 
 
-<rule comment="RULE: moi, tvoi, ego"> <!-- Aliya 30.03.17 -->
+<rule comment="RULE: moi, tvoi, ego"> <!-- Aliya 21.04.17 -->
       <pattern>
         <pattern-item n="p123sp"/>
       </pattern>
@@ -2630,7 +2630,7 @@ If no format information is present it is removed. -->
         <tag><lit-tag v="NP"/></tag></tags>
         <lu>
               <clip pos="1" side="tl" part="lem"/>
-              <clip pos="1" side="tl" part="a_prn-pers_dem"/>
+          <lit-tag v="prn.pers"/>
               <clip pos="1" side="tl" part="a_pers"/>
               <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="gen"/>
@@ -3037,7 +3037,7 @@ If no format information is present it is removed. -->
       <lit-tag v="4"/> <!-- number -->
       <lit-tag v="2"/> <!-- person -->
      <!-- <lit-tag v="nom"/>   -->
-        <lit-tag v="gen"/> <!-- for мой дом -->
+        <lit-tag v="gen"/> <!-- for мой дом/твой дом -->
     </lu>     <b pos="1"/>
        <lu>
                <clip pos="2" side="tl" part="lem"/> 

@@ -26,8 +26,41 @@
 <def-cat n="verb-nonfin-ger_bar">
 <cat-item lemma="бар" tags="v.*.ger_past.px1sg.*"/>
 <cat-item lemma="бар" tags="v.*.ger_past.px2sg.*"/>
-
  </def-cat>
+<def-cat n="v-coop-ger_gpr"> 
+      <cat-item tags="v.*.coop.ger_abs"/>
+      <cat-item tags="v.*.coop.ger_abs.*"/>
+      <cat-item tags="v.*.coop.ger_past"/>
+      <cat-item tags="v.*.coop.ger_past.*"/>
+      <cat-item tags="v.*.coop.gpr_past"/>
+      <cat-item tags="v.*.coop.gpr_past.*"/>
+      <cat-item tags="v.*.coop.ger_perf"/>
+      <cat-item tags="v.*.coop.ger_perf.*"/>
+      <cat-item tags="v.*.coop.gpr_impf"/>
+      <cat-item tags="v.*.coop.gpr_impf.*"/>
+      <cat-item tags="v.*.coop.gpr_ppot"/>
+      <cat-item tags="v.*.coop.gpr_ppot.*"/>
+      <cat-item tags="v.*.coop.gpr_pot"/>
+      <cat-item tags="v.*.coop.gpr_pot.*"/>
+   </def-cat>
+    <def-cat n="v-coop-neg-ger_gpr">
+      <cat-item tags="v.*.coop.neg.ger"/>
+      <cat-item tags="v.*.coop.neg.ger_abs"/>
+      <cat-item tags="v.*.coop.neg.ger_abs.*"/>
+      <cat-item tags="v.*.coop.neg.gpr_pot"/>
+      <cat-item tags="v.*.coop.neg.gpr_pot.*"/>
+      <cat-item tags="v.*.coop.neg.gpr_ppot"/>
+      <cat-item tags="v.*.coop.neg.gpr_ppot.*"/>
+      <cat-item tags="v.*.coop.neg.gpr_impf"/>
+      <cat-item tags="v.*.coop.neg.gpr_impf.*"/>
+      <cat-item tags="v.*.coop.neg.gpr_past"/>
+      <cat-item tags="v.*.coop.neg.gpr_past.*"/>
+      <cat-item tags="v.*.coop.neg.ger_past"/>
+      <cat-item tags="v.*.coop.neg.ger_past.*"/>
+      <cat-item tags="v.*.coop.neg.ger_perf"/>
+      <cat-item tags="v.*.coop.neg.ger_perf.*"/>
+   </def-cat>
+
  
 <def-cat n="CAT__adj_">
     <cat-item tags="adj.*"/>
@@ -332,10 +365,10 @@
     <cat-item lemma="он үш" tags="num"/>
     <cat-item tags="num.*"/>
     </def-cat>
-   <def-cat n="num1">
+  <!-- <def-cat n="num1">   why this pattern??? BA 
       <cat-item lemma="2" tags="num"/>
       <cat-item lemma="3" tags="num"/>
-    </def-cat>
+    </def-cat> -->
     <def-cat n="num-det">
       <cat-item tags="num.ord"/>
       <cat-item tags="num.itg"/>
@@ -2005,6 +2038,54 @@ If no format information is present it is removed. -->
   </section-def-macros>
 
   <section-rules>
+
+<rule comment="RULE: v-coop-ger_gpr post">  <!-- Aliya "шақырысушылықсыз" -->
+<pattern>
+ <pattern-item n="v-coop-ger_gpr"/>
+ <pattern-item n="post"/>
+</pattern>
+  <action>
+    <out>
+       <chunk name="v-coop-ger_gpr+post" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag></tags>   
+ <lu> <lit v="без"/> <lit-tag v="pr"/> </lu> <b/>
+    <lu> 
+              <lit v="звание"/>
+              <lit-tag v="n"/>
+              <lit-tag v="nt"/>
+              <lit-tag v="nn"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="acc"/>
+</lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+<rule comment="RULE: v-coop-neg-ger_gpr post">  <!-- Aliya "шақырыспаушылықсыз" -->
+<pattern>
+ <pattern-item n="v-coop-neg-ger_gpr"/>
+ <pattern-item n="post"/>
+</pattern>
+  <action>
+    <out>
+       <chunk name="v-coop-neg-ger_gpr+post" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag></tags>   
+ <lu> <lit v="без"/> <lit-tag v="pr"/> </lu> <b/>
+ <lu> <lit v="не"/> <lit-tag v="adv"/> </lu> <b/>
+    <lu> 
+              <lit v="звание"/>
+              <lit-tag v="n"/>
+              <lit-tag v="nt"/>
+              <lit-tag v="nn"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="acc"/>
+</lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
 
 
 <rule comment="RULE: V+v_vars7"> 
@@ -3768,7 +3849,7 @@ If no format information is present it is removed. -->
           <when c="n.px3sp.{dat/abl/loc} is translated with a preposition">
             <test><equal><clip pos="2" side="tl" part="a_pos"/><lit-tag v="pr"/></equal></test>
             <out>
-              <chunk name="pr_n3">
+              <chunk name="pr_n3-1">
                 <tags>
                   <tag><lit-tag v="PP"/></tag>
                 </tags>
@@ -3787,8 +3868,7 @@ If no format information is present it is removed. -->
                   <clip pos="1" side="tl" part="a_gender"/>
                   <clip pos="1" side="tl" part="a_anim"/>
                   <var n="number"/>
-
-                  <clip pos="2" side="tl" part="a_case"/>
+                <clip pos="2" side="tl" part="a_case"/>
                 </lu>
               </chunk>
             </out>
@@ -9297,7 +9377,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 <otherwise>
    <out>
-    <chunk name="num_lu">
+    <chunk name="num_lu1">
     <tags>
     <tag><lit-tag v="SN-NUM"/></tag>
     </tags>
@@ -9318,7 +9398,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </rule>
 
 
- <rule comment="REGLA: NUM">
+ <!--<rule comment="REGLA: NUM"> why this rule  ???  BA 
      
       <pattern>
       <pattern-item n="num1"/>
@@ -9338,7 +9418,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         </out>
 
 </action>
-</rule>
+</rule> -->
   
 
     <rule comment="REGLA: POST">
