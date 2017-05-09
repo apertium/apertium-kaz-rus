@@ -365,10 +365,12 @@
     <cat-item lemma="он үш" tags="num"/>
     <cat-item tags="num.*"/>
     </def-cat>
-  <!-- <def-cat n="num1">   why this pattern??? BA 
+  <def-cat n="num1">  
       <cat-item lemma="2" tags="num"/>
       <cat-item lemma="3" tags="num"/>
-    </def-cat> -->
+<cat-item lemma="2" tags="num.subst.nom"/>
+<cat-item lemma="3" tags="num.subst.nom"/>
+    </def-cat> 
     <def-cat n="num-det">
       <cat-item tags="num.ord"/>
       <cat-item tags="num.itg"/>
@@ -608,6 +610,7 @@
       <attr-item tags="det.def"/>
       <attr-item tags="det.ref"/>
       <attr-item tags="num"/>
+   <attr-item tags="abbr"/>
     </def-attr>
     <def-attr n="a_det">
       <attr-item tags="det.dem"/>
@@ -3491,6 +3494,32 @@ If no format information is present it is removed. -->
                 </out>
               </when>
           
+<when>
+
+                <test><not><equal>		      <clip pos="1" side="tl" part="a_nom"/><lit-tag v="abbr"/></equal></not></test>
+                <out>
+                  <chunk name="n_pers">
+                    <tags>
+                      <tag><lit-tag v="SN"/></tag>
+                      <tag><clip pos="1" side="tl" part="a_case"/></tag>
+                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
+		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
+                    </tags>
+
+                   <var n="pronoun"/>
+
+                    <lu>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="a_gender"/>
+		      <clip pos="1" side="tl" part="a_anim"/>
+			<lit-tag v="3"/>
+		      <clip pos="1" side="tl" part="a_case"/>
+		      <clip pos="1" side="tl" part="lemq"/>
+                    </lu>
+                  </chunk>
+                </out>
+              </when>
               <otherwise>
                 <out>
                   <chunk name="pr_n2">
@@ -3518,8 +3547,11 @@ If no format information is present it is removed. -->
 
 <!-- need blank space here, I put /AS 10.05.2016-->
    <lu>
-		      <clip pos="1" side="tl" part="whole"/>
+		      <clip pos="1" side="tl" part="lem"/>
+		      <clip pos="1" side="tl" part="a_nom"/>
+		      <clip pos="1" side="tl" part="lemq"/>
                     </lu>
+
                   </chunk>
                 </out>
               </otherwise>
@@ -9398,8 +9430,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </rule>
 
 
- <!--<rule comment="REGLA: NUM"> why this rule  ???  BA 
-     
+ <rule comment="REGLA: NUM"> 
       <pattern>
       <pattern-item n="num1"/>
       </pattern>
@@ -9418,7 +9449,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         </out>
 
 </action>
-</rule> -->
+</rule>
   
 
     <rule comment="REGLA: POST">

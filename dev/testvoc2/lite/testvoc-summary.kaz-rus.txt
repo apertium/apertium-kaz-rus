@@ -1,5 +1,5 @@
 
-Mon Apr 24 18:12:58 CEST 2017
+Fri Apr 28 06:15:31 CEST 2017
 ===============================================
 POS	Total	Clean	With @	With #	Clean %
 cnjsub	49016	49016	0	0	100
