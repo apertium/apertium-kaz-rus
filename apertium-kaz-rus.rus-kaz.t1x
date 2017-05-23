@@ -270,6 +270,10 @@
     <def-cat n="vy">
       <cat-item lemma="вы" tags="prn.pers.*"/>
     </def-cat>
+<def-cat n="np-org">
+      <cat-item tags="np.org"/>
+      <cat-item tags="np.org.*"/>
+    </def-cat>
 
   </section-def-cats>
 
@@ -1231,6 +1235,24 @@ If no format information is present it is removed. -->
             </lu>
           </chunk>
         </out>
+      </action>
+    </rule>
+
+<rule comment="RULE: np org"> <!-- Aliya 18.05.17-->
+      <pattern>
+        <pattern-item n="np-org"/>
+      </pattern>
+      <action>
+    <out>
+    <chunk name="np-org">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="np.org"/>
+              <clip pos="1" side="tl" part="a_case"/>
+        </lu>
+    </chunk>
+    </out>
       </action>
     </rule>
 

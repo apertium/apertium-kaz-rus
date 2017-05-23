@@ -322,6 +322,10 @@
 
 <!-- vaux-->
 
+<e r="LR"><p><l>жат<s n="vaux"/></l><r>лежать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e> 
+<e r="LR"><p><l>тұр<s n="vaux"/></l><r>стоять<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e r="LR"><p><l>отыр<s n="vaux"/></l><r>сидеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e r="LR"><p><l>жүр<s n="vaux"/></l><r>ходить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e r="LR"><p><l>жат<s n="vaux"/></l><r></r></p></e>
 <e r="LR"><p><l>тұр<s n="vaux"/></l><r></r></p></e>
 <e r="LR"><p><l>отыр<s n="vaux"/></l><r></r></p></e>
@@ -25913,7 +25917,7 @@
 <e><p><l>ескерт<s n="v"/><s n="iv"/></l><r>выговаривать<s n="vblex"/></r></p></e>
 <e><p><l>қоқақта<s n="v"/><s n="iv"/></l><r>угрожать<s n="vblex"/></r></p></e>
 <e><p><l>қорқыт<s n="v"/><s n="tv"/></l><r>угрожать<s n="vblex"/></r></p></e>
-<e><p><l>тарт<s n="v"/><s n="iv"/></l><r>удаваться<s n="vblex"/></r></p></e>
+<e><p><l>тарт<s n="v"/><s n="tv"/></l><r>удаваться<s n="vblex"/></r></p></e>
 <e><p><l>алыста<s n="v"/><s n="iv"/></l><r>удаляться<s n="vblex"/></r></p></e>
 <e><p><l>аулақта<s n="v"/><s n="iv"/></l><r>удаляться<s n="vblex"/></r></p></e>
 <e><p><l>аулақтан<s n="v"/><s n="iv"/></l><r>удаляться<s n="vblex"/></r></p></e>
@@ -30084,7 +30088,7 @@
 <e><p><l>Семей<s n="np"/><s n="top"/></l><r>Семипалатинск<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Молдова<s n="np"/><s n="top"/></l><r>Молдова<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e><p><l>Ақмешіт<s n="np"/><s n="top"/></l><r>Акмешит<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
-<e><p><l>Сарыарка<s n="np"/><s n="top"/></l><r>Сарыарка<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e><p><l>Сарыарқа<s n="np"/><s n="top"/></l><r>Сарыарка<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>  
 <e><p><l>Павлодар<s n="np"/><s n="top"/></l><r>Павлодар<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Мәскеу<s n="np"/><s n="top"/></l><r>Москва<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e><p><l>Көкшетау<s n="np"/><s n="top"/></l><r>Кокшетау<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>

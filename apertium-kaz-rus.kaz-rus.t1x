@@ -131,7 +131,73 @@
       <cat-item tags="v.*.gna_after"/>
       <cat-item tags="v.*.gna_after.*"/>
       <cat-item tags="v.*.gna9"/>
+      <cat-item tags="v.*.gna_perf"/>
     </def-cat>
+<def-cat n="mumkin">
+        <cat-item lemma="мүмкін" tags="adv"/>
+        <cat-item lemma="мүмкін" tags="adv.*"/>
+   </def-cat>
+   <def-cat n="v-gerund">
+        <cat-item tags="v.tv.ger.*.*"/>
+	<cat-item tags="v.iv.ger.*.*"/>
+	<cat-item tags="v.tv.ger.px1sg.nom"/>
+   </def-cat>
+   <def-cat n="v-gerund-neg">
+	<cat-item tags="v.tv.neg.ger.*.*"/>
+	<cat-item tags="v.iv.neg.ger.*.*"/>
+   </def-cat>
+   <def-cat n="v-gerund-ing">
+	<cat-item tags="v.*.ger.*"/> 
+	<cat-item tags="v.*.ger.loc.attr"/>
+	<cat-item tags="v.*.ger.abl"/>
+	<cat-item tags="v.*.ger.acc"/>
+	<cat-item tags="v.*.ger.*.*"/>
+   </def-cat>
+    <def-cat n="v-fin">
+      <cat-item tags="v.*.aor.*"/>
+      <cat-item tags="v.*.ifi.*"/>
+      <cat-item tags="v.*.ifi.*.*"/>
+      <cat-item tags="vaux.*.aor.*"/> 
+      <cat-item tags="vaux.*.ifi.*"/>
+    </def-cat>
+    <def-cat n="v-fprc">
+      <cat-item tags="v.tv.ifi.*.*"/>
+      <cat-item tags="v.iv.ifi.*.*"/>
+    </def-cat>
+    <def-cat n="v-fprk">
+      <cat-item tags="v.iv.aor.*.*"/>
+      <cat-item tags="v.tv.aor.*.*"/>
+    </def-cat>
+    <def-cat n="emes">
+      <cat-item lemma="е" tags="adv"/>
+      <cat-item lemma="е" tags="adv.*"/>
+      <cat-item lemma="е" tags="vaux"/>
+      <cat-item lemma="е" tags="vaux.*"/>
+      <cat-item lemma="е" tags="cop.neg"/>
+      <cat-item lemma="е" tags="cop.neg.*"/>
+      <cat-item lemma="е" tags="cop.neg.*.*"/>
+      <cat-item lemma="е" tags="cop.neg.aor.*.*"/>
+    </def-cat>
+    <def-cat n="want">
+      <cat-item tags="v.*.prc_vol.*.*"/>     
+   </def-cat>
+   <def-cat n="kel">
+      <cat-item lemma="кел" tags="v.iv.aor.*.*"/>
+      <cat-item lemma="кел" tags="v.tv.aor.*.*"/>
+    </def-cat>
+    <def-cat n="kel-ifi">
+      <cat-item lemma="кел" tags="v.iv.ifi.*.*"/>
+      <cat-item lemma="кел" tags="v.tv.ifi.*.*"/>
+    </def-cat>
+   <def-cat n="kel-neg">
+      <cat-item lemma="кел" tags="v.iv.neg.aor.*.*"/>
+      <cat-item lemma="кел" tags="v.tv.neg.aor.*.*"/>
+    </def-cat>
+    <def-cat n="kel-ifi-neg">
+      <cat-item lemma="кел" tags="v.iv.neg.ifi.*.*"/>
+      <cat-item lemma="кел" tags="v.tv.neg.ifi.*.*"/>
+    </def-cat>
+
 
 <def-cat n="v-ing1">
       <cat-item tags="v.*.aor"/>
@@ -565,8 +631,23 @@
     </def-cat>
  <def-cat n="postadv">
 <cat-item tags="postadv"/>
-     
     </def-cat>
+ <def-cat n="verb-al">
+	<cat-item lemma="ал" tags="v.iv.aor.*.*"/>
+    </def-cat>
+    <def-cat n="verb-al-ifi">
+	<cat-item lemma="ал" tags="v.iv.ifi.*.*"/>
+    </def-cat>
+    <def-cat n="verb-al-neg">
+	<cat-item lemma="ал" tags="v.iv.neg.aor.*.*"/>
+    </def-cat>
+    <def-cat n="verb-al-ifi-neg">
+	<cat-item lemma="ал" tags="v.iv.neg.ifi.*.*"/>
+    </def-cat>
+ <def-cat n="vaux-pres">
+      <cat-item tags="vaux.pres.*"/>
+    </def-cat>
+
   </section-def-cats>
 
   <section-def-attrs>
@@ -2064,6 +2145,632 @@ If no format information is present it is removed. -->
   </out>
 </action>
  </rule>
+
+<rule comment="RULE: KE fut V+al"> <!-- ойнай аламын - смогу сыграть --> <!-- Aliya --> <!-- 20.05.17 -->
+      <pattern>
+        <pattern-item n="verb-nonfin"/>
+     <pattern-item n="verb-al"/>
+      </pattern>
+      <action>       
+        <call-macro n="conv-temps1"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="ke-futv-al" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="2" side="tl" part="a_pers"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>		
+            </tags>
+            <lu>
+              <lit v="смочь1"/><lit-tag v="vblex"/>
+	      <lit-tag v="perf"/><lit-tag v="iv"/><lit-tag v="fut"/>        
+              <lit-tag v="3"/><lit-tag v="4"/>                       
+            </lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_trans"/>
+              <lit-tag v="inf"/> 
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: KE past V+al"> <!-- ойнай алдым - смог сыграть -->  <!-- Aliya --> <!-- 20.05.17 -->
+      <pattern>
+        <pattern-item n="v-ing"/>
+     <pattern-item n="verb-al-ifi"/>
+      </pattern>
+      <action>       
+        <call-macro n="conv-temps1"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="ke-pastv-al" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="2" side="tl" part="a_pers"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>		
+            </tags>
+            <lu>
+              <lit v="смочь1"/><lit-tag v="vblex"/>
+	      <lit-tag v="perf"/><lit-tag v="iv"/><lit-tag v="past"/>        
+              <lit-tag v="m"/><lit-tag v="4"/>                       
+            </lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_trans"/>
+              <lit-tag v="inf"/> 
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: KE past V+al-not"> <!-- ойнай алмадым - не смог сыграть -->  <!-- Aliya --> <!-- 20.05.17 -->
+      <pattern>
+        <pattern-item n="v-ing"/>
+     <pattern-item n="verb-al-ifi-neg"/>
+      </pattern>
+      <action>       
+        <call-macro n="conv-temps1"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="ke-pastv-al-not" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
+              <tag><clip pos="2" side="tl" part="a_pers"/></tag>
+              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>		
+            </tags>
+            <lu>
+              <lit v="не"/>
+              <lit-tag v="adv"/>                          
+            </lu><b/>
+            <lu>
+              <lit v="смочь1"/><lit-tag v="vblex"/>
+	      <lit-tag v="perf"/><lit-tag v="iv"/><lit-tag v="past"/>       
+              <lit-tag v="m"/><lit-tag v="4"/>                       
+            </lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <clip pos="1" side="tl" part="a_trans"/>
+              <lit-tag v="inf"/> 
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+  <rule comment="RULE:  VAUX pres"> <!-- жатырмын, тұрмын, отырмын, жүрмін. -->  <!-- Aliya --> <!-- 20.05.17 -->
+      <pattern>        
+        <pattern-item n="vaux-pres"/>
+      </pattern>
+      <action>        
+        <call-macro n="conv-temps1"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="vaux-pres" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV-vaux"/></tag></tags>            
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="iv"/>
+              <lit-tag v="pres"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>            
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+<rule comment="RULE: VP-mumkin"> <!-- айтуым мүмкін - возможно расскажу -->
+      <pattern>
+        <pattern-item n="v-gerund"/>
+        <pattern-item n="mumkin"/>
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+        <call-macro n="conv-number1"><with-param pos="1"/></call-macro>
+ <choose>
+               <when>
+                   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1sg"/></equal></test>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v="p1"/></let>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v="sg"/></let>
+                </when>
+               <when>
+                   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1pl"/></equal></test>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v="p1"/></let>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v="pl"/></let>
+                </when>
+               <when>
+                   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2sg"/></equal></test>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v="p2"/></let>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v="sg"/></let>
+                </when>
+               <when>
+                   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2pl"/></equal></test>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v="p2"/></let>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v="pl"/></let>
+                </when>
+               <when>
+                   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3sg"/></equal></test>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v="p3"/></let>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v="sg"/></let>
+                </when>
+               <when>
+                   <test><equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3pl"/></equal></test>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v="p3"/></let>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v="pl"/></let>
+                </when>
+</choose>
+        <out>
+          <chunk name="ger-mumkin" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
+           </tags>
+             <lu><lit v="Возможно"/><lit-tag v="adv"/></lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+              <clip pos="1" side="tl" part="a_aspec"/>
+              <clip pos="1" side="tl" part="a_trans"/>
+              <clip pos="1" side="tl" part="a_tns"/>
+              <lit-tag v="2"/>
+              <lit-tag v="3"/>
+            </lu>            
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: ger+acc - v">   <!-- жүгіруді жек көремін - презираю бегать -->
+      <pattern>
+        <pattern-item n="v-gerund-ing"/>
+        <pattern-item n="v-fin"/>
+      </pattern>
+      <action>
+<choose>
+<when>
+                   <test><equal><clip pos="1" side="sl" part="lem"/><lit v="бол"/></equal></test>
+        <out>
+          <chunk name="v-ger2-be" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag></tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <clip pos="2" side="tl" part="a_verb"/>
+              <lit-tag v="pres"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu><b/>
+	    <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <lit-tag v="vbser"/>
+              <lit-tag v="ger"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+</when>
+<otherwise>
+   <out>
+          <chunk name="v-ger2" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag></tags>
+            <lu>
+              <clip pos="2" side="tl" part="lemh"/>
+              <lit-tag v="vblex"/>
+              <clip pos="2" side="tl" part="a_aspec"/>
+              <lit-tag v="pres"/>
+              <clip pos="2" side="tl" part="a_pers"/>
+              <clip pos="2" side="tl" part="a_nbr"/>
+              <clip pos="2" side="tl" part="lemq"/>
+            </lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <lit-tag v="vblex"/>
+              <clip pos="1" side="tl" part="a_aspec"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+</otherwise>
+</choose>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: KE prc v past"> <!-- айтып жібердім - рассказал -->
+      <pattern>
+        <pattern-item n="v-ing"/>
+        <pattern-item n="v-fprc"/>
+      </pattern>
+      <action>       
+        <call-macro n="conv-temps1"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="prc-v-past" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="sl" part="a_nbr"/></tag>		
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <lit-tag v="past"/>
+              <lit-tag v="m"/>
+              <lit-tag v="2"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: KE prc v pres"> <!-- айтып жіберемін - расскажу -->
+      <pattern>
+        <pattern-item n="v-ing"/>
+        <pattern-item n="v-fprk"/>
+      </pattern>
+      <action>       
+        <call-macro n="conv-temps1"><with-param pos="2"/></call-macro>
+        <out>
+          <chunk name="prc-v-pres" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="2" side="sl" part="a_pers"/></tag>		
+              <tag><clip pos="2" side="sl" part="a_nbr"/></tag>		
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <clip pos="1" side="tl" part="a_verb"/>
+              <lit-tag v="pres"/>
+              <lit-tag v="2"/>
+              <lit-tag v="3"/>
+              <clip pos="1" side="tl" part="lemq"/>
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: ger kerek"> <!-- "баруым керек - нужно идти -->
+      <pattern>
+	<pattern-item n="v-gerund"/>
+        <pattern-item n="kerek"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+        <call-macro n="conv-number1"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-poss"><with-param pos="1"/></call-macro>
+ <choose>
+               <when>
+                   <test><and>
+                       <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+                       <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v=""/></equal>
+                   </and></test>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+                </when>
+               <when>
+                   <test><and>
+                       <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+                       <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v=""/></equal>
+                   </and></test>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+                </when>
+               <when>
+                   <test><and>
+                       <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/></equal>
+                       <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v=""/></equal>
+                   </and></test>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+                </when>
+</choose>
+<choose>
+<when>
+                   <test><equal><clip pos="1" side="sl" part="lemh"/><lit v="бол"/></equal></test>
+                 <out>
+          <chunk name="have-to-inf-be" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag></tags>
+	     <lu><lit v="нужно"/><lit-tag v="pred"/></lu><b/>
+             <lu>
+		<clip pos="1" side="tl" part="lem"/>
+		<lit-tag v="vbser"/>
+                <clip pos="1" side="tl" part="a_aspec"/>
+               <lit-tag v="inf"/>
+             </lu>
+          </chunk>
+        </out>
+</when>
+<otherwise>
+        <out>
+          <chunk name="ger-kerek" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag></tags>
+	     <lu><lit v="нужно"/><lit-tag v="pred"/></lu><b/>
+            <lu>
+             <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+             <clip pos="1" side="tl" part="a_aspec"/>
+              <lit-tag v="inf"/>
+            </lu>
+          </chunk>
+        </out>
+</otherwise>
+           </choose>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: ger-neg kerek"> <!-- "бармауым керек - не нужно идти -->
+      <pattern>
+	<pattern-item n="v-gerund-neg"/>
+        <pattern-item n="kerek"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+        <call-macro n="conv-number1"><with-param pos="1"/></call-macro>
+        <call-macro n="remove-poss"><with-param pos="1"/></call-macro>
+ <choose>
+               <when>
+                   <test><and>
+                       <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+                       <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v=""/></equal>
+                   </and></test>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+                </when>
+               <when>
+                   <test><and>
+                       <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+                       <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v=""/></equal>
+                   </and></test>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+                </when>
+               <when>
+                   <test><and>
+                       <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/></equal>
+                       <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v=""/></equal>
+                   </and></test>
+                   <let><clip pos="1" side="tl" part="a_nbr"/><lit v=""/></let>
+                   <let><clip pos="1" side="tl" part="a_pers"/><lit v=""/></let>
+                </when>
+</choose>
+        <out>
+          <chunk name="ger-neg-kerek" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag></tags>
+            <lu><lit v="не"/><lit-tag v="adv"/></lu><b/>
+	     <lu><lit v="нужно"/><lit-tag v="pred"/></lu><b/>
+            <lu>
+             <clip pos="1" side="tl" part="lem"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="inf"/>
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: kerek neg"> <!-- керек емес - не нужно -->
+      <pattern>
+         <pattern-item n="kerek"/>
+        <pattern-item n="emes"/>
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+        <call-macro n="conv-number1"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="kerek-emes" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag></tags>
+            <lu><lit v="не"/><lit-tag v="adv"/></lu><b/>
+	     <lu><lit v="нужно"/><lit-tag v="pred"/></lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: kerek"> <!-- керек - нужно -->
+      <pattern>
+         <pattern-item n="kerek"/>
+         <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+        <call-macro n="conv-number1"><with-param pos="1"/></call-macro>
+        <out>
+          <chunk name="kerek" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag></tags>
+	     <lu><lit v="нужно"/><lit-tag v="pred"/></lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: Verb Kalau Rai"> <!-- жүгіргім келеді - хочу бежать -->
+      <pattern>
+	<pattern-item n="want"/>
+	<pattern-item n="kel"/>        
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+         <out>
+          <chunk name="kalau-rai-pres" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="1" side="sl" part="a_nbr"/></tag>	
+              <tag><clip pos="1" side="tl" part="a_aspec"/></tag>	
+            </tags> 
+          <lu>
+              <lit v="хотеть"/>  
+              <lit-tag v="vbmod"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="pres"/>
+              <lit-tag v="2"/>
+              <lit-tag v="3"/>
+           </lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>             
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: Verb Kalau Rai"> <!-- жүгіргім келді -  хотел бежать -->
+      <pattern>
+	<pattern-item n="want"/>
+	<pattern-item n="kel-ifi"/>        
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+         <out>
+          <chunk name="kalau-rai-past" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_nbr"/></tag>	
+              <tag><clip pos="1" side="sl" part="a_gender"/></tag>
+              <tag><clip pos="1" side="tl" part="a_aspec"/></tag>	
+            </tags> 
+          <lu>
+              <lit v="хотеть"/>  
+              <lit-tag v="vbmod"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="past"/>
+              <lit-tag v="m"/>
+              <lit-tag v="2"/>
+           </lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>             
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: Verb Kalau Rai NEG"> <!-- жүгіргім келмейді - не хочу бежать -->
+      <pattern>
+	<pattern-item n="want"/>
+	<pattern-item n="kel-neg"/>        
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+         <out>
+          <chunk name="kalau-rai-neg-pres" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="1" side="sl" part="a_nbr"/></tag>	
+              <tag><clip pos="1" side="tl" part="a_aspec"/></tag>	
+            </tags> 
+            <lu>
+              <lit v="не"/>
+              <lit-tag v="adv"/>                          
+            </lu><b/>
+          <lu>
+              <lit v="хотеть"/>  
+              <lit-tag v="vbmod"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="pres"/>
+              <lit-tag v="2"/>
+              <lit-tag v="3"/>
+           </lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>             
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: Verb Kalau Rai NEG"> <!-- жүгіргім келмеді -  не хотел бежать -->
+      <pattern>
+	<pattern-item n="want"/>
+	<pattern-item n="kel-ifi-neg"/>        
+      </pattern>
+      <action>
+        <call-macro n="conv-case1"><with-param pos="1"/></call-macro>
+         <out>
+          <chunk name="kalau-rai-neg-past" case="caseFirstWord">
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_nbr"/></tag>	
+              <tag><clip pos="1" side="sl" part="a_gender"/></tag>
+              <tag><clip pos="1" side="tl" part="a_aspec"/></tag>	
+            </tags> 
+            <lu>
+              <lit v="не"/>
+              <lit-tag v="adv"/>                          
+            </lu><b/>
+          <lu>
+              <lit v="хотеть"/>  
+              <lit-tag v="vbmod"/>
+              <lit-tag v="impf"/>
+              <lit-tag v="past"/>
+              <lit-tag v="m"/>
+              <lit-tag v="2"/>
+           </lu><b/>
+            <lu>
+              <clip pos="1" side="tl" part="lemh"/>
+              <lit-tag v="vblex"/>
+              <lit-tag v="impf"/> 
+              <lit-tag v="inf"/>
+              <clip pos="1" side="tl" part="lemq"/>             
+            </lu>
+          </chunk>
+        </out>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
+      </action>
+    </rule>
+
 
 <rule comment="RULE: v-coop-neg-ger_gpr post">  <!-- Aliya "шақырыспаушылықсыз" -->
 <pattern>
@@ -4305,115 +5012,59 @@ If no format information is present it is removed. -->
     </rule>
 
 
-<rule comment="RULE: V-ING VAUX"> <!--for present and past continuous from kaz-eng-->
+
+<rule comment="RULE: V-ING VAUX - Nak Osy Shak"> 
+<!-- Нақ осы шақ: жазып отыр - пишет -->
       <pattern>
         <pattern-item n="v-ing"/>
         <pattern-item n="vaux"/>
       </pattern>
-      <action>
-       
-        <call-macro n="conv-temps1">
-          <with-param pos="2"/>
-        </call-macro>
-
-<choose> 
-
+      <action>       
+        <call-macro n="conv-temps1"><with-param pos="2"/></call-macro>
+<choose><when>
+                 <test><equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p1"/></equal></test>
+                 <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v=" "/></let>
+                 <let><clip pos="2" side="tl" part="a_pers"/><lit-tag v="p1"/></let>
+</when>
 <when>
-                   <test>
-                   
-                       <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2.frm"/></equal>
-                      </test>
-                 <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
-           <let><clip pos="2" side="tl" part="a_pers"/><lit-tag v="p2"/></let>
-                </when>
-</choose>
-
-       <!-- <choose> choosing correct to be
-
+                 <test><equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test>
+                 <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v=""/></let>
+                 <let><clip pos="2" side="tl" part="a_pers"/><lit-tag v="p2"/></let>
+</when>
 <when>
-                   <test>
-                   
-                       <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
-                      </test>
-                 <let><clip pos="2" side="tl" part="a_nbr"/><lit v=""/></let>
-           <let><clip pos="2" side="tl" part="a_pers"/><lit v=""/></let>
-                </when>
-
-<when>
-                   <test>
-                   <and>
-                       <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
-                       <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
-                     </and>
-                      </test>
-                 <let><clip pos="2" side="tl" part="a_nbr"/><lit v=""/></let>
-           <let><clip pos="2" side="tl" part="a_pers"/><lit v=""/></let>
-                </when>
-<when>
-                   <test>
-                   <and>
-                       <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p3"/></equal>
-                       <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
-                     </and>
-                      </test>
-                 <let><clip pos="2" side="tl" part="a_nbr"/><lit v=""/></let>
-           <let><clip pos="2" side="tl" part="a_pers"/><lit v=""/></let>
-                </when>
-<when>
-                   <test>
-                   <and>
-                       <equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
-                       <equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
-                       <equal><clip pos="2" side="sl" part="a_tns"/><lit-tag v="past"/></equal>
-                     </and>
-                      </test>
-           <let><clip pos="2" side="tl" part="a_pers"/><lit v="p3"/></let>
-                 <let><clip pos="2" side="tl" part="a_nbr"/><lit v="sg"/></let>
-
-                </when>
-           </choose>
-
--->
-<!--AS:2016-12-07 choose transitive intransitive verbs -->
-	 <choose> 
-
-<when>
-                   <test>
-                   
-                       <equal><clip pos="1" side="sl" part="a_trans"/><lit-tag v="iv"/></equal>
-                      </test>
+                 <test><equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p3"/></equal></test>
+                 <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v=""/></let>
+                 <let><clip pos="2" side="tl" part="a_pers"/><lit-tag v="p3"/></let>
+</when></choose>
+<choose><when>
+                 <test><equal><clip pos="1" side="sl" part="a_trans"/><lit-tag v="iv"/></equal></test>
                  <let><var n="trans"/><lit-tag v="iv"/></let>
-                </when>
-<otherwise>
-                 <let><var n="trans"/><lit-tag v="tv"/></let>
-</otherwise>
+</when>
+<otherwise><let><var n="trans"/><lit-tag v="tv"/></let></otherwise>
 </choose>
        <out>
           <chunk name="verb-ing-cont" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><clip pos="2" side="tl" part="a_tns"/></tag>
-              <tag><clip pos="2" side="tl" part="a_pers"/></tag>
-              <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
-            </tags>
-           
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="1" side="sl" part="a_tense"/></tag>
+              <tag><clip pos="2" side="sl" part="a_pers"/></tag>
+              <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+              </tags>
+          <var n="negation"/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
-              <var n="trans"/>
-              <lit-tag v="2"/>
-              <lit-tag v="3"/>
+              <lit-tag v="pres"/>
               <lit-tag v="4"/>
-
+              <lit-tag v="5"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
-        <call-macro n="reset-vars1">
-          <with-param pos="1"/>
-        </call-macro>
+        <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
       </action>
     </rule>
+
 
     <rule comment="REGLA: N N ADJ N"> <!-- Aliya --> <!-- оқушының кітабының соңғы басылымы -->
       <!--
@@ -7261,15 +7912,13 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 
 
-    <rule comment="REGLA: V1">
+    <rule comment="REGLA: V1 - Buryngy Otken Shak">
+<!-- Бұрынғы өткен шақ: жазған - писал, жазған екен - писал --> 
       <pattern>
         <pattern-item n="verb-past"/>
       </pattern>
       <action>
-        <call-macro n="translate-verb-fin">
-          <with-param pos="1"/>
-        </call-macro>
-
+        <call-macro n="translate-verb-fin"><with-param pos="1"/></call-macro>
 <choose>
    <when>
       <test><and>
@@ -7278,7 +7927,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </and></test>
       <let><var n="gender"/><lit-tag v="m"/></let>
    </when>
-
    <when>
       <test><and>
 	<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
@@ -7286,36 +7934,30 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </and></test>
       <let><var n="gender"/><lit-tag v="mfn"/></let>
    </when>
-
 <otherwise>
       <let><var n="gender"/><lit-tag v="5"/></let>
 </otherwise>
 </choose>
-
         <out>
           <chunk name="v-neg-past">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
+            <tags><tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="sl" part="a_verb"/></tag>
               <tag><clip pos="1" side="sl" part="a_trans"/></tag>
               <tag><clip pos="1" side="sl" part="a_pers"/></tag>
               <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
               </tags>
           <var n="negation"/>
-
-            <lu>
+           <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
               <clip pos="1" side="tl" part="a_tense"/>
-		<var n="gender"/>
-		<lit-tag v="6"/>
+		<var n="gender"/><lit-tag v="6"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
-
 
     <rule comment="REGLA: V2">
       <pattern>
@@ -7405,20 +8047,14 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
     </rule>
 
 
-    <rule comment="REGLA: V">
-      <!--
-      INPUT:  ^ойна<v><tv><pres><p1><sg>/играть<vblex><impf><tv><pres><p1><sg>$
-      OUTPUT: ^v<SV><tv>{^играть<vblex><impf><pres><p1><sg>$}$
-      INPUT:  ^ойна<v><tv><past><ifi><p3><sg>/играть<vblex><impf><tv><past><ifi><p3><sg>$
-      OUTPUT: ^v<SV><tv>{^играть<vblex><impf><past><p3><sg>$}$
-      -->
+    <rule comment="REGLA: V - Jedel Otken Shak, Auyspaly Osy Shak">
+<!-- Жедел өткен шақ: жазды - писал 
+       Ауыспалы осы шақ: жазады - пишет -->
       <pattern>
         <pattern-item n="verb-fin"/>
       </pattern>
       <action>
-        <call-macro n="translate-verb-fin">
-          <with-param pos="1"/>
-        </call-macro>
+        <call-macro n="translate-verb-fin"><with-param pos="1"/></call-macro>
 <choose>
    <when>
       <test><and>
@@ -7428,7 +8064,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="fut"/></let>
    </when>
 </choose>
-
 <choose>
    <when>
       <test><and>
@@ -7437,7 +8072,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </and></test>
       <let><var n="gender"/><lit-tag v="m"/></let>
    </when>
-
    <when>
       <test><and>
 	<equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
@@ -7445,35 +8079,29 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </and></test>
       <let><var n="gender"/><lit-tag v="mfn"/></let>
    </when>
-
-<otherwise>
-      <let><var n="gender"/><lit-tag v="4"/></let>
-</otherwise>
+<otherwise><let><var n="gender"/><lit-tag v="5"/></let></otherwise>
 </choose>
-
         <out>
           <chunk name="v-neg-fin">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
+            <tags><tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="sl" part="a_verb"/></tag>
+              <tag><clip pos="1" side="sl" part="a_trans"/></tag>
               <tag><clip pos="1" side="sl" part="a_pers"/></tag>
               <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
               </tags>
           <var n="negation"/>
-
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
-              <clip pos="1" side="tl" part="a_trans"/>
               <clip pos="1" side="tl" part="a_tense"/>
-		<var n="gender"/>
-	      <lit-tag v="5"/>
+		<var n="gender"/><lit-tag v="6"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
           </chunk>
         </out>
       </action>
     </rule>
+
 
 <rule comment="REGLA: V-imp">
          <pattern>
@@ -8629,32 +9257,23 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 
 
-    <rule comment="REGLA: V">
-      <!--
-      INPUT:  ^шақыр<v><tv><fut_plan><p1><sg>/позвать<vblex><perf><tv><fut_plan><p1><sg>$
-      OUTPUT: ^v<SV><tv>{^собираться<vblex><impf><pres><p1><sg>$ ^позвать<vblex><perf><inf>$}$
-      INPUT:  ^шақыр<v><tv><fut_plan><p2><frm><sg>/позвать<vblex><perf><tv><fut_plan><p2><frm><sg>$
-      OUTPUT: ^v<SV><tv>{^собираться<vblex><impf><pres><p2><pl>$ ^позвать<vblex><perf><inf>$}$
-      -->
+   <rule comment="REGLA: V - Maksatty Keler Shak">
+      <!-- Мақсатты келер шақ: жүгірмекпін - собираюсь бежать -->
       <pattern>
         <pattern-item n="verb-fin-fut-plan"/>
       </pattern>
       <action>
 	<choose>
 	  <when>
-	    <test>
-	      <not><equal><clip pos="1" side="sl" part="a_formality"/><lit v=""/></equal></not>
-	    </test>
+	    <test><not><equal><clip pos="1" side="sl" part="a_formality"/><lit v=""/></equal></not></test>
 	    <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
 	  </when>
 	</choose>
         <out>
           <chunk name="verb-fin-fut-plan">
-            <tags>
-              <tag><lit-tag v="SV"/></tag>
-              <tag><clip pos="1" side="tl" part="a_trans"/></tag>
-            </tags>
-            <var n="negation"/>
+            <tags><tag><lit-tag v="SV"/></tag>
+              <tag><clip pos="1" side="tl" part="a_aspec"/></tag>
+            </tags> <var n="negation"/>
             <lu>
 	      <lit v="собираться"/>
 	      <lit-tag v="vblex"/>
@@ -8662,12 +9281,11 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 	      <lit-tag v="pres"/>
               <clip pos="1" side="tl" part="a_pers"/>
               <clip pos="1" side="tl" part="a_nbr"/>
-            </lu>
-	    <b/>
+            </lu><b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
 	      <lit-tag v="vblex"/>
-              <clip pos="1" side="tl" part="a_aspec"/>
+              <lit-tag v="impf"/>
 	      <lit-tag v="inf"/>
               <clip pos="1" side="tl" part="lemq"/>
             </lu>
