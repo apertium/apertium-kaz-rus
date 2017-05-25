@@ -11,6 +11,7 @@
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
 <cat-item tags="n.*.*.*"/>
+      <cat-item tags="prn.*"/>
       <cat-item tags="prn.obj.*"/>
       <cat-item tags="adj.subst"/>
       <cat-item tags="adj.subst.*"/>
@@ -274,7 +275,9 @@
       <cat-item tags="np.org"/>
       <cat-item tags="np.org.*"/>
     </def-cat>
-
+ <def-cat n="byt">
+      <cat-item lemma="быть" tags="vbser.*"/>
+    </def-cat>
   </section-def-cats>
 
 
@@ -1237,6 +1240,43 @@ If no format information is present it is removed. -->
         </out>
       </action>
     </rule>
+
+
+<rule comment="NEW RULE: byt' verb"> <!-- Aliya 23.05.17 -->
+  <pattern>
+    <pattern-item n="byt"/>
+    <pattern-item n="verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <out>
+    <chunk name="byt+verb-inf"> <!-- "будет удовлетворять" - "қанағаттандыратын болады" -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+              <lit-tag v="gpr_impf"/>
+        </lu>
+<b/>
+            <lu>
+              <lit v="бол"/>
+              <lit-tag v="v.iv"/>
+              <lit-tag v="aor"/>
+          <clip pos="1" side="tl" part="a_pers"/>
+          <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
 
 <rule comment="RULE: np org"> <!-- Aliya 18.05.17-->
       <pattern>
@@ -4733,6 +4773,35 @@ If no format information is present it is removed. -->
        <with-param pos="2"/>
   </call-macro> 
 <call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro> 
+
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="CD"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+
     <out>
     <chunk name="adj-noun">
     <tags>
@@ -4742,18 +4811,17 @@ If no format information is present it is removed. -->
     <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
     <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
     </tags>
-    <lu>
-      <var n="adjec_lu"/>
-     </lu>
-	<b pos="1"/>
+ 	<b pos="1"/>
 	<lu>
-      <var n="NEW-noun_lu"/>
-    </lu>
+               <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_nom"/>
+	  <clip pos="2" side="tl" part="a_nbr"/>
+	  <clip pos="2" side="tl" part="a_case"/>
+          </lu>
     </chunk>
     </out>
       </action>
 </rule>
-
 
 
 
