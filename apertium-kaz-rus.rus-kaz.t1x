@@ -278,6 +278,15 @@
  <def-cat n="byt">
       <cat-item lemma="быть" tags="vbser.*"/>
     </def-cat>
+ <def-cat n="want-rus">
+      <cat-item lemma="должен" tags="pred.*"/>
+      <cat-item lemma="нужно" tags="pred.*"/>
+      <cat-item lemma="надо" tags="pred.*"/>
+    </def-cat>
+
+    <def-cat n="mojno">
+      <cat-item lemma="можно" tags="pred"/>
+    </def-cat>
   </section-def-cats>
 
 
@@ -1241,7 +1250,68 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+<rule comment="RULE: want verb"> <!-- Aliya 26.05.17-->
+      <pattern>
+        <pattern-item n="want-rus"/>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+      <choose><when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+      </when></choose>
+    <out>
+    <chunk name="want-verb">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+            <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="nom"/>
+            </lu><b/>
+        <lu>
+          <lit v="керек"/>
+          <lit-tag v="vaux"/>
+          <lit-tag v="pres"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
 
+
+<rule comment="RULE: mojno verb"> <!-- Aliya 26.05.17-->
+      <pattern>
+        <pattern-item n="mojno"/>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+      <choose><when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+      </when></choose>
+    <out>
+    <chunk name="mojno-verb">
+      <tags><tag><lit-tag v="NP"/></tag></tags>
+            <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="dat"/>
+            </lu><b/>
+        <lu>
+          <lit v="бол"/>
+          <lit-tag v="v.iv"/>
+          <lit-tag v="aor"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
 <rule comment="NEW RULE: byt' verb"> <!-- Aliya 23.05.17 -->
   <pattern>
     <pattern-item n="byt"/>
