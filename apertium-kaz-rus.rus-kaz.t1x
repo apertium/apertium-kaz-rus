@@ -2879,6 +2879,7 @@ If no format information is present it is removed. -->
 <action>
   <call-macro n="default-nbr-pers"/>
 <call-macro n="choose_case_and_postposition2">
+<with-param pos="1"/>
         <with-param pos="2"/>
       </call-macro>
 <choose>

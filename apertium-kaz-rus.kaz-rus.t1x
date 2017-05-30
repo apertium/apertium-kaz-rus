@@ -1914,7 +1914,7 @@ If no format information is present it is removed. -->
 
 
 
-<def-macro n="makeagree-pr-n-adj" npar="2">
+<def-macro n="makeagree-pr-n-adj" npar="3">
       <!-- arg.1 pr 2 noun arg.3 adj -> pr noun-->
       <let><clip pos="3" side="tl" part="a_case"/><clip pos="2" side="tl" part="a_case"/></let>
 <choose> 
