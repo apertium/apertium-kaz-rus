@@ -2776,7 +2776,7 @@ If no format information is present it is removed. -->
 
 
 
-<!-- from eng-kaz for в саду    Балжан-->
+<!-- from eng-kaz for в саду  -бақта  Балжан-->
 
 <rule comment="NEW RULE: subj-pron">
   <pattern>
