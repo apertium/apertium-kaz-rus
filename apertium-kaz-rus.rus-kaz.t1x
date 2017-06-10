@@ -41,6 +41,9 @@
     <def-cat n="prep">
       <cat-item tags="pr"/>
     </def-cat>
+    <def-cat n="prep-c">
+      <cat-item lemma="с" tags="pr"/>
+    </def-cat>
     <def-cat n="n-px">
       <cat-item tags="n.px1sg.*"/>
       <cat-item tags="n.*.px1sg.*"/>
@@ -3755,6 +3758,39 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: prep num noun"> <!-- Aliya 10.06.2017 -->
+  <pattern>
+    <pattern-item n="prep-c"/>
+    <pattern-item n="num"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+ 
+        <out>
+          <chunk name="prep-num-noun">
+            <tags><tag><var n="pptag"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="4"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+	<lu><var n="num_lu"/></lu>
+            <b/>
+	<lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="a_nbr"/> 
+               <lit-tag v="abl"/>   
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
 
 
 <rule comment="NEW RULE: prep num noun1 noun2"> 
