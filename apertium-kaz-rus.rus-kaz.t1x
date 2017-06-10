@@ -47,6 +47,9 @@
     <def-cat n="prep-v">
       <cat-item lemma="в" tags="pr"/>
     </def-cat>
+    <def-cat n="prep-do">
+      <cat-item lemma="до" tags="pr"/>
+    </def-cat>
     <def-cat n="n-px">
       <cat-item tags="n.px1sg.*"/>
       <cat-item tags="n.*.px1sg.*"/>
@@ -3825,6 +3828,46 @@ If no format information is present it is removed. -->
                <clip pos="3" side="tl" part="a_nbr"/> 
                <lit-tag v="nom"/>   
 	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep DO num noun"> <!-- Aliya 10.06.2017 -->
+  <pattern>
+    <pattern-item n="prep-do"/>
+    <pattern-item n="num"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+ 
+        <out>
+          <chunk name="prep-num-n_dat">
+            <tags><tag><var n="pptag"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="4"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+	<lu><var n="num_lu"/></lu>
+            <b/>
+	<lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="a_nbr"/> 
+               <lit-tag v="dat"/>   
+	</lu>
+        <b/> 
+        <lu>
+          <lit v="дейін"/>
+          <lit-tag v="post"/>	
+        </lu>
           </chunk>
         </out>
   </action>
