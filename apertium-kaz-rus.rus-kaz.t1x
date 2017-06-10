@@ -3726,6 +3726,35 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: num noun"> <!-- Aliya 10.06.2017 -->
+  <pattern>
+    <pattern-item n="num"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="2"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="1"/></call-macro> 
+ 
+        <out>
+          <chunk name="num-n_nom">
+            <tags><tag><var n="pptag"/></tag></tags>
+	<lu><var n="num_lu"/></lu>
+            <b/>
+	<lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="a_nbr"/>
+               <clip pos="2" side="tl" part="a_case"/>
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
 <rule comment="NEW RULE: num noun"> 
   <pattern>
     <pattern-item n="num"/>
@@ -3779,12 +3808,7 @@ If no format information is present it is removed. -->
  
         <out>
           <chunk name="prep-num-n_abl">
-            <tags><tag><var n="pptag"/></tag>
-                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
-                <tag><lit-tag v="p3"/></tag>
-                <tag><lit-tag v="4"/></tag>
-                <tag><var n="case"/></tag>       
-            </tags>
+            <tags><tag><var n="pptag"/></tag></tags>
 	<lu><var n="num_lu"/></lu>
             <b/>
 	<lu>
@@ -3814,12 +3838,7 @@ If no format information is present it is removed. -->
  
         <out>
           <chunk name="prep-num-n_nom">
-            <tags><tag><var n="pptag"/></tag>
-                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
-                <tag><lit-tag v="p3"/></tag>
-                <tag><lit-tag v="4"/></tag>
-                <tag><var n="case"/></tag>       
-            </tags>
+            <tags><tag><var n="pptag"/></tag></tags>
 	<lu><var n="num_lu"/></lu>
             <b/>
 	<lu>
@@ -3849,12 +3868,7 @@ If no format information is present it is removed. -->
  
         <out>
           <chunk name="prep-num-n_dat">
-            <tags><tag><var n="pptag"/></tag>
-                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
-                <tag><lit-tag v="p3"/></tag>
-                <tag><lit-tag v="4"/></tag>
-                <tag><var n="case"/></tag>       
-            </tags>
+            <tags><tag><var n="pptag"/></tag></tags>
 	<lu><var n="num_lu"/></lu>
             <b/>
 	<lu>
