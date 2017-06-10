@@ -38,6 +38,12 @@
       <cat-item tags="n.gen"/>
       <cat-item tags="n.*.*.*.gen"/>
     </def-cat>
+    <def-cat n="techenie">
+      <cat-item lemma="в течение" tags="adv"/>
+    </def-cat>
+    <def-cat n="guio">
+      <cat-item tags="guio"/>
+    </def-cat>
     <def-cat n="prep">
       <cat-item tags="pr"/>
     </def-cat>
@@ -3965,6 +3971,51 @@ If no format information is present it is removed. -->
                <clip pos="4" side="tl" part="a_nbr"/>
                <clip pos="4" side="tl" part="a_case"/>
 	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
+
+<rule comment="NEW RULE: v techenie num-num noun"> <!-- Aliya 10.06.2017 -->
+  <pattern>
+    <pattern-item n="techenie"/>
+    <pattern-item n="num"/>
+    <pattern-item n="guio"/>
+    <pattern-item n="num"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="4"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+<call-macro n="build-num-lu1"><with-param pos="4"/></call-macro> 
+ 
+        <out>
+          <chunk name="vtechenie-num-num-n">
+            <tags><tag><var n="pptag"/></tag></tags>
+	<lu><var n="num_lu"/></lu>
+        <lu>
+               <clip pos="3" side="tl" part="whole"/> 
+        </lu>
+	<lu><var n="num_lu1"/></lu>
+            <b/>
+	<lu>
+               <clip pos="5" side="tl" part="lem"/> 
+               <clip pos="5" side="tl" part="a_nom"/>
+               <clip pos="5" side="tl" part="a_nbr"/>
+               <clip pos="5" side="tl" part="a_case"/>
+	</lu>
+            <b/>
+        <lu>
+          <lit v="аралық"/>
+          <lit-tag v="n"/>	
+          <lit-tag v="px3sp"/>	
+          <lit-tag v="loc"/>	
+        </lu>
           </chunk>
         </out>
   </action>
