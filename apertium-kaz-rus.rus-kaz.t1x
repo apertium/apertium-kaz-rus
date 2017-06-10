@@ -290,8 +290,11 @@
       <cat-item tags="np.org"/>
       <cat-item tags="np.org.*"/>
     </def-cat>
- <def-cat n="byt">
-      <cat-item lemma="быть" tags="vbser.*"/>
+ <def-cat n="byt-fut">
+      <cat-item lemma="быть" tags="vbser.fut.*"/>
+    </def-cat>
+ <def-cat n="byt-past">
+      <cat-item lemma="быть" tags="vbser.past.*"/>
     </def-cat>
  <def-cat n="want-rus">
       <cat-item lemma="должен" tags="pred.*"/>
@@ -1338,15 +1341,17 @@ If no format information is present it is removed. -->
     </out>
       </action>
     </rule>
+
+
 <rule comment="NEW RULE: byt' verb"> <!-- Aliya 23.05.17 -->
   <pattern>
-    <pattern-item n="byt"/>
+    <pattern-item n="byt-fut"/>
     <pattern-item n="verb"/>
   </pattern>
   <action>
      <call-macro n="default-nbr-pers"/>
     <out>
-    <chunk name="byt+verb-inf"> <!-- "будет удовлетворять" - "қанағаттандыратын болады" -->
+    <chunk name="byt-fut+verb-inf"> <!-- "будет удовлетворять" - "қанағаттандыратын болады" -->
       <tags>
         <tag><lit-tag v="VP"/></tag>
         <tag><lit-tag v="ND"/></tag> <!-- number -->
@@ -1368,6 +1373,42 @@ If no format information is present it is removed. -->
               <lit-tag v="aor"/>
           <clip pos="1" side="tl" part="a_pers"/>
           <clip pos="1" side="tl" part="a_nbr"/>
+            </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: byt' verb"> <!-- Aliya 10.06.17 -->
+  <pattern>
+    <pattern-item n="byt-past"/>
+    <pattern-item n="verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <out>
+    <chunk name="byt-past+verb"> <!-- "будет удовлетворять" - "қанағаттандыратын болады" -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+              <lit-tag v="pass"/>
+              <lit-tag v="gpr_past"/>
+        </lu>
+<b/>
+            <lu>
+              <lit v="бол"/>
+              <lit-tag v="v.iv"/>
+              <lit-tag v="gpr_impf"/>
             </lu>
     </chunk>
     </out>
