@@ -167,6 +167,10 @@
       <cat-item lemma="их" tags="prn.*"/>
       <cat-item lemma="их" tags="det.*"/>
     </def-cat>
+  <def-cat n="ego-detpos">   
+      <cat-item lemma="его" tags="det.pos"/>
+      <cat-item lemma="его" tags="det.pos.*"/>
+    </def-cat>
     <def-cat n="budu-vbser"> <!-- past and present tense -->
       <cat-item tags="vbser.fut.*"/>
       <cat-item tags="vbser.fut"/>      
@@ -1287,6 +1291,61 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+
+<rule comment="RULE: ego"> <!-- Aliya 11.06.17 -->
+      <pattern>
+        <pattern-item n="ego-detpos"/>
+      </pattern>
+      <action>
+    <out>
+    <chunk name="ego-detpos">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+<rule comment="RULE: ego noun"> <!-- Aliya 11.06.17 -->
+      <pattern>
+        <pattern-item n="ego-detpos"/>
+        <pattern-item n="nom"/> 
+      </pattern>
+      <action>
+    <out>
+    <chunk name="ego-noun">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="2" side="tl" part="a_nbr"/></tag> 
+    <tag><var n="a_possessive"/> </tag> 
+    <tag><clip pos="2" side="tl" part="a_case"/></tag>
+    </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu>
+       <b/>
+       <lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="px3sp"/>            
+               <clip pos="2" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+  
 <rule comment="RULE: want verb"> <!-- Aliya 26.05.17-->
       <pattern>
         <pattern-item n="want-rus"/>
@@ -2742,6 +2801,7 @@ If no format information is present it is removed. -->
     </choose>
       </action>
     </rule>
+
 
 
 <rule comment="RULE: moi, tvoi, ego"> <!-- Aliya 21.04.17 -->
