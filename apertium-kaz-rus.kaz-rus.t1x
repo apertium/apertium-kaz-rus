@@ -1252,9 +1252,11 @@ If no format information is present it is removed. -->
           <concat>
             <lit v="^я"/>
             <lit-tag v="prn"/><lit-tag v="pers"/>
-            <clip pos="1" side="tl" part="a_gender"/>
-            <var n="animacy"/>
-            <clip pos="1" side="tl" part="whole"/>
+            <clip pos="1" side="sl" part="a_pers"/>
+            <lit-tag v="mf"/>
+            <!--<var n="animacy"/>-->
+<clip pos="1" side="tl" part="a_nbr"/>
+<lit-tag v="nom"/>
             <lit v="$ "/>
           </concat>
           </let>  
@@ -1268,11 +1270,12 @@ If no format information is present it is removed. -->
           <concat>
             <lit v="^ты"/>
             <lit-tag v="prn"/><lit-tag v="pers"/>
+           <clip pos="1" side="sl" part="a_pers"/>
             <lit-tag v="mf"/>
-            <var n="animacy"/>
-            <clip pos="1" side="tl" part="a_nbr"/>
-            <clip pos="1" side="tl" part="a_case"/>
-            <lit v="$ "/>
+            <!--<var n="animacy"/>-->
+<clip pos="1" side="tl" part="a_nbr"/>
+<lit-tag v="nom"/>
+             <lit v="$ "/>
           </concat>
           </let>  
         </when>
@@ -1744,7 +1747,7 @@ If no format information is present it is removed. -->
            <otherwise>
               <let>
                 <var n="case"/>
-                <lit-tag v="ins"/> 
+                <lit-tag v="nom"/> 
               </let>
               <let>
                 <var n="pptag"/>
@@ -3836,7 +3839,7 @@ If no format information is present it is removed. -->
               <when>
                 <test><equal><var n="preposition"/><lit v=""/></equal></test>
                 <out>
-                  <chunk name="n_pers">
+                  <chunk name="n_pers4">
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
                       <tag><clip pos="1" side="tl" part="a_case"/></tag>
@@ -3996,7 +3999,7 @@ If no format information is present it is removed. -->
               <when>
                 <test><equal><var n="preposition"/><lit v=""/></equal></test>
                 <out>
-                  <chunk name="n_pers">
+                  <chunk name="n_pers5">
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
                       <tag><clip pos="1" side="tl" part="a_case"/></tag>
@@ -4187,24 +4190,32 @@ If no format information is present it is removed. -->
               <when>
 
                 <test><not><equal><var n="pronoun"/><lit v=""/></equal></not></test>
-                <out>
-                  <chunk name="n_pers">
+
+<call-macro n="choose_case_and_postposition2">
+ <with-param pos="1"/>
+            </call-macro>               
+ <out>
+                  <chunk name="n_pers1">
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
                       <tag><clip pos="1" side="tl" part="a_case"/></tag>
-                      <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
+                      
 
                    <var n="pronoun"/>
-
+<b/>
+<lu>
+                   <var n="postposition_lu"/>
+</lu>
+<b/>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
 		      <clip pos="1" side="tl" part="a_gender"/>
 		      <clip pos="1" side="tl" part="a_anim"/>
-			<lit-tag v="3"/>
-		      <clip pos="1" side="tl" part="a_case"/>
+			<lit-tag v="2"/>
+			<var n="case"/>
 		      <clip pos="1" side="tl" part="lemq"/>
                     </lu>
                   </chunk>
@@ -4215,7 +4226,7 @@ If no format information is present it is removed. -->
 
                 <test><not><equal>		      <clip pos="1" side="tl" part="a_nom"/><lit-tag v="abbr"/></equal></not></test>
                 <out>
-                  <chunk name="n_pers">
+                  <chunk name="n_pers2">
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
                       <tag><clip pos="1" side="tl" part="a_case"/></tag>
@@ -6960,7 +6971,7 @@ output after:
 
                 <test><not><equal><var n="pronoun"/><lit v=""/></equal></not></test>
                 <out>
-                  <chunk name="n_pers">
+                  <chunk name="n_pers3">
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
                       <tag><clip pos="1" side="tl" part="a_case"/></tag>

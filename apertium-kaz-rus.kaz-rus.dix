@@ -32604,12 +32604,12 @@
 <!-- Anthroponyms -->
 <e><p><l>Айбек<s n="np"/><s n="ant"/><s n="m"/></l><r>Айбек<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Мәдина<s n="np"/><s n="ant"/><s n="f"/></l><r>Мадина<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
-<e><p><l>Алма<s n="np"/><s n="ant"/><s n="f"/></l><r>Алма<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e><p><l>Балжан<s n="np"/><s n="ant"/><s n="f"/></l><r>Балжан<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e><p><l>Жадыра<s n="np"/><s n="ant"/><s n="f"/></l><r>Жадыра<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e><p><l>Айдана<s n="np"/><s n="ant"/><s n="f"/></l><r>Айдана<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e><p><l>Аида<s n="np"/><s n="ant"/><s n="f"/></l><r>Аида<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
-<e><p><l>Дина<s n="np"/><s n="ant"/><s n="f"/></l><r>Дина<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/><s n="nom"/></r></p></e>
+<e><p><l>Алма<s n="np"/><s n="ant"/><s n="f"/></l><r>Алма<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>Балжан<s n="np"/><s n="ant"/><s n="f"/></l><r>Балжан<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>Жадыра<s n="np"/><s n="ant"/><s n="f"/></l><r>Жадыра<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>Айдана<s n="np"/><s n="ant"/><s n="f"/></l><r>Айдана<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>Аида<s n="np"/><s n="ant"/><s n="f"/></l><r>Аида<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>Дина<s n="np"/><s n="ant"/><s n="f"/></l><r>Дина<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>Абай<s n="np"/><s n="ant"/><s n="m"/></l><r>Абай<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Әбу<s n="np"/><s n="ant"/><s n="m"/></l><r>Абу<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Мұхаммед<s n="np"/><s n="ant"/><s n="m"/></l><r>Мухаммед<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
