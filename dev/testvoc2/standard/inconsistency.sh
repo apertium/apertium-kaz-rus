@@ -30,11 +30,16 @@ if [[ $DIR = "kaz-rus" ]]; then
     GENERATOR="lt-proc -d ../../../kaz-rus.autogen.bin"
 
     tee $INPUT |
-    $PRETRANSFER | $LEXTRANSFER | $LEXSELECTION |
-    $TRANSFER_1 | $TRANSFER_2 | $TRANSFER_3 |  tee $TRANSFOUT |
+   $PRETRANSFER | $LEXTRANSFER | $LEXSELECTION |
+    $TRANSFER_1 |tee $TRANSFOUT | $TRANSFER_2 | $TRANSFER_3 |  
     $GENERATOR > $GENOUT
     paste -d % $INPUT $TRANSFOUT $GENOUT |
     sed 's/\^.<sent>\$//g' | sed 's/%/   -->  /g'
+
+ tee $INPUT |
+    $PRETRANSFER | $LEXTRANSFER | $LEXSELECTION |
+    $TRANSFER_1  > /tmp/transfer.out
+
 
 else
 	echo "Usage: ./inconsistency.sh <direction>";

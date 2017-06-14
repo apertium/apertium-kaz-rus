@@ -710,6 +710,7 @@
     </def-attr>
  <def-attr n="a_num">
       <attr-item tags="num"/>
+      <attr-item tags="det.ord"/>
     </def-attr>
     <def-attr n="a_pr">
       <attr-item tags="pr"/>
@@ -10000,6 +10001,26 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
     </chunk>
     </out>
 </when>
+<when>
+<test>
+<or>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="2"/></equal>
+                       <equal><clip pos="1" side="sl" part="lem"/><lit v="3"/></equal>
+   </or>                   
+                   </test>
+                <out>
+    <chunk name="num_lu2-3">
+    <tags>
+    <tag><lit-tag v="SN-NUM"/></tag>
+    </tags>
+    <lu>
+<clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_num"/>
+             </lu>
+    </chunk>
+    </out>
+</when>
+
 <when>
 <test>
 <or>
