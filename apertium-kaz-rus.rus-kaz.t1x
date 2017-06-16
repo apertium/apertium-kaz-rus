@@ -1292,6 +1292,7 @@ If no format information is present it is removed. -->
     </rule>
 
 
+
 <rule comment="NEW RULE: prep DO prn noun"> <!-- Aliya 15.06.2017 -->
   <pattern>
     <pattern-item n="prep-do"/>
