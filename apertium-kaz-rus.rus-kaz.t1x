@@ -1292,6 +1292,127 @@ If no format information is present it is removed. -->
     </rule>
 
 
+<rule comment="NEW RULE: prep DO prn noun"> <!-- Aliya 15.06.2017 -->
+  <pattern>
+    <pattern-item n="prep-do"/>
+    <pattern-item n="subj-pron-pos"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+	<choose>
+  	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+         <let><clip pos="3" side="tl" part="a_possessive"/><lit v="px1sg"/></let>
+	</when>
+ 	 <when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+         <let><clip pos="3" side="tl" part="a_possessive"/><lit v="px1sg"/></let>
+	</when>
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+         <let><clip pos="3" side="tl" part="a_possessive"/><lit v="px1pl"/></let>
+	</when>
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p1"/></equal>
+			<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+         <let><clip pos="3" side="tl" part="a_possessive"/><lit v="px1pl"/></let>
+	</when>
+
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+			<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+ 	 <when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+			<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px2sg"/></let>
+	</when>
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+			<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px2pl"/></let>
+	</when>
+	<when> 
+ 	   <test>
+		<and>    
+			<equal><clip pos="2" side="sl" part="a_pers"/><lit-tag v="p2"/></equal>
+			<equal><clip pos="2" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
+		</and>
+	   </test>
+		     <let><var n="a_possessive"/><lit-tag v="px2pl"/></let>
+	</when>
+		<otherwise><let><var n="a_possessive"/><lit-tag v="px3sp"/></let></otherwise>
+	</choose>
+
+        <out>
+          <chunk name="do-prn-noun">    <!--  до твоей эры - сенің дәуірлеріңе дейін -->
+    <tags> <tag><lit-tag v="NP"/></tag>
+    	<tag><clip pos="2" side="tl" part="a_nbr"/></tag> 
+    	<tag><clip pos="3" side="tl" part="a_nbr"/></tag> 
+    	<tag><clip pos="2" side="sl" part="a_pers"/></tag> 
+    	<tag><var n="a_possessive"/> </tag> 
+    	<tag><clip pos="3" side="sl" part="a_case"/></tag>
+    </tags>
+	<lu>
+               <clip pos="2" side="tl" part="lem"/>
+               <clip pos="2" side="tl" part="a_kaz_pospron"/>
+               <lit-tag v="4"/> <!-- number -->
+               <lit-tag v="2"/> <!-- person -->
+               <lit-tag v="gen"/>
+        </lu><b/>
+	<lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="3"/>                          
+ 	       <var n="a_possessive"/> 
+  	       <lit-tag v="dat"/>
+	</lu><b/> 
+        <lu><lit v="дейін"/><lit-tag v="post"/></lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
 <rule comment="RULE: ego"> <!-- Aliya 11.06.17 -->
       <pattern>
         <pattern-item n="ego-detpos"/>
