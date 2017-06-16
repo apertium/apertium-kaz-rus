@@ -6,11 +6,15 @@
 
   <section-def-cats>
 
+    <def-cat n="np-ant">
+      <cat-item tags="np.ant"/>
+      <cat-item tags="np.ant.*"/>
+    </def-cat>
     <def-cat n="n">
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
-<cat-item tags="n.*.*.*"/>
+      <cat-item tags="n.*.*.*"/>
       <cat-item tags="prn.*"/>
       <cat-item tags="prn.obj.*"/>
       <cat-item tags="adj.subst"/>
@@ -39,7 +43,7 @@
       <cat-item tags="np.cog"/>
       <cat-item tags="np.cog.*"/>
     </def-cat>
-<def-cat n="NP">
+    <def-cat n="NP">
       <cat-item tags="np.ant.*"/>
     </def-cat>
     <def-cat n="nom-gen">
@@ -6250,6 +6254,47 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: np noun">
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="np-ant"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="1"/>
+  </call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="2"/>
+  </call-macro> 
+  <call-macro n="select-case">
+       <with-param pos="1"/>
+  </call-macro>
+    <out>
+    <chunk name="np_ant-noun">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_gender"/>
+     <clip pos="2" side="tl" part="a_nbr"/>
+     <lit-tag v="gen"/>
+    </lu><b pos="1"/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <lit-tag v="2"/> 
+     <lit-tag v="px3sp"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
 
 
 
