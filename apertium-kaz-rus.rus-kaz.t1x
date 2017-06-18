@@ -175,6 +175,16 @@
       <cat-item lemma="его" tags="det.pos"/>
       <cat-item lemma="его" tags="det.pos.*"/>
     </def-cat>
+  <def-cat n="vseh">
+      <cat-item lemma="весь" tags="det.ind.*"/>
+      <cat-item lemma="весь" tags="prn.def.*"/>
+      <cat-item lemma="весь" tags="prn.def.nt.an.sg.nom"/>
+      <cat-item lemma="весь" tags="det.ind.mfn.an.pl.gen"/>
+    </def-cat>
+  <def-cat n="ih-detpos">   
+      <cat-item lemma="их" tags="det.pos"/>
+      <cat-item lemma="их" tags="det.pos.*"/>
+    </def-cat>
     <def-cat n="budu-vbser"> <!-- past and present tense -->
       <cat-item tags="vbser.fut.*"/>
       <cat-item tags="vbser.fut"/>      
@@ -1295,6 +1305,268 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+
+
+
+<rule comment="NEW RULE: vseh adj noun"> <!-- все зантные земли - барлық айтулы құрлықтар -->  <!-- Aliya 18.06.17 -->
+  <pattern>
+    <pattern-item n="vseh"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+<call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="3"/> </call-macro> 
+<call-macro n="build-adjec-lu"><with-param pos="2"/></call-macro> 
+
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="CD"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+
+    <out>
+    <chunk name="vseh-adj-noun">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="3" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+    </tags>
+        <lu>
+          <lit v="барлық"/>
+          <lit-tag v="det.qnt"/>
+        </lu><b/>
+        <lu><var n="adjec_lu"/></lu><b/>
+	<lu>
+          <clip pos="3" side="tl" part="lem"/>
+	  <clip pos="3" side="tl" part="a_nom"/>
+	  <clip pos="3" side="tl" part="a_nbr"/>
+	  <clip pos="3" side="tl" part="a_case"/>
+          </lu>
+    </chunk>
+    </out>
+      </action>
+</rule>
+
+<rule comment="NEW RULE: vseh adj noun"> <!-- все земли - барлық құрлықтар -->  <!-- Aliya 18.06.17 -->
+  <pattern>
+    <pattern-item n="vseh"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+<call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="2"/> </call-macro> 
+
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="CD"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+
+    <out>
+    <chunk name="vseh-noun">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+    </tags>
+        <lu>
+          <lit v="барлық"/>
+          <lit-tag v="det.qnt"/>
+        </lu><b/>
+	<lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_nom"/>
+	  <clip pos="2" side="tl" part="a_nbr"/>
+	  <clip pos="2" side="tl" part="a_case"/>
+          </lu>
+    </chunk>
+    </out>
+      </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep ih noun">  <!-- Aliya 18.06.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+        <pattern-item n="vseh"/> 
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+     </call-macro>
+     <choose>
+
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out>
+          <chunk name="prep-vseh-nom-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="барлық"/>
+          <lit-tag v="det.qnt"/>
+        </lu><b/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="5"/>
+            </lu><b/>
+            <lu><var n="postposition_lu"/></lu>
+          </chunk>
+        </out>
+      </when>
+
+      <otherwise>
+        <out>
+          <chunk name="prep-vseh-nom">          <!-- от их набегов - олардың шабуылынан -->
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="барлық"/>
+          <lit-tag v="det.qnt"/>
+        </lu><b/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep ih noun">  <!-- Aliya 18.06.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+        <pattern-item n="ih-detpos"/> 
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+     </call-macro>
+     <choose>
+
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out>
+          <chunk name="prep-ih-nom-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.dem"/>
+          <lit-tag v="pl"/>
+          <lit-tag v="gen"/>
+        </lu><b/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="4"/>
+               <lit-tag v="5"/>
+            </lu><b/>
+            <lu><var n="postposition_lu"/></lu>
+          </chunk>
+        </out>
+      </when>
+
+      <otherwise>
+        <out>
+          <chunk name="prep-ih-nom">          <!-- от их набегов - олардың шабуылынан -->
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="олар"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="pl"/>
+          <lit-tag v="gen"/>
+        </lu><b/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
 
 
 <rule comment="NEW RULE: prep DO prn noun"> <!-- Aliya 15.06.2017 -->
@@ -6116,52 +6388,32 @@ If no format information is present it is removed. -->
     <call-macro n="NEW-build-noun-lu-2-4-5">
       <with-param pos="2"/>
     </call-macro>
-    
 
-<!-- *** -->
 <choose>
-  <when> <!-- Demonstrative -->
-    <test>
-
-<or>
- <equal><clip pos="1" side="sl" part="lem"/><lit v="их"/></equal>
- <equal><clip pos="1" side="sl" part="lem"/><lit v="Их"/></equal>
-</or>
-
-</test>
-<let>
-<var n="case"/><lit-tag v="gen"/>
-</let>
-
-<let>
-<var n="number"/><lit-tag v="pl"/>
-</let>
-<let>
-<var n="possessive"/><lit-tag v="px3sp"/>
-</let>
-</when>
-<otherwise>
-<let>
-<var n="case"/><lit v=""/>
-</let>
-<let>
-<var n="possessive"/><lit-tag v="PXD"/>
-</let>
-</otherwise>
+  <when>
+    <test><or>
+	 <equal><clip pos="1" side="sl" part="lem"/><lit v="их"/></equal>
+	 <equal><clip pos="1" side="sl" part="lem"/><lit v="Их"/></equal>
+   </or></test>
+   <let><var n="case"/><lit-tag v="gen"/></let>
+   <let><var n="number"/><lit-tag v="pl"/></let>
+   <let><var n="possessive"/><lit-tag v="px3sp"/></let>
+  </when>
+  <otherwise>
+   <let><var n="case"/><lit v=""/></let>
+   <let><var n="possessive"/><lit-tag v="PXD"/></let>
+  </otherwise>
 </choose>
-<choose>
-  <when> <!-- Demonstrative -->
-    <test>
-<or>
-<equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="dem"/></equal>
- <equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="qnt"/></equal>
-</or>
-</test>
 
+<choose>
+  <when>
+    <test><or>
+	<equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="dem"/></equal>
+ 	<equal><clip pos="1" side="sl" part="a_dem"/><lit-tag v="qnt"/></equal>
+   </or></test>
     <out>
     <chunk name="detdem-nom"  case="caseFirstWord">
-    <tags>
-    <tag><lit-tag v="NP"/></tag>
+    <tags> <tag><lit-tag v="NP"/></tag>
     <tag><clip pos="2" side="tl" part="a_nbr"/></tag> <!-- number placeholder -->
     <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
     <tag><var n="possessive"/></tag> <!-- possessor placeholder -->
@@ -6170,14 +6422,10 @@ If no format information is present it is removed. -->
       <lu>
       <clip pos="1" side="tl" part="lem"/>
       <clip pos="1" side="tl" part="a_det"/>
-      <clip pos="1" side="tl" part="a_dem"/>
-<var n="number"/>
-<var n="case"/>
-    </lu>
-    <b pos="1"/>
-    <lu>  
-      <var n="NEW-noun_lu"/>
-     </lu>
+      <var n="number"/>
+      <var n="case"/>
+    </lu><b pos="1"/>
+    <lu><var n="NEW-noun_lu"/></lu>
     </chunk>
     </out>
   </when>
@@ -6189,23 +6437,15 @@ If no format information is present it is removed. -->
     </call-macro>
     <out>
     <chunk name="detpos-nom" case="caseFirstWord">
-    <tags>
-    <tag><lit-tag v="NP"/></tag>
-<tag><var n="possessive"/></tag> 
-   <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-
-    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
-   <tag><var n="case"/></tag> <!-- case placeholder -->
-    <tag><lit-tag v="CD"/></tag>  
+    <tags> <tag><lit-tag v="NP"/></tag>
+	<tag><var n="possessive"/></tag> 
+	<tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+	<tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+	<tag><var n="case"/></tag> <!-- case placeholder -->
+	<tag><lit-tag v="CD"/></tag>  
     </tags>
-
-    <lu>
-      <clip pos="1" side="tl" part="whole"/>
-    </lu>
-    <b pos="1"/>
-    <lu> 
-      <var n="NEW-noun_lu"/>
-     </lu>
+    <lu><clip pos="1" side="tl" part="whole"/></lu><b pos="1"/>
+    <lu><var n="NEW-noun_lu"/></lu>
     </chunk>
     </out>
   </when>
@@ -6217,26 +6457,19 @@ If no format information is present it is removed. -->
     </call-macro>
     <out>
     <chunk name="detart-nom">
-    <tags>
-    <tag><lit-tag v="NP"/></tag>
-
-    <tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
-  
-    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
-    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
-
+    <tags> <tag><lit-tag v="NP"/></tag>
+	<tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+	<tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+	<tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+	<tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
     </tags>
-<lu>
-<clip pos="1" side="tl" part="lem"/>
-      <clip pos="1" side="tl" part="a_kaz_perspron"/>
-      <clip pos="1" side="tl" part="a_pers"/>
-<clip pos="1" side="tl" part="a_nbr"/>
-<clip pos="1" side="tl" part="a_case"/>
-      
-</lu>
-<b/>
-<!--    <b pos="1"/> -->
+    <lu>
+	<clip pos="1" side="tl" part="lem"/>
+	<clip pos="1" side="tl" part="a_kaz_perspron"/>
+	<clip pos="1" side="tl" part="a_pers"/>
+	<clip pos="1" side="tl" part="a_nbr"/>
+	<clip pos="1" side="tl" part="a_case"/>
+    </lu><b/>
      <var n="preblank-1"/>
      <lu>  
      <get-case-from pos="1">
