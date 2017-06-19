@@ -100,6 +100,10 @@
     <def-attr n="a_pass">
        <attr-item tags="pass"/>
     </def-attr>
+<def-attr n="a_np">
+       <attr-item tags="np.ant.f"/>
+    </def-attr>
+
  <def-attr n="a_gender">
       <attr-item tags="m"/>
       <attr-item tags="f"/>

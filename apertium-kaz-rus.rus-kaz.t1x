@@ -352,6 +352,9 @@
     <def-attr n="a_adjec">
        <attr-item tags="adj"/>
     </def-attr>
+<def-attr n="a_formality">
+      <attr-item tags="frm"/>
+    </def-attr>
 
     <def-attr n="a_adv">
       <attr-item tags="adv"/>
@@ -398,6 +401,10 @@
 <def-attr n="a_postposition"> <!-- Kazakh postposition indicators -->
       <attr-item tags="n"/> 
       <attr-item tags="post"/>
+	 
+    </def-attr>
+<def-attr n="a_rel"> 
+      <attr-item tags="rel"/>
 	 
     </def-attr>
 
@@ -553,6 +560,10 @@
     <def-attr n="a_kaz_verb"> 
       <attr-item tags="v.tv"/>
       <attr-item tags="v.iv"/>
+    </def-attr>
+  <def-attr n="a_neg"> 
+      <attr-item tags="neg"/>
+
     </def-attr>
 
  <def-attr n="a_tns-prc">
@@ -884,7 +895,7 @@
     <when>
       <test>
         <equal>
-          <clip pos="1" side="tl" part="learned_gen"/>
+          <clip pos="1" side="tl" part="a_gender"/>
           <lit-tag v="GD"/>
         </equal>
       </test>
@@ -896,10 +907,10 @@
               <lit-tag v="f"/>
             </equal>
           </test>
-          <let><clip pos="1" side="tl" part="learned_gen"/><lit-tag v="f"/></let>
+          <let><clip pos="1" side="tl" part="a_gender"/><lit-tag v="f"/></let>
         </when>
         <otherwise>
-          <let><clip pos="1" side="tl" part="learned_gen"/><lit-tag v="m"/></let>
+          <let><clip pos="1" side="tl" part="a_gender"/><lit-tag v="m"/></let>
         </otherwise>
       </choose>
     </when>
@@ -908,7 +919,7 @@
     <when>
       <test>
         <equal>
-          <clip pos="1" side="tl" part="learned_num"/>
+          <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="ND"/>
         </equal>
       </test>
@@ -920,10 +931,10 @@
               <lit-tag v="pl"/>
             </equal>
           </test>
-          <let><clip pos="1" side="tl" part="learned_num"/><lit-tag v="pl"/></let>
+          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="pl"/></let>
         </when>
         <otherwise>
-          <let><clip pos="1" side="tl" part="learned_num"/><lit-tag v="sg"/></let>
+          <let><clip pos="1" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
         </otherwise>
       </choose>
     </when>
@@ -936,7 +947,7 @@
     <when>
       <test>
         <equal>
-          <clip pos="1" side="tl" part="learned_gen"/>
+          <clip pos="1" side="tl" part="a_gender"/>
           <lit-tag v="m"/>
         </equal>
       </test>
@@ -945,7 +956,7 @@
     <when>
       <test>
         <equal>
-          <clip pos="1" side="tl" part="learned_gen"/>
+          <clip pos="1" side="tl" part="a_gender"/>
           <lit-tag v="f"/>
         </equal>
       </test>
@@ -956,7 +967,7 @@
     <when>
       <test>
         <equal>
-          <clip pos="1" side="tl" part="learned_num"/>
+          <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="sg"/>
         </equal>
       </test>
@@ -965,7 +976,7 @@
     <when>
       <test>
         <equal>
-          <clip pos="1" side="tl" part="learned_num"/>
+          <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="pl"/>
         </equal>
       </test>
@@ -1766,7 +1777,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px2sg"/></let>
+		     <let><var n="possessive"/><lit-tag v="px2sg"/></let>
 	</when>
  	 <when> 
  	   <test>
@@ -1776,7 +1787,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px2sg"/></let>
+		     <let><var n="possessive"/><lit-tag v="px2sg"/></let>
 	</when>
 	<when> 
  	   <test>
@@ -1786,7 +1797,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px2pl"/></let>
+		     <let><var n="possessive"/><lit-tag v="px2pl"/></let>
 	</when>
 	<when> 
  	   <test>
@@ -1796,9 +1807,9 @@ If no format information is present it is removed. -->
 			<equal><clip pos="3" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px2pl"/></let>
+		     <let><var n="possessive"/><lit-tag v="px2pl"/></let>
 	</when>
-		<otherwise><let><var n="a_possessive"/><lit-tag v="px3sp"/></let></otherwise>
+		<otherwise><let><var n="possessive"/><lit-tag v="px3sp"/></let></otherwise>
 	</choose>
 
         <out>
@@ -1807,7 +1818,7 @@ If no format information is present it is removed. -->
     	<tag><clip pos="2" side="tl" part="a_nbr"/></tag> 
     	<tag><clip pos="3" side="tl" part="a_nbr"/></tag> 
     	<tag><clip pos="2" side="sl" part="a_pers"/></tag> 
-    	<tag><var n="a_possessive"/> </tag> 
+    	<tag><var n="possessive"/> </tag> 
     	<tag><clip pos="3" side="sl" part="a_case"/></tag>
     </tags>
 	<lu>
@@ -1821,7 +1832,7 @@ If no format information is present it is removed. -->
                <clip pos="3" side="tl" part="lem"/> 
                <clip pos="3" side="tl" part="a_nom"/>
                <lit-tag v="3"/>                          
- 	       <var n="a_possessive"/> 
+ 	       <var n="possessive"/> 
   	       <lit-tag v="dat"/>
 	</lu><b/> 
         <lu><lit v="дейін"/><lit-tag v="post"/></lu>
@@ -1861,7 +1872,7 @@ If no format information is present it is removed. -->
     <chunk name="ego-noun">
     <tags> <tag><lit-tag v="NP"/></tag>
     <tag><clip pos="2" side="tl" part="a_nbr"/></tag> 
-    <tag><var n="a_possessive"/> </tag> 
+    <tag><var n="possessive"/> </tag> 
     <tag><clip pos="2" side="tl" part="a_case"/></tag>
     </tags>
         <lu>
@@ -3731,7 +3742,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px1sg"/></let>
+		     <let><var n="possessive"/><lit-tag v="px1sg"/></let>
 	</when>
  	 <when> 
  	   <test>
@@ -3741,7 +3752,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px1sg"/></let>
+		     <let><var n="possessive"/><lit-tag v="px1sg"/></let>
 	</when>
 	<when> 
  	   <test>
@@ -3751,7 +3762,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px1pl"/></let>
+		     <let><var n="possessive"/><lit-tag v="px1pl"/></let>
 	</when>
 <when> 
  	   <test>
@@ -3761,7 +3772,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px1pl"/></let>
+		     <let><var n="possessive"/><lit-tag v="px1pl"/></let>
 	</when>
 	<when> 
  	   <test>
@@ -3771,7 +3782,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px1sg"/></let>
+		     <let><var n="possessive"/><lit-tag v="px1sg"/></let>
 	</when>
 	<when> 
  	   <test>
@@ -3781,7 +3792,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px1pl"/></let>
+		     <let><var n="possessive"/><lit-tag v="px1pl"/></let>
 	</when>
 	<when> 
  	   <test>
@@ -3791,7 +3802,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px2sg"/></let>
+		     <let><var n="possessive"/><lit-tag v="px2sg"/></let>
 	</when>
  	 <when> 
  	   <test>
@@ -3801,7 +3812,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px2sg"/></let>
+		     <let><var n="possessive"/><lit-tag v="px2sg"/></let>
 	</when>
 	<when> 
  	   <test>
@@ -3811,7 +3822,7 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px2pl"/></let>
+		     <let><var n="possessive"/><lit-tag v="px2pl"/></let>
 	</when>
 
 
@@ -3823,9 +3834,9 @@ If no format information is present it is removed. -->
 			<equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>		
 		</and>
 	   </test>
-		     <let><var n="a_possessive"/><lit-tag v="px2pl"/></let>
+		     <let><var n="possessive"/><lit-tag v="px2pl"/></let>
 	</when>
-		<otherwise><let><var n="a_possessive"/><lit-tag v="px3sp"/></let></otherwise>
+		<otherwise><let><var n="possessive"/><lit-tag v="px3sp"/></let></otherwise>
 	</choose>
     <out>
     <chunk name="subj-pron-pos-noun">
@@ -3834,7 +3845,7 @@ If no format information is present it is removed. -->
     <tag><clip pos="1" side="tl" part="a_nbr"/></tag> 
     <tag><clip pos="2" side="tl" part="a_nbr"/></tag> 
     <tag><clip pos="1" side="sl" part="a_pers"/></tag> 
-    <tag><var n="a_possessive"/> </tag> 
+    <tag><var n="possessive"/> </tag> 
     <tag><clip pos="2" side="tl" part="a_case"/></tag>
     </tags>
     <lu>
@@ -3849,7 +3860,7 @@ If no format information is present it is removed. -->
                <clip pos="2" side="tl" part="lem"/> 
                <clip pos="2" side="tl" part="a_nom"/>
                <lit-tag v="3"/>                          
- 	       <var n="a_possessive"/> 
+ 	       <var n="possessive"/> 
   	       <lit-tag v="6"/>
     </lu>      		
     </chunk>
@@ -4931,36 +4942,17 @@ If no format information is present it is removed. -->
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="v"/>
             </begins-with>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_issepverb"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_derivation"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_mood"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_person"/>
+           
+    <equal>
+                 <clip pos="1" side="tl" part="a_pers"/>
                  <lit-tag v="p2"/>
                </equal>
                <equal>
-                 <clip pos="1" side="tl" part="learned_form"/>
+                 <clip pos="1" side="tl" part="a_possessive"/>
                  <lit v=""/>
                </equal>
                <equal>
-                 <clip pos="1" side="tl" part="learned_possessive"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_attruse"/>
-                 <lit v=""/>
-               </equal>
-               <equal>
-                 <clip pos="1" side="tl" part="learned_case"/>
+                 <clip pos="1" side="tl" part="a_case"/>
                  <lit v=""/>
                </equal>
            </and>
@@ -4980,11 +4972,11 @@ If no format information is present it is removed. -->
             <lit v="Мен"/>
             <lit-tag v="prn"/>
             <lit-tag v="pers"/>
-            <clip pos="1" side="sl" part="learned_negative"/>
+            <clip pos="1" side="sl" part="a_neg"/>
             <lit-tag v="p1"/>
-            <clip pos="1" side="sl" part="learned_gender"/>
-            <clip pos="1" side="sl" part="learned_reltype"/>
-            <clip pos="1" side="sl" part="learned_numberat"/>
+            <clip pos="1" side="sl" part="a_gender"/>
+            <clip pos="1" side="sl" part="a_rel"/>
+            <clip pos="1" side="sl" part="a_nbr"/>
             <lit-tag v="dat"/>
             <lit v=""/>
           </lu>
@@ -5000,11 +4992,11 @@ If no format information is present it is removed. -->
               <lit-tag v="vblex"/>
             </begins-with>
                <equal>
-                 <clip pos="1" side="tl" part="learned_person"/>
+                 <clip pos="1" side="tl" part="a_pers"/>
                  <lit v=""/>
                </equal>
                <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
+                 <clip pos="1" side="tl" part="a_nbr"/>
                  <lit v=""/>
                </equal>
            </and>
@@ -5024,10 +5016,10 @@ If no format information is present it is removed. -->
             <lit v="Мен"/>
             <lit-tag v="prn"/>
             <lit-tag v="pers"/>
-            <clip pos="1" side="sl" part="learned_negative"/>
+            <clip pos="1" side="sl" part="a_neg"/>
             <lit-tag v="p1"/>
-            <clip pos="1" side="sl" part="learned_gender"/>
-            <clip pos="1" side="sl" part="learned_reltype"/>
+            <clip pos="1" side="sl" part="a_gender"/>
+            <clip pos="1" side="sl" part="a_rel"/>
             <lit-tag v="sg"/>
             <lit-tag v="gen"/>
             <lit v=""/>
@@ -5091,7 +5083,7 @@ If no format information is present it is removed. -->
               <lit-tag v="adv"/>
             </begins-with>
                <equal>
-                 <clip pos="2" side="tl" part="learned_advtype"/>
+                 <clip pos="2" side="tl" part="a_adv"/>
                  <lit v=""/>
                </equal>
            </and>
@@ -5115,9 +5107,9 @@ If no format information is present it is removed. -->
             <lit v="бірнеше"/>
             <lit-tag v="det"/>
             <lit-tag v="qnt"/>
-            <clip pos="1" side="sl" part="learned_gender"/>
-            <clip pos="1" side="sl" part="learned_reltype"/>
-            <clip pos="1" side="sl" part="learned_numberat"/>
+            <clip pos="1" side="sl" part="a_gender"/>
+            <clip pos="1" side="sl" part="a_rel"/>
+            <clip pos="1" side="sl" part="a_nbr"/>
             <lit v=""/>
           </lu>
           <b pos="1"/>
@@ -5160,7 +5152,7 @@ If no format information is present it is removed. -->
               <lit-tag v="prn"/>
             </begins-with>
                <equal>
-                 <clip pos="1" side="tl" part="learned_form"/>
+                 <clip pos="1" side="tl" part="a_formality"/>
                  <lit v=""/>
                </equal>
            </and>
@@ -5180,7 +5172,7 @@ If no format information is present it is removed. -->
             <lit v="Бұл"/>
             <lit-tag v="det"/>
             <lit-tag v="dem"/>
-            <clip pos="1" side="sl" part="learned_reltype"/>
+            <clip pos="1" side="sl" part="a_rel"/>
             <lit v=""/>
           </lu>
       </chunk>
@@ -5195,7 +5187,7 @@ If no format information is present it is removed. -->
               <lit-tag v="prn"/>
             </begins-with>
                <equal>
-                 <clip pos="1" side="tl" part="learned_form"/>
+                 <clip pos="1" side="tl" part="a_formality"/>
                  <lit v=""/>
                </equal>
            </and>
@@ -5214,16 +5206,16 @@ If no format information is present it is removed. -->
        <chunk name="__prn_1" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
             <lit v="бұл"/>
             <lit-tag v="prn"/>
-            <clip pos="1" side="sl" part="learned_prntype"/>
-            <clip pos="1" side="sl" part="learned_form"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <clip pos="1" side="sl" part="learned_negative"/>
-            <clip pos="1" side="sl" part="learned_person"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <clip pos="1" side="sl" part="learned_reltype"/>
-            <clip pos="1" side="sl" part="learned_case"/>
-            <clip pos="1" side="sl" part="learned_isadv"/>
-            <clip pos="1" side="sl" part="learned_preptag"/>
+            <clip pos="1" side="sl" part="a_det"/>
+            <clip pos="1" side="sl" part="a_formality"/>
+
+            <clip pos="1" side="sl" part="a_neg"/>
+            <clip pos="1" side="sl" part="a_pers"/>
+            <clip pos="1" side="sl" part="a_possessive"/>
+            <clip pos="1" side="sl" part="a_rel"/>
+            <clip pos="1" side="sl" part="a_case"/>
+            <clip pos="1" side="sl" part="a_adv"/>
+
             <lit v=""/>
           </lu>
       </chunk>
@@ -5238,7 +5230,7 @@ If no format information is present it is removed. -->
               <lit-tag v="prn"/>
             </begins-with>
                <equal>
-                 <clip pos="1" side="tl" part="learned_form"/>
+                 <clip pos="1" side="tl" part="a_formality"/>
                  <lit v=""/>
                </equal>
            </and>
@@ -5258,7 +5250,7 @@ If no format information is present it is removed. -->
             <lit v="бұл"/>
             <lit-tag v="det"/>
             <lit-tag v="dem"/>
-            <clip pos="1" side="sl" part="learned_reltype"/>
+            <clip pos="1" side="sl" part="a_rel"/>
             <lit v=""/>
           </lu>
       </chunk>
@@ -5272,7 +5264,7 @@ If no format information is present it is removed. -->
               <lit-tag v="prn"/>
             </begins-with>
                <equal>
-                 <clip pos="1" side="tl" part="learned_form"/>
+                 <clip pos="1" side="tl" part="a_formality"/>
                  <lit v=""/>
                </equal>
            </and>
@@ -5281,17 +5273,15 @@ If no format information is present it is removed. -->
        <chunk name="__prn_3" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
             <clip pos="1" side="tl" part="lemh"/>
             <lit-tag v="prn"/>
-            <clip pos="1" side="sl" part="learned_prntype"/>
-            <clip pos="1" side="sl" part="learned_form"/>
-            <clip pos="1" side="sl" part="learned_attruse"/>
-            <clip pos="1" side="sl" part="learned_negative"/>
-            <clip pos="1" side="sl" part="learned_person"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
-            <clip pos="1" side="sl" part="learned_reltype"/>
-            <clip pos="1" side="sl" part="learned_numberat"/>
-            <clip pos="1" side="sl" part="learned_case"/>
-            <clip pos="1" side="sl" part="learned_isadv"/>
-            <clip pos="1" side="sl" part="learned_preptag"/>
+            <clip pos="1" side="sl" part="a_det"/>
+            <clip pos="1" side="sl" part="a_formality"/>
+            <clip pos="1" side="sl" part="a_neg"/>
+            <clip pos="1" side="sl" part="a_pers"/>
+            <clip pos="1" side="sl" part="a_possessive"/>
+            <clip pos="1" side="sl" part="a_rel"/>
+            <clip pos="1" side="sl" part="a_nbr"/>
+            <clip pos="1" side="sl" part="a_case"/>
+            <clip pos="1" side="sl" part="a_adv"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
       </chunk>
@@ -5402,7 +5392,7 @@ If no format information is present it is removed. -->
               <lit-tag v="det"/>
             </begins-with>
                <equal>
-                 <clip pos="1" side="tl" part="learned_numberat"/>
+                 <clip pos="1" side="tl" part="a_nbr"/>
                  <lit-tag v="sg"/>
                </equal>
            </and>
@@ -5423,7 +5413,7 @@ If no format information is present it is removed. -->
             <lit-tag v="prn"/>
             <lit-tag v="pers"/>
             <lit-tag v="p1"/>
-            <clip pos="1" side="sl" part="learned_reltype"/>
+            <clip pos="1" side="sl" part="a_rel"/>
             <lit-tag v="pl"/>
             <lit-tag v="gen"/>
             <lit v=""/>
@@ -5492,7 +5482,7 @@ If no format information is present it is removed. -->
        <chunk name="__cnjcoo_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
             <clip pos="1" side="tl" part="lemh"/>
             <lit-tag v="cnjcoo"/>
-            <clip pos="1" side="sl" part="learned_cnp"/>
+
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
       </chunk>
@@ -5543,7 +5533,7 @@ If no format information is present it is removed. -->
               <lit-tag v="prn"/>
             </begins-with>
                <equal>
-                 <clip pos="2" side="tl" part="learned_form"/>
+                 <clip pos="2" side="tl" part="a_formality"/>
                  <lit v=""/>
                </equal>
            </and>
@@ -5553,24 +5543,22 @@ If no format information is present it is removed. -->
        <chunk name="__cnjcoo___prn_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
             <lit v="Және"/>
             <lit-tag v="cnjcoo"/>
-            <clip pos="1" side="sl" part="learned_cnp"/>
+
             <lit v=""/>
           </lu>
           <b pos="1"/>
           <lu>
             <clip pos="2" side="tl" part="lemh"/>
             <lit-tag v="prn"/>
-            <clip pos="2" side="sl" part="learned_prntype"/>
-            <clip pos="2" side="sl" part="learned_form"/>
-            <clip pos="2" side="sl" part="learned_attruse"/>
-            <clip pos="2" side="sl" part="learned_negative"/>
-            <clip pos="2" side="sl" part="learned_person"/>
-            <clip pos="2" side="sl" part="learned_possessive"/>
-            <clip pos="2" side="sl" part="learned_reltype"/>
-            <clip pos="2" side="sl" part="learned_numberat"/>
-            <clip pos="2" side="sl" part="learned_case"/>
-            <clip pos="2" side="sl" part="learned_isadv"/>
-            <clip pos="2" side="sl" part="learned_preptag"/>
+            <clip pos="2" side="sl" part="a_det"/>
+            <clip pos="2" side="sl" part="a_formality"/>
+            <clip pos="2" side="sl" part="a_neg"/>
+            <clip pos="2" side="sl" part="a_pers"/>
+            <clip pos="2" side="sl" part="a_possessive"/>
+            <clip pos="2" side="sl" part="a_rel"/>
+            <clip pos="2" side="sl" part="a_nbr"/>
+            <clip pos="2" side="sl" part="a_case"/>
+            <clip pos="2" side="sl" part="a_adv"/>
             <clip pos="2" side="tl" part="lemq"/>
           </lu>
       </chunk>
@@ -5703,7 +5691,7 @@ If no format information is present it is removed. -->
             <clip pos="1" side="sl" part="learned_isshort"/>
             <clip pos="1" side="sl" part="learned_attruse"/>
             <clip pos="1" side="sl" part="learned_issim"/>
-            <clip pos="1" side="sl" part="learned_possessive"/>
+            <clip pos="1" side="sl" part="a_possessive"/>
             <clip pos="1" side="sl" part="learned_atadvl"/>
             <clip pos="1" side="tl" part="lemq"/>
           </lu>
@@ -5712,9 +5700,9 @@ If no format information is present it is removed. -->
             <clip pos="2" side="tl" part="lemh"/>
             <lit-tag v="n"/>
             <clip pos="2" side="sl" part="learned_issim"/>
-            <clip pos="2" side="sl" part="learned_possessive"/>
-            <clip pos="2" side="sl" part="learned_form"/>
-            <clip pos="2" side="sl" part="learned_case"/>
+            <clip pos="2" side="sl" part="a_possessive"/>
+            <clip pos="2" side="sl" part="a_formality"/>
+            <clip pos="2" side="sl" part="a_case"/>
             <clip pos="2" side="sl" part="learned_attruse"/>
             <clip pos="2" side="tl" part="lemq"/>
           </lu>

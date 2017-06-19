@@ -679,7 +679,7 @@
         </choose>
 <choose>
           <when>
-            <test><equal><clip pos="1" side="sl" part="a_lem"/><lit v="some"/></equal></test>
+            <test><equal><clip pos="1" side="sl" part="lem"/><lit v="some"/></equal></test>
             <let><clip pos="1" side="tl" part="nbr"/><lit v=""/></let>
           </when>
         </choose>

@@ -113,10 +113,43 @@
       <attr-item tags="mfn"/>
       <attr-item tags="GN"/>
     </def-attr>
+<def-attr n="a_pass">
+       <attr-item tags="pass"/>
+    </def-attr>
+  
     <def-attr n="a_neg">
       <attr-item tags="neg"/>
     </def-attr>
-
+<def-attr n="a_possessive"> <!-- check if complete -->
+      <attr-item tags="PXD"/> <!-- to be determined -->
+      <attr-item tags="px3sp"/>
+      <attr-item tags="px1sg"/>
+      <attr-item tags="px2sg"/>
+      <attr-item tags="px1pl"/>
+      <attr-item tags="px2pl"/>
+    </def-attr>
+    
+<def-attr n="a_tense"> <!-- CAREFUL: the list is not complete -->
+      <attr-item tags="aor"/>
+      <attr-item tags="ifi"/>
+      <attr-item tags="prc_perf"/>
+      <attr-item tags="past"/> 
+      <attr-item tags="ger_past"/>           
+      <attr-item tags="pres"/>
+      <attr-item tags="gna_cond"/>
+      <attr-item tags="ger_impf"/>
+      <attr-item tags="fut"/>
+      <attr-item tags="ger"/>
+      <attr-item tags="TD"/>  <!-- For the future? -->
+    </def-attr>
+    
+<def-attr n="a_sn_type">
+      <attr-item tags="SN.LOC"/>
+      <attr-item tags="SN.ABL"/>
+      <attr-item tags="SN.DAT"/>
+      <attr-item tags="SN.INS"/>
+    </def-attr>
+ 
   </section-def-attrs>
 
   <section-def-vars>
