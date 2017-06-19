@@ -46,6 +46,9 @@
     <def-cat n="NP">
       <cat-item tags="np.ant.*"/>
     </def-cat>
+    <def-cat n="cnjsub">
+      <cat-item tags="cnjsub"/>
+    </def-cat>
     <def-cat n="nom-gen">
       <cat-item tags="n.gen"/>
       <cat-item tags="n.*.*.*.gen"/>
@@ -339,6 +342,11 @@
     <def-attr n="a_adj">
       <attr-item tags="adj"/>
       <attr-item tags="adj.sint"/>
+    </def-attr>
+
+    <def-attr n="a_cnjsub">
+      <attr-item tags="cnjsub"/>
+      <attr-item tags="post"/>
     </def-attr>
 
     <def-attr n="a_adjec">
@@ -1305,6 +1313,26 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+
+
+    <rule comment="RULE: CNJSUB">    <!-- Aliya 19.06.17 -->
+      <pattern>
+        <pattern-item n="cnjsub"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="cnjsub" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+    		 <clip pos="1" side="tl" part="lem"/> 
+    		 <clip pos="1" side="tl" part="a_cnjsub"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 
 <rule comment="NEW RULE: noun np ant cog">    <!-- Aliya 18.06.17 -->
