@@ -10,6 +10,14 @@
       <cat-item tags="np.ant"/>
       <cat-item tags="np.ant.*"/>
     </def-cat>
+    <def-cat n="np-cog">
+      <cat-item tags="np.cog"/>
+      <cat-item tags="np.cog.*"/>
+    </def-cat>
+    <def-cat n="np-org">
+      <cat-item tags="np.org"/>
+      <cat-item tags="np.org.*"/>
+    </def-cat>
     <def-cat n="n">
       <cat-item tags="n"/>
       <cat-item tags="n.*"/>
@@ -315,10 +323,6 @@
     <def-cat n="vy">
       <cat-item lemma="вы" tags="prn.pers.*"/>
     </def-cat>
-<def-cat n="np-org">
-      <cat-item tags="np.org"/>
-      <cat-item tags="np.org.*"/>
-    </def-cat>
  <def-cat n="byt-fut">
       <cat-item lemma="быть" tags="vbser.fut.*"/>
     </def-cat>
@@ -415,7 +419,7 @@
       <attr-item tags="det.ind"/>
       <attr-item tags="det.qnt"/>
       <attr-item tags="num"/>
- <attr-item tags="prn"/>
+      <attr-item tags="prn"/>
     </def-attr>
 
     <def-attr n="a_gender">
@@ -438,6 +442,7 @@
       <attr-item tags="np.ant"/>
       <attr-item tags="np.top"/>
       <attr-item tags="np.cog"/>
+      <attr-item tags="np.org"/>
       <attr-item tags="prn.pers.p1"/>
       <attr-item tags="prn.pers.p2"/>
       <attr-item tags="prn.pers.p3"/>
@@ -447,13 +452,13 @@
       <attr-item tags="prn.neg"/>
       <attr-item tags="prn.ind"/>
       <attr-item tags="prn.ref"/>
-<attr-item tags="prn.qnt"/>
+      <attr-item tags="prn.qnt"/>
       <attr-item tags="adj"/>
       <attr-item tags="adj.sint"/>
       <attr-item tags="det.pos"/>
       <attr-item tags="det.def"/>
       <attr-item tags="det.ref"/>
-<attr-item tags="det.qnt"/>
+      <attr-item tags="det.qnt"/>
       <attr-item tags="num"/>
     </def-attr>
 
@@ -1344,6 +1349,71 @@ If no format information is present it is removed. -->
         </out>
       </action>
     </rule>
+
+
+
+    <rule comment="RULE: DET">    <!-- Aliya 20.06.17 -->
+      <pattern>
+        <pattern-item n="det"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="det1" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+    		 <clip pos="1" side="tl" part="lem"/> 
+    		 <clip pos="1" side="tl" part="a_det"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+<rule comment="NEW RULE: noun np ant cog">    <!-- Aliya 20.06.17 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="np-ant"/>
+    <pattern-item n="np-cog"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="1"/> </call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="2"/> </call-macro> 
+  <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
+
+    <out>
+    <chunk name="noun-np_ant-np_cog">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> 
+    <tag><lit-tag v="p3"/></tag> 
+    <tag><lit-tag v="PXD"/></tag> 
+    <tag><lit-tag v="CD"/></tag> 
+    </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b pos="1"/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
 
 
 <rule comment="NEW RULE: noun np ant cog">    <!-- Aliya 18.06.17 -->
@@ -6615,7 +6685,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="NEW RULE: np noun">
+<rule comment="NEW RULE: np ant noun"> <!-- Aliya 18.06.2017 -->
   <pattern>
     <pattern-item n="n"/>
     <pattern-item n="np-ant"/>
@@ -6643,6 +6713,239 @@ If no format information is present it is removed. -->
      <clip pos="2" side="tl" part="a_nom"/>
      <clip pos="2" side="tl" part="a_gender"/>
      <clip pos="2" side="tl" part="a_nbr"/>
+     <lit-tag v="gen"/>
+    </lu><b pos="1"/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <lit-tag v="2"/> 
+     <lit-tag v="px3sp"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: noun noun-noun np org">    <!-- Aliya 19.06.2017 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+    <pattern-item n="guio"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-org"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="1"/>
+  </call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="2"/>
+  </call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="3"/>
+  </call-macro> 
+  <call-macro n="select-case">
+       <with-param pos="4"/>
+  </call-macro>
+    <out>
+    <chunk name="n3-np_org">                         <!-- "большинство стран-членов ООН" - "БҰҰ-ГЕ мүше-елдердің көпшілігі" -->
+    <tags> <tag><lit-tag v="NP"/></tag> </tags>
+    <lu>
+     <clip pos="5" side="tl" part="lem"/> 
+     <clip pos="5" side="tl" part="a_nom"/>
+     <lit-tag v="dat"/>
+    </lu><b/>
+    <lu>  
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <lit-tag v="sg"/>
+     <lit-tag v="nom"/>
+    </lu>
+    <lu> <clip pos="3" side="tl" part="whole"/> </lu>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_nbr"/>
+     <clip pos="2" side="tl" part="a_case"/>
+    </lu><b/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <clip pos="1" side="tl" part="a_nbr"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep noun-noun np">   <!-- Aliya 20.06.2017 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="n"/>
+    <pattern-item n="guio"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-org"/>
+  </pattern>
+  <action>
+     <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="2"/> </call-macro> 
+     <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="4"/> </call-macro> 
+     <call-macro n="select-case"> <with-param pos="2"/> </call-macro>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="2"/>
+     </call-macro> 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-n-n-np-post2">      <!-- "через стран-членов ООН" - "БҰҰ-ГЕ мүше-елдер арқылы" -->
+            <tags>
+                <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+    <lu>
+     <clip pos="5" side="tl" part="lem"/> 
+     <clip pos="5" side="tl" part="a_nom"/>
+     <lit-tag v="dat"/>
+    </lu><b/>
+    <lu>  
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <lit-tag v="sg"/>
+     <lit-tag v="nom"/>
+    </lu>
+    <lu> <clip pos="3" side="tl" part="whole"/> </lu>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_nbr"/>
+     <lit-tag v="4"/> <lit-tag v="5"/>
+    </lu><b/>
+    <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-n-n-np">             <!-- "из стран-членов ООН" - "БҰҰ-ГЕ мүше-елдерден" -->
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>    
+                <tag><lit-tag v="NP"/></tag>   
+            </tags>
+    <lu>
+     <clip pos="5" side="tl" part="lem"/> 
+     <clip pos="5" side="tl" part="a_nom"/>
+     <lit-tag v="dat"/>
+    </lu><b/>
+    <lu>  
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <lit-tag v="sg"/>
+     <lit-tag v="nom"/>
+    </lu>
+    <lu> <clip pos="3" side="tl" part="whole"/> </lu>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_nbr"/>
+     <lit-tag v="4"/> <lit-tag v="5"/>
+    </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: noun-noun np org">    <!-- Aliya 19.06.2017 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="guio"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-org"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="1"/>
+  </call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="2"/>
+  </call-macro> 
+  <call-macro n="select-case">
+       <with-param pos="1"/>
+  </call-macro>
+    <out>
+    <chunk name="n-n-np_org">                          <!-- "стран-членов ООН" - "БҰҰ-ГЕ мүше-елдердің" -->
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <lit-tag v="dat"/>
+    </lu><b/>
+    <lu>  
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <lit-tag v="sg"/>
+     <lit-tag v="nom"/>
+    </lu>
+    <lu>  
+     <clip pos="2" side="tl" part="whole"/>
+    </lu>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <clip pos="1" side="tl" part="a_nbr"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: np org noun">    <!-- Aliya 19.06.2017 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="np-org"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="1"/>
+  </call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5">
+       <with-param pos="2"/>
+  </call-macro> 
+  <call-macro n="select-case">
+       <with-param pos="1"/>
+  </call-macro>
+    <out>
+    <chunk name="np_org-noun">                          <!-- "член ООН" - "-НЫҢ мүшесі" -->
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
      <lit-tag v="gen"/>
     </lu><b pos="1"/>
     <lu>  
