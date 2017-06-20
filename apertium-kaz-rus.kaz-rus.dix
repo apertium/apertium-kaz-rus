@@ -2365,7 +2365,7 @@
 <e><p><l>өрнекте<s n="v"/><s n="tv"/></l><r>воткать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>үйлестір<s n="v"/><s n="tv"/></l><r>сочетать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>жазып<b/>шығар<s n="v"/><s n="tv"/></l><r>сочинить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
-<e><p><l>ойна<s n="v"/><s n="tv"/></l><r>сыграть2<s n="vblex"/><s n="perf"/><s n="tv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>ойна<s n="v"/><s n="tv"/></l><r>сыграть<s n="vblex"/><s n="perf"/><s n="tv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>тұт<s n="v"/><s n="tv"/></l><r>распушить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қорқыт<s n="v"/><s n="tv"/></l><r>испугать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қорқыт<s n="v"/><s n="tv"/></l><r>напугать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
@@ -4635,6 +4635,7 @@
 <e><p><l>әйнешек<s n="n"/></l><r>стеклышко<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>тәтті<s n="n"/><s n="pl"/></l><r>вкусности<s n="n"/><s n="f"/><s n="nn"/><s n="pl"/></r></p></e> 
 <e><p><l>гастроль<s n="n"/></l><r>гастроль<s n="n"/><s n="f"/><s n="nn"/></r></p></e> 
+<e><p><l>рөл<s n="n"/></l><r>роль<s n="n"/><s n="f"/><s n="nn"/></r></p></e> 
 <e><p><l>балшық<s n="n"/></l><r>грязь<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>елшілер<s n="n"/><s n="pl"/></l><r>консоли<s n="n"/><s n="f"/><s n="aa"/><s n="pl"/></r></p></e>
 <e><p><l>нәзіктік<s n="n"/></l><r>нежности<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -12626,6 +12627,7 @@
 <e><p><l>асқазан<s n="n"/></l><r>желудок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>асқазан<s n="n"/></l><r>котёл<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>үстел<s n="n"/></l><r>стол<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>рекорд<s n="n"/></l><r>рекорд<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>орындық<s n="n"/></l><r>стул<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қарындаш<s n="n"/></l><r>карандаш<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>қалам<s n="n"/></l><r>ручка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -19422,6 +19424,8 @@
 <e><p><l>таба<s n="n"/></l><r>сковородка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>мәміле<s n="n"/></l><r>сделка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>мүше<s n="n"/></l><r>член<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>қағида<s n="n"/></l><r>критерий<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>мүше<s n="n"/></l><r>член<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>байлам<s n="n"/></l><r>связка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>қал<s n="n"/></l><r>родинка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>жобалау<s n="n"/></l><r>проектировка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -19620,7 +19624,6 @@
 <e>       <p><l>ешнәрсе<s n="prn"/><s n="neg"/></l>    <r>ничто<s n="prn"/><s n="neg"/><s n="nt"/><s n="nn"/></r></p></e>
 <e>       <p><l>кім<s n="prn"/><s n="itg"/></l>        <r>кто<s n="prn"/><s n="itg"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>кім<s n="prn"/><s n="itg"/><s n="gen"/></l>   <r>чей<s n="pos"/><s n="itg"/><s n="m"/><s n="an"/></r></p></e>
-<e>       <p><l>қанша<s n="prn"/><s n="itg"/></l>      <r>сколько<s n="prn"/><s n="itg"/><s n="mfn"/><s n="sg"/></r></p></e>
 <e>       <p><l>не<s n="prn"/><s n="itg"/></l>         <r>что<s n="prn"/><s n="itg"/><s n="nt"/><s n="sg"/></r></p></e>
 <e>       <p><l>өз<s n="prn"/><s n="ref"/></l>         <r>сам<s n="det"/><s n="ref"/><s n="m"/><s n="an"/></r></p></e>
 <e><p><l>мен<s n="prn"/><s n="pers"/><s n="p1"/><s n="sg"/><s n="gen"/></l><r>мой<s n="prn"/><s n="pos"/></r></p></e>
@@ -19683,6 +19686,8 @@
 <e><p><l>көптеген<s n="det"/><s n="qnt"/></l><r>много<s n="det"/><s n="ind"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
 <e><p><l>мыңдаған<s n="det"/><s n="qnt"/></l><r>много<s n="det"/><s n="ind"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
 <e><p><l>миллиондаған<s n="det"/><s n="qnt"/></l><r>много<s n="det"/><s n="ind"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
+<e>       <p><l>қанша<s n="det"/><s n="qnt"/></l>           <r>сколько<s n="det"/><s n="qnt"/><s n="mfn"/><s n="sg"/></r></p></e>
+<e>       <p><l>бірнеше<s n="det"/><s n="qnt"/></l>      <r>несколько<s n="det"/><s n="qnt"/></r></p></e>
 
 
 
@@ -29462,7 +29467,7 @@
 <e><p><l>санап<b/>шық<s n="v"/><s n="tv"/></l><r>счесть<s n="vblex"/></r></p></e>
 <e><p><l>же<s n="v"/><s n="tv"/></l><r>съесть<s n="vblex"/></r></p></e>
 <e><p><l>жеп<b/>қой<s n="v"/><s n="tv"/></l><r>съесть<s n="vblex"/></r></p></e>
-<e><p><l>ойна<s n="v"/><s n="iv"/></l><r>сыграть<s n="vblex"/></r></p></e>
+<e><p><l>ойна<s n="v"/><s n="tv"/></l><r>сыграть<s n="vblex"/></r></p></e>
 <e><p><l>қосарла<s n="v"/><s n="tv"/></l><r>спарить<s n="vblex"/></r></p></e>
 <e><p><l>шағылыстыр<s n="v"/><s n="tv"/></l><r>спарить<s n="vblex"/></r></p></e>
 <e><p><l>жұпта<s n="v"/><s n="tv"/></l><r>спарить<s n="vblex"/></r></p></e>
@@ -29991,7 +29996,7 @@
 <e><p><l>қатынас<s n="v"/><s n="iv"/></l><r>участвовать<s n="vblex"/></r></p></e>
 <e><p><l>қатыс<s n="v"/><s n="iv"/></l><r>участвовать<s n="vblex"/></r></p></e>
 <e><p><l>есепте<s n="v"/><s n="iv"/></l><r>учитывать<s n="vblex"/></r></p></e>
-<e><p><l>ескер<s n="v"/><s n="iv"/></l><r>учитывать<s n="vblex"/></r></p></e>
+<e><p><l>ескер<s n="v"/><s n="tv"/></l><r>учитывать<s n="vblex"/></r></p></e>
 <e><p><l>санас<s n="v"/><s n="iv"/></l><r>учитывать<s n="vblex"/></r></p></e>
 <e><p><l>ескере<b/>отыр<s n="v"/><s n="tv"/></l><r>учитывать<s n="vblex"/></r></p></e>
 <e><p><l>оқыт<s n="v"/><s n="iv"/></l><r>учить<s n="vblex"/></r></p></e>
@@ -32710,43 +32715,45 @@
 <e><p><l>Эсхил<s n="np"/><s n="ant"/><s n="m"/></l><r>Эсхил<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Энтони<s n="np"/><s n="ant"/><s n="m"/></l><r>Энтони<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Эмиль<s n="np"/><s n="ant"/><s n="m"/></l><r>Эмиль<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+<e><p><l>Дима<s n="np"/><s n="ant"/><s n="m"/></l><r>Дима<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Юзефа<s n="np"/><s n="ant"/><s n="f"/></l><r>Юзефа<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
+
 <e><p><l>Пушкин<s n="np"/><s n="cog"/></l><r>Пушкин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Гитлер<s n="np"/><s n="cog"/></l><r>Гитлер<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 
-<e><p><l>Горбачёв<s n="np"/><s n="cog"/></l><r>Горбачёв<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Тюдоров<s n="np"/><s n="cog"/></l><r>Тюдоров<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Кузнецов<s n="np"/><s n="cog"/></l><r>Кузнецов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Горбачёв<s n="np"/><s n="cog"/><s n="m"/></l><r>Горбачёв<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Тюдоров<s n="np"/><s n="cog"/><s n="m"/></l><r>Тюдоров<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Кузнецов<s n="np"/><s n="cog"/><s n="m"/></l><r>Кузнецов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Брежнев<s n="np"/><s n="cog"/><s n="m"/></l><r>Брежнев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Шляпников<s n="np"/><s n="cog"/></l><r>Шляпников<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Сергиев<s n="np"/><s n="cog"/></l><r>Сергиев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Яковлев<s n="np"/><s n="cog"/></l><r>Яковлев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Соловьёв<s n="np"/><s n="cog"/></l><r>Гучков<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Стасов<s n="np"/><s n="cog"/></l><r>Стасов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Стрельцов<s n="np"/><s n="cog"/></l><r>Стрельцов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Стрельников<s n="np"/><s n="cog"/></l><r>Стрельников<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Сухомлинов<s n="np"/><s n="cog"/></l><r>Сухомлинов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Суханов<s n="np"/><s n="cog"/></l><r>Суханов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Трифонов<s n="np"/><s n="cog"/></l><r>Трифонов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Хабалов<s n="np"/><s n="cog"/></l><r>Хабалов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Челноков<s n="np"/><s n="cog"/></l><r>Челноков<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Ядов<s n="np"/><s n="cog"/></l><r>Ядов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Ширяев<s n="np"/><s n="cog"/></l><r>Ширяев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Шереметев<s n="np"/><s n="cog"/></l><r>Шереметев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Чаплин<s n="np"/><s n="cog"/></l><r>Чаплин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Чуркин<s n="np"/><s n="cog"/></l><r>Чуркин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Широнин<s n="np"/><s n="cog"/></l><r>Широнин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Бабурин<s n="np"/><s n="cog"/></l><r>Бабурин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Непенин<s n="np"/><s n="cog"/></l><r>Непенин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Распутин<s n="np"/><s n="cog"/></l><r>Распутин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Собчак<s n="np"/><s n="cog"/></l><r>Собчак<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Ярошук<s n="np"/><s n="cog"/></l><r>Ярошук<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Яннис<s n="np"/><s n="cog"/></l><r>Яннис<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Святославич<s n="np"/><s n="cog"/></l><r>Святославич<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Ярославич<s n="np"/><s n="cog"/></l><r>Ярославич<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Юденич<s n="np"/><s n="cog"/></l><r>Юденич<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Серафимович<s n="np"/><s n="cog"/></l><r>Серафимович<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Спиридович<s n="np"/><s n="cog"/></l><r>Спиридович<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Шляпников<s n="np"/><s n="cog"/><s n="m"/></l><r>Шляпников<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Сергиев<s n="np"/><s n="cog"/><s n="m"/></l><r>Сергиев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Яковлев<s n="np"/><s n="cog"/><s n="m"/></l><r>Яковлев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Соловьёв<s n="np"/><s n="cog"/><s n="m"/></l><r>Гучков<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Стасов<s n="np"/><s n="cog"/><s n="m"/></l><r>Стасов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Стрельцов<s n="np"/><s n="cog"/><s n="m"/></l><r>Стрельцов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Стрельников<s n="np"/><s n="cog"/><s n="m"/></l><r>Стрельников<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Сухомлинов<s n="np"/><s n="cog"/><s n="m"/></l><r>Сухомлинов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Суханов<s n="np"/><s n="cog"/><s n="m"/></l><r>Суханов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Трифонов<s n="np"/><s n="cog"/><s n="m"/></l><r>Трифонов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Хабалов<s n="np"/><s n="cog"/><s n="m"/></l><r>Хабалов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Челноков<s n="np"/><s n="cog"/><s n="m"/></l><r>Челноков<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Ядов<s n="np"/><s n="cog"/><s n="m"/></l><r>Ядов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Ширяев<s n="np"/><s n="cog"/><s n="m"/></l><r>Ширяев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Шереметев<s n="np"/><s n="cog"/><s n="m"/></l><r>Шереметев<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Чаплин<s n="np"/><s n="cog"/><s n="m"/></l><r>Чаплин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Чуркин<s n="np"/><s n="cog"/><s n="m"/></l><r>Чуркин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Широнин<s n="np"/><s n="cog"/><s n="m"/></l><r>Широнин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Бабурин<s n="np"/><s n="cog"/><s n="m"/></l><r>Бабурин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Непенин<s n="np"/><s n="cog"/><s n="m"/></l><r>Непенин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Распутин<s n="np"/><s n="cog"/><s n="m"/></l><r>Распутин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Собчак<s n="np"/><s n="cog"/><s n="m"/></l><r>Собчак<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Ярошук<s n="np"/><s n="cog"/><s n="m"/></l><r>Ярошук<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Яннис<s n="np"/><s n="cog"/><s n="m"/></l><r>Яннис<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Святославич<s n="np"/><s n="cog"/><s n="m"/></l><r>Святославич<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Ярославич<s n="np"/><s n="cog"/><s n="m"/></l><r>Ярославич<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Юденич<s n="np"/><s n="cog"/><s n="m"/></l><r>Юденич<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Серафимович<s n="np"/><s n="cog"/><s n="m"/></l><r>Серафимович<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Спиридович<s n="np"/><s n="cog"/><s n="m"/></l><r>Спиридович<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Нұрпейсов<s n="np"/><s n="cog"/><s n="m"/></l><r>Нурпейсов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Мәуленов<s n="np"/><s n="cog"/><s n="m"/></l><r>Мауленов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Мәсімов<s n="np"/><s n="cog"/><s n="m"/></l><r>Масимов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
