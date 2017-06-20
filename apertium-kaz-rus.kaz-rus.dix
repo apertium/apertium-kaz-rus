@@ -19619,6 +19619,7 @@
 <e c="барлығын"><p><l>барлығы<s n="prn"/><s n="qnt"/><s n="px3sp"/><s n="acc"/></l><r>весь<s n="prn"/><s n="def"/><s n="mfn"/><s n="aa"/><s n="pl"/><s n="acc"/></r></p></e>
 <e c="барлығын"><p><l>барлығы<s n="prn"/><s n="qnt"/><s n="px3sp"/><s n="acc"/></l><r>весь<s n="prn"/><s n="def"/><s n="mfn"/><s n="nn"/><s n="pl"/><s n="acc"/></r></p></e>-->
 <e><p><l>бәрі<s n="prn"/><s n="qnt"/><s n="px3sp"/></l><r>весь<s n="prn"/><s n="def"/></r></p></e>
+<e><p><l>өз<s n="prn"/><s n="ref"/></l>   <r>свой<s n="det"/><s n="pos"/></r></p></e>
 
 <e><p><l>барлығы<s n="prn"/><s n="qnt"/><s n="px3sp"/></l><r>весь<s n="prn"/><s n="def"/></r></p></e>
 <e>       <p><l>әркім<s n="prn"/><s n="qnt"/></l>      <r>каждый<s n="det"/><s n="def"/><s n="m"/><s n="an"/></r></p></e>
@@ -31210,6 +31211,7 @@
 
 
 <!-- adverbs -->
+<e><p><l>шамамен<s n="adv"/></l><r>примерно<s n="adv"/></r></p></e>
 <e><p><l>сонымен<b/>қатар<s n="adv"/></l><r>также<s n="adv"/></r></p></e>
 <e><p><l>неғұрлым<s n="adv"/></l><r>чем<s n="adv"/></r></p></e>
 <e><p><l>мұншама<s n="adv"/></l><r>столько<s n="adv"/></r></p></e>
