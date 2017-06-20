@@ -323,6 +323,7 @@
     <def-cat n="vy">
       <cat-item lemma="вы" tags="prn.pers.*"/>
     </def-cat>
+
  <def-cat n="byt-fut">
       <cat-item lemma="быть" tags="vbser.fut.*"/>
     </def-cat>
