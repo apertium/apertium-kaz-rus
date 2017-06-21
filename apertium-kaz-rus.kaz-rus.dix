@@ -15276,6 +15276,7 @@
 <e><p><l>қорлау<s n="n"/></l><r>унижение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>қорлау<s n="n"/></l><r>глумление<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>король<s n="n"/></l><r>король<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+<e><p><l>князь<s n="n"/></l><r>князь<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>корпоративтілік<s n="n"/></l><r>корпоративность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>корпус<s n="n"/></l><r>корпус<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>корпускул<s n="n"/></l><r>корпускула<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -16190,7 +16191,6 @@
 <e><p><l>сахна<s n="n"/></l><r>сцена<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>сая<s n="n"/></l><r>комфорт<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>саясат<s n="n"/></l><r>политика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<e><p><l>саясаткер<s n="n"/></l><r>политик<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>арақатынас<s n="n"/></l><r>отношение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>саяхат<s n="n"/></l><r>путешествие<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>сәби<s n="n"/></l><r>малыш<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
@@ -17338,6 +17338,7 @@
 <e><p><l>саябақ<s n="n"/></l><r>парк<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>саяжай<s n="n"/></l><r>дача<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>саяжол<s n="n"/></l><r>аллея<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>әскери<b/>қызметкер<s n="n"/></l><r>военнослужащий<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>саясаткер<s n="n"/></l><r>политик<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>саясатшы<s n="n"/></l><r>политик<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>саяхатшы<s n="n"/></l><r>путешественник<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
@@ -19622,7 +19623,6 @@
 <e><p><l>өз<s n="prn"/><s n="ref"/></l>   <r>свой<s n="det"/><s n="pos"/></r></p></e>
 
 <e><p><l>барлығы<s n="prn"/><s n="qnt"/><s n="px3sp"/></l><r>весь<s n="prn"/><s n="def"/></r></p></e>
-<e>       <p><l>әркім<s n="prn"/><s n="qnt"/></l>      <r>каждый<s n="det"/><s n="def"/><s n="m"/><s n="an"/></r></p></e>
 <e>       <p><l>ешнәрсе<s n="prn"/><s n="neg"/></l>    <r>ничто<s n="prn"/><s n="neg"/><s n="nt"/><s n="nn"/></r></p></e>
 <e>       <p><l>кім<s n="prn"/><s n="itg"/></l>        <r>кто<s n="prn"/><s n="itg"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>кім<s n="prn"/><s n="itg"/><s n="gen"/></l>   <r>чей<s n="pos"/><s n="itg"/><s n="m"/><s n="an"/></r></p></e>
@@ -19668,8 +19668,11 @@
 <e>       <p><l>бар<s n="det"/><s n="qnt"/></l>        <r>весь<s n="det"/><s n="ind"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>барлық<s n="det"/><s n="qnt"/></l>     <r>весь<s n="det"/><s n="ind"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>       <p><l>бірнеше<s n="det"/><s n="qnt"/></l>    <r>несколько<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
-<e>       <p><l>әр<s n="det"/><s n="qnt"/></l>        <r>каждый<s n="det"/><s n="def"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
-<e>       <p><l>әрбір<s n="det"/><s n="qnt"/></l>     <r>каждый<s n="det"/><s n="def"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
+
+<e>       <p><l>әр<s n="det"/><s n="qnt"/></l>             <r>каждый<s n="det"/><s n="def"/></r></p></e>
+<e>       <p><l>әрбір<s n="det"/><s n="qnt"/></l>      <r>каждый<s n="det"/><s n="def"/></r></p></e>
+<e>       <p><l>әркім<s n="prn"/><s n="qnt"/></l>     <r>каждый<s n="det"/><s n="def"/></r></p></e>
+
 <!--<e>       <p><l>бір<s n="det"/><s n="ind"/></l>        <r>один<s n="num"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>-->
 <e>       <p><l>бірер<s n="det"/><s n="ind"/></l>      <r>какой<s n="det"/><s n="itg"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
 <e>       <p><l>қай<s n="det"/><s n="itg"/></l>        <r>какой<s n="det"/><s n="itg"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
@@ -31897,6 +31900,7 @@
 <e><p><l>млн<s n="n"/><s n="nom"/></l><r>млн<s n="abbr"/></r></p></e>
 <e><p><l>км<s n="n"/><s n="nom"/></l><r>км<s n="abbr"/></r></p></e>
 <e><p><l>ҚР<s n="np"/><s n="top"/><s n="nom"/></l><r>РК<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>РФ<s n="np"/><s n="top"/><s n="nom"/></l><r>РФ<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>АҚШ<s n="np"/><s n="top"/><s n="nom"/></l><r>США<s n="np"/><s n="top"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 
     <!-- Adpositions -->
@@ -31948,6 +31952,7 @@
 <e>       <p><l>жайында<s n="post"/></l>               <r>о<s n="pr"/></r></p><par n="__LR_prp"/></e>
 <e>       <p><l>жуық<s n="post"/></l>                  <r>около<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e>       <p><l>жөнінде<s n="post"/></l>               <r>о<s n="pr"/></r></p><par n="__LR_prp"/></e>
+<e>       <p><l>туралы<s n="post"/></l>               <r>о<s n="pr"/></r></p><par n="__LR_prp"/></e>
 
 <e>       <p><l>кейін<s n="post"/></l>                 <r>после<s n="pr"/></r></p><par n="__LR_gen"/></e>
 
@@ -32682,6 +32687,7 @@
 <e><p><l>Фредерик<s n="np"/><s n="ant"/><s n="m"/></l><r>Фредерик<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Сократ<s n="np"/><s n="ant"/><s n="m"/></l><r>Сократ<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Геродот<s n="np"/><s n="ant"/><s n="m"/></l><r>Геродот<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+<e><p><l>Владимир<s n="np"/><s n="ant"/><s n="m"/></l><r>Владимир<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Рюрик<s n="np"/><s n="ant"/><s n="m"/></l><r>Рюрик<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Соломон<s n="np"/><s n="ant"/><s n="m"/></l><r>Соломон<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Тихон<s n="np"/><s n="ant"/><s n="m"/></l><r>Тихон<s n="np"/><s n="ant"/><s n="m"/></r></p></e>

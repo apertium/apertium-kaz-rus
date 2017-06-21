@@ -14,6 +14,12 @@
       <cat-item tags="np.cog"/>
       <cat-item tags="np.cog.*"/>
     </def-cat>
+    <def-cat n="np-ant-gen">
+      <cat-item tags="np.ant.*.gen"/>
+    </def-cat>
+    <def-cat n="np-cog-gen">
+      <cat-item tags="np.cog.*.gen"/>
+    </def-cat>
     <def-cat n="np-org">
       <cat-item tags="np.org"/>
       <cat-item tags="np.org.*"/>
@@ -31,6 +37,10 @@
       <cat-item tags="adj.comp.subst.*"/>
       <cat-item tags="adv.subst"/>
       <cat-item tags="adv.subst.*"/>
+    </def-cat>
+    <def-cat n="n-gen">
+      <cat-item tags="n.*.gen"/>
+      <cat-item tags="np.*.gen"/>
     </def-cat>
     <def-cat n="nom">
        <cat-item tags="n.*"/>
@@ -425,8 +435,10 @@
       <attr-item tags="det.qnt"/>
       <attr-item tags="det.ref"/>
       <attr-item tags="prn.ref"/>
+      <attr-item tags="prn.qnt"/>
       <attr-item tags="num"/>
       <attr-item tags="prn"/>
+      <attr-item tags="adv"/>
     </def-attr>
 
     <def-attr n="a_gender">
@@ -1379,11 +1391,327 @@ If no format information is present it is removed. -->
     </rule>
 
 
-<rule comment="NEW RULE: noun np ant cog">    <!-- Aliya 20.06.17 -->
+
+
+<rule comment="NEW RULE: adj noun noun-gen">    <!-- Aliya 21.06.17 -->
   <pattern>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+    <pattern-item n="n-gen"/>
+  </pattern>
+  <action>
+<call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro>
+  <call-macro n="NEW-build-noun-lu-2-4-5"><with-param pos="2"/></call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5"><with-param pos="3"/></call-macro> 
+  <call-macro n="select-case"><with-param pos="2"/></call-macro>
+
+    <out>
+    <chunk name="adj-noun-n_gen">         <!-- внешним границам стран - елдердің сыртқы шекарасына -->
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+    </tags>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_nbr"/>
+     <lit-tag v="gen"/>
+    </lu><b pos="1"/>
+    <lu><var n="adjec_lu"/></lu><b pos="2"/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="2" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+
+<rule comment="NEW RULE: np ant cog">    <!-- Aliya 21.06.17 -->
+  <pattern>
+    <pattern-item n="np-ant"/>
+    <pattern-item n="np-cog"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="2"/> </call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="3"/> </call-macro> 
+  <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
+
+    <out>
+    <chunk name="np_ant-np_cog">       <!-- Владимиру Святославичу - Владимир Святославичке -->
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> 
+    <tag><lit-tag v="p3"/></tag> 
+    <tag><lit-tag v="PXD"/></tag> 
+    <tag><lit-tag v="CD"/></tag> 
+    </tags>
+    <lu>
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <clip pos="1" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_gender"/>
+     <clip pos="1" side="sl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep np-ant np-cog">     <!-- Aliya 21.06.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="np-ant"/>
+    <pattern-item n="np-cog"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+     </call-macro>
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-np_ant-np_cog-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="a_gender"/>
+               <lit-tag v="nom"/>
+            </lu><b pos="1"/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="a_gender"/>
+               <lit-tag v="2"/>
+               <lit-tag v="5"/>
+            </lu><b pos="1"/>
+            <lu>  <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-np_ant-np_cog">                        <!-- при Владимире Святославиче - Владимир Святославичпен -->
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="a_gender"/>
+               <lit-tag v="nom"/>
+            </lu><b pos="1"/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="a_gender"/>
+               <lit-tag v="2"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+
+<rule comment="NEW RULE: prep noun np-GEN-ant cog">     <!-- Aliya 21.06.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-ant-gen"/>
+    <pattern-item n="np-cog-gen"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="4"/>
+     </call-macro>
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-n-np-GEN-ant_cog-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b pos="1"/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="px3sp"/>
+     <lit-tag v="5"/>
+    </lu><b pos="1"/>
+    <lu>  <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-n-np-GEN-ant_cog">                        <!-- в сыне Владимира Святославича - Владимир Святославичтың ұлында -->
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b pos="1"/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="px3sp"/>
+     <lit-tag v="5"/>
+    </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+
+
+<rule comment="NEW RULE: prep noun np-ant np-cog">     <!-- Aliya 21.06.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
     <pattern-item n="n"/>
     <pattern-item n="np-ant"/>
     <pattern-item n="np-cog"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="4"/>
+     </call-macro>
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-n-np_ant-np_cog-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="nom"/>
+            </lu><b pos="1"/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="a_gender"/>
+               <lit-tag v="nom"/>
+            </lu><b pos="1"/>
+            <lu>
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="a_gender"/>
+               <lit-tag v="2"/>
+               <lit-tag v="5"/>
+            </lu><b pos="1"/>
+            <lu>  <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-n-np_ant-np_cog">                        <!-- при князе Владимире Святославиче - князь Владимир Святославичпен -->
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="nom"/>
+            </lu><b pos="1"/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="a_gender"/>
+               <lit-tag v="nom"/>
+            </lu><b pos="1"/>
+            <lu>
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="a_gender"/>
+               <lit-tag v="2"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+
+<rule comment="NEW RULE: noun np-gen ant cog">    <!-- Aliya 20.06.17 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="np-ant-gen"/>
+    <pattern-item n="np-cog-gen"/>
   </pattern>
   <action>
   <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="1"/> </call-macro> 
@@ -1391,7 +1719,7 @@ If no format information is present it is removed. -->
   <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
 
     <out>
-    <chunk name="noun-np_ant-np_cog">
+    <chunk name="noun-np-GEN-ant_cog">       <!-- сын Владимира Святославича - Владимир Святославичтың ұлы -->
     <tags> <tag><lit-tag v="NP"/></tag>
     <tag><clip pos="1" side="sl" part="a_nbr"/></tag> 
     <tag><lit-tag v="p3"/></tag> 
@@ -1416,6 +1744,50 @@ If no format information is present it is removed. -->
      <lit-tag v="2"/>
      <lit-tag v="px3sp"/>
      <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+
+<rule comment="NEW RULE: noun np ant cog">    <!-- Aliya 20.06.17 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="np-ant"/>
+    <pattern-item n="np-cog"/>
+  </pattern>
+  <action>
+  <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="1"/> </call-macro> 
+  <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="2"/> </call-macro> 
+  <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
+
+    <out>
+    <chunk name="noun-np-ant_cog">       <!-- князю Владимиру Святославичу - князь Владимир Святославичке -->
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> 
+    <tag><lit-tag v="p3"/></tag> 
+    <tag><lit-tag v="PXD"/></tag> 
+    <tag><lit-tag v="CD"/></tag> 
+    </tags>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <clip pos="3" side="tl" part="a_case"/>
     </lu>
     </chunk>
     </out>
@@ -1534,6 +1906,74 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: vseh ego noun"> <!-- все земли - барлық құрлықтар -->  <!-- Aliya 21.06.17 -->
+  <pattern>
+    <pattern-item n="vseh"/>
+    <pattern-item n="ego-detpos"/>
+    <pattern-item n="nom"/> 
+  </pattern>
+  <action>
+<call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="3"/> </call-macro> 
+
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="CD"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+
+    <out>
+    <chunk name="vseh-ego-noun">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+    </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu><b/>
+        <lu>
+          <lit v="барлық"/>
+          <lit-tag v="det.qnt"/>
+        </lu><b/>
+       <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="px3sp"/>            
+               <clip pos="3" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+      </action>
+</rule>
+
 
 
 <rule comment="NEW RULE: vseh adj noun"> <!-- все зантные земли - барлық айтулы құрлықтар -->  <!-- Aliya 18.06.17 -->
@@ -1599,7 +2039,7 @@ If no format information is present it is removed. -->
       </action>
 </rule>
 
-<rule comment="NEW RULE: vseh adj noun"> <!-- все земли - барлық құрлықтар -->  <!-- Aliya 18.06.17 -->
+<rule comment="NEW RULE: vseh noun"> <!-- все земли - барлық құрлықтар -->  <!-- Aliya 18.06.17 -->
   <pattern>
     <pattern-item n="vseh"/>
     <pattern-item n="n"/>
@@ -1966,6 +2406,38 @@ If no format information is present it is removed. -->
                <lit-tag v="px3sp"/>            
                <clip pos="2" side="tl" part="a_case"/>
     </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+<rule comment="RULE: ih noun"> <!-- Aliya 21.06.17 -->
+      <pattern>
+        <pattern-item n="ih-detpos"/>
+        <pattern-item n="nom"/> 
+      </pattern>
+      <action>
+    <out>
+    <chunk name="ih-noun">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.dem"/>
+          <lit-tag v="pl"/>
+          <lit-tag v="gen"/>
+        </lu><b/>
+       <lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>   
+               <clip pos="2" side="tl" part="a_case"/>    
+      </lu>
     </chunk>
     </out>
       </action>
@@ -6396,11 +6868,6 @@ If no format information is present it is removed. -->
     </choose>
   </action>
 </rule>
-
-
-
-
-
 <rule comment="NEW RULE: adjec noun noun">
   <pattern>
     <pattern-item n="adj"/>
