@@ -2,7 +2,7 @@
 ## Makefile for Kazakh--Russian
 ###############################################################################
 
-VERSION=0.2.0
+VERSION=1.0.0
 LANG1=kaz
 LANG2=rus
 PREFIX1=$(LANG1)-$(LANG2)
@@ -165,6 +165,11 @@ EXTRA_DIST= \
            $(BASENAME).$(PREFIX1).t2x \
            $(BASENAME).$(PREFIX1).t3x \
            $(BASENAME).$(PREFIX1).t4x \
+           $(BASENAME).$(PREFIX2).lrx \
+           $(BASENAME).$(PREFIX2).t1x \
+           $(BASENAME).$(PREFIX2).t2x \
+           $(BASENAME).$(PREFIX2).t3x \
+           $(BASENAME).$(PREFIX2).t4x \
            modes.xml
 
 ###############################################################################

@@ -55,6 +55,7 @@ CORPUS/udp+ru+1435 -text svneol=unset#application/octet-stream
 /NEWwords.txt -text
 /README -text
 /Useful[!!-~]notes -text
+/apertium-kaz-rus-1.0.0.tar.gz -text
 /apertium-kaz-rus.kaz-rus.dix -text
 /apertium-kaz-rus.kaz-rus.lrx -text
 /apertium-kaz-rus.kaz-rus.t1x -text

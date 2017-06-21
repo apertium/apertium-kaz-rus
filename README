@@ -1,3 +1,32 @@
 This is the start of a kaz-rus language pair, started
 in Almaty on November 27, 2014. The idea is to reuse as much
 as possible from apertium-tat-rus .
+
+                            apertium-kaz-rus
+===============================================================================
+
+This is an Apertium language pair for translating between Russian
+and Kazakh. What you can use this language package for:
+
+* Translating between Russian and Kazakh
+* Morphological analysis of Russian and Kazakh
+* Part-of-speech tagging of Russian and Kazakh
+
+For information on the latter two points, see subheading "For more 
+information" below
+
+Requirements
+===============================================================================
+
+You will need the following software installed:
+
+* lttoolbox (>= 3.1.2)
+* apertium (>= 3.2.0)
+* vislcg3 (>= 0.9.7.5129)
+* hfst (>= svn revision 3600)
+
+* apertium-kaz(revision 79320)
+* apertium-rus (revision 79313)
+Set environment to install monolingual package:
+export PKG_CONFIG_PATH=/FOLDER_PATH/apertium-rus-1.0.0:/FOLDER_PATH/apertium-kaz-1.0.0
+
