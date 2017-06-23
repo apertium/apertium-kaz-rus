@@ -335,7 +335,6 @@
 <e r="LR"><p><l>жүр<s n="vaux"/></l><r></r></p></e>
 <e><p><l>бол<s n="v"/><s n="iv"/></l><r>быть<s n="vbser"/></r></p></e>
 
-
 <e><p><l>керек<s n="vblex"/></l><r>нужно<s n="vaux"/><s n="pres"/></r></p></e>
 <e r="LR"><p><l>ма<s n="qst"/></l><r></r></p></e>
 <e r="LR"><p><l>ба<s n="qst"/></l><r></r></p></e>
@@ -343,11 +342,11 @@
 <e r="LR"><p><l>ғой<s n="mod_ass"/></l><r></r></p></e>
 <e r="LR"><p><l>шығар<s n="mod"/></l><r></r></p></e>
 
-<!-- verb -->
-<e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>поесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>бол<s n="v"/><s n="iv"/></l><r>иметь<s n="vbhaver"/><s n="impf"/></r></p></e>
 
 <!-- VERB1
+<e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>есть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
+<e>       <p><l>же<s n="v"/><s n="tv"/></l>    <r>поесть<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 <e><p><l>негіздел<s n="v"/><s n="iv"/></l><r>основывать<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>нақтылан<s n="v"/><s n="iv"/></l><r>уточнить<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>мәжбүрле<s n="v"/><s n="tv"/></l><r>вынуждать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
@@ -1498,7 +1497,6 @@
 <e><p><l>ауырлан<s n="v"/><s n="iv"/></l><r>тяжелеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бағалан<s n="v"/><s n="iv"/></l><r>цениться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>ұйықта<s n="v"/><s n="iv"/></l><r>спаться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
-<e><p><l>бол<s n="v"/><s n="iv"/></l><r>иметь<s n="vbhaver"/><s n="impf"/></r></p></e>
 <e><p><l>бол<s n="v"/><s n="iv"/></l><r>приходиться<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>бол<s n="v"/><s n="iv"/></l><r>становится<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
 <e><p><l>әлсізден<s n="v"/><s n="iv"/></l><r>обессилеть<s n="vblex"/><s n="impf"/></r></p><par n="impf__verb"/></e>
@@ -31829,7 +31827,6 @@ VERB1 -->
 
      <e r="LR"><p><l>е<s n="cop"/></l><r></r></p></e>
     <e><p><l>емес<s n="adv"/></l><r>не<s n="adv"/></r></p></e>
-<!--<e r="LR"><p><l>емес<s n="vaux"/></l><r></r></p></e>-->
 
 
 
