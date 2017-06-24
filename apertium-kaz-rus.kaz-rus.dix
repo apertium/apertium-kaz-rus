@@ -28172,7 +28172,7 @@ VERB1 -->
 <e><p><l>тарат<s n="v"/><s n="tv"/></l><r>разлить<s n="vblex"/></r></p></e>
 <e><p><l>дударла<s n="v"/><s n="tv"/></l><r>растрепать<s n="vblex"/></r></p></e>
 <e><p><l>ұйпалақта<s n="v"/><s n="tv"/></l><r>растрепать<s n="vblex"/></r></p></e>
-<e><p><l>талда<s n="v"/><s n="tv"/></l><r>растрепать<s n="vblex"/></r></p></e>
+<!--e><p><l>талда<s n="v"/><s n="tv"/></l><r>растрепать<s n="vblex"/></r></p></e-->
 <e><p><l>тара<s n="v"/><s n="tv"/></l><r>растрепать<s n="vblex"/></r></p></e>
 <e><p><l>түт<s n="v"/><s n="tv"/></l><r>растрепать<s n="vblex"/></r></p></e>
 <e><p><l>жай<s n="v"/><s n="tv"/></l><r>распространять<s n="vblex"/></r></p></e>
@@ -31707,7 +31707,6 @@ VERB1 -->
 <e><p><l>біріге<s n="adv"/></l><r>воедино<s n="adv"/></r></p></e>
 <e><p><l>сұраулы<s n="adv"/></l><r>вопросительно<s n="adv"/></r></p></e>
 <e><p><l>алғаш<s n="adv"/></l><r>впервой<s n="adv"/></r></p></e>
-<e><p><l>бірінші<s n="adv"/></l><r>впервые<s n="adv"/></r></p></e>
 <e><p><l>тығыздай<s n="adv"/></l><r>вплотную<s n="adv"/></r></p></e>
 <e><p><l>жарты<s n="adv"/></l><r>вполголоса<s n="adv"/></r></p></e>
 <e><p><l>толық<s n="adv"/></l><r>вполне<s n="adv"/></r></p></e>
@@ -31783,10 +31782,10 @@ VERB1 -->
 <!--Acronyms -->
 
 <e><p><l>ЕҚЫҰ<s n="n"/><s n="acr"/></l><r>ОБСЕ<s n="abbr"/></r></p></e>
-<e><p><l>БҰҰ<s n="np"/><s n="org"/></l><r>ООН<s n="np"/><s n="org"/></r></p></e>
+<e><p><l>БҰҰ<s n="np"/><s n="org"/><s n="attr"/></l><r>ООН<s n="np"/><s n="org"/></r></p></e>
 <e><p><l>ТМД<s n="n"/><s n="acr"/></l><r>СНГ<s n="abbr"/></r></p></e>
 <e><p><l>КСРО<s n="n"/><s n="acr"/></l><r>СССР<s n="abbr"/></r></p></e>
-<e><p><l>см<s n="n"/><s n="acr"/></l><r>см<s n="abbr"/></r></p></e>
+<e><p><l>см<s n="abbr"/></l><r>см<s n="abbr"/></r></p></e>
 <e><p><l>г<s n="n"/><s n="acr"/></l><r>г<s n="abbr"/></r></p></e>
 <e><p><l>http<s n="n"/><s n="acr"/></l><r>http<s n="abbr"/></r></p></e>
 <e><p><l>кг<s n="n"/><s n="acr"/></l><r>кг<s n="abbr"/></r></p></e>
@@ -32371,8 +32370,8 @@ VERB1 -->
 <e><p><l>Торонто<s n="np"/><s n="top"/></l><r>Торонто<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
 <e><p><l>Трентино<s n="np"/><s n="top"/></l><r>Трентино<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
 <e><p><l>Храброво<s n="np"/><s n="top"/></l><r>Храброво<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
-<e><p><l>Семиречье<s n="np"/><s n="top"/></l><r>Семиречье<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
-<e><p><l>Средиземноморье<s n="np"/><s n="top"/></l><r>Средиземноморье<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
+<e><p><l>Жетісу<s n="np"/><s n="top"/></l><r>Семиречье<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
+<e><p><l>Жерорта<b/>теңізі<s n="np"/><s n="top"/></l><r>Средиземноморье<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
 <e><p><l>Средиземное<s n="np"/><s n="top"/></l><r>Средиземное<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
 <e><p><l>Крит<s n="np"/><s n="top"/></l><r>Крит<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Вестминстер<s n="np"/><s n="top"/></l><r>Вестминстер<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
