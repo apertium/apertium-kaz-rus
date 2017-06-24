@@ -290,6 +290,9 @@
       <cat-item tags="vblex.pprs.*.*"/>
       <cat-item tags="vblex.pprs.*.*.*"/>
     </def-cat>
+   <def-cat n="v-fac"> <!-- for verbs -->
+      <cat-item tags="vblex.*.fac"/>
+    </def-cat>
 
 <def-cat n="vbhaver">
       <cat-item tags="vbhaver"/>  
@@ -1363,27 +1366,6 @@ If no format information is present it is removed. -->
             <lu>
     		 <clip pos="1" side="tl" part="lem"/> 
     		 <clip pos="1" side="tl" part="a_cnjsub"/>
-            </lu>
-          </chunk>
-        </out>
-      </action>
-    </rule>
-
-
-
-    <rule comment="RULE: DET">    <!-- Aliya 20.06.17 -->
-      <pattern>
-        <pattern-item n="det"/>
-      </pattern>
-      <action>
-        <out>
-          <chunk name="det1" case="caseFirstWord">
-            <tags>
-              <tag><lit-tag v="PP"/></tag>
-            </tags>
-            <lu>
-    		 <clip pos="1" side="tl" part="lem"/> 
-    		 <clip pos="1" side="tl" part="a_det"/>
             </lu>
           </chunk>
         </out>
@@ -3054,6 +3036,34 @@ If no format information is present it is removed. -->
   </action>
 </rule>
 
+<rule comment="NEW RULE: verb2"> <!-- Aliya 25.06.17 -->
+  <pattern>
+    <pattern-item n="v-fac"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <out>
+    <chunk name="verb-fac"> <!-- звать - шақыру -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
 <rule comment="NEW RULE: vbhaver"> <!-- Aliya 24.03.17 -->
   <pattern>
     <pattern-item n="vbhaver"/>
@@ -4031,6 +4041,117 @@ If no format information is present it is removed. -->
           <lit-tag v="prn.pers"/>
               <clip pos="1" side="tl" part="a_pers"/>
               <clip pos="1" side="tl" part="a_nbr"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+
+<rule comment="RULE: svoi"> <!-- Aliya 25.06.17 -->
+      <pattern>
+        <pattern-item n="svoi-detpos"/>
+      </pattern>
+      <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let>
+    <out>
+    <chunk name="svoi-prp">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="gen"/></let>
+    <out>
+    <chunk name="svoi-gen">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="acc"/></equal></test>
+        <let><var n="case"/><lit-tag v="gen"/></let>
+    <out>
+    <chunk name="svoi-acc">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="svoi-dat">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="svoi-ins">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="gen"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="svoi-nom">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
           <lit-tag v="gen"/>
         </lu>
     </chunk>
@@ -6599,6 +6720,27 @@ If no format information is present it is removed. -->
 </rule>
 
 
+
+
+
+    <rule comment="RULE: DET">    <!-- Aliya 20.06.17 -->
+      <pattern>
+        <pattern-item n="det"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="det1" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+    		 <clip pos="1" side="tl" part="lem"/> 
+    		 <clip pos="1" side="tl" part="a_det"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
 <!--rules from experiment of structural phrase -->
 
