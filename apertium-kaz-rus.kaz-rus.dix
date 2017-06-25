@@ -19448,7 +19448,7 @@ VERB1 -->
     <!-- Conjunctions -->
 
 <e>       <p><l>және<s n="cnjcoo"/></l>               <r>и<s n="cnjcoo"/></r></p></e>
-<e>       <p><l>да<s n="cnjcoo"/></l>                  <r>тоже<s n="postadv"/></r></p></e>
+<e>       <p><l>да<s n="cnjcoo"/></l>                  <r>тоже<s n="adv"/></r></p></e>
 <e>       <p><l>мен<s n="cnjcoo"/></l>                  <r>и<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>ал<s n="cnjcoo"/></l>                   <r>а<s n="cnjcoo"/></r></p></e>
 <e>       <p><l>бірақ<s n="cnjcoo"/></l>                   <r>однако<s n="cnjcoo"/></r></p></e>
@@ -23646,7 +23646,7 @@ VERB1 -->
 <e><p><l>жүр<s n="v"/><s n="iv"/></l><r>выехать<s n="vblex"/></r></p></e>
 <e><p><l>шық<s n="v"/><s n="tv"/></l><r>выехать<s n="vblex"/></r></p></e>
 <e><p><l>шығар<s n="v"/><s n="tv"/></l><r>выжить<s n="vblex"/></r></p></e>
-<e><p><l>шақыр<s n="v"/><s n="tv"/></l><r>вызвать<s n="vblex"/></r></p></e>
+<!--<e><p><l>шақыр<s n="v"/><s n="tv"/></l><r>вызвать<s n="vblex"/></r></p></e>-->
 <e><p><l>шығар<s n="v"/><s n="tv"/></l><r>вызвать<s n="vblex"/></r></p></e>
 <e><p><l>айтқыз<s n="v"/><s n="tv"/></l><r>вызвать<s n="vblex"/></r></p></e>
 <e><p><l>тарт<s n="v"/><s n="tv"/></l><r>вызвать<s n="vblex"/></r></p></e>
@@ -24224,7 +24224,7 @@ VERB1 -->
 <e><p><l>аңғар<s n="v"/><s n="tv"/></l><r>замечать<s n="vblex"/></r></p></e>
 <e><p><l>байқа<s n="v"/><s n="tv"/></l><r>замечать<s n="vblex"/></r></p></e>
 <e><p><l>шұғылдан<s n="v"/><s n="iv"/></l><r>заниматься<s n="vblex"/></r></p></e>
-<e><p><l>шақыр<s n="v"/><s n="tv"/></l><r>звать<s n="vblex"/></r></p></e>
+<!--<e><p><l>шақыр<s n="v"/><s n="tv"/></l><r>звать<s n="vblex"/></r></p></e>-->
 <e><p><l>естіл<s n="v"/><s n="iv"/></l><r>звучать<s n="vblex"/></r></p></e>
 <e><p><l>жаса<s n="v"/><s n="tv"/></l><r>здравствовать<s n="vblex"/></r></p></e>
 <e><p><l>біл<s n="v"/><s n="tv"/></l><r>знать<s n="vblex"/></r></p></e>
