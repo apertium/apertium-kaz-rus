@@ -5662,7 +5662,7 @@ If no format information is present it is removed. -->
                <clip pos="3" side="tl" part="lem"/> 
                <clip pos="3" side="tl" part="a_nom"/>
                <lit-tag v="2"/> <!-- number -->
-               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="px3sp"/> <!-- for possessive, just in case -->
                <lit-tag v="5"/> <!-- for case -->
             </lu><b/>
             <lu> <var n="postposition_lu"/> </lu>
@@ -5690,7 +5690,7 @@ If no format information is present it is removed. -->
                <clip pos="3" side="tl" part="lem"/> 
                <clip pos="3" side="tl" part="a_nom"/>
                <lit-tag v="2"/> <!-- number -->
-               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="px3sp"/> <!-- for possessive, just in case -->
                <lit-tag v="5"/> <!-- for case -->
             </lu>
           </chunk>
