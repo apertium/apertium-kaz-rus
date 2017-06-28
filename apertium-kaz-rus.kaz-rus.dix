@@ -24875,10 +24875,10 @@ VERB1 -->
 <e><p><l>құй<s n="v"/><s n="tv"/></l><r>лить<s n="vblex"/></r></p></e>
 <e><p><l>арсылда<s n="v"/><s n="iv"/></l><r>лаять<s n="vblex"/></r></p></e>
 <e><p><l>үр<s n="v"/><s n="iv"/></l><r>лаять<s n="vblex"/></r></p></e>
-<e><p><l>жат<s n="v"/><s n="iv"/></l><r>лежать<s n="vblex"/></r></p></e>
 <e><p><l>бол<s n="v"/><s n="iv"/></l><r>лежать<s n="vblex"/></r></p></e>
 <e><p><l>орналас<s n="v"/><s n="iv"/></l><r>лежать<s n="vblex"/></r></p></e>
 <e><p><l>кір<s n="v"/><s n="iv"/></l><r>лежать<s n="vblex"/></r></p></e>
+<e><p><l>жат<s n="v"/><s n="iv"/></l><r>лежать<s n="vblex"/></r></p></e>
 <e><p><l>өрмеле<s n="v"/><s n="iv"/></l><r>лезть<s n="vblex"/></r></p></e>
 <e><p><l>кір<s n="v"/><s n="iv"/></l><r>лезть<s n="vblex"/></r></p></e>
 <e><p><l>өт<s n="v"/><s n="iv"/></l><r>лезть<s n="vblex"/></r></p></e>
@@ -33022,7 +33022,7 @@ zloy_zhake
 <e><p><l>келесі<s n="adj"/></l><r>следующий<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>адами<s n="adj"/></l><r>человеческий<s n="adj"/></r></p></e>
 <e><p><l>өзге<s n="adj"/></l><r>чужой<s n="adj"/><s n="sint"/></r></p></e>
-<e><p><l>жас<s n="n"/></l><r>год<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<!--e><p><l>жас<s n="n"/></l><r>год<s n="n"/><s n="m"/><s n="nn"/></r></p></e-->
 <e><p><l>мемлекет<s n="adj"/></l><r>государственный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>аумақ<s n="n"/></l><r>область<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>аймақ<s n="n"/></l><r>область<s n="n"/><s n="f"/><s n="nn"/></r></p></e>

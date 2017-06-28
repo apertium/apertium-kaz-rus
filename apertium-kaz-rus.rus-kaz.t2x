@@ -231,7 +231,7 @@
   <section-rules>
 
 
-<rule comment="RULE: VP PP → PP VP">
+<rule comment="RULE: VP PP → PP VP"> <!-- Aliya 28.06.17 -->
     <!-- Just reorders VP and PP1 PP2 -->
      <pattern>
        <pattern-item n="VP"/>
@@ -251,6 +251,36 @@
             <clip pos="1" part="tags"/>
             <clip pos="1" part="chcontent"/>
           </chunk>   
+      </out>
+     </action>
+    </rule>
+
+
+    <rule comment="NEW RULE: VP NP → NP VP"> <!-- Aliya 28.06.17 -->
+    <!--VP NP можно выбрать несколько книг -->
+     <pattern>
+       <pattern-item n="VP"/>
+       <pattern-item n="NP"/>
+     </pattern>
+     <action>
+      <out>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <lit-tag v="VP"/>
+                        <lit-tag v="sg"/> <!-- agree number -->
+                        <lit-tag v="p3"/> <!-- agree person -->
+            <clip pos="1" part="a_tense"/>
+            <clip pos="1" part="a_possessive"/> 
+            <clip pos="1" part="a_pass"/>
+            <clip pos="1" part="a_neg"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk> 
       </out>
      </action>
     </rule>
