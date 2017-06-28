@@ -8,7 +8,6 @@
       <cat-item tags="NP-pron"/>
       <cat-item tags="NP-pron.*"/>
     </def-cat>
-
     <def-cat n="NP-pron">  
       <cat-item tags="NP-pron"/>
       <cat-item tags="NP-pron.*"/>
@@ -230,10 +229,36 @@
 
 
   <section-rules>
+
+
+<rule comment="RULE: VP PP → PP VP">
+    <!-- Just reorders VP and PP1 PP2 -->
+     <pattern>
+       <pattern-item n="VP"/>
+       <pattern-item n="PP"/>
+     </pattern>
+     <action>
+      <out>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk> 
+          <b/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>   
+      </out>
+     </action>
+    </rule>
+
+
     <rule comment="REGLA: SN">
       <pattern>
         <pattern-item n="NP"/>
-
       </pattern>
       <action>
         <out>
