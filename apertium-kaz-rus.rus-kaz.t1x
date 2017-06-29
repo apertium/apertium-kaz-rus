@@ -290,8 +290,9 @@
       <cat-item tags="vblex.pprs.*.*"/>
       <cat-item tags="vblex.pprs.*.*.*"/>
     </def-cat>
-   <def-cat n="v-fac"> <!-- for verbs -->
-      <cat-item tags="vblex.*.fac"/>
+   <def-cat n="v-fac">
+      <cat-item tags="vblex.impf.*.*.*.fac"/>
+      <cat-item tags="vblex.perf.*.*.*.fac"/>
     </def-cat>
 
 <def-cat n="vbhaver">
@@ -3033,34 +3034,6 @@ If no format information is present it is removed. -->
     </out>
       </otherwise> 
     </choose>
-  </action>
-</rule>
-
-<rule comment="NEW RULE: verb2"> <!-- Aliya 25.06.17 -->
-  <pattern>
-    <pattern-item n="v-fac"/>
-  </pattern>
-  <action>
-     <call-macro n="default-nbr-pers"/>
-    <out>
-    <chunk name="verb-fac"> <!-- звать - шақыру -->
-      <tags>
-        <tag><lit-tag v="VP"/></tag>
-        <tag><lit-tag v="ND"/></tag> <!-- number -->
-        <tag><lit-tag v="PD"/></tag> <!-- person -->
-        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
-        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
-        <tag><lit-tag v="NXD"/></tag><!-- negative -->
-        <tag><lit-tag v="CD"/></tag> 
-      </tags>
-        <lu>
-          <clip pos="1" side="tl" part="lem"/>
-	  <clip pos="1" side="tl" part="a_kaz_verb"/>
-          <lit-tag v="ger"/>
-          <lit-tag v="nom"/>
-        </lu>
-    </chunk>
-    </out>
   </action>
 </rule>
 

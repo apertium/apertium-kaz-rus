@@ -2559,7 +2559,7 @@ If no format information is present it is removed. -->
 <rule comment="RULE: KE fut V+al"> <!-- ойнай аламын - смогу сыграть --> <!-- Aliya --> <!-- 20.05.17 -->
       <pattern>
         <pattern-item n="verb-nonfin"/>
-     <pattern-item n="verb-al"/>
+        <pattern-item n="verb-al"/>
       </pattern>
       <action>       
         <call-macro n="conv-temps1"><with-param pos="2"/></call-macro>
@@ -2571,7 +2571,7 @@ If no format information is present it is removed. -->
               <tag><clip pos="2" side="tl" part="a_nbr"/></tag>		
             </tags>
             <lu>
-              <lit v="смочь1"/><lit-tag v="vblex"/>
+              <lit v="смочь"/><lit-tag v="vblex"/>
 	      <lit-tag v="perf"/><lit-tag v="iv"/><lit-tag v="fut"/>        
               <lit-tag v="3"/><lit-tag v="4"/>                       
             </lu><b/>
