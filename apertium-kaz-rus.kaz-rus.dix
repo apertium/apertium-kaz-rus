@@ -20536,7 +20536,14 @@ VERB1 -->
 <e><p><l>жақсыз<s n="adj"/></l><r>безличный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>жақтық<s n="adj"/></l><r>сторонний<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>жақын<s n="adj"/></l><r>близкий<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>трамвай<s n="adj"/></l><r>трамвайный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>троллейбус<s n="adj"/></l><r>троллейбусный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>эксплуатациалық<s n="adj"/></l><r>эксплуатационный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>пайдаланылу<s n="adj"/></l><r>эксплуатационный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>жиынтық<s n="adj"/></l><r>суммарный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>жақындау<s n="adj"/></l><r>ближайший<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>тартылған<s n="adj"/></l><r>протяжённый<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>ірі<s n="adj"/></l><r>крупнейший<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>жақындағы<s n="adj"/></l><r>близлежащий<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>жалалы<s n="adj"/></l><r>оклеветанный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>жалаңаш<s n="adj"/></l><r>голый<s n="adj"/><s n="sint"/></r></p></e>
@@ -31693,9 +31700,10 @@ VERB1 -->
 <e><p><l>г<s n="n"/><s n="acr"/></l><r>г<s n="abbr"/></r></p></e>
 <e><p><l>http<s n="n"/><s n="acr"/></l><r>http<s n="abbr"/></r></p></e>
 <e><p><l>кг<s n="abbr"/></l><r>кг<s n="abbr"/></r></p></e>
+<e><p><l>т<s n="abbr"/></l><r>т<s n="abbr"/></r></p></e>
 <e><p><l>ЕҰУ<s n="np"/><s n="acr"/></l><r>ЕНУ<s n="abbr"/></r></p></e>
 <e><p><l>млрд<s n="n"/><s n="nom"/></l><r>млрд<s n="abbr"/></r></p></e>
-<e><p><l>млн<s n="n"/><s n="nom"/></l><r>млн<s n="abbr"/></r></p></e>
+<e><p><l>млн<s n="abbr"/></l><r>млн<s n="abbr"/></r></p></e>
 <e><p><l>км<s n="n"/><s n="nom"/></l><r>км<s n="abbr"/></r></p></e>
 <e><p><l>ҚР<s n="np"/><s n="top"/><s n="nom"/></l><r>РК<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>РФ<s n="np"/><s n="top"/><s n="nom"/></l><r>РФ<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
@@ -32039,6 +32047,10 @@ VERB1 -->
 <e><p><l>Сарыарқа<s n="np"/><s n="top"/></l><r>Сарыарка<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>  
 <e><p><l>Павлодар<s n="np"/><s n="top"/></l><r>Павлодар<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Мәскеу<s n="np"/><s n="top"/></l><r>Москва<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e><p><l>Самара<s n="np"/><s n="top"/></l><r>Самара<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e><p><l>Қазан<s n="np"/><s n="top"/></l><r>Казань<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e><p><l>Төменгі<b/>Новгород<s n="np"/><s n="top"/></l><r>Нижний<b/>Новгород<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
+<e><p><l>Санкт-Петербург<s n="np"/><s n="top"/></l><r>Санкт-Петербург<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Көкшетау<s n="np"/><s n="top"/></l><r>Кокшетау<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Ақмола<s n="np"/><s n="top"/></l><r>Акмола<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e><p><l>Ыстамбұл<s n="np"/><s n="top"/></l><r>Стамбул<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
