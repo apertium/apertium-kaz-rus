@@ -236,7 +236,6 @@
 
 
 <rule comment="RULE: VP PP → PP VP"> <!-- Aliya 28.06.17 -->
-    <!-- Just reorders VP and PP1 PP2 -->
      <pattern>
        <pattern-item n="VP"/>
        <pattern-item n="PP"/>
@@ -290,7 +289,6 @@
     </rule>
 
 <rule comment="NEW RULE:  PP VP AdvP"> <!-- Aliya 30.06.17 -->
-    <!-- propagates person and number from NP to VP and reorders PP-->
      <pattern>
        <pattern-item n="PP"/>
        <pattern-item n="VP"/>
@@ -326,6 +324,52 @@
       </out>
      </action>
     </rule>
+
+<rule comment="NEW RULE:  PP NP VP AdvP"> <!-- Aliya 01.07.17 -->
+     <pattern>
+       <pattern-item n="PP"/>
+       <pattern-item n="NP"/>
+       <pattern-item n="VP"/>
+       <pattern-item n="AdvP"/>
+     </pattern>
+     <action>
+<call-macro n="change-case-upper">  
+<with-param pos="1"/>
+  </call-macro> 
+
+      <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="4" part="lem"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <lit-tag v="VP"/>
+            <clip pos="2" part="a_nbr"/> <!-- agree number -->
+            <clip pos="2" part="a_pers"/> <!-- agree person -->
+            <clip pos="3" part="a_tense"/>
+            <clip pos="3" part="a_possessive"/> 
+            <clip pos="3" part="a_neg"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk> 
+      </out>
+     </action>
+    </rule>
+
 
 
     <rule comment="REGLA: SN">

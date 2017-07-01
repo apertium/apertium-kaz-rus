@@ -4961,6 +4961,45 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: noun adj noun">   <!-- Aliya -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="nom-gen"/>
+  </pattern>
+  <action>
+<call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="1"/> </call-macro> 
+<call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="3"/> </call-macro>
+<call-macro n="build-adjec-lu"><with-param pos="2"/></call-macro> 
+<call-macro n="select-case"> <with-param pos="1"/> </call-macro>
+    <out>
+    <chunk name="noun-adj-noun">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><var n="case"/></tag>    
+    </tags>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_nbr"/>
+     <lit-tag v="gen"/>
+    </lu> <b/>
+            <lu>  <!-- build in situ for the time being -->
+               <clip pos="1" side="tl" part="lem"/> 
+               <clip pos="1" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+                <lit-tag v="px3sp"/><!-- for possessive, just in case -->
+               <lit-tag v="5"/> <!-- for case -->
+            </lu>
+    </chunk>
+    </out>
+      </action>
+</rule>
+
+
 <rule comment="NEW RULE: num abbr abbr">  <!-- Aliya 30.06.17 -->        <!-- 451 млн т - 451 млн т -->
   <pattern>
     <pattern-item n="num"/>
@@ -4980,6 +5019,39 @@ If no format information is present it is removed. -->
             <lu>
     		 <clip pos="3" side="tl" part="lem"/> 
     		 <clip pos="3" side="tl" part="a_abbr"/>
+            </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: num abbr abbr-abbr">  <!-- Aliya 01.07.17 -->        <!-- 48 млрд т-км - 48 млрд т-км -->
+  <pattern>
+    <pattern-item n="num"/>
+    <pattern-item n="abbr"/>
+    <pattern-item n="abbr"/>
+    <pattern-item n="guio"/>
+    <pattern-item n="abbr"/>
+  </pattern>
+  <action>
+   <call-macro n="build-num-lu"><with-param pos="1"/></call-macro> 
+    <out>
+    <chunk name="num-abbr2-abbr">
+    <tags> <tag><lit-tag v="AdvP"/></tag> </tags>
+    <lu> <var n="num_lu"/> </lu><b/>
+            <lu>
+    		 <clip pos="2" side="tl" part="lem"/> 
+    		 <clip pos="2" side="tl" part="a_abbr"/>
+            </lu><b/>
+            <lu>
+    		 <clip pos="3" side="tl" part="lem"/> 
+    		 <clip pos="3" side="tl" part="a_abbr"/>
+            </lu>
+            <lu><clip pos="4" side="tl" part="whole"/></lu>
+            <lu>
+    		 <clip pos="5" side="tl" part="lem"/> 
+    		 <clip pos="5" side="tl" part="a_abbr"/>
             </lu>
     </chunk>
     </out>
@@ -5399,7 +5471,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="NEW RULE: prep num noun1 noun2"> 
+<!-- rule comment="NEW RULE: prep num noun1 noun2"> 
   <pattern>
     <pattern-item n="prep"/>
     <pattern-item n="num"/>
@@ -5416,7 +5488,7 @@ If no format information is present it is removed. -->
      <choose>
       <when>  
        <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
-        <out> <!-- with postposition -->
+        <out>
           <chunk name="prep-num-nom2-post">
             <tags> <tag><var n="pptag"/></tag>
                 <tag><clip pos="3" part="a_nbr" side="sl"/></tag> 
@@ -5470,7 +5542,7 @@ If no format information is present it is removed. -->
       </otherwise>
     </choose>
   </action>
-</rule>
+</rule -->
 
 
 <rule comment="NEW RULE: infinitive - verb"> 
@@ -6039,45 +6111,6 @@ If no format information is present it is removed. -->
       </otherwise>
     </choose>
   </action>
-</rule>
-
-
-<rule comment="NEW RULE: noun adj noun">   <!-- Aliya -->
-  <pattern>
-    <pattern-item n="n"/>
-    <pattern-item n="adj"/>
-    <pattern-item n="nom-gen"/>
-  </pattern>
-  <action>
-<call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="1"/> </call-macro> 
-<call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="3"/> </call-macro>
-<call-macro n="build-adjec-lu"><with-param pos="2"/></call-macro> 
-<call-macro n="select-case"> <with-param pos="1"/> </call-macro>
-    <out>
-    <chunk name="noun-adj-noun">
-    <tags> <tag><lit-tag v="NP"/></tag>
-    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
-    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
-    <tag><var n="case"/></tag>    
-    </tags>
-            <lu> <var n="adjec_lu"/> </lu> <b/>
-    <lu>
-     <clip pos="3" side="tl" part="lem"/> 
-     <clip pos="3" side="tl" part="a_nom"/>
-     <clip pos="3" side="tl" part="a_nbr"/>
-     <lit-tag v="gen"/>
-    </lu> <b/>
-            <lu>  <!-- build in situ for the time being -->
-               <clip pos="1" side="tl" part="lem"/> 
-               <clip pos="1" side="tl" part="a_nom"/>
-               <lit-tag v="2"/> <!-- number -->
-                <lit-tag v="px3sp"/><!-- for possessive, just in case -->
-               <lit-tag v="5"/> <!-- for case -->
-            </lu>
-    </chunk>
-    </out>
-      </action>
 </rule>
 
 
@@ -6956,7 +6989,7 @@ If no format information is present it is removed. -->
         <out>
           <chunk name="abbr" case="caseFirstWord">
             <tags>
-              <tag><lit-tag v="PP"/></tag>
+              <tag><lit-tag v="AdvP"/></tag>
             </tags>
             <lu>
     		 <clip pos="1" side="tl" part="lem"/> 

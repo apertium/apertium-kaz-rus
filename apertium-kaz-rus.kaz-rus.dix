@@ -14675,6 +14675,7 @@ VERB1 -->
 <e><p><l>көкек<s n="n"/></l><r>кукушка<s n="n"/><s n="f"/><s n="aa"/></r></p></e>
 <e><p><l>көкжиек<s n="n"/></l><r>горизонт<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>көкөніс<s n="n"/></l><r>овощ<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>жүк<b/>айналым<s n="n"/></l><r>грузооборот<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>көктамыр<s n="n"/></l><r>вена<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>көктем<s n="n"/></l><r>весна<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>көл<s n="n"/></l><r>озеро<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
@@ -22846,6 +22847,7 @@ VERB1 -->
 <e><p><l>революцияға<b/>дейінгі<s n="adj"/></l><r>дореволюционный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>реформаға<b/>дейінгі<s n="adj"/></l><r>дореформенный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>балтық<s n="adj"/></l><r>балтийский<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>теңіз<s n="adj"/></l><r>морской<s n="adj"/></r></p></e>
 
 <!-- numerals -->
 
@@ -31702,9 +31704,9 @@ VERB1 -->
 <e><p><l>кг<s n="abbr"/></l><r>кг<s n="abbr"/></r></p></e>
 <e><p><l>т<s n="abbr"/></l><r>т<s n="abbr"/></r></p></e>
 <e><p><l>ЕҰУ<s n="np"/><s n="acr"/></l><r>ЕНУ<s n="abbr"/></r></p></e>
-<e><p><l>млрд<s n="n"/><s n="nom"/></l><r>млрд<s n="abbr"/></r></p></e>
+<e><p><l>млрд<s n="abbr"/></l><r>млрд<s n="abbr"/></r></p></e>
 <e><p><l>млн<s n="abbr"/></l><r>млн<s n="abbr"/></r></p></e>
-<e><p><l>км<s n="n"/><s n="nom"/></l><r>км<s n="abbr"/></r></p></e>
+<e><p><l>км<s n="abbr"/></l><r>км<s n="abbr"/></r></p></e>
 <e><p><l>ҚР<s n="np"/><s n="top"/><s n="nom"/></l><r>РК<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>РФ<s n="np"/><s n="top"/><s n="nom"/></l><r>РФ<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>АҚШ<s n="np"/><s n="top"/><s n="nom"/></l><r>США<s n="np"/><s n="top"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
