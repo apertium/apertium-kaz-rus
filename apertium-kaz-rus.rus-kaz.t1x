@@ -2680,7 +2680,14 @@ If no format information is present it is removed. -->
         <pattern-item n="np-org"/>
       </pattern>
       <action>
+ <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="loc"/></let>
+      </when>
+ </choose>
     <out>
+
     <chunk name="np-org">
       <tags><tag><lit-tag v="NP"/></tag></tags>
         <lu>
@@ -4022,7 +4029,26 @@ If no format information is present it is removed. -->
     </chunk>
     </out>
       </when>
+ <when>
 
+        <test><and>
+<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+        <equal><clip pos="1" side="sl" part="lem"/><lit v="их"/></equal>
+</and>
+</test>
+    <out>
+    <chunk name="p123sp-acc">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.dem"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+                  <lit-tag v="acc"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
       <when>
         <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
         <let><var n="case"/><lit-tag v="gen"/></let>
