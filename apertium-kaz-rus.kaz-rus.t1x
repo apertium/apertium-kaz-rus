@@ -13029,6 +13029,34 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
  </chunk>
   </out>
 </when>
+<when>
+
+            <test>
+<and>
+             <equal><clip pos="1" side="sl" part="a_nom"/><lit-tag v="prn.pers.p3"/></equal>
+             <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+     </and>   
+            </test>
+ <out>
+       <chunk name="prn+pers-ol" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_nom"/>             
+  <lit-tag v="m"/>
+  <lit-tag v="sg"/>
+<var n="case"/>
+
+ </lu>
+
+ </chunk>
+  </out>
+</when>
 
 <otherwise>
 <out>
@@ -13043,7 +13071,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   <clip pos="1" side="tl" part="lem"/>
   <clip pos="1" side="tl" part="a_nom"/>
   <lit-tag v="mf"/>
-  <lit-tag v="sg"/>
+  <clip pos="1" side="tl" part="a_nbr"/>
 <var n="case"/>
 
  </lu>
@@ -13304,6 +13332,32 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   <lit-tag v="prn.pos"/>
   <lit-tag v="m"/>
   <lit-tag v="an"/>
+  <lit-tag v="sg"/>
+<var n="case"/>
+
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+ <when>
+
+            <test>
+             <equal><clip pos="1" side="sl" part="a_nom"/><lit-tag v="prn.dem"/></equal>
+        
+            </test>
+ <out>
+       <chunk name="prn+ol" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+ <clip pos="1" side="tl" part="a_nom"/>             
+  <lit-tag v="m"/>
   <lit-tag v="sg"/>
 <var n="case"/>
 
