@@ -22,7 +22,14 @@
     </def-cat>
 <def-cat n="cat_prn">
  <cat-item tags="prn.n.sg.nom"/>
+ </def-cat> 
+
+<def-cat n="v-shakyr">
+<cat-item lemma="шақыр" tags="v.tv.*"/>
+<cat-item lemma="шақыр" tags="v.tv"/>
  </def-cat>
+
+
 <def-cat n="verb-nonfin-ger_bar">
 <cat-item lemma="бар" tags="v.*.ger_past.px1sg.*"/>
 <cat-item lemma="бар" tags="v.*.ger_past.px2sg.*"/>
@@ -2504,6 +2511,52 @@ If no format information is present it is removed. -->
 
   <section-rules>
 
+<rule comment="RULE: shakyr">  <!-- AS to be removed -->
+<pattern>
+ <pattern-item n="v-shakyr"/>
+</pattern>
+  <action>
+    <out>
+       <chunk name="v-coop-neg-ger_gpr+post" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag></tags>   
+    <lu> 
+              <lit v="звание"/>
+              <lit-tag v="n"/>
+              <lit-tag v="nt"/>
+              <lit-tag v="nn"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="acc"/>
+</lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+
+<rule comment="RULE: shakyr v-vars">  <!-- AS to be removed -->
+<pattern>
+ <pattern-item n="v-shakyr"/>
+ <pattern-item n="v_vars"/>
+</pattern>
+  <action>
+    <out>
+       <chunk name="v-coop-neg-ger_gpr+post" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag></tags>   
+    <lu> 
+              <lit v="звание"/>
+              <lit-tag v="n"/>
+              <lit-tag v="nt"/>
+              <lit-tag v="nn"/>
+              <lit-tag v="sg"/>
+              <lit-tag v="acc"/>
+</lu>
+ </chunk>
+  </out>
+</action>
+ </rule>
+
+
+
 
 <rule comment="RULE: v-coop-ger_gpr post">  <!-- Aliya "шақырысушылықсыз" -->
 <pattern>
@@ -3401,6 +3454,8 @@ If no format information is present it is removed. -->
         <call-macro n="reset-vars1"><with-param pos="1"/></call-macro>
       </action>
     </rule>
+
+
 
 
 <rule comment="RULE: v-coop-neg-ger_gpr post">  <!-- Aliya "шақырыспаушылықсыз" -->
