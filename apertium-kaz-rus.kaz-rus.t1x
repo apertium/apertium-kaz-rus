@@ -9532,10 +9532,10 @@ output after:
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                  <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
-                  <var n="case"/>
+                    <lit-tag v="m"/> 
+                    <lit-tag v="an"/> 
+                   <lit-tag v="sg"/> 
+                   <var n="case"/>
                 </lu>
               </chunk>
             </out>
@@ -9566,10 +9566,10 @@ output after:
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                  <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
-                  <var n="case"/>
+                    <lit-tag v="m"/> 
+                    <lit-tag v="an"/> 
+                   <lit-tag v="sg"/> 
+                   <lit-tag v="nom"/>
                 </lu>
               </chunk>
             </out>
@@ -9602,13 +9602,13 @@ output after:
                 <tags>
                   <tag><lit-tag v="AdjP"/></tag>
                 </tags>
-                <lu>
+                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                  <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
-                  <var n="case"/>
+                    <lit-tag v="m"/> 
+                    <lit-tag v="an"/> 
+                   <lit-tag v="sg"/> 
+                   <var n="case"/>
                 </lu>
                  <b/>
                 <lu>
