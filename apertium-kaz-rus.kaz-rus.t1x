@@ -1819,6 +1819,7 @@ If no format information is present it is removed. -->
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
+          <let><var n="case"/><lit-tag v="dat"/></let>
        </when> 
 <when> 
             <test>
@@ -1846,10 +1847,11 @@ If no format information is present it is removed. -->
         </test>
        <let><var n="postposition_lu"/> <!-- ready for lu -->
                       <concat>
-                       <lit v="with"/>
+                       <lit v="с"/>
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
+<let><var n="case"/><lit-tag v="ins"/></let>
     </when> 
                   <when> 
             <test>
@@ -1860,7 +1862,7 @@ If no format information is present it is removed. -->
             </test>
             <let>
               <var n="case"/>
-              <lit v="to"/>
+              <lit v="в"/>
             </let>
       </when>    
 
@@ -1873,8 +1875,9 @@ If no format information is present it is removed. -->
              </test>
              <let>
                <var n="case"/>
-               <lit v="with"/>
+               <lit v="с"/>
              </let>
+<let><var n="case"/><lit-tag v="ins"/></let>
               </when>    
 
            <when> 
@@ -2026,6 +2029,7 @@ If no format information is present it is removed. -->
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
+          <let><var n="case"/><lit-tag v="dat"/></let>
        </when> 
 <when> 
             <test>
@@ -2052,10 +2056,11 @@ If no format information is present it is removed. -->
         </test>
        <let><var n="postposition_lu"/> <!-- ready for lu -->
                       <concat>
-                       <lit v="with"/>
+                       <lit v="с"/>
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
+<let><var n="case"/><lit-tag v="ins"/></let>
     </when> 
                   <when> 
             <test>
@@ -2066,7 +2071,7 @@ If no format information is present it is removed. -->
             </test>
             <let>
               <var n="case"/>
-              <lit v="to"/>
+              <lit v="н"/>
             </let>
       </when>    
 
@@ -2079,8 +2084,9 @@ If no format information is present it is removed. -->
              </test>
              <let>
                <var n="case"/>
-               <lit v="with"/>
+               <lit v="с"/>
              </let>
+<let><var n="case"/><lit-tag v="ins"/></let>
               </when>    
 
            <when> 
@@ -12495,6 +12501,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </equal>
 </test>
  <let><var n="preposition"/><concat><lit v="к"/><lit-tag v="pr"/></concat></let>
+          <let><var n="case"/><lit-tag v="dat"/></let>
           </when>
 <when>
 <test>
@@ -12586,6 +12593,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </equal>
 </test>
  <let><var n="preposition"/><concat><lit v="к"/><lit-tag v="pr"/></concat></let>
+          <let><var n="case"/><lit-tag v="dat"/></let>
           </when>
 <when>
 <test>
@@ -12829,6 +12837,38 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 <pattern-item n="v_vars"/>
 </pattern>
   <action>
+<choose>
+          <when>
+
+            <test>   
+<and>
+             <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="subst"/></equal>
+             <equal><clip pos="1" side="sl" part="lem"/><lit v="мен"/></equal>
+<not>        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></not>
+</and>
+            </test>
+ <out>
+       <chunk name="prn+vars2-men" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+   <lu>
+  <clip pos="2" side="tl" part="whole"/>
+ </lu>
+ <b/>
+
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+  <lit-tag v="prn.pos"/>
+  <lit-tag v="m"/>
+  <lit-tag v="an"/>
+  <lit-tag v="sg"/>
+    <lit-tag v="dat"/>
+
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+<otherwise>
  <out>
        <chunk name="prn+vars2" case="caseFirstWord"> 
       <tags><tag><lit-tag v="NP"/></tag>       </tags>   
@@ -12846,8 +12886,82 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
  </lu>
  </chunk>
   </out>
+
+</otherwise>
+</choose>
  </action>
  </rule> 
+
+
+
+
+<rule comment="RULE:prn"> 
+<pattern>
+ <pattern-item n="prn1"/>
+</pattern>
+  <action>
+<call-macro n="choose_case_and_postposition1">
+ <with-param pos="1"/>
+            </call-macro>               
+<choose>
+          <when>
+            <test>   
+             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="sim"/></equal>
+            </test>
+	    <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+<out>
+       <chunk name="prn-pers-sim" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags> 
+<lu>
+                  <lit v="как"/>
+                  <lit-tag v="adv"/>
+                </lu>
+<b/>
+
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>  
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+  <clip pos="1" side="tl" part="a_nom"/>
+  <lit-tag v="mf"/>
+  <lit-tag v="sg"/>
+<var n="case"/>
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+<otherwise>
+<out>
+       <chunk name="prn-pers" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags> 
+
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>  
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+  <clip pos="1" side="tl" part="a_nom"/>
+  <lit-tag v="mf"/>
+  <lit-tag v="sg"/>
+<var n="case"/>
+
+ </lu>
+ 
+ 
+ </chunk>
+  </out>
+ </otherwise>
+</choose>
+
+ </action>
+ </rule> 
+
+
+
 <rule comment="RULE:prn+vars"> <!--  
  -->
 <pattern>
@@ -13073,17 +13187,21 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
       </when>
 <otherwise>
  <out>
-              <chunk name="prn">  <!--өзі  -->
+              <chunk name="prn-ozi">  <!--өзі  -->
                 <tags>
                   <tag><lit-tag v="PRN"/></tag>
                 </tags>
+         <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_nom"/>
-                  <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
+                  <lit-tag v="m"/>
+                  <lit-tag v="an"/>
                   <lit-tag v="sg"/>
-                  <clip pos="1" side="tl" part="a_case"/>
+                  <var n="case"/>
                 </lu>
               </chunk>
             </out>
@@ -13108,7 +13226,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
                   <clip pos="1" side="tl" part="lem"/>
                   <lit-tag v="det.pos"/>
                   <lit-tag v="mfn"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
+                  <lit-tag v="an"/>
                   <lit-tag v="pl"/>
                   <clip pos="1" side="tl" part="a_case"/>
                 </lu>
@@ -13124,22 +13242,63 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
      <pattern-item n="prn-ref"/>
       </pattern>
       <action>
-        <out>
-              <chunk name="prn1-ref">  <!--өздері-->
+<call-macro n="choose_case_and_postposition1">
+ <with-param pos="1"/>
+            </call-macro>               
+
+<choose>
+          <when>
+            <test>   
+             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="sim"/></equal>
+            </test>
+	    <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+<out>
+              <chunk name="prn1-ref1-sim">  <!--өздері-->
                 <tags>
                   <tag><lit-tag v="PRN"/></tag>
                 </tags>
+<lu>
+                  <lit v="как"/>
+                  <lit-tag v="adv"/>
+                </lu>
+<b/>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <lit-tag v="det.pos"/>
                   <lit-tag v="mfn"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
+                  <lit-tag v="an"/>
                   <lit-tag v="pl"/>
                   <clip pos="1" side="tl" part="a_case"/>
                 </lu>
               </chunk>
             </out>
+	  </when>
+<otherwise>
+<out>
+              <chunk name="prn1-ref1">  <!--өздері-->
+                <tags>
+                  <tag><lit-tag v="PRN"/></tag>
+                </tags>
+<lu>
+                   <var n="postposition_lu"/>
+</lu>
+<b/>
 
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <lit-tag v="det.pos"/>
+                  <lit-tag v="mfn"/>
+                  <lit-tag v="an"/>
+                  <lit-tag v="pl"/>
+                   <var n="case"/>
+                </lu>
+              </chunk>
+            </out>
+
+</otherwise>
+	</choose>
+
+        
             </action>
 </rule>
 
