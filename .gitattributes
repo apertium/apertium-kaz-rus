@@ -86,7 +86,6 @@ devel/adjec3.awk -text
 devel/adjectives.csv -text
 devel/noun.awk -text
 /modes.xml -text
-/pending-tests-rus-kaz.sh -text
 /regression-tests-rus-kaz.sh -text
 testvoc/README -text
 testvoc/inconsistency-summary1.sh -text

@@ -1043,6 +1043,83 @@ If no format information is present it is removed. -->
 </def-macro>
 
 
+
+
+
+
+
+
+   <def-macro n="choose_case_and_postposition1" npar="1"> 
+    <let><var n="pptag"/><lit-tag v="PP"/></let> <!-- for most of them -->
+    <let><var n="genpp"/><lit v="no"/></let> <!-- for simple cases -->
+  
+   
+       
+	<choose> 
+	<when>
+         <test>
+         <and>
+          <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag  v="p1"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+         </and>
+         </test>      
+          <let><var  n="possessive"/><lit-tag v="px1sg"/></let>
+	</when>
+	<when>
+         <test>
+         <and>
+          <equal><clip  pos="1" side="sl" part="a_pers"/><lit-tag  v="p1"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+         </and>
+         </test>      
+          <let><var  n="possessive"/><lit-tag v="px1pl"/></let>
+	</when>
+	<when><!--under you-->
+         <test>
+         <and>
+          <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag  v="p2"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sp"/></equal>
+	 </and>
+         </test>      
+	<let><var  n="formality"/><lit-tag v="frm"/></let>
+	<let><var  n="possessive"/><lit-tag v="px2sg.frm"/></let>
+	</when>
+		<!-- ...etc remaining cases ... -->
+	</choose>
+         
+             <choose>
+                <when>
+                   <test><equal><clip part="a_Rcas" pos="1" side="tl"/><lit-tag v="Rnom"/></equal></test>
+                   <let><var n="case"/><lit-tag v="nom"/></let>
+                </when>
+                <when>
+                   <test><equal><clip part="a_Rcas" pos="1" side="tl"/><lit-tag v="Rdat"/></equal></test>
+                   <let><var n="case"/><lit-tag v="dat"/></let>
+                </when>
+                <when>
+                   <test><equal><clip part="a_Rcas" pos="1" side="tl"/><lit-tag v="Rabl"/></equal></test>
+                   <let><var n="case"/><lit-tag v="abl"/></let>
+                </when>
+                <when>
+                   <test><equal><clip part="a_Rcas" pos="1" side="tl"/><lit-tag v="Rloc"/></equal></test>
+                   <let><var n="case"/><lit-tag v="loc"/></let>
+                </when>
+                <when>
+                   <test><equal><clip part="a_Rcas" pos="1" side="tl"/><lit-tag v="Rins"/></equal></test>
+                   <let><var n="case"/><lit-tag v="ins"/></let>
+                </when>
+                <when>
+                   <test><equal><clip part="a_Rcas" pos="1" side="tl"/><lit-tag v="Racc"/></equal></test>
+                   <let><var n="case"/><lit-tag v="acc"/></let>
+                </when>
+                <when> <!-- This case is unlikely, but we'll leave it just in case -->
+                   <test><equal><clip part="a_Rcas" pos="1" side="tl"/><lit-tag v="Rgen"/></equal></test>
+                   <let><var n="case"/><lit-tag v="gen"/></let>
+                </when>
+             </choose>
+           
+   
+   </def-macro>
 <!-- form eng-kaz for prepositions rus-kaz -->
 
    <def-macro n="choose_case_and_postposition2" npar="2"> 
@@ -1189,7 +1266,7 @@ If no format information is present it is removed. -->
           <otherwise>
               <let>
                 <var n="case"/>
-                <lit-tag v="ins"/> <!-- Choice when we don't know the translation of the preposition, can be improved -->
+                <lit-tag v="nom"/> <!-- Choice when we don't know the translation of the preposition, can be improved -->
               </let>
               <let>
                 <var n="pptag"/>
@@ -1328,6 +1405,7 @@ If no format information is present it is removed. -->
            </concat>  
         </let>
    </def-macro>
+
 
   </section-def-macros>
 
@@ -5111,10 +5189,16 @@ If no format information is present it is removed. -->
     <pattern-item n="nom"/>
   </pattern>
   <action>
-     <call-macro n="choose_case_and_postposition2">
-        <with-param pos="1"/>
+     <call-macro n="choose_case_and_postposition1">
         <with-param pos="2"/>
       </call-macro>
+<choose>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="lem"/><lit v="один"/></equal></test>
+           <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+           <let><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="sg"/></let>
+         </when>
+</choose>
 <call-macro n="build-num-lu"><with-param pos="1"/></call-macro> 
  
         <out>
