@@ -2044,6 +2044,7 @@ If no format information is present it is removed. -->
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
+          <let><var n="case"/><lit-tag v="gen"/></let>
        </when> 
 
      
@@ -12841,11 +12842,21 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <when>
 
             <test>   
+<or>
 <and>
              <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="subst"/></equal>
              <equal><clip pos="1" side="sl" part="lem"/><lit v="мен"/></equal>
 <not>        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></not>
+
 </and>
+<and>
+
+             <equal><clip pos="1" side="sl" part="lem"/><lit v="мен"/></equal>
+       <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+
+</and>
+
+</or>
             </test>
  <out>
        <chunk name="prn+vars2-men" case="caseFirstWord"> 
@@ -12861,7 +12872,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   <lit-tag v="m"/>
   <lit-tag v="an"/>
   <lit-tag v="sg"/>
-    <lit-tag v="dat"/>
+    <lit-tag v="nom"/>
 
  </lu>
 
@@ -12933,6 +12944,37 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
  </chunk>
   </out>
 </when>
+         <when>
+
+            <test>   
+<and>
+             <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="subst"/></equal>
+             <equal><clip pos="1" side="sl" part="lem"/><lit v="мен"/></equal>
+<not>        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></not>
+</and>
+            </test>
+ <out>
+       <chunk name="prn+pers-men" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+  <lit-tag v="prn.pos"/>
+  <lit-tag v="m"/>
+  <lit-tag v="an"/>
+  <lit-tag v="sg"/>
+<var n="case"/>
+
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+
 <otherwise>
 <out>
        <chunk name="prn-pers" case="caseFirstWord"> 
@@ -13185,6 +13227,37 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               </chunk>
             </out>
       </when>
+        <when>
+
+            <test>   
+<and>
+             <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="subst"/></equal>
+             <equal><clip pos="1" side="sl" part="lem"/><lit v="мен"/></equal>
+<not>        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></not>
+</and>
+            </test>
+ <out>
+       <chunk name="prn+ozi-men" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+  <lit-tag v="prn.pos"/>
+  <lit-tag v="m"/>
+  <lit-tag v="an"/>
+  <lit-tag v="sg"/>
+<var n="case"/>
+
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+
 <otherwise>
  <out>
               <chunk name="prn-ozi">  <!--өзі  -->
