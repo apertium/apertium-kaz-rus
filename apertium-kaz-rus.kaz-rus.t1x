@@ -423,6 +423,10 @@
 <cat-item tags="prn.neg.*"/>
 <cat-item tags="prn.qnt.*.*"/>
          </def-cat>
+<def-cat n="prn-ref">
+<cat-item tags="prn.ref"/>
+<cat-item tags="prn.ref.*"/>
+         </def-cat>
     <def-cat n="prep">
       <cat-item tags="pr"/>
     </def-cat>
@@ -1800,6 +1804,7 @@ If no format information is present it is removed. -->
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
+<let><var n="case"/>   <lit-tag v="gen"/>     </let>
        </when> 
 <when> 
             <test>
@@ -1824,10 +1829,11 @@ If no format information is present it is removed. -->
             </test>
             <let><var n="postposition_lu"/> <!-- ready for lu -->
                       <concat>
-                       <lit v="of"/>
+                       <lit v="из"/>
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
+<let><var n="case"/>   <lit-tag v="gen"/>     </let>
        </when> 
 
      
@@ -1880,12 +1886,13 @@ If no format information is present it is removed. -->
               </test>
               <let>
                 <var n="case"/>
-                <lit-tag v="of"/>
+                <lit-tag v="из"/>
               </let>
               <let>
                  <var n="pptag"/>
                  <lit v="GenP"/>   
               </let>
+<let><var n="case"/>   <lit-tag v="gen"/>     </let>
        </when>    
 
            <otherwise>
@@ -2004,6 +2011,7 @@ If no format information is present it is removed. -->
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
+<let><var n="case"/>   <lit-tag v="gen"/>     </let>
        </when> 
 <when> 
             <test>
@@ -2028,7 +2036,7 @@ If no format information is present it is removed. -->
             </test>
             <let><var n="postposition_lu"/> <!-- ready for lu -->
                       <concat>
-                       <lit v="of"/>
+                       <lit v="от"/>
                         <lit-tag v="pr"/>          
                       </concat>
              </let>
@@ -2084,7 +2092,7 @@ If no format information is present it is removed. -->
               </test>
               <let>
                 <var n="case"/>
-                <lit-tag v="of"/>
+                <lit-tag v="из"/>
               </let>
               <let>
                  <var n="pptag"/>
@@ -6001,7 +6009,7 @@ If no format information is present it is removed. -->
   det><ref><mfn><an><pl><nom -->
   <clip pos="1" side="tl" part="lem"/><!-- 
   <clip pos="1" side="tl" part="a_nom"/> -->
-  <lit-tag v="det.ref"/>
+  <lit-tag v="det.pos"/>
  <!--  <clip pos="1" side="tl" part="a_gender"/>
     <clip pos="1" side="tl" part="a_anim"/>
       <clip pos="1" side="tl" part="a_nbr"/> 
@@ -6039,7 +6047,7 @@ If no format information is present it is removed. -->
   det><ref><mfn><an><pl><nom -->
   <clip pos="1" side="tl" part="lem"/><!-- 
   <clip pos="1" side="tl" part="a_nom"/> -->
-  <lit-tag v="det.ref"/>
+  <lit-tag v="det.pos"/>
  <!--  <clip pos="1" side="tl" part="a_gender"/>
     <clip pos="1" side="tl" part="a_anim"/>
       <clip pos="1" side="tl" part="a_nbr"/> 
@@ -12907,6 +12915,12 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
  </rule> 
 
  
+
+
+
+
+
+
 <rule comment="RULE:prn+postvars"> <!--  өздері:өз<prn><ref><px3pl><nom>+ғана<postadv>
  -->
 <pattern>
@@ -12915,13 +12929,54 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </pattern>
   <action>
  <out>
-       <chunk name="prn+prn_vars" case="caseFirstWord"> 
+       <chunk name="prn+prn_vars_1" case="caseFirstWord"> 
       <tags><tag><lit-tag v="NP"/></tag>       </tags>   
   <lu><!-- 
   det><ref><mfn><an><pl><nom -->
   <clip pos="1" side="tl" part="lem"/><!-- 
   <clip pos="1" side="tl" part="a_nom"/> -->
-  <lit-tag v="det.ref"/>
+  <lit-tag v="det.pos"/>
+ <!--  <clip pos="1" side="tl" part="a_gender"/>
+    <clip pos="1" side="tl" part="a_anim"/>
+      <clip pos="1" side="tl" part="a_nbr"/> 
+        <clip pos="1" side="tl" part="a_case"/> 
+
+^я<prn><pers><p1><mf><sg><dat>
+
+      -->
+        <lit-tag v="mfn"/>
+        <lit-tag v="an"/>
+        <lit-tag v="pl"/>
+ <lit-tag v="ins"/>
+ </lu>
+ <b/>
+ <lu>
+  <clip pos="2" side="tl" part="whole"/>
+ </lu>
+ </chunk>
+  </out>
+ </action>
+ </rule>
+
+
+
+
+
+<rule comment="RULE:prn+postvars"> <!--  өздері:өз<prn><ref><px3pl><nom>+ғана<postadv>
+ -->
+<pattern>
+ <pattern-item n="prn"/>
+<pattern-item n="v_vars"/>
+</pattern>
+  <action>
+ <out>
+       <chunk name="prn+prn_vars_1" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  <lu><!-- 
+  det><ref><mfn><an><pl><nom -->
+  <clip pos="1" side="tl" part="lem"/><!-- 
+  <clip pos="1" side="tl" part="a_nom"/> -->
+  <lit-tag v="det.pos"/>
  <!--  <clip pos="1" side="tl" part="a_gender"/>
     <clip pos="1" side="tl" part="a_anim"/>
       <clip pos="1" side="tl" part="a_nbr"/> 
@@ -12959,7 +13014,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   det><ref><mfn><an><pl><nom -->
   <clip pos="1" side="tl" part="lem"/><!-- 
   <clip pos="1" side="tl" part="a_nom"/> -->
-  <lit-tag v="det.ref"/>
+  <lit-tag v="det.pos"/>
  <!--  <clip pos="1" side="tl" part="a_gender"/>
     <clip pos="1" side="tl" part="a_anim"/>
       <clip pos="1" side="tl" part="a_nbr"/> 
@@ -12984,6 +13039,10 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
      <pattern-item n="cop"/>
       </pattern>
       <action>
+<call-macro n="choose_case_and_postposition1">
+ <with-param pos="1"/>
+            </call-macro>               
+
       <choose>
        <when>
        <test> <or>  
@@ -12997,13 +13056,17 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
                 <tags>
                   <tag><lit-tag v="PRN"/></tag>
                 </tags>
+             <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
-                  <clip pos="1" side="tl" part="a_nom"/>
+                  <lit-tag v="det.pos"/>
                   <lit-tag v="mfn"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
+                  <lit-tag v="an"/>
                   <lit-tag v="pl"/>
-                  <clip pos="1" side="tl" part="a_case"/>
+                  <var n="case"/>
                 </lu>
               </chunk>
             </out>
@@ -13026,6 +13089,57 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
             </out>
 </otherwise>
  </choose>
+            </action>
+</rule>
+
+
+ <rule comment="REGLA: PRN-REF"> <!--AS -->
+      <pattern>
+     <pattern-item n="prn-ref"/>
+     <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        <out>
+              <chunk name="prn1-ref">  <!--өздері-->
+                <tags>
+                  <tag><lit-tag v="PRN"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <lit-tag v="det.pos"/>
+                  <lit-tag v="mfn"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <lit-tag v="pl"/>
+                  <clip pos="1" side="tl" part="a_case"/>
+                </lu>
+              </chunk>
+            </out>
+
+            </action>
+</rule>
+
+
+<rule comment="REGLA: PRNREF+COP"> <!--AS -->
+      <pattern>
+     <pattern-item n="prn-ref"/>
+      </pattern>
+      <action>
+        <out>
+              <chunk name="prn1-ref">  <!--өздері-->
+                <tags>
+                  <tag><lit-tag v="PRN"/></tag>
+                </tags>
+                <lu>
+                  <clip pos="1" side="tl" part="lem"/>
+                  <lit-tag v="det.pos"/>
+                  <lit-tag v="mfn"/>
+                  <clip pos="1" side="tl" part="a_anim"/>
+                  <lit-tag v="pl"/>
+                  <clip pos="1" side="tl" part="a_case"/>
+                </lu>
+              </chunk>
+            </out>
+
             </action>
 </rule>
 
