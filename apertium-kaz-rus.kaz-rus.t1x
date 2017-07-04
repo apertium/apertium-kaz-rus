@@ -7304,6 +7304,7 @@ If no format information is present it is removed. -->
         <pattern-item n="n-attr-or-gen"/>
         <pattern-item n="npost-loc"/>
         <pattern-item n="n"/>
+<pattern-item n="cop"/>
       </pattern>
       <action>
 	<choose>
