@@ -4424,7 +4424,9 @@ If no format information is present it is removed. -->
               <lit-tag v="sg"/>
  </lu>
 <b/>
+<lu>
 <var n="negation"/>
+</lu>
   <b/>
            <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -4463,7 +4465,9 @@ If no format information is present it is removed. -->
               <lit-tag v="sg"/>
  </lu>
 <b/>
+<lu>
 <var n="negation"/>
+</lu>
   <b/>
   <lu>
    
@@ -4498,7 +4502,9 @@ If no format information is present it is removed. -->
               <lit-tag v="sg"/>
  </lu>
 <b/>
+<lu>
 <var n="negation"/>
+</lu>
   <b/>
   <lu>
    
@@ -4533,8 +4539,8 @@ If no format information is present it is removed. -->
               <lit-tag v="sg"/>
  </lu>
 <b/>
-<var n="negation"/>
- <b/>
+<lu><var n="negation"/>
+</lu> <b/>
   <lu>
    
     <clip pos="1" side="tl" part="lem"/>
@@ -6319,7 +6325,9 @@ If no format information is present it is removed. -->
                       <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
+                     <lu>
                     <var n="possessive"/>
+                     </lu>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
@@ -6348,7 +6356,9 @@ If no format information is present it is removed. -->
                       <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
+			<lu>
                     <var n="pronoun"/>
+			</lu>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
@@ -6374,7 +6384,7 @@ If no format information is present it is removed. -->
 </lu>
 <b/>
 
-                    <var n="possessive"/> <!--what does it produce? tag or word? -->
+                    <lu><var n="possessive"/></lu> <!--what does it produce? tag or word? -->
 
 <!-- need blank space here, I put /AS 10.05.2016-->
 
@@ -6479,7 +6489,9 @@ If no format information is present it is removed. -->
                       <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
+ 			<lu>
                     <var n="possessive"/>
+</lu>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
