@@ -1418,7 +1418,23 @@ If no format information is present it is removed. -->
         <pattern-item n="sent"/>
       </pattern>
       <action>
-        <out>
+<choose>
+      <when>  
+       <test><equal><clip pos="1" side="sl" part="lem"/><lit v=".."/></equal></test>
+<let><clip pos="1" side="tl" part="lem"/><lit v="."/> </let>
+<out>  
+          <chunk name="sent" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="SENT"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+           </when> 
+</choose> 
+        <out>  
           <chunk name="sent" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="SENT"/></tag>
