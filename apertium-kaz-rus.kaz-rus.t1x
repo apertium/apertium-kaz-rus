@@ -1286,14 +1286,14 @@ If no format information is present it is removed. -->
             <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1sg"/></equal>
           </and></test>
           <let><var n="possessive"/>
-          <concat>
-            <lit v="^мой"/>
+          <concat><lu>
+            <lit v="мой"/>
             <lit-tag v="det"/><lit-tag v="pos"/>
             <clip pos="1" side="tl" part="a_gender"/>
             <var n="animacy"/>
             <clip pos="1" side="tl" part="a_nbr"/>
             <clip pos="1" side="tl" part="a_case"/>
-            <lit v="$ "/>
+            </lu>
           </concat>
           </let>  
         </when>
@@ -1303,14 +1303,14 @@ If no format information is present it is removed. -->
 	    <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px1pl"/></equal>
           </and></test>
           <let><var n="possessive"/>
-          <concat>
-            <lit v="^наш"/>
+          <concat><lu>
+            <lit v="наш"/>
             <lit-tag v="det"/><lit-tag v="pos"/>
             <lit-tag v="mfn"/>
             <var n="animacy"/>
             <clip pos="1" side="tl" part="a_nbr"/>
             <clip pos="1" side="tl" part="a_case"/>
-            <lit v="$ "/>
+            </lu>
           </concat>
           </let>  
         </when>
@@ -1320,14 +1320,14 @@ If no format information is present it is removed. -->
             <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2sg"/></equal>
           </and></test>
           <let><var n="possessive"/>
-          <concat>
-            <lit v="^твой"/>
+          <concat><lu>
+            <lit v="твой"/>
             <lit-tag v="det"/><lit-tag v="pos"/>
             <clip pos="1" side="tl" part="a_gender"/>
             <var n="animacy"/>
             <clip pos="1" side="tl" part="a_nbr"/>
             <clip pos="1" side="tl" part="a_case"/>
-            <lit v="$ "/>
+            </lu>
           </concat>
           </let>  
         </when>
@@ -1337,14 +1337,14 @@ If no format information is present it is removed. -->
             <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px4sg"/></equal>
           </and></test>
           <let><var n="possessive"/>
-          <concat>
-            <lit v="^ваш"/>
+          <concat><lu>
+            <lit v="ваш"/>
             <lit-tag v="det"/><lit-tag v="pos"/>
             <clip pos="1" side="tl" part="a_gender"/>
             <var n="animacy"/>
             <clip pos="1" side="tl" part="a_nbr"/>
             <clip pos="1" side="tl" part="a_case"/>
-            <lit v="$ "/>
+            </lu>
           </concat>
           </let>  
         </when>
@@ -1354,14 +1354,14 @@ If no format information is present it is removed. -->
             <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px2sg"/></equal>
           </and></test>
           <let><var n="possessive"/>
-          <concat>
-            <lit v="^ваш"/>
+          <concat><lu>
+            <lit v="ваш"/>
             <lit-tag v="det"/><lit-tag v="pos"/>
            <lit-tag v="mfn"/>
             <var n="animacy"/>
             <clip pos="1" side="tl" part="a_nbr"/>
             <clip pos="1" side="tl" part="a_case"/>
-            <lit v="$ "/>
+            </lu>
           </concat>
           </let>  
         </when>
@@ -1371,14 +1371,14 @@ If no format information is present it is removed. -->
             <equal><clip pos="1" side="sl" part="a_poss"/><lit-tag v="px3sg"/></equal>
           </and></test>
           <let><var n="possessive"/>
-          <concat>
-            <lit v="^его"/>
+          <concat> <lu>
+            <lit v="его"/>
             <lit-tag v="det"/><lit-tag v="pos"/>
             <clip pos="1" side="tl" part="a_gender"/>
             <var n="animacy"/>
             <clip pos="1" side="tl" part="a_nbr"/>
             <clip pos="1" side="tl" part="a_case"/>
-            <lit v="$ "/>
+            </lu>
           </concat>
           </let>  
         </when>
@@ -6325,9 +6325,9 @@ If no format information is present it is removed. -->
                       <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
-                     <lu>
+                     
                     <var n="possessive"/>
-                     </lu>
+                     <b/>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
@@ -6359,6 +6359,7 @@ If no format information is present it is removed. -->
 			<lu>
                     <var n="pronoun"/>
 			</lu>
+<b/>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
@@ -6378,13 +6379,14 @@ If no format information is present it is removed. -->
                     <tags>
                       <tag><lit-tag v="PP"/></tag>
                     </tags>
- <var n="pronoun"/>
+ <lu><var n="pronoun"/></lu>
+<b/>
 <lu> <!-- put VARIABLES into lex units <lu> / AS-->
                     <var n="preposition"/>
 </lu>
 <b/>
 
-                    <lu><var n="possessive"/></lu> <!--what does it produce? tag or word? -->
+                    <var n="possessive"/><b/> <!--what does it produce? tag or word? -->
 
 <!-- need blank space here, I put /AS 10.05.2016-->
 
@@ -6489,9 +6491,9 @@ If no format information is present it is removed. -->
                       <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
- 			<lu>
+ 			
                     <var n="possessive"/>
-</lu>
+<b/>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
@@ -6520,7 +6522,10 @@ If no format information is present it is removed. -->
                       <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
+                    <lu>
                     <var n="pronoun"/>
+                    </lu>
+                      <b/>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
@@ -6540,9 +6545,10 @@ If no format information is present it is removed. -->
                     <tags>
                       <tag><lit-tag v="PP"/></tag>
                     </tags>
-
+<lu>
 <var n="pronoun"/>
-
+</lu>
+<b/>
 
  <lu> <!-- put VARIABLES into lex units <lu> / AS-->
 
@@ -6688,7 +6694,7 @@ If no format information is present it is removed. -->
                     </tags>
 
                     <var n="possessive"/>
-
+                     <b/>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
@@ -6716,8 +6722,9 @@ If no format information is present it is removed. -->
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
                       
-
+<lu>
                    <var n="pronoun"/>
+</lu>
 <b/>
 <lu>
                    <var n="postposition_lu"/>
@@ -6747,8 +6754,8 @@ If no format information is present it is removed. -->
                       <tag><clip pos="1" side="sl" part="a_SYNLABEL"/></tag>
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
-
-                   <var n="pronoun"/>
+			<lu>
+                   <var n="pronoun"/> </lu> <b/>
 
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
@@ -6769,7 +6776,8 @@ If no format information is present it is removed. -->
                       <tag><lit-tag v="PP"/></tag>
                     </tags>
 
-<var n="pronoun"/>
+<lu>
+                   <var n="pronoun"/> </lu> <b/>
 
 
  <lu> <!-- put VARIABLES into lex units <lu> / AS-->
@@ -6818,7 +6826,9 @@ If no format information is present it is removed. -->
                       <tag><lit-tag v="SN"/></tag>
                      
                     </tags>
-                    <var n="possessive"/>
+                    
+                    <var n="possessive"/><b/>
+                    
                      <lu>
   <lit v="без"/>
   <lit-tag v="pr"/>
@@ -6850,7 +6860,7 @@ If no format information is present it is removed. -->
                     <tags>
                       <tag><lit-tag v="SN"/></tag>
                     </tags>
-                    <var n="possessive"/>
+                    <var n="possessive"/> <b/>
                      <lu>
   <lit v="без"/>
   <lit-tag v="pr"/>
@@ -6891,7 +6901,8 @@ If no format information is present it is removed. -->
                       <tag><lit-tag v="PP"/></tag>
                     </tags>
 
-                <var n="pronoun"/>
+<lu>
+                   <var n="pronoun"/> </lu> <b/>
                 <lu> <!-- put VARIABLES into lex units <lu> / AS-->
                   <var n="preposition"/>
                   </lu>
@@ -6935,7 +6946,8 @@ If no format information is present it is removed. -->
                       <tag><lit-tag v="PP"/></tag>
                     </tags>
 
-                <var n="pronoun"/>
+<lu>
+                   <var n="pronoun"/> </lu> <b/>
                 <lu> <!-- put VARIABLES into lex units <lu> / AS-->
                   <var n="preposition"/>
                   </lu>
@@ -7585,8 +7597,8 @@ If no format information is present it is removed. -->
               <tag><clip pos="1" side="sl" part="a_tense"/></tag>
               <tag><clip pos="2" side="sl" part="a_pers"/></tag>
               <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
-              </tags>
-          <var n="negation"/>
+              </tags> <lu>
+          <var n="negation"/></lu><b/>
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
               <clip pos="1" side="tl" part="a_verb"/>
@@ -9740,7 +9752,7 @@ output after:
                     </tags>
 
                     <var n="possessive"/>
-
+<b/>
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
@@ -9765,7 +9777,8 @@ output after:
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
 
-                   <var n="pronoun"/>
+<lu>
+                   <var n="pronoun"/> </lu> <b/>
 
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
@@ -9787,7 +9800,8 @@ output after:
                       <tag><lit-tag v="PP"/></tag>
                     </tags>
 
-<var n="pronoun"/>
+<lu>
+                   <var n="pronoun"/> </lu> <b/>
 
 
  <lu> <!-- put VARIABLES into lex units <lu> / AS-->
@@ -10648,7 +10662,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
             <tags>
               <tag><lit-tag v="VBSER"/></tag>
             </tags>
-            <var n="negation"/>
+            <lu><var n="negation"/></lu><b/>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_verb"/>
@@ -10862,7 +10876,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <tag><clip pos="2" side="sl" part="a_pers"/></tag>
               <tag><clip pos="2" side="sl" part="a_nbr"/></tag>
               </tags>
-          <var n="negation"/>
+          <lu><var n="negation"/></lu><b/>
 
              <lu>
               <lit v="Возможно"/>
@@ -10948,7 +10962,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <tag><clip pos="1" side="sl" part="a_pers"/></tag>
               <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
               </tags>
-          <var n="negation"/>
+          <lu><var n="negation"/></lu><b/>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
              <clip pos="1" side="sl" part="a_verb"/>
@@ -11012,7 +11026,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <tag><clip pos="1" side="sl" part="a_pers"/></tag>
               <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
               </tags>
-          <var n="negation"/>
+          <lu><var n="negation"/></lu><b/>
 
             <lu>
               <clip pos="1" side="tl" part="lemh"/>
@@ -11079,8 +11093,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
                                 <clip pos="1" side="tl" part="whole"/>
             </lu>
-<b/>
-<var n="negation"/>
+<b/><lu>
+<var n="negation"/></lu><b/>
 
              <lu>
               <lit v="быть"/>
@@ -12139,7 +12153,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <chunk name="verb-prc-plan">
             <tags><tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_aspec"/></tag>
-            </tags> <var n="negation"/>
+            </tags> <lu><var n="negation"/></lu><b/>
         
             <lu>
 	      <lit v="собираться"/>
@@ -12172,7 +12186,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <chunk name="verb-fin-fut-plan2">
             <tags><tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_aspec"/></tag>
-            </tags> <var n="negation"/>
+            </tags> <lu><var n="negation"/></lu><b/>
             <lu>
 	      <lit v="собираться"/>
 	      <lit-tag v="vblex"/>
@@ -12199,7 +12213,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <chunk name="verb-fin-fut-plan">
             <tags><tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_aspec"/></tag>
-            </tags> <var n="negation"/>
+            </tags> <lu><var n="negation"/></lu><b/>
             <lu>
 	      <lit v="собираться"/>
 	      <lit-tag v="vblex"/>
@@ -12256,7 +12270,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
           <chunk name="verb-prc-plan-vars">
             <tags><tag><lit-tag v="SV"/></tag>
               <tag><clip pos="1" side="tl" part="a_aspec"/></tag>
-            </tags> <var n="negation"/>
+            </tags> <lu> <var n="negation"/></lu><b/>
         
             <lu>
 	      <lit v="собираться"/>
@@ -12389,8 +12403,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <chunk name="verb-nonfin">  <!-- шақырарлық....     -->
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-                </tags>
-                <var n="negation"/>
+                </tags> <lu>
+                <var n="negation"/></lu><b/>
                 
                 <lu>
                   <clip pos="1" side="tl" part="lemh"/>
@@ -12449,8 +12463,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <chunk name="verb-nonfin-vars">  <!-- шақырарлық....     -->
                 <tags>
                   <tag><lit-tag v="SV"/></tag>
-                </tags>
-                <var n="negation"/>
+                </tags> <lu>
+                <var n="negation"/></lu><b/>
                 
                 <lu>
                   <clip pos="1" side="tl" part="lemh"/>
@@ -12615,7 +12629,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 </lu>
 <b/>
 <var n="possessive"/>
-                    
+               <b/>     
                     <lu>
 		      <clip pos="1" side="tl" part="lem"/>
 		      <clip pos="1" side="tl" part="a_nom"/>
