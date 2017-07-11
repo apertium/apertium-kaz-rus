@@ -33,7 +33,7 @@
       <cat-item tags="n.*"/>
       <cat-item tags="np.*"/>
       <cat-item tags="n.*.*.*"/>
-      <cat-item tags="prn.*"/>
+
       <cat-item tags="prn.obj.*"/>
       <cat-item tags="adj.subst"/>
       <cat-item tags="adj.subst.*"/>

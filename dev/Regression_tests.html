@@ -24,7 +24,7 @@
 
 <script src="http://wiki.apertium.org/w/load.php?debug=false&amp;lang=en&amp;modules=startup&amp;only=scripts&amp;skin=monobook&amp;*"></script>
 <script>if(window.mw){
-mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Kazakh_and_Russian/Regression_tests","wgTitle":"Kazakh and Russian/Regression tests","wgCurRevisionId":63469,"wgArticleId":7236,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Kazakh_and_Russian/Regression_tests","wgRestrictionEdit":[],"wgRestrictionMove":[]});
+mw.config.set({"wgCanonicalNamespace":"","wgCanonicalSpecialPageName":false,"wgNamespaceNumber":0,"wgPageName":"Kazakh_and_Russian/Regression_tests","wgTitle":"Kazakh and Russian/Regression tests","wgCurRevisionId":63493,"wgArticleId":7236,"wgIsArticle":true,"wgAction":"view","wgUserName":null,"wgUserGroups":["*"],"wgCategories":[],"wgBreakFrames":false,"wgPageContentLanguage":"en","wgSeparatorTransformTable":["",""],"wgDigitTransformTable":["",""],"wgRelevantPageName":"Kazakh_and_Russian/Regression_tests","wgRestrictionEdit":[],"wgRestrictionMove":[]});
 }</script><script>if(window.mw){
 mw.loader.implement("user.options",function($){mw.user.options.set({"ccmeonemails":0,"cols":80,"date":"default","diffonly":0,"disablemail":0,"disablesuggest":0,"editfont":"default","editondblclick":0,"editsection":1,"editsectiononrightclick":0,"enotifminoredits":0,"enotifrevealaddr":0,"enotifusertalkpages":1,"enotifwatchlistpages":0,"extendwatchlist":0,"externaldiff":0,"externaleditor":0,"fancysig":0,"forceeditsummary":0,"gender":"unknown","hideminor":0,"hidepatrolled":0,"highlightbroken":1,"imagesize":2,"justify":0,"math":1,"minordefault":0,"newpageshidepatrolled":0,"nocache":0,"noconvertlink":0,"norollbackdiff":0,"numberheadings":0,"previewonfirst":0,"previewontop":1,"quickbar":5,"rcdays":7,"rclimit":50,"rememberpassword":0,"rows":25,"searchlimit":20,"showhiddencats":0,"showjumplinks":1,"shownumberswatching":1,"showtoc":1,"showtoolbar":1,"skin":"monobook","stubthreshold":0,"thumbsize":2,"underline":2,"uselivepreview":0,"usenewrc":0,"watchcreations":0,"watchdefault":0,"watchdeletion":
 0,"watchlistdays":3,"watchlisthideanons":0,"watchlisthidebots":0,"watchlisthideliu":0,"watchlisthideminor":0,"watchlisthideown":0,"watchlisthidepatrolled":0,"watchmoves":0,"wllimit":250,"variant":"en","language":"en","searchNs0":true,"searchNs1":false,"searchNs2":false,"searchNs3":false,"searchNs4":false,"searchNs5":false,"searchNs6":false,"searchNs7":false,"searchNs8":false,"searchNs9":false,"searchNs10":false,"searchNs11":false,"searchNs12":false,"searchNs13":false,"searchNs14":false,"searchNs15":false});;},{},{});mw.loader.implement("user.tokens",function($){mw.user.tokens.set({"editToken":"+\\","watchToken":false});;},{},{});
@@ -51,31 +51,30 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 <li class="toclevel-1 tocsection-1"><a href="#Russian_to_Kazakh"><span class="tocnumber">1</span> <span class="toctext">Russian to Kazakh</span></a>
 <ul>
 <li class="toclevel-2 tocsection-2"><a href="#Noun_phrases_.28SN.29"><span class="tocnumber">1.1</span> <span class="toctext">Noun phrases (SN)</span></a></li>
-<li class="toclevel-2 tocsection-3"><a href="#Prepositional_phrases_.28AdvP.29"><span class="tocnumber">1.2</span> <span class="toctext">Prepositional phrases (AdvP)</span></a></li>
-<li class="toclevel-2 tocsection-4"><a href="#Generating_postpositions"><span class="tocnumber">1.3</span> <span class="toctext">Generating postpositions</span></a></li>
+<li class="toclevel-2 tocsection-3"><a href="#Adjective"><span class="tocnumber">1.2</span> <span class="toctext">Adjective</span></a></li>
+<li class="toclevel-2 tocsection-4"><a href="#Verb"><span class="tocnumber">1.3</span> <span class="toctext">Verb</span></a></li>
+<li class="toclevel-2 tocsection-5"><a href="#Numerals"><span class="tocnumber">1.4</span> <span class="toctext">Numerals</span></a></li>
+<li class="toclevel-2 tocsection-6"><a href="#Prepositional_phrases_.28AdvP.29"><span class="tocnumber">1.5</span> <span class="toctext">Prepositional phrases (AdvP)</span></a></li>
+<li class="toclevel-2 tocsection-7"><a href="#Generating_postpositions"><span class="tocnumber">1.6</span> <span class="toctext">Generating postpositions</span></a></li>
 </ul>
 </li>
-<li class="toclevel-1 tocsection-5"><a href="#Kazakh_to_Russian"><span class="tocnumber">2</span> <span class="toctext">Kazakh to Russian</span></a>
+<li class="toclevel-1 tocsection-8"><a href="#Kazakh_to_Russian"><span class="tocnumber">2</span> <span class="toctext">Kazakh to Russian</span></a>
 <ul>
-<li class="toclevel-2 tocsection-6"><a href="#AdVerb"><span class="tocnumber">2.1</span> <span class="toctext">AdVerb</span></a></li>
-<li class="toclevel-2 tocsection-7"><a href="#Det"><span class="tocnumber">2.2</span> <span class="toctext">Det</span></a></li>
-<li class="toclevel-2 tocsection-8"><a href="#pr_n2"><span class="tocnumber">2.3</span> <span class="toctext">pr_n2</span></a></li>
-<li class="toclevel-2 tocsection-9"><a href="#Noun_phrases_.28pr_n2.29"><span class="tocnumber">2.4</span> <span class="toctext">Noun phrases (pr_n2)</span></a></li>
+<li class="toclevel-2 tocsection-9"><a href="#Noun"><span class="tocnumber">2.1</span> <span class="toctext">Noun</span></a></li>
+<li class="toclevel-2 tocsection-10"><a href="#AdVerb"><span class="tocnumber">2.2</span> <span class="toctext">AdVerb</span></a></li>
+<li class="toclevel-2 tocsection-11"><a href="#Determinal"><span class="tocnumber">2.3</span> <span class="toctext">Determinal</span></a></li>
+<li class="toclevel-2 tocsection-12"><a href="#Preposition"><span class="tocnumber">2.4</span> <span class="toctext">Preposition</span></a></li>
+<li class="toclevel-2 tocsection-13"><a href="#Adjective_2"><span class="tocnumber">2.5</span> <span class="toctext">Adjective</span></a></li>
+<li class="toclevel-2 tocsection-14"><a href="#Numerals_2"><span class="tocnumber">2.6</span> <span class="toctext">Numerals</span></a></li>
+<li class="toclevel-2 tocsection-15"><a href="#Pronoun"><span class="tocnumber">2.7</span> <span class="toctext">Pronoun</span></a></li>
 </ul>
 </li>
 </ul>
 </td></tr></table>
 <h2><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=1" title="Edit section: Russian to Kazakh">edit</a>]</span> <span class="mw-headline" id="Russian_to_Kazakh"> Russian to Kazakh </span></h2>
 <h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=2" title="Edit section: Noun phrases (SN)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28SN.29"> Noun phrases (SN) </span></h3>
-<ul><li> (rus) <i>будет удовлетворять</i> → үйлесетін болады
-</li><li> (rus) <i>самый хороший</i> → ең жақсы
-</li><li> (rus) <i>в саду</i> → бақта
-</li><li> (rus) <i>книга ученика</i> → үйренушінің кітабы
-</li><li> (rus) <i>дом нужен</i> → үй керек
-</li><li> (rus) <i>один человек</i> → бір адам
-</li><li> (rus) <i>одна машина</i> → бір машина
-</li><li> (rus) <i>один человек ушел</i> → бір адам кеткен
-</li></ul>
+<dl><dt>Case for one word
+</dt></dl>
 <ul><li> (rus) <i>дом</i> → үй
 </li><li> (rus) <i>дома</i> → үйлер
 </li><li> (rus) <i>в домах</i> → үйлерде
@@ -83,96 +82,152 @@ mw.loader.load(["mediawiki.page.startup","mediawiki.legacy.wikibits","mediawiki.
 </li><li> (rus) <i>в дом</i> → үйге
 </li><li> (rus) <i>в дома</i> → үйлерге
 </li><li> (rus) <i>с домами</i> → үйлермен
-</li><li> (rus) <i>мой дом</i> → менің үйім
+</li></ul>
+<dl><dt>Koptik zhalgau
+</dt></dl>
+<p><br />
+</p>
+<dl><dt>Zhiktik zhalgau
+</dt></dl>
+<ul><li> (rus) <i>я мальчик</i> → мен баламын
+</li><li> (rus) <i>мы мальчики</i> → біз баламыз
+</li><li> (rus) <i>ты мальчик</i> → сен баласың
+</li><li> (rus) <i>он мальчик</i> → ол бала
+</li></ul>
+<dl><dt>Taueldik zhalgau 
+</dt></dl>
+<ul><li> (rus) <i>мой дом</i> → менің үйім
 </li><li> (rus) <i>твой дом</i> → сенің үйің
 </li><li> (rus) <i>твоя книга</i> → сенің кітабың
 </li><li> (rus) <i>твое дело</i> → сенің ісің
 </li></ul>
-<p><br />
-</p>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=3" title="Edit section: Prepositional phrases (AdvP)">edit</a>]</span> <span class="mw-headline" id="Prepositional_phrases_.28AdvP.29"> Prepositional phrases (AdvP) </span></h3>
-<ul><li> (rus) <i>в саду</i> → бақта
-</li><li> (rus) <i>в хорошем огороде</i> → жақсы бақшада
-</li></ul>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=4" title="Edit section: Generating postpositions">edit</a>]</span> <span class="mw-headline" id="Generating_postpositions"> Generating postpositions </span></h3>
-<ul><li> (rus) <i>под садом</i> → бақтың астында
-</li><li> (rus) <i>над садом</i> → бақтың үстінде
-</li></ul>
-<ul><li> (rus) <i>я скажу</i> → мен айтармын
-</li><li> (rus) <i>мы скажем</i> → біз айтармыз
-</li><li> (rus) <i>ты скажешь</i> → сен айтарсың
-</li><li> (rus) <i>он скажет</i> → ол айтар
+<ul><li> (rus) <i>книга ученика</i> → үйренушінің кітабы
 </li></ul>
 <p><br />
 </p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=3" title="Edit section: Adjective">edit</a>]</span> <span class="mw-headline" id="Adjective"> Adjective </span></h3>
 <ul><li> (rus) <i>хороший мальчик</i> → жақсы бала
 </li><li> (rus) <i>хорошего мальчика</i> → жақсы баланың
 </li><li> (rus) <i>хорошему мальчику</i> → жақсы балаға
 </li><li> (rus) <i>хорошим мальчиком</i> → жақсы баламен
 </li></ul>
+<ul><li> (rus) <i>самый хороший</i> → ең жақсы
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=4" title="Edit section: Verb">edit</a>]</span> <span class="mw-headline" id="Verb"> Verb</span></h3>
+<dl><dt>Verb with pronoun
+</dt></dl>
+<ul><li> (rus) <i>я скажу</i> → мен айтармын
+</li><li> (rus) <i>мы скажем</i> → біз айтармыз
+</li><li> (rus) <i>ты скажешь</i> → сен айтарсың
+</li><li> (rus) <i>он скажет</i> → ол айтар
+</li></ul>
+<ul><li> (rus) <i>дом нужен</i> → үй керек
+</li><li> (rus) <i>будет удовлетворять</i> → үйлесетін болады
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=5" title="Edit section: Numerals">edit</a>]</span> <span class="mw-headline" id="Numerals"> Numerals</span></h3>
+<ul><li> (rus) <i>один человек</i> → бір адам
+</li><li> (rus) <i>одна машина</i> → бір машина
+</li><li> (rus) <i>один человек ушел</i> → бір адам кеткен
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=6" title="Edit section: Prepositional phrases (AdvP)">edit</a>]</span> <span class="mw-headline" id="Prepositional_phrases_.28AdvP.29"> Prepositional phrases (AdvP) </span></h3>
+<ul><li> (rus) <i>в саду</i> → бақта
+</li><li> (rus) <i>в хорошем огороде</i> → жақсы бақшада
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=7" title="Edit section: Generating postpositions">edit</a>]</span> <span class="mw-headline" id="Generating_postpositions"> Generating postpositions </span></h3>
+<ul><li> (rus) <i>под садом</i> → бақтың астында
+</li><li> (rus) <i>над садом</i> → бақтың үстінде
+</li></ul>
 <p><br />
 </p>
-<h2><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=5" title="Edit section: Kazakh to Russian">edit</a>]</span> <span class="mw-headline" id="Kazakh_to_Russian"> Kazakh to Russian </span></h2>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=6" title="Edit section: AdVerb">edit</a>]</span> <span class="mw-headline" id="AdVerb"> AdVerb </span></h3>
-<ul><li> (kaz) <i>ең</i> → очень
-</li><li> (kaz) <i>әдемі</i> → красивый
-</li><li> (kaz) <i>бір үй</i> → один дом
-</li><li> (kaz) <i>алты адам</i> → шесть человек
+<h2><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=8" title="Edit section: Kazakh to Russian">edit</a>]</span> <span class="mw-headline" id="Kazakh_to_Russian"> Kazakh to Russian </span></h2>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=9" title="Edit section: Noun">edit</a>]</span> <span class="mw-headline" id="Noun"> Noun</span></h3>
+<ul><li> (kaz) <i>бала</i> → мальчик
+</li><li> (kaz) <i>баланың</i> → мальчика
+</li><li> (kaz) <i>бақша</i> → огород
 </li></ul>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=7" title="Edit section: Det">edit</a>]</span> <span class="mw-headline" id="Det"> Det </span></h3>
+<p><br />
+</p>
+<dl><dt>Case
+</dt></dl>
+<ul><li> (kaz) <i>үй</i> → дом
+</li><li> (kaz) <i>үйлер</i> → дома
+</li><li> (kaz) <i>үйлердің</i> → домов
+</li><li> (kaz) <i>үйлерді</i> → дома
+</li><li> (kaz) <i>үйлермен</i> → с домами
+</li></ul>
+<p><br />
+</p>
+<dl><dt>Zhikrelu
+</dt></dl>
+<ul><li> (kaz) <i>үйің</i> → дом
+</li><li> (kaz) <i>үйі</i> → дом
+</li><li> (kaz) <i>үйіміз</i> → дом
+</li><li> (kaz) <i>үйлерің</i> → дома
+</li><li> (kaz) <i>үйлеріңіз</i> → дома
+</li><li> (kaz) <i>үйлері</i> →  дома
+</li></ul>
+<dl><dt>Other (Noun+noun)
+</dt></dl>
+<ul><li> (kaz) <i>Мәдинаның кітабы</i> → книга Мадины
+</li><li> (kaz) <i>Мәдинаның кітабындағы бейне</i> → образ в книге Мадины
+</li><li> (kaz) <i>Мәдинаның кітабы туралы</i> → о книге Мадины
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=10" title="Edit section: AdVerb">edit</a>]</span> <span class="mw-headline" id="AdVerb"> AdVerb </span></h3>
+<ul><li> (kaz) <i>ең</i> → очень
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=11" title="Edit section: Determinal">edit</a>]</span> <span class="mw-headline" id="Determinal"> Determinal </span></h3>
 <ul><li> (kaz) <i>мынау</i> → этот
 </li><li> (kaz) <i>мынау үй</i> → этот дом
 </li><li> (kaz) <i>бұл компания</i> → эта компания
 </li></ul>
 <p><br />
 </p>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=8" title="Edit section: pr n2">edit</a>]</span> <span class="mw-headline" id="pr_n2"> pr_n2 </span></h3>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=12" title="Edit section: Preposition">edit</a>]</span> <span class="mw-headline" id="Preposition"> Preposition </span></h3>
 <ul><li> (kaz) <i>мектебі де</i> → школа тоже
 </li><li> (kaz) <i>мектебімдегі де</i> → из моей школы тоже
 </li><li> (kaz) <i>мектептеріңіздей ғана</i> → как ваши школы
 </li><li> (kaz) <i>керек емес</i> → не нужно
-</li><li> (kaz) <i>Ол</i> → Он
-</li><li> (kaz) <i>бақша</i> → огород
-</li><li> (kaz) <i>Мен</i> → Я
-</li><li> (kaz) <i>бала</i> → мальчик
-</li><li> (kaz) <i>ол бала</i> → он мальчик
-</li><li> (kaz) <i>баланың</i> → мальчика
-</li><li> (kaz) <i>үйлердің</i> → домов
-</li><li> (kaz) <i>үйлерді</i> → дома
-</li><li> (kaz) <i>бүгін</i> → сегодня
+</li></ul>
+<p><br />
+</p>
+<ul><li> (kaz) <i>бақшадан кейін</i> → после огорода
+</li></ul>
+<ul><li> (kaz) <i>бүгін</i> → сегодня
 </li><li> (kaz) <i>алайда</i> → однако
 </li></ul>
-<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=9" title="Edit section: Noun phrases (pr n2)">edit</a>]</span> <span class="mw-headline" id="Noun_phrases_.28pr_n2.29"> Noun phrases (pr_n2) </span></h3>
-<ul><li> (kaz) <i>үй</i> → дом
-</li><li> (kaz) <i>үйлер</i> → дома
-</li><li> (kaz) <i>үйің</i> → дом
-</li><li> (kaz) <i>үйі</i> → дом
-</li><li> (kaz) <i>үйіміз</i> → дом
-</li><li> (kaz) <i>үйлерің</i> → дома
-</li><li> (kaz) <i>үйлеріңіз</i> → дома
-</li><li> (kaz) <i>үйлері</i> →  дома
-</li><li> (kaz) <i>үйлермен</i> → с домами
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=13" title="Edit section: Adjective">edit</a>]</span> <span class="mw-headline" id="Adjective_2"> Adjective </span></h3>
+<ul><li> (kaz) <i>әдемі</i> → красивый
+</li><li> (kaz) <i>әдемі үй</i> → красивый дом
+</li></ul>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=14" title="Edit section: Numerals">edit</a>]</span> <span class="mw-headline" id="Numerals_2"> Numerals</span></h3>
+<ul><li> (kaz) <i>бір үй</i> → один дом
+</li><li> (kaz) <i>алты адам</i> → шесть человек
 </li><li> (kaz) <i>бір бақша</i> → один огород
-</li><li> (kaz) <i>бақшадан кейін</i> → после огорода
+</li></ul>
+<p><br />
+</p>
+<h3><span class="editsection">[<a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;action=edit&amp;section=15" title="Edit section: Pronoun">edit</a>]</span> <span class="mw-headline" id="Pronoun"> Pronoun </span></h3>
+<ul><li> (kaz) <i>Мен</i> → Я
+</li><li> (kaz) <i>Ол</i> → Он
 </li><li> (kaz) <i>Ол дәрігер.</i> → Он врач.
+</li><li> (kaz) <i>ол бала</i> → он мальчик
 </li><li> (kaz) <i>Біз дәрігерлерміз.</i> → Мы врачи.
 </li><li> (kaz) <i>Олар дәрігерлер.</i> → Они врачи.
-</li><li> (kaz) <i>Мәдинаның кітабы</i> → книга Мадины
-</li><li> (kaz) <i>Мәдинаның кітабындағы бейне</i> → образ в книге Мадины
-</li><li> (kaz) <i>Мәдинаның кітабы туралы</i> → о книге Мадины
 </li></ul>
 
 <!-- 
 NewPP limit report
-Preprocessor node count: 1242/1000000
-Post‐expand include size: 6926/2097152 bytes
-Template argument size: 2842/2097152 bytes
+Preprocessor node count: 1360/1000000
+Post‐expand include size: 7384/2097152 bytes
+Template argument size: 3035/2097152 bytes
 Expensive parser function count: 0/100
 -->
 
-<!-- Saved in parser cache with key wikidb:pcache:idhash:7236-0!*!*!!en!*!* and timestamp 20170710112540 -->
+<!-- Saved in parser cache with key wikidb:pcache:idhash:7236-0!*!*!!en!*!* and timestamp 20170710185831 -->
 </div><div class="printfooter">
-Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=63469">http://wiki.apertium.org/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=63469</a>"</div>
+Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=63493">http://wiki.apertium.org/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=63493</a>"</div>
 		<div id='catlinks' class='catlinks catlinks-allhidden'></div>		<!-- end content -->
 				<div class="visualClear"></div>
 	</div>
@@ -231,7 +286,7 @@ Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_R
 				<li id="t-recentchangeslinked"><a href="/wiki/Special:RecentChangesLinked/Kazakh_and_Russian/Regression_tests" title="Recent changes in pages linked from this page [k]" accesskey="k">Related changes</a></li>
 				<li id="t-specialpages"><a href="/wiki/Special:SpecialPages" title="A list of all special pages [q]" accesskey="q">Special pages</a></li>
 				<li><a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;printable=yes" rel="alternate">Printable version</a></li>
-				<li id="t-permalink"><a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=63469" title="Permanent link to this revision of the page">Permanent link</a></li>
+				<li id="t-permalink"><a href="/w/index.php?title=Kazakh_and_Russian/Regression_tests&amp;oldid=63493" title="Permanent link to this revision of the page">Permanent link</a></li>
 			</ul>
 		</div>
 	</div>
@@ -245,8 +300,8 @@ Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_R
 		<a href="//www.mediawiki.org/"><img src="/w/skins/common/images/poweredby_mediawiki_88x31.png" alt="Powered by MediaWiki" width="88" height="31" /></a>
 	</div>
 	<ul id="f-list">
-		<li id="lastmod"> This page was last modified on 4 July 2017, at 08:26.</li>
-		<li id="viewcount">This page has been accessed 935 times.</li>
+		<li id="lastmod"> This page was last modified on 10 July 2017, at 20:58.</li>
+		<li id="viewcount">This page has been accessed 950 times.</li>
 		<li id="copyright">Content is available under <a class="external" href="http://www.gnu.org/copyleft/fdl.html">GNU Free Documentation License 1.2</a> unless otherwise noted.</li>
 		<li id="privacy"><a href="/wiki/Apertium:Privacy_policy" title="Apertium:Privacy policy">Privacy policy</a></li>
 		<li id="about"><a href="/wiki/Apertium:About" title="Apertium:About">About Apertium</a></li>
@@ -258,4 +313,4 @@ Retrieved from "<a href="http://wiki.apertium.org/w/index.php?title=Kazakh_and_R
 mw.loader.load(["mediawiki.user","mediawiki.page.ready"], null, true);
 }</script>
 <script src="http://wiki.apertium.org/w/load.php?debug=false&amp;lang=en&amp;modules=site&amp;only=scripts&amp;skin=monobook&amp;*"></script>
-<!-- Served in 0.672 secs. --></body></html>
+<!-- Served in 0.364 secs. --></body></html>

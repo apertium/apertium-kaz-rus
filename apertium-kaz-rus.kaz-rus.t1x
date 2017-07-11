@@ -1747,6 +1747,7 @@ If no format information is present it is removed. -->
             </and>
           </not></test>
           <let><clip pos="1" side="tl" part="a_anim"/><lit-tag v="an"/></let>
+          <let><var n="animacy"/><lit-tag v="an"/></let>
         </when>
       </choose>
     </def-macro>
@@ -6207,7 +6208,7 @@ If no format information is present it is removed. -->
 
 
 
-<!-- SECTION: Noun phrases -->
+<!-- SECTION: Noun phrases 
 <rule comment="RULE:S-J">
 <pattern>
  <pattern-item n="cat_prn"/>
@@ -6223,7 +6224,7 @@ If no format information is present it is removed. -->
  </chunk>
   </out>
  </action>
- </rule> 
+ </rule> -->
 
     <rule comment="REGLA: N">
       <!--
@@ -6722,9 +6723,9 @@ If no format information is present it is removed. -->
 		      <tag><clip pos="1" side="tl" part="a_nbr"/></tag>
                     </tags>
                       
-<lu>
+
                    <var n="pronoun"/>
-</lu>
+
 <b/>
 <lu>
                    <var n="postposition_lu"/>
@@ -9222,9 +9223,9 @@ after:
   <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                   <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
+                   <clip pos="2" side="tl" part="a_gender"/>
+<var n="animacy"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
  <var n="case"/>
                 </lu>
             <b/>
