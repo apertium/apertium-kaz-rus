@@ -5242,7 +5242,12 @@ If no format information is present it is removed. -->
          </when>
 </choose>
 <call-macro n="build-num-lu"><with-param pos="1"/></call-macro> 
- 
+  <choose> <!-- Balzhan for шесть домов - алты үйлер 11.07.2017-->
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let> <clip pos="2" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+         </when>
+</choose> 
         <out>
           <chunk name="num-n_nom"> <!-- 18 мая - 18 мамырдың -->
             <tags><tag><var n="pptag"/></tag></tags>
