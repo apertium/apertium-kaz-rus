@@ -683,6 +683,55 @@
     </rule>
 
 
+<rule comment="NEW RULE:  AdvP VP AdvP NP"> <!-- Aliya 11.07.17 -->
+     <pattern>
+       <pattern-item n="AdvP"/>
+       <pattern-item n="VP"/>
+       <pattern-item n="AdvP"/>
+       <pattern-item n="NP"/>
+     </pattern>
+     <action>
+<call-macro n="change-case-upper">  
+<with-param pos="4"/>
+  </call-macro> 
+      <out>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="4" part="lem"/>
+            <lit-tag v="NP"/>
+            <clip pos="4" part="a_nbr"/>
+            <clip pos="4" part="a_pers"/>
+            <clip pos="4" part="a_possessive"/>
+            <lit-tag v="acc"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <lit-tag v="VP"/>
+            <clip pos="1" part="a_nbr"/>
+            <clip pos="1" part="a_pers"/>
+            <clip pos="2" part="a_tense"/>
+            <clip pos="2" part="a_possessive"/> 
+            <clip pos="2" part="a_neg"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk> 
+      </out>
+     </action>
+    </rule>
+
+
     <rule comment="REGLA: SN">
       <pattern>
         <pattern-item n="NP"/>
