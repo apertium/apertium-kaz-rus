@@ -67,6 +67,7 @@ CORPUS/udp+ru+1435 -text svneol=unset#application/octet-stream
 /apertium-kaz-rus.rus-kaz.t2x -text
 /apertium-kaz-rus.rus-kaz.t3x -text
 /apertium-kaz-rus.rus-kaz.t4x -text
+/apertium-rus-1.0.0.tar.gz -text
 /autogen.sh -text
 /configure.ac -text
 /cover-rus.sh -text
