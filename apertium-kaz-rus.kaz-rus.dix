@@ -2741,10 +2741,10 @@
 <e><p><l>сығымда<s n="v"/><s n="iv"/></l><r>выжимать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>тіміскілен<s n="v"/><s n="iv"/></l><r>выискивать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>домала<s n="v"/><s n="iv"/></l><r>выкатывать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>себ<s n="v"/><s n="iv"/></l><r>осыпать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>себ<s n="v"/><s n="iv"/></l><r>всыпать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
-<e><p><l>себ<s n="v"/><s n="iv"/></l><r>насыпать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
-<e><p><l>себ<s n="v"/><s n="iv"/></l><r>посыпать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>осыпать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>всыпать<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
+<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>насыпать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
+<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>посыпать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>қира<s n="v"/><s n="iv"/></l><r>перебивать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>сұрыпта<s n="v"/><s n="iv"/></l><r>перебирать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
 <e><p><l>су<b/>тартып<b/>шығар<s n="v"/><s n="iv"/></l><r>выкачивать<s n="vblex"/><s n="perf"/><s n="iv"/></r></p><par n="perf__verb"/></e>
@@ -25051,7 +25051,7 @@ VERB1 -->
 <e><p><l>ал<s n="v"/><s n="iv"/></l><r>набрать<s n="vblex"/></r></p></e>
 <e><p><l>бетте<s n="v"/><s n="iv"/></l><r>направлять<s n="vblex"/></r></p></e>
 <e><p><l>еңкейт<s n="v"/><s n="iv"/></l><r>наклонить<s n="vblex"/></r></p></e>
-<e><p><l>себ<s n="v"/><s n="iv"/></l><r>насыпать<s n="vblex"/></r></p></e>
+<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>насыпать<s n="vblex"/></r></p></e>
 <e><p><l>кел<s n="v"/><s n="iv"/></l><r>наступить<s n="vblex"/></r></p></e>
 <e><p><l>сыбырла<s n="v"/><s n="iv"/></l><r>нашептать<s n="vblex"/></r></p></e>
 <e><p><l>бағалама<s n="v"/><s n="iv"/></l><r>недооценить<s n="vblex"/></r></p></e>
@@ -25429,7 +25429,7 @@ VERB1 -->
 <e><p><l>арайландыр<s n="v"/><s n="iv"/></l><r>озорить<s n="vblex"/></r></p></e>
 <e><p><l>дымық<s n="v"/><s n="iv"/></l><r>отсыреть<s n="vblex"/></r></p></e>
 <e><p><l>екшеле<s n="v"/><s n="iv"/></l><r>отобирать<s n="vblex"/></r></p></e>
-<e><p><l>себ<s n="v"/><s n="iv"/></l><r>осыпать<s n="vblex"/></r></p></e>
+<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>осыпать<s n="vblex"/></r></p></e>
 <e><p><l>орналас<s n="v"/><s n="iv"/></l><r>обустроить<s n="vblex"/></r></p></e>
 <e><p><l>тан<s n="v"/><s n="iv"/></l><r>опознать<s n="vblex"/></r></p></e>
 <e><p><l>келемежде<s n="v"/><s n="iv"/></l><r>осмеять<s n="vblex"/></r></p></e>
@@ -26410,7 +26410,7 @@ VERB1 -->
 <e><p><l>асқындат<s n="v"/><s n="iv"/></l><r>перебарщивать<s n="vblex"/></r></p></e>
 <e><p><l>әңгімеле<s n="v"/><s n="iv"/></l><r>повествовать<s n="vblex"/></r></p></e>
 <e><p><l>жау<s n="v"/><s n="iv"/></l><r>посыпать<s n="vblex"/></r></p></e>
-<e><p><l>себ<s n="v"/><s n="iv"/></l><r>посыпать<s n="vblex"/></r></p></e>
+<e><p><l>сеп<s n="v"/><s n="tv"/></l><r>посыпать<s n="vblex"/></r></p></e>
 <e><p><l>қира<s n="v"/><s n="iv"/></l><r>перебивать<s n="vblex"/></r></p></e>
 <e><p><l>сұрыпта<s n="v"/><s n="iv"/></l><r>перебирать<s n="vblex"/></r></p></e>
 <e><p><l>келемежде<s n="v"/><s n="iv"/></l><r>передразнивать<s n="vblex"/></r></p></e>
