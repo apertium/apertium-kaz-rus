@@ -7435,6 +7435,80 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: prep adj and adj noun">      <!-- Aliya 17.07.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="cnjcoo"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="5"/>
+     </call-macro>
+<call-macro n="build-adjec-lu"><with-param pos="2"/></call-macro> 
+<call-macro n="build-adjec-lu1"><with-param pos="4"/></call-macro> 
+ 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-adj-and-adj-n-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="5" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu>
+    		 <clip pos="3" side="tl" part="lem"/> 
+    		 <clip pos="3" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu1"/> </lu> <b/>
+            <lu> 
+               <clip pos="5" side="tl" part="lem"/> 
+               <clip pos="5" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="4"/>
+               <lit-tag v="5"/>
+            </lu><b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-adj-and-adj-n">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="5" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu>
+    		 <clip pos="3" side="tl" part="lem"/> 
+    		 <clip pos="3" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu1"/> </lu> <b/>
+            <lu> 
+               <clip pos="5" side="tl" part="lem"/> 
+               <clip pos="5" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
 
     <rule comment="RULE: DET">    <!-- Aliya 20.06.17 -->
       <pattern>
