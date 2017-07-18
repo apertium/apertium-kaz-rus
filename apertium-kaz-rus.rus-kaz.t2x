@@ -732,6 +732,59 @@
     </rule>
 
 
+<rule comment="NEW RULE:  VP NP NP"> <!-- Aliya 18.07.17 -->
+     <pattern>
+       <pattern-item n="VP"/>
+       <pattern-item n="NP"/>
+       <pattern-item n="NP"/>
+     </pattern>
+     <action>
+    
+ <call-macro n="build-possessive">
+        <with-param pos="2"/> 
+     </call-macro>
+<call-macro n="change-case-upper">  
+<with-param pos="3"/>
+  </call-macro> 
+
+      <out>
+          <chunk>
+            <clip pos="3" part="lem"/>  
+            <lit-tag v="NP"/>
+            <clip pos="3" part="a_nbr"/> <!-- agree number -->
+            <clip pos="3" part="a_pers"/> <!-- agree person -->
+            <clip pos="3" part="a_tense"/> 
+            <var n="possessive"/>
+            <lit-tag v="nom"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+<b/>
+            <chunk>
+            <clip pos="2" part="lem"/>  
+            <lit-tag v="NP"/>
+            <clip pos="2" part="a_nbr"/> <!-- agree number -->
+            <clip pos="2" part="a_pers"/> <!-- agree person -->
+            <clip pos="2" part="a_tense"/>
+            <clip pos="2" part="a_possessive"/>
+            <lit-tag v="acc"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+<b/>
+          <chunk>
+            <clip pos="1" part="lem"/>  
+            <lit-tag v="VP"/>
+            <clip pos="1" part="a_nbr"/> <!-- agree number -->
+            <clip pos="1" part="a_pers"/> <!-- agree person -->
+            <clip pos="1" part="a_tense"/>
+            <clip pos="1" part="a_possessive"/> 
+            <clip pos="1" part="a_neg"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+      </out>
+     </action>
+    </rule>
+
+
     <rule comment="REGLA: SN">
       <pattern>
         <pattern-item n="NP"/>

@@ -1473,6 +1473,28 @@ If no format information is present it is removed. -->
 
 
 
+    <rule comment="RULE: CNJCOO">    <!-- Aliya 18.07.17 -->
+      <pattern>
+        <pattern-item n="cnjcoo"/>
+      </pattern>
+      <action>
+        <out>
+          <chunk name="cnjcoo" case="caseFirstWord">
+            <tags>
+              <tag><lit-tag v="PP"/></tag>
+            </tags>
+            <lu>
+    		 <clip pos="1" side="tl" part="lem"/> 
+    		 <clip pos="1" side="tl" part="a_cnjcoo"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+
+
 
 <rule comment="NEW RULE: adj noun noun-gen">    <!-- Aliya 21.06.17 -->
   <pattern>
@@ -3870,7 +3892,7 @@ If no format information is present it is removed. -->
         <let><var n="case"/><lit-tag v="loc"/></let>
     <out>
     <chunk name="prn_ind-dem-prp">
-      <tags><tag><lit-tag v="NP"/></tag></tags>
+      <tags><tag><lit-tag v="PrnP"/></tag></tags>
         <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
@@ -3884,7 +3906,7 @@ If no format information is present it is removed. -->
         <let><var n="case"/><lit-tag v="acc"/></let>
     <out>
     <chunk name="prn_ind-dem-gen">
-      <tags><tag><lit-tag v="NP"/></tag></tags>
+      <tags><tag><lit-tag v="PrnP"/></tag></tags>
         <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
@@ -3898,7 +3920,7 @@ If no format information is present it is removed. -->
         <let><var n="case"/><lit-tag v="dat"/></let>
     <out>
     <chunk name="prn_ind-dem-dat">
-      <tags><tag><lit-tag v="NP"/></tag></tags>
+      <tags><tag><lit-tag v="PrnP"/></tag></tags>
         <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
@@ -3912,7 +3934,7 @@ If no format information is present it is removed. -->
         <let><var n="case"/><lit-tag v="ins"/></let>
     <out>
     <chunk name="prn_ind-dem-ins">
-      <tags><tag><lit-tag v="NP"/></tag></tags>
+      <tags><tag><lit-tag v="PrnP"/></tag></tags>
         <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
@@ -3924,7 +3946,7 @@ If no format information is present it is removed. -->
       <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
     <out>
     <chunk name="prn_ind-dem-nom">
-      <tags><tag><lit-tag v="NP"/></tag></tags>
+      <tags><tag><lit-tag v="PrnP"/></tag></tags>
         <lu>
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
@@ -7620,6 +7642,43 @@ If no format information is present it is removed. -->
         </out>
       </otherwise>
     </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: adj and adj noun">      <!-- Aliya 18.07.17 -->
+  <pattern>
+    <pattern-item n="adj"/>
+    <pattern-item n="cnjcoo"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+<call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro> 
+<call-macro n="build-adjec-lu1"><with-param pos="3"/></call-macro> 
+ 
+        <out>
+          <chunk name="adj-and-adj-n">
+            <tags> <tag><lit-tag v="NP"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu>
+    		 <clip pos="2" side="tl" part="lem"/> 
+    		 <clip pos="2" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu1"/> </lu> <b/>
+            <lu> 
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="a_nbr"/>
+               <clip pos="4" side="tl" part="a_case"/>
+            </lu>
+          </chunk>
+        </out>
   </action>
 </rule>
 
