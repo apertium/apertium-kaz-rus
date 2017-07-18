@@ -97,6 +97,7 @@
     <def-cat n="defis">
       <cat-item lemma="-х" tags="n.*"/>
       <cat-item lemma="-ом" tags="n.*"/>
+      <cat-item lemma="-ые" tags="n.*"/>
     </def-cat>
     <def-cat n="prep-do">
       <cat-item lemma="до" tags="pr"/>
@@ -1053,20 +1054,10 @@ If no format information is present it is removed. -->
   </choose>
 </def-macro>
 
-
-
-
-
-
-
-
    <def-macro n="choose_case_and_postposition1" npar="1"> 
     <let><var n="pptag"/><lit-tag v="PP"/></let> <!-- for most of them -->
     <let><var n="genpp"/><lit v="no"/></let> <!-- for simple cases -->
-  
-   
-       
-	<choose> 
+  	<choose> 
 	<when>
          <test>
          <and>
@@ -5205,6 +5196,31 @@ If no format information is present it is removed. -->
   </action>
 </rule>
 
+<rule comment="NEW RULE: num noun"> <!-- Balzhan 18.07.2017 -->
+  <pattern>
+    <pattern-item n="num"/>
+    <pattern-item n="defis"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition1">
+        <with-param pos="2"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="1"/></call-macro> 
+        <out>
+          <chunk name="num-defis-n_nom"> <!-- 1880-ые годы - 1880 жылдар -->
+            <tags><tag><var n="pptag"/></tag></tags>
+	<lu><var n="num_lu"/></lu> <b/>
+	<lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="a_nbr"/>
+               <clip pos="3" side="tl" part="a_case"/>
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
 
 <rule comment="NEW RULE: num noun1 noun2"> 
   <pattern>
@@ -5274,6 +5290,7 @@ If no format information is present it is removed. -->
         </out>
   </action>
 </rule>
+
 
 
 <rule comment="NEW RULE: num noun"> 
@@ -5357,11 +5374,11 @@ If no format information is present it is removed. -->
   </action>
 </rule>
 
-<rule comment="NEW RULE: prep V num noun"> <!-- Aliya 18.07.2017 -->
+<rule comment="NEW RULE: prep V num noun"> <!-- Balzhan 18.07.2017 -->
   <pattern>
     <pattern-item n="prep-v"/>
     <pattern-item n="num"/>
-<pattern-item n="defis"/>
+    <pattern-item n="defis"/>
     <pattern-item n="nom"/>
   </pattern>
   <action>
@@ -5386,7 +5403,7 @@ If no format information is present it is removed. -->
 	<lu>
                <clip pos="4" side="tl" part="lem"/> 
                <clip pos="4" side="tl" part="a_nom"/>
-<var n="possessive"/>
+               <var n="possessive"/>
                <clip pos="4" side="tl" part="a_nbr"/> 
                <var n="case"/>   
 	</lu>
