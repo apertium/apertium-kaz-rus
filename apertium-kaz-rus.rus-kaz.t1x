@@ -5451,6 +5451,59 @@ If no format information is present it is removed. -->
 </rule>
 
 
+
+
+<rule comment="NEW RULE: prep V num-num noun"> <!-- Aliya 18.07.2017 -->
+  <pattern>
+    <pattern-item n="prep-v"/>
+    <pattern-item n="num"/>
+    <pattern-item n="defis"/>
+    <pattern-item n="guio"/>
+    <pattern-item n="num"/>
+    <pattern-item n="defis"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="7"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+<call-macro n="build-num-lu1"><with-param pos="5"/></call-macro> 
+ <choose>
+ <when>
+        <test><and>
+		<equal><clip pos="3" side="sl" part="lem"/><lit v="-х"/></equal>
+		<equal><clip pos="6" side="sl" part="lem"/><lit v="-х"/></equal>
+	</and></test>
+        <let><var n="case"/><lit-tag v="loc"/></let> </when>
+<otherwise>
+        <let> <var n="possessive"/><lit-tag v="px3sp"/></let>
+        <let><var n="case"/><lit-tag v="nom"/></let> 
+</otherwise>
+</choose>
+ 
+        <out>
+          <chunk name="prepv-num-defis-2-n"> <!-- В 1921-х—1929-х годах - 1921-1929 жылдар -->
+            <tags><tag><var n="pptag"/></tag></tags>
+	<lu><var n="num_lu"/></lu>
+        <lu>
+               <clip pos="4" side="tl" part="whole"/> 
+        </lu>
+	<lu><var n="num_lu1"/></lu> <b/>
+	<lu>
+               <clip pos="7" side="tl" part="lem"/> 
+               <clip pos="7" side="tl" part="a_nom"/>
+               <var n="possessive"/>
+               <clip pos="7" side="tl" part="a_nbr"/> 
+               <var n="case"/>   
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
 <rule comment="NEW RULE: prep DO num noun"> <!-- Aliya 10.06.2017 -->
   <pattern>
     <pattern-item n="prep-do"/>
