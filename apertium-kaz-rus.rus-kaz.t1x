@@ -94,6 +94,10 @@
     <def-cat n="prep-v">
       <cat-item lemma="в" tags="pr"/>
     </def-cat>
+    <def-cat n="defis">
+      <cat-item lemma="-х" tags="n.*"/>
+      <cat-item lemma="-ом" tags="n.*"/>
+    </def-cat>
     <def-cat n="prep-do">
       <cat-item lemma="до" tags="pr"/>
     </def-cat>
@@ -1419,6 +1423,7 @@ If no format information is present it is removed. -->
 
 
   <section-rules>
+
 
     <rule comment="RULE: SENT">
       <pattern>
@@ -5324,7 +5329,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="NEW RULE: prep V num noun"> <!-- Aliya 10.06.2017 -->
+<rule comment="NEW RULE: prep V num noun"> <!--Aliya 10.06.2017 -->
   <pattern>
     <pattern-item n="prep-v"/>
     <pattern-item n="num"/>
@@ -5338,7 +5343,7 @@ If no format information is present it is removed. -->
 <call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
  
         <out>
-          <chunk name="prep-num-n_nom">  <!-- В 1385 году - 1385 жыл -->
+          <chunk name="prep-num-n_nom">   <!--В 1385 году - 1385 жыл -->
             <tags><tag><var n="pptag"/></tag></tags>
 	<lu><var n="num_lu"/></lu> <b/>
 	<lu>
@@ -5351,6 +5356,46 @@ If no format information is present it is removed. -->
         </out>
   </action>
 </rule>
+
+<rule comment="NEW RULE: prep V num noun"> <!-- Aliya 18.07.2017 -->
+  <pattern>
+    <pattern-item n="prep-v"/>
+    <pattern-item n="num"/>
+<pattern-item n="defis"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="4"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+ <choose>
+ <when>
+        <test><equal><clip pos="3" side="sl" part="lem"/><lit v="-х"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let> </when>
+<otherwise>
+ <let> <var n="possessive"/><lit-tag v="px3sp"/></let>
+        <let><var n="case"/><lit-tag v="nom"/></let> 
+</otherwise>
+</choose>
+        <out>
+          <chunk name="prep-num-defis-n_nom">  <!-- В 1385-х годах - 1385 жылдарда -->
+            <tags><tag><var n="pptag"/></tag></tags>
+	<lu><var n="num_lu"/></lu> <b/>
+	<lu>
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+<var n="possessive"/>
+               <clip pos="4" side="tl" part="a_nbr"/> 
+               <var n="case"/>   
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
 
 
 <rule comment="NEW RULE: prep V num-num noun"> <!-- Aliya 10.06.2017 -->
