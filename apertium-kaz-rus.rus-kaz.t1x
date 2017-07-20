@@ -2577,6 +2577,42 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
+<rule comment="RULE: svoi noun"> <!-- Aliya 20.07.17 -->
+      <pattern>
+        <pattern-item n="prep-v"/>
+        <pattern-item n="svoi-detpos"/>
+        <pattern-item n="nom"/> 
+      </pattern>
+      <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+      </call-macro>
+    <out>
+    <chunk name="v-svoi-noun">
+    <tags> <tag><var n="pptag"/></tag>
+    <tag><clip pos="3" side="tl" part="a_nbr"/></tag> 
+    <tag><var n="possessive"/> </tag> 
+    <tag><clip pos="3" side="tl" part="a_case"/></tag>
+    </tags>
+        <lu>
+          <lit v="өз"/>
+          <lit-tag v="prn.ref"/>
+          <lit-tag v="px3sp"/>
+          <lit-tag v="gen"/>
+        </lu>
+       <b/>
+       <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="px3sp"/>            
+               <lit-tag v="loc"/>       
+    </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
   
 
   
