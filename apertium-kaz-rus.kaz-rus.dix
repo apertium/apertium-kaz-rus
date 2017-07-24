@@ -22866,6 +22866,7 @@ VERB1 -->
 <e><p><l>литвалық<s n="adj"/></l><r>литовский<s n="adj"/></r></p></e>
 <e><p><l>кеңестік<s n="adj"/></l><r>советский<s n="adj"/></r></p></e>
 <e><p><l>посткеңестік<s n="adj"/></l><r>постсоветский<s n="adj"/></r></p></e>
+<e><p><l>әзіл-оспақты<s n="adj"/></l><r>юмористический<s n="adj"/></r></p></e>
 
 <!-- numerals -->
 
@@ -26590,6 +26591,7 @@ VERB1 -->
 <e><p><l>айт<s n="v"/><s n="iv"/></l><r>передавать<s n="vblex"/></r></p></e>
 <e><p><l>жеткіз<s n="v"/><s n="tv"/></l><r>передавать<s n="vblex"/></r></p></e>
 <e><p><l>қалдыр<s n="v"/><s n="tv"/></l><r>передавать<s n="vblex"/></r></p></e>
+<e><p><l>жеткіз<s n="v"/><s n="tv"/></l><r>донести<s n="vblex"/></r></p></e>
 <e><p><l>тарт<s n="v"/><s n="tv"/></l><r>переживать<s n="vblex"/></r></p></e>
 <e><p><l>күйзел<s n="v"/><s n="iv"/></l><r>переживать<s n="vblex"/></r></p></e>
 <e><p><l>күйін<s n="v"/><s n="iv"/></l><r>переживать<s n="vblex"/></r></p></e>
@@ -31769,7 +31771,7 @@ VERB1 -->
 <e>       <p><l>бойынша<s n="post"/></l>               <r>по<s n="pr"/></r></p><par n="__LR_dat"/></e>
 <e>       <p><l>бұрын<s n="post"/></l>                 <r>раньше<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e>       <p><l>бірге<s n="post"/></l>                 <r>вместе<s n="adv"/></r></p></e> <!-- FIXME CHECK -->
-<e>       <p><l>дейін<s n="post"/></l>                 <r>до<s n="pr"/></r></p><par n="__LR_gen"/></e>
+<e>       <p><l>дейін<s n="post"/></l>                 <r>до<s n="pr"/></r></p></e>
 <e>       <p><l>жайында<s n="post"/></l>               <r>о<s n="pr"/></r></p><par n="__LR_prp"/></e>
 <e>       <p><l>жуық<s n="post"/></l>                  <r>около<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e>       <p><l>жөнінде<s n="post"/></l>               <r>о<s n="pr"/></r></p><par n="__LR_prp"/></e>

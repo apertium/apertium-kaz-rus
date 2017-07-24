@@ -82,6 +82,9 @@
     <def-cat n="techenie">
       <cat-item lemma="в течение" tags="adv"/>
     </def-cat>
+    <def-cat n="bolee">
+      <cat-item lemma="более" tags="adv"/>
+    </def-cat>
     <def-cat n="guio">
       <cat-item tags="guio"/>
     </def-cat>
@@ -5404,6 +5407,45 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: prep C num noun"> <!-- Aliya 27.07.2017 -->
+  <pattern>
+    <pattern-item n="prep-c"/>
+    <pattern-item n="num"/>
+    <pattern-item n="defis"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="4"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+ <choose>
+ <when>
+        <test><equal><clip pos="3" side="sl" part="lem"/><lit v="-х"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let> </when>
+<otherwise>
+ <let> <var n="possessive"/><lit-tag v="px3sp"/></let>
+        <let><var n="case"/><lit-tag v="nom"/></let> 
+</otherwise>
+</choose>
+ 
+        <out>
+          <chunk name="prep-num-defis-n_abl"> <!-- С 1918-x годов - 1918 жылдан -->
+            <tags><tag><var n="pptag"/></tag></tags>
+	<lu><var n="num_lu"/></lu> <b/>
+	<lu>
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="a_nbr"/> 
+               <lit-tag v="abl"/>   
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
 <rule comment="NEW RULE: prep V num noun"> <!--Aliya 10.06.2017 -->
   <pattern>
     <pattern-item n="prep-v"/>
@@ -6829,6 +6871,66 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: prep prn">    <!-- Aliya 24.07.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="subj-pron"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="2"/>
+     </call-macro>
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-prn-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+    <lu>
+      <clip pos="2" side="tl" part="lem"/>
+      <clip pos="2" side="tl" part="a_kaz_perspron"/>
+      <clip pos="2" side="tl" part="a_pers"/>
+      <clip pos="2" side="tl" part="a_nbr"/>
+      <lit-tag v="4"/> <!-- possession -->
+      <clip pos="2" side="tl" part="a_case"/>
+    </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-prn">
+            <tags>
+                <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+    <lu>
+      <clip pos="2" side="tl" part="lem"/>
+      <clip pos="2" side="tl" part="a_kaz_perspron"/>
+      <clip pos="2" side="tl" part="a_pers"/>
+      <clip pos="2" side="tl" part="a_nbr"/>
+      <lit-tag v="4"/> <!-- possession -->
+      <clip pos="2" side="tl" part="a_case"/>
+    </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+
 <rule comment="NEW RULE: prep n adj n">    <!-- Aliya 01.07.2017 -->
   <pattern>
     <pattern-item n="prep"/>
@@ -7966,6 +8068,27 @@ If no format information is present it is removed. -->
         </out>
       </action>
     </rule>
+
+
+<rule comment="NEW RULE: adv num">     <!-- Aliya 24.07.17 -->
+  <pattern>
+        <pattern-item n="bolee"/>
+        <pattern-item n="num"/>
+  </pattern>
+  <action>
+   <call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+    <out>
+    <chunk name="bolee-num">
+    <tags> <tag><lit-tag v="AdvP"/></tag> </tags>
+    <lu> <var n="num_lu"/> </lu><b/>
+    <lu>
+          <lit v="астам"/>
+          <lit-tag v="adv"/>	
+   </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
 
 <!--rules from experiment of structural phrase -->
 
