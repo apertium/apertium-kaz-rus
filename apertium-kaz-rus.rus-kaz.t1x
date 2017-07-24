@@ -8156,6 +8156,83 @@ If no format information is present it is removed. -->
   </action>
 </rule>
 
+
+<rule comment="NEW RULE: prep V num-num adj noun"> <!-- Aliya 24.07.2017 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="num"/>
+    <pattern-item n="guio"/>
+    <pattern-item n="num"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+<call-macro n="build-num-lu1"><with-param pos="4"/></call-macro> 
+<call-macro n="build-adjec-lu"><with-param pos="5"/></call-macro> 
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="6"/>
+      </call-macro>
+ 
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="6" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="6" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="6" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="6" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="6" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="loc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="6" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+
+        <out>
+          <chunk name="prepv-num-num-adj-n"> <!-- В 1921—1929 учебном году - 1921-1929 оқу жылында -->
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="6" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+	<lu><var n="num_lu"/></lu>
+        <lu>
+               <clip pos="3" side="tl" part="whole"/> 
+        </lu>
+	<lu><var n="num_lu1"/></lu> <b/>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+	<lu>
+               <clip pos="6" side="tl" part="lem"/> 
+               <clip pos="6" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <lit-tag v="px3sp"/> <!-- for possessive, just in case -->
+               <lit-tag v="5"/> <!-- for case -->
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
+
+
+
 <!--rules from experiment of structural phrase -->
 
 <rule>
