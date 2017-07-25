@@ -8230,6 +8230,56 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: noun noun noun np">   <!-- Aliya 25.07.2017 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-anttopcog"/>
+  </pattern>
+  <action>
+  <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
+
+    <out>
+    <chunk name="n-n-n-np_anttopcog">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+    </tags>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_nbr"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="3" side="tl" part="a_case"/>
+    </lu> <b/>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="px3sp"/>
+     <lit-tag v="gen"/>
+    </lu> <b/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <clip pos="1" side="tl" part="a_nbr"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
 
 
 

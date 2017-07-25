@@ -19454,8 +19454,10 @@ VERB1 -->
 <e><p><l>жарты<b/>сағат<s n="n"/></l><r>полчаса<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>жарты<b/>бағасы<s n="n"/></l><r>полцены<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>жарты<b/>ақы<s n="n"/></l><r>полставки<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+<e><p><l>тарату<s n="n"/></l><r>распространение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>әуе<b/>көлік<s n="n"/></l><r>авиатранспорт<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>тасымал<s n="n"/></l><r>перевозка<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>жұмысбастылық<s n="n"/></l><r>занятость<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 
 
     <!-- Conjunctions -->
@@ -22862,6 +22864,7 @@ VERB1 -->
 <e><p><l>зиялы<s n="adj"/></l><r>интеллигентный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>жеңіл<s n="adj"/></l><r>легковой<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>оқу<s n="adj"/></l><r>учебный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>бейресми<s n="adj"/></l><r>неформальный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>чех<s n="adj"/></l><r>чешский<s n="adj"/></r></p></e>
 <e><p><l>венгр<s n="adj"/></l><r>венгерский<s n="adj"/></r></p></e>
 <e><p><l>литвалық<s n="adj"/></l><r>литовский<s n="adj"/></r></p></e>
@@ -31727,6 +31730,7 @@ VERB1 -->
 <e><p><l>ҚР<s n="np"/><s n="top"/><s n="nom"/></l><r>РК<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>РФ<s n="np"/><s n="top"/><s n="nom"/></l><r>РФ<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>РСФКР<s n="np"/><s n="top"/><s n="nom"/></l><r>РСФСР<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
+<e><p><l>РФ<s n="np"/><s n="top"/><s n="nom"/></l><r>УК<s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>АҚШ<s n="np"/><s n="top"/><s n="nom"/></l><r>США<s n="np"/><s n="top"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 
     <!-- Adpositions -->
