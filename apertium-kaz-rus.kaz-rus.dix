@@ -16825,7 +16825,7 @@ VERB1 -->
 <e><p><l>уикипедияшы<s n="n"/></l><r>википедист<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>ислам<s n="n"/></l><r>ислам<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>сөйлем<s n="n"/></l><r>предложение<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
-<e><p><l>министр<s n="n"/></l><r>министр<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>министр<s n="n"/></l><r>министр<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>cинтаксис<s n="n"/></l><r>cинтаксис<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>етістік<s n="n"/></l><r>глагол<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>сазгер<s n="n"/></l><r>композитор<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -31768,6 +31768,7 @@ VERB1 -->
 <e c="жаныннан"><p><l>жан<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>мимо<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e c="жанында"><p><l>жан<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>у<s n="pr"/></r></p><par n="__LR_gen"/></e>
 
+<e c="алдында"><p><l>алд<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>при<s n="pr"/></r></p></e>
 
 <e r="RL">       <p><l>арқылы<s n="post"/><s n="Rnom"/></l>                <r>через<s n="pr"/></r></p></e>
 <e r="LR">       <p><l>арқылы<s n="post"/></l>                <r>через<s n="pr"/></r></p></e>
@@ -31782,11 +31783,11 @@ VERB1 -->
 <e>       <p><l>бұрын<s n="post"/></l>                 <r>раньше<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e>       <p><l>бірге<s n="post"/></l>                 <r>вместе<s n="adv"/></r></p></e> <!-- FIXME CHECK -->
 <e>       <p><l>дейін<s n="post"/></l>                 <r>до<s n="pr"/></r></p></e>
-<e>       <p><l>жайында<s n="post"/></l>               <r>о<s n="pr"/></r></p><par n="__LR_prp"/></e>
+<e>       <p><l>жайында<s n="post"/></l>        <r>о<s n="pr"/></r></p></e>
+<e>       <p><l>жөнінде<s n="post"/></l>          <r>о<s n="pr"/></r></p></e>
+<e>       <p><l>туралы<s n="post"/></l>             <r>о<s n="pr"/></r></p></e>
 <e>       <p><l>жуық<s n="post"/></l>                  <r>около<s n="pr"/></r></p><par n="__LR_gen"/></e>
-<e>       <p><l>жөнінде<s n="post"/></l>               <r>о<s n="pr"/></r></p><par n="__LR_prp"/></e>
-<e>       <p><l>туралы<s n="post"/></l>               <r>о<s n="pr"/></r></p><par n="__LR_prp"/></e>
-<e>       <p><l>кейін<s n="post"/></l>                 <r>после<s n="pr"/></r></p><par n="__LR_gen"/></e>
+<e>       <p><l>кейін<s n="post"/></l>                  <r>после<s n="pr"/></r></p><par n="__LR_gen"/></e>
 
 <e>       <p><l>қарағанда<s n="post"/></l>             <r>по<b/>сравнению<b/>с<s n="pr"/></r></p><par n="__LR_ins"/></e>
 <e>       <p><l>қарай<s n="post"/></l>                 <r>к<s n="pr"/></r></p><par n="__LR_dat"/></e>
