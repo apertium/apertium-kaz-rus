@@ -22865,6 +22865,12 @@ VERB1 -->
 <e><p><l>жеңіл<s n="adj"/></l><r>легковой<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>оқу<s n="adj"/></l><r>учебный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>бейресми<s n="adj"/></l><r>неформальный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>кеме<b/>жүзетін<s n="adj"/></l><r>судоходный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>басты-басты<s n="adj"/></l><r>важнейший<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>ағылшын<s n="adj"/></l><r>английский<s n="adj"/></r></p></e>
+<e><p><l>араб<s n="adj"/></l><r>арабский<s n="adj"/></r></p></e>
+<e><p><l>испан<s n="adj"/></l><r>испанский<s n="adj"/></r></p></e>
+<e><p><l>азиялық<s n="adj"/></l><r>азиатский<s n="adj"/></r></p></e>
 <e><p><l>чех<s n="adj"/></l><r>чешский<s n="adj"/></r></p></e>
 <e><p><l>венгр<s n="adj"/></l><r>венгерский<s n="adj"/></r></p></e>
 <e><p><l>литвалық<s n="adj"/></l><r>литовский<s n="adj"/></r></p></e>
@@ -31730,7 +31736,6 @@ VERB1 -->
 <e><p><l>ҚР<s n="np"/><s n="top"/><s n="nom"/></l><r>РК<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>РФ<s n="np"/><s n="top"/><s n="nom"/></l><r>РФ<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>РСФКР<s n="np"/><s n="top"/><s n="nom"/></l><r>РСФСР<s n="np"/><s n="top"/><s n="f"/><s n="sg"/></r></p></e>
-<e><p><l>РФ<s n="np"/><s n="top"/><s n="nom"/></l><r>УК<s n="np"/><s n="top"/><s n="m"/><s n="sg"/></r></p></e>
 <e><p><l>АҚШ<s n="np"/><s n="top"/><s n="nom"/></l><r>США<s n="np"/><s n="top"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 
     <!-- Adpositions -->

@@ -633,6 +633,7 @@
   <section-def-vars>
     <def-var n="adjec_lu"/>
     <def-var n="adjec_lu1"/>
+    <def-var n="adjec_lu2"/>
     <def-var n="animacy"/>
     <def-var n="case"/>
     <def-var n="current_verb"/>
@@ -1404,6 +1405,16 @@ If no format information is present it is removed. -->
    <def-macro n="build-adjec-lu1" npar="1"> 
      <let>
            <var n="adjec_lu1"/>
+           <concat>
+             <clip pos="1" side="tl" part="lem"/> 
+               <clip pos="1" side="tl" part="a_adjec"/>
+           </concat>  
+        </let>
+   </def-macro>
+
+   <def-macro n="build-adjec-lu2" npar="1"> 
+     <let>
+           <var n="adjec_lu2"/>
            <concat>
              <clip pos="1" side="tl" part="lem"/> 
                <clip pos="1" side="tl" part="a_adjec"/>
