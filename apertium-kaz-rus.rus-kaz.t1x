@@ -85,6 +85,9 @@
     <def-cat n="bolee">
       <cat-item lemma="более" tags="adv"/>
     </def-cat>
+    <def-cat n="ne-negative">
+      <cat-item lemma="не" tags="adv"/>
+    </def-cat>
     <def-cat n="guio">
       <cat-item tags="guio"/>
     </def-cat>
@@ -3302,6 +3305,195 @@ If no format information is present it is removed. -->
           <clip pos="1" side="tl" part="lem"/>
 	  <clip pos="1" side="tl" part="a_kaz_verb"/>
 	  <clip pos="1" side="tl" part="a_tense"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: negative verb"> <!-- Aliya 31.07.17 -->
+  <pattern>
+    <pattern-item n="ne-negative"/>
+    <pattern-item n="verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+      <when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="pres"/></equal></test>
+        <let><var n="tense"/><lit-tag v="aor"/></let>
+    <out>
+    <chunk name="neg-verb-pres"> <!-- Он не зовет - Ол шақырмайды -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="neg"/>
+          <lit-tag v="4"/>
+          <lit-tag v="5"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+          <lit-tag v="7"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="past"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ifi"/></let>
+    <out>
+    <chunk name="neg-verb-past"> <!-- Он не звал - Ол шақырмаған -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="neg"/>
+	  <clip pos="2" side="tl" part="a_tense"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+    <out>
+    <chunk name="neg-verb-inf"> <!-- не звать - шақырмау -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="neg"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="imp"/></equal></test>
+        <let><var n="tense"/><lit-tag v="imp"/></let>
+    <out>
+    <chunk name="neg-verb-imp"> <!-- не зови - шақырма -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="neg"/>
+          <lit-tag v="imp"/>
+          <lit-tag v="p2"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="pprs"/></equal></test>
+        <let><var n="tense"/><lit-tag v="prc_impf"/></let>
+    <out>
+    <chunk name="neg-verb-pprs"> <!-- не зовя - шақырмай -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="neg"/>
+          <lit-tag v="prc_impf"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="pp"/></equal></test>
+        <let><var n="tense"/><lit-tag v="prc_perf"/></let>
+    <out>
+    <chunk name="neg-verb-pp"> <!-- не звав - шақырмай -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="neg"/>
+          <lit-tag v="prc_perf"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="tense"/><lit-tag v="aor"/></let>
+    <out>
+    <chunk name="neg-verb">
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="neg"/>
+	  <clip pos="2" side="tl" part="a_tense"/>
           <lit-tag v="3"/>
           <lit-tag v="2"/>
         </lu>
