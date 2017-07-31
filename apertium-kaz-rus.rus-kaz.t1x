@@ -222,6 +222,10 @@
       <cat-item lemma="свой" tags="det.pos"/>
       <cat-item lemma="свой" tags="det.pos.*"/>
     </def-cat>
+  <def-cat n="svoi-noun">   
+      <cat-item lemma="свой" tags="n.*"/>
+      <cat-item lemma="свой" tags="n.*.*"/>
+    </def-cat>
   <def-cat n="vseh">
       <cat-item lemma="весь" tags="det.ind.*"/>
       <cat-item lemma="весь" tags="prn.def.*"/>
@@ -2664,7 +2668,7 @@ If no format information is present it is removed. -->
 
 <rule comment="RULE: svoi noun"> <!-- Aliya 20.06.17 -->
       <pattern>
-        <pattern-item n="svoi-detpos"/>
+        <pattern-item n="svoi-noun"/>
         <pattern-item n="nom"/> 
       </pattern>
       <action>
@@ -2696,7 +2700,7 @@ If no format information is present it is removed. -->
 <rule comment="RULE: svoi noun"> <!-- Aliya 20.07.17 -->
       <pattern>
         <pattern-item n="prep-v"/>
-        <pattern-item n="svoi-detpos"/>
+        <pattern-item n="svoi-noun"/>
         <pattern-item n="nom"/> 
       </pattern>
       <action>
@@ -2733,7 +2737,7 @@ If no format information is present it is removed. -->
 <rule comment="NEW RULE: prep svoi noun">   <!-- Aliya 29.07.17 -->
   <pattern>
     <pattern-item n="prep"/>
-    <pattern-item n="svoi-detpos"/>
+    <pattern-item n="svoi-noun"/>
     <pattern-item n="n"/>
   </pattern>
   <action>
@@ -4398,7 +4402,7 @@ If no format information is present it is removed. -->
 
 <rule comment="RULE: svoi"> <!-- Aliya 25.06.17 -->
       <pattern>
-        <pattern-item n="svoi-detpos"/>
+        <pattern-item n="svoi-noun"/>
       </pattern>
       <action>
     <choose>
