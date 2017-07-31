@@ -2862,7 +2862,7 @@ If no format information is present it is removed. -->
       </when></choose>
     <out>
     <chunk name="want-verb">
-      <tags><tag><lit-tag v="NP"/></tag></tags>
+      <tags><tag><lit-tag v="VP"/></tag></tags>
             <lu>
           <clip pos="2" side="tl" part="lem"/>
 	  <clip pos="2" side="tl" part="a_kaz_verb"/>
@@ -2876,6 +2876,118 @@ If no format information is present it is removed. -->
          <lit-tag v="p3"/>
          <lit-tag v="sg"/>
         </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+  
+<rule comment="RULE: want neg verb"> <!-- Aliya 31.07.17-->
+      <pattern>
+    <pattern-item n="ne-negative"/>
+        <pattern-item n="want-rus"/>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+      <choose><when>
+        <test><equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+      </when></choose>
+    <out>
+    <chunk name="want-neg-verb">
+      <tags><tag><lit-tag v="VP"/></tag></tags>
+            <lu>
+          <clip pos="3" side="tl" part="lem"/>
+	  <clip pos="3" side="tl" part="a_kaz_verb"/>
+              <lit-tag v="neg"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="nom"/>
+            </lu><b/>
+        <lu>
+          <lit v="керек"/>
+          <lit-tag v="vaux"/>
+          <lit-tag v="pres"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+ 
+<rule comment="RULE: want byt' verb"> <!-- Aliya 31.07.17-->
+      <pattern>
+        <pattern-item n="want-rus"/>
+    <pattern-item n="byt-past"/>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+      <choose><when>
+        <test><equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+      </when></choose>
+    <out>
+    <chunk name="want-byt-verb">
+      <tags><tag><lit-tag v="VP"/></tag></tags>
+        <lu>
+          <clip pos="3" side="tl" part="lem"/>
+	  <clip pos="3" side="tl" part="a_kaz_verb"/>
+              <lit-tag v="ger"/>
+              <lit-tag v="nom"/>
+        </lu><b/>
+        <lu>
+          <lit v="керек"/>
+          <lit-tag v="vaux"/>
+          <lit-tag v="pres"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu><b/>
+            <lu>
+              <lit v="бол"/>
+              <lit-tag v="v.iv"/>
+              <lit-tag v="gpr_impf"/>
+            </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+ 
+<rule comment="RULE: want byt' neg verb"> <!-- Aliya 31.07.17-->
+      <pattern>
+    <pattern-item n="ne-negative"/>
+        <pattern-item n="want-rus"/>
+        <pattern-item n="byt-past"/>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+      <choose><when>
+        <test><equal><clip pos="4" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+      </when></choose>
+    <out>
+    <chunk name="want-byt-neg-verb">
+      <tags><tag><lit-tag v="VP"/></tag></tags>
+        <lu>
+          <clip pos="4" side="tl" part="lem"/>
+	  <clip pos="4" side="tl" part="a_kaz_verb"/>
+              <lit-tag v="neg"/>
+              <lit-tag v="ger"/>
+              <lit-tag v="nom"/>
+        </lu><b/>
+        <lu>
+          <lit v="керек"/>
+          <lit-tag v="vaux"/>
+          <lit-tag v="pres"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu><b/>
+            <lu>
+              <lit v="бол"/>
+              <lit-tag v="v.iv"/>
+              <lit-tag v="gpr_impf"/>
+            </lu>
     </chunk>
     </out>
       </action>
