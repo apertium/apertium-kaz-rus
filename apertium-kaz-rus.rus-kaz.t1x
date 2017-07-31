@@ -1956,6 +1956,44 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: noun np ant cog">    <!-- Aliya 31.07.17 -->
+  <pattern>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-anttopcog"/>
+  </pattern>
+  <action>
+<call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro> 
+  <call-macro n="select-case"> <with-param pos="3"/> </call-macro>
+
+    <out>
+    <chunk name="adj-n-np_anttopcog">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="3" side="sl" part="a_nbr"/></tag> 
+    <tag><lit-tag v="p3"/></tag> 
+    <tag><lit-tag v="PXD"/></tag> 
+    <tag><lit-tag v="CD"/></tag> 
+    </tags>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b pos="1"/>
+        <lu><var n="adjec_lu"/></lu><b/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="2" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
 <rule comment="NEW RULE: prep noun np ant"> <!-- Aliya 18.06.17 -->
   <pattern>
     <pattern-item n="prep"/>
