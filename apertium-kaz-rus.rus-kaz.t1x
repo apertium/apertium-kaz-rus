@@ -100,6 +100,14 @@
     <def-cat n="prep-v">
       <cat-item lemma="в" tags="pr"/>
     </def-cat>
+    <def-cat n="prep-k">
+      <cat-item lemma="к" tags="pr"/>
+    </def-cat>
+    <def-cat n="num-time">
+      <cat-item lemma="середина" tags="n.*.dat"/>
+      <cat-item lemma="начало" tags="n.*.dat"/>
+      <cat-item lemma="конец" tags="n.*.dat"/>
+    </def-cat>
     <def-cat n="defis">
       <cat-item lemma="-х" tags="n.*"/>
       <cat-item lemma="-ом" tags="n.*"/>
@@ -228,6 +236,7 @@
   <def-cat n="svoi-noun">   
       <cat-item lemma="свой" tags="n.*"/>
       <cat-item lemma="свой" tags="n.*.*"/>
+      <cat-item lemma="свой" tags="prn.pos.*"/>
     </def-cat>
   <def-cat n="vseh">
       <cat-item lemma="весь" tags="det.ind.*"/>
@@ -2297,6 +2306,42 @@ If no format information is present it is removed. -->
 	  <clip pos="3" side="tl" part="a_nom"/>
 	  <clip pos="3" side="tl" part="a_nbr"/>
 	  <clip pos="3" side="tl" part="a_case"/>
+          </lu>
+    </chunk>
+    </out>
+      </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep vseh adj noun"> <!-- на всех ключевых постах - барлық кілттік оразаларда -->  <!-- Aliya 02.08.17 -->
+  <pattern>
+    <pattern-item n="prep-na"/>
+    <pattern-item n="vseh"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+<call-macro n="build-adjec-lu"><with-param pos="3"/></call-macro> 
+
+    <out>
+    <chunk name="na-vseh-adj-noun">
+    <tags>
+    <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="4" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+    </tags>
+        <lu>
+          <lit v="барлық"/>
+          <lit-tag v="det.qnt"/>
+        </lu><b/>
+        <lu><var n="adjec_lu"/></lu><b/>
+	<lu>
+          <clip pos="4" side="tl" part="lem"/>
+	  <clip pos="4" side="tl" part="a_nom"/>
+	  <clip pos="4" side="tl" part="a_nbr"/>
+               <lit-tag v="loc"/>   
           </lu>
     </chunk>
     </out>
@@ -6004,6 +6049,41 @@ If no format information is present it is removed. -->
   </action>
 </rule>
 
+<rule comment="NEW RULE: prep num-time num noun"> <!-- Aliya 02.08.2017 -->
+  <pattern>
+    <pattern-item n="prep-k"/>
+    <pattern-item n="num-time"/>
+    <pattern-item n="num"/>
+    <pattern-item n="defis"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition1">
+        <with-param pos="4"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="3"/></call-macro> 
+        <out>
+          <chunk name="prepk-time-num-defis-n_nom"> <!-- к середине 1980-х годов - 1880 жылдар -->
+            <tags><tag><var n="pptag"/></tag></tags>
+	<lu><var n="num_lu"/></lu> <b/>
+	<lu>
+               <clip pos="5" side="tl" part="lem"/> 
+               <clip pos="5" side="tl" part="a_nom"/>
+               <clip pos="5" side="tl" part="a_nbr"/>
+               <clip pos="5" side="tl" part="a_case"/>
+	</lu> <b/>
+	<lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="a_nbr"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="dat"/>
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
 <rule comment="NEW RULE: num noun1 noun2"> 
   <pattern>
     <pattern-item n="num"/>
@@ -6067,6 +6147,40 @@ If no format information is present it is removed. -->
                <clip pos="2" side="tl" part="a_nom"/>
                <clip pos="2" side="tl" part="a_nbr"/>
                <clip pos="2" side="tl" part="a_case"/>
+	</lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+<rule comment="NEW RULE: prep num-time num noun"> <!-- Aliya 02.08.2017 -->
+  <pattern>
+    <pattern-item n="prep-k"/>
+    <pattern-item n="num-time"/>
+    <pattern-item n="num"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition1">
+        <with-param pos="4"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="3"/></call-macro> 
+        <out>
+          <chunk name="prepk-time-num-n_nom"> <!-- к середине 1980 годов - 1880 жылдар ортасына -->
+            <tags><tag><var n="pptag"/></tag></tags>
+	<lu><var n="num_lu"/></lu> <b/>
+	<lu>
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="a_nbr"/>
+               <clip pos="4" side="tl" part="a_case"/>
+	</lu> <b/>
+	<lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="a_nbr"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="dat"/>
 	</lu>
           </chunk>
         </out>
@@ -9134,20 +9248,59 @@ If no format information is present it is removed. -->
   </action>
 </rule>
 
+<rule comment="RULE: noun ego noun"> <!-- Aliya 02.08.17 -->
+      <pattern>
+        <pattern-item n="n"/> 
+        <pattern-item n="ego-detpos"/>
+        <pattern-item n="nom"/> 
+      </pattern>
+      <action>
+    <out>
+    <chunk name="noun-ego-noun">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="3" side="tl" part="a_nbr"/></tag> 
+    <tag><var n="possessive"/> </tag> 
+    <tag><clip pos="3" side="tl" part="a_case"/></tag>
+    </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu>
+       <b/>
+       <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="px3sp"/>            
+               <clip pos="3" side="tl" part="a_case"/>
+    </lu>
+       <b/>
+       <lu>
+               <clip pos="1" side="tl" part="lem"/> 
+               <clip pos="1" side="tl" part="a_nom"/>
+               <lit-tag v="px3sp"/>            
+               <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
 
 
 
 
 <!--rules from experiment of structural phrase -->
 
-<rule>
+<!--rule>
   <pattern>
     <pattern-item n="CAT__vblex_"/>
   </pattern>
   <action>
     <choose>
       <when>
-<!--7 | Рассказать<vblex><*isvbpron><*graspect><*verbtype><*negative><*verbtime><*activity><p2><*gender><*reltype><*numberat><*isbadv> | Мен<prn><pers><(000negative><p1><(000gender><(000reltype><(000numberat><dat> | 0:0 | <v><empty_tag_issepverb><empty_tag_derivation><empty_tag_mood><p2><empty_tag_form><empty_tag_possessive><empty_tag_attruse><empty_tag_case>-->
         <test>
         <and>
            <and>
@@ -9196,7 +9349,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule1"/></lu></out></when>
-      <when><!--6 | Мыть<vblex><*isvbpron><*graspect><*verbtype><*negative><*verbtime><*activity><empty_tag_person><*gender><*reltype><empty_tag_numberat><*isbadv> | Мен<prn><pers><(000negative><p1><(000gender><(000reltype><sg><gen> | 0:0 | <vblex><empty_tag_person><empty_tag_numberat>-->
+      <when>
         <test>
         <and>
            <and>
@@ -9241,8 +9394,6 @@ If no format information is present it is removed. -->
       </out>
 <out><lu><lit v="*executedtule2"/></lu></out></when>
       <otherwise>
-<!--Word-for-word translation-->
- <!--       <reject-current-rule shifting="no" />  -->
 <out><chunk name="any" case="caseFirstWord">
 <tags>             
 <tag>
@@ -9263,24 +9414,22 @@ If no format information is present it is removed. -->
 </otherwise>
     </choose>
   </action>
-</rule>
+</rule-->
 
-<rule>
+<!--rule>
   <pattern>
     <pattern-item n="CAT__vblex_"/>
     <pattern-item n="CAT__adv_"/>
   </pattern>
   <action>
     <choose>
-      <when><!--2 | занять<vblex><*isvbpron><*graspect><*verbtype><*negative><*verbtime><*activity><*person><*gender><*reltype><*numberat><*isbadv> несколько<adv><*advtype><empty_tag_advtype><*attruse> | бірнеше<det><qnt><(000gender><(000reltype><(000numberat> | 0:0 1:0 | <vblex> <adv><empty_tag_advtype>-->
+      <when>
         <test>
         <and>
-    <!--       <and>  -->
             <begins-with>
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="vblex"/>
             </begins-with>
-       <!--    </and> -->
             <or>            <equal>
               <clip pos="1" side="sl" part="lem" />
               <lit v="занять"/>
@@ -9333,8 +9482,6 @@ If no format information is present it is removed. -->
           <with-param pos="2"/>
         </call-macro>
 <out><lu><lit v="*executedtule3"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
- <!--       <reject-current-rule shifting="no" />  -->
 <out><chunk name="any" case="caseFirstWord">
 <tags>             
 <tag><lit-tag v="LRN"/></tag>       
@@ -9347,7 +9494,7 @@ If no format information is present it is removed. -->
 </otherwise>
     </choose>
   </action>
-</rule>
+</rule-->
 
 
 <rule>

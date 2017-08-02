@@ -22867,6 +22867,7 @@ VERB1 -->
 <e><p><l>кеме<b/>жүзетін<s n="adj"/></l><r>судоходный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>басты-басты<s n="adj"/></l><r>важнейший<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>отан<s n="adj"/></l><r>отечественный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>кілттік<s n="adj"/></l><r>ключевой<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ағылшын<s n="adj"/></l><r>английский<s n="adj"/></r></p></e>
 <e><p><l>араб<s n="adj"/></l><r>арабский<s n="adj"/></r></p></e>
 <e><p><l>испан<s n="adj"/></l><r>испанский<s n="adj"/></r></p></e>
@@ -31057,7 +31058,7 @@ VERB1 -->
 
 
 <!-- adverbs -->
-<e><p><l><s n="adv"/></l><r>вплоть<s n="adv"/></r></p></e>
+<e><p><l></l><r>вплоть<s n="adv"/></r></p></e>
 <e><p><l>шамамен<s n="adv"/></l><r>примерно<s n="adv"/></r></p></e>
 <e><p><l>сонымен<b/>қатар<s n="adv"/></l><r>также<s n="adv"/></r></p></e>
 <e><p><l>неғұрлым<s n="adv"/></l><r>чем<s n="adv"/></r></p></e>
@@ -32394,6 +32395,7 @@ VERB1 -->
 <e>       <p><l>Осетия<s n="np"/><s n="top"/></l>      <r>Осетия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Португалия<s n="np"/><s n="top"/></l>  <r>Португалия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Ресей<s n="np"/><s n="top"/></l>      <r>Россия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e>       <p><l>Орыс<s n="np"/><s n="top"/></l>      <r>Русь<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Румыния<s n="np"/><s n="top"/></l>     <r>Румыния<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Сербия<s n="np"/><s n="top"/></l>      <r>Сербия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Сирия<s n="np"/><s n="top"/></l>       <r>Сирия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
