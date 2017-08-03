@@ -8858,6 +8858,10 @@ VERB1 -->
 <e><p><l>сүмбілеу<s n="n"/></l><r>катетеризация<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>біліктілік<s n="n"/></l><r>квалификация<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>мамандық<s n="n"/></l><r>квалификация<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>математика<s n="n"/></l><r>математика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>физика<s n="n"/></l><r>физика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
+<e><p><l>француз<s n="n"/></l><r>француз<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
+<e><p><l>физиолог<s n="n"/></l><r>физиолог<s n="n"/><s n="m"/><s n="aa"/></r></p></e>
 <e><p><l>саралау<s n="n"/></l><r>квалификация<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>киноландыру<s n="n"/></l><r>кинофикация<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>климатография<s n="n"/></l><r>климатография<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -15656,6 +15660,7 @@ VERB1 -->
 <e><p><l>мәртебе<s n="n"/></l><r>достоинство<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>мәселе<s n="n"/></l><r>проблема<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>мәслихат<s n="n"/></l><r>заседание<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+<e><p><l>медицина<s n="n"/></l><r>медицина<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>мезгіл<s n="n"/></l><r>момент<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>мейрам<s n="n"/></l><r>праздник<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>мейрамхана<s n="n"/></l><r>ресторан<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -18201,7 +18206,6 @@ VERB1 -->
 <e><p><l>гептагон<s n="n"/></l><r>гептагон<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>геохронология<s n="n"/></l><r>геохронология<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>генетика<s n="n"/></l><r>генетика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<e><p><l>геофизика<s n="n"/></l><r>геофизика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>графика<s n="n"/></l><r>графика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>геология<s n="n"/></l><r>геология<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>геноцид<s n="n"/></l><r>геноцид<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -18254,7 +18258,6 @@ VERB1 -->
 <e><p><l>гептагон<s n="n"/></l><r>гептагон<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>геохронология<s n="n"/></l><r>геохронология<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>генетика<s n="n"/></l><r>генетика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
-<e><p><l>геофизика<s n="n"/></l><r>геофизика<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>геология<s n="n"/></l><r>геология<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>генотип<s n="n"/></l><r>генотип<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>геодезия<s n="n"/></l><r>геодезия<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -31056,7 +31059,7 @@ VERB1 -->
 
 
 <!-- adverbs -->
-<e><p><l></l><r>вплоть<s n="adv"/></r></p></e>
+
 <e><p><l>шамамен<s n="adv"/></l><r>примерно<s n="adv"/></r></p></e>
 <e><p><l>сонымен<b/>қатар<s n="adv"/></l><r>также<s n="adv"/></r></p></e>
 <e><p><l>неғұрлым<s n="adv"/></l><r>чем<s n="adv"/></r></p></e>
@@ -31722,7 +31725,6 @@ VERB1 -->
 <e><p><l>ЕҚЫҰ<s n="n"/><s n="acr"/></l><r>ОБСЕ<s n="abbr"/></r></p></e>
 <e><p><l>БҰҰ<s n="np"/><s n="org"/><s n="attr"/></l><r>ООН<s n="np"/><s n="org"/></r></p></e>
 <e><p><l>ТМД<s n="n"/><s n="acr"/></l><r>СНГ<s n="abbr"/></r></p></e>
-<e><p><l>КСРО<s n="n"/><s n="acr"/></l><r>СССР<s n="abbr"/></r></p></e>
 <e><p><l>см<s n="abbr"/></l><r>см<s n="abbr"/></r></p></e>
 <e><p><l>г<s n="n"/><s n="acr"/></l><r>г<s n="abbr"/></r></p></e>
 <e><p><l>http<s n="n"/><s n="acr"/></l><r>http<s n="abbr"/></r></p></e>
@@ -32257,6 +32259,7 @@ VERB1 -->
 <e><p><l>Орал<s n="np"/><s n="top"/></l><r>Урал<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Кенигсберг<s n="np"/><s n="top"/></l><r>Кёнигсберг<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Бангладеш<s n="np"/><s n="top"/></l><r>Бангладеш<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
+<e><p><l>Баңладеш<s n="np"/><s n="top"/></l><r>Бангладеш<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Сахалин<s n="np"/><s n="top"/></l><r>Сахалин<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Эсбьерг<s n="np"/><s n="top"/></l><r>Эсбьерг<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Бранденбург<s n="np"/><s n="top"/></l><r>Бранденбург<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
@@ -32338,7 +32341,9 @@ VERB1 -->
 <e>       <p><l>Александрия<s n="np"/><s n="top"/></l> <r>Александрия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Англия<s n="np"/><s n="top"/></l>      <r>Англия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Армения<s n="np"/><s n="top"/></l>   <r>Армения<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e>       <p><l>Африка<s n="np"/><s n="top"/></l>   <r>Африка<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Еуразия<s n="np"/><s n="top"/></l>     <r>Евразия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e>       <p><l>Еңбекшіқазақ<s n="np"/><s n="top"/></l>     <r>Енбекшиказах<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Беларуссия<s n="np"/><s n="top"/></l>   <r>Белоруссия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Бельгия<s n="np"/><s n="top"/></l>     <r>Бельгия<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Болгария<s n="np"/><s n="top"/></l>    <r>Болгария<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
@@ -32424,10 +32429,11 @@ VERB1 -->
 <e>       <p><l>Алакөл<s n="np"/><s n="top"/></l>      <r>Алакол<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Зайсан<s n="np"/><s n="top"/></l>      <r>Зайсан<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e>       <p><l>Балқаш<s n="np"/><s n="top"/></l>      <r>Балхаш<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
-
+<e><p><l>КСРО<s n="np"/><s n="top"/></l><r>СССР<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 
 <!-- Anthroponyms -->
 <e><p><l>Айбек<s n="np"/><s n="ant"/><s n="m"/></l><r>Айбек<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+<e><p><l>Александр<s n="np"/><s n="ant"/><s n="m"/></l><r>Александр<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Мәдина<s n="np"/><s n="ant"/><s n="f"/></l><r>Мадина<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
 <e><p><l>Алма<s n="np"/><s n="ant"/><s n="f"/></l><r>Алма<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
 <e><p><l>Балжан<s n="np"/><s n="ant"/><s n="f"/></l><r>Балжан<s n="np"/><s n="ant"/><s n="f"/><s n="sg"/></r></p></e>
@@ -32447,6 +32453,7 @@ VERB1 -->
 <e><p><l>Нұрмыхан<s n="np"/><s n="ant"/><s n="m"/></l><r>Нурмыхан<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Нейман<s n="np"/><s n="ant"/><s n="m"/></l><r>Нейман<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Насх<s n="np"/><s n="ant"/><s n="m"/></l><r>Насх<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
+<e><p><l>Нобель<s n="np"/><s n="ant"/><s n="m"/></l><r>Нобель<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Мұстафа<s n="np"/><s n="ant"/><s n="m"/></l><r>Мустафа<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Мирабо<s n="np"/><s n="ant"/><s n="m"/></l><r>Мирабо<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Мин<s n="np"/><s n="ant"/><s n="m"/></l><r>Мин<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
@@ -33172,12 +33179,12 @@ zloy_zhake
 <e r="RL"><p><l></l><r>-х<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e r="RL"><p><l></l><r>-ом<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e r="RL"><p><l></l><r>-ые<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
-
+<!-- <e><p><l></l><r>вплоть<s n="adv"/></r></p></e> -->
 <!-- Words from Akbota -->
 
 <e><p><l>археологиялық<s n="adj"/></l><r>археологочический<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>Кведлинбургтік<s n="adj"/></l><r>Кведлинбургский<s n="adj"/><s n="sint"/></r></p></e>
-<e>       <p><l>Ливония<s n="np"/><s n="top"/></l>     <r>Ливония<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e><p><l>Ливония<s n="np"/><s n="top"/></l><r>Ливония<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e><p><l>крев<s n="adj"/></l><r>кревский<s n="adj"/></r></p></e>
 <e><p><l>Ягеллонов<s n="np"/><s n="cog"/><s n="m"/></l><r>Ягеллонов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Люблин<s n="np"/><s n="top"/></l><r>Люблин<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
@@ -33190,8 +33197,8 @@ zloy_zhake
 <e><p><l>орал-моңғолдық<s n="adj"/></l><r>урало-монгольский<s n="adj"/></r></p></e>
 <e><p><l>шығыс<b/>литвалық<s n="adj"/></l><r>восточнолитовский<s n="adj"/></r></p></e>
 <e><p><l>Бруно<s n="np"/><s n="ant"/><s n="m"/></l><r>Бруно<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
-<e>       <p><l>Летавка<s n="np"/><s n="top"/></l>      <r>Летавка<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
-<e>       <p><l>Няриса<s n="np"/><s n="top"/></l>      <r>Няриса<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e><p><l>Летавка<s n="np"/><s n="top"/></l><r>Летавка<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e><p><l>Няриса<s n="np"/><s n="top"/></l><r>Няриса<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e><p><l>Миндовг<s n="np"/><s n="ant"/><s n="m"/></l><r>Миндовг<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Гедиминович<s n="np"/><s n="cog"/><s n="m"/></l><r>Гедиминович<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>грюнвальдық<s n="adj"/></l><r>грюнвальдский<s n="adj"/></r></p></e>
