@@ -324,6 +324,15 @@
       <cat-item tags="vblex.perf.*.*"/>
       <cat-item tags="vblex.perf.*.*.*"/>
     </def-cat> 
+
+    <def-cat n="verb-pprs"> <!-- for verbs -->
+      <cat-item tags="vblex.impf.*.pprs.*"/>
+      <cat-item tags="vblex.perf.*.pprs.*"/>
+    </def-cat> 
+    <def-cat n="verb-past"> <!-- for verbs -->
+      <cat-item tags="vblex.impf.*.past.*"/>
+      <cat-item tags="vblex.perf.*.past.*"/>
+    </def-cat> 
    <def-cat n="v-pp_pprs"> <!-- for verbs -->
       <cat-item tags="vblex.pp.*"/>
       <cat-item tags="vblex.pp.*.*"/>
@@ -1937,6 +1946,55 @@ If no format information is present it is removed. -->
      <clip pos="3" side="tl" part="a_nom"/>
      <clip pos="3" side="tl" part="a_gender"/>
      <clip pos="3" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+
+<rule comment="NEW RULE: noun np ant cog ant">    <!-- Aliya 05.08.17 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="np-ant"/>
+    <pattern-item n="np-cog"/>
+    <pattern-item n="np-ant"/>
+  </pattern>
+  <action>
+  <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
+
+    <out>
+    <chunk name="noun-np-ant_cog_ant">       <!-- князю Александру Ярославичу Невскому - князь Александр Ярославич Невскийге -->
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> 
+    <tag><lit-tag v="p3"/></tag> 
+    <tag><lit-tag v="PXD"/></tag> 
+    <tag><lit-tag v="CD"/></tag> 
+    </tags>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu><b pos="1"/>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_gender"/>
+     <clip pos="4" side="tl" part="a_case"/>
     </lu>
     </chunk>
     </out>
@@ -6362,6 +6420,70 @@ If no format information is present it is removed. -->
 
 
 
+<rule comment="NEW RULE: noun num-num noun"> <!-- Aliya 18.07.2017 -->
+  <pattern>
+    <pattern-item n="nom"/>
+    <pattern-item n="num"/>
+    <pattern-item n="defis"/>
+    <pattern-item n="guio"/>
+    <pattern-item n="num"/>
+    <pattern-item n="defis"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="7"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+<call-macro n="build-num-lu1"><with-param pos="5"/></call-macro> 
+ <choose>
+ <when>
+        <test><and>
+		<equal><clip pos="3" side="sl" part="lem"/><lit v="-х"/></equal>
+		<equal><clip pos="6" side="sl" part="lem"/><lit v="-х"/></equal>
+	</and></test>
+        <let><var n="case"/><lit-tag v="loc"/></let> </when>
+<otherwise>
+        <let> <var n="possessive"/><lit-tag v="px3sp"/></let>
+        <let><var n="case"/><lit-tag v="nom"/></let> 
+</otherwise>
+</choose>
+ 
+        <out>
+          <chunk name="n-num-defis-2-n"> <!-- реформы 1860-х — 1870-х годов - 1860—1870 жылдардың реформасы -->
+            <tags><tag><var n="pptag"/></tag>
+    <tag><clip pos="7" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+	<lu><var n="num_lu"/></lu>
+        <lu>
+               <clip pos="4" side="tl" part="whole"/> 
+        </lu>
+	<lu><var n="num_lu1"/></lu> <b/>
+	<lu>
+               <clip pos="7" side="tl" part="lem"/> 
+               <clip pos="7" side="tl" part="a_nom"/>
+               <clip pos="7" side="tl" part="a_nbr"/> 
+               <clip pos="7" side="tl" part="a_case"/> 
+	</lu> <b/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <clip pos="1" side="tl" part="a_nbr"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
+
+
 
 <rule comment="NEW RULE: prep V num-num noun"> <!-- Aliya 10.06.2017 -->
   <pattern>
@@ -8274,7 +8396,50 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="NEW RULE: det noun">  <!-- 19.05.2016 tolyk durys emes--> 
+<rule comment="NEW RULE: np and adj noun"> <!-- СССР и социалистические страны - КСРО мен социалистік елдер -->   <!-- Aliya 05.08.17 -->
+  <pattern>
+    <pattern-item n="np-anttopcog"/>
+    <pattern-item n="cnjcoo"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+<call-macro n="build-adjec-lu"><with-param pos="3"/></call-macro> 
+
+    <out>
+    <chunk name="np-and-adj-noun">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="4" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+	<lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_nom"/>
+	  <clip pos="1" side="tl" part="a_gender"/>
+	  <clip pos="1" side="tl" part="a_case"/>
+          </lu><b/>
+            <lu>
+    		 <clip pos="2" side="tl" part="lem"/> 
+    		 <clip pos="2" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+        <lu><var n="adjec_lu"/></lu><b/>
+	<lu>
+          <clip pos="4" side="tl" part="lem"/>
+	  <clip pos="4" side="tl" part="a_nom"/>
+	  <clip pos="4" side="tl" part="a_nbr"/>
+	  <clip pos="4" side="tl" part="a_case"/>
+          </lu>
+    </chunk>
+    </out>
+      </action>
+</rule>
+
+
+
+<!-- 19.05.2016 tolyk durys emes-->
+<!--rule comment="NEW RULE: det noun">   
   <pattern>
     <pattern-item n="det"/>
     <pattern-item n="nom"/>
@@ -8307,10 +8472,10 @@ If no format information is present it is removed. -->
     <out>
     <chunk name="detdem-nom"  case="caseFirstWord">
     <tags> <tag><lit-tag v="NP"/></tag>
-    <tag><clip pos="2" side="tl" part="a_nbr"/></tag> <!-- number placeholder -->
-    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-    <tag><var n="possessive"/></tag> <!-- possessor placeholder -->
-    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    <tag><clip pos="2" side="tl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><var n="possessive"/></tag> 
+    <tag><lit-tag v="CD"/></tag>
     </tags>
       <lu>
       <clip pos="1" side="tl" part="lem"/>
@@ -8330,9 +8495,9 @@ If no format information is present it is removed. -->
     <chunk name="detpos-nom" case="caseFirstWord">
     <tags> <tag><lit-tag v="NP"/></tag>
 	<tag><var n="possessive"/></tag> 
-	<tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-	<tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
-	<tag><var n="case"/></tag> <!-- case placeholder -->
+	<tag><lit-tag v="p3"/></tag>
+	<tag><clip pos="2" side="sl" part="a_nbr"/></tag> 
+	<tag><var n="case"/></tag> 
 	<tag><lit-tag v="CD"/></tag>  
     </tags>
     <lu>
@@ -8354,10 +8519,10 @@ If no format information is present it is removed. -->
     <out>
     <chunk name="detart-nom">
     <tags> <tag><lit-tag v="NP"/></tag>
-	<tag><clip pos="2" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
-	<tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
-	<tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
-	<tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+	<tag><clip pos="2" side="sl" part="a_nbr"/></tag> 
+	<tag><lit-tag v="p3"/></tag> 
+	<tag><lit-tag v="PXD"/></tag>
+	<tag><lit-tag v="CD"/></tag> 
     </tags>
     <lu>
 	<clip pos="1" side="tl" part="lem"/>
@@ -8378,7 +8543,7 @@ If no format information is present it is removed. -->
   </otherwise>
 </choose>
   </action>
-</rule>
+</rule-->
 
 
 <rule comment="NEW RULE: np ant noun"> <!-- Aliya 18.06.2017 -->
@@ -8717,6 +8882,93 @@ If no format information is present it is removed. -->
     </out>
   </action>
 </rule>
+
+
+<rule comment="NEW RULE: prep noun 2 np_anttopcog">   <!-- Aliya 05.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-anttopcog"/>
+    <pattern-item n="np-anttopcog"/>
+  </pattern>
+  <action>
+     <call-macro n="select-case"> <with-param pos="2"/> </call-macro>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="2"/>
+     </call-macro> 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-n-2np_anttopcog-post2">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu> <b/>
+            <lu> 
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="px3sp"/><!-- for possessive, just in case -->
+               <lit-tag v="5"/>
+            </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-n-2np_anttopcog">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>    
+                <tag><lit-tag v="NP"/></tag>   
+            </tags>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu> <b/>
+            <lu> 
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="px3sp"/><!-- for possessive, just in case -->
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
 
 
 <rule comment="NEW RULE: prep noun noun np_anttopcog">   <!-- Aliya 04.08.17 -->
@@ -9818,7 +10070,7 @@ If no format information is present it is removed. -->
 
 <rule comment="NEW RULE: verb verb"> <!-- Aliya 04.08.17 -->
   <pattern>
-    <pattern-item n="verb"/>
+    <pattern-item n="verb-past"/>
     <pattern-item n="verb"/>
   </pattern>
   <action>
@@ -9832,7 +10084,7 @@ If no format information is present it is removed. -->
       </when>
     </choose>
     <out>
-    <chunk name="verb-past+verb-inf"> <!-- предпочитали оставаться - Ол шақырған -->
+    <chunk name="verb-past+verb-inf"> <!-- предпочитали оставаться - қалуды жақтады -->
       <tags>
         <tag><lit-tag v="VP"/></tag>
         <tag><lit-tag v="ND"/></tag> <!-- number -->
@@ -9857,6 +10109,89 @@ If no format information is present it is removed. -->
         </lu>
     </chunk>
     </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: verb verb"> <!-- Aliya 05.08.17 -->
+  <pattern>
+    <pattern-item n="verb-pprs"/>
+    <pattern-item n="verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+      <when>
+        <test><and><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pprs"/></equal>
+				    <equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></and></test>
+           <let><clip pos="2" side="tl" part="a_tense"/><lit-tag v="ger"/></let>
+      </when>
+    </choose>
+    <out>
+    <chunk name="verb-pprs+verb-inf"> <!-- стремящейся определять - белгілеуге тырысатын -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="dat"/>
+        </lu><b/>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="gpr_impf"/>
+        </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: adj noun and noun">      <!-- Aliya 05.08.17 -->
+  <pattern>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+    <pattern-item n="cnjcoo"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+<call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro> 
+ 
+        <out>
+          <chunk name="adj-n-and-n">
+            <tags> <tag><lit-tag v="NP"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu> 
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="a_nbr"/>
+               <clip pos="2" side="tl" part="a_case"/>
+            </lu><b/>
+            <lu>
+    		 <clip pos="3" side="tl" part="lem"/> 
+    		 <clip pos="3" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu> 
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="a_nbr"/>
+               <clip pos="4" side="tl" part="a_case"/>
+            </lu>
+          </chunk>
+        </out>
   </action>
 </rule>
 
