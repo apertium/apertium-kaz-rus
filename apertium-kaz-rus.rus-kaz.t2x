@@ -984,6 +984,32 @@
      </action>
     </rule>
 
+<rule comment="NEW RULE:  PP NP VP AdvP"> <!-- Aliya 05.08.17 -->
+     <pattern>
+       <pattern-item n="PP"/>
+       <pattern-item n="NP"/>
+     </pattern>
+     <action>
+<call-macro n="change-case-upper">  
+<with-param pos="1"/>
+  </call-macro> 
+
+      <out>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="tags"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+      </out>
+     </action>
+    </rule>
+
 
     <rule comment="REGLA: SN">
       <pattern>
