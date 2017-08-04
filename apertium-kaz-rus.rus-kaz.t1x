@@ -79,6 +79,10 @@
       <cat-item tags="n.gen"/>
       <cat-item tags="n.*.*.*.gen"/>
     </def-cat>
+    <def-cat n="kajdyi">
+      <cat-item lemma="каждый" tags="det.def"/>
+      <cat-item lemma="каждый" tags="det.def.*"/>
+    </def-cat>
     <def-cat n="techenie">
       <cat-item lemma="в течение" tags="adv"/>
     </def-cat>
@@ -228,15 +232,15 @@
   <def-cat n="ego-detpos">   
       <cat-item lemma="его" tags="det.pos"/>
       <cat-item lemma="его" tags="det.pos.*"/>
-    </def-cat>
-  <def-cat n="svoi-detpos">   
-      <cat-item lemma="свой" tags="det.pos"/>
-      <cat-item lemma="свой" tags="det.pos.*"/>
+      <cat-item lemma="её" tags="det.pos"/>
+      <cat-item lemma="её" tags="det.pos.*"/>
     </def-cat>
   <def-cat n="svoi-noun">   
       <cat-item lemma="свой" tags="n.*"/>
       <cat-item lemma="свой" tags="n.*.*"/>
       <cat-item lemma="свой" tags="prn.pos.*"/>
+      <cat-item lemma="свой" tags="det.pos"/>
+      <cat-item lemma="свой" tags="det.pos.*"/>
     </def-cat>
   <def-cat n="vseh">
       <cat-item lemma="весь" tags="det.ind.*"/>
@@ -1270,6 +1274,18 @@ If no format information is present it is removed. -->
                <lit-tag v="loc"/>
             </let>
           </when>
+    <when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="во"/>
+              </equal>
+            </test>
+            <let>
+               <var n="case"/>
+               <lit-tag v="loc"/>
+            </let>
+          </when>
 
           <when> 
             <test>
@@ -1934,8 +1950,6 @@ If no format information is present it is removed. -->
     <pattern-item n="np-anttopcog"/>
   </pattern>
   <action>
-  <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="1"/> </call-macro> 
-  <call-macro n="NEW-build-noun-lu-2-4-5"> <with-param pos="2"/> </call-macro> 
   <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
 
     <out>
@@ -5250,8 +5264,7 @@ If no format information is present it is removed. -->
 </rule>
 
 <!-- я хочу домой/ручку    али катееееееееееееееееееееееееееееееее -->
-
-<rule comment="NEW RULE: want to + NP"> 
+<!--rule comment="NEW RULE: want to + NP"> 
   <pattern>
 
     <pattern-item n="vbmod-want-to"/>
@@ -5282,11 +5295,11 @@ If no format information is present it is removed. -->
       <chunk name="VP_want_to_nom">
       <tags>
         <tag><lit-tag v="VP_wantto"/></tag>
-        <tag><lit-tag v="ND"/></tag> <!-- number -->
-        <tag><lit-tag v="PD"/></tag> <!-- person -->
-        <tag><lit-tag v="tense"/></tag>  <!-- tense/conditionality -->
-        <tag><lit-tag v="PXD"/></tag> <!-- possessive-->
-        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+        <tag><lit-tag v="ND"/></tag> 
+        <tag><lit-tag v="PD"/></tag> 
+        <tag><lit-tag v="tense"/></tag>
+        <tag><lit-tag v="PXD"/></tag>
+        <tag><lit-tag v="NXD"/></tag> 
 	
       </tags>
       <b pos="1"/>
@@ -5322,11 +5335,11 @@ If no format information is present it is removed. -->
       <chunk name="VP_want_to">
         <tags>
         <tag><lit-tag v="VP_wantto"/></tag>
-        <tag><lit-tag v="ND"/></tag> <!-- number -->
-        <tag><lit-tag v="PD"/></tag> <!-- person -->
-        <tag><lit-tag v="tense"/></tag>  <!-- tense/conditionality -->
-        <tag><lit-tag v="PXD"/></tag> <!-- possessive-->
-        <tag><lit-tag v="NXD"/></tag> <!-- negative -->
+        <tag><lit-tag v="ND"/></tag>
+        <tag><lit-tag v="PD"/></tag> 
+        <tag><lit-tag v="tense"/></tag>
+        <tag><lit-tag v="PXD"/></tag>
+        <tag><lit-tag v="NXD"/></tag>
 
       </tags>
       <b pos="1"/>
@@ -5351,7 +5364,7 @@ If no format information is present it is removed. -->
       </when>
     </choose>
       </action>
-</rule>
+</rule-->
 
 <!-- RULE noun`s noun ex: книга ученик -->
 <rule comment="NEW RULE: pos-pron noun">  <!-- мой друг-->
@@ -7951,6 +7964,198 @@ If no format information is present it is removed. -->
   </action>
 </rule>
 
+<rule comment="RULE: kajdyi noun"> <!-- Aliya 04.08.17 -->
+      <pattern>
+        <pattern-item n="kajdyi"/>
+        <pattern-item n="nom"/> 
+      </pattern>
+      <action>
+    <out>
+    <chunk name="kajdyi-noun">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="2" side="tl" part="a_nbr"/></tag> 
+    <tag><var n="possessive"/> </tag> 
+    <tag><clip pos="2" side="tl" part="a_case"/></tag>
+    </tags>
+        <lu>
+          <lit v="әрбір"/>
+          <lit-tag v="det.qnt"/>
+        </lu>
+       <b/>
+       <lu>
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <clip pos="2" side="tl" part="a_nbr"/>
+               <clip pos="2" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+
+<rule comment="NEW RULE: kajdyi noun np ant cog">    <!-- Aliya 04.08.17 -->
+  <pattern>
+    <pattern-item n="kajdyi"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-anttopcog"/>
+  </pattern>
+  <action>
+  <call-macro n="select-case"> <with-param pos="3"/> </call-macro>
+
+    <out>
+    <chunk name="kajdyi-nom-np_anttopcog">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="3" side="sl" part="a_nbr"/></tag> 
+    <tag><lit-tag v="p3"/></tag> 
+    <tag><lit-tag v="PXD"/></tag> 
+    <tag><lit-tag v="CD"/></tag> 
+    </tags>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b/>
+        <lu>
+          <lit v="әрбір"/><lit-tag v="det.qnt"/>
+        </lu><b/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="2" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep kajdyi noun">      <!-- Aliya 04.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="kajdyi"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+     </call-macro>
+<call-macro n="build-adjec-lu"><with-param pos="2"/></call-macro> 
+ 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-kajdyi-nom-post">
+            <tags>
+                <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu><lit v="әрбір"/><lit-tag v="det.qnt"/></lu><b/>
+            <lu>  
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="5"/> <!-- for case -->
+            </lu><b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-kajdyi-nom">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu><lit v="әрбір"/><lit-tag v="det.qnt"/></lu><b/>
+            <lu> 
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="5"/> <!-- for case -->
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep kajdyi num noun">    <!-- Aliya 04.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="kajdyi"/>
+    <pattern-item n="num"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="4"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="3"/></call-macro> 
+ 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-kajdyi-num-nom1-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag> 
+                <tag><lit-tag v="PXD"/></tag> 
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu><lit v="әрбір"/><lit-tag v="det.qnt"/></lu><b/>
+            <lu> <var n="num_lu"/> </lu> <b/>
+            <lu>
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="a_nbr"/> 
+               <clip pos="4" side="tl" part="a_case"/> 
+            </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise>
+        <out>
+          <chunk name="prep-kajdyi-num-nom1">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="4"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu><lit v="әрбір"/><lit-tag v="det.qnt"/></lu><b/>
+            <lu> <var n="num_lu"/> </lu><b/>
+            <lu> 
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <clip pos="4" side="tl" part="a_nbr"/> 
+               <clip pos="4" side="tl" part="a_case"/> 
+            </lu><b/>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
 
 <rule comment="NEW RULE: det noun">  <!-- 19.05.2016 tolyk durys emes--> 
   <pattern>
@@ -8309,6 +8514,49 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: noun noun np">   <!-- Aliya 04.08.17 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-anttopcog"/>
+  </pattern>
+  <action>
+  <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
+
+    <out>
+    <chunk name="n-n-np_anttopcog">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+    </tags>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b/>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_nbr"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="2" side="tl" part="a_case"/>
+    </lu> <b/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <clip pos="1" side="tl" part="a_nbr"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
 <rule comment="NEW RULE: noun noun noun">   <!-- Aliya 22.06.2017 -->
   <pattern>
     <pattern-item n="n"/>
@@ -8350,6 +8598,92 @@ If no format information is present it is removed. -->
     </lu>
     </chunk>
     </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep noun noun np_anttopcog">   <!-- Aliya 04.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-anttopcog"/>
+  </pattern>
+  <action>
+     <call-macro n="select-case"> <with-param pos="2"/> </call-macro>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="2"/>
+     </call-macro> 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-n-n-np_anttopcog-post2">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <lit-tag v="px3sp"/>
+     <lit-tag v="gen"/>
+    </lu> <b/>
+            <lu> 
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="px3sp"/><!-- for possessive, just in case -->
+               <lit-tag v="5"/>
+            </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-n-n-np_anttopcog">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>    
+                <tag><lit-tag v="NP"/></tag>   
+            </tags>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_gender"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <lit-tag v="px3sp"/>
+     <lit-tag v="gen"/>
+    </lu> <b/>
+            <lu> 
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <lit-tag v="4"/> <!-- for possessive, just in case -->
+               <lit-tag v="px3sp"/><!-- for possessive, just in case -->
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
   </action>
 </rule>
 
@@ -9365,6 +9699,51 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: verb verb"> <!-- Aliya 04.08.17 -->
+  <pattern>
+    <pattern-item n="verb"/>
+    <pattern-item n="verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+      <when>
+        <test><and><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="past"/></equal>
+				    <equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></and></test>
+           <let><clip pos="1" side="tl" part="a_tense"/><lit-tag v="ifi"/></let>
+           <let><clip pos="2" side="tl" part="a_tense"/><lit-tag v="ger"/></let>
+      </when>
+    </choose>
+    <out>
+    <chunk name="verb-past+verb-inf"> <!-- предпочитали оставаться - Ол шақырған -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="acc"/>
+        </lu><b/>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+	  <clip pos="1" side="tl" part="a_tense"/>
+          <lit-tag v="3"/>
+          <lit-tag v="2"/>
+        </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
 
 
 
@@ -9573,13 +9952,13 @@ If no format information is present it is removed. -->
 </rule-->
 
 
-<rule>
+<!--rule>
   <pattern>
     <pattern-item n="CAT__prn_"/>
   </pattern>
   <action>
     <choose>
-      <when><!--13 | Это<prn><*prntype><*form><*attruse><*negative><*person><*possessive><*gender><*reltype><*numberat><empty_tag_form><*case><*isadv><*preptag> | Бұл<det><dem><(000reltype> | 0:0 | <prn><empty_tag_form>-->
+      <when>
         <test>
         <and>
            <and>
@@ -9614,7 +9993,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule4"/></lu></out></when>
-      <when><!--12 | это<prn><*prntype><*form><*attruse><*negative><*person><*possessive><*gender><*reltype><*numberat><empty_tag_form><*case><*isadv><*preptag> | бұл<prn><(000prntype><(000form><(000attruse><(000negative><(000person><(000possessive><(000reltype><(000case><(000isadv><(000preptag> | 0:0 | <prn><empty_tag_form>-->
+      <when>
         <test>
         <and>
            <and>
@@ -9657,7 +10036,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule5"/></lu></out></when>
-      <when><!--11 | что<prn><*prntype><*form><*attruse><*negative><*person><*possessive><*gender><*reltype><*numberat><empty_tag_form><*case><*isadv><*preptag> | бұл<det><dem><(000reltype> | 0:0 | <prn><empty_tag_form>-->
+      <when>
         <test>
         <and>
            <and>
@@ -9692,7 +10071,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule6"/></lu></out></when>
-      <when><!--10 | <prn><*prntype><*form><*attruse><*negative><*person><*possessive><*gender><*reltype><*numberat><empty_tag_form><*case><*isadv><*preptag> | <prn><(000prntype><(000form><(000attruse><(000negative><(000person><(000possessive><(000reltype><(000numberat><(000case><(000isadv><(000preptag> | 0:0 | <prn><empty_tag_form>-->
+      <when>
         <test>
            <and>
             <begins-with>
@@ -9723,8 +10102,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule7"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
-    <!--    <reject-current-rule shifting="no" />   -->
+      <otherwise>
 <out><chunk name="any" case="caseFirstWord">
 <tags>             <tag><lit-tag v="LRN"/></tag>       </tags> 
 <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out> 
@@ -9733,24 +10111,22 @@ If no format information is present it is removed. -->
 </otherwise>
     </choose>
   </action>
-</rule>
+</rule-->
 
 
-<rule>
+<!--rule>
   <pattern>
     <pattern-item n="CAT__pr_"/>
   </pattern>
   <action>
     <choose>
-      <when><!--9 | из<pr> | да<cnjcoo> | 0:0 | <pr>-->
+      <when>
         <test>
         <and>
-     <!--      <and> -->
             <begins-with>
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="pr"/>
             </begins-with>
-    <!--       </and> -->
             <or>            <equal>
               <clip pos="1" side="sl" part="lem" />
               <lit v="из"/>
@@ -9771,15 +10147,13 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule8"/></lu></out></when>
-      <when><!--8 | В<pr> | Бұл<det><dem> | 0:0 | <pr>-->
+      <when>
         <test>
         <and>
-    <!--       <and> -->
             <begins-with>
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="pr"/>
             </begins-with>
-     <!--      </and>  -->
             <or>            <equal>
               <clip pos="1" side="sl" part="lem" />
               <lit v="В"/>
@@ -9801,8 +10175,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule9"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
-   <!--     <reject-current-rule shifting="no" />   -->
+      <otherwise>
 <out><chunk name="any" case="caseFirstWord">
 <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>
  <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out> 
@@ -9811,15 +10184,15 @@ If no format information is present it is removed. -->
 </otherwise>
     </choose>
   </action>
-</rule>
+</rule-->
 
-<rule>
+<!--rule>
   <pattern>
     <pattern-item n="CAT__det_"/>
   </pattern>
   <action>
     <choose>
-      <when><!--14 | Наш<det><*determinertype><*gender><*reltype><sg><*dettag> | Біз<prn><pers><p1><(000reltype><pl><gen> | 0:0 | <det><sg>-->
+      <when>
         <test>
         <and>
            <and>
@@ -9857,8 +10230,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule10"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
-    <!--    <reject-current-rule shifting="no" />   -->
+      <otherwise>
 <out><chunk name="any" case="caseFirstWord">
 <tags>             <tag><lit-tag v="LRN"/></tag>       </tags> 
 <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out>
@@ -9867,24 +10239,22 @@ If no format information is present it is removed. -->
 </otherwise>
     </choose>
   </action>
-</rule>
+</rule-->
 
 
-<rule>
+<!--rule>
   <pattern>
     <pattern-item n="CAT__cnjcoo_"/>
   </pattern>
   <action>
     <choose>
-      <when><!--16 | и<cnjcoo><*cnp> | және<cnjcoo> | 0:0 | <cnjcoo>-->
+      <when>
         <test>
         <and>
-    <!--       <and> -->
             <begins-with>
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="cnjcoo"/>
             </begins-with>
-    <!--       </and> -->
             <or>            <equal>
               <clip pos="1" side="sl" part="lem" />
               <lit v="и"/>
@@ -9905,14 +10275,12 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule11"/></lu></out></when>
-      <when><!--15 | <cnjcoo><*cnp> | <cnjcoo><(000cnp> | 0:0 | <cnjcoo>-->
+      <when>
         <test>
-        <!--  <and> -->
             <begins-with>
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="cnjcoo"/>
             </begins-with>
-    <!--       </and> -->
         </test>
        <out>
        <chunk name="__cnjcoo_" case="caseFirstWord">       <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>          <lu>
@@ -9924,8 +10292,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule12"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
-  <!--      <reject-current-rule shifting="no" />   -->
+      <otherwise>
 <out><chunk name="any" case="caseFirstWord">
 <tags>             <tag><lit-tag v="LRN"/></tag>       </tags> 
 <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out> 
@@ -9934,26 +10301,24 @@ If no format information is present it is removed. -->
 </otherwise>
     </choose>
   </action>
-</rule>
+</rule-->
 
 
 
-<rule>
+<!--rule>
   <pattern>
     <pattern-item n="CAT__cnjcoo_"/>
     <pattern-item n="CAT__prn_"/>
   </pattern>
   <action>
     <choose>
-      <when><!--3 | и<cnjcoo><*cnp> <prn><*prntype><*form><*attruse><*negative><*person><*possessive><*gender><*reltype><*numberat><empty_tag_form><*case><*isadv><*preptag> | Және<cnjcoo><(000cnp> <prn><(001prntype><(001form><(001attruse><(001negative><(001person><(001possessive><(001reltype><(001numberat><(001case><(001isadv><(001preptag> | 0:0 1:1 | <cnjcoo> <prn><empty_tag_form>-->
+      <when>
         <test>
         <and>
-    <!--       <and>  -->
             <begins-with>
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="cnjcoo"/>
             </begins-with>
-       <!--    </and> -->
             <or>            <equal>
               <clip pos="1" side="sl" part="lem" />
               <lit v="и"/>
@@ -10000,8 +10365,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule13"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
-  <!--      <reject-current-rule shifting="no" />   -->
+      <otherwise>
 <out><chunk name="any" case="caseFirstWord">
 <tags>             <tag><lit-tag v="LRN"/></tag>       </tags>
  <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out> 
@@ -10020,15 +10384,13 @@ If no format information is present it is removed. -->
   </pattern>
   <action>
     <choose>
-      <when><!--5 | Как<cnjadv> | Сен<prn><pers><p2><sg><gen> | 0:0 | <cnjadv>-->
+      <when>
         <test>
         <and>
-    <!--       <and>  -->
             <begins-with>
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="cnjadv"/>
             </begins-with>
-       <!--    </and>  -->
             <or>            <equal>
               <clip pos="1" side="sl" part="lem" />
               <lit v="Как"/>
@@ -10053,15 +10415,13 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule14"/></lu></out></when>
-      <when><!--4 | как<cnjadv> | сен<prn><pers><p2><sg><gen> | 0:0 | <cnjadv>-->
+      <when>
         <test>
         <and>
-    <!--       <and>  -->
             <begins-with>
               <clip pos="1" side="tl" part="tags" />
               <lit-tag v="cnjadv"/>
             </begins-with>
-     <!--      </and> -->
             <or>            <equal>
               <clip pos="1" side="sl" part="lem" />
               <lit v="как"/>
@@ -10086,8 +10446,7 @@ If no format information is present it is removed. -->
       </chunk>
       </out>
 <out><lu><lit v="*executedtule15"/></lu></out></when>
-      <otherwise><!--Word-for-word translation-->
- <!--       <reject-current-rule shifting="no" />   -->
+      <otherwise>
 <out><chunk name="any" case="caseFirstWord">
 <tags>             <tag><lit-tag v="LRN"/></tag>       </tags> 
 <lu><clip pos="1" side="tl" part="whole"/></lu></chunk></out> 
@@ -10096,7 +10455,7 @@ If no format information is present it is removed. -->
 </otherwise>
     </choose>
   </action>
-</rule>
+</rule-->
 
 
 <!--<rule>

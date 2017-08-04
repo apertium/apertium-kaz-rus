@@ -29,7 +29,7 @@
 <rule> 
     <match lemma="сухой" tags="adj.*"><select lemma="құрғақ" tags="adj.*"/></match>
     <match lemma="лист" tags="n.*"><select lemma="жапырақ" tags="n.*"/></match>
- </rule> 
+ </rule>
 
 
 <!--лук стрела -->
