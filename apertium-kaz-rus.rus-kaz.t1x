@@ -412,6 +412,9 @@
     <def-cat n="mojno">
       <cat-item lemma="можно" tags="pred"/>
     </def-cat>
+    <def-cat n="nujno">
+      <cat-item lemma="нужно" tags="pred"/>
+    </def-cat>
   </section-def-cats>
 
 
@@ -3151,6 +3154,48 @@ If no format information is present it is removed. -->
           <lit v="бол"/>
           <lit-tag v="v.iv"/>
           <lit-tag v="aor"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: mojno and nujno verb"> <!-- Aliya 08.08.17-->
+      <pattern>
+        <pattern-item n="mojno"/>
+        <pattern-item n="cnjcoo"/>
+        <pattern-item n="nujno"/>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+      <choose><when>
+        <test><equal><clip pos="4" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+      </when></choose>
+    <out>
+    <chunk name="mojno-and-nujno-verb">
+      <tags><tag><lit-tag v="VP"/></tag></tags>
+            <lu>
+          <clip pos="4" side="tl" part="lem"/>
+	  <clip pos="4" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="dat"/>
+            </lu><b/>
+        <lu>
+          <lit v="бол"/>
+          <lit-tag v="v.iv"/>
+          <lit-tag v="aor"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu><b/>
+        <lu><clip pos="2" side="tl" part="lem"/> <lit-tag v="cnjcoo"/></lu><b/>
+        <lu>
+          <lit v="керек"/>
+          <lit-tag v="vaux"/>
+          <lit-tag v="pres"/>
          <lit-tag v="p3"/>
          <lit-tag v="sg"/>
         </lu>
