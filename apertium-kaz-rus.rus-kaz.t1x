@@ -69,6 +69,10 @@
       <cat-item tags="np.cog"/>
       <cat-item tags="np.cog.*"/>
     </def-cat>
+    <def-cat n="np-top">
+      <cat-item tags="np.top"/>
+      <cat-item tags="np.top.*"/>
+    </def-cat>
     <def-cat n="NP">
       <cat-item tags="np.ant.*"/>
     </def-cat>
@@ -1306,6 +1310,19 @@ If no format information is present it is removed. -->
             <let>
                <var n="case"/>
                <lit-tag v="loc"/>
+            </let>
+          </when> 
+
+          <when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="для"/>
+              </equal>
+            </test>
+            <let>
+               <var n="case"/>
+               <lit-tag v="dat"/>
             </let>
           </when> 
 
@@ -3201,6 +3218,48 @@ If no format information is present it is removed. -->
         <lu>
           <clip pos="2" side="tl" part="lem"/>
 	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+              <lit-tag v="pass"/>
+              <lit-tag v="gpr_past"/>
+        </lu>
+<b/>
+            <lu>
+              <lit v="бол"/>
+              <lit-tag v="v.iv"/>
+              <lit-tag v="gpr_impf"/>
+            </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: byt' adv verb"> <!-- Aliya 07.08.17 -->
+  <pattern>
+    <pattern-item n="byt-past"/>
+    <pattern-item n="adv"/>
+    <pattern-item n="verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <out>
+    <chunk name="byt-past+adv+verb"> <!-- "были хорошо приспособлены" - "жақсы бейімделген болатын" -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+            <lu>
+             <clip pos="2" side="tl" part="lem"/> 
+             <clip pos="2" side="tl" part="a_adv"/>
+            </lu>
+<b/>
+        <lu>
+          <clip pos="3" side="tl" part="lem"/>
+	  <clip pos="3" side="tl" part="a_kaz_verb"/>
               <lit-tag v="pass"/>
               <lit-tag v="gpr_past"/>
         </lu>
@@ -6165,7 +6224,7 @@ If no format information is present it is removed. -->
 <call-macro n="NEW-build-noun-lu-2-4-5-sg"> <with-param pos="3"/> </call-macro>
 <call-macro n="build-num-lu"><with-param pos="1"/></call-macro> 
     <out>
-    <chunk name="num-noun">
+    <chunk name="num-noun2">
     <tags> <tag><lit-tag v="NP"/></tag>
     <tag><clip pos="3" side="tl" part="a_nbr"/></tag> <!-- number placeholder -->
     <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
@@ -6776,6 +6835,106 @@ If no format information is present it is removed. -->
         </lu>
           </chunk>
         </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep num noun and noun1 noun2">    <!-- Aliya 07.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="num"/>
+    <pattern-item n="nom"/>
+    <pattern-item n="cnjcoo"/>
+    <pattern-item n="nom"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+      </call-macro>
+<call-macro n="build-num-lu"><with-param pos="2"/></call-macro> 
+ 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out>
+          <chunk name="prep-num-n-and-n2-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag> 
+                <tag><lit-tag v="PXD"/></tag> 
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> 
+               <clip pos="6" side="tl" part="lem"/> 
+               <clip pos="6" side="tl" part="a_nom"/>
+               <clip pos="6" side="tl" part="a_nbr"/> 
+               <clip pos="6" side="tl" part="a_case"/> 
+               <!--lit-tag v="gen"/--> 
+            </lu><b/>
+            <lu> <var n="num_lu"/> </lu><b/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu><b/>
+            <lu> 
+               <clip pos="4" side="tl" part="lem"/> 
+    	       <clip pos="4" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu>
+               <clip pos="5" side="tl" part="lem"/> 
+               <clip pos="5" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu><b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise>
+        <out>
+          <chunk name="prep-num-n-and-n2">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="6" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag> 
+                <tag><lit-tag v="PXD"/></tag> 
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> 
+               <clip pos="6" side="tl" part="lem"/> 
+               <clip pos="6" side="tl" part="a_nom"/>
+               <clip pos="6" side="tl" part="a_nbr"/> 
+               <clip pos="6" side="tl" part="a_case"/> 
+               <!--lit-tag v="gen"/--> 
+            </lu><b/>
+            <lu> <var n="num_lu"/> </lu><b/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu><b/>
+            <lu> 
+               <clip pos="4" side="tl" part="lem"/> 
+    	       <clip pos="4" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu>
+               <clip pos="5" side="tl" part="lem"/> 
+               <clip pos="5" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
   </action>
 </rule>
 
@@ -7991,7 +8150,6 @@ If no format information is present it is removed. -->
                <clip pos="2" side="tl" part="lem"/> 
                <clip pos="2" side="tl" part="a_nom"/>
                <lit-tag v="2"/> <!-- number -->
-               <!-- no need to link person -->
                <lit-tag v="4"/> <!-- for possessive, just in case -->
                <lit-tag v="5"/> <!-- for case -->
             </lu> <b/>
@@ -9057,6 +9215,89 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: prep np np noun">   <!-- Aliya 07.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="np-top"/>
+    <pattern-item n="np-top"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="select-case"> <with-param pos="4"/> </call-macro>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="4"/>
+     </call-macro> 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-np2-n-post2">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>    
+                <tag><lit-tag v="NP"/></tag>   
+            </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+            <lu> 
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> 
+               <lit-tag v="4"/> 
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-np2-n">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>    
+                <tag><lit-tag v="NP"/></tag>   
+            </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+            <lu> 
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> 
+               <lit-tag v="4"/> 
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
 <rule comment="NEW RULE: prep noun noun noun">   <!-- Aliya 22.06.2017 -->
   <pattern>
     <pattern-item n="prep"/>
@@ -9180,6 +9421,78 @@ If no format information is present it is removed. -->
     </lu>
     </chunk>
     </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep np noun">   <!-- Aliya 07.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="np-top"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="select-case"> <with-param pos="3"/> </call-macro>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+     </call-macro> 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-np-n-post2">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>    
+                <tag><lit-tag v="NP"/></tag>   
+            </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+            <lu> 
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> 
+               <lit-tag v="4"/> 
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-np-n">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>    
+                <tag><lit-tag v="NP"/></tag>   
+            </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="nom"/>
+    </lu> <b/>
+            <lu> 
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> 
+               <lit-tag v="4"/> 
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
   </action>
 </rule>
 
@@ -9480,6 +9793,162 @@ If no format information is present it is removed. -->
             <lu> <var n="adjec_lu"/> </lu>
             <lu><clip pos="5" side="tl" part="whole"/></lu> <b/>
             <lu> <var n="adjec_lu1"/> </lu> <b/>
+            <lu>
+               <clip pos="7" side="tl" part="lem"/> 
+               <clip pos="7" side="tl" part="a_nom"/>
+               <clip pos="7" side="tl" part="a_nbr"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep adj, adj and adj noun">   <!-- Aliya 07.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="cm"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="cnjcoo"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="select-case"> <with-param pos="2"/> </call-macro>
+     <call-macro n="build-adjec-lu"><with-param pos="2"/></call-macro> 
+     <call-macro n="build-adjec-lu1"><with-param pos="4"/></call-macro> 
+     <call-macro n="build-adjec-lu2"><with-param pos="6"/></call-macro> 
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="7"/>
+     </call-macro> 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-adj,adj-and-adj-n-post2">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag> 
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu><clip pos="3" side="tl" part="whole"/></lu> <b/>
+            <lu> <var n="adjec_lu1"/> </lu> <b/>
+            <lu>
+    		 <clip pos="5" side="tl" part="lem"/> 
+    		 <clip pos="5" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu2"/> </lu> <b/>
+            <lu>
+               <clip pos="7" side="tl" part="lem"/> 
+               <clip pos="7" side="tl" part="a_nom"/>
+               <clip pos="7" side="tl" part="a_nbr"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-adj,adj-and-adj-n">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag> 
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> <var n="adjec_lu"/> </lu>
+            <lu><clip pos="3" side="tl" part="whole"/></lu> <b/>
+            <lu> <var n="adjec_lu1"/> </lu> <b/>
+            <lu>
+    		 <clip pos="5" side="tl" part="lem"/> 
+    		 <clip pos="5" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu2"/> </lu> <b/>
+            <lu>
+               <clip pos="7" side="tl" part="lem"/> 
+               <clip pos="7" side="tl" part="a_nom"/>
+               <clip pos="7" side="tl" part="a_nbr"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep adj, adj, adj noun">   <!-- Aliya 07.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="cm"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="cm"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="select-case"> <with-param pos="2"/> </call-macro>
+     <call-macro n="build-adjec-lu"><with-param pos="2"/></call-macro> 
+     <call-macro n="build-adjec-lu1"><with-param pos="4"/></call-macro> 
+     <call-macro n="build-adjec-lu2"><with-param pos="6"/></call-macro> 
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="7"/>
+     </call-macro> 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-adj,adj,adj-n-post2">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag> 
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu><clip pos="3" side="tl" part="whole"/></lu> <b/>
+            <lu> <var n="adjec_lu1"/> </lu>
+            <lu><clip pos="5" side="tl" part="whole"/></lu><b/>
+            <lu> <var n="adjec_lu2"/> </lu> <b/>
+            <lu>
+               <clip pos="7" side="tl" part="lem"/> 
+               <clip pos="7" side="tl" part="a_nom"/>
+               <clip pos="7" side="tl" part="a_nbr"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-adj,adj,adj-n">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag> 
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu> <var n="adjec_lu"/> </lu>
+            <lu><clip pos="3" side="tl" part="whole"/></lu> <b/>
+            <lu> <var n="adjec_lu1"/> </lu>
+            <lu><clip pos="5" side="tl" part="whole"/></lu><b/>
+            <lu> <var n="adjec_lu2"/> </lu> <b/>
             <lu>
                <clip pos="7" side="tl" part="lem"/> 
                <clip pos="7" side="tl" part="a_nom"/>
@@ -9924,6 +10393,56 @@ If no format information is present it is removed. -->
      <clip pos="4" side="tl" part="lem"/> 
      <clip pos="4" side="tl" part="a_nom"/>
      <clip pos="4" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b/>
+    <lu>
+     <clip pos="3" side="tl" part="lem"/> 
+     <clip pos="3" side="tl" part="a_nom"/>
+     <clip pos="3" side="tl" part="a_nbr"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="3" side="tl" part="a_case"/>
+    </lu> <b/>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="px3sp"/>
+     <lit-tag v="gen"/>
+    </lu> <b/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <clip pos="1" side="tl" part="a_nbr"/>
+     <lit-tag v="px3sp"/>
+     <clip pos="1" side="tl" part="a_case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: noun noun noun noun">   <!-- Aliya 07.08.2017 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+  <call-macro n="select-case"> <with-param pos="1"/> </call-macro>
+
+    <out>
+    <chunk name="n-n-n-n">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag>
+    <tag><lit-tag v="p3"/></tag>
+    <tag><lit-tag v="PXD"/></tag>
+    <tag><lit-tag v="CD"/></tag>
+    </tags>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_nbr"/>
      <lit-tag v="gen"/>
     </lu><b/>
     <lu>

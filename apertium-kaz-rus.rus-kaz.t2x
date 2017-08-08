@@ -1011,6 +1011,92 @@
     </rule>
 
 
+
+<rule comment="NEW RULE: NP VP AdjP"> <!-- Aliya 07.08.17 -->
+     <pattern>
+       <pattern-item n="NP"/>
+       <pattern-item n="VP"/>
+       <pattern-item n="AdjP"/>
+     </pattern>
+     <action>
+<call-macro n="change-case-upper">  
+<with-param pos="1"/>
+  </call-macro> 
+
+      <out>
+          <chunk>
+           <clip pos="1" part="lem"/>  
+            <lit-tag v="PP"/>
+            <clip pos="1" part="a_nbr"/> <!-- agree number -->
+            <clip pos="1" part="a_pers"/> <!-- agree person -->
+            <clip pos="1" part="a_possessive"/>
+             <clip pos="1" part="a_cas"/>
+            <clip pos="1" part="chcontent"/>         
+          </chunk>
+          <b/>
+         <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+       <b/>
+          <chunk>
+            <clip pos="2" part="lem"/>  
+            <lit-tag v="VP"/>
+            <clip pos="2" part="a_nbr"/> 
+            <clip pos="2" part="a_pers"/> 
+            <clip pos="2" part="a_tense"/>
+            <clip pos="2" part="a_possessive"/> 
+            <clip pos="2" part="a_neg"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk> 
+    </out>
+     </action>
+    </rule>
+
+
+<rule comment="NEW RULE:  VP PP NP">  <!-- Aliya 07.08.17 -->
+     <pattern>
+       <pattern-item n="VP"/>
+       <pattern-item n="PP"/>
+       <pattern-item n="NP"/>
+     </pattern>
+     <action>
+<call-macro n="change-case-upper">  
+<with-param pos="2"/>
+  </call-macro> 
+      <out>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <clip pos="2" part="a_phrase"/>
+            <clip pos="2" part="a_nbr"/>
+            <clip pos="2" part="a_pers"/>
+            <var n="possessive"/>
+            <clip pos="2" part="a_cas"/>
+            <clip pos="2" part="chcontent"/>
+          </chunk>
+          <b/>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <lit-tag v="VP"/>
+            <clip pos="1" part="a_nbr"/> <!-- agree number -->
+            <clip pos="1" part="a_pers"/> <!-- agree person -->
+            <clip pos="1" part="a_tense"/>
+            <clip pos="1" part="a_possessive"/> 
+            <clip pos="1" part="a_neg"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk> 
+      </out>
+     </action>
+    </rule>
+
+
     <rule comment="NEW RULE: VP NP1 CNJ NP2 NP3 → NP1 CNJ NP2 VP NP3"> <!-- Aliya 05.08.17 -->
      <pattern>
        <pattern-item n="VP"/>
