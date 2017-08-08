@@ -83,6 +83,10 @@
       <cat-item tags="n.gen"/>
       <cat-item tags="n.*.*.*.gen"/>
     </def-cat>
+    <def-cat n="nee-nego">
+      <cat-item lemma="она" tags="prn.pers.p3.f.sg.prp"/>
+      <cat-item lemma="он" tags="prn.pers.p3.m.sg.prp"/>
+    </def-cat>
     <def-cat n="kajdyi">
       <cat-item lemma="каждый" tags="det.def"/>
       <cat-item lemma="каждый" tags="det.def.*"/>
@@ -3147,6 +3151,43 @@ If no format information is present it is removed. -->
             <lu>
           <clip pos="2" side="tl" part="lem"/>
 	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="dat"/>
+            </lu><b/>
+        <lu>
+          <lit v="бол"/>
+          <lit-tag v="v.iv"/>
+          <lit-tag v="aor"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+
+<rule comment="RULE: mojno adv verb"> <!-- Aliya 09.08.17-->
+      <pattern>
+        <pattern-item n="mojno"/>
+        <pattern-item n="adv"/>
+        <pattern-item n="verb"/>
+      </pattern>
+      <action>
+      <choose><when>
+        <test><equal><clip pos="3" side="sl" part="a_tense"/><lit-tag v="inf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="ger"/></let>
+      </when></choose>
+    <out>
+    <chunk name="mojno-adv-verb">
+      <tags><tag><lit-tag v="VP"/></tag></tags>
+            <lu>
+             <clip pos="2" side="tl" part="lem"/> 
+             <clip pos="2" side="tl" part="a_adv"/>
+            </lu><b/>
+            <lu>
+          <clip pos="3" side="tl" part="lem"/>
+	  <clip pos="3" side="tl" part="a_kaz_verb"/>
           <lit-tag v="ger"/>
           <lit-tag v="dat"/>
             </lu><b/>
@@ -8257,6 +8298,59 @@ If no format information is present it is removed. -->
             <lu><clip pos="1" side="tl" part="whole"/></lu>
           </chunk>
         </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep prn">    <!-- Aliya 09.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="nee-nego"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="2"/>
+     </call-macro>
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-neeornego-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.dem"/>
+          <lit-tag v="5"/>
+    </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-neeornego">
+            <tags>
+                <tag><var n="pptag"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.dem"/>
+          <lit-tag v="5"/>
+        </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
   </action>
 </rule>
 
