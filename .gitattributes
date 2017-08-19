@@ -87,7 +87,8 @@ devel/adjec3.awk -text
 devel/adjectives.csv -text
 devel/noun.awk -text
 /modes.xml -text
-/regression-tests-rus-kaz.sh -text
+/pending-tests.sh -text
+/regression-tests.sh -text
 testvoc/README -text
 testvoc/inconsistency-summary1.sh -text
 testvoc/inconsistency1.sh -text
