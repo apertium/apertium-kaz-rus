@@ -432,6 +432,7 @@
     <def-attr n="a_cnjsub">
       <attr-item tags="cnjsub"/>
       <attr-item tags="post"/>
+      <attr-item tags="adv"/>
     </def-attr>
     <def-attr n="a_cnjcoo">
       <attr-item tags="cnjcoo"/>
@@ -10854,6 +10855,62 @@ If no format information is present it is removed. -->
                <clip pos="4" side="tl" part="a_nom"/>
                <clip pos="4" side="tl" part="a_nbr"/>
                <clip pos="4" side="tl" part="a_case"/>
+            </lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: adj noun np adj noun">      <!-- Aliya 24.08.2017 -->
+  <pattern>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+    <pattern-item n="np-anttopcog"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="2"/>
+     </call-macro>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="3"/>
+        <with-param pos="4"/>
+     </call-macro>
+<call-macro n="build-adjec-lu"><with-param pos="1"/></call-macro> 
+<call-macro n="build-adjec-lu1"><with-param pos="3"/></call-macro> 
+ 
+        <out>
+          <chunk name="adj-n-np-adj-n">
+            <tags> <tag><lit-tag v="NP"/></tag>
+                <tag><clip pos="2" part="a_nbr" side="sl"/></tag> <!-- number -->
+                <tag><lit-tag v="p3"/></tag> <!-- person is 3 for nouns -->
+                <tag><lit-tag v="PXD"/></tag> <!-- just in case -->
+                <tag><var n="case"/></tag>       
+            </tags>
+    <lu>
+     <clip pos="5" side="tl" part="lem"/> 
+     <clip pos="5" side="tl" part="a_nom"/>
+     <clip pos="5" side="tl" part="a_gender"/>
+     <lit-tag v="gen"/>
+    </lu><b/>
+            <lu> <var n="adjec_lu1"/> </lu> <b/>
+	<lu>
+          <clip pos="4" side="tl" part="lem"/>
+	  <clip pos="4" side="tl" part="a_nom"/>
+	  <clip pos="4" side="tl" part="a_nbr"/>
+          <lit-tag v="px3sp"/>
+	  <clip pos="4" side="tl" part="a_case"/>
+          </lu><b/>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu> 
+               <clip pos="2" side="tl" part="lem"/> 
+               <clip pos="2" side="tl" part="a_nom"/>
+               <lit-tag v="2"/> <!-- number -->
+               <lit-tag v="px3sp"/> <!-- for possessive, just in case -->
+	      <clip pos="2" side="tl" part="a_case"/>
             </lu>
           </chunk>
         </out>

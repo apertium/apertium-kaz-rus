@@ -837,7 +837,7 @@
     </rule>
 
 
-<rule comment="NEW RULE: AdvP VP-neg"> <!-- Aliya 31.07.17 -->
+<rule comment="NEW RULE: AdvP VP-neg CNJ AdvP VP-neg"> <!-- Aliya 31.07.17 -->
      <pattern>
        <pattern-item n="AdvP"/>
        <pattern-item n="VP-neg"/>
@@ -1184,6 +1184,56 @@
             <clip pos="1" part="a_pass"/>
             <clip pos="1" part="a_neg"/>
             <clip pos="1" part="chcontent"/>
+          </chunk> 
+      </out>
+     </action>
+    </rule>
+
+
+    <rule comment="NEW RULE: NP1 VP NP2 CNJ NP3 → NP1 NP3 CNJ NP2 VP"> <!-- Aliya 24.08.17 -->
+     <pattern>
+       <pattern-item n="NP"/>
+       <pattern-item n="VP"/>
+       <pattern-item n="NP"/>
+       <pattern-item n="CNJ"/>
+       <pattern-item n="NP"/>
+     </pattern>
+     <action>
+      <out>
+          <chunk>
+            <clip pos="1" part="lem"/>
+            <clip pos="1" part="tags"/>
+            <clip pos="1" part="chcontent"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="5" part="lem"/>
+            <clip pos="5" part="tags"/>
+            <clip pos="5" part="chcontent"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="4" part="lem"/>
+            <clip pos="4" part="tags"/>
+            <clip pos="4" part="chcontent"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="3" part="lem"/>
+            <clip pos="3" part="tags"/>
+            <clip pos="3" part="chcontent"/>
+          </chunk>
+          <b pos="1"/>
+          <chunk>
+            <clip pos="2" part="lem"/>
+            <lit-tag v="VP"/>
+            <clip pos="2" part="a_nbr"/>
+            <clip pos="2" part="a_pers"/> 
+            <clip pos="2" part="a_tense"/>
+            <clip pos="2" part="a_possessive"/> 
+            <clip pos="2" part="a_pass"/>
+            <clip pos="2" part="a_neg"/>
+            <clip pos="2" part="chcontent"/>
           </chunk> 
       </out>
      </action>
