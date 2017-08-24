@@ -1327,6 +1327,18 @@ If no format information is present it is removed. -->
             <test>
               <equal caseless="yes">
                 <clip pos="1" side="sl" part="lem"/>
+                <lit v="в"/>
+              </equal>
+            </test>
+            <let>
+               <var n="case"/>
+               <lit-tag v="loc"/>
+            </let>
+          </when>
+    <when> 
+            <test>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
                 <lit v="во"/>
               </equal>
             </test>
