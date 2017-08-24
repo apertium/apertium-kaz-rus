@@ -27180,7 +27180,7 @@ VERB1 -->
 <e><p><l>көрсет<s n="v"/><s n="tv"/></l><r>проявлять<s n="vblex"/></r></p></e>
 <e><p><l>айқында<s n="v"/><s n="tv"/></l><r>проявлять<s n="vblex"/></r></p></e>
 <e><p><l>шығар<s n="v"/><s n="tv"/></l><r>проявлять<s n="vblex"/></r></p></e>
-<e><p><l>байқал<s n="v"/><s n="tv"/></l><r>проявляться<s n="vblex"/></r></p></e>
+<e><p><l>байқал<s n="v"/><s n="iv"/></l><r>проявляться<s n="vblex"/></r></p></e>
 <e><p><l>көрсетіл<s n="v"/><s n="iv"/></l><r>проявляться<s n="vblex"/></r></p></e>
 <e><p><l>көрін<s n="v"/><s n="iv"/></l><r>проявляться<s n="vblex"/></r></p></e>
 <e><p><l>шығарыл<s n="v"/><s n="iv"/></l><r>проявляться<s n="vblex"/></r></p></e>
@@ -31160,6 +31160,7 @@ VERB1 -->
 <e><p><l>артынша<s n="adv"/></l><r>затем<s n="adv"/></r></p></e>
 <e><p><l>аса<s n="adv"/></l><r>очень<s n="adv"/></r></p></e>
 <e><p><l>астам<s n="adv"/></l><r>более<s n="adv"/></r></p></e>
+<e><p><l>көбінесе<s n="adv"/></l><r>наиболее<s n="adv"/></r></p></e>
 <e><p><l>астына<s n="adv"/></l><r>вниз<s n="adv"/></r></p></e>
 <e><p><l>астынан<s n="adv"/></l><r>снизу<s n="adv"/></r></p></e>
 <e><p><l>астында<s n="adv"/></l><r>внизу<s n="adv"/></r></p></e>
@@ -31744,6 +31745,31 @@ VERB1 -->
 
 <!--Acronyms -->
 
+<e><p><l>I<s n="abbr"/></l><r>I<s n="abbr"/></r></p></e>
+<e><p><l>II<s n="abbr"/></l><r>II<s n="abbr"/></r></p></e>
+<e><p><l>III<s n="abbr"/></l><r>III<s n="abbr"/></r></p></e>
+<e><p><l>IV<s n="abbr"/></l><r>IV<s n="abbr"/></r></p></e>
+<e><p><l>V<s n="abbr"/></l><r>V<s n="abbr"/></r></p></e>
+<e><p><l>VI<s n="abbr"/></l><r>VI<s n="abbr"/></r></p></e>
+<e><p><l>VII<s n="abbr"/></l><r>VII<s n="abbr"/></r></p></e>
+<e><p><l>VIII<s n="abbr"/></l><r>VIII<s n="abbr"/></r></p></e>
+<e><p><l>IX<s n="abbr"/></l><r>IX<s n="abbr"/></r></p></e>
+<e><p><l>X<s n="abbr"/></l><r>X<s n="abbr"/></r></p></e>
+<e><p><l>XI<s n="abbr"/></l><r>XI<s n="abbr"/></r></p></e>
+<e><p><l>XII<s n="abbr"/></l><r>XII<s n="abbr"/></r></p></e>
+<e><p><l>XIII<s n="abbr"/></l><r>XIII<s n="abbr"/></r></p></e>
+<e><p><l>XIV<s n="abbr"/></l><r>XIV<s n="abbr"/></r></p></e>
+<e><p><l>XV<s n="abbr"/></l><r>XV<s n="abbr"/></r></p></e>
+<e><p><l>XVI<s n="abbr"/></l><r>XVI<s n="abbr"/></r></p></e>
+<e><p><l>XVII<s n="abbr"/></l><r>XVII<s n="abbr"/></r></p></e>
+<e><p><l>XVIII<s n="abbr"/></l><r>XVIII<s n="abbr"/></r></p></e>
+<e><p><l>XVIII<s n="abbr"/></l><r>XVIII<s n="abbr"/></r></p></e>
+<e><p><l>XIX<s n="abbr"/></l><r>XIX<s n="abbr"/></r></p></e>
+<e><p><l>XX<s n="abbr"/></l><r>XX<s n="abbr"/></r></p></e>
+<e><p><l>XXI<s n="abbr"/></l><r>XXI<s n="abbr"/></r></p></e>
+<e><p><l>XXII<s n="abbr"/></l><r>XXII<s n="abbr"/></r></p></e>
+<e><p><l>XXIII<s n="abbr"/></l><r>XXIII<s n="abbr"/></r></p></e>
+
 <e><p><l>ЕҚЫҰ<s n="n"/><s n="acr"/></l><r>ОБСЕ<s n="abbr"/></r></p></e>
 <e><p><l>БҰҰ<s n="np"/><s n="org"/><s n="attr"/></l><r>ООН<s n="np"/><s n="org"/></r></p></e>
 <e><p><l>ТМД<s n="n"/><s n="acr"/></l><r>СНГ<s n="abbr"/></r></p></e>
@@ -31830,6 +31856,7 @@ VERB1 -->
 <e><p><l>рок<s n="n"/></l><r>рок<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>реакция<s n="n"/></l><r>реакция<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>сылтау<s n="n"/></l><r>предлог<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
+<e><p><l>зоналық<s n="n"/></l><r>зональность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>төсек<s n="n"/></l><r>ложе<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>бюро<s n="n"/></l><r>бюро<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>өмір<s n="n"/></l><r>житие<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>

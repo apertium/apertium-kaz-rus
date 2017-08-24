@@ -10,6 +10,34 @@
       <cat-item tags="abbr"/>
       <cat-item tags="abbr.*"/>
     </def-cat>
+
+    <def-cat n="rim-num">
+      <cat-item lemma="I" tags="abbr"/>
+      <cat-item lemma="II" tags="abbr"/>
+      <cat-item lemma="III" tags="abbr"/>
+      <cat-item lemma="IV" tags="abbr"/>
+      <cat-item lemma="V" tags="abbr"/>
+      <cat-item lemma="VI" tags="abbr"/>
+      <cat-item lemma="VII" tags="abbr"/>
+      <cat-item lemma="VIII" tags="abbr"/>
+      <cat-item lemma="IX" tags="abbr"/>
+      <cat-item lemma="X" tags="abbr"/>
+      <cat-item lemma="XI" tags="abbr"/>
+      <cat-item lemma="XII" tags="abbr"/>
+      <cat-item lemma="XIII" tags="abbr"/>
+      <cat-item lemma="XIV" tags="abbr"/>
+      <cat-item lemma="XV" tags="abbr"/>
+      <cat-item lemma="XVI" tags="abbr"/>
+      <cat-item lemma="XVII" tags="abbr"/>
+      <cat-item lemma="XVIII" tags="abbr"/>
+      <cat-item lemma="XVIII" tags="abbr"/>
+      <cat-item lemma="XIX" tags="abbr"/>
+      <cat-item lemma="XX" tags="abbr"/>
+      <cat-item lemma="XXI" tags="abbr"/>
+      <cat-item lemma="XXII" tags="abbr"/>
+      <cat-item lemma="XXIII" tags="abbr"/>
+    </def-cat>
+
     <def-cat n="np-ant">
       <cat-item tags="np.ant"/>
       <cat-item tags="np.ant.*"/>
@@ -10912,6 +10940,37 @@ If no format information is present it is removed. -->
                <lit-tag v="px3sp"/> <!-- for possessive, just in case -->
 	      <clip pos="2" side="tl" part="a_case"/>
             </lu>
+          </chunk>
+        </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep V rim-abbr noun"> <!--Aliya 24.08.2017 TEKSER-->
+  <pattern>
+    <pattern-item n="prep-v"/>
+    <pattern-item n="rim-num"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+      </call-macro>
+ 
+        <out>
+          <chunk name="prep-rimnum-n">   <!--В XX веке - XX жыл -->
+            <tags><tag><var n="pptag"/></tag></tags>
+            <lu>
+    		 <clip pos="2" side="tl" part="lem"/> 
+    		 <clip pos="2" side="tl" part="a_abbr"/>
+            </lu><b/>
+	<lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <clip pos="3" side="tl" part="a_nbr"/> 
+               <lit-tag v="loc"/>   
+	</lu>
           </chunk>
         </out>
   </action>
