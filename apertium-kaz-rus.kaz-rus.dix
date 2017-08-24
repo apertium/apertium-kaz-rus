@@ -32048,6 +32048,7 @@ VERB1 -->
 <e>       <p><l>сәйкес<s n="post"/></l>                  <r>согласно<s n="pr"/></r></p><par n="__LR_dat"/></e>
 <e>       <p><l>секілді<s n="post"/></l>                 <r>будто<s n="cnjsub"/></r></p></e> <!-- FIXME CHECK -->
 <e>       <p><l>егер<s n="cnjsub"/></l>                             <r>если<s n="cnjsub"/></r></p></e> <!-- FIXME CHECK -->
+<e>       <p><l>астам<s n="adv"/></l>                 <r>более<b/>чем<s n="cnjsub"/></r></p></e> <!-- FIXME CHECK -->
 <e>       <p><l>сияқты<s n="adv"/></l>                   <r>как<s n="adv"/><s n="itg"/></r></p></e> 
 <e>       <p><l>соң<s n="post"/></l>                         <r>после<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e>       <p><l>таман<s n="post"/></l>                   <r>к<s n="pr"/></r></p><par n="__LR_dat"/></e>

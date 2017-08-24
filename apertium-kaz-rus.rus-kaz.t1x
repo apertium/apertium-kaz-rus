@@ -7487,7 +7487,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="NEW RULE: adj noun"> <!-- добрый человек - көңілшек адам -->   <!-- Aliya -->
+<rule comment="NEW RULE: adj noun"> <!-- добрый человек - көңілшек адам -->   <!-- Aliya 22.08.17-->
   <pattern>
     <pattern-item n="adj"/>
     <pattern-item n="n"/>
@@ -7515,13 +7515,20 @@ If no format information is present it is removed. -->
          </when>
          <when>
            <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="prp"/></equal></test>
-           <let><var n="case"/><lit-tag v="CD"/></let>
+           <let><var n="case"/><lit-tag v="loc"/></let>
          </when>
          <when>
            <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="ins"/></equal></test>
            <let><var n="case"/><lit-tag v="ins"/></let>
          </when>
          <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_nbr"/><lit-tag v="pl"/></equal></test>
+           <let><var n="number"/><lit-tag v="pl"/></let>
+         </when>
+         <otherwise><let><var n="number"/><lit v=""/></let></otherwise>
       </choose>
 
     <out>
@@ -7536,8 +7543,8 @@ If no format information is present it is removed. -->
 	<lu>
           <clip pos="2" side="tl" part="lem"/>
 	  <clip pos="2" side="tl" part="a_nom"/>
-	  <clip pos="2" side="tl" part="a_nbr"/>
-	  <clip pos="2" side="tl" part="a_case"/>
+	  <var n="number"/>
+	  <var n="case"/>
           </lu>
     </chunk>
     </out>
