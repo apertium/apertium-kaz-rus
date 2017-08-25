@@ -2450,6 +2450,88 @@ If no format information is present it is removed. -->
 </rule>
 
 
+<rule comment="NEW RULE: prep vseh ego noun">  <!-- Aliya 25.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="vseh"/> 
+    <pattern-item n="ego-detpos"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="4"/>
+     </call-macro>
+     <choose>
+
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out>
+          <chunk name="prep-vseh-ego-nom-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu><b/>
+        <lu>
+          <lit v="барлық"/>
+          <lit-tag v="det.qnt"/>
+        </lu><b/>
+            <lu>
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>            
+               <lit-tag v="5"/>
+            </lu><b/>
+            <lu><var n="postposition_lu"/></lu>
+          </chunk>
+        </out>
+      </when>
+
+      <otherwise>
+        <out>
+          <chunk name="prep-vseh-ego-nom">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="4" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu><b/>
+        <lu>
+          <lit v="барлық"/>
+          <lit-tag v="det.qnt"/>
+        </lu><b/>
+            <lu>
+               <clip pos="4" side="tl" part="lem"/> 
+               <clip pos="4" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>            
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
 
 <rule comment="NEW RULE: vseh adj noun"> <!-- все знатные земли - барлық айтулы құрлықтар -->  <!-- Aliya 18.06.17 -->
   <pattern>
@@ -2651,7 +2733,7 @@ If no format information is present it is removed. -->
 
       <otherwise>
         <out>
-          <chunk name="prep-vseh-nom">          <!-- -->
+          <chunk name="prep-vseh-nom">     
             <tags> <tag><var n="pptag"/></tag>
                 <tag><clip pos="3" part="a_nbr" side="sl"/></tag>
                 <tag><lit-tag v="p3"/></tag>
