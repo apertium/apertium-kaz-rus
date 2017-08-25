@@ -31745,31 +31745,6 @@ VERB1 -->
 
 <!--Acronyms -->
 
-<e><p><l>I<s n="abbr"/></l><r>I<s n="abbr"/></r></p></e>
-<e><p><l>II<s n="abbr"/></l><r>II<s n="abbr"/></r></p></e>
-<e><p><l>III<s n="abbr"/></l><r>III<s n="abbr"/></r></p></e>
-<e><p><l>IV<s n="abbr"/></l><r>IV<s n="abbr"/></r></p></e>
-<e><p><l>V<s n="abbr"/></l><r>V<s n="abbr"/></r></p></e>
-<e><p><l>VI<s n="abbr"/></l><r>VI<s n="abbr"/></r></p></e>
-<e><p><l>VII<s n="abbr"/></l><r>VII<s n="abbr"/></r></p></e>
-<e><p><l>VIII<s n="abbr"/></l><r>VIII<s n="abbr"/></r></p></e>
-<e><p><l>IX<s n="abbr"/></l><r>IX<s n="abbr"/></r></p></e>
-<e><p><l>X<s n="abbr"/></l><r>X<s n="abbr"/></r></p></e>
-<e><p><l>XI<s n="abbr"/></l><r>XI<s n="abbr"/></r></p></e>
-<e><p><l>XII<s n="abbr"/></l><r>XII<s n="abbr"/></r></p></e>
-<e><p><l>XIII<s n="abbr"/></l><r>XIII<s n="abbr"/></r></p></e>
-<e><p><l>XIV<s n="abbr"/></l><r>XIV<s n="abbr"/></r></p></e>
-<e><p><l>XV<s n="abbr"/></l><r>XV<s n="abbr"/></r></p></e>
-<e><p><l>XVI<s n="abbr"/></l><r>XVI<s n="abbr"/></r></p></e>
-<e><p><l>XVII<s n="abbr"/></l><r>XVII<s n="abbr"/></r></p></e>
-<e><p><l>XVIII<s n="abbr"/></l><r>XVIII<s n="abbr"/></r></p></e>
-<e><p><l>XVIII<s n="abbr"/></l><r>XVIII<s n="abbr"/></r></p></e>
-<e><p><l>XIX<s n="abbr"/></l><r>XIX<s n="abbr"/></r></p></e>
-<e><p><l>XX<s n="abbr"/></l><r>XX<s n="abbr"/></r></p></e>
-<e><p><l>XXI<s n="abbr"/></l><r>XXI<s n="abbr"/></r></p></e>
-<e><p><l>XXII<s n="abbr"/></l><r>XXII<s n="abbr"/></r></p></e>
-<e><p><l>XXIII<s n="abbr"/></l><r>XXIII<s n="abbr"/></r></p></e>
-
 <e><p><l>ЕҚЫҰ<s n="n"/><s n="acr"/></l><r>ОБСЕ<s n="abbr"/></r></p></e>
 <e><p><l>БҰҰ<s n="np"/><s n="org"/><s n="attr"/></l><r>ООН<s n="np"/><s n="org"/></r></p></e>
 <e><p><l>ТМД<s n="n"/><s n="acr"/></l><r>СНГ<s n="abbr"/></r></p></e>
@@ -31819,6 +31794,7 @@ VERB1 -->
 <e c="жанында"><p><l>жан<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>у<s n="pr"/></r></p><par n="__LR_gen"/></e>
 
 <e c="алдында"><p><l>алд<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>при<s n="pr"/></r></p></e>
+<e r="RL"> <p><l></l>    <r>в<s n="pr"/></r></p></e>
 
 <e r="RL"> <p><l>арқылы<s n="post"/><s n="Rnom"/></l>     <r>через<s n="pr"/></r></p></e>
 <e r="LR"><p><l>арқылы<s n="post"/></l>                                       <r>через<s n="pr"/></r></p></e>
