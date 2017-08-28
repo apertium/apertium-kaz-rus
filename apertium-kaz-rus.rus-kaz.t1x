@@ -1606,7 +1606,7 @@ If no format information is present it is removed. -->
                <clip pos="3" side="tl" part="lem"/> 
                <clip pos="3" side="tl" part="a_nom"/>
                <clip pos="3" side="tl" part="a_nbr"/> 
-               <clip pos="3" side="tl" part="a_case"/> 
+               <var n="case"/>
             </lu> <b/>
             <lu> <var n="postposition_lu"/> </lu>
           </chunk>
@@ -1693,6 +1693,41 @@ If no format information is present it is removed. -->
   <call-macro n="NEW-build-noun-lu-2-4-5"><with-param pos="3"/></call-macro> 
   <call-macro n="select-case"><with-param pos="2"/></call-macro>
 
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="loc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="2" part="a_nbr"/><lit-tag v="pl"/></equal></test>
+           <let><var n="number"/><lit-tag v="pl"/></let>
+         </when>
+         <otherwise><let><var n="number"/><lit v=""/></let></otherwise>
+      </choose>
+
     <out>
     <chunk name="adj-noun-n_gen">         <!-- внешним границам стран - елдердің сыртқы шекарасына -->
     <tags> <tag><lit-tag v="NP"/></tag>
@@ -1711,9 +1746,9 @@ If no format information is present it is removed. -->
     <lu>  
      <clip pos="2" side="tl" part="lem"/> 
      <clip pos="2" side="tl" part="a_nom"/>
-     <lit-tag v="2"/>
+	  <var n="number"/>
      <lit-tag v="px3sp"/>
-     <clip pos="2" side="tl" part="a_case"/>
+	  <var n="case"/>
     </lu>
     </chunk>
     </out>
@@ -3003,6 +3038,106 @@ If no format information is present it is removed. -->
     </out>
       </action>
     </rule>
+
+
+<rule comment="NEW RULE: prep ego noun">    <!-- Aliya 28.08.2017 -->  <!--в её составе - оның құрамында -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="ego-detpos"/>
+    <pattern-item n="nom"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="3"/>
+      </call-macro>
+ 
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="loc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="3" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-ego-n-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag> 
+                <tag><lit-tag v="PXD"/></tag> 
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu>
+       <b/>
+            <lu>
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="px3sp"/>            
+               <var n="case"/>
+            </lu> <b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise>
+        <out>
+          <chunk name="prep-ego-n">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="3" part="a_nbr" side="sl"/></tag> 
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="4"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+        <lu>
+          <lit v="ол"/>
+          <lit-tag v="prn.pers"/>
+          <lit-tag v="p3"/>
+          <lit-tag v="sg"/>
+          <lit-tag v="gen"/>
+        </lu>
+       <b/>
+            <lu> 
+               <clip pos="3" side="tl" part="lem"/> 
+               <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="px3sp"/>            
+               <var n="case"/>
+            </lu><b/>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
 
 <rule comment="RULE: ih noun"> <!-- Aliya 21.06.17 -->
       <pattern>
@@ -9731,6 +9866,34 @@ If no format information is present it is removed. -->
   <call-macro n="NEW-build-noun-lu-2-4-5"><with-param pos="2"/></call-macro> 
   <call-macro n="select-case"><with-param pos="1"/></call-macro>
 
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="loc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+
     <out>
     <chunk name="noun-noun">
     <tags> <tag><lit-tag v="NP"/></tag>
@@ -9748,10 +9911,83 @@ If no format information is present it is removed. -->
     <lu>  
      <clip pos="1" side="tl" part="lem"/> 
      <clip pos="1" side="tl" part="a_nom"/>
-     <lit-tag v="2"/> <!-- number -->
-     <!-- no need to link person -->
-     <lit-tag v="px3sp"/><!-- for possessive, just in case -->
-     <clip pos="1" side="tl" part="a_case"/>
+     <lit-tag v="2"/>
+     <lit-tag v="px3sp"/>
+     <var n="case"/>
+    </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: noun nouon and noun">   <!-- Aliya 28.08.17 -->
+  <pattern>
+    <pattern-item n="n"/>
+    <pattern-item n="n"/>
+    <pattern-item n="cnjcoo"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+
+      <choose>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="nom"/></equal></test>
+           <let><var n="case"/><lit-tag v="nom"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="gen"/></equal></test>
+           <let><var n="case"/><lit-tag v="gen"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="acc"/></equal></test>
+           <let><var n="case"/><lit-tag v="acc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="dat"/></equal></test>
+           <let><var n="case"/><lit-tag v="dat"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="prp"/></equal></test>
+           <let><var n="case"/><lit-tag v="loc"/></let>
+         </when>
+         <when>
+           <test><equal><clip side="sl" pos="1" part="a_case"/><lit-tag v="ins"/></equal></test>
+           <let><var n="case"/><lit-tag v="ins"/></let>
+         </when>
+         <otherwise><let><var n="case"/><lit-tag v="CD"/></let></otherwise>
+      </choose>
+
+    <out>
+    <chunk name="n-n-and-n">
+    <tags> <tag><lit-tag v="NP"/></tag>
+    <tag><clip pos="1" side="sl" part="a_nbr"/></tag> <!-- number placeholder -->
+    <tag><lit-tag v="p3"/></tag> <!-- person placeholder -->
+    <tag><lit-tag v="PXD"/></tag> <!-- possessor placeholder -->
+    <tag><lit-tag v="CD"/></tag> <!-- case placeholder -->
+    </tags>
+    <lu>
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <clip pos="2" side="tl" part="a_nbr"/>
+     <lit-tag v="gen"/>
+    </lu><b/>
+            <lu> 
+               <clip pos="3" side="tl" part="lem"/> 
+    	       <clip pos="3" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+    <lu>
+     <clip pos="4" side="tl" part="lem"/> 
+     <clip pos="4" side="tl" part="a_nom"/>
+     <clip pos="4" side="tl" part="a_nbr"/>
+     <lit-tag v="gen"/>
+    </lu><b/>
+    <lu>  
+     <clip pos="1" side="tl" part="lem"/> 
+     <clip pos="1" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <lit-tag v="px3sp"/>
+     <var n="case"/>
     </lu>
     </chunk>
     </out>
