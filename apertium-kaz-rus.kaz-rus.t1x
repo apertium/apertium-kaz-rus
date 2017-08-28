@@ -6746,7 +6746,7 @@ If no format information is present it is removed. -->
           
 <when>
 
-                <test><not><equal>		      <clip pos="1" side="tl" part="a_nom"/><lit-tag v="abbr"/></equal></not></test>
+                <test><not><equal> <clip pos="1" side="tl" part="a_nom"/><lit-tag v="abbr"/></equal></not></test>
                 <out>
                   <chunk name="n_pers2">
                     <tags>
@@ -9169,7 +9169,7 @@ after putting
                    <clip pos="2" side="tl" part="a_gender"/>
                 <var n="animacy"/>
                   <clip pos="2" side="tl" part="a_nbr"/>
- <var n="case"/>
+                <var n="case"/>
                 </lu>
             <b/>
             <lu>
@@ -13395,6 +13395,33 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   </out>
 </when>
 
+<when>
+
+            <test>
+             <equal><clip pos="1" side="sl" part="a_kaz_perspron"/><lit-tag v="prn.ind"/></equal>
+        
+            </test>
+ <out>
+       <chunk name="prn+aa" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <lit-tag v="m"/>
+                  <lit-tag v="aa"/>
+                  <lit-tag v="sg"/>
+                  <var n="case"/>
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+
 <otherwise>
  <out>
               <chunk name="prn-ozi">  <!--өзі  -->
@@ -13511,6 +13538,67 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         
             </action>
 </rule>
+
+
+
+ <rule comment="REGLA: PRN"> <!--Bota -->
+      <pattern>
+     <pattern-item n="prn"/>
+      </pattern>
+      <action>
+<call-macro n="choose_case_and_postposition1">
+ <with-param pos="1"/>
+            </call-macro>   
+<choose>
+   
+<when>
+
+            <test>
+             <equal><clip pos="1" side="sl" part="a_kaz_perspron"/><lit-tag v="prn.ind"/></equal>
+        
+            </test>
+ <out>
+       <chunk name="prn+aa2" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_nom"/>
+                  <lit-tag v="m"/>
+                  <lit-tag v="aa"/>
+                  <lit-tag v="sg"/>
+                  <var n="case"/>
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+<otherwise>         
+<out>
+          <chunk name="prn-eto">
+            <tags>
+              <tag><lit-tag v="DET"/></tag>
+            </tags>
+            <lu>
+              <clip pos="1" side="tl" part="lem"/>
+              <clip pos="1" side="tl" part="a_nom"/>
+              <clip pos="1" side="tl" part="a_gender"/> 
+              <lit-tag v="sg"/>  
+              <lit-tag v="nom"/> 
+            </lu>
+          </chunk>
+        </out>
+</otherwise>
+</choose>
+
+
+</action>
+</rule>
+
 
 
 
