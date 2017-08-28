@@ -27415,7 +27415,7 @@ VERB1 -->
 <e><p><l>тауыс<s n="v"/><s n="iv"/></l><r>перевести<s n="vblex"/></r></p></e>
 <e><p><l>бер<s n="v"/><s n="tv"/></l><r>передать<s n="vblex"/></r></p></e>
 <e><p><l>тапсыр<s n="v"/><s n="tv"/></l><r>передать<s n="vblex"/></r></p></e>
-<e><p><l>айт<s n="v"/><s n="iv"/></l><r>передать<s n="vblex"/></r></p></e>
+<e><p><l>айт<s n="v"/><s n="tv"/></l><r>передать<s n="vblex"/></r></p></e>
 <e><p><l>жеткіз<s n="v"/><s n="tv"/></l><r>передать<s n="vblex"/></r></p></e>
 <e><p><l>қалдыр<s n="v"/><s n="tv"/></l><r>передать<s n="vblex"/></r></p></e>
 <e><p><l>көш<s n="v"/><s n="iv"/></l><r>переехать<s n="vblex"/></r></p></e>
@@ -30000,7 +30000,7 @@ VERB1 -->
 <e><p><l>бағып<b/>қақ<s n="v"/><s n="iv"/></l><r>углядеть<s n="vblex"/></r></p></e>
 <e><p><l>көз<b/>сал<s n="v"/><s n="tv"/></l><r>углядеть<s n="vblex"/></r></p></e>
 <e><p><l>есептес<s n="v"/><s n="iv"/></l><r>учесть<s n="vblex"/></r></p></e>
-<e><p><l>санас<s n="v"/><s n="iv"/></l><r>учесть<s n="vblex"/></r></p></e>
+<e><p><l>ескер<s n="v"/><s n="tv"/></l><r>учесть<s n="vblex"/></r></p></e>
 <e><p><l>еске<b/>ал<s n="v"/><s n="tv"/></l><r>учесть<s n="vblex"/></r></p></e>
 <e><p><l>көңіл<b/>қой<s n="v"/><s n="tv"/></l><r>учесть<s n="vblex"/></r></p></e>
 <e><p><l>иландыр<s n="v"/><s n="iv"/></l><r>уговорить<s n="vblex"/></r></p></e>
@@ -30866,7 +30866,7 @@ VERB1 -->
 <e><p><l>ез<s n="v"/><s n="tv"/></l><r>прижать<s n="vblex"/></r></p></e>
 <!--<e><p><l>шақыр<s n="v"/><s n="tv"/></l><r>призвать<s n="vblex"/></r></p></e>-->
 <e><p><l>үнде<s n="v"/><s n="iv"/></l><r>призвать<s n="vblex"/></r></p></e>
-<e><p><l>ал<s n="v"/><s n="iv"/></l><r>призвать<s n="vblex"/></r></p></e>
+<e><p><l>ал<s n="v"/><s n="tv"/></l><r>призвать<s n="vblex"/></r></p></e>
 <e><p><l>бұйыр<s n="v"/><s n="tv"/></l><r>призвать<s n="vblex"/></r></p></e>
 <e><p><l>мақұлда<s n="v"/><s n="tv"/></l><r>признать<s n="vblex"/></r></p></e>
 <e><p><l>мойында<s n="v"/><s n="tv"/></l><r>признать<s n="vblex"/></r></p></e>
@@ -32592,9 +32592,11 @@ VERB1 -->
 <e><p><l>Эмиль<s n="np"/><s n="ant"/><s n="m"/></l><r>Эмиль<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Дима<s n="np"/><s n="ant"/><s n="m"/></l><r>Дима<s n="np"/><s n="ant"/><s n="m"/></r></p></e>
 <e><p><l>Юзефа<s n="np"/><s n="ant"/><s n="f"/></l><r>Юзефа<s n="np"/><s n="ant"/><s n="f"/></r></p></e>
-<e><p><l>Пушкин<s n="np"/><s n="cog"/></l><r>Пушкин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Ларин<s n="np"/><s n="cog"/></l><r>Ларин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
-<e><p><l>Гитлер<s n="np"/><s n="cog"/></l><r>Гитлер<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Пушкин<s n="np"/><s n="cog"/><s n="m"/></l><r>Пушкин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Теннис<s n="np"/><s n="cog"/><s n="mf"/></l><r>Теннис<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Мономах<s n="np"/><s n="cog"/><s n="mf"/></l><r>Мономах<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Ларин<s n="np"/><s n="cog"/><s n="m"/></l><r>Ларин<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
+<e><p><l>Гитлер<s n="np"/><s n="cog"/><s n="m"/></l><r>Гитлер<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Горбачёв<s n="np"/><s n="cog"/><s n="m"/></l><r>Горбачёв<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Тюдоров<s n="np"/><s n="cog"/><s n="m"/></l><r>Тюдоров<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
 <e><p><l>Кузнецов<s n="np"/><s n="cog"/><s n="m"/></l><r>Кузнецов<s n="np"/><s n="cog"/><s n="m"/></r></p></e>
