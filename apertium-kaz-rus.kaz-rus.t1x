@@ -3739,20 +3739,15 @@ If no format information is present it is removed. -->
               <lit-tag v="p3"/>
               <lit-tag v="sg"/>
  </lu>
-
  <b/>
   <lu>
-   
-    <clip pos="1" side="tl" part="lem"/>
-    
-     <clip pos="1" side="tl" part="a_verb"/>
+       <clip pos="1" side="tl" part="lem"/>
+         <clip pos="1" side="tl" part="a_verb"/>
               <clip pos="1" side="tl" part="a_trans"/>
               <clip pos="1" side="tl" part="a_tense"/> 
                <lit-tag v="m"/>
               <clip pos="1" side="sl" part="a_nbr"/> 
-   
-
-</lu>
+   </lu>
  </chunk>
   </out>
 </otherwise>
@@ -7126,7 +7121,6 @@ If no format information is present it is removed. -->
         <pattern-item n="n-attr-or-gen"/>
         <pattern-item n="n-px3sp"/>
 <pattern-item n="cop"/>
-
       </pattern>
       <action>
  <call-macro n="return-number-of-sl-word">
@@ -7155,7 +7149,7 @@ If no format information is present it is removed. -->
                   <clip pos="1" side="tl" part="a_gender"/>
                   <clip pos="1" side="tl" part="a_anim"/>
                   <var n="number"/>
-                <clip pos="2" side="tl" part="a_case"/>
+             <clip pos="2" side="tl" part="a_case"/>
                 </lu>
               </chunk>
             </out>
@@ -9223,9 +9217,9 @@ after:
   <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                   <clip pos="2" side="tl" part="a_gender"/>
+                <clip pos="2" side="tl" part="a_gender"/>
 <var n="animacy"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
+          <clip pos="2" side="tl" part="a_nbr"/>
  <var n="case"/>
                 </lu>
             <b/>
@@ -9295,7 +9289,7 @@ after:
       </action>
     </rule>
 
-<rule comment="REGLA: ADJ N PR">  <!-- BA 2017-02-17 әдемі бақшаның үстінде-->
+<rule comment="REGLA: ADJ N PR">  <!-- BA 2017-02-17 әдемі бақшаның үстінде / жақсы бақшаның жанында-->
          <pattern>
         <pattern-item n="adj"/>
         <pattern-item n="n-attr-or-gen"/>
@@ -9317,11 +9311,8 @@ after:
           <with-param pos="1"/>
           <with-param pos="2"/>
         </call-macro>
-
-
- 
         <out>
-          <chunk name="adj_n_pr">
+          <chunk name="adj_n_pr"> 
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
@@ -9333,9 +9324,10 @@ after:
 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                  <clip pos="1" side="tl" part="a_gender"/>
-                  <clip pos="1" side="tl" part="a_anim"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <clip pos="2" side="tl" part="a_gender"/>
+                  <var n="animacy"/>
+                <!--  <clip pos="1" side="tl" part="a_anim"/>-->
+                  <clip pos="2" side="tl" part="a_nbr"/>
                   <var n="case"/>
                 </lu>
                      <b/>
@@ -9415,6 +9407,7 @@ after:
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
         <pattern-item n="n"/>
+      <!-- <pattern-item n="cop"/> -->
       </pattern>
       <action>
         <call-macro n="translate-noun">
@@ -9557,7 +9550,7 @@ output after:
       </action>
     </rule>
 
-    <rule comment="REGLA: DET ADJ N (2)"> <!-- осы әдемі үй -->
+    <rule comment="REGLA: DET ADJ N (2)"> <!-- BA мынау әдемі үй- этот красивый дом-->
       <!--
       INPUT:  ^осы<det><dem>/этот<det><dem><m><an><sg><nom>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^үй<n><nom>/дом<n><m><nn><nom>$
       OUTPUT: ^det_adj_n<SN>{^этот<det><dem><m><an><sg><nom>$ ^красивый<adj><sint><m><an><sg><nom>$ ^дом<n><m><nn><sg><nom>$}$
@@ -9566,6 +9559,7 @@ output after:
         <pattern-item n="det"/>
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
+<pattern-item n="cop"/>
       </pattern>
       <action>
         <call-macro n="translate-noun">
@@ -9593,8 +9587,13 @@ output after:
             </lu>
             <b/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>
+		<clip pos="2" side="tl" part="lem"/>
+                <clip pos="2" side="tl" part="a_adj"/>
+                 <clip pos="3" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+                 <clip pos="3" side="tl" part="a_nbr"/>
+		 <var n="case"/>
+                        </lu>
             <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
@@ -9884,7 +9883,7 @@ output after:
       OUTPUT: ^num_n<SN>{^пять<num><mfn><pl><dat>$ ^год<n><m><nn><pl><dat>$}$
       -->
       <pattern>
-        <pattern-item n="num-det"/>
+        <pattern-item n="num"/>
         <pattern-item n="n"/>
 <pattern-item n="cop"/>
 
@@ -10253,9 +10252,9 @@ output after:
            <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                  <clip pos="1" side="tl" part="a_gender"/>
+                  <clip pos="2" side="tl" part="a_gender"/>
                  <var n="animacy"/>
-                  <clip pos="1" side="tl" part="a_nbr"/>
+                  <clip pos="2" side="tl" part="a_nbr"/>
                   <var n="case"/>
                 </lu>
             <b/>
@@ -10316,9 +10315,9 @@ output after:
            <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_adj"/>
-                  <clip pos="2" side="tl" part="a_gender"/>
+                  <clip pos="3" side="tl" part="a_gender"/>
                  <var n="animacy"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
                   <var n="case"/>
                 </lu>
             <b/>
