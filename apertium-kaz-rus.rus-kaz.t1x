@@ -4874,7 +4874,7 @@ If no format information is present it is removed. -->
 </rule>
 
 
-<rule comment="NEW RULE: pron-pers verb"> <!-- Aliya 04.09.17 -->
+<rule comment="NEW RULE: pron-pers verb"> <!-- Aliya 04.09.2017 -->
   <pattern>
     <pattern-item n="subj-pron"/>
     <pattern-item n="verb-past"/>
