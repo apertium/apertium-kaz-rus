@@ -3898,7 +3898,7 @@ If no format information is present it is removed. -->
           <lit-tag v="4"/>
           <lit-tag v="5"/>
 	  <clip pos="1" side="tl" part="a_pers"/>
-          <lit-tag v="2"/>
+	  <clip pos="1" side="tl" part="a_nbr"/>
           <lit-tag v="7"/>
         </lu>
     </chunk>
@@ -4894,6 +4894,18 @@ If no format information is present it is removed. -->
         <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/></equal></test>
         <let><var n="person"/><lit-tag v="p3"/></let>
       </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal></test>
+        <let><var n="person"/><lit-tag v="p1"/></let>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test>
+        <let><var n="person"/><lit-tag v="p2"/></let>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/></equal></test>
+        <let><var n="person"/><lit-tag v="p3"/></let>
+      </when>
     </choose>
     <choose>
       <when>
@@ -4916,7 +4928,7 @@ If no format information is present it is removed. -->
       <clip pos="1" side="tl" part="lem"/>
       <clip pos="1" side="tl" part="a_kaz_perspron"/>
       <clip pos="1" side="tl" part="a_pers"/>
-      <lit-tag v="2"/> <!-- number -->
+      <clip pos="1" side="tl" part="a_nbr"/>
       <lit-tag v="5"/> <!-- possession -->
       <lit-tag v="7"/> <!-- case -->
     </lu><b/>
