@@ -3896,7 +3896,7 @@ If no format information is present it is removed. -->
           <lit-tag v="6"/>
           <lit-tag v="4"/>
           <lit-tag v="5"/>
-          <lit-tag v="3"/>
+	  <clip pos="1" side="tl" part="a_pers"/>
           <lit-tag v="2"/>
           <lit-tag v="7"/>
         </lu>
@@ -3906,7 +3906,7 @@ If no format information is present it is removed. -->
 
       <when>
         <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="past"/></equal></test>
-        <let><var n="tense"/><lit-tag v="ifi"/></let>
+        <let><var n="tense"/><lit-tag v="past"/></let>
     <out>
     <chunk name="verb-past"> <!-- Он звал - Ол шақырған -->
       <tags>
@@ -3922,8 +3922,8 @@ If no format information is present it is removed. -->
           <clip pos="1" side="tl" part="lem"/>
 	  <clip pos="1" side="tl" part="a_kaz_verb"/>
 	  <clip pos="1" side="tl" part="a_tense"/>
-          <lit-tag v="3"/>
-          <lit-tag v="2"/>
+	  <clip pos="1" side="tl" part="a_pers"/>
+	  <clip pos="1" side="tl" part="a_nbr"/>
         </lu>
     </chunk>
     </out>
@@ -4040,7 +4040,7 @@ If no format information is present it is removed. -->
           <clip pos="1" side="tl" part="lem"/>
 	  <clip pos="1" side="tl" part="a_kaz_verb"/>
 	  <clip pos="1" side="tl" part="a_tense"/>
-          <lit-tag v="3"/>
+	  <clip pos="1" side="tl" part="a_pers"/>
           <lit-tag v="2"/>
         </lu>
     </chunk>
@@ -10849,6 +10849,89 @@ If no format information is present it is removed. -->
             <lu>
                <clip pos="3" side="tl" part="lem"/> 
                <clip pos="3" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="px3sp"/>
+               <lit-tag v="5"/>
+            </lu>
+          </chunk>
+        </out>
+      </otherwise>
+    </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: prep det adj and adj noun">      <!-- Aliya 29.08.17 -->
+  <pattern>
+    <pattern-item n="prep"/>
+    <pattern-item n="det"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="cnjcoo"/>
+    <pattern-item n="adj"/>
+    <pattern-item n="n"/>
+  </pattern>
+  <action>
+     <call-macro n="choose_case_and_postposition2">
+        <with-param pos="1"/>
+        <with-param pos="6"/>
+     </call-macro>
+<call-macro n="build-adjec-lu"><with-param pos="3"/></call-macro> 
+<call-macro n="build-adjec-lu1"><with-param pos="5"/></call-macro> 
+ 
+     <choose>
+      <when>  
+       <test><equal><var n="genpp"/><lit v="yes"/></equal></test> 
+        <out> <!-- with postposition -->
+          <chunk name="prep-det-adj-and-adj-n-post">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="6" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu>
+    		 <clip pos="2" side="tl" part="lem"/> 
+    		 <clip pos="2" side="tl" part="a_det"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu>
+    		 <clip pos="4" side="tl" part="lem"/> 
+    		 <clip pos="4" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu1"/> </lu> <b/>
+            <lu> 
+               <clip pos="6" side="tl" part="lem"/> 
+               <clip pos="6" side="tl" part="a_nom"/>
+               <lit-tag v="2"/>
+               <lit-tag v="4"/>
+               <lit-tag v="5"/>
+            </lu><b/>
+            <lu> <var n="postposition_lu"/> </lu>
+          </chunk>
+        </out>
+      </when>
+      <otherwise> <!-- without postposition -->
+        <out>
+          <chunk name="prep-det-adj-and-adj-n">
+            <tags> <tag><var n="pptag"/></tag>
+                <tag><clip pos="6" part="a_nbr" side="sl"/></tag>
+                <tag><lit-tag v="p3"/></tag>
+                <tag><lit-tag v="PXD"/></tag>
+                <tag><var n="case"/></tag>       
+            </tags>
+            <lu>
+    		 <clip pos="2" side="tl" part="lem"/> 
+    		 <clip pos="2" side="tl" part="a_det"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu"/> </lu> <b/>
+            <lu>
+    		 <clip pos="4" side="tl" part="lem"/> 
+    		 <clip pos="4" side="tl" part="a_cnjcoo"/>
+            </lu><b/>
+            <lu> <var n="adjec_lu1"/> </lu> <b/>
+            <lu> 
+               <clip pos="6" side="tl" part="lem"/> 
+               <clip pos="6" side="tl" part="a_nom"/>
                <lit-tag v="2"/>
                <lit-tag v="px3sp"/>
                <lit-tag v="5"/>

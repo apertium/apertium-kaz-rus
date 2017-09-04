@@ -19590,6 +19590,7 @@ VERB1 -->
 <e><p><l>миллиондаған<s n="det"/><s n="qnt"/></l><r>много<s n="det"/><s n="ind"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>       <p><l>қанша<s n="det"/><s n="qnt"/></l>           <r>сколько<s n="det"/><s n="qnt"/><s n="mfn"/><s n="sg"/></r></p></e>
 <e>       <p><l>бірнеше<s n="det"/><s n="qnt"/></l>      <r>несколько<s n="det"/><s n="qnt"/></r></p></e>
+<e>       <p><l>кейбір<s n="det"/><s n="ind"/></l>   <r>некоторый<s n="det"/><s n="ind"/></r></p></e> 
 
 
 
@@ -23686,8 +23687,6 @@ VERB1 -->
 <e><p><l>қағыл<s n="v"/><s n="tv"/></l><r>войти<s n="vblex"/></r></p></e>
 <e><p><l>сый<s n="v"/><s n="iv"/></l><r>войти<s n="vblex"/></r></p></e>
 <e><p><l>түсін<s n="v"/><s n="tv"/></l><r>войти<s n="vblex"/></r></p></e>
-<e><p><l>елесте<s n="v"/><s n="iv"/></l><r>восстановить<s n="vblex"/></r></p></e>
-<e><p><l>қайтар<s n="v"/><s n="iv"/></l><r>восстановить<s n="vblex"/></r></p></e>
 <e><p><l>қалпына<b/>келтір<s n="v"/><s n="tv"/></l><r>восстановить<s n="vblex"/></r></p></e>
 <e><p><l>сен<s n="v"/><s n="iv"/></l><r>вручить<s n="vblex"/></r></p></e>
 <e><p><l>тапсыр<s n="v"/><s n="tv"/></l><r>вручить<s n="vblex"/></r></p></e>
