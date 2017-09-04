@@ -3870,6 +3870,7 @@ If no format information is present it is removed. -->
     </rule>
 
 
+
 <rule comment="NEW RULE: verb"> <!-- Aliya 20.03.17 -->
   <pattern>
     <pattern-item n="verb"/>
@@ -4872,6 +4873,7 @@ If no format information is present it is removed. -->
     </choose>
   </action>
 </rule>
+
 
 
 <rule comment="NEW RULE: pron-pers verb"> <!-- Aliya 04.09.2017 -->
