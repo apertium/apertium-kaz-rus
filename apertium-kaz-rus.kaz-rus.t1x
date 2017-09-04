@@ -840,6 +840,7 @@
       <attr-item tags="det.itg"/>
       <attr-item tags="det.ind"/>
       <attr-item tags="det.qnt"/>
+      <attr-item tags="det.def"/>
       <attr-item tags="num"/>
     </def-attr>
     <def-attr n="a_adj">
@@ -8917,7 +8918,7 @@ If no format information is present it is removed. -->
           <with-param pos="2"/>
         </call-macro>
         <out>
-          <chunk name="det_n">
+          <chunk name="det_n"> <!--BA 2017-09-05 әр таң-->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
@@ -8926,8 +8927,13 @@ If no format information is present it is removed. -->
                 </lu>
                 <b/>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
+		<clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_det"/>
+ 		<clip pos="2" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+        	  <clip pos="2" side="tl" part="a_nbr"/>
+ 		<var n="case"/>
+                          </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
@@ -8958,7 +8964,7 @@ If no format information is present it is removed. -->
           <with-param pos="2"/>
         </call-macro>
         <out>
-          <chunk name="det_n-cop">
+          <chunk name="det_n-cop"> <!--BA 2017-09-05 әр облыстан-->
             <tags>
               <tag><lit-tag v="SN"/></tag>
             </tags>
@@ -8967,7 +8973,12 @@ If no format information is present it is removed. -->
                 </lu>
                 <b/>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+		<clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_det"/>
+ 		<clip pos="2" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+        	  <clip pos="2" side="tl" part="a_nbr"/>
+ 		<var n="case"/>
             </lu>
             <b/>
             <lu>
