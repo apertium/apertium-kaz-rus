@@ -23,7 +23,6 @@
 <def-cat n="cat_prn">
  <cat-item tags="prn.n.sg.nom"/>
  </def-cat> 
-
 <def-cat n="v-shakyr">
 <cat-item lemma="шақыр" tags="v.tv.*"/>
 <cat-item lemma="шақыр" tags="v.tv"/>
@@ -423,13 +422,13 @@
     </def-cat>
  <def-cat n="prn">
 <cat-item tags="prn"/>
-<cat-item tags="prn.*"/>
 <cat-item tags="prn.dem"/>
 <cat-item tags="prn.dem.*"/>
 <cat-item tags="prn.ind.*"/>
 <cat-item tags="prn.neg.*"/>
 <cat-item tags="prn.qnt.*.*"/>
          </def-cat>
+
 <def-cat n="prn-ref">
 <cat-item tags="prn.ref"/>
 <cat-item tags="prn.ref.*"/>
@@ -569,6 +568,7 @@
     </def-cat>
     <def-cat n="subj-pron">
        <cat-item tags="prn.subj.*"/>
+       <cat-item tags="prn.subj.*.*"/>
     </def-cat>
 
 
@@ -7610,16 +7610,69 @@ If no format information is present it is removed. -->
     </rule>
 
 
-    <rule comment="REGLA: N N ADJ N"> <!-- Aliya --> <!-- оқушының кітабының соңғы басылымы -->
-      <!--
-      INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^кітап<n><px3sp><gen>/книга<n><f><nn><px3sp><gen>$ ^соңғы<adj>/последний<adj><sint><m><an><sg><nom>$ ^басылым<n><px3sp><nom>/издание<n><nt><nn><px3sp><nom>$
-      OUTPUT: ^n_n_adj_n<SN>{^последний<adj><sint><nt><an><sg><nom>$ ^издание<n><nt><nn><sg><nom>$ ^книга<n><f><nn><sg><gen>$ ^ученик<n><f><an><sg><gen>$}$
-      -->
+    <rule comment="REGLA: N N ADJ N"> <!-- BA 2017-09-04 Қазақстан Республикасының атқарушылық билігін -->       
       <pattern>
         <pattern-item n="n-attr-or-gen"/>
         <pattern-item n="n-px3sp"/>
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
+      </pattern>
+      <action>
+          <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="4"/>
+        </call-macro>
+        <call-macro n="makeagree-det-noun">
+          <with-param pos="3"/>
+          <with-param pos="4"/>
+        </call-macro>
+        <out>
+          <chunk name="n_n_adj_n">
+            <tags>
+              <tag><lit-tag v="SN"/></tag>
+            </tags>
+                <lu>
+                <var n="preposition"/>
+                </lu>
+                <b/>
+            <lu>
+		<clip pos="3" side="tl" part="lem"/>
+                 <clip pos="3" side="tl" part="a_adj"/>
+                <clip pos="4" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+         	 <clip pos="4" side="tl" part="a_nbr"/>
+		 <var n="case"/>
+                 </lu>
+            <b/>
+            <lu>
+              <clip pos="4" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="2" side="tl" part="whole"/>
+            </lu>
+            <b/>
+            <lu>
+              <clip pos="1" side="tl" part="whole"/>
+            </lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
+
+
+<rule comment="REGLA: N N ADJ N"> <!-- BA 2017-09-04 оқушының кітабының соңғы басылымы -->
+           <pattern>
+        <pattern-item n="n-attr-or-gen"/>
+        <pattern-item n="n-px3sp"/>
+        <pattern-item n="adj"/>
+        <pattern-item n="n"/>
+<pattern-item n="cop"/>
       </pattern>
       <action>
         
@@ -7646,8 +7699,13 @@ If no format information is present it is removed. -->
                 </lu>
                 <b/>
             <lu>
-              <clip pos="3" side="tl" part="whole"/>
-            </lu>
+		<clip pos="3" side="tl" part="lem"/>
+                 <clip pos="3" side="tl" part="a_adj"/>
+                <clip pos="4" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+         	 <clip pos="4" side="tl" part="a_nbr"/>
+		 <var n="case"/>
+                 </lu>
             <b/>
             <lu>
               <clip pos="4" side="tl" part="whole"/>
@@ -7664,7 +7722,6 @@ If no format information is present it is removed. -->
         </out>
       </action>
     </rule>
-
 
     <rule comment="REGLA: N ADJ N"> <!-- Aliya --> <!-- суреті әдемі кітап -->
       <!--
@@ -9206,6 +9263,17 @@ after putting
           <with-param pos="1"/>
           <with-param pos="2"/>
         </call-macro>
+<choose>
+<when>
+	      <test>
+	        <equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	      </test>
+              <let><var n="gender"/><lit-tag v="mfn"/></let>
+            </when>
+<otherwise>
+           <let><var n="gender"/><clip pos="2" side="tl" part="a_gender"/></let>
+</otherwise>
+</choose>
         <out>
           <chunk name="adj_n_cop">
             <tags>
@@ -9227,7 +9295,7 @@ after:
   <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                <clip pos="2" side="tl" part="a_gender"/>
+                <var n="gender"/>
 <var n="animacy"/>
           <clip pos="2" side="tl" part="a_nbr"/>
  <var n="case"/>
@@ -13006,6 +13074,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 <rule comment="RULE:prn"> 
 <pattern>
  <pattern-item n="prn1"/>
+<pattern-item n="cop"/>
 </pattern>
   <action>
 <call-macro n="choose_case_and_postposition1">
@@ -13102,7 +13171,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 <otherwise>
 <out>
-       <chunk name="prn-pers" case="caseFirstWord"> 
+       <chunk name="prn-pers" case="caseFirstWord">  <!-- менде - у меня -->
       <tags><tag><lit-tag v="NP"/></tag>       </tags> 
 
    <lu>
@@ -13112,7 +13181,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   <lu>
   <clip pos="1" side="tl" part="lem"/>
   <clip pos="1" side="tl" part="a_nom"/>
-  <lit-tag v="mf"/>
+  <clip pos="1" side="tl" part="a_gender"/>
   <clip pos="1" side="tl" part="a_nbr"/>
 <var n="case"/>
 
@@ -13129,8 +13198,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 
 
-<rule comment="RULE:prn+vars"> <!--  
- -->
+<rule comment="RULE:prn+vars"> 
 <pattern>
  <pattern-item n="prn1"/>
   <pattern-item n="cop"/>
@@ -13194,13 +13262,6 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
   </out>
  </action>
  </rule> 
-
- 
-
-
-
-
-
 
 <rule comment="RULE:prn+postvars"> <!--  өздері:өз<prn><ref><px3pl><nom>+ғана<postadv>
  -->
