@@ -3984,7 +3984,7 @@ If no format information is present it is removed. -->
         <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pprs"/></equal></test>
         <let><var n="tense"/><lit-tag v="prc_impf"/></let>
     <out>
-    <chunk name="verb-pprs"> <!-- зовя - шақыра -->
+    <chunk name="verb-pprs"> <!-- зовя - шақыра 000 -->
       <tags>
         <tag><lit-tag v="VP"/></tag>
         <tag><lit-tag v="ND"/></tag> <!-- number -->

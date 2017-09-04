@@ -581,6 +581,15 @@
 
     </def-cat>
 
+    <def-cat n="verbsform"> <!-- Aliya -->
+      <cat-item tags="v.*.past.*"/>
+      <cat-item tags="v.*.aor.*"/>
+      <cat-item tags="v.*.ger.*"/> 
+      <cat-item tags="v.*.imp.*"/>
+      <cat-item tags="v.*.gna_impf"/>
+      <cat-item tags="v.*.gna_impf.*"/>
+    </def-cat>
+
     <def-cat n="verb-fin">
       <cat-item tags="v.*.pres.*"/>
       <cat-item tags="v.*.aor.*"/>
@@ -851,7 +860,6 @@
     <def-attr n="a_verb">
       <attr-item tags="vbmod"/>
       <attr-item tags="vbser"/>
-<attr-item tags="vblex"/>
       <attr-item tags="vblex.impf"/>
       <attr-item tags="vblex.perf"/>
       <attr-item tags="vblex_dual"/>
@@ -965,13 +973,17 @@
       <attr-item tags="past"/>
       <attr-item tags="fut"/>
       <attr-item tags="fut2"/>
+      <attr-item tags="ger"/>
       <attr-item tags="imp"/>
       <attr-item tags="cont"/>
       <attr-item tags="aor"/>
       <attr-item tags="pp"/>
+      <attr-item tags="pprs"/>
       <attr-item tags="inf"/>
       <attr-item tags="ifi_evid"/>
       <attr-item tags="fut_plan"/>
+      <attr-item tags="gna_impf"/>
+      <attr-item tags="gna_perf"/>
     </def-attr>
     <def-attr n="a_kaz_perspron"> 
       <attr-item tags="prn.pers"/>
@@ -1006,6 +1018,11 @@
       <attr-item tags="frm"/>
     </def-attr>
 
+<def-attr n="a_pp-pprs">
+      <attr-item tags="pp"/>
+      <attr-item tags="pprs"/>
+    </def-attr>
+
 
 <def-attr n="a_tns">
       <attr-item tags="ifi"/>
@@ -1032,6 +1049,7 @@
     <def-var n="negation"/>
     <def-var n="gender"/>
     <def-var n="case"/>
+    <def-var n="tense"/>
     <def-var n="preposition"/>
     <def-var n="possessive"/>
 <def-var n="pronoun"/>
@@ -2512,6 +2530,194 @@ If no format information is present it is removed. -->
   </section-def-macros>
 
   <section-rules>
+
+
+
+
+
+<rule comment="NEW RULE: verb"> <!-- Aliya 04.09.17 -->
+  <pattern>
+    <pattern-item n="verbsform"/>
+  </pattern>
+  <action>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="aor"/></equal></test>
+        <let><var n="tense"/><lit-tag v="fut"/></let>
+    <out>
+    <chunk name="verb-pres"> <!-- ойнаймын - сыграю -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_verb"/>
+          <clip pos="1" side="sl" part="a_trans"/>
+	  <var n="tense"/>
+	  <clip pos="1" side="tl" part="a_pers"/>
+	  <clip pos="1" side="tl" part="a_nbr"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="past"/></equal></test>
+        <let><var n="tense"/><lit-tag v="past"/></let>
+    <out>
+    <chunk name="verb-past"> <!-- ойнағанмын - сыграла -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_verb"/>
+          <clip pos="1" side="tl" part="a_trans"/>
+	  <var n="tense"/>
+	  <clip pos="1" side="tl" part="a_gender"/>
+	  <clip pos="1" side="tl" part="a_nbr"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="ger"/></equal></test>
+        <let><var n="tense"/><lit-tag v="inf"/></let>
+    <out>
+    <chunk name="verb-inf"> <!-- ойнау - сыграть -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_verb"/>
+          <clip pos="1" side="sl" part="a_trans"/>
+	  <var n="tense"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="imp"/></equal></test>
+        <let><var n="tense"/><lit-tag v="imp"/></let>
+    <out>
+    <chunk name="verb-imp"> <!-- ойна - сыграй -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_verb"/>
+          <clip pos="1" side="sl" part="a_trans"/>
+	  <var n="tense"/>
+          <lit-tag v="p2"/>
+          <clip pos="1" side="tl" part="a_nbr"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="gna_impf"/></equal></test>
+    <out>
+    <chunk name="verb-pprs"> <!-- ойнай - сыграв 000-->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_verb"/>
+          <clip pos="1" side="sl" part="a_trans"/>
+          <!--clip pos="1" side="tl" part="a_pp-pprs"/-->
+          <lit-tag v="pprs.adv"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="gna_perf"/></equal></test>
+        <let><var n="tense"/><lit-tag v="pp"/></let>
+    <out>
+    <chunk name="verb-pp"> <!-- звав - шақырып 000 -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_verb"/>
+          <clip pos="1" side="sl" part="a_trans"/>
+          <!--clip pos="1" side="tl" part="a_pp-pprs"/-->
+          <lit-tag v="pp.adv"/>
+        </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="tense"/><lit-tag v="aor"/></let>
+    <out>
+    <chunk name="verb">
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+	  <clip pos="1" side="tl" part="a_tense"/>
+	  <clip pos="1" side="tl" part="a_pers"/>
+	  <clip pos="1" side="tl" part="a_nbr"/>
+        </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+  </action>
+</rule>
+
 
 <rule comment="RULE: shakyr">  <!-- AS to be removed -->
 <pattern>

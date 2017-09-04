@@ -4556,6 +4556,9 @@
 <e><p><l>тұрғыз<s n="v"/><s n="tv"/></l><r>построить<s n="vblex"/><s n="perf"/></r></p><par n="perf__verb"/></e>
 VERB1 -->
 
+
+<e><p><l>ойна<s n="v"/><s n="tv"/></l><r>сыграть<s n="vblex"/><s n="perf"/></r></p></e>
+
 <!-- nouns from rus.rus.dix-->
 <e><p><l>қазба<s n="n"/></l><r>ископаемое<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>жамбас<s n="n"/></l><r>бедро<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
@@ -29389,7 +29392,7 @@ VERB1 -->
 <e><p><l>санап<b/>шық<s n="v"/><s n="tv"/></l><r>счесть<s n="vblex"/></r></p></e>
 <e><p><l>же<s n="v"/><s n="tv"/></l><r>съесть<s n="vblex"/></r></p></e>
 <e><p><l>жеп<b/>қой<s n="v"/><s n="tv"/></l><r>съесть<s n="vblex"/></r></p></e>
-<e><p><l>ойна<s n="v"/><s n="tv"/></l><r>сыграть<s n="vblex"/></r></p></e>
+<!--e><p><l>ойна<s n="v"/><s n="tv"/></l><r>сыграть<s n="vblex"/></r></p></e-->
 <e><p><l>қосарла<s n="v"/><s n="tv"/></l><r>спарить<s n="vblex"/></r></p></e>
 <e><p><l>шағылыстыр<s n="v"/><s n="tv"/></l><r>спарить<s n="vblex"/></r></p></e>
 <e><p><l>жұпта<s n="v"/><s n="tv"/></l><r>спарить<s n="vblex"/></r></p></e>
