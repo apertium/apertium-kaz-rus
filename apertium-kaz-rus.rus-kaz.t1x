@@ -692,6 +692,7 @@
     <def-var n="num_lu"/>
     <def-var n="num_lu1"/>
     <def-var n="number"/>
+    <def-var n="person"/>
   <def-var n="genre"/>
     <def-var n="possessive"/>
     <def-var n="postposition_lu"/>
@@ -3922,7 +3923,7 @@ If no format information is present it is removed. -->
           <clip pos="1" side="tl" part="lem"/>
 	  <clip pos="1" side="tl" part="a_kaz_verb"/>
 	  <clip pos="1" side="tl" part="a_tense"/>
-	  <clip pos="1" side="tl" part="a_pers"/>
+          <lit-tag v="3"/>
 	  <clip pos="1" side="tl" part="a_nbr"/>
         </lu>
     </chunk>
@@ -4869,6 +4870,65 @@ If no format information is present it is removed. -->
     </out>
       </otherwise> 
     </choose>
+  </action>
+</rule>
+
+
+<rule comment="NEW RULE: pron-pers verb"> <!-- Aliya 04.09.17 -->
+  <pattern>
+    <pattern-item n="subj-pron"/>
+    <pattern-item n="verb"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p1"/></equal></test>
+        <let><var n="person"/><lit-tag v="p1"/></let>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p2"/></equal></test>
+        <let><var n="person"/><lit-tag v="p2"/></let>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_pers"/><lit-tag v="p3"/></equal></test>
+        <let><var n="person"/><lit-tag v="p3"/></let>
+      </when>
+    </choose>
+    <choose>
+      <when>
+        <test><equal><clip pos="2" side="sl" part="a_tense"/><lit-tag v="past"/></equal></test>
+        <let><var n="tense"/><lit-tag v="past"/></let>
+      </when>
+    </choose>
+    <out>
+    <chunk name="pron-pers+verb-past"> <!-- Он звал - Ол шақырған -->
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+    <lu>
+      <clip pos="1" side="tl" part="lem"/>
+      <clip pos="1" side="tl" part="a_kaz_perspron"/>
+      <clip pos="1" side="tl" part="a_pers"/>
+      <lit-tag v="2"/> <!-- number -->
+      <lit-tag v="5"/> <!-- possession -->
+      <lit-tag v="7"/> <!-- case -->
+    </lu><b/>
+        <lu>
+          <clip pos="2" side="tl" part="lem"/>
+	  <clip pos="2" side="tl" part="a_kaz_verb"/>
+	  <clip pos="2" side="tl" part="a_tense"/>
+          <var n="person"/>
+	  <clip pos="2" side="tl" part="a_nbr"/>
+        </lu>
+    </chunk>
+    </out>
   </action>
 </rule>
 
