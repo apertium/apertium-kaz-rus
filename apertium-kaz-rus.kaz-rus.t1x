@@ -7337,7 +7337,7 @@ If no format information is present it is removed. -->
           <when c="n.px3sp.{dat/abl/loc} is translated with a preposition">
             <test><equal><clip pos="2" side="tl" part="a_n_poss"/><lit-tag v="pr"/></equal></test>
             <out>
-              <chunk name="pr_n3-1">
+              <chunk name="pr_n3-1">  <!-- үйдің жанында -->
                 <tags>
                   <tag><lit-tag v="PP"/></tag>
                 </tags>
@@ -7444,7 +7444,7 @@ If no format information is present it is removed. -->
 	      </when>
 	    </choose>
             <out>
-              <chunk name="n_n">
+              <chunk name="n_n1"> <!-- Мәдинаның кітабы -->
                 <tags>
                   <tag><lit-tag v="SN"/></tag>
                 </tags>
@@ -13377,7 +13377,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
 
 <otherwise>
 <out>
-       <chunk name="prn-pers" case="caseFirstWord">  <!-- менде - у меня -->
+       <chunk name="prn-pers" case="caseFirstWord">  <!-- біз -мы / олар - они -->
       <tags><tag><lit-tag v="NP"/></tag>       </tags> 
 
    <lu>
@@ -13868,7 +13868,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
               <clip pos="1" side="tl" part="lem"/>
               <clip pos="1" side="tl" part="a_nom"/>
               <clip pos="1" side="tl" part="a_gender"/> 
-              <lit-tag v="sg"/>  
+              <lit-tag v="pl"/>  
               <lit-tag v="nom"/> 
             </lu>
           </chunk>
