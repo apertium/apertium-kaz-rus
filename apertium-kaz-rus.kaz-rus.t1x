@@ -851,6 +851,7 @@
     <def-attr n="a_verb">
       <attr-item tags="vbmod"/>
       <attr-item tags="vbser"/>
+<attr-item tags="vblex"/>
       <attr-item tags="vblex.impf"/>
       <attr-item tags="vblex.perf"/>
       <attr-item tags="vblex_dual"/>
@@ -8253,7 +8254,7 @@ If no format information is present it is removed. -->
     </rule>
 
 
-      <rule comment="REGLA: N N POST">
+      <rule comment="REGLA: N N POST"> <!-- BA Мәдинаның кітабы туралы -->
       <!--
       INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^кітап<n><px3sp><nom>/книга<n><f><nn><px3sp><nom>$ ^бойынша<post>/по<pr><dat>$
       OUTPUT: ^n_n_post<PP>{^по<pr>$ ^книга<n><f><nn><sg><dat>$ ^ученик<n><m><aa><sg><gen>$}$
@@ -8267,14 +8268,15 @@ If no format information is present it is removed. -->
         <call-macro n="translate-noun">
           <with-param pos="1"/>
         </call-macro>
-        <call-macro n="translate-noun">
+
+ <call-macro n="translate-noun">
           <with-param pos="2"/>
         </call-macro>
         <call-macro n="makeagree-pr-noun">
           <with-param pos="3"/>
           <with-param pos="2"/>
         </call-macro>
-        <out>
+               <out>
           <chunk name="n_n_post" case="caseFirstWord">
             <tags>
               <tag><lit-tag v="PP"/></tag>
@@ -8284,7 +8286,14 @@ If no format information is present it is removed. -->
               </lu>
               <b/>
               <lu>
-                <clip pos="2" side="tl" part="whole"/>
+ <clip pos="2" side="tl" part="lem"/>
+  <clip pos="2" side="tl" part="a_nom"/>
+ <clip pos="1" side="tl" part="a_gender"/>
+ <clip pos="2" side="tl" part="a_anim"/>
+  <clip pos="1" side="tl" part="a_nbr"/>
+<clip pos="2" side="tl" part="a_case"/>
+
+             <!--   <clip pos="2" side="tl" part="whole"/>-->
               </lu>
               <b/>
               <lu>
@@ -9398,7 +9407,7 @@ after:
     </rule>
 
 
-   <rule comment="REGLA: ADJ N N (2)"> <!-- Aliya --> <!-- үлкен қаладағы базар -->
+   <rule comment="REGLA: ADJ N N (2)">  <!-- BA 2017-09-04 әдемі қаладағы базар -->
       <!--
       INPUT:  ^үлкен<adj>/большой<adj><sint><m><an><sg><nom>$ ^қала<n><loc><attr>/город<n><m><nn><loc><attr>$ ^базар<n><nom>/рынок<n><m><nn><nom>$
       OUTPUT: ^adj_n-loc_n<SN>{^рынок<n><m><nn><sg><nom>$ ^в<pr>$  ^большой<adj><sint><m><an><sg><prp>$ ^город<n><m><nn><sg><prp>$}$
@@ -9407,7 +9416,7 @@ after:
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
         <pattern-item n="n"/>
-      <!-- <pattern-item n="cop"/> -->
+      <pattern-item n="cop"/> 
       </pattern>
       <action>
         <call-macro n="translate-noun">
@@ -9442,8 +9451,13 @@ output after:
 </lu>
             <b/>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
-            </lu>
+<clip pos="1" side="tl" part="lem"/>
+                <clip pos="1" side="tl" part="a_adj"/>
+                 <clip pos="2" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+                 <clip pos="2" side="tl" part="a_nbr"/>
+		 <var n="case"/>
+                        </lu>
             <b/>
             <lu>
               <clip pos="2" side="tl" part="whole"/>
