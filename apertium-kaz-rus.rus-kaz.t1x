@@ -5516,6 +5516,220 @@ If no format information is present it is removed. -->
 
 
 
+<rule comment="RULE: moi, tvoi, ego"> <!-- Aliya 04.09.17 -->
+      <pattern>
+        <pattern-item n="p123sp"/>
+        <pattern-item n="n"/>
+      </pattern>
+      <action>
+<choose> 
+<when>
+   <test><and>
+          <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag  v="p1"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+    </and></test>      
+          <let><var  n="possessive"/><lit-tag v="px1sg"/></let>
+</when>
+<when>
+   <test><and>
+          <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag  v="p1"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+    </and></test>      
+          <let><var  n="possessive"/><lit-tag v="px1pl"/></let>
+</when>
+<when>
+   <test><and>
+          <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag  v="p2"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+    </and></test>      
+          <let><var  n="possessive"/><lit-tag v="px2sg"/></let>
+</when>
+<when>
+   <test><and>
+          <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag  v="p2"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+    </and></test>      
+          <let><var  n="possessive"/><lit-tag v="px2pl"/></let>
+</when>
+<when>
+   <test><and>
+          <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag  v="p3"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="sg"/></equal>
+    </and></test>      
+          <let><var  n="possessive"/><lit-tag v="px3sg"/></let>
+</when>
+<when>
+   <test><and>
+          <equal><clip pos="1" side="sl" part="a_pers"/><lit-tag  v="p3"/></equal>
+          <equal><clip pos="1" side="sl" part="a_nbr"/><lit-tag v="pl"/></equal>
+    </and></test>      
+          <let><var  n="possessive"/><lit-tag v="px3pl"/></let>
+</when>
+</choose>
+
+    <choose>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="prp"/></equal></test>
+        <let><var n="case"/><lit-tag v="loc"/></let>
+    <out>
+    <chunk name="p123sp-prp">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.pers"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+          <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="loc"/>
+        </lu><b/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <var  n="possessive"/>
+     <var n="case"/>
+    </lu>
+    </chunk>
+    </out>
+      </when>
+ <when>
+
+        <test><and>
+<equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal>
+        <equal><clip pos="1" side="sl" part="lem"/><lit v="их"/></equal>
+</and>
+</test>
+    <out>
+    <chunk name="p123sp-acc">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.dem"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+                  <lit-tag v="acc"/>
+        </lu><b/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <var  n="possessive"/>
+     <var n="case"/>
+    </lu>
+    </chunk>
+    </out>
+      </when>
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="gen"/></equal></test>
+        <let><var n="case"/><lit-tag v="gen"/></let>
+    <out>
+    <chunk name="p123sp-gen">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.pers"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+          <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="acc"/>
+        </lu><b/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <var  n="possessive"/>
+     <var n="case"/>
+    </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></test>
+        <let><var n="case"/><lit-tag v="dat"/></let>
+    <out>
+    <chunk name="p123sp-dat">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.pers"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+          <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="dat"/>
+        </lu><b/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <var  n="possessive"/>
+     <var n="case"/>
+    </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <when>
+        <test><equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="ins"/></equal></test>
+        <let><var n="case"/><lit-tag v="ins"/></let>
+    <out>
+    <chunk name="p123sp-ins">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.pers"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+          <lit-tag v="gen"/>
+          <lit-tag v="subst"/>
+          <lit-tag v="ins"/>
+        </lu><b/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <var  n="possessive"/>
+     <var n="case"/>
+    </lu>
+    </chunk>
+    </out>
+      </when>
+
+      <otherwise><let><var n="case"/><lit-tag v="nom"/></let>
+    <out>
+    <chunk name="p123sp-nom">
+      <tags>
+        <tag><lit-tag v="NP"/></tag></tags>
+        <lu>
+              <clip pos="1" side="tl" part="lem"/>
+          <lit-tag v="prn.pers"/>
+              <clip pos="1" side="tl" part="a_pers"/>
+              <clip pos="1" side="tl" part="a_nbr"/>
+          <lit-tag v="gen"/>
+        </lu><b/>
+    <lu>  
+     <clip pos="2" side="tl" part="lem"/> 
+     <clip pos="2" side="tl" part="a_nom"/>
+     <lit-tag v="2"/>
+     <var  n="possessive"/>
+     <var n="case"/>
+    </lu>
+    </chunk>
+    </out>
+      </otherwise> 
+    </choose>
+      </action>
+    </rule>
+
+
+
 <rule comment="RULE: svoi"> <!-- Aliya 25.06.17 -->
       <pattern>
         <pattern-item n="svoi-noun"/>
