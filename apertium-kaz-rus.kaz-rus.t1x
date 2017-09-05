@@ -2541,10 +2541,23 @@ If no format information is present it is removed. -->
     <pattern-item n="verbsform"/>
   </pattern>
   <action>
+ <choose>
+      <when>
+<test><and>
+	<equal><clip pos="1" side="sl" part="a_verb"/><lit-tag v="vblex.perf"/></equal>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+      </and></test>
+                <let><var n="tense"/><lit-tag v="fut"/></let>
+      </when>
+<otherwise>
+                <let><var n="tense"/><lit-tag v="pres"/></let>
+</otherwise>
+ </choose>
     <choose>
       <when>
-        <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="aor"/></equal></test>
-        <let><var n="tense"/><lit-tag v="fut"/></let>
+<test>
+	<equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="aor"/></equal>
+      </test>
     <out>
     <chunk name="verb-pres"> <!-- ойнаймын - сыграю -->
       <tags>
@@ -9414,7 +9427,17 @@ prn-gen
        <call-macro n="set-animacy">
           <with-param pos="2"/>
         </call-macro>
-
+<choose>
+<when>
+	      <test>
+	        <equal><clip pos="2" side="tl" part="a_nbr"/><lit-tag v="pl"/></equal>
+	      </test>
+              <let><var n="gender"/><lit-tag v="mfn"/></let>
+            </when>
+<otherwise>
+           <let><var n="gender"/><clip pos="2" side="tl" part="a_gender"/></let>
+</otherwise>
+</choose>
         <out>
           <chunk name="adj_n">
             <tags>
@@ -9444,7 +9467,7 @@ after putting
 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <clip pos="1" side="tl" part="a_adj"/>
-                   <clip pos="2" side="tl" part="a_gender"/>
+                   <var n="gender"/>
                 <var n="animacy"/>
                   <clip pos="2" side="tl" part="a_nbr"/>
                 <var n="case"/>
