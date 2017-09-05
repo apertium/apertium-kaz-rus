@@ -158,6 +158,12 @@
 <pardef n="__LR_ins">
   <e r="LR"><p><l></l>          <r><s n="ins"/></r></p></e>
   <e r="RL"><p><l></l>          <r><s n="ins"/></r></p></e>
+<!--   <e><p><l></l>          <r><s n="ins"/></r></p></e> would be easier to have here -->
+</pardef>
+<pardef n="__LR_pr_ins">
+  <e r="LR"><p><l></l>          <r><s n="pr"/><s n="ins"/></r></p></e>
+  <e r="RL"><p><l></l>          <r><s n="pr"/></r></p></e>
+<!--   <e><p><l></l>          <r><s n="ins"/></r></p></e> would be easier to have here -->
 </pardef>
 <pardef n="__LR_prp">
   <e r="LR"><p><l></l>          <r><s n="prp"/></r></p></e>
@@ -31790,8 +31796,12 @@ VERB1 -->
 <e c="үстінен"><p><l>үст<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>над<s n="pr"/></r></p><par n="__LR_ins"/></e>
 <e c="үстінен"><p><l>үст<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>с<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>на<s n="pr"/></r></p><par n="__LR_prp"/></e>
-<!--<e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>над<s n="pr"/></r></p><par n="__LR_ins"/></e>-->
-<e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>над<s n="pr"/></r></p></e>
+<!-- 
+<e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>над<s n="pr"/></r></p><par n="__LR_ins"/></e>
+-->
+<e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>над</r></p><par n="__LR_pr_ins"/></e>
+
+<!--<e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>над<s n="pr"/></r></p></e>-->
 <e c="ішіне"><p><l>іш<s n="n"/><s n="px3sp"/><s n="dat"/></l><r>в<s n="pr"/></r></p><par n="__LR_acc"/></e>
 <e c="ішінен"><p><l>іш<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>из<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e c="ішінде"><p><l>іш<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>в<s n="pr"/></r></p><par n="__LR_prp"/></e>
