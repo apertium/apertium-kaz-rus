@@ -9811,11 +9811,22 @@ output after:
                 </lu>
                 <b/>
             <lu>
-              <clip pos="1" side="tl" part="whole"/>
+		<clip pos="1" side="tl" part="lem"/>
+                  <clip pos="1" side="tl" part="a_adj"/>
+                  <clip pos="3" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+          <clip pos="3" side="tl" part="a_nbr"/>
+ 		<var n="case"/>
+
             </lu>
             <b/>
             <lu>
-              <clip pos="2" side="tl" part="whole"/>
+		<clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_adj"/>
+                  <clip pos="3" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+          <clip pos="3" side="tl" part="a_nbr"/>
+ 		<var n="case"/>
             </lu>
             <b/>
             <lu>
@@ -10237,7 +10248,11 @@ output after:
                 </lu>
                 <b/>
 	    <lu>
-	      <clip pos="1" side="tl" part="whole"/>
+<clip pos="1" side="tl" part="lem"/>
+<clip pos="1" side="tl" part="a_num"/>
+<clip pos="1" side="tl" part="a_gender"/>
+<clip pos="1" side="tl" part="a_nbr"/>
+<clip pos="1" side="tl" part="a_case"/>
 	    </lu>
 	    <b/>
 	    <lu>
@@ -13990,8 +14005,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
             </tags>
             <lu>
               <clip pos="1" side="tl" part="lem"/>
-              <lit-tag v="det"/>
-              <lit-tag v="ord"/>
+             <!-- <lit-tag v="det"/>
+              <lit-tag v="ord"/>-->
               <clip pos="1" side="tl" part="a_num"/>
               <var n="gender"/>
               <clip pos="1" side="tl" part="a_anim"/>
