@@ -31977,6 +31977,7 @@ VERB1 -->
 <e c="үстіне"><p><l>үст<s n="n"/><s n="px3sp"/><s n="dat"/></l><r>на<s n="pr"/></r></p><par n="__LR_acc"/></e>
 <e c="үстінен"><p><l>үст<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>над<s n="pr"/></r></p><par n="__LR_ins"/></e>
 <e c="үстінен"><p><l>үст<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>с<s n="pr"/></r></p><par n="__LR_gen"/></e>
+<e r="RL"><p><l></l><r>с<s n="pr"/></r></p></e>
 <e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>на<s n="pr"/></r></p><par n="__LR_prp"/></e>
 <!-- 
 <e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>над<s n="pr"/></r></p><par n="__LR_ins"/></e>
@@ -32254,7 +32255,9 @@ VERB1 -->
 <e>       <p><l>мақсатында<s n="post"/></l>     <r>в<b/>целях<s n="pr"/></r></p><par n="__LR_gen"/></e>
 <e>       <p><l>сайын<s n="post"/></l>                   <r>каждый<s n="adv"/><s n="itg"/></r></p></e> <!-- FIXME CHECK -->
 <e>       <p><l>сәйкес<s n="post"/></l>                  <r>согласно<s n="pr"/></r></p><par n="__LR_dat"/></e>
-<e>       <p><l>секілді<s n="post"/></l>                 <r>будто<s n="cnjsub"/></r></p></e> <!-- FIXME CHECK -->
+<e>       <p><l>секілді<s n="post"/></l>                 <r>будто<s n="cnjsub"/></r></p></e>
+<e r="RL">       <p><l></l>                 <r>что<s n="cnjsub"/></r></p></e> 
+
 <e>       <p><l>егер<s n="cnjsub"/></l>                             <r>если<s n="cnjsub"/></r></p></e> <!-- FIXME CHECK -->
 <e>       <p><l>астам<s n="adv"/></l>                 <r>более<b/>чем<s n="cnjsub"/></r></p></e> <!-- FIXME CHECK -->
 <e>       <p><l>сияқты<s n="adv"/></l>                   <r>как<s n="adv"/><s n="itg"/></r></p></e> 
