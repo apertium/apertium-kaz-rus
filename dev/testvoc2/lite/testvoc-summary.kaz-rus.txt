@@ -1,15 +1,15 @@
 
-Mon Oct  2 18:40:35 CEST 2017
+Mon Oct  2 19:43:43 CEST 2017
 ===============================================
 POS	Total	Clean	With @	With #	Clean %
 n	60559		0	0	
 v	49395		0	0	
-cop	46337		0	2896	
+cop	46337		0	0	
 adj	20197		0	0	
-prn	8644		0	2906	
-det	8509		0	2896	
-adv	4522		0	363	
-cnjcoo	1110		0	362	
+prn	8644		0	10	
+det	8509		0	0	
+adv	4522		0	1	
+cnjcoo	1110		0	0	
 post	464		0	0	
 np	155		0	0	
 num	38		0	0	

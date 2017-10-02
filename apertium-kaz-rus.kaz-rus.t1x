@@ -13784,11 +13784,33 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
      <pattern-item n="cop"/>
       </pattern>
       <action>
+        <call-macro n="choose_case_and_postposition1">
+ <with-param pos="1"/>
+            </call-macro>               
+
+        <choose>
+          <when>
+            <test>   
+             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="loc"/></equal>
+            </test>
+            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="prp"/></let>
+          </when>
+          <when>
+            <test>   
+             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="abl"/></equal>
+            </test>
+            <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="gen"/></let>
+          </when>
+        </choose>
         <out>
               <chunk name="prn1-ref">  <!--өздері-->
                 <tags>
                   <tag><lit-tag v="PRN"/></tag>
                 </tags>
+                <lu>
+                   <var n="postposition_lu"/>
+</lu>
+<b/>
                 <lu>
                   <clip pos="1" side="tl" part="lem"/>
                   <lit-tag v="det.pos"/>
@@ -13799,8 +13821,8 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
                 </lu>
               </chunk>
             </out>
-
-            </action>
+       
+      </action>
 </rule>
 
 
