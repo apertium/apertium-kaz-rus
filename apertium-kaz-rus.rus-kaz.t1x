@@ -339,6 +339,13 @@
       <cat-item tags="vblex.perf.*.*.*"/>
     </def-cat> 
 
+    <def-cat n="verb-adv"> <!-- for verbs -->
+      <cat-item tags="vblex.impf.*.pprs.adv"/>
+      <cat-item tags="vblex.impf.*.pp.adv"/>
+      <cat-item tags="vblex.perf.*.pprs.adv"/>
+      <cat-item tags="vblex.perf.*.pp.adv"/>
+    </def-cat> 
+
     <def-cat n="verb-pprs"> <!-- for verbs -->
       <cat-item tags="vblex.impf.*.pprs.*"/>
       <cat-item tags="vblex.perf.*.pprs.*"/>
@@ -456,6 +463,7 @@
 
     <def-attr n="a_adv">
       <attr-item tags="adv"/>
+      <attr-item tags="cnjadv"/>
       <attr-item tags="adv.itg"/>
     </def-attr>
 
@@ -3871,6 +3879,36 @@ If no format information is present it is removed. -->
 
 
 
+<rule comment="NEW RULE: belgisiz verb"> <!-- Aliya 01.10.17 -->
+  <pattern>
+    <pattern-item n="verb-adv"/>
+  </pattern>
+  <action>
+     <call-macro n="default-nbr-pers"/>
+    <out>
+    <chunk name="verb-adv">
+      <tags>
+        <tag><lit-tag v="VP"/></tag>
+        <tag><lit-tag v="ND"/></tag> <!-- number -->
+        <tag><lit-tag v="PD"/></tag> <!-- person -->
+        <tag><var n="tense"/></tag>  <!-- tense/conditionality -->
+        <tag><lit-tag v="PXD"/></tag> <!-- possessives for verbs??? maybe we need them -->
+        <tag><lit-tag v="NXD"/></tag><!-- negative -->
+        <tag><lit-tag v="CD"/></tag> 
+      </tags>
+        <lu>
+          <clip pos="1" side="tl" part="lem"/>
+	  <clip pos="1" side="tl" part="a_kaz_verb"/>
+          <lit-tag v="ger"/>
+          <lit-tag v="nom"/>
+        </lu>
+    </chunk>
+    </out>
+  </action>
+</rule>
+
+
+
 <rule comment="NEW RULE: verb"> <!-- Aliya 20.03.17 -->
   <pattern>
     <pattern-item n="verb"/>
@@ -3984,7 +4022,7 @@ If no format information is present it is removed. -->
         <test><equal><clip pos="1" side="sl" part="a_tense"/><lit-tag v="pprs"/></equal></test>
         <let><var n="tense"/><lit-tag v="prc_impf"/></let>
     <out>
-    <chunk name="verb-pprs"> <!-- зовя - шақыра 000 -->
+    <chunk name="verb-pprs"> <!-- зовя - шақыра -->
       <tags>
         <tag><lit-tag v="VP"/></tag>
         <tag><lit-tag v="ND"/></tag> <!-- number -->
