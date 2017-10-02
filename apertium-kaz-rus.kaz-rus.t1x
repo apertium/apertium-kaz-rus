@@ -13252,6 +13252,7 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
         </out>
       </action>
     </rule>
+
 <rule comment="RULE:prn+vars"> 
 <pattern>
  <pattern-item n="prn1"/>
@@ -13451,6 +13452,99 @@ OUTPUT: ^cop-pres<VBSER>{^быть<vbser><pres><p3><sg>$}$
  </action>
  </rule> 
 
+<rule comment="RULE:prn"> 
+<pattern>
+ <pattern-item n="prn1"/>
+</pattern>
+  <action>
+<call-macro n="choose_case_and_postposition1">
+ <with-param pos="1"/>
+            </call-macro>               
+<choose>
+          <when>
+            <test>   
+             <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="sim"/></equal>
+            </test>
+      <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="nom"/></let>
+<out>
+       <chunk name="prn-pers-sim1" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags> 
+<lu>
+                  <lit v="как"/>
+                  <lit-tag v="adv"/>
+                </lu>
+<b/>
+
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>  
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+  <clip pos="1" side="tl" part="a_nom"/>
+  <lit-tag v="mf"/>
+  <lit-tag v="sg"/>
+<var n="case"/>
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+         <when>
+
+            <test>   
+<and>
+             <equal><clip pos="1" side="sl" part="a_syntag"/><lit-tag v="subst"/></equal>
+             <equal><clip pos="1" side="sl" part="lem"/><lit v="мен"/></equal>
+<not>        <equal><clip pos="1" side="sl" part="a_case"/><lit-tag v="dat"/></equal></not>
+</and>
+            </test>
+ <out>
+       <chunk name="prn+pers-men1" case="caseFirstWord"> 
+      <tags><tag><lit-tag v="NP"/></tag>       </tags>   
+  
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>
+<lu>
+  <clip pos="1" side="tl" part="lem"/>
+  <lit-tag v="prn.pos"/>
+  <lit-tag v="m"/>
+  <lit-tag v="an"/>
+  <lit-tag v="sg"/>
+<var n="case"/>
+
+ </lu>
+
+ </chunk>
+  </out>
+</when>
+<otherwise>
+<out>
+       <chunk name="prn-pers1" case="caseFirstWord">  <!-- біз -мы / олар - они -->
+      <tags><tag><lit-tag v="NP"/></tag>       </tags> 
+
+   <lu>
+<var n="postposition_lu"/>
+</lu>
+<b/>  
+  <lu>
+  <clip pos="1" side="tl" part="lem"/>
+  <clip pos="1" side="tl" part="a_nom"/>
+  <clip pos="1" side="tl" part="a_gender"/>
+  <clip pos="1" side="tl" part="a_nbr"/>
+<var n="case"/>
+
+ </lu>
+ 
+ </chunk>
+  </out>
+ </otherwise>
+</choose>
+
+ </action>
+ </rule> 
 
 
 <rule comment="RULE:prn+vars"> 
