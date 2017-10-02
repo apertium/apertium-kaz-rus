@@ -29448,35 +29448,27 @@ zloy_zhake
 
 <!-- Akbota 30.09.2017 -->
 
-<e><p><l></l><r>бы<s n="part"/></r></p></e>
 <e><p><l>ғой<s n="mod_ass"/></l><r>ведь<s n="part"/></r></p></e>
 <e><p><l>міне<s n="adv"/></l><r>вон<s n="part"/></r></p></e>
 <e><p><l>міне<s n="adv"/></l><r>вот<s n="part"/></r></p></e>
 <e><p><l>бәрібір<s n="adv"/></l><r>всё-таки<s n="part"/></r></p></e>
 <e><p><l>иә<s n="interj"/></l><r>да<s n="part"/></r></p></e>
-<e><p><l></l><r>де<s n="part"/></r></p></e>
 <e><p><l>дегендей<s n="interj"/></l><r>дескать<s n="part"/></r></p></e>
 <e><p><l>ғой<s n="mod_ass"/></l><r>же<s n="part"/></r></p></e>
 <e><p><l>мүмкін<s n="adv"/></l><r>ибо<s n="part"/></r></p></e>
 <e><p><l>мастық<s n="n"/></l><r>хмель²<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>тек<s n="adv"/></l><r>лишь<s n="part"/></r></p></e>
-<e><p><l></l><r>нельзя<s n="part"/></r></p></e>
+<e><p><l>жоқ<s n="post"/></l><r>нельзя<s n="part"/></r></p></e>
 <e><p><l>шынымен<s n="adv"/></l><r>неужели<s n="part"/></r></p></e>
-<e><p><l></l><r>нибудь<s n="part"/></r></p></e>
 <e><p><l>енді<s n="adv"/></l><r>ну<s n="part"/></r></p></e>
 <e><p><l>жарайды<s n="interj"/></l><r>пусть<s n="part"/></r></p></e>
 <e><p><l>сияқты<s n="adv"/></l><r>словно<s n="part"/></r></p></e>
 <e><p><l>ақыры<s n="adv"/></l><r>таки<s n="part"/></r></p></e>
-<e><p><l></l><r>хоть<s n="part"/></r></p></e>
-<e><p><l></l><r>го<s n="part"/></r></p></e>
 <e><p><l>егер<s n="cs"/></l><r>таки<s n="cnjsub"/></r></p></e>
-<e><p><l></l><r>ж<s n="cnjcoo"/></r></p></e>
 <e><p><l>қашан<s n="adv"/><s n="itg"/></l><r>когда<s n="cnjsub"/></r></p></e>
 <e><p><l>немесе<s n="cnjcoo"/></l><r>либо<s n="cnjcoo"/></r></p></e>
 <e><p><l>ешбір<s n="det"/><s n="ind"/></l><r>ни<s n="cnjcoo"/></r></p></e>
 <e><p><l>бірақ<s n="cnjcoo"/></l><r>но<s n="cnjcoo"/></r></p></e>
-<e><p><l></l><r>поскольку<s n="cnjcoo"/></r></p></e>
-<e><p><l></l><r>то<s n="cnjsub"/></r></p></e>
 <e><p><l>бірақта<s n="adv"/></l><r>хотя<s n="cnjsub"/></r></p></e>
 <e><p><l>не<s n="cnjcoo"/></l><r>что<s n="cnjsub"/></r></p></e>
 <e><p><l>үшін<s n="post"/></l><r>чтобы<s n="cnjsub"/></r></p></e>
@@ -29487,7 +29479,6 @@ zloy_zhake
 <e><p><l>себебі<s n="cnjsub"/></l><r>потому<b/>что<s n="cnjadv"/></r></p></e>
 <e><p><l>сол<b/>себепті<s n="cnjsub"/></l><r>по<b/>этой<b/>причине<s n="cnjadv"/></r></p></e>
 <e><p><l>негізі<s n="adv"/></l><r>причём<s n="cnjsub"/></r></p></e>
-<e><p><l></l><r>без<s n="pr"/></r></p></e>
 <e><p><l>жақын<s n="adv"/></l><r>близ<s n="pr"/></r></p></e>
 <e><p><l>жақында<s n="adv"/></l><r>вблиз<s n="pr"/></r></p></e>
 <e><p><l>себепті<s n="adv"/></l><r>ввиду<s n="pr"/></r></p></e>
@@ -29515,14 +29506,12 @@ zloy_zhake
 <e><p><l>мақсатында<s n="post"/></l><r>в<b/>целях<s n="pr"/></r></p></e>
 <e><p><l>дейін<s n="post"/></l><r>до<s n="pr"/></r></p></e>
 <e><p><l>орнына<s n="post"/></l><r>заместо<s n="pr"/></r></p></e>
-<e><p><l></l><r>из<s n="pr"/></r></p></e>
 <e><p><l>себепті<s n="adv"/></l><r>из-за<s n="pr"/></r></p></e>
 <e><p><l>астынан<s n="adv"/></l><r>из-под<s n="pr"/></r></p></e>
 <e><p><l>ішінде<s n="post"/></l><r>изнутри<s n="adv"/></r></p></e>
 <e><p><l>аралық<s n="post"/></l><r>меж<s n="pr"/></r></p></e>
 <e><p><l>арасында<s n="post"/></l><r>между<s n="pr"/></r></p></e>
 <e><p><l>қасында<s n="post"/></l><r>мимо<s n="adv"/></r></p></e>
-<e><p><l></l><r>на<s n="pr"/></r></p></e>
 <e><p><l>соңында<s n="adv"/></l><r>накануне<s n="pr"/></r></p></e>
 <e><p><l>шетінде<s n="post"/></l><r>на<b/>краю<s n="pr"/></r></p></e>
 <e><p><l>қарсы<s n="post"/></l><r>наперекор<s n="adv"/></r></p></e>
@@ -29534,11 +29523,8 @@ zloy_zhake
 <e><p><l>қарамастан<s n="post"/></l><r>несмотря<s n="pr"/></r></p></e>
 <e><p><l>төмен<s n="adv"/></l><r>ниже<s n="adv"/></r></p></e>
 <e><p><l>туралы<s n="post"/></l><r>о<s n="pr"/></r></p></e>
-<e><p><l></l><r>от<s n="pr"/></r></p></e>
 <e><p><l>қатысты<s n="post"/></l><r>относительно<s n="adv"/></r></p></e>
 <e><p><l>қоса<s n="post"/></l><r>плюс<s n="pr"/></r></p></e>
-<e><p><l></l><r>по<s n="pr"/></r></p></e>
-<e><p><l></l><r>по-над<s n="pr"/></r></p></e>
 <e><p><l>жақын<s n="adv"/></l><r>подле<s n="pr"/></r></p></e>
 <e><p><l>ұқсас<s n="adv"/></l><r>подобно<s n="adv"/></r></p></e>
 <e><p><l>басқа<s n="adv"/></l><r>помимо<s n="pr"/></r></p></e>
@@ -29553,7 +29539,6 @@ zloy_zhake
 <e><p><l>бұрын<s n="adv"/></l><r>прежде<s n="adv"/></r></p></e>
 <e><p><l>қарсы<s n="adv"/></l><r>против<s n="pr"/></r></p></e>
 <e><p><l>үшін<s n="post"/></l><r>ради<s n="pr"/></r></p></e>
-<e><p><l></l><r>с<s n="pr"/></r></p></e>
 <e><p><l>сыртынан<s n="adv"/></l><r>сверх<s n="pr"/></r></p></e>
 <e><p><l>үстінде<s n="adv"/></l><r>сверху<s n="adv"/></r></p></e>
 <e><p><l>жоғарыдан<s n="adv"/></l><r>свыше<s n="adv"/></r></p></e>
@@ -29563,7 +29548,6 @@ zloy_zhake
 <e><p><l>бойынша<s n="post"/></l><r>согласно<s n="adv"/></r></p></e>
 <e><p><l>сәйкес<s n="adv"/></l><r>сообразно<s n="adv"/></r></p></e>
 <e><p><l>соң<s n="adv"/></l><r>спустя<s n="pr"/></r></p></e>
-<e><p><l/><r>у²<s n="pr"/></r></p></e>
 
 
 
