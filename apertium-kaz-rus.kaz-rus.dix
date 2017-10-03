@@ -24738,7 +24738,7 @@
 <e><p><l>кері<s n="adj"/></l><r>обратный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>керілген<s n="adj"/></l><r>растянутый<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>кеселді<s n="adj"/></l><r>больной<s n="adj"/><s n="sint"/></r></p></e>
-<e><p><l>кескінді<s n="adj"/></l><r>красивый<s n="adj"/><s n="sint"/></r></p></e>
+<!--<e><p><l>кескінді<s n="adj"/></l><r>красивый<s n="adj"/><s n="sint"/></r></p></e>-->
 <e><p><l>кескінсіз<s n="adj"/></l><r>некрасивый<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>кескіш<s n="adj"/></l><r>режущий<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>кестеленген<s n="adj"/></l><r>расшитый<s n="adj"/><s n="sint"/></r></p></e>
@@ -27334,7 +27334,7 @@
 <e><p><l>неге<s n="adv"/><s n="itg"/></l><r>почему<s n="adv"/></r></p></e> 
 <e><p><l>қайдан<s n="adv"/><s n="itg"/></l><r>откуда<s n="adv"/></r></p></e>
 <e><p><l>тек<s n="adv"/></l><r>только<s n="adv"/></r></p></e>
-<e><p><l>алайда<s n="adv"/></l><r>только<s n="adv"/></r></p></e>
+<!--<e><p><l>алайда<s n="adv"/></l><r>только<s n="adv"/></r></p></e>-->
 <e><p><l>мұндай<s n="adv"/></l><r>такое<s n="adv"/></r></p></e>
 <e><p><l>жақындау<s n="adv"/></l><r>ближе<s n="adv"/></r></p></e>
 <e><p><l>кенеттен<s n="adv"/></l><r>врдуг<s n="adv"/></r></p></e>
@@ -29465,7 +29465,7 @@ zloy_zhake
 <e><p><l>үшін<s n="post"/></l><r>чтобы<s n="cnjsub"/></r></p></e>
 <e><p><l>қарағанда<s n="post"/></l><r>чем<s n="cnjsub"/></r></p></e>
 <e><p><l>тек<s n="adv"/></l><r>только<s n="cnjsub"/></r></p></e>
-<e><p><l>кейін<s n="post"/></l><r>после<s n="cnjadv"/></r></p></e>
+<!--<e><p><l>кейін<s n="post"/></l><r>после<s n="cnjadv"/></r></p></e>-->
 <e><p><l>өйткені<s n="cnjsub"/></l><r>так<b/>как<s n="cnjadv"/></r></p></e>
 <e><p><l>себебі<s n="cnjsub"/></l><r>потому<b/>что<s n="cnjadv"/></r></p></e>
 <e><p><l>сол<b/>себепті<s n="cnjsub"/></l><r>по<b/>этой<b/>причине<s n="cnjadv"/></r></p></e>

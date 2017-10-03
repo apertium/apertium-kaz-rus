@@ -3,7 +3,6 @@
  <rule>
     <match lemma="жер"><select lemma="земля"/></match>
   </rule> 
-
 <rule>
 	  <match lemma="жарым" tags="*"><select lemma="полтора" tags="*"/></match>
 	  <match lemma="күн" tags="*"><select lemma="сутки" tags="n.*"/></match>
@@ -18,6 +17,10 @@
 	  <match lemma="*" tags="num"/>
 	  <match lemma="жас" tags="n.loc"><select lemma="лет" tags="n.*"/></match>
 </rule>
+<!--<rule>
+	  <match lemma="*" tags="n"/>
+	  <match lemma="туралы" tags="post"><select lemma="о" tags="pr"/></match>
+</rule>-->
 
 <rule>
 	  <match lemma="кітап" tags="n.gen"/>

@@ -8028,7 +8028,7 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-    <rule comment="REGLA: N ADJ"> <!-- Aliya --> <!-- бойы ұзын -->
+    <rule comment="REGLA: N ADJ">  <!-- 03/10/2017  BA  бойы ұзын - с длинным ростом-->
       <!--
       INPUT:  ^бой<n><px3sp><nom>/рост<n><m><nn><px3sp><nom>$ ^ұзын<adj>/длинный<adj><sint><m><an><sg><nom>$
       OUTPUT: ^n_adj<SN>{^с<pr>$ ^длинный<adj><sint><m><an><sg><ins>$ ^рост<n><m><nn><sg><ins>$}$
@@ -8036,13 +8036,14 @@ If no format information is present it is removed. -->
       <pattern>
         <pattern-item n="n-px3sp"/>
         <pattern-item n="adj"/>
+<pattern-item n="cop"/>
       </pattern>
       <action>
         <call-macro n="translate-noun">
           <with-param pos="1"/>
         </call-macro>
         
-          <let><var n="preposition"/><concat><lit v="^с"/><lit-tag v="pr"/><lit v="$ "/></concat></let>
+         <let><var n="preposition"/><concat><lit v="с"/><lit-tag v="pr"/></concat></let>
           <let><clip pos="1" side="tl" part="a_case"/><lit-tag v="ins"/></let>
           <let><clip pos="2" side="tl" part="a_case"/><lit-tag v="ins"/></let>
           <let><clip pos="2" side="tl" part="a_gender"/><clip pos="1" side="tl" part="a_gender"/></let>
@@ -8057,7 +8058,12 @@ If no format information is present it is removed. -->
                 </lu>
                 <b/>
            <lu>
-              <clip pos="2" side="tl" part="whole"/>
+ <clip pos="2" side="tl" part="lem"/>
+                  <clip pos="2" side="tl" part="a_adj"/>
+                  <clip pos="1" side="tl" part="a_gender"/>
+<var n="animacy"/>
+<var n="number"/>
+                  <clip pos="1" side="tl" part="a_case"/>
             </lu>
             <b/>
            <lu>
@@ -8068,12 +8074,8 @@ If no format information is present it is removed. -->
       </action>
     </rule>
 
-    <rule comment="REGLA: N ADJ N (2)"> <!-- оқушының әдемі кітабы -->
-      <!--
-      INPUT:  ^оқушы<n><gen>/ученик<n><m><aa><gen>$ ^әдемі<adj>/красивый<adj><sint><m><an><sg><nom>$ ^кітап<n><px3sp><nom>/книга<n><f><nn><px3sp><nom>$
-      OUTPUT: ^n_adj_n-px3sp<SN>{^красивый<adj><sint><f><an><sg><nom>$ ^книга<n><f><nn><sg><nom>$ ^ученик<n><m><aa><sg><gen>$}$
-      -->
-      <pattern>
+    <rule comment="REGLA: N ADJ N (2)"> <!-- 03/10/2017 BA оқушының әдемі кітабы - красивая книга ученика -->
+           <pattern>
         <pattern-item n="n-attr-or-gen"/>
         <pattern-item n="adj"/>
         <pattern-item n="n-px3sp"/>
@@ -8102,15 +8104,12 @@ If no format information is present it is removed. -->
  <lu>
                   <clip pos="2" side="tl" part="lem"/>
                   <clip pos="2" side="tl" part="a_adj"/>
-                  <clip pos="2" side="tl" part="a_gender"/>
-                  <clip pos="2" side="tl" part="a_anim"/>
-                  <clip pos="2" side="tl" part="a_nbr"/>
+                  <clip pos="3" side="tl" part="a_gender"/>
+		<var n="animacy"/>
+                  <clip pos="3" side="tl" part="a_nbr"/>
                   <var n="case"/>
                 </lu>
-            <!--<lu>
-              <clip pos="2" side="tl" part="whole"/>
-            </lu>-->
-            <b/>
+                       <b/>
             <lu>
               <clip pos="3" side="tl" part="whole"/>
             </lu>

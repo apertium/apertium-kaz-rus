@@ -2,6 +2,9 @@
   <rule> 
     <match lemma="большой" tags="adj.*"><select lemma="алпамсадай" tags="adj.*"/></match>
   </rule>
+<rule> 
+    <match lemma="красивый" tags="adj.*"><select lemma="әдемі" tags="adj.*"/></match>
+  </rule>
 
 <!-- ручка двери -->
  <rule> 
