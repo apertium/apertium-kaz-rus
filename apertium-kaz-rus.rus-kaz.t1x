@@ -1271,13 +1271,19 @@ If no format information is present it is removed. -->
             </let>
           </when>
           <when> 
-            <test>
+
+            <test> 
+		<or> 
               <equal caseless="yes">
                 <clip pos="1" side="sl" part="lem"/>
                 <lit v="к"/>
               </equal>
-            </test>
-            <let>
+              <equal caseless="yes">
+                <clip pos="1" side="sl" part="lem"/>
+                <lit v="до"/>
+              </equal>
+	</or>
+            </test>                        <let>
               <var n="case"/>
               <lit-tag v="dat"/>
             </let>
