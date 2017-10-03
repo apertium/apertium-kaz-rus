@@ -3473,6 +3473,27 @@ If no format information is present it is removed. -->
     </rule>
 
 
+<rule comment="RULE: mojno"> <!-- Aliya 03.10.17-->
+      <pattern>
+        <pattern-item n="mojno"/>
+      </pattern>
+      <action>
+    <out>
+    <chunk name="mojno">
+      <tags><tag><lit-tag v="VP"/></tag></tags>
+        <lu>
+          <lit v="бол"/>
+          <lit-tag v="v.iv"/>
+          <lit-tag v="aor"/>
+         <lit-tag v="p3"/>
+         <lit-tag v="sg"/>
+        </lu>
+    </chunk>
+    </out>
+      </action>
+    </rule>
+
+
 <rule comment="RULE: mojno verb"> <!-- Aliya 26.05.17-->
       <pattern>
         <pattern-item n="mojno"/>
