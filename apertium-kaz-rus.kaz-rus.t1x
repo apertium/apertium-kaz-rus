@@ -9821,6 +9821,7 @@ output after:
         <pattern-item n="adj"/>
         <pattern-item n="adj"/>
         <pattern-item n="n"/>
+        <pattern-item n="cop"/>
       </pattern>
       <action>
         <call-macro n="translate-noun">
