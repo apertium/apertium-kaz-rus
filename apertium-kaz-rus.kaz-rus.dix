@@ -9456,9 +9456,6 @@
 <e><p><l>той<s n="n"/></l><r>пир<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>тұтқын<s n="n"/></l><r>плен<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>сал<s n="n"/></l><r>плот<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>оттық<s n="n"/></l><r>под<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>астына<s n="n"/></l><r>под<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
-<e><p><l>астында<s n="n"/></l><r>под<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>еден<s n="n"/></l><r>пол<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>жыныс<s n="n"/></l><r>пол<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>жарты<s n="n"/></l><r>пол<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
@@ -23358,14 +23355,12 @@
 <e><p><l>айлакер<s n="adj"/></l><r>увёртливый<s n="adj"/></r></p></e>
 <e><p><l>акробаттық<s n="adj"/></l><r>акробатический<s n="adj"/></r></p></e>
 <e><p><l>актерлік<s n="adj"/></l><r>актёрский<s n="adj"/></r></p></e>
-<e><p><l>актілі<s n="adj"/></l><r>акустический<s n="adj"/></r></p></e>
 <e><p><l>ақсүйек<s n="adj"/></l><r>великосветский<s n="adj"/></r></p></e>
 <e><p><l>ала<s n="adj"/></l><r>пёстрый<s n="adj"/></r></p></e>
 <e><p><l>алабажақ<s n="adj"/></l><r>пёстрый<s n="adj"/></r></p></e>
 <e><p><l>алақол<s n="adj"/></l><r>нечестный<s n="adj"/></r></p></e>
 <e><p><l>аласұрған<s n="adj"/></l><r>разъярённый<s n="adj"/></r></p></e>
 <e><p><l>албан<s n="adj"/></l><r>албанский<s n="adj"/></r></p></e>
-<e><p><l>алмасушы<s n="adj"/></l><r>съёмный<s n="adj"/></r></p></e>
 <e><p><l>аналогиялық<s n="adj"/></l><r>аналитический<s n="adj"/></r></p></e>
 <e><p><l>антропологиялық<s n="adj"/></l><r>антропологический<s n="adj"/></r></p></e>
 <e><p><l>аристократтық<s n="adj"/></l><r>аристократический<s n="adj"/></r></p></e>
@@ -23379,7 +23374,6 @@
 <e><p><l>ауқымды<s n="adj"/></l><r>объёмный<s n="adj"/></r></p></e>
 <e><p><l>аумақты<s n="adj"/></l><r>объёмный<s n="adj"/></r></p></e>
 <e><p><l>ауру<s n="adj"/></l><r>больной<s n="adj"/></r></p></e>
-<e><p><l>затруднённый<s n="adj"/></l><r>затруднённый<s n="adj"/></r></p></e>
 <e><p><l>ашынған<s n="adj"/></l><r>возмущённый<s n="adj"/></r></p></e>
 <e><p><l>әскери-далалық<s n="adj"/></l><r>военный<s n="adj"/></r></p></e>
 <e><p><l>әуедегі<s n="adj"/></l><r>военный<s n="adj"/></r></p></e>
@@ -23396,7 +23390,6 @@
 <e><p><l>балапан<s n="adj"/></l><r>цыплячий<s n="adj"/></r></p></e>
 <e><p><l>балауыздалған<s n="adj"/></l><r>вощёный<s n="adj"/></r></p></e>
 <e><p><l>балауызды<s n="adj"/></l><r>вощёный<s n="adj"/></r></p></e>
-<e><p><l>балықшы<s n="adj"/></l><r>рыбацкий<s n="adj"/></r></p></e>
 <e><p><l>бармақтай<s n="adj"/></l><r>маленький<s n="adj"/></r></p></e>
 <e><p><l>басқа<s n="adj"/></l><r>другой<s n="adj"/></r></p></e>
 <e><p><l>басқа<s n="adj"/></l><r>чужой<s n="adj"/></r></p></e>
@@ -23752,7 +23745,7 @@
 <e><p><l>ауылшаруашылық<s n="adj"/></l><r>сельскохозяйственный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ауыр<s n="adj"/></l><r>бедственный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ауырғыш<s n="adj"/></l><r>болезненный<s n="adj"/><s n="sint"/></r></p></e>
-<e><p><l>ауырлаған<s n="adj"/></l><r>затруднённый<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>қиындатылған<s n="adj"/></l><r>затруднённый<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ауыртатын<s n="adj"/></l><r>болезненный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ауыртпалықсыз<s n="adj"/></l><r>безболезненный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>ауыспайтын<s n="adj"/></l><r>бессменный<s n="adj"/><s n="sint"/></r></p></e>
@@ -27648,7 +27641,7 @@
 <e c="алдында"><p><l>алд<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>перед</r></p><par n="__LR_pr_ins"/></e>
 <e c="арасына"><p><l>ара<s n="n"/><s n="px3sp"/><s n="dat"/></l><r>между</r></p><par n="__LR_pr_ins"/></e>
 <e c="арасында"><p><l>ара<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>среди<s n="pr"/></r></p></e>
-<e c="арасыннан"><p><l>арас<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>из</r></p><par n="__LR_pr_gen"/></e>
+<e c="арасыннан" r="LR"><p><l>ара<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>из</r></p><par n="__LR_pr_gen"/></e>
 <e c="аркада"><p><l>арқа<s n="n"/><s n="loc"/></l>     <r>из-за</r></p><par n="__LR_pr_gen"/></e>
 <e c="аркасында"><p><l>арқа<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>из-за</r></p><par n="__LR_pr_gen"/></e>
 <e c="артына"><p><l>арт<s n="n"/><s n="px3sp"/><s n="dat"/></l><r>за</r></p><par n="__LR_pr_acc"/></e>
@@ -27656,14 +27649,14 @@
 <e c="артында"><p><l>арт<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>за</r></p><par n="__LR_pr_ins"/></e>
 <e c="астына"><p><l>аст<s n="n"/><s n="px3sp"/><s n="dat"/></l><r>под</r></p><par n="__LR_pr_acc"/></e>
 <e c="астыннан"><p><l>аст<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>из-под</r></p><par n="__LR_pr_gen"/></e>
-<e c="астында"><p><l>аст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>под<s n="pr"/></r></p></e>
+<e c="астында"><p><l>аст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>под</r></p><par n="__LR_pr_ins"/></e>
 <e c="үстіне"><p><l>үст<s n="n"/><s n="px3sp"/><s n="dat"/></l><r>на</r></p><par n="__LR_pr_acc"/></e>
 <e c="үстінен"><p><l>үст<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>над</r></p><par n="__LR_pr_ins"/></e>
-<e c="үстінен"><p><l>үст<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>с</r></p><par n="__LR_pr_gen"/></e>
+<e c="үстінен" r="LR"><p><l>үст<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>с</r></p><par n="__LR_pr_gen"/></e>
 <e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>на</r></p><par n="__LR_pr_prp"/></e>
 <e c="үстінде"><p><l>үст<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>над</r></p><par n="__LR_pr_ins"/></e>
 <e c="ішіне"><p><l>іш<s n="n"/><s n="px3sp"/><s n="dat"/></l><r>в</r></p><par n="__LR_pr_acc"/></e>
-<e c="ішінен"><p><l>іш<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>из</r></p><par n="__LR_pr_gen"/></e>
+<e c="ішінен" r="LR"><p><l>іш<s n="n"/><s n="px3sp"/><s n="abl"/></l><r>из</r></p><par n="__LR_pr_gen"/></e>
 <e c="ішінде"><p><l>іш<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>в</r></p><par n="__LR_pr_prp"/></e>
 <e c="ішінде"><p><l>іш<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>внутри</r></p><par n="__LR_pr_gen"/></e>
 <e c="ішінде"><p><l>іш<s n="n"/><s n="px3sp"/><s n="loc"/></l><r>в<b/>течение</r></p><par n="__LR_pr_gen"/></e>
@@ -27680,7 +27673,7 @@
 <e>       <p><l>кейін<s n="post"/><s n="Rabl"/></l>                       <r>за<s n="pr"/></r></p></e>
 <e>       <p><l>әрі<s n="post"/></l>                                            <r>дальше</r></p><par n="__LR_pr_gen"/></e>
 <e>       <p><l>басқа<s n="post"/></l>                                      <r>кроме</r></p><par n="__LR_pr_gen"/></e>
-<e>       <p><l>бері<s n="post"/></l>                                          <r>с</r></p><par n="__LR_pr_gen"/></e>
+<e r="LR">       <p><l>бері<s n="post"/></l>              <r>с</r></p><par n="__LR_pr_gen"/></e>
 <e>       <p><l>бойы<s n="post"/></l>                                       <r>в<b/>течение</r></p><par n="__LR_pr_gen"/></e>
 <e>       <p><l>бойы<s n="post"/></l>                                       <r>весь<s n="pr"/></r></p><par n="__LR_pr_dat"/></e>
 <e>       <p><l>бойында<s n="post"/></l>                               <r>по<s n="pr"/></r></p><par n="__LR_pr_dat"/></e>
@@ -29456,9 +29449,9 @@ zloy_zhake
 <e><p><l>сияқты<s n="adv"/></l><r>словно<s n="part"/></r></p></e>
 <e><p><l>ақыры<s n="adv"/></l><r>таки<s n="part"/></r></p></e>
 <e><p><l>егер<s n="cs"/></l><r>таки<s n="cnjsub"/></r></p></e>
-<e><p><l>қашан<s n="adv"/><s n="itg"/></l><r>когда<s n="cnjsub"/></r></p></e>
+<e><p><l>кезде<s n="adv"/></l><r>когда<s n="cnjsub"/></r></p></e>
 <e><p><l>немесе<s n="cnjcoo"/></l><r>либо<s n="cnjcoo"/></r></p></e>
-<e><p><l>ешбір<s n="det"/><s n="ind"/></l><r>ни<s n="cnjcoo"/></r></p></e>
+<!--e><p><l>ешбір<s n="det"/><s n="ind"/></l><r>ни<s n="cnjcoo"/></r></p></e-->
 <e><p><l>бірақ<s n="cnjcoo"/></l><r>но<s n="cnjcoo"/></r></p></e>
 <e><p><l>бірақта<s n="adv"/></l><r>хотя<s n="cnjsub"/></r></p></e>
 <e><p><l>не<s n="cnjcoo"/></l><r>что<s n="cnjsub"/></r></p></e>
@@ -29500,9 +29493,8 @@ zloy_zhake
 <e><p><l>себепті<s n="adv"/></l><r>из-за<s n="pr"/></r></p></e>
 <e><p><l>астынан<s n="adv"/></l><r>из-под<s n="pr"/></r></p></e>
 <e><p><l>ішінде<s n="post"/></l><r>изнутри<s n="adv"/></r></p></e>
-<e><p><l>аралық<s n="post"/></l><r>меж<s n="pr"/></r></p></e>
 <e><p><l>арасында<s n="post"/></l><r>между<s n="pr"/></r></p></e>
-<e><p><l>қасында<s n="post"/></l><r>мимо<s n="adv"/></r></p></e>
+<e><p><l>қасында<s n="adv"/></l><r>мимо<s n="adv"/></r></p></e>
 <e><p><l>соңында<s n="adv"/></l><r>накануне<s n="pr"/></r></p></e>
 <e><p><l>шетінде<s n="post"/></l><r>на<b/>краю<s n="pr"/></r></p></e>
 <e><p><l>қарсы<s n="post"/></l><r>наперекор<s n="adv"/></r></p></e>

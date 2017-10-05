@@ -465,6 +465,7 @@
       <attr-item tags="adv"/>
       <attr-item tags="cnjadv"/>
       <attr-item tags="adv.itg"/>
+      <attr-item tags="post"/>
     </def-attr>
 
     <def-attr n="a_anim">
