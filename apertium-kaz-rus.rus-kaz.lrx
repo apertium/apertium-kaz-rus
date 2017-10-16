@@ -46,6 +46,10 @@
 <match lemma="овощ" tags="n.*"/>
   </rule>
 
+ <rule> 
+    <match lemma="кислый" tags="n.*"><select lemma="қатулы" tags="n.*"/></match>
+<match lemma="келбет" tags="n.*"/>
+  </rule>
 
 <!-- кисть ребенка -->
  <rule> 

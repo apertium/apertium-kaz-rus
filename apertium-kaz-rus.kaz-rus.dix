@@ -8343,7 +8343,100 @@
 <e><p><l>тарат<s n="v"/><s n="tv"/></l><r>пустить<s n="vblex"/><s n="perf"/></r></p></e>
 <e><p><l>шығар<s n="v"/><s n="tv"/></l><r>пустить<s n="vblex"/><s n="perf"/></r></p></e>
 <e><p><l>жүргіз<s n="v"/><s n="tv"/></l><r>пустить<s n="vblex"/><s n="perf"/></r></p></e>
-<!-- verbs end -->
+
+<!-- Aliya verbs 2017 -->
+<e><p><l>тырна<s n="v"/><s n="tv"/></l><r>выцарапывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сыз<s n="v"/><s n="tv"/></l><r>выцарапывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қайнаған<b/>сумен<b/>күйдір<s n="v"/><s n="tv"/></l><r>вышпаривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сипап<b/>тап<s n="v"/><s n="tv"/></l><r>ущупывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қармалап<b/>тап<s n="v"/><s n="tv"/></l><r>ущупывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қаз<s n="v"/><s n="iv"/></l><r>выковыривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шұқы<s n="v"/><s n="tv"/></l><r>выковыривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шұқыла<s n="v"/><s n="tv"/></l><r>выковыривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қолма-қол<b/>ақшамен<b/>бер<s n="v"/><s n="tv"/></l><r>обналичивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жай<s n="v"/><s n="tv"/></l><r>расстилать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>төсе<s n="v"/><s n="tv"/></l><r>расстилать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>ретке<b/>келтір<s n="v"/><s n="tv"/></l><r>упорядочивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>пісіп<b/>жет<s n="v"/><s n="iv"/></l><r>дозревать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>пісіп<b/>жетіл<s n="v"/><s n="iv"/></l><r>дозревать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қайта<b/>жабдықта<s n="v"/><s n="tv"/></l><r>переобмундировывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>алда<s n="v"/><s n="tv"/></l><r>жульничать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>теп<s n="v"/><s n="iv"/></l><r>затаптывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қантты<b/>көп<b/>қос<s n="v"/><s n="iv"/></l><r>насахаривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шекерле<s n="v"/><s n="tv"/></l><r>насахаривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тісте<s n="v"/><s n="tv"/></l><r>прокусывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жон<s n="v"/><s n="tv"/></l><r>строгать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сүргіле<s n="v"/><s n="tv"/></l><r>строгать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жонғышта<s n="v"/><s n="tv"/></l><r>строгать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жоңқала<s n="v"/><s n="tv"/></l><r>строгать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>ажарла<s n="v"/><s n="tv"/></l><r>вышлифовывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қырла<s n="v"/><s n="tv"/></l><r>обделывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>атып<b/>түсір<s n="v"/><s n="tv"/></l><r>сражать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>ұшырып<b/>түсір<s n="v"/><s n="tv"/></l><r>сражать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қайна<s n="v"/><s n="iv"/></l><r>прокипать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тығынын<b/>ал<s n="v"/><s n="iv"/></l><r>откупоривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>аузын<b/>аш<s n="v"/><s n="iv"/></l><r>откупоривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>бұрқылда<s n="v"/><s n="iv"/></l><r>закипать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сипа<s n="v"/><s n="iv"/></l><r>ощупывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қармала<s n="v"/><s n="iv"/></l><r>ощупывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>айнала<b/>ақ<s n="v"/><s n="tv"/></l><r>обтыкать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тапта<s n="v"/><s n="tv"/></l><r>растаптывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>секіріп<b/>түс<s n="v"/><s n="iv"/></l><r>спрыгивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сәуле<b/>түсір<s n="v"/><s n="iv"/></l><r>отсвечивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жарықтандыр<s n="v"/><s n="iv"/></l><r>отсвечивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қосыла<b/>биле<s n="v"/><s n="iv"/></l><r>подтанцовывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>ілесе<b/>биле<s n="v"/><s n="iv"/></l><r>подтанцовывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>құр<s n="v"/><s n="tv"/></l><r>сооружать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>орнат<s n="v"/><s n="tv"/></l><r>сооружать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сал<s n="v"/><s n="tv"/></l><r>сооружать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тұрғыз<s n="v"/><s n="tv"/></l><r>сооружать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>көтер<s n="v"/><s n="tv"/></l><r>сооружать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қақыр<s n="v"/><s n="iv"/></l><r>харкать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>түкір<s n="v"/><s n="iv"/></l><r>харкать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жазып<b/>жібер<s n="v"/><s n="tv"/></l><r>распростирать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жайып<b/>жібер<s n="v"/><s n="tv"/></l><r>распростирать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>ойластыр<s n="v"/><s n="tv"/></l><r>умышлять<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жібі<s n="v"/><s n="iv"/></l><r>растаивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>біте<s n="v"/><s n="tv"/></l><r>законопачивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тығында<s n="v"/><s n="tv"/></l><r>законопачивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>отырғыз<s n="v"/><s n="tv"/></l><r>насаживать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>мінгіз<s n="v"/><s n="tv"/></l><r>насаживать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>ек<s n="v"/><s n="tv"/></l><r>насаживать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қондыр<s n="v"/><s n="tv"/></l><r>насаживать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сапта<s n="v"/><s n="tv"/></l><r>насаживать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сүйре<s n="v"/><s n="tv"/></l><r>отволакивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>көңілі<b/>суы<s n="v"/><s n="iv"/></l><r>разлюблять<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>ескір<s n="v"/><s n="iv"/></l><r>ветшать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>көнер<s n="v"/><s n="iv"/></l><r>ветшать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>бітір<s n="v"/><s n="tv"/></l><r>доделывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>аяқта<s n="v"/><s n="tv"/></l><r>доделывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шотаяқпен<b/>тарт<s n="v"/><s n="iv"/></l><r>набагривать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>дәніктір<s n="v"/><s n="tv"/></l><r>приваживать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>үйретіп<b/>ал<s n="v"/><s n="tv"/></l><r>приваживать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>үйір<b/>қыл<s n="v"/><s n="tv"/></l><r>приваживать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>отыр<s n="v"/><s n="iv"/></l><r>приседать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тізерле<s n="v"/><s n="iv"/></l><r>приседать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тізерлей<b/>отыр<s n="v"/><s n="iv"/></l><r>приседать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>ұрла<s n="v"/><s n="tv"/></l><r>уворовывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>көп<b/>тамақ<b/>бер<s n="v"/><s n="iv"/></l><r>перекармливать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шамадан<b/>артық<b/>тамақтандыр<s n="v"/><s n="iv"/></l><r>перекармливать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жасырын<b/>тыңда<s n="v"/><s n="tv"/></l><r>подслушивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тың<b/>тыңда<s n="v"/><s n="iv"/></l><r>подслушивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>майла<s n="v"/><s n="tv"/></l><r>малярничать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сыла<s n="v"/><s n="tv"/></l><r>малярничать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>сырла<s n="v"/><s n="tv"/></l><r>малярничать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>көрсет<s n="v"/><s n="tv"/></l><r>являть<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>жұт<s n="v"/><s n="tv"/></l><r>поглатывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>безеулен<s n="v"/><s n="iv"/></l><r>прыщаветь<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>бөрт<s n="v"/><s n="iv"/></l><r>прыщаветь<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шірі<s n="v"/><s n="iv"/></l><r>перегнивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шіріп<b/>біт<s n="v"/><s n="iv"/></l><r>перегнивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шіріп<b/>кет<s n="v"/><s n="iv"/></l><r>перегнивать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>өндір<s n="v"/><s n="tv"/></l><r>вырабатывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>қалыптастыр<s n="v"/><s n="tv"/></l><r>вырабатывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>тәрбиеле<s n="v"/><s n="tv"/></l><r>вырабатывать<s n="vblex"/><s n="impf"/></r></p></e>
+<e><p><l>шынықтыр<s n="v"/><s n="tv"/></l><r>вырабатывать<s n="vblex"/><s n="impf"/></r></p></e>
+<!-- verbs end 2017 -->
 
 <!-- nouns from rus.rus.dix-->
 <e><p><l>қазба<s n="n"/></l><r>ископаемое<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
@@ -17904,6 +17997,7 @@
 <e><p><l>берілгендік<s n="n"/></l><r>преданность<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>бесік<s n="n"/></l><r>колыбель<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>бет<s n="n"/></l><r>лицо<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
+<e><p><l>келбет<s n="n"/></l><r>лицо<s n="n"/><s n="nt"/><s n="nn"/></r></p></e>
 <e><p><l>бет<s n="n"/></l><r>страница<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
 <e><p><l>би<s n="n"/></l><r>танец<s n="n"/><s n="m"/><s n="nn"/></r></p></e>
 <e><p><l>бидай<s n="n"/></l><r>пшеница<s n="n"/><s n="f"/><s n="nn"/></r></p></e>
@@ -25245,10 +25339,12 @@
 <e><p><l>қыстырма<s n="adj"/></l><r>вводный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>қысық<s n="adj"/></l><r>узкий<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>қысылшаң<s n="adj"/></l><r>затруднительный<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>қызықпаған<s n="adj"/></l><r>незаинтересованный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>қытықшыл<s n="adj"/></l><r>щекотливый<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>қытымыр<s n="adj"/></l><r>скрытый<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>қытырлақ<s n="adj"/></l><r>хрустящий<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>қышқыл<s n="adj"/></l><r>кислый<s n="adj"/><s n="sint"/></r></p></e>
+<e><p><l>қатулы<s n="adj"/></l><r>кислый<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>қышқылтым<s n="adj"/></l><r>кисловатый<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>халықтық<s n="adj"/></l><r>народный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>қышытпа<s n="adj"/></l><r>зудящий<s n="adj"/><s n="sint"/></r></p></e>
@@ -28013,7 +28109,7 @@
 <e><p><l>Корей<s n="np"/><s n="top"/></l><r>Корея<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e><p><l>Қоқан<s n="np"/><s n="top"/></l><r>Кокан<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Қарахан<s n="np"/><s n="top"/></l><r>Карахан<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
-<e><p><l>Қарағанды<s n="np"/><s n="top"/></l><r>Караганды<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
+<e><p><l>Қарағанды<s n="np"/><s n="top"/></l><r>Караганда<s n="np"/><s n="top"/><s n="f"/></r></p><par n="np_top"/></e>
 <e><p><l>Жыланшық<s n="np"/><s n="top"/></l><r>Жыланшык<s n="np"/><s n="top"/><s n="m"/></r></p><par n="np_top"/></e>
 <e><p><l>Жерорта<b/>теңізі<s n="np"/><s n="top"/></l><r>Средиземное<b/>море<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>
 <e><p><l>Балтық<b/>теңізі<s n="np"/><s n="top"/></l><r>Балтийское<b/>море<s n="np"/><s n="top"/><s n="nt"/></r></p><par n="np_top"/></e>

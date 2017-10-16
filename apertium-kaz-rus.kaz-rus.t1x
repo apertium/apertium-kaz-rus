@@ -420,6 +420,16 @@
       <cat-item tags="np.ant.*"/>
       <cat-item tags="np.top.*"/>
     </def-cat>
+
+    <def-cat n="np-ant">
+      <cat-item tags="np.ant"/>
+      <cat-item tags="np.ant.*"/>
+    </def-cat>
+    <def-cat n="np-cog">
+      <cat-item tags="np.cog"/>
+      <cat-item tags="np.cog.*"/>
+    </def-cat>
+
  <def-cat n="prn">
 <cat-item tags="prn"/>
 <cat-item tags="prn.dem"/>
@@ -7363,6 +7373,33 @@ If no format information is present it is removed. -->
 
 
 
+
+
+
+   <rule comment="REGLA: NP cog NP ant"> <!-- 14.10.2017 Aliya -->
+      <pattern>
+        <pattern-item n="np-cog"/>
+        <pattern-item n="np-ant"/>
+        <pattern-item n="cop"/>
+      </pattern>
+      <action>
+        
+        <call-macro n="translate-noun">
+          <with-param pos="1"/>
+        </call-macro>
+        <call-macro n="translate-noun">
+          <with-param pos="2"/>
+        </call-macro>
+        <out>
+          <chunk name="np_cog-ant">
+            <tags><tag><lit-tag v="SN"/></tag></tags>
+                <lu><var n="preposition"/></lu><b/>
+            <lu><clip pos="2" side="tl" part="whole"/></lu><b/>
+            <lu><clip pos="1" side="tl" part="whole"/></lu>
+          </chunk>
+        </out>
+      </action>
+    </rule>
 
     <rule comment="REGLA: N N">
       <!--
