@@ -107,8 +107,10 @@
     <match lemma="замок" tags="n.*"><select lemma="құлып" tags="n.*"/></match>
 <match lemma="дверь" tags="n.*"/>
   </rule>
-
-
+<!--подготовлен - үйретілген -->
+ <rule> 
+    <match lemma="подготовить" tags="vblex.*"><select lemma="үйрет" tags="v.*"/></match>
+  </rule>
 
 
 </rules>
