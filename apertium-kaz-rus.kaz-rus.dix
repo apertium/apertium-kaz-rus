@@ -26619,7 +26619,7 @@
 <e><p><l>туған<s n="adj"/></l><r>родной<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>тумайтын<s n="adj"/></l><r>бесплодный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>тумалас<s n="adj"/></l><r>родственный<s n="adj"/><s n="sint"/></r></p></e>
-<e><p><l>тура<s n="adj"/></l><r>прямой<s n="adj"/><s n="sint"/></r></p></e>
+<!--<e><p><l>тура<s n="adj"/></l><r>прямой<s n="adj"/><s n="sint"/></r></p></e>-->
 <e><p><l>турайтын<s n="adj"/></l><r>резательный<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>турашыл<s n="adj"/></l><r>справедливый<s n="adj"/><s n="sint"/></r></p></e>
 <e><p><l>туынды<s n="adj"/></l><r>вторичный<s n="adj"/><s n="sint"/></r></p></e>
@@ -28131,7 +28131,7 @@
 <e>       <p><l>дейін<s n="post"/></l>                 <r>до<s n="pr"/></r></p></e>
 <e>       <p><l>жайында<s n="post"/></l>        <r>о<s n="pr"/></r></p></e>
 <e>       <p><l>жөнінде<s n="post"/></l>          <r>о<s n="pr"/></r></p></e>
-<e>       <p><l>туралы<s n="post"/><s n="Rnom"/></l>             <r>о<s n="pr"/></r></p></e>
+<e>       <p><l>туралы<s n="post"/></l>             <r>о<s n="pr"/></r></p></e>
 <e>       <p><l>жуық<s n="post"/></l>                  <r>около</r></p><par n="__LR_pr_gen"/></e>
 <e>       <p><l>кейін<s n="post"/></l>                  <r>после</r></p><par n="__LR_pr_gen"/></e>
 
