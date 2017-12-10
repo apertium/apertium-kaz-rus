@@ -23765,9 +23765,9 @@
 <e>       <p><l>барлық<s n="det"/><s n="qnt"/></l>     <r>весь<s n="det"/><s n="ind"/><s n="mfn"/><s n="an"/><s n="pl"/><s n="nom"/></r></p></e>
 <e>       <p><l>бірнеше<s n="det"/><s n="qnt"/></l>    <r>несколько<s n="num"/><s n="mfn"/><s n="pl"/><s n="nom"/></r></p></e>
 
-<e>       <p><l>әр<s n="det"/><s n="qnt"/></l>             <r>каждый<s n="det"/><s n="def"/></r></p></e>
+<!--e>       <p><l>әр<s n="det"/><s n="qnt"/></l>             <r>каждый<s n="det"/><s n="def"/></r></p></e>
 <e>       <p><l>әрбір<s n="det"/><s n="qnt"/></l>      <r>каждый<s n="det"/><s n="def"/></r></p></e>
-<!--e>       <p><l>әркім<s n="prn"/><s n="qnt"/></l>     <r>каждый<s n="det"/><s n="def"/></r></p></e-->
+<e>       <p><l>әркім<s n="prn"/><s n="qnt"/></l>     <r>каждый<s n="det"/><s n="def"/></r></p></e-->
 
 <!--<e>       <p><l>бір<s n="det"/><s n="ind"/></l>        <r>один<s n="num"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>-->
 <e>       <p><l>бірер<s n="det"/><s n="ind"/></l>      <r>какой<s n="det"/><s n="itg"/><s n="m"/><s n="an"/><s n="sg"/><s n="nom"/></r></p></e>
