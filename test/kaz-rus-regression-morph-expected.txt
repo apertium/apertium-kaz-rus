@@ -1,0 +1,108 @@
+[037UXzVJKAs5#0] ^мектебі де/мектеп<n><px3sp><nom>+да<cnjcoo>/мектеп<n><px3sp><nom>+да<postadv>/мектеп<n><px3sp><nom>+е<cop><aor><p3><pl>+да<cnjcoo>/мектеп<n><px3sp><nom>+е<cop><aor><p3><pl>+да<postadv>/мектеп<n><px3sp><nom>+е<cop><aor><p3><sg>+да<cnjcoo>/мектеп<n><px3sp><nom>+е<cop><aor><p3><sg>+да<postadv>$
+[/037UXzVJKAs5]
+[1gmBjGiePLF0#0] ^үйлерің/үй<n><pl><px2sg><nom>/үй<n><pl><px2sg><nom>+е<cop><aor><p3><pl>/үй<n><pl><px2sg><nom>+е<cop><aor><p3><sg>$
+[/1gmBjGiePLF0]
+[7zG4WPgvPztO#0] ^бүгін/бүгін<adv>/бүгін<n><nom>/бүгін<n><attr>/бүгін<n><nom>+е<cop><aor><p3><pl>/бүгін<n><nom>+е<cop><aor><p3><sg>$ ^жексенбі/жексенбі<n><nom>/жексенбі<n><attr>/жексенбі<n><nom>+е<cop><aor><p3><pl>/жексенбі<n><nom>+е<cop><aor><p3><sg>$
+[/7zG4WPgvPztO]
+[Ccjq_nvu0BGh#0] ^бақша/бақ<n><equ>/бақша<n><nom>/бақша<n><attr>/бақ<n><equ>+е<cop><aor><p3><pl>/бақ<n><equ>+е<cop><aor><p3><sg>/бақша<n><nom>+е<cop><aor><p3><pl>/бақша<n><nom>+е<cop><aor><p3><sg>$
+[/Ccjq_nvu0BGh]
+[CrANQry6rOvi#0] ^мектебімдегі де/мектеп<n><px1sg><loc><subst><nom>+да<cnjcoo>/мектеп<n><px1sg><loc><subst><nom>+да<postadv>/мектеп<n><px1sg><loc><subst><nom>+е<cop><aor><p3><pl>+да<cnjcoo>/мектеп<n><px1sg><loc><subst><nom>+е<cop><aor><p3><pl>+да<postadv>/мектеп<n><px1sg><loc><subst><nom>+е<cop><aor><p3><sg>+да<cnjcoo>/мектеп<n><px1sg><loc><subst><nom>+е<cop><aor><p3><sg>+да<postadv>$
+[/CrANQry6rOvi]
+[E33O3u5v0duc#0] ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$
+[/E33O3u5v0duc]
+[ED3OFTl_RP9K#0] ^жақсы/жақсы<adj>/жақсы<adv>/жақсы<adj><advl>/жақсы<adj><subst><nom>/жақсы<adj>+е<cop><aor><p3><pl>/жақсы<adj>+е<cop><aor><p3><sg>/жақсы<adj><subst><nom>+е<cop><aor><p3><pl>/жақсы<adj><subst><nom>+е<cop><aor><p3><sg>$ ^бақшадан/бақша<n><abl>/бақша<n><abl>+е<cop><aor><p3><pl>/бақша<n><abl>+е<cop><aor><p3><sg>$ ^кейін/кейін<adv>/кейін<post>/кейін<n><nom>/кейін<n><attr>/кейін<n><nom>+е<cop><aor><p3><pl>/кейін<n><nom>+е<cop><aor><p3><sg>$
+[/ED3OFTl_RP9K]
+[Ek4AEtdAPq0c#0] ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$
+[/Ek4AEtdAPq0c]
+[FZrbQI7lrWXV#0] ^үйің/үй<n><px2sg><nom>/үй<v><tv><imp><p2><frm><sg>/үй<n><px2sg><nom>+е<cop><aor><p3><pl>/үй<n><px2sg><nom>+е<cop><aor><p3><sg>$
+[/FZrbQI7lrWXV]
+[IpQgZmqBeSNj#0] ^бақшаның/бақша<n><gen>$ ^артында/арт<n><px3sp><loc>/артында<adv>/арт<n><px3sp><loc>+е<cop><aor><p3><pl>/арт<n><px3sp><loc>+е<cop><aor><p3><sg>$
+[/IpQgZmqBeSNj]
+[J56C2FHwsrVe#0] ^үйлерді/үй<n><pl><acc>$
+[/J56C2FHwsrVe]
+[J8KwDtmXyF48#0] ^мынау/мынау<det><dem>/мынау<prn><dem><nom>/мынау<prn><dem><nom>+е<cop><aor><p3><pl>/мынау<prn><dem><nom>+е<cop><aor><p3><sg>$
+[/J8KwDtmXyF48]
+[KG2Fr_28uiEv#0] ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^үй/үй<n><nom>/үй<n><attr>/үй<v><tv><imp><p2><sg>/үй<n><nom>+е<cop><aor><p3><pl>/үй<n><nom>+е<cop><aor><p3><sg>$
+[/KG2Fr_28uiEv]
+[NXoobDTsHRrP#0] ^Қазақстан/Қазақстан<np><top><nom>/Қазақстан<np><top><attr>/Қазақстан<np><top><nom>+е<cop><aor><p3><pl>/Қазақстан<np><top><nom>+е<cop><aor><p3><sg>$
+[/NXoobDTsHRrP]
+[OuqcomnB5FmX#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>/дәрігер<n><nom>+е<cop><aor><p3><pl>/дәрігер<n><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/OuqcomnB5FmX]
+[P_DgoZvTYLty#0] ^бала/бала<n><nom>/бала<n><attr>/бала<v><iv><imp><p2><sg>/бала<n><nom>+е<cop><aor><p3><pl>/бала<n><nom>+е<cop><aor><p3><sg>$
+[/P_DgoZvTYLty]
+[QEO3WW53pykH#0] ^ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^бала/бала<n><nom>/бала<n><attr>/бала<v><iv><imp><p2><sg>/бала<n><nom>+е<cop><aor><p3><pl>/бала<n><nom>+е<cop><aor><p3><sg>$
+[/QEO3WW53pykH]
+[SGcAqLoxRtiS#0] ^үйлермен/үй<n><pl><ins>$
+[/SGcAqLoxRtiS]
+[SMVWeWYNN43f#0] ^жақсы/жақсы<adj>/жақсы<adv>/жақсы<adj><advl>/жақсы<adj><subst><nom>/жақсы<adj>+е<cop><aor><p3><pl>/жақсы<adj>+е<cop><aor><p3><sg>/жақсы<adj><subst><nom>+е<cop><aor><p3><pl>/жақсы<adj><subst><nom>+е<cop><aor><p3><sg>$ ^бақшаның/бақша<n><gen>$ ^артында/арт<n><px3sp><loc>/артында<adv>/арт<n><px3sp><loc>+е<cop><aor><p3><pl>/арт<n><px3sp><loc>+е<cop><aor><p3><sg>$
+[/SMVWeWYNN43f]
+[UQMAzArfqfhk#0] ^бүгін/бүгін<adv>/бүгін<n><nom>/бүгін<n><attr>/бүгін<n><nom>+е<cop><aor><p3><pl>/бүгін<n><nom>+е<cop><aor><p3><sg>$
+[/UQMAzArfqfhk]
+[UUHJQVykeyDh#0] ^үйлеріңіз/үй<n><pl><px2sg><frm><nom>/үй<n><pl><px2sg><frm><nom>+е<cop><aor><p3><pl>/үй<n><pl><px2sg><frm><nom>+е<cop><aor><p3><sg>$
+[/UUHJQVykeyDh]
+[UlzLGg_2ZQ4b#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$
+[/UlzLGg_2ZQ4b]
+[V3DAHw9GtX2O#0] ^мынау/мынау<det><dem>/мынау<prn><dem><nom>/мынау<prn><dem><nom>+е<cop><aor><p3><pl>/мынау<prn><dem><nom>+е<cop><aor><p3><sg>$ ^үй/үй<n><nom>/үй<n><attr>/үй<v><tv><imp><p2><sg>/үй<n><nom>+е<cop><aor><p3><pl>/үй<n><nom>+е<cop><aor><p3><sg>$
+[/V3DAHw9GtX2O]
+[V7aQz_uFxfyJ#0] ^бақшадан/бақша<n><abl>/бақша<n><abl>+е<cop><aor><p3><pl>/бақша<n><abl>+е<cop><aor><p3><sg>$ ^кейін/кейін<adv>/кейін<post>/кейін<n><nom>/кейін<n><attr>/кейін<n><nom>+е<cop><aor><p3><pl>/кейін<n><nom>+е<cop><aor><p3><sg>$
+[/V7aQz_uFxfyJ]
+[VLXRK6vpq0ZN#0] ^ең/ең<adv>$ ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^қала/қал<vaux><prc_impf>/қал<vaux><gna_impf>/қал<v><iv><prc_impf>/қал<v><iv><gna_impf>/қала<n><nom>/қала<n><attr>/қала<v><tv><imp><p2><sg>/қала<n><nom>+е<cop><aor><p3><pl>/қала<n><nom>+е<cop><aor><p3><sg>$
+[/VLXRK6vpq0ZN]
+[VOxCwPqvgM_l#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^дәрігерлер/дәрігер<n><pl><nom>/дәрігер<n><pl><nom>+е<cop><aor><p3><pl>/дәрігер<n><pl><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/VOxCwPqvgM_l]
+[WLoYQJA7filu#0] ^Мәдинаның/Мәдина<np><ant><f><gen>$ ^кітабындағы/кітап<n><px3sp><loc><attr>/кітап<n><px3sp><loc><subst><nom>/кітап<n><px3sp><loc><subst><nom>+е<cop><aor><p3><pl>/кітап<n><px3sp><loc><subst><nom>+е<cop><aor><p3><sg>$ ^бейне/бейне<n><nom>/бейне<n><attr>/бейне<n><nom>+е<cop><aor><p3><pl>/бейне<n><nom>+е<cop><aor><p3><sg>$
+[/WLoYQJA7filu]
+[WjQUNBxpGCiQ#0] ^үйі/үй<n><px3sp><nom>/үй<n><px3sp><nom>+е<cop><aor><p3><pl>/үй<n><px3sp><nom>+е<cop><aor><p3><sg>$
+[/WjQUNBxpGCiQ]
+[YH7P8saoyDv7#0] ^жақсы/жақсы<adj>/жақсы<adv>/жақсы<adj><advl>/жақсы<adj><subst><nom>/жақсы<adj>+е<cop><aor><p3><pl>/жақсы<adj>+е<cop><aor><p3><sg>/жақсы<adj><subst><nom>+е<cop><aor><p3><pl>/жақсы<adj><subst><nom>+е<cop><aor><p3><sg>$ ^бақшаның/бақша<n><gen>$ ^жанында/жан<n><px3sp><loc>/жанында<adv>/жан<n><px3sp><loc>+е<cop><aor><p3><pl>/жан<n><px3sp><loc>+е<cop><aor><p3><sg>$
+[/YH7P8saoyDv7]
+[_QNKMtUqp8l0#0] ^үйлері/үй<n><pl><px3sp><nom>/үй<n><pl><px3sp><nom>+е<cop><aor><p3><pl>/үй<n><pl><px3sp><nom>+е<cop><aor><p3><sg>$
+[/_QNKMtUqp8l0]
+[c0gEIhfkDFXl#0] ^алайда/алайда<adv>/алайда<cnjadv>$
+[/c0gEIhfkDFXl]
+[d-M4ir7pJpXv#0] ^Астана/астана<n><nom>/астана<n><attr>/Астана<np><top><nom>/Астана<np><top><attr>/астана<n><nom>+е<cop><aor><p3><pl>/астана<n><nom>+е<cop><aor><p3><sg>/Астана<np><top><nom>+е<cop><aor><p3><pl>/Астана<np><top><nom>+е<cop><aor><p3><sg>$
+[/d-M4ir7pJpXv]
+[dDrXIyH84jvM#0] ^бақшаның/бақша<n><gen>$ ^жанында/жан<n><px3sp><loc>/жанында<adv>/жан<n><px3sp><loc>+е<cop><aor><p3><pl>/жан<n><px3sp><loc>+е<cop><aor><p3><sg>$
+[/dDrXIyH84jvM]
+[dM1J3JEd0ObT#0] ^үстелдің/үстел<n><gen>/үсте<v><tv><pass><ifi><p2><sg>$ ^үстінде/үст<n><px3sp><loc>/үстінде<adv>/үст<n><px3sp><loc>+е<cop><aor><p3><pl>/үст<n><px3sp><loc>+е<cop><aor><p3><sg>$
+[/dM1J3JEd0ObT]
+[dotMDEBRdANK#0] ^бұл/бұл<det><dem>/бұл<prn><dem><nom>/бұл<prn><dem><nom>+е<cop><aor><p3><pl>/бұл<prn><dem><nom>+е<cop><aor><p3><sg>$ ^компания/компания<n><nom>/компания<n><attr>/компания<n><nom>+е<cop><aor><p3><pl>/компания<n><nom>+е<cop><aor><p3><sg>$
+[/dotMDEBRdANK]
+[eK5YE-pGX-Ge#0] ^үйіміз/үй<n><px1pl><nom>/үй<n><px1pl><nom>+е<cop><aor><p3><pl>/үй<n><px1pl><nom>+е<cop><aor><p3><sg>$
+[/eK5YE-pGX-Ge]
+[eR84tG_mYGQI#0] ^бір/бір<num>/бір<det><ind>/бір<num><subst><nom>/бір<num><subst><nom>+е<cop><aor><p3><pl>/бір<num><subst><nom>+е<cop><aor><p3><sg>$ ^үй/үй<n><nom>/үй<n><attr>/үй<v><tv><imp><p2><sg>/үй<n><nom>+е<cop><aor><p3><pl>/үй<n><nom>+е<cop><aor><p3><sg>$
+[/eR84tG_mYGQI]
+[fGXs3n4YyB5e#0] ^ең/ең<adv>$ ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$
+[/fGXs3n4YyB5e]
+[gW6ArN3-YVpZ#0] ^үйлер/үй<n><pl><nom>/үй<n><pl><nom>+е<cop><aor><p3><pl>/үй<n><pl><nom>+е<cop><aor><p3><sg>$
+[/gW6ArN3-YVpZ]
+[jV7Wo6BTgNPQ#0] ^Мәдинаның/Мәдина<np><ant><f><gen>$ ^кітабы/кітап<n><px3sp><nom>/кітап<n><px3sp><nom>+е<cop><aor><p3><pl>/кітап<n><px3sp><nom>+е<cop><aor><p3><sg>$
+[/jV7Wo6BTgNPQ]
+[jir6Yp-2qaKW#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$
+[/jir6Yp-2qaKW]
+[l_HPlNmb1x__#0] ^үйлердің/үй<n><pl><gen>$
+[/l_HPlNmb1x__]
+[nLLjkLF8Tv40#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^дәрігерлерміз/дәрігер<n><pl><nom>+е<cop><aor><p1><pl>$^./.<sent>$
+[/nLLjkLF8Tv40]
+[nQ7oPP5mGDE5#0] ^мынау/мынау<det><dem>/мынау<prn><dem><nom>/мынау<prn><dem><nom>+е<cop><aor><p3><pl>/мынау<prn><dem><nom>+е<cop><aor><p3><sg>$ ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^үй/үй<n><nom>/үй<n><attr>/үй<v><tv><imp><p2><sg>/үй<n><nom>+е<cop><aor><p3><pl>/үй<n><nom>+е<cop><aor><p3><sg>$
+[/nQ7oPP5mGDE5]
+[naPTkGMmWjZm#0] ^баланың/бала<n><gen>$ ^ойыншығы/ойыншық<n><px3sp><nom>/ойыншық<n><px3sp><nom>+е<cop><aor><p3><pl>/ойыншық<n><px3sp><nom>+е<cop><aor><p3><sg>$
+[/naPTkGMmWjZm]
+[oMpVb-dYKKuY#0] ^үй/үй<n><nom>/үй<n><attr>/үй<v><tv><imp><p2><sg>/үй<n><nom>+е<cop><aor><p3><pl>/үй<n><nom>+е<cop><aor><p3><sg>$
+[/oMpVb-dYKKuY]
+[oiPqCe3Zqkby#0] ^бір/бір<num>/бір<det><ind>/бір<num><subst><nom>/бір<num><subst><nom>+е<cop><aor><p3><pl>/бір<num><subst><nom>+е<cop><aor><p3><sg>$ ^бақша/бақ<n><equ>/бақша<n><nom>/бақша<n><attr>/бақ<n><equ>+е<cop><aor><p3><pl>/бақ<n><equ>+е<cop><aor><p3><sg>/бақша<n><nom>+е<cop><aor><p3><pl>/бақша<n><nom>+е<cop><aor><p3><sg>$
+[/oiPqCe3Zqkby]
+[rxHYybAEmZRk#0] ^КСРО/КСРО<abbr>/КСРО<np><top><nom>/КСРО<np><top><attr>/КСРО<np><top><nom>+е<cop><aor><p3><pl>/КСРО<np><top><nom>+е<cop><aor><p3><sg>$
+[/rxHYybAEmZRk]
+[sLgbhffUShmr#0] ^Мәдинаның/Мәдина<np><ant><f><gen>$ ^кітабы/кітап<n><px3sp><nom>/кітап<n><px3sp><nom>+е<cop><aor><p3><pl>/кітап<n><px3sp><nom>+е<cop><aor><p3><sg>$ ^туралы/туралы<post>/тура<adj><subst>+лы<post>$
+[/sLgbhffUShmr]
+[sp2xqRw0GGIi#0] ^Балжан/Балжан<np><ant><f><nom>/Балжан<np><ant><f><nom>+е<cop><aor><p3><pl>/Балжан<np><ant><f><nom>+е<cop><aor><p3><sg>$
+[/sp2xqRw0GGIi]
+[uq-8GFsOfr0C#0] ^мектептеріңіздей ғана/мектеп<n><pl><px2sg><frm><sim>+ғана<postadv>/мектеп<n><pl><px2sg><frm><sim><nom>+ғана<postadv>/мектеп<n><pl><px2sg><frm><sim>+е<cop><aor><p3><pl>+ғана<postadv>/мектеп<n><pl><px2sg><frm><sim>+е<cop><aor><p3><sg>+ғана<postadv>/мектеп<n><pl><px2sg><frm><sim><nom>+е<cop><aor><p3><pl>+ғана<postadv>/мектеп<n><pl><px2sg><frm><sim><nom>+е<cop><aor><p3><sg>+ғана<postadv>$
+[/uq-8GFsOfr0C]
+[vO4c1VSxUwO8#0] ^ең/ең<adv>$
+[/vO4c1VSxUwO8]
+[yqZ4GP26aPio#0] ^баланың/бала<n><gen>$
+[/yqZ4GP26aPio]
+[z20kd7Ih-6rD#0] ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^қаладағы/қала<n><loc><attr>/қала<n><loc><subst><nom>/қала<n><loc><subst><nom>+е<cop><aor><p3><pl>/қала<n><loc><subst><nom>+е<cop><aor><p3><sg>$ ^базар/базар<n><nom>/базар<n><attr>/базар<n><nom>+е<cop><aor><p3><pl>/базар<n><nom>+е<cop><aor><p3><sg>$
+[/z20kd7Ih-6rD]

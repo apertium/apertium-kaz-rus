@@ -1,0 +1,294 @@
+[-AxcBw3xxlwn#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырдық/отыр<vaux><ifi><p1><pl>/отыр<v><iv><ifi><p1><pl>$^./.<sent>$
+[/-AxcBw3xxlwn]
+[-YZI5d4Xy5kc#0] ^Бізде/біз<prn><pers><p1><pl><loc>/біз<prn><pers><p1><pl><loc>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><loc>+е<cop><aor><p3><sg>$ ^кітаптар/кітап<n><pl><nom>/кітап<n><pl><nom>+е<cop><aor><p3><pl>/кітап<n><pl><nom>+е<cop><aor><p3><sg>$ ^бар/бар<adj>/бар<n><nom>/бар<n><attr>/бар<det><qnt>/бар<adj><subst><nom>/бар<v><iv><imp><p2><sg>/бар<adj>+е<cop><aor><p3><pl>/бар<adj>+е<cop><aor><p3><sg>/бар<n><nom>+е<cop><aor><p3><pl>/бар<n><nom>+е<cop><aor><p3><sg>/бар<adj><subst><nom>+е<cop><aor><p3><pl>/бар<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/-YZI5d4Xy5kc]
+[0KmaAk5-XXfW#0] ^Сізге/сіз<prn><pers><p2><sg><frm><dat>$ ^сөмке/сөмке<n><nom>/сөмке<n><attr>/сөмке<n><nom>+е<cop><aor><p3><pl>/сөмке<n><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/0KmaAk5-XXfW]
+[0VNOabYFrKpW#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнағанмын/ойна<v><tv><past><p1><sg>$^./.<sent>$
+[/0VNOabYFrKpW]
+[0k7sP5iCnlV5#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнар/ойна<v><tv><gpr_fut>/ойна<v><tv><fut><p3><pl>/ойна<v><tv><fut><p3><sg>/ойна<v><tv><gpr_fut><subst><nom>$^./.<sent>$
+[/0k7sP5iCnlV5]
+[0mS_ghDvWtrX#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырмаймын/отыр<vaux><neg><aor><p1><sg>/отыр<v><iv><neg><aor><p1><sg>$^./.<sent>$
+[/0mS_ghDvWtrX]
+[2FL7Lknuc8Lr#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырғансыз/отыр<vaux><past><p2><frm><sg>/отыр<v><iv><past><p2><frm><sg>/отыр<vaux><ger_past>+сыз<post>/отыр<v><iv><ger_past>+сыз<post>/отыр<vaux><gpr_past><subst>+сыз<post>/отыр<v><iv><gpr_past><subst>+сыз<post>$^./.<sent>$
+[/2FL7Lknuc8Lr]
+[2P1yDtBy7e-7#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/2P1yDtBy7e-7]
+[2kmhuAu29P3q#0] ^сіздің/сіз<prn><pers><p2><sg><frm><gen>$ ^бақшаңыз/бақша<n><px2sg><frm><nom>/бақша<n><px2sg><frm><nom>+е<cop><aor><p3><pl>/бақша<n><px2sg><frm><nom>+е<cop><aor><p3><sg>$
+[/2kmhuAu29P3q]
+[2vqcpwIqpDWR#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^бақшада/бақша<n><loc>/бақша<n><loc>+е<cop><aor><p3><pl>/бақша<n><loc>+е<cop><aor><p3><sg>$ ^ойнамадым/ойна<v><tv><neg><ifi><p1><sg>$^./.<sent>$
+[/2vqcpwIqpDWR]
+[2xCgiz3VSzwt#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатырмын/жат<vaux><pres><p1><sg>/жатыр<adj>+е<cop><aor><p1><sg>/жатыр<adj><subst><nom>+е<cop><aor><p1><sg>$^./.<sent>$
+[/2xCgiz3VSzwt]
+[30aa3cCFnyDm#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болдық/бол<vaux><ifi><p1><pl>/бол<v><iv><ifi><p1><pl>$^./.<sent>$
+[/30aa3cCFnyDm]
+[3NAXy1GS3TSi#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнаған/ойна<v><tv><gpr_past>/ойна<v><tv><ger_past><nom>/ойна<v><tv><past><p3><pl>/ойна<v><tv><past><p3><sg>/ойна<v><tv><gpr_past><subst><nom>$^./.<sent>$
+[/3NAXy1GS3TSi]
+[3ed85NjDqqYY#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнайды/ойна<v><tv><aor><p3><pl>/ойна<v><tv><aor><p3><sg>$^./.<sent>$
+[/3ed85NjDqqYY]
+[3z34Z9d1U9Tg#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^қыз/қыз<n><nom>/қыз<n><attr>/қыз<v><iv><imp><p2><sg>/қыз<n><nom>+е<cop><aor><p3><pl>/қыз<n><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/3z34Z9d1U9Tg]
+[4cNsP1OS4_ag#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болмадыңыз/бол<vaux><neg><ifi><p2><frm><sg>/бол<v><iv><neg><ifi><p2><frm><sg>/болма<v><iv><ifi><p2><frm><sg>$^./.<sent>$
+[/4cNsP1OS4_ag]
+[5ZZ6L1RtRxBE#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырдым/отыр<vaux><ifi><p1><sg>/отыр<v><iv><ifi><p1><sg>$^./.<sent>$
+[/5ZZ6L1RtRxBE]
+[68Kbm8Lz6JED#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^қыздармыз/қыз<n><pl><nom>+е<cop><aor><p1><pl>$^./.<sent>$
+[/68Kbm8Lz6JED]
+[6AIARX7NaECr#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>/дәрігер<n><nom>+е<cop><aor><p3><pl>/дәрігер<n><nom>+е<cop><aor><p3><sg>$ ^болмадыңыз/бол<vaux><neg><ifi><p2><frm><sg>/бол<v><iv><neg><ifi><p2><frm><sg>/болма<v><iv><ifi><p2><frm><sg>$^./.<sent>$
+[/6AIARX7NaECr]
+[6F2Ot9wqVZ-h#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^дәрігерлер/дәрігер<n><pl><nom>/дәрігер<n><pl><nom>+е<cop><aor><p3><pl>/дәрігер<n><pl><nom>+е<cop><aor><p3><sg>$ ^болдық/бол<vaux><ifi><p1><pl>/бол<v><iv><ifi><p1><pl>$^./.<sent>$
+[/6F2Ot9wqVZ-h]
+[6Vembx9HiRa7#0] ^сусап/*сусап$ ^жатырмын/жат<vaux><pres><p1><sg>/жатыр<adj>+е<cop><aor><p1><sg>/жатыр<adj><subst><nom>+е<cop><aor><p1><sg>$
+[/6Vembx9HiRa7]
+[6i1N822deQqp#0] ^Бізге/біз<prn><pers><p1><pl><dat>$ ^сөмкелер/сөмке<n><pl><nom>/сөмке<n><pl><nom>+е<cop><aor><p3><pl>/сөмке<n><pl><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/6i1N822deQqp]
+[6wYqfYQRX2tP#0] ^бақшаның/бақша<n><gen>$ ^астында/аст<n><px3sp><loc>/астында<adv>/аст<n><px3sp><loc>+е<cop><aor><p3><pl>/аст<n><px3sp><loc>+е<cop><aor><p3><sg>$
+[/6wYqfYQRX2tP]
+[7PWzVXdzcVET#0] ^Маған/мен<prn><pers><p1><sg><dat>$ ^сөмке/сөмке<n><nom>/сөмке<n><attr>/сөмке<n><nom>+е<cop><aor><p3><pl>/сөмке<n><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/7PWzVXdzcVET]
+[7iw2F3Un3rar#0] ^бақшаның/бақша<n><gen>$ ^алдында/алд<n><px3sp><loc>/алдында<adv>/алд<n><px3sp><loc>+е<cop><aor><p3><pl>/алд<n><px3sp><loc>+е<cop><aor><p3><sg>$
+[/7iw2F3Un3rar]
+[8dQfQkEya4tx#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнады/ойна<v><tv><ifi><p3><pl>/ойна<v><tv><ifi><p3><sg>$^./.<sent>$
+[/8dQfQkEya4tx]
+[91FF5hJG3WDk#0] ^бақшаның/бақша<n><gen>$ ^үстінде/үст<n><px3sp><loc>/үстінде<adv>/үст<n><px3sp><loc>+е<cop><aor><p3><pl>/үст<n><px3sp><loc>+е<cop><aor><p3><sg>$
+[/91FF5hJG3WDk]
+[9WMa_YNZFt2c#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнамағанмын/ойна<v><tv><neg><past><p1><sg>$^./.<sent>$
+[/9WMa_YNZFt2c]
+[Aj96r72e4yIB#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болдыңыз/бол<vaux><ifi><p2><frm><sg>/бол<v><iv><ifi><p2><frm><sg>$^./.<sent>$
+[/Aj96r72e4yIB]
+[BHJyg4TOjQkV#0] ^Сенде/сен<prn><pers><p2><sg><loc>$ ^кітап/кітап<n><nom>/кітап<n><attr>/кітап<n><nom>+е<cop><aor><p3><pl>/кітап<n><nom>+е<cop><aor><p3><sg>$ ^бар/бар<adj>/бар<n><nom>/бар<n><attr>/бар<det><qnt>/бар<adj><subst><nom>/бар<v><iv><imp><p2><sg>/бар<adj>+е<cop><aor><p3><pl>/бар<adj>+е<cop><aor><p3><sg>/бар<n><nom>+е<cop><aor><p3><pl>/бар<n><nom>+е<cop><aor><p3><sg>/бар<adj><subst><nom>+е<cop><aor><p3><pl>/бар<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/BHJyg4TOjQkV]
+[BlZW6ANngoa-#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнамаған/ойна<v><tv><neg><gpr_past>/ойна<v><tv><neg><ger_past><nom>/ойна<v><tv><neg><past><p3><pl>/ойна<v><tv><neg><past><p3><sg>/ойна<v><tv><neg><gpr_past><subst><nom>$^./.<sent>$
+[/BlZW6ANngoa-]
+[D7GM1xpEU_r1#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнамағанбыз/ойна<v><tv><neg><past><p1><pl>$^./.<sent>$
+[/D7GM1xpEU_r1]
+[DC1xh46HQGVu#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^жеті/жеті<num>/жеті<num><subst><nom>/жеті<num><subst><nom>+е<cop><aor><p3><pl>/жеті<num><subst><nom>+е<cop><aor><p3><sg>$ ^жастамыз/жас<n><loc>+е<cop><aor><p1><pl>/жас<adj><subst><loc>+е<cop><aor><p1><pl>$^./.<sent>$
+[/DC1xh46HQGVu]
+[DYW8-tMGMJiB#0] ^Бізде/біз<prn><pers><p1><pl><loc>/біз<prn><pers><p1><pl><loc>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><loc>+е<cop><aor><p3><sg>$ ^кітаптар/кітап<n><pl><nom>/кітап<n><pl><nom>+е<cop><aor><p3><pl>/кітап<n><pl><nom>+е<cop><aor><p3><sg>$ ^жоқ/жоқ<ij>/жоқ<adj>/жоқ<adj><subst><nom>/жоқ<adj>+е<cop><aor><p3><pl>/жоқ<adj>+е<cop><aor><p3><sg>/жоқ<adj><subst><nom>+е<cop><aor><p3><pl>/жоқ<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/DYW8-tMGMJiB]
+[Esj3tpnks-tJ#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнайсыз/ойна<v><tv><aor><p2><frm><sg>$^./.<sent>$
+[/Esj3tpnks-tJ]
+[F9fSjSqzRkS4#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатқан жоқсыз/жат<vaux><neg><ifi><p2><frm><sg>/жат<v><iv><neg><ifi><p2><frm><sg>/жат<vaux><neg><pres><p2><frm><sg>$^./.<sent>$
+[/F9fSjSqzRkS4]
+[FUzZhHly__Nw#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^жеті/жеті<num>/жеті<num><subst><nom>/жеті<num><subst><nom>+е<cop><aor><p3><pl>/жеті<num><subst><nom>+е<cop><aor><p3><sg>$ ^жаста/жас<n><loc>/жас<adj><subst><loc>/жаста<v><tv><imp><p2><sg>/жас<n><loc>+е<cop><aor><p3><pl>/жас<n><loc>+е<cop><aor><p3><sg>/жас<adj><subst><loc>+е<cop><aor><p3><pl>/жас<adj><subst><loc>+е<cop><aor><p3><sg>$ ^болды/бол<vaux><ifi><p3><pl>/бол<vaux><ifi><p3><sg>/бол<v><iv><ifi><p3><pl>/бол<v><iv><ifi><p3><sg>$^./.<sent>$
+[/FUzZhHly__Nw]
+[FdlPm_AxB8a2#0] ^Сізде/сіз<prn><pers><p2><sg><frm><loc>/сіз<prn><pers><p2><sg><frm><loc>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><loc>+е<cop><aor><p3><sg>$ ^кітап/кітап<n><nom>/кітап<n><attr>/кітап<n><nom>+е<cop><aor><p3><pl>/кітап<n><nom>+е<cop><aor><p3><sg>$ ^бар/бар<adj>/бар<n><nom>/бар<n><attr>/бар<det><qnt>/бар<adj><subst><nom>/бар<v><iv><imp><p2><sg>/бар<adj>+е<cop><aor><p3><pl>/бар<adj>+е<cop><aor><p3><sg>/бар<n><nom>+е<cop><aor><p3><pl>/бар<n><nom>+е<cop><aor><p3><sg>/бар<adj><subst><nom>+е<cop><aor><p3><pl>/бар<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/FdlPm_AxB8a2]
+[FiMTLwtl53Ie#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болмадым/бол<vaux><neg><ifi><p1><sg>/бол<v><iv><neg><ifi><p1><sg>/болма<v><iv><ifi><p1><sg>$^./.<sent>$
+[/FiMTLwtl53Ie]
+[G5DQRUL6LWea#0] ^Оларға/ол<prn><dem><pl><dat>/олар<prn><pers><p3><pl><dat>$ ^сөмкелер/сөмке<n><pl><nom>/сөмке<n><pl><nom>+е<cop><aor><p3><pl>/сөмке<n><pl><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/G5DQRUL6LWea]
+[G7GvwgkL6S92#0] ^Оларда/ол<prn><dem><pl><loc>/олар<prn><pers><p3><pl><loc>/ол<prn><dem><pl><loc>+е<cop><aor><p3><pl>/ол<prn><dem><pl><loc>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><loc>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><loc>+е<cop><aor><p3><sg>$ ^кітаптар/кітап<n><pl><nom>/кітап<n><pl><nom>+е<cop><aor><p3><pl>/кітап<n><pl><nom>+е<cop><aor><p3><sg>$ ^бар/бар<adj>/бар<n><nom>/бар<n><attr>/бар<det><qnt>/бар<adj><subst><nom>/бар<v><iv><imp><p2><sg>/бар<adj>+е<cop><aor><p3><pl>/бар<adj>+е<cop><aor><p3><sg>/бар<n><nom>+е<cop><aor><p3><pl>/бар<n><nom>+е<cop><aor><p3><sg>/бар<adj><subst><nom>+е<cop><aor><p3><pl>/бар<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/G7GvwgkL6S92]
+[IieBtZ38AZpu#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнар/ойна<v><tv><gpr_fut>/ойна<v><tv><fut><p3><pl>/ойна<v><tv><fut><p3><sg>/ойна<v><tv><gpr_fut><subst><nom>$^./.<sent>$
+[/IieBtZ38AZpu]
+[JpqmYrmqVBz8#0] ^Оған/ол<prn><dem><dat>/ол<prn><pers><p3><sg><dat>/оқ<v><tv><opt><p1><sg>$ ^сөмке/сөмке<n><nom>/сөмке<n><attr>/сөмке<n><nom>+е<cop><aor><p3><pl>/сөмке<n><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/JpqmYrmqVBz8]
+[Km26RtJUvWB4#0] ^біздің/біз<prn><pers><p1><pl><gen>$ ^бақшамыз/бақ<n><equ>+е<cop><aor><p1><pl>/бақша<n><nom>+е<cop><aor><p1><pl>/бақша<n><px1pl><nom>/бақша<n><px1pl><nom>+е<cop><aor><p3><pl>/бақша<n><px1pl><nom>+е<cop><aor><p3><sg>$
+[/Km26RtJUvWB4]
+[KxC6MPQ0AyYm#0] ^Сен/сен<prn><pers><p2><sg><nom>/сен<v><iv><imp><p2><sg>$ ^жеті/жеті<num>/жеті<num><subst><nom>/жеті<num><subst><nom>+е<cop><aor><p3><pl>/жеті<num><subst><nom>+е<cop><aor><p3><sg>$ ^жастасың/жас<n><loc>+е<cop><aor><p2><sg>/жас<adj><subst><loc>+е<cop><aor><p2><sg>/жаста<v><tv><coop><imp><p2><frm><sg>/жастас<n><px2sg><nom>/жастас<n><px2sg><nom>+е<cop><aor><p3><pl>/жастас<n><px2sg><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/KxC6MPQ0AyYm]
+[L5bSck1pKq_Z#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырдыңыз/отыр<vaux><ifi><p2><frm><sg>/отыр<v><iv><ifi><p2><frm><sg>$^./.<sent>$
+[/L5bSck1pKq_Z]
+[LFqTXXPW5Evj#0] ^Саған/сен<prn><pers><p2><sg><dat>$ ^сөмке/сөмке<n><nom>/сөмке<n><attr>/сөмке<n><nom>+е<cop><aor><p3><pl>/сөмке<n><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/LFqTXXPW5Evj]
+[MDquj089wXK-#0] ^Онда/ол<prn><dem><loc>/ол<prn><pers><p3><sg><loc>/он<num><subst><loc>/онда<adv>/онда<cnjsub>/ол<prn><dem><loc>+е<cop><aor><p3><pl>/ол<prn><dem><loc>+е<cop><aor><p3><sg>/он<num><subst><loc>+е<cop><aor><p3><pl>/он<num><subst><loc>+е<cop><aor><p3><sg>$ ^кітап/кітап<n><nom>/кітап<n><attr>/кітап<n><nom>+е<cop><aor><p3><pl>/кітап<n><nom>+е<cop><aor><p3><sg>$ ^жоқ/жоқ<ij>/жоқ<adj>/жоқ<adj><subst><nom>/жоқ<adj>+е<cop><aor><p3><pl>/жоқ<adj>+е<cop><aor><p3><sg>/жоқ<adj><subst><nom>+е<cop><aor><p3><pl>/жоқ<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/MDquj089wXK-]
+[Mg4v0oaDkc7y#0] ^онымен/ол<prn><dem><ins>/ол<prn><pers><p3><sg><ins>/он<num><subst><px3sp><ins>$^./.<sent>$
+[/Mg4v0oaDkc7y]
+[MqSwKhI9eakQ#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнамады/ойна<v><tv><neg><ifi><p3><pl>/ойна<v><tv><neg><ifi><p3><sg>$^./.<sent>$
+[/MqSwKhI9eakQ]
+[N8blH9DyuTs2#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^дәрігерлер/дәрігер<n><pl><nom>/дәрігер<n><pl><nom>+е<cop><aor><p3><pl>/дәрігер<n><pl><nom>+е<cop><aor><p3><sg>$ ^болды/бол<vaux><ifi><p3><pl>/бол<vaux><ifi><p3><sg>/бол<v><iv><ifi><p3><pl>/бол<v><iv><ifi><p3><sg>$^./.<sent>$
+[/N8blH9DyuTs2]
+[NDB54y-l0yAL#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырмады/отыр<vaux><neg><ifi><p3><pl>/отыр<vaux><neg><ifi><p3><sg>/отыр<v><iv><neg><ifi><p3><pl>/отыр<v><iv><neg><ifi><p3><sg>$^./.<sent>$
+[/NDB54y-l0yAL]
+[NedhTQkHUzgv#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^жеті/жеті<num>/жеті<num><subst><nom>/жеті<num><subst><nom>+е<cop><aor><p3><pl>/жеті<num><subst><nom>+е<cop><aor><p3><sg>$ ^жаста/жас<n><loc>/жас<adj><subst><loc>/жаста<v><tv><imp><p2><sg>/жас<n><loc>+е<cop><aor><p3><pl>/жас<n><loc>+е<cop><aor><p3><sg>/жас<adj><subst><loc>+е<cop><aor><p3><pl>/жас<adj><subst><loc>+е<cop><aor><p3><sg>$^./.<sent>$
+[/NedhTQkHUzgv]
+[Nov9WaGOrQWE#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болдым/бол<vaux><ifi><p1><sg>/бол<v><iv><ifi><p1><sg>$^./.<sent>$
+[/Nov9WaGOrQWE]
+[OS02BmCdWJbA#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырамын/отыр<vaux><aor><p1><sg>/отыр<v><iv><aor><p1><sg>$^./.<sent>$
+[/OS02BmCdWJbA]
+[Ops_dhVaqT2f#0] ^Сенде/сен<prn><pers><p2><sg><loc>$ ^кітап/кітап<n><nom>/кітап<n><attr>/кітап<n><nom>+е<cop><aor><p3><pl>/кітап<n><nom>+е<cop><aor><p3><sg>$ ^жоқ/жоқ<ij>/жоқ<adj>/жоқ<adj><subst><nom>/жоқ<adj>+е<cop><aor><p3><pl>/жоқ<adj>+е<cop><aor><p3><sg>/жоқ<adj><subst><nom>+е<cop><aor><p3><pl>/жоқ<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/Ops_dhVaqT2f]
+[PSxWGbMXir2u#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнай/ойна<v><tv><prc_impf>/ойна<v><tv><gna_impf>$ ^аламын/ал<vaux><aor><p1><sg>/ал<v><tv><aor><p1><sg>/ала<adj>+е<cop><aor><p1><sg>/ала<adj><subst><nom>+е<cop><aor><p1><sg>$^./.<sent>$
+[/PSxWGbMXir2u]
+[PgPWTw16vy_C#0] ^біздің/біз<prn><pers><p1><pl><gen>$ ^бес/бес<num>/бес<num><subst><nom>/бес<num><subst><nom>+е<cop><aor><p3><pl>/бес<num><subst><nom>+е<cop><aor><p3><sg>$ ^бақшамыз/бақ<n><equ>+е<cop><aor><p1><pl>/бақша<n><nom>+е<cop><aor><p1><pl>/бақша<n><px1pl><nom>/бақша<n><px1pl><nom>+е<cop><aor><p3><pl>/бақша<n><px1pl><nom>+е<cop><aor><p3><sg>$
+[/PgPWTw16vy_C]
+[PjoPV_wun26e#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнадық/ойна<v><tv><ifi><p1><pl>$^./.<sent>$
+[/PjoPV_wun26e]
+[PnwXr3bXGH1c#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болды/бол<vaux><ifi><p3><pl>/бол<vaux><ifi><p3><sg>/бол<v><iv><ifi><p3><pl>/бол<v><iv><ifi><p3><sg>$^./.<sent>$
+[/PnwXr3bXGH1c]
+[Q2pdnI2UQPBG#0] ^қызарып/қызар<v><iv><prc_perf>/қызар<v><iv><gna_perf>$ ^жатыр/жатыр<adj>/жатыр<adj><advl>/жатыр<adj><subst><nom>/жатыр<vaux><imp><p2><sg>/жат<vaux><pres><p3><pl>/жат<vaux><pres><p3><sg>/жатыр<adj>+е<cop><aor><p3><pl>/жатыр<adj>+е<cop><aor><p3><sg>/жатыр<adj><subst><nom>+е<cop><aor><p3><pl>/жатыр<adj><subst><nom>+е<cop><aor><p3><sg>$
+[/Q2pdnI2UQPBG]
+[QCSp36ig4GUp#0] ^Оларда/ол<prn><dem><pl><loc>/олар<prn><pers><p3><pl><loc>/ол<prn><dem><pl><loc>+е<cop><aor><p3><pl>/ол<prn><dem><pl><loc>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><loc>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><loc>+е<cop><aor><p3><sg>$ ^кітаптар/кітап<n><pl><nom>/кітап<n><pl><nom>+е<cop><aor><p3><pl>/кітап<n><pl><nom>+е<cop><aor><p3><sg>$ ^жоқ/жоқ<ij>/жоқ<adj>/жоқ<adj><subst><nom>/жоқ<adj>+е<cop><aor><p3><pl>/жоқ<adj>+е<cop><aor><p3><sg>/жоқ<adj><subst><nom>+е<cop><aor><p3><pl>/жоқ<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/QCSp36ig4GUp]
+[RKXqJhyaSiTs#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^жеті/жеті<num>/жеті<num><subst><nom>/жеті<num><subst><nom>+е<cop><aor><p3><pl>/жеті<num><subst><nom>+е<cop><aor><p3><sg>$ ^жаста/жас<n><loc>/жас<adj><subst><loc>/жаста<v><tv><imp><p2><sg>/жас<n><loc>+е<cop><aor><p3><pl>/жас<n><loc>+е<cop><aor><p3><sg>/жас<adj><subst><loc>+е<cop><aor><p3><pl>/жас<adj><subst><loc>+е<cop><aor><p3><sg>$ ^болды/бол<vaux><ifi><p3><pl>/бол<vaux><ifi><p3><sg>/бол<v><iv><ifi><p3><pl>/бол<v><iv><ifi><p3><sg>$^./.<sent>$
+[/RKXqJhyaSiTs]
+[RQjBA2fIYPtc#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болды/бол<vaux><ifi><p3><pl>/бол<vaux><ifi><p3><sg>/бол<v><iv><ifi><p3><pl>/бол<v><iv><ifi><p3><sg>$^./.<sent>$
+[/RQjBA2fIYPtc]
+[RYHZg1uw4jLI#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>/дәрігер<n><nom>+е<cop><aor><p3><pl>/дәрігер<n><nom>+е<cop><aor><p3><sg>$ ^болды/бол<vaux><ifi><p3><pl>/бол<vaux><ifi><p3><sg>/бол<v><iv><ifi><p3><pl>/бол<v><iv><ifi><p3><sg>$^./.<sent>$
+[/RYHZg1uw4jLI]
+[SkIX7AprXPe1#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^дәрігерлер/дәрігер<n><pl><nom>/дәрігер<n><pl><nom>+е<cop><aor><p3><pl>/дәрігер<n><pl><nom>+е<cop><aor><p3><sg>$ ^емеспіз/е<cop><neg><aor><p1><pl>$^./.<sent>$
+[/SkIX7AprXPe1]
+[SyCjoNYOhGYQ#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатқан жоқпыз/жат<vaux><neg><ifi><p1><pl>/жат<v><iv><neg><ifi><p1><pl>/жат<vaux><neg><pres><p1><pl>$^./.<sent>$
+[/SyCjoNYOhGYQ]
+[TB3Yp0-knjuj#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнады/ойна<v><tv><ifi><p3><pl>/ойна<v><tv><ifi><p3><sg>$^./.<sent>$
+[/TB3Yp0-knjuj]
+[Tngr7-cEjBoK#0] ^бірнеше/бірнеше<det><qnt>$ ^бақшалар/бақша<n><pl><nom>/бақша<n><pl><nom>+е<cop><aor><p3><pl>/бақша<n><pl><nom>+е<cop><aor><p3><sg>$
+[/Tngr7-cEjBoK]
+[W-jfXd3ZagKr#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатқан жоқ/жат<vaux><neg><ifi><p3><pl>/жат<vaux><neg><ifi><p3><sg>/жат<v><iv><neg><ifi><p3><pl>/жат<v><iv><neg><ifi><p3><sg>/жат<vaux><neg><pres><p3><pl>/жат<vaux><neg><pres><p3><sg>$^./.<sent>$
+[/W-jfXd3ZagKr]
+[WPNxmiHTrlbs#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>/дәрігер<n><nom>+е<cop><aor><p3><pl>/дәрігер<n><nom>+е<cop><aor><p3><sg>$ ^болмадым/бол<vaux><neg><ifi><p1><sg>/бол<v><iv><neg><ifi><p1><sg>/болма<v><iv><ifi><p1><sg>$^./.<sent>$
+[/WPNxmiHTrlbs]
+[WQ_wml1x-k4a#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнамайды/ойна<v><tv><neg><aor><p3><pl>/ойна<v><tv><neg><aor><p3><sg>$^./.<sent>$
+[/WQ_wml1x-k4a]
+[WcknJqguXYGa#0] ^Маған/мен<prn><pers><p1><sg><dat>$ ^сөмке/сөмке<n><nom>/сөмке<n><attr>/сөмке<n><nom>+е<cop><aor><p3><pl>/сөмке<n><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/WcknJqguXYGa]
+[WuntwwNZo4_v#0] ^Менде/мен<prn><pers><p1><sg><loc>$ ^кітап/кітап<n><nom>/кітап<n><attr>/кітап<n><nom>+е<cop><aor><p3><pl>/кітап<n><nom>+е<cop><aor><p3><sg>$ ^жоқ/жоқ<ij>/жоқ<adj>/жоқ<adj><subst><nom>/жоқ<adj>+е<cop><aor><p3><pl>/жоқ<adj>+е<cop><aor><p3><sg>/жоқ<adj><subst><nom>+е<cop><aor><p3><pl>/жоқ<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/WuntwwNZo4_v]
+[X-gAbBfLo2xs#0] ^Бізге/біз<prn><pers><p1><pl><dat>$ ^сөмкелер/сөмке<n><pl><nom>/сөмке<n><pl><nom>+е<cop><aor><p3><pl>/сөмке<n><pl><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/X-gAbBfLo2xs]
+[YLPx6ddb3zVr#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^қызсыз/қыз<n><nom>+е<cop><aor><p2><frm><sg>/қыз<n>+сыз<post>$^./.<sent>$
+[/YLPx6ddb3zVr]
+[Y_9qpTmsvtPQ#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнамаймыз/ойна<v><tv><neg><aor><p1><pl>$^./.<sent>$
+[/Y_9qpTmsvtPQ]
+[YktNu-XLVmgT#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^жеті/жеті<num>/жеті<num><subst><nom>/жеті<num><subst><nom>+е<cop><aor><p3><pl>/жеті<num><subst><nom>+е<cop><aor><p3><sg>$ ^жаста/жас<n><loc>/жас<adj><subst><loc>/жаста<v><tv><imp><p2><sg>/жас<n><loc>+е<cop><aor><p3><pl>/жас<n><loc>+е<cop><aor><p3><sg>/жас<adj><subst><loc>+е<cop><aor><p3><pl>/жас<adj><subst><loc>+е<cop><aor><p3><sg>$^./.<sent>$
+[/YktNu-XLVmgT]
+[YrGBxulmAY0b#0] ^Сізге/сіз<prn><pers><p2><sg><frm><dat>$ ^сөмке/сөмке<n><nom>/сөмке<n><attr>/сөмке<n><nom>+е<cop><aor><p3><pl>/сөмке<n><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/YrGBxulmAY0b]
+[ZQUuhGGzeQC0#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнадым/ойна<v><tv><ifi><p1><sg>$^./.<sent>$
+[/ZQUuhGGzeQC0]
+[_VZExBCzHmI7#0] ^қызарып/қызар<v><iv><prc_perf>/қызар<v><iv><gna_perf>$ ^кетті/кет<vaux><ifi><p3><pl>/кет<vaux><ifi><p3><sg>/кет<v><tv><ifi><p3><pl>/кет<v><tv><ifi><p3><sg>/кет<v><iv><ifi><p3><pl>/кет<v><iv><ifi><p3><sg>$
+[/_VZExBCzHmI7]
+[_i2F5NSSfPgE#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнарсыз/ойна<v><tv><fut><p2><frm><sg>/ойна<v><tv><gpr_fut><subst>+сыз<post>$^./.<sent>$
+[/_i2F5NSSfPgE]
+[aFHA6mQ8yXv1#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнамайсыз/ойна<v><tv><neg><aor><p2><frm><sg>$^./.<sent>$
+[/aFHA6mQ8yXv1]
+[aRcyUQvx2gup#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>/дәрігер<n><nom>+е<cop><aor><p3><pl>/дәрігер<n><nom>+е<cop><aor><p3><sg>$ ^емеспін/е<cop><neg><aor><p1><sg>$^./.<sent>$
+[/aRcyUQvx2gup]
+[bly73-7cnz1y#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырды/отыр<vaux><ifi><p3><pl>/отыр<vaux><ifi><p3><sg>/отыр<v><iv><ifi><p3><pl>/отыр<v><iv><ifi><p3><sg>$^./.<sent>$
+[/bly73-7cnz1y]
+[c1ObMe5hDycS#0] ^Қазақстан/Қазақстан<np><top><nom>/Қазақстан<np><top><attr>/Қазақстан<np><top><nom>+е<cop><aor><p3><pl>/Қазақстан<np><top><nom>+е<cop><aor><p3><sg>$ ^Республикасы/республика<n><px3sp><nom>/республика<n><px3sp><nom>+е<cop><aor><p3><pl>/республика<n><px3sp><nom>+е<cop><aor><p3><sg>$
+[/c1ObMe5hDycS]
+[cET2xzxd4JpY#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^қызбын/қыз<n><nom>+е<cop><aor><p1><sg>$^./.<sent>$
+[/cET2xzxd4JpY]
+[cMTsQGfKYZS9#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнамадым/ойна<v><tv><neg><ifi><p1><sg>$^./.<sent>$
+[/cMTsQGfKYZS9]
+[d0gTHayMPpay#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнағансыз/ойна<v><tv><past><p2><frm><sg>/ойна<v><tv><ger_past>+сыз<post>/ойна<v><tv><gpr_past><subst>+сыз<post>$^./.<sent>$
+[/d0gTHayMPpay]
+[d1C7T_07DGO6#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^дәрігерлер/дәрігер<n><pl><nom>/дәрігер<n><pl><nom>+е<cop><aor><p3><pl>/дәрігер<n><pl><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/d1C7T_07DGO6]
+[dkizrk3NWDrU#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнаймын/ойна<v><tv><aor><p1><sg>$^./.<sent>$
+[/dkizrk3NWDrU]
+[e2wM-ioFvNoJ#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнамаймын/ойна<v><tv><neg><aor><p1><sg>$^./.<sent>$
+[/e2wM-ioFvNoJ]
+[e9w-zGd429Cj#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнамадық/ойна<v><tv><neg><ifi><p1><pl>$^./.<sent>$
+[/e9w-zGd429Cj]
+[f30bI220GlHM#0] ^Саған/сен<prn><pers><p2><sg><dat>$ ^сөмке/сөмке<n><nom>/сөмке<n><attr>/сөмке<n><nom>+е<cop><aor><p3><pl>/сөмке<n><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/f30bI220GlHM]
+[fQFdg3aK4-tb#0] ^олардың/ол<prn><dem><pl><gen>/олар<prn><pers><p3><pl><gen>$ ^бақшасы/бақша<n><px3sp><nom>/бақша<n><px3sp><nom>+е<cop><aor><p3><pl>/бақша<n><px3sp><nom>+е<cop><aor><p3><sg>$
+[/fQFdg3aK4-tb]
+[fRBYt1l9vJX_#0] ^Сізде/сіз<prn><pers><p2><sg><frm><loc>/сіз<prn><pers><p2><sg><frm><loc>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><loc>+е<cop><aor><p3><sg>$ ^кітап/кітап<n><nom>/кітап<n><attr>/кітап<n><nom>+е<cop><aor><p3><pl>/кітап<n><nom>+е<cop><aor><p3><sg>$ ^жоқ/жоқ<ij>/жоқ<adj>/жоқ<adj><subst><nom>/жоқ<adj>+е<cop><aor><p3><pl>/жоқ<adj>+е<cop><aor><p3><sg>/жоқ<adj><subst><nom>+е<cop><aor><p3><pl>/жоқ<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/fRBYt1l9vJX_]
+[h3GmmFpVMEPH#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырғанмын/отыр<vaux><past><p1><sg>/отыр<v><iv><past><p1><sg>$^./.<sent>$
+[/h3GmmFpVMEPH]
+[hCRYzl36wP4y#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болмады/бол<vaux><neg><ifi><p3><pl>/бол<vaux><neg><ifi><p3><sg>/бол<v><iv><neg><ifi><p3><pl>/бол<v><iv><neg><ifi><p3><sg>/болма<v><iv><ifi><p3><pl>/болма<v><iv><ifi><p3><sg>$^./.<sent>$
+[/hCRYzl36wP4y]
+[hZPSie41q4aB#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнамаған/ойна<v><tv><neg><gpr_past>/ойна<v><tv><neg><ger_past><nom>/ойна<v><tv><neg><past><p3><pl>/ойна<v><tv><neg><past><p3><sg>/ойна<v><tv><neg><gpr_past><subst><nom>$^./.<sent>$
+[/hZPSie41q4aB]
+[htO4QIsAF8Ig#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнаған/ойна<v><tv><gpr_past>/ойна<v><tv><ger_past><nom>/ойна<v><tv><past><p3><pl>/ойна<v><tv><past><p3><sg>/ойна<v><tv><gpr_past><subst><nom>$^./.<sent>$
+[/htO4QIsAF8Ig]
+[hvBW4B5c00cX#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болмадық/бол<vaux><neg><ifi><p1><pl>/бол<v><iv><neg><ifi><p1><pl>/болма<v><iv><ifi><p1><pl>$^./.<sent>$
+[/hvBW4B5c00cX]
+[imsBy547A6O0#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емеспін/е<cop><neg><aor><p1><sg>$^./.<sent>$
+[/imsBy547A6O0]
+[ioqgnetaIi0u#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнамайды/ойна<v><tv><neg><aor><p3><pl>/ойна<v><tv><neg><aor><p3><sg>$^./.<sent>$
+[/ioqgnetaIi0u]
+[ixOPWFUixyiH#0] ^алты/алты<num>/алты<num><subst><nom>/алты<num><subst><nom>+е<cop><aor><p3><pl>/алты<num><subst><nom>+е<cop><aor><p3><sg>$ ^адам/ада<n><px1sg><nom>/адам<n><nom>/адам<n><attr>/ада<n><px1sg><nom>+е<cop><aor><p3><pl>/ада<n><px1sg><nom>+е<cop><aor><p3><sg>/адам<n><nom>+е<cop><aor><p3><pl>/адам<n><nom>+е<cop><aor><p3><sg>$
+[/ixOPWFUixyiH]
+[j-GuBrfKaQfc#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнамадыңыз/ойна<v><tv><neg><ifi><p2><frm><sg>$^./.<sent>$
+[/j-GuBrfKaQfc]
+[j8p34g0bQxLZ#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатырсыз/жат<vaux><pres><p2><frm><sg>/жатыр<adj>+е<cop><aor><p2><frm><sg>/жатыр<adj><subst><nom>+е<cop><aor><p2><frm><sg>/жатыр<adj><subst>+сыз<post>$^./.<sent>$
+[/j8p34g0bQxLZ]
+[jKCk2TdKqPSq#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнаймыз/ойна<v><tv><aor><p1><pl>$^./.<sent>$
+[/jKCk2TdKqPSq]
+[jKwo39jrV05O#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>/дәрігер<n><nom>+е<cop><aor><p3><pl>/дәрігер<n><nom>+е<cop><aor><p3><sg>$ ^болдыңыз/бол<vaux><ifi><p2><frm><sg>/бол<v><iv><ifi><p2><frm><sg>$^./.<sent>$
+[/jKwo39jrV05O]
+[jygfvh-TjCJS#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнармын/ойна<v><tv><fut><p1><sg>$^./.<sent>$
+[/jygfvh-TjCJS]
+[jyjZTSYwhVSs#0] ^үстелдің/үстел<n><gen>/үсте<v><tv><pass><ifi><p2><sg>$ ^үстіндегі/үст<n><px3sp><loc><attr>/үст<n><px3sp><loc><subst><nom>/үст<n><px3sp><loc><subst><nom>+е<cop><aor><p3><pl>/үст<n><px3sp><loc><subst><nom>+е<cop><aor><p3><sg>$ ^қағаз/қағаз<adj>/қағаз<n><nom>/қағаз<n><attr>/қағаз<adj><advl>/қағаз<adj><subst><nom>/қағаз<adj>+е<cop><aor><p3><pl>/қағаз<adj>+е<cop><aor><p3><sg>/қағаз<n><nom>+е<cop><aor><p3><pl>/қағаз<n><nom>+е<cop><aor><p3><sg>/қағаз<adj><subst><nom>+е<cop><aor><p3><pl>/қағаз<adj><subst><nom>+е<cop><aor><p3><sg>$
+[/jyjZTSYwhVSs]
+[kQyP62zY88TH#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^жеті/жеті<num>/жеті<num><subst><nom>/жеті<num><subst><nom>+е<cop><aor><p3><pl>/жеті<num><subst><nom>+е<cop><aor><p3><sg>$ ^жастамын/жас<n><loc>+е<cop><aor><p1><sg>/жас<adj><subst><loc>+е<cop><aor><p1><sg>$^./.<sent>$
+[/kQyP62zY88TH]
+[kREr9Q2Dm8if#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырмады/отыр<vaux><neg><ifi><p3><pl>/отыр<vaux><neg><ifi><p3><sg>/отыр<v><iv><neg><ifi><p3><pl>/отыр<v><iv><neg><ifi><p3><sg>$^./.<sent>$
+[/kREr9Q2Dm8if]
+[kwpl5aP_72Z1#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/kwpl5aP_72Z1]
+[l1d67UU847c3#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырмадық/отыр<vaux><neg><ifi><p1><pl>/отыр<v><iv><neg><ifi><p1><pl>$^./.<sent>$
+[/l1d67UU847c3]
+[lgGBpmO-VqgU#0] ^Менде/мен<prn><pers><p1><sg><loc>$ ^кітап/кітап<n><nom>/кітап<n><attr>/кітап<n><nom>+е<cop><aor><p3><pl>/кітап<n><nom>+е<cop><aor><p3><sg>$ ^бар/бар<adj>/бар<n><nom>/бар<n><attr>/бар<det><qnt>/бар<adj><subst><nom>/бар<v><iv><imp><p2><sg>/бар<adj>+е<cop><aor><p3><pl>/бар<adj>+е<cop><aor><p3><sg>/бар<n><nom>+е<cop><aor><p3><pl>/бар<n><nom>+е<cop><aor><p3><sg>/бар<adj><subst><nom>+е<cop><aor><p3><pl>/бар<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/lgGBpmO-VqgU]
+[m7JOSMxGQ0eA#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>/дәрігер<n><nom>+е<cop><aor><p3><pl>/дәрігер<n><nom>+е<cop><aor><p3><sg>$ ^емессіз/е<cop><neg><aor><p2><frm><sg>$^./.<sent>$
+[/m7JOSMxGQ0eA]
+[mPFGpnfM-GyI#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырғанбыз/отыр<vaux><past><p1><pl>/отыр<v><iv><past><p1><pl>$^./.<sent>$
+[/mPFGpnfM-GyI]
+[mhkDcTZlgC6k#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^жеті/жеті<num>/жеті<num><subst><nom>/жеті<num><subst><nom>+е<cop><aor><p3><pl>/жеті<num><subst><nom>+е<cop><aor><p3><sg>$ ^жастасыз/жас<n><loc>+е<cop><aor><p2><frm><sg>/жас<adj><subst><loc>+е<cop><aor><p2><frm><sg>$^./.<sent>$
+[/mhkDcTZlgC6k]
+[nz6qUNdNW75b#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^дәрігер/дәрігер<n><nom>/дәрігер<n><attr>/дәрігер<n><nom>+е<cop><aor><p3><pl>/дәрігер<n><nom>+е<cop><aor><p3><sg>$ ^болдым/бол<vaux><ifi><p1><sg>/бол<v><iv><ifi><p1><sg>$^./.<sent>$
+[/nz6qUNdNW75b]
+[oMqFa0AXaNaE#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатырмыз/жат<vaux><pres><p1><pl>/жатыр<adj>+е<cop><aor><p1><pl>/жатыр<adj><subst><nom>+е<cop><aor><p1><pl>$^./.<sent>$
+[/oMqFa0AXaNaE]
+[p23cjJFpst0Q#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнадыңыз/ойна<v><tv><ifi><p2><frm><sg>$^./.<sent>$
+[/p23cjJFpst0Q]
+[pMH2AYd0h_wD#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^әдемі/әдемі<adj>/әдемі<adv>/әдемі<adj><advl>/әдемі<adj><subst><nom>/әдемі<adj>+е<cop><aor><p3><pl>/әдемі<adj>+е<cop><aor><p3><sg>/әдемі<adj><subst><nom>+е<cop><aor><p3><pl>/әдемі<adj><subst><nom>+е<cop><aor><p3><sg>$ ^қыздар/қыз<n><pl><nom>/қыз<n><pl><nom>+е<cop><aor><p3><pl>/қыз<n><pl><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/pMH2AYd0h_wD]
+[paW41gMNxtnO#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^бақшада/бақша<n><loc>/бақша<n><loc>+е<cop><aor><p3><pl>/бақша<n><loc>+е<cop><aor><p3><sg>$ ^ойнадым/ойна<v><tv><ifi><p1><sg>$^./.<sent>$
+[/paW41gMNxtnO]
+[pcHVXrHQ1dVB#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^дәрігерлер/дәрігер<n><pl><nom>/дәрігер<n><pl><nom>+е<cop><aor><p3><pl>/дәрігер<n><pl><nom>+е<cop><aor><p3><sg>$ ^болмады/бол<vaux><neg><ifi><p3><pl>/бол<vaux><neg><ifi><p3><sg>/бол<v><iv><neg><ifi><p3><pl>/бол<v><iv><neg><ifi><p3><sg>/болма<v><iv><ifi><p3><pl>/болма<v><iv><ifi><p3><sg>$^./.<sent>$
+[/pcHVXrHQ1dVB]
+[q4Rce8qHg4oq#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емессіз/е<cop><neg><aor><p2><frm><sg>$^./.<sent>$
+[/q4Rce8qHg4oq]
+[qMvE6D4S5B6n#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырған/отыр<vaux><gpr_past>/отыр<v><iv><gpr_past>/отыр<vaux><ger_past><nom>/отыр<v><iv><ger_past><nom>/отыр<vaux><past><p3><pl>/отыр<vaux><past><p3><sg>/отыр<vaux><gpr_past><subst><nom>/отыр<v><iv><past><p3><pl>/отыр<v><iv><past><p3><sg>/отыр<v><iv><gpr_past><subst><nom>$^./.<sent>$
+[/qMvE6D4S5B6n]
+[r89AeUBcIKiW#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырған/отыр<vaux><gpr_past>/отыр<v><iv><gpr_past>/отыр<vaux><ger_past><nom>/отыр<v><iv><ger_past><nom>/отыр<vaux><past><p3><pl>/отыр<vaux><past><p3><sg>/отыр<vaux><gpr_past><subst><nom>/отыр<v><iv><past><p3><pl>/отыр<v><iv><past><p3><sg>/отыр<v><iv><gpr_past><subst><nom>$^./.<sent>$
+[/r89AeUBcIKiW]
+[rsx6fwX9KRDM#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырмадыңыз/отыр<vaux><neg><ifi><p2><frm><sg>/отыр<v><iv><neg><ifi><p2><frm><sg>$^./.<sent>$
+[/rsx6fwX9KRDM]
+[ryOX8CEuPi6K#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатқан жоқ/жат<vaux><neg><ifi><p3><pl>/жат<vaux><neg><ifi><p3><sg>/жат<v><iv><neg><ifi><p3><pl>/жат<v><iv><neg><ifi><p3><sg>/жат<vaux><neg><pres><p3><pl>/жат<vaux><neg><pres><p3><sg>$^./.<sent>$
+[/ryOX8CEuPi6K]
+[sGvYWnj9Iy_X#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емеспіз/е<cop><neg><aor><p1><pl>$^./.<sent>$
+[/sGvYWnj9Iy_X]
+[sMQdSkV-sTc0#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатқан жоқпын/жат<vaux><neg><ifi><p1><sg>/жат<v><iv><neg><ifi><p1><sg>/жат<vaux><neg><pres><p1><sg>$^./.<sent>$
+[/sMQdSkV-sTc0]
+[t-WFOH5Z5J--#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^дәрігерлер/дәрігер<n><pl><nom>/дәрігер<n><pl><nom>+е<cop><aor><p3><pl>/дәрігер<n><pl><nom>+е<cop><aor><p3><sg>$ ^болмадық/бол<vaux><neg><ifi><p1><pl>/бол<v><iv><neg><ifi><p1><pl>/болма<v><iv><ifi><p1><pl>$^./.<sent>$
+[/t-WFOH5Z5J--]
+[t8DB7i66emBf#0] ^Оларға/ол<prn><dem><pl><dat>/олар<prn><pers><p3><pl><dat>$ ^сөмкелер/сөмке<n><pl><nom>/сөмке<n><pl><nom>+е<cop><aor><p3><pl>/сөмке<n><pl><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/t8DB7i66emBf]
+[tCdurgvXf8_9#0] ^Онда/ол<prn><dem><loc>/ол<prn><pers><p3><sg><loc>/он<num><subst><loc>/онда<adv>/онда<cnjsub>/ол<prn><dem><loc>+е<cop><aor><p3><pl>/ол<prn><dem><loc>+е<cop><aor><p3><sg>/он<num><subst><loc>+е<cop><aor><p3><pl>/он<num><subst><loc>+е<cop><aor><p3><sg>$ ^кітап/кітап<n><nom>/кітап<n><attr>/кітап<n><nom>+е<cop><aor><p3><pl>/кітап<n><nom>+е<cop><aor><p3><sg>$ ^бар/бар<adj>/бар<n><nom>/бар<n><attr>/бар<det><qnt>/бар<adj><subst><nom>/бар<v><iv><imp><p2><sg>/бар<adj>+е<cop><aor><p3><pl>/бар<adj>+е<cop><aor><p3><sg>/бар<n><nom>+е<cop><aor><p3><pl>/бар<n><nom>+е<cop><aor><p3><sg>/бар<adj><subst><nom>+е<cop><aor><p3><pl>/бар<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/tCdurgvXf8_9]
+[tHm_cjyFCS-L#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^бақытты/бақыт<n><acc>/бақытты<adj>/бақыт<n>+лы<post>/бақытты<n><nom>/бақытты<n><attr>/бақытты<adj><advl>/бақытты<adj><subst><nom>/бақытты<adj>+е<cop><aor><p3><pl>/бақытты<adj>+е<cop><aor><p3><sg>/бақытты<n><nom>+е<cop><aor><p3><pl>/бақытты<n><nom>+е<cop><aor><p3><sg>/бақытты<adj><subst><nom>+е<cop><aor><p3><pl>/бақытты<adj><subst><nom>+е<cop><aor><p3><sg>$ ^болмады/бол<vaux><neg><ifi><p3><pl>/бол<vaux><neg><ifi><p3><sg>/бол<v><iv><neg><ifi><p3><pl>/бол<v><iv><neg><ifi><p3><sg>/болма<v><iv><ifi><p3><pl>/болма<v><iv><ifi><p3><sg>$^./.<sent>$
+[/tHm_cjyFCS-L]
+[tNs-gvLL9mz4#0] ^Алматы/Алматы<np><top><nom>/Алматы<np><top><attr>/Алматы<np><top><nom>+е<cop><aor><p3><pl>/Алматы<np><top><nom>+е<cop><aor><p3><sg>$ ^қаласы/қала<n><px3sp><nom>/қала<n><px3sp><nom>+е<cop><aor><p3><pl>/қала<n><px3sp><nom>+е<cop><aor><p3><sg>$
+[/tNs-gvLL9mz4]
+[u2zl6FgkqSO2#0] ^Мен/мен<prn><pers><p1><sg><nom>/мен<cnjcoo>/мен<post>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырмадым/отыр<vaux><neg><ifi><p1><sg>/отыр<v><iv><neg><ifi><p1><sg>$^./.<sent>$
+[/u2zl6FgkqSO2]
+[uA17i2og04E9#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнармыз/ойна<v><tv><fut><p1><pl>$^./.<sent>$
+[/uA17i2og04E9]
+[uj2yEoUk7w6T#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатыр/жатыр<adj>/жатыр<adj><advl>/жатыр<adj><subst><nom>/жатыр<vaux><imp><p2><sg>/жат<vaux><pres><p3><pl>/жат<vaux><pres><p3><sg>/жатыр<adj>+е<cop><aor><p3><pl>/жатыр<adj>+е<cop><aor><p3><sg>/жатыр<adj><subst><nom>+е<cop><aor><p3><pl>/жатыр<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/uj2yEoUk7w6T]
+[utjmM3Ox1TpL#0] ^Оған/ол<prn><dem><dat>/ол<prn><pers><p3><sg><dat>/оқ<v><tv><opt><p1><sg>$ ^сөмке/сөмке<n><nom>/сөмке<n><attr>/сөмке<n><nom>+е<cop><aor><p3><pl>/сөмке<n><nom>+е<cop><aor><p3><sg>$ ^керек/керек<adj>/керек<n><nom>/керек<n><attr>/керек<adj><subst><nom>/керек<adj>+е<cop><aor><p3><pl>/керек<adj>+е<cop><aor><p3><sg>/керек<n><nom>+е<cop><aor><p3><pl>/керек<n><nom>+е<cop><aor><p3><sg>/керек<adj><subst><nom>+е<cop><aor><p3><pl>/керек<adj><subst><nom>+е<cop><aor><p3><sg>$ ^емес/е<cop><neg><aor><p3><pl>/е<cop><neg><aor><p3><sg>$^./.<sent>$
+[/utjmM3Ox1TpL]
+[wJ53ol9UsPL2#0] ^Олар/ол<prn><dem><pl><nom>/олар<prn><pers><p3><pl><nom>/ол<prn><dem><pl><nom>+е<cop><aor><p3><pl>/ол<prn><dem><pl><nom>+е<cop><aor><p3><sg>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><pl>/олар<prn><pers><p3><pl><nom>+е<cop><aor><p3><sg>$ ^ойнайды/ойна<v><tv><aor><p3><pl>/ойна<v><tv><aor><p3><sg>$^./.<sent>$
+[/wJ53ol9UsPL2]
+[wMUJTXVTdi_5#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнамады/ойна<v><tv><neg><ifi><p3><pl>/ойна<v><tv><neg><ifi><p3><sg>$^./.<sent>$
+[/wMUJTXVTdi_5]
+[xnYbaVH7HjTS#0] ^Біз/біз<prn><pers><p1><pl><nom>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><pl>/біз<prn><pers><p1><pl><nom>+е<cop><aor><p3><sg>$ ^ойнағанбыз/ойна<v><tv><past><p1><pl>$^./.<sent>$
+[/xnYbaVH7HjTS]
+[xwapTrtYwGAt#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^отырды/отыр<vaux><ifi><p3><pl>/отыр<vaux><ifi><p3><sg>/отыр<v><iv><ifi><p3><pl>/отыр<v><iv><ifi><p3><sg>$^./.<sent>$
+[/xwapTrtYwGAt]
+[zjR9OIjaUOut#0] ^Сіз/сіз<prn><pers><p2><sg><frm><nom>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><pl>/сіз<prn><pers><p2><sg><frm><nom>+е<cop><aor><p3><sg>$ ^ойнамағансыз/ойна<v><tv><neg><past><p2><frm><sg>/ойна<v><tv><neg><ger_past>+сыз<post>/ойна<v><tv><neg><gpr_past><subst>+сыз<post>$^./.<sent>$
+[/zjR9OIjaUOut]
+[zktWUH8JsXUw#0] ^оның/ол<prn><dem><gen>/ол<prn><pers><p3><sg><gen>/он<num><subst><px2sg><nom>/он<num><subst><px2sg><nom>+е<cop><aor><p3><pl>/он<num><subst><px2sg><nom>+е<cop><aor><p3><sg>$ ^бақшасы/бақша<n><px3sp><nom>/бақша<n><px3sp><nom>+е<cop><aor><p3><pl>/бақша<n><px3sp><nom>+е<cop><aor><p3><sg>$
+[/zktWUH8JsXUw]
+[zwTx3kyHV6hh#0] ^Ол/ол<prn><pers><p3><sg><nom>/ол<det><dem>/ол<prn><dem><nom>/ол<prn><dem><nom>+е<cop><aor><p3><pl>/ол<prn><dem><nom>+е<cop><aor><p3><sg>$ ^ойнап/ойна<v><tv><prc_perf>/ойна<v><tv><gna_perf>$ ^жатыр/жатыр<adj>/жатыр<adj><advl>/жатыр<adj><subst><nom>/жатыр<vaux><imp><p2><sg>/жат<vaux><pres><p3><pl>/жат<vaux><pres><p3><sg>/жатыр<adj>+е<cop><aor><p3><pl>/жатыр<adj>+е<cop><aor><p3><sg>/жатыр<adj><subst><nom>+е<cop><aor><p3><pl>/жатыр<adj><subst><nom>+е<cop><aor><p3><sg>$^./.<sent>$
+[/zwTx3kyHV6hh]

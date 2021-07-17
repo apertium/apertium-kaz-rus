@@ -1,0 +1,108 @@
+[037UXzVJKAs5#0] ^школа<n><f><nn><sg><nom>$ ^тоже<adv>$
+[/037UXzVJKAs5]
+[1gmBjGiePLF0#0] ^ваш<det><pos><mfn><an><pl><nom>$ ^дом<n><m><nn><pl><nom>$
+[/1gmBjGiePLF0]
+[7zG4WPgvPztO#0] ^@бүгін<n><sg><nom>$  ^воскресенье<n><nt><nn><sg><nom>$
+[/7zG4WPgvPztO]
+[Ccjq_nvu0BGh#0] ^сад<n><m><nn><sg><nom>$
+[/Ccjq_nvu0BGh]
+[CrANQry6rOvi#0] ^в<pr>$ ^мой<det><pos><f><an><sg><prp>$ ^школа<n><f><nn><sg><prp>$ ^тоже<adv>$
+[/CrANQry6rOvi]
+[E33O3u5v0duc#0] ^нужно<pred>$ ^<neg><aor><p3><sg>$
+[/E33O3u5v0duc]
+[ED3OFTl_RP9K#0] ^из<pr>$ ^хороший<adj><sint><m><an><sg><gen>$ ^огород<n><m><nn><sg><gen>$ ^после<pr>$
+[/ED3OFTl_RP9K]
+[Ek4AEtdAPq0c#0] ^красивый<adj><sint><m><an><sg><nom>$
+[/Ek4AEtdAPq0c]
+[FZrbQI7lrWXV#0] ^твой<det><pos><m><an><sg><nom>$ ^дом<n><m><nn><sg><nom>$
+[/FZrbQI7lrWXV]
+[IpQgZmqBeSNj#0] ^огород<n><m><nn><sg><gen>$ ^за<pr>$
+[/IpQgZmqBeSNj]
+[J56C2FHwsrVe#0] ^дом<n><m><nn><pl><acc>$
+[/J56C2FHwsrVe]
+[J8KwDtmXyF48#0] ^@мынау<prn><dem><pl><nom>$
+[/J8KwDtmXyF48]
+[KG2Fr_28uiEv#0] ^красивый<adj><sint><m><an><sg><nom>$  ^дом<n><m><nn><sg><nom>$
+[/KG2Fr_28uiEv]
+[NXoobDTsHRrP#0] ^Казахстан<np><top><m><sg><nom>$
+[/NXoobDTsHRrP]
+[OuqcomnB5FmX#0] ^Он<prn><pers><p3><m><sg><nom>$  ^врач<n><m><aa><sg><nom>$^.<sent>$
+[/OuqcomnB5FmX]
+[P_DgoZvTYLty#0] ^мальчик<n><m><aa><sg><nom>$
+[/P_DgoZvTYLty]
+[QEO3WW53pykH#0] ^он<prn><pers><p3><m><sg><nom>$  ^мальчик<n><m><aa><sg><nom>$
+[/QEO3WW53pykH]
+[SGcAqLoxRtiS#0] ^с<pr>$  ^дом<n><m><nn><pl><ins>$
+[/SGcAqLoxRtiS]
+[SMVWeWYNN43f#0] ^с<pr>$ ^за<sg><ins>$ ^хороший<adj><sint><gen>$ ^огород<n><m><nn><sg><gen>$
+[/SMVWeWYNN43f]
+[UQMAzArfqfhk#0] ^сегодня<adv>$
+[/UQMAzArfqfhk]
+[UUHJQVykeyDh#0] ^ваш<det><pos><mfn><an><pl><nom>$ ^дом<n><m><nn><pl><nom>$
+[/UUHJQVykeyDh]
+[UlzLGg_2ZQ4b#0] ^Я<prn><pers><p1><mf><sg><nom>$
+[/UlzLGg_2ZQ4b]
+[V3DAHw9GtX2O#0] ^@мынау<prn><dem><m><sg><nom>$  ^дом<n><m><nn><sg><nom>$
+[/V3DAHw9GtX2O]
+[V7aQz_uFxfyJ#0] ^огород<n><m><nn><sg><gen>$ ^после<pr>$
+[/V7aQz_uFxfyJ]
+[VLXRK6vpq0ZN#0] ^очень<adv>$ ^красивый<adj><sint><m><an><sg><nom>$ ^перейти<vblex><perf><iv><pprs><adv>$
+[/VLXRK6vpq0ZN]
+[VOxCwPqvgM_l#0] ^Они<prn><pers><p3><mfn><pl><nom>$  ^врач<n><m><aa><pl><nom>$^.<sent>$
+[/VOxCwPqvgM_l]
+[WLoYQJA7filu#0] ^книга<n><f><nn><sg><loc>$ ^Мадина<np><ant><f><sg><gen>$  ^образ<n><m><nn><sg><nom>$
+[/WLoYQJA7filu]
+[WjQUNBxpGCiQ#0] ^дом<n><m><nn><sg><nom>$
+[/WjQUNBxpGCiQ]
+[YH7P8saoyDv7#0] ^возле<sg><gen>$ ^хороший<adj><sint><gen>$ ^огород<n><m><nn><sg><gen>$
+[/YH7P8saoyDv7]
+[_QNKMtUqp8l0#0] ^дом<n><m><nn><pl><nom>$
+[/_QNKMtUqp8l0]
+[c0gEIhfkDFXl#0] ^однако<adv>$
+[/c0gEIhfkDFXl]
+[d-M4ir7pJpXv#0] ^Астана<n><f><nn><sg><nom>$
+[/d-M4ir7pJpXv]
+[dDrXIyH84jvM#0] ^огород<n><m><nn><sg><gen>$ ^возле<pr>$
+[/dDrXIyH84jvM]
+[dM1J3JEd0ObT#0] ^оказываться<vblex><impf><iv><pres><p3><sg>$ ^добавить<vblex><perf><ifi><m><sg>$ ^на<pr>$
+[/dM1J3JEd0ObT]
+[dotMDEBRdANK#0] ^это<prn><dem><m><sg><nom>$  ^компания<n><f><nn><sg><nom>$
+[/dotMDEBRdANK]
+[eK5YE-pGX-Ge#0] ^дом<n><m><nn><sg><nom>$
+[/eK5YE-pGX-Ge]
+[eR84tG_mYGQI#0] ^один<num><m><an><sg><nom>$  ^дом<n><m><nn><sg><nom>$
+[/eR84tG_mYGQI]
+[fGXs3n4YyB5e#0] ^очень<adv>$ ^красивый<adj><sint><m><an><sg><nom>$
+[/fGXs3n4YyB5e]
+[gW6ArN3-YVpZ#0] ^дом<n><m><nn><pl><nom>$
+[/gW6ArN3-YVpZ]
+[jV7Wo6BTgNPQ#0] ^Мадина<np><ant><f><sg><gen>$  ^книга<n><f><nn><sg><nom>$
+[/jV7Wo6BTgNPQ]
+[jir6Yp-2qaKW#0] ^Он<prn><pers><p3><m><sg><nom>$
+[/jir6Yp-2qaKW]
+[l_HPlNmb1x__#0] ^дом<n><m><nn><pl><gen>$
+[/l_HPlNmb1x__]
+[nLLjkLF8Tv40#0] ^Мы<prn><pers><p1><mf><pl><nom>$  ^врач<n><m><aa><pl><nom>$^.<sent>$
+[/nLLjkLF8Tv40]
+[nQ7oPP5mGDE5#0] ^этот<det><dem><m><an><sg><nom>$ ^красивый<adj><sint><m><an><sg><nom>$  ^дом<n><m><nn><sg><nom>$
+[/nQ7oPP5mGDE5]
+[naPTkGMmWjZm#0] ^мальчик<n><m><aa><sg><gen>$  ^игрушка<n><f><nn><sg><nom>$
+[/naPTkGMmWjZm]
+[oMpVb-dYKKuY#0] ^дом<n><m><nn><sg><nom>$
+[/oMpVb-dYKKuY]
+[oiPqCe3Zqkby#0] ^один<num><m><an><sg><nom>$  ^сад<n><m><nn><sg><nom>$
+[/oiPqCe3Zqkby]
+[rxHYybAEmZRk#0] ^СССР<np><top><m>$
+[/rxHYybAEmZRk]
+[sLgbhffUShmr#0] ^книга<n><f><nn><sg><nom>$ ^Мадина<np><ant><f><sg><gen>$ ^о<pr>$
+[/sLgbhffUShmr]
+[sp2xqRw0GGIi#0] ^Балжан<np><ant><f><sg><nom>$
+[/sp2xqRw0GGIi]
+[uq-8GFsOfr0C#0] ^как<adv>$ ^ваш<det><pos><mfn><an><pl><nom>$ ^школа<n><f><nn><pl><nom>$
+[/uq-8GFsOfr0C]
+[vO4c1VSxUwO8#0] ^очень<adv>$
+[/vO4c1VSxUwO8]
+[yqZ4GP26aPio#0] ^мальчик<n><m><aa><sg><gen>$
+[/yqZ4GP26aPio]
+[z20kd7Ih-6rD#0] ^в<pr>$ ^красивый<adj><sint><m><an><sg><prp>$ ^город<n><m><nn><sg><prp>$  ^базар<n><m><nn><sg><nom>$
+[/z20kd7Ih-6rD]

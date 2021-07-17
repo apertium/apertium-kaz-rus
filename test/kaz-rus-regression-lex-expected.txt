@@ -1,0 +1,108 @@
+[037UXzVJKAs5#0] ^мектеп<n><px3sp><nom>/школа<n><f><nn><px3sp><nom>$ ^да<cnjcoo>/тоже<adv>$
+[/037UXzVJKAs5]
+[1gmBjGiePLF0#0] ^үй<n><pl><px2sg><nom>/дом<n><m><nn><pl><px2sg><nom>/двор<n><m><nn><pl><px2sg><nom>/жилище<n><nt><nn><pl><px2sg><nom>/постройка<n><f><nn><pl><px2sg><nom>$
+[/1gmBjGiePLF0]
+[7zG4WPgvPztO#0] ^бүгін<n><nom>/@бүгін<n><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^жексенбі<n><nom>/воскресенье<n><nt><nn><nom>$
+[/7zG4WPgvPztO]
+[Ccjq_nvu0BGh#0] ^бақ<n><equ>/сад<n><m><nn><equ>/клад<n><m><nn><equ>/удача<n><f><nn><equ>$
+[/Ccjq_nvu0BGh]
+[CrANQry6rOvi#0] ^мектеп<n><px1sg><loc><subst><nom>/школа<n><f><nn><px1sg><loc><subst><nom>$ ^да<cnjcoo>/тоже<adv>$
+[/CrANQry6rOvi]
+[E33O3u5v0duc#0] ^керек<adj>/нужный<adj><sint>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^е<cop><neg><aor><p3><sg>/<neg><aor><p3><sg>$
+[/E33O3u5v0duc]
+[ED3OFTl_RP9K#0] ^жақсы<adj>/хороший<adj><sint>$ ^бақша<n><abl>/огород<n><m><nn><abl>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^кейін<post>/после<pr><gen>$
+[/ED3OFTl_RP9K]
+[Ek4AEtdAPq0c#0] ^әдемі<adj>/красивый<adj><sint>/миловидный<adj><sint>$
+[/Ek4AEtdAPq0c]
+[FZrbQI7lrWXV#0] ^үй<n><px2sg><nom>/дом<n><m><nn><px2sg><nom>/двор<n><m><nn><px2sg><nom>/жилище<n><nt><nn><px2sg><nom>/постройка<n><f><nn><px2sg><nom>$
+[/FZrbQI7lrWXV]
+[IpQgZmqBeSNj#0] ^бақша<n><gen>/огород<n><m><nn><gen>$ ^арт<n><px3sp><loc>/за<pr><ins>$
+[/IpQgZmqBeSNj]
+[J56C2FHwsrVe#0] ^үй<n><pl><acc>/дом<n><m><nn><pl><acc>/двор<n><m><nn><pl><acc>/жилище<n><nt><nn><pl><acc>/постройка<n><f><nn><pl><acc>$
+[/J56C2FHwsrVe]
+[J8KwDtmXyF48#0] ^мынау<prn><dem><nom>/@мынау<prn><dem><nom>$
+[/J8KwDtmXyF48]
+[KG2Fr_28uiEv#0] ^әдемі<adj>/красивый<adj><sint>/миловидный<adj><sint>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^үй<n><nom>/дом<n><m><nn><nom>/двор<n><m><nn><nom>/жилище<n><nt><nn><nom>/постройка<n><f><nn><nom>$
+[/KG2Fr_28uiEv]
+[NXoobDTsHRrP#0] ^Қазақстан<np><top><nom>/Казахстан<np><top><m><nom>$
+[/NXoobDTsHRrP]
+[OuqcomnB5FmX#0] ^Ол<prn><pers><p3><sg><nom>/Он<prn><pers><p3><m><sg><nom>/Она<prn><pers><p3><f><sg><nom>/Оно<prn><pers><p3><nt><sg><nom>$ ^дәрігер<n><nom>/врач<n><m><aa><nom>/ушник<n><m><aa><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$^.<sent>/.<sent>$
+[/OuqcomnB5FmX]
+[P_DgoZvTYLty#0] ^бала<n><nom>/мальчик<n><m><aa><nom>/ребёнок<n><m><aa><nom>$
+[/P_DgoZvTYLty]
+[QEO3WW53pykH#0] ^ол<prn><dem><nom>/он<prn><pers><p3><m><sg><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^бала<n><nom>/мальчик<n><m><aa><nom>/ребёнок<n><m><aa><nom>$
+[/QEO3WW53pykH]
+[SGcAqLoxRtiS#0] ^үй<n><pl><ins>/дом<n><m><nn><pl><ins>/двор<n><m><nn><pl><ins>/жилище<n><nt><nn><pl><ins>/постройка<n><f><nn><pl><ins>$
+[/SGcAqLoxRtiS]
+[SMVWeWYNN43f#0] ^жақсы<adj>/хороший<adj><sint>$ ^бақша<n><gen>/огород<n><m><nn><gen>$ ^арт<n><px3sp><loc>/за<pr><ins>$
+[/SMVWeWYNN43f]
+[UQMAzArfqfhk#0] ^бүгін<adv>/сегодня<adv>$
+[/UQMAzArfqfhk]
+[UUHJQVykeyDh#0] ^үй<n><pl><px2sg><frm><nom>/дом<n><m><nn><pl><px2sg><frm><nom>/двор<n><m><nn><pl><px2sg><frm><nom>/жилище<n><nt><nn><pl><px2sg><frm><nom>/постройка<n><f><nn><pl><px2sg><frm><nom>$
+[/UUHJQVykeyDh]
+[UlzLGg_2ZQ4b#0] ^Мен<prn><pers><p1><sg><nom>/Я<prn><pers><p1><mf><sg><nom>$
+[/UlzLGg_2ZQ4b]
+[V3DAHw9GtX2O#0] ^мынау<prn><dem><nom>/@мынау<prn><dem><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^үй<n><nom>/дом<n><m><nn><nom>/двор<n><m><nn><nom>/жилище<n><nt><nn><nom>/постройка<n><f><nn><nom>$
+[/V3DAHw9GtX2O]
+[V7aQz_uFxfyJ#0] ^бақша<n><abl>/огород<n><m><nn><abl>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^кейін<post>/после<pr><gen>$
+[/V7aQz_uFxfyJ]
+[VLXRK6vpq0ZN#0] ^ең<adv>/очень<adv>/весьма<adv>/самый<det><def><m><an><sg><nom>$ ^әдемі<adj>/красивый<adj><sint>/миловидный<adj><sint>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^қал<v><iv><gna_impf>/перейти<vblex><perf><gna_impf>/попасть<vblex><perf><gna_impf>/остаться<vblex><perf><gna_impf>/отставать<vblex><impf><gna_impf>/достаться<vblex><perf><gna_impf>/оставаться<vblex><impf><gna_impf>$
+[/VLXRK6vpq0ZN]
+[VOxCwPqvgM_l#0] ^Ол<prn><dem><pl><nom>/Они<prn><pers><p3><mfn><pl><nom>$ ^дәрігер<n><pl><nom>/врач<n><m><aa><pl><nom>/ушник<n><m><aa><pl><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$^.<sent>/.<sent>$
+[/VOxCwPqvgM_l]
+[WLoYQJA7filu#0] ^Мәдина<np><ant><f><gen>/Мадина<np><ant><f><gen>$ ^кітап<n><px3sp><loc><subst><nom>/книга<n><f><nn><px3sp><loc><subst><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^бейне<n><nom>/образ<n><m><nn><nom>$
+[/WLoYQJA7filu]
+[WjQUNBxpGCiQ#0] ^үй<n><px3sp><nom>/дом<n><m><nn><px3sp><nom>/двор<n><m><nn><px3sp><nom>/жилище<n><nt><nn><px3sp><nom>/постройка<n><f><nn><px3sp><nom>$
+[/WjQUNBxpGCiQ]
+[YH7P8saoyDv7#0] ^жақсы<adj>/хороший<adj><sint>$ ^бақша<n><gen>/огород<n><m><nn><gen>$ ^жан<n><px3sp><loc>/возле<pr><gen>/у<pr><gen>$
+[/YH7P8saoyDv7]
+[_QNKMtUqp8l0#0] ^үй<n><pl><px3sp><nom>/дом<n><m><nn><pl><px3sp><nom>/двор<n><m><nn><pl><px3sp><nom>/жилище<n><nt><nn><pl><px3sp><nom>/постройка<n><f><nn><pl><px3sp><nom>$
+[/_QNKMtUqp8l0]
+[c0gEIhfkDFXl#0] ^алайда<adv>/однако<adv>$
+[/c0gEIhfkDFXl]
+[d-M4ir7pJpXv#0] ^Астана<n><nom>/Астана<n><f><nn><nom>/Столица<n><f><nn><nom>$
+[/d-M4ir7pJpXv]
+[dDrXIyH84jvM#0] ^бақша<n><gen>/огород<n><m><nn><gen>$ ^жан<n><px3sp><loc>/возле<pr><gen>/у<pr><gen>$
+[/dDrXIyH84jvM]
+[dM1J3JEd0ObT#0] ^үсте<v><tv><pass><ifi><p2><sg>/добавить<vblex><perf><pass><ifi><p2><sg>/прибавить<vblex><perf><pass><ifi><p2><sg>/придавать<vblex><impf><pass><ifi><p2><sg>/добавлять<vblex><impf><pass><ifi><p2><sg>$ ^үст<n><px3sp><loc>/на<pr><prp>/над<pr><ins>$
+[/dM1J3JEd0ObT]
+[dotMDEBRdANK#0] ^бұл<prn><dem><nom>/это<prn><dem><nt><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^компания<n><nom>/компания<n><f><nn><nom>$
+[/dotMDEBRdANK]
+[eK5YE-pGX-Ge#0] ^үй<n><px1pl><nom>/дом<n><m><nn><px1pl><nom>/двор<n><m><nn><px1pl><nom>/жилище<n><nt><nn><px1pl><nom>/постройка<n><f><nn><px1pl><nom>$
+[/eK5YE-pGX-Ge]
+[eR84tG_mYGQI#0] ^бір<num><subst><nom>/один<num><m><an><sg><nom><subst><nom>/один<num><m><an><sg><det><subst><nom>/один<num><m><an><sg><ord><subst><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^үй<n><nom>/дом<n><m><nn><nom>/двор<n><m><nn><nom>/жилище<n><nt><nn><nom>/постройка<n><f><nn><nom>$
+[/eR84tG_mYGQI]
+[fGXs3n4YyB5e#0] ^ең<adv>/очень<adv>/весьма<adv>/самый<det><def><m><an><sg><nom>$ ^әдемі<adj>/красивый<adj><sint>/миловидный<adj><sint>$
+[/fGXs3n4YyB5e]
+[gW6ArN3-YVpZ#0] ^үй<n><pl><nom>/дом<n><m><nn><pl><nom>/двор<n><m><nn><pl><nom>/жилище<n><nt><nn><pl><nom>/постройка<n><f><nn><pl><nom>$
+[/gW6ArN3-YVpZ]
+[jV7Wo6BTgNPQ#0] ^Мәдина<np><ant><f><gen>/Мадина<np><ant><f><gen>$ ^кітап<n><px3sp><nom>/книга<n><f><nn><px3sp><nom>$
+[/jV7Wo6BTgNPQ]
+[jir6Yp-2qaKW#0] ^Ол<prn><pers><p3><sg><nom>/Он<prn><pers><p3><m><sg><nom>/Она<prn><pers><p3><f><sg><nom>/Оно<prn><pers><p3><nt><sg><nom>$
+[/jir6Yp-2qaKW]
+[l_HPlNmb1x__#0] ^үй<n><pl><gen>/дом<n><m><nn><pl><gen>/двор<n><m><nn><pl><gen>/жилище<n><nt><nn><pl><gen>/постройка<n><f><nn><pl><gen>$
+[/l_HPlNmb1x__]
+[nLLjkLF8Tv40#0] ^Біз<prn><pers><p1><pl><nom>/Мы<prn><pers><p1><mf><pl><nom>$ ^дәрігер<n><pl><nom>/врач<n><m><aa><pl><nom>/ушник<n><m><aa><pl><nom>$ ^е<cop><aor><p1><pl>/<aor><p1><pl>$^.<sent>/.<sent>$
+[/nLLjkLF8Tv40]
+[nQ7oPP5mGDE5#0] ^мынау<det><dem>/этот<det><dem><m><an><sg><nom>$ ^әдемі<adj>/красивый<adj><sint>/миловидный<adj><sint>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^үй<n><nom>/дом<n><m><nn><nom>/двор<n><m><nn><nom>/жилище<n><nt><nn><nom>/постройка<n><f><nn><nom>$
+[/nQ7oPP5mGDE5]
+[naPTkGMmWjZm#0] ^бала<n><gen>/мальчик<n><m><aa><gen>/ребёнок<n><m><aa><gen>$ ^ойыншық<n><px3sp><nom>/игрушка<n><f><nn><px3sp><nom>$
+[/naPTkGMmWjZm]
+[oMpVb-dYKKuY#0] ^үй<n><nom>/дом<n><m><nn><nom>/двор<n><m><nn><nom>/жилище<n><nt><nn><nom>/постройка<n><f><nn><nom>$
+[/oMpVb-dYKKuY]
+[oiPqCe3Zqkby#0] ^бір<num><subst><nom>/один<num><m><an><sg><nom><subst><nom>/один<num><m><an><sg><det><subst><nom>/один<num><m><an><sg><ord><subst><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^бақ<n><equ>/сад<n><m><nn><equ>/клад<n><m><nn><equ>/удача<n><f><nn><equ>$
+[/oiPqCe3Zqkby]
+[rxHYybAEmZRk#0] ^КСРО<np><top><nom>/СССР<np><top><m><sg>$
+[/rxHYybAEmZRk]
+[sLgbhffUShmr#0] ^Мәдина<np><ant><f><gen>/Мадина<np><ant><f><gen>$ ^кітап<n><px3sp><nom>/книга<n><f><nn><px3sp><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^туралы<post>/о<pr>$
+[/sLgbhffUShmr]
+[sp2xqRw0GGIi#0] ^Балжан<np><ant><f><nom>/Балжан<np><ant><f><sg><nom>$
+[/sp2xqRw0GGIi]
+[uq-8GFsOfr0C#0] ^мектеп<n><pl><px2sg><frm><sim>/школа<n><f><nn><pl><px2sg><frm><sim>$ ^ғана<postadv>/только<adv>$
+[/uq-8GFsOfr0C]
+[vO4c1VSxUwO8#0] ^ең<adv>/очень<adv>/весьма<adv>/самый<det><def><m><an><sg><nom>$
+[/vO4c1VSxUwO8]
+[yqZ4GP26aPio#0] ^бала<n><gen>/мальчик<n><m><aa><gen>/ребёнок<n><m><aa><gen>$
+[/yqZ4GP26aPio]
+[z20kd7Ih-6rD#0] ^әдемі<adj>/красивый<adj><sint>/миловидный<adj><sint>$ ^қала<n><loc><subst><nom>/город<n><m><nn><loc><subst><nom>$ ^е<cop><aor><p3><sg>/<aor><p3><sg>$ ^базар<n><nom>/базар<n><m><nn><nom>/рынок<n><m><nn><nom>$
+[/z20kd7Ih-6rD]

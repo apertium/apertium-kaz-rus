@@ -1,0 +1,18 @@
+{
+    "kaz-rus-pending": {
+        "input": "kaz-rus-pending-input.txt",
+        "mode": "kaz-rus"
+    },
+    "kaz-rus-regression": {
+        "input": "kaz-rus-regression-input.txt",
+        "mode": "kaz-rus"
+    },
+    "rus-kaz-pending": {
+        "input": "rus-kaz-pending-input.txt",
+        "mode": "rus-kaz"
+    },
+    "rus-kaz-regression": {
+        "input": "rus-kaz-regression-input.txt",
+        "mode": "rus-kaz"
+    }
+}

@@ -1,0 +1,34 @@
+[-lytT_Br4aCT#0] ^Мы<prn><pers><p1><mf><pl><nom>$ ^играть<vblex><impf><iv><pres><p1><pl>$^.<sent>$
+[/-lytT_Br4aCT]
+[032NU5Ixdyu-#0] ^я<prn><pers><p1><mf><sg><nom>$ ^быть<vbser><past><m><sg>$ ^врач<n><m><aa><sg><ins>$
+[/032NU5Ixdyu-]
+[2azx_rwcOibX#0] ^работать<vblex><impf><iv><inf>$ ^на<pr>$ ^театр<n><m><nn><sg><prp>$
+[/2azx_rwcOibX]
+[FawpDQHzc0oO#0] ^на<pr>$ ^этот<det><dem><mfn><an><pl><prp>$ ^день<n><m><nn><pl><prp>$
+[/FawpDQHzc0oO]
+[KW6RDSb60hl7#0] ^я<prn><pers><p1><mf><sg><dat>$ ^нужный<adj><sint><short><f><sg>$ ^книга<n><f><nn><sg><nom>$
+[/KW6RDSb60hl7]
+[MzyceZ-MerYU#0] ^я<prn><pers><p1><mf><sg><nom>$ ^не<adv>$ ^быть<vbser><fut><p1><sg>$ ^врач<n><m><aa><sg><ins>$
+[/MzyceZ-MerYU]
+[Qra3ID5Ws2Ur#0] ^Он<prn><pers><p3><m><sg><nom>$ ^играть<vblex><impf><iv><pres><p3><sg>$ ^в<pr>$ ^двор<n><m><nn><sg><prp>$^.<sent>$
+[/Qra3ID5Ws2Ur]
+[VAzPZuigki6P#0] ^на<pr>$ ^10<num>$ ^год²<n><m><nn><pl><gen>$ ^молодой<adj><sint><comp>$
+[/VAzPZuigki6P]
+[VHTV-EqdXdaf#0] ^мы<prn><pers><p1><mf><pl><nom>$ ^мальчик<n><m><aa><pl><nom>$
+[/VHTV-EqdXdaf]
+[YBW9d4igiacc#0] ^Я<prn><pers><p1><mf><sg><nom>$ ^говорить<vblex><impf><tv><past><f><sg>$ ^ты<prn><pers><p2><mf><sg><dat>$ ^пять<num><mfn><pl><nom>$ ^раз¹<n><m><nn><pl><gen>$
+[/YBW9d4igiacc]
+[ZovutrbkhHx-#0] ^Я<prn><pers><p1><mf><sg><nom>$ ^рассказать<vblex><perf><tv><past><f><sg>$ ^ты<prn><pers><p2><mf><sg><dat>$ ^история<n><f><nn><sg><acc>$
+[/ZovutrbkhHx-]
+[en_-Ya9zUfcK#0] ^Вы<prn><pers><p2><mf><sg><nom>$ ^играть<vblex><impf><iv><pres><p2><pl>$^.<sent>$
+[/en_-Ya9zUfcK]
+[h_yxUclRj3bi#0] ^я<prn><pers><p1><mf><sg><nom>$ ^не<adv>$ ^быть<vbser><past><m><sg>$ ^врач<n><m><aa><sg><ins>$
+[/h_yxUclRj3bi]
+[pFCZyIGQVhAB#0] ^гулять<vblex><impf><iv><inf>$ ^на<pr>$ ^бульвар<n><m><nn><sg><prp>$
+[/pFCZyIGQVhAB]
+[px2Vo8PEqf9H#0] ^я<prn><pers><p1><mf><sg><nom>$ ^быть<vbser><fut><p1><sg>$ ^врач<n><m><aa><sg><ins>$
+[/px2Vo8PEqf9H]
+[rFbqZrQjo9Bq#0] ^на<pr>$ ^военный<adj><sint><f><an><sg><prp>$ ^служба<n><f><nn><sg><prp>$
+[/rFbqZrQjo9Bq]
+[xpr74eHzfvct#0] ^на<pr>$ ^10<num>$ ^год²<n><m><nn><pl><gen>$ ^старше<adj><sint><comp>$
+[/xpr74eHzfvct]

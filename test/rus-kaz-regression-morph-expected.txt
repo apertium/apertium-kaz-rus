@@ -1,0 +1,124 @@
+[2L8THsoXs4nP#0] ^моя/мыть<vblex><impf><tv><pprs><adv>/мыть<vblex><impf><iv><pprs><adv>/мой<prn><pos><f><an><sg><nom>/мой<det><pos><f><an><sg><nom>$ ^машина/машина<n><f><nn><sg><nom>$
+[/2L8THsoXs4nP]
+[2NHPT-syFlTx#0] ^один/один<num><m><an><sg><nom>/один<num><m><nn><sg><acc>$ ^человек/человек<n><m><aa><pl><gen>/человек<n><m><aa><sg><nom>$
+[/2NHPT-syFlTx]
+[39AsRyEh2Uwq#0] ^под/под<pr>/под<n><m><nn><sg><nom>/под<n><m><nn><sg><acc>$ ^восемью/восемь<num><mfn><pl><ins>$ ^хорошими/хороший<adj><sint><mfn><an><pl><ins>$ ^садами/сад<n><m><nn><pl><ins>$
+[/39AsRyEh2Uwq]
+[40PlmHCgZvcE#0] ^он/он<prn><pers><p3><m><sg><nom>/он²<n><nt><nn><sg><nom>/он²<n><nt><nn><sg><gen>/он²<n><nt><nn><sg><dat>/он²<n><nt><nn><sg><acc>/он²<n><nt><nn><sg><prp>/он²<n><nt><nn><sg><ins>/он²<n><nt><nn><pl><nom>/он²<n><nt><nn><pl><gen>/он²<n><nt><nn><pl><dat>/он²<n><nt><nn><pl><acc>/он²<n><nt><nn><pl><prp>/он²<n><nt><nn><pl><ins>$ ^мальчик/мальчик<n><m><aa><sg><nom>$
+[/40PlmHCgZvcE]
+[43xkt6ahQdMF#0] ^хорошему/хороший<adj><sint><m><an><sg><dat>/хороший<adj><sint><nt><an><sg><dat>$ ^мальчику/мальчик<n><m><aa><sg><dat>$
+[/43xkt6ahQdMF]
+[5U1c3VhmaeA-#0] ^самый/самый<det><def><m><an><sg><nom>/самый<det><def><m><nn><sg><acc>$ ^хороший/хороший<adj><sint><m><an><sg><nom>/хороший<adj><sint><m><nn><sg><acc>$ ^день/день<n><m><nn><sg><acc>/день<n><m><nn><sg><nom>/деть<vblex><perf><tv><imp><p2><sg>/деть<vblex><perf><iv><imp><p2><sg>$
+[/5U1c3VhmaeA-]
+[6_rOjQtrzMUG#0] ^был/быть<vbser><past><m><sg>/былой<adj><sint><short><m><sg>$ ^построен/построить<vblex><perf><tv><pp><pasv><short><m><sg>$ ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$
+[/6_rOjQtrzMUG]
+[8m7rd6PDwott#0] ^хорошим/хороший<adj><sint><m><an><sg><ins>/хороший<adj><sint><nt><an><sg><ins>/хороший<adj><sint><mfn><an><pl><dat>$ ^мальчиком/мальчик<n><m><aa><sg><ins>$
+[/8m7rd6PDwott]
+[9Zsixn9r5Sx7#0] ^она/она<prn><pers><p3><f><sg><nom>$ ^девочка/девочка<n><f><aa><sg><nom>$
+[/9Zsixn9r5Sx7]
+[9bPXV6cyzQ9p#0] ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$
+[/9bPXV6cyzQ9p]
+[ATeL5Q3lsHNZ#0] ^книга/книга<n><f><nn><sg><nom>$ ^ученика/ученик<n><m><aa><sg><gen>/ученик<n><m><aa><sg><acc>$
+[/ATeL5Q3lsHNZ]
+[BDIpDHoaL7VZ#0] ^с/с<pr>$ ^домами/дом<n><m><nn><pl><ins>$
+[/BDIpDHoaL7VZ]
+[C4q4yE9dKu9c#0] ^под/под<pr>/под<n><m><nn><sg><nom>/под<n><m><nn><sg><acc>$ ^садом/сад<n><m><nn><sg><ins>$
+[/C4q4yE9dKu9c]
+[DCi36Y6d58ve#0] ^твой/твой<prn><pos><m><an><sg><nom>/твой<prn><pos><m><nn><sg><acc>/твой<det><pos><m><an><sg><nom>/твой<det><pos><m><nn><sg><acc>$ ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$
+[/DCi36Y6d58ve]
+[Doi2wFawQPg6#0] ^над/над<pr>$ ^хорошим/хороший<adj><sint><m><an><sg><ins>/хороший<adj><sint><nt><an><sg><ins>/хороший<adj><sint><mfn><an><pl><dat>$ ^садом/сад<n><m><nn><sg><ins>$
+[/Doi2wFawQPg6]
+[ERdnOpAARSGb#0] ^самый/самый<det><def><m><an><sg><nom>/самый<det><def><m><nn><sg><acc>$ ^хороший/хороший<adj><sint><m><an><sg><nom>/хороший<adj><sint><m><nn><sg><acc>$
+[/ERdnOpAARSGb]
+[FLq8YiAB7ahi#0] ^над/над<pr>$ ^садом/сад<n><m><nn><sg><ins>$
+[/FLq8YiAB7ahi]
+[FOVr7Ve_lJRu#0] ^в/в<pr>$ ^хорошем/хороший<adj><sint><m><an><sg><prp>/хороший<adj><sint><nt><an><sg><prp>$ ^огороде/огород<n><m><nn><sg><prp>$
+[/FOVr7Ve_lJRu]
+[FyYx8DcxYxBK#0] ^дома/дом<n><m><nn><sg><gen>/дом<n><m><nn><pl><nom>/дом<n><m><nn><pl><acc>$
+[/FyYx8DcxYxBK]
+[JrmIBRy7OCuD#0] ^он/он<prn><pers><p3><m><sg><nom>/он²<n><nt><nn><sg><nom>/он²<n><nt><nn><sg><gen>/он²<n><nt><nn><sg><dat>/он²<n><nt><nn><sg><acc>/он²<n><nt><nn><sg><prp>/он²<n><nt><nn><sg><ins>/он²<n><nt><nn><pl><nom>/он²<n><nt><nn><pl><gen>/он²<n><nt><nn><pl><dat>/он²<n><nt><nn><pl><acc>/он²<n><nt><nn><pl><prp>/он²<n><nt><nn><pl><ins>$ ^скажет/сказать<vblex><perf><tv><fut><p3><sg>/сказать<vblex><perf><iv><fut><p3><sg>$
+[/JrmIBRy7OCuD]
+[K2NwaMt4ltGN#0] ^вы/вы<prn><pers><p2><mf><sg><nom>/вы<prn><pers><p2><mf><pl><nom>/высокий<adj><sint><short><m><sg>$ ^мальчики/мальчик<n><m><aa><pl><nom>$
+[/K2NwaMt4ltGN]
+[KRylKn3tqEks#0] ^красивые/красивый<adj><sint><mfn><an><pl><nom>/красивый<adj><sint><mfn><nn><pl><acc>$ ^места/место<n><nt><nn><sg><gen>/место<n><nt><nn><pl><nom>/место<n><nt><nn><pl><acc>$
+[/KRylKn3tqEks]
+[Kok1zflJmZuv#0] ^хорошая/хороший<adj><sint><f><an><sg><nom>$ ^книга/книга<n><f><nn><sg><nom>$
+[/Kok1zflJmZuv]
+[LKHTfbIaRwwZ#0] ^я/я<prn><pers><p1><mf><sg><nom>/я²<n><nt><nn><pl><ins>/я²<n><nt><nn><pl><prp>/я²<n><nt><nn><pl><acc>/я²<n><nt><nn><pl><dat>/я²<n><nt><nn><pl><gen>/я²<n><nt><nn><pl><nom>/я²<n><nt><nn><sg><ins>/я²<n><nt><nn><sg><prp>/я²<n><nt><nn><sg><acc>/я²<n><nt><nn><sg><dat>/я²<n><nt><nn><sg><gen>/я²<n><nt><nn><sg><nom>/я<n><nt><nn><sg><nom>/я<n><nt><nn><pl><ins>/я<n><nt><nn><pl><prp>/я<n><nt><nn><pl><acc>/я<n><nt><nn><pl><dat>/я<n><nt><nn><pl><gen>/я<n><nt><nn><pl><nom>/я<n><nt><nn><sg><ins>/я<n><nt><nn><sg><prp>/я<n><nt><nn><sg><acc>/я<n><nt><nn><sg><dat>/я<n><nt><nn><sg><gen>$ ^скажу/сказать<vblex><perf><tv><fut><p1><sg>/сказать<vblex><perf><iv><fut><p1><sg>$
+[/LKHTfbIaRwwZ]
+[LkPuTbwsfQP1#0] ^мы/мы<prn><pers><p1><mf><pl><nom>$ ^скажем/сказать<vblex><perf><tv><fut><p1><pl>/сказать<vblex><perf><tv><imp><p1><pl>/сказать<vblex><perf><iv><fut><p1><pl>/сказать<vblex><perf><iv><imp><p1><pl>$
+[/LkPuTbwsfQP1]
+[M3LxPzMZ0g1p#0] ^шести/шесть<num><mfn><pl><gen>/шесть<num><mfn><pl><dat>/шесть<num><mfn><pl><prp>$ ^домов/дом<n><m><nn><pl><gen>/домовый<adj><sint><short><m><sg>$
+[/M3LxPzMZ0g1p]
+[Mv2aABJ8lQph#0] ^ты/ты<prn><pers><p2><mf><sg><nom>$ ^скажешь/сказать<vblex><perf><tv><fut><p2><sg>/сказать<vblex><perf><iv><fut><p2><sg>$
+[/Mv2aABJ8lQph]
+[N_4xZzhfZOf8#0] ^ручка/ручка<n><f><nn><sg><nom>$ ^двери/дверь<n><f><nn><sg><gen>/дверь<n><f><nn><sg><dat>/дверь<n><f><nn><sg><prp>/дверь<n><f><nn><pl><nom>/дверь<n><f><nn><pl><acc>$
+[/N_4xZzhfZOf8]
+[PvcLgKnVQ8HW#0] ^над/над<pr>$ ^восемью/восемь<num><mfn><pl><ins>$ ^хорошими/хороший<adj><sint><mfn><an><pl><ins>$ ^садами/сад<n><m><nn><pl><ins>$
+[/PvcLgKnVQ8HW]
+[SDQSbPa80pKM#0] ^хороший/хороший<adj><sint><m><an><sg><nom>/хороший<adj><sint><m><nn><sg><acc>$ ^мальчик/мальчик<n><m><aa><sg><nom>$
+[/SDQSbPa80pKM]
+[U6p-xK9rUWJP#0] ^они/они<prn><pers><p3><mfn><pl><nom>$ ^были/быть<vbser><past><mfn><pl>/быль<n><f><nn><sg><gen>/быль<n><f><nn><sg><dat>/быль<n><f><nn><sg><prp>/быль<n><f><nn><pl><nom>/быль<n><f><nn><pl><acc>$ ^подготовлены/подготовить<vblex><perf><tv><pp><pasv><short><mfn><pl>$
+[/U6p-xK9rUWJP]
+[U95LQtb3Q_2E#0] ^они/они<prn><pers><p3><mfn><pl><nom>$ ^мальчики/мальчик<n><m><aa><pl><nom>$
+[/U95LQtb3Q_2E]
+[VHTV-EqdXdaf#0] ^мы/мы<prn><pers><p1><mf><pl><nom>$ ^мальчики/мальчик<n><m><aa><pl><nom>$
+[/VHTV-EqdXdaf]
+[VorXxVXgbmTB#0] ^был/быть<vbser><past><m><sg>/былой<adj><sint><short><m><sg>$ ^построен/построить<vblex><perf><tv><pp><pasv><short><m><sg>$ ^высокий/высокий<adj><sint><m><an><sg><nom>/высокий<adj><sint><m><nn><sg><acc>$ ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$
+[/VorXxVXgbmTB]
+[X7ghjw5GBPUm#0] ^под/под<pr>/под<n><m><nn><sg><nom>/под<n><m><nn><sg><acc>$ ^хорошим/хороший<adj><sint><m><an><sg><ins>/хороший<adj><sint><nt><an><sg><ins>/хороший<adj><sint><mfn><an><pl><dat>$ ^садом/сад<n><m><nn><sg><ins>$
+[/X7ghjw5GBPUm]
+[XidI9uvrbXYK#0] ^в/в<pr>$ ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$
+[/XidI9uvrbXYK]
+[_G8aQpOhusu5#0] ^будет/быть<vbser><fut><p3><sg>$ ^удовлетворять/удовлетворять<vblex><impf><tv><inf>/удовлетворять<vblex><impf><iv><inf>$
+[/_G8aQpOhusu5]
+[a77M5G1JtPv8#0] ^один/один<num><m><an><sg><nom>/один<num><m><nn><sg><acc>$ ^человек/человек<n><m><aa><pl><gen>/человек<n><m><aa><sg><nom>$ ^ушел/уйти<vblex><perf><iv><past><m><sg>$
+[/a77M5G1JtPv8]
+[aFULyBQACe8p#0] ^был/быть<vbser><past><m><sg>/былой<adj><sint><short><m><sg>$ ^построен/построить<vblex><perf><tv><pp><pasv><short><m><sg>$
+[/aFULyBQACe8p]
+[bFtJHLAQOJyB#0] ^я/я<prn><pers><p1><mf><sg><nom>/я²<n><nt><nn><pl><ins>/я²<n><nt><nn><pl><prp>/я²<n><nt><nn><pl><acc>/я²<n><nt><nn><pl><dat>/я²<n><nt><nn><pl><gen>/я²<n><nt><nn><pl><nom>/я²<n><nt><nn><sg><ins>/я²<n><nt><nn><sg><prp>/я²<n><nt><nn><sg><acc>/я²<n><nt><nn><sg><dat>/я²<n><nt><nn><sg><gen>/я²<n><nt><nn><sg><nom>/я<n><nt><nn><sg><nom>/я<n><nt><nn><pl><ins>/я<n><nt><nn><pl><prp>/я<n><nt><nn><pl><acc>/я<n><nt><nn><pl><dat>/я<n><nt><nn><pl><gen>/я<n><nt><nn><pl><nom>/я<n><nt><nn><sg><ins>/я<n><nt><nn><sg><prp>/я<n><nt><nn><sg><acc>/я<n><nt><nn><sg><dat>/я<n><nt><nn><sg><gen>$ ^мальчик/мальчик<n><m><aa><sg><nom>$
+[/bFtJHLAQOJyB]
+[bL9q-RKsgeQd#0] ^в/в<pr>$ ^дома/дом<n><m><nn><sg><gen>/дом<n><m><nn><pl><nom>/дом<n><m><nn><pl><acc>$
+[/bL9q-RKsgeQd]
+[cGOQkTnBagSE#0] ^они/они<prn><pers><p3><mfn><pl><nom>$ ^были/быть<vbser><past><mfn><pl>/быль<n><f><nn><sg><gen>/быль<n><f><nn><sg><dat>/быль<n><f><nn><sg><prp>/быль<n><f><nn><pl><nom>/быль<n><f><nn><pl><acc>$ ^хорошо/хорошо<adv>/хороший<adj><sint><cmp>/хороший<adj><sint><short><nt><sg>$ ^подготовлены/подготовить<vblex><perf><tv><pp><pasv><short><mfn><pl>$
+[/cGOQkTnBagSE]
+[cXJu_KiBlGE9#0] ^шесть/шесть<num><mfn><pl><nom>/шесть<num><mfn><pl><acc>$ ^домов/дом<n><m><nn><pl><gen>/домовый<adj><sint><short><m><sg>$
+[/cXJu_KiBlGE9]
+[et4rsB5xQhQg#0] ^в/в<pr>$ ^домах/дом<n><m><nn><pl><prp>$
+[/et4rsB5xQhQg]
+[hMr5zW0Ttm1u#0] ^из/из<pr>$ ^домов/дом<n><m><nn><pl><gen>/домовый<adj><sint><short><m><sg>$
+[/hMr5zW0Ttm1u]
+[hx6U41mEnT1-#0] ^мой/мыть<vblex><impf><tv><imp><p2><sg>/мыть<vblex><impf><iv><imp><p2><sg>/мой<prn><pos><m><an><sg><nom>/мой<prn><pos><m><nn><sg><acc>/мой<det><pos><m><an><sg><nom>/мой<det><pos><m><nn><sg><acc>$ ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$
+[/hx6U41mEnT1-]
+[i7usX_FrLuhQ#0] ^твоя/твой<prn><pos><f><an><sg><nom>/твой<det><pos><f><an><sg><nom>$ ^книга/книга<n><f><nn><sg><nom>$
+[/i7usX_FrLuhQ]
+[iiQqTl2mKQXD#0] ^его/его<det><pos>/он<prn><pers><p3><m><sg><gen>/оно<prn><pers><p3><nt><sg><gen>/оно<prn><pers><p3><nt><sg><acc>$ ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$
+[/iiQqTl2mKQXD]
+[lQ-iIzy-oA5l#0] ^хорошего/хороший<adj><sint><m><an><sg><gen>/хороший<adj><sint><m><aa><sg><acc>/хороший<adj><sint><nt><an><sg><gen>$ ^мальчика/мальчик<n><m><aa><sg><gen>/мальчик<n><m><aa><sg><acc>$
+[/lQ-iIzy-oA5l]
+[mh-ccujsDHGb#0] ^на/на<pr>$ ^всех/весь<prn><def><mfn><aa><pl><acc>/весь<prn><def><mfn><an><pl><gen>/весь<prn><def><mfn><an><pl><prp>/весь<det><ind><mfn><aa><pl><acc>/весь<det><ind><mfn><an><pl><gen>/весь<det><ind><mfn><an><pl><prp>$ ^красивых/красивый<adj><sint><mfn><an><pl><gen>/красивый<adj><sint><mfn><an><pl><prp>/красивый<adj><sint><mfn><aa><pl><acc>$ ^местах/место<n><nt><nn><pl><prp>$
+[/mh-ccujsDHGb]
+[nZoWWcFQRMoD#0] ^в/в<pr>$ ^саду/сад<n><m><nn><sg><dat>/сад<n><m><nn><sg><loc>$
+[/nZoWWcFQRMoD]
+[oqULuA94htOx#0] ^ты/ты<prn><pers><p2><mf><sg><nom>$ ^мальчик/мальчик<n><m><aa><sg><nom>$
+[/oqULuA94htOx]
+[pkB-pMgKjIsw#0] ^одна/один<num><f><an><sg><nom>$ ^машина/машина<n><f><nn><sg><nom>$
+[/pkB-pMgKjIsw]
+[qmkqeRLyp2-B#0] ^мое/мой<prn><pos><nt><an><sg><nom>/мой<prn><pos><nt><an><sg><acc>/мой<det><pos><nt><an><sg><nom>/мой<det><pos><nt><an><sg><acc>$ ^дело/дело<n><nt><nn><sg><nom>/дело<n><nt><nn><sg><acc>/деть<vblex><perf><tv><past><nt><sg>/деть<vblex><perf><iv><past><nt><sg>$
+[/qmkqeRLyp2-B]
+[s2niwI82LMwG#0] ^один/один<num><m><an><sg><nom>/один<num><m><nn><sg><acc>$ ^хороший/хороший<adj><sint><m><an><sg><nom>/хороший<adj><sint><m><nn><sg><acc>$ ^человек/человек<n><m><aa><pl><gen>/человек<n><m><aa><sg><nom>$ ^ушел/уйти<vblex><perf><iv><past><m><sg>$
+[/s2niwI82LMwG]
+[u-_YHA2povcm#0] ^хорошее/хороший<adj><sint><nt><an><sg><nom>/хороший<adj><sint><nt><an><sg><acc>$ ^дело/дело<n><nt><nn><sg><nom>/дело<n><nt><nn><sg><acc>/деть<vblex><perf><tv><past><nt><sg>/деть<vblex><perf><iv><past><nt><sg>$
+[/u-_YHA2povcm]
+[uFGsuhCAQYj2#0] ^твое/твой<prn><pos><nt><an><sg><nom>/твой<prn><pos><nt><an><sg><acc>/твой<det><pos><nt><an><sg><nom>/твой<det><pos><nt><an><sg><acc>$ ^дело/дело<n><nt><nn><sg><nom>/дело<n><nt><nn><sg><acc>/деть<vblex><perf><tv><past><nt><sg>/деть<vblex><perf><iv><past><nt><sg>$
+[/uFGsuhCAQYj2]
+[uZshNgwroanS#0] ^президент/президент<n><m><aa><sg><nom>$ ^республики/республика<n><f><nn><sg><gen>/республика<n><f><nn><pl><nom>/республика<n><f><nn><pl><acc>$
+[/uZshNgwroanS]
+[viM9wQ6S9ZEP#0] ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$ ^нужен/нужный<adj><sint><short><m><sg>$
+[/viM9wQ6S9ZEP]
+[xP_py-98hWFT#0] ^ваш/ваш<prn><pos><m><an><sg><nom>/ваш<prn><pos><m><nn><sg><acc>/ваш<det><pos><m><an><sg><nom>/ваш<det><pos><m><nn><sg><acc>$ ^дом/дом<n><m><nn><sg><nom>/дом<n><m><nn><sg><acc>$
+[/xP_py-98hWFT]
+[zQ8RKWXk3qmP#0] ^все/вес<n><m><nn><sg><prp>/весь<prn><def><nt><an><sg><nom>/весь<prn><def><nt><an><sg><acc>/весь<prn><def><mfn><an><pl><nom>/весь<prn><def><mfn><nn><pl><acc>/весь<det><ind><nt><an><sg><nom>/весь<det><ind><nt><an><sg><acc>/весь<det><ind><mfn><an><pl><nom>/весь<det><ind><mfn><nn><pl><acc>$ ^красивые/красивый<adj><sint><mfn><an><pl><nom>/красивый<adj><sint><mfn><nn><pl><acc>$ ^места/место<n><nt><nn><sg><gen>/место<n><nt><nn><pl><nom>/место<n><nt><nn><pl><acc>$
+[/zQ8RKWXk3qmP]
+[zmAvUISCLFp8#0] ^были/быть<vbser><past><mfn><pl>/быль<n><f><nn><sg><gen>/быль<n><f><nn><sg><dat>/быль<n><f><nn><sg><prp>/быль<n><f><nn><pl><nom>/быль<n><f><nn><pl><acc>$ ^подготовлены/подготовить<vblex><perf><tv><pp><pasv><short><mfn><pl>$
+[/zmAvUISCLFp8]

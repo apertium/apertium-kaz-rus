@@ -1,0 +1,124 @@
+[2L8THsoXs4nP#0] ^мыть<vblex><impf><iv><pprs><adv>$ ^машина<n><f><nn><sg><nom>$
+[/2L8THsoXs4nP]
+[2NHPT-syFlTx#0] ^один<num><m><an><sg><nom>$ ^человек<n><m><aa><pl><gen>$
+[/2NHPT-syFlTx]
+[39AsRyEh2Uwq#0] ^под<pr>$ ^восемь<num><mfn><pl><ins>$ ^хороший<adj><sint><mfn><an><pl><ins>$ ^сад<n><m><nn><pl><ins>$
+[/39AsRyEh2Uwq]
+[40PlmHCgZvcE#0] ^он<prn><pers><p3><m><sg><nom>$ ^мальчик<n><m><aa><sg><nom>$
+[/40PlmHCgZvcE]
+[43xkt6ahQdMF#0] ^хороший<adj><sint><m><an><sg><dat>$ ^мальчик<n><m><aa><sg><dat>$
+[/43xkt6ahQdMF]
+[5U1c3VhmaeA-#0] ^самый<det><def><m><an><sg><nom>$ ^хороший<adj><sint><m><an><sg><nom>$ ^день<n><m><nn><sg><nom>$
+[/5U1c3VhmaeA-]
+[6_rOjQtrzMUG#0] ^быть<vbser><past><m><sg>$ ^построить<vblex><perf><tv><pp><pasv><short><m><sg>$ ^дом<n><m><nn><sg><nom>$
+[/6_rOjQtrzMUG]
+[8m7rd6PDwott#0] ^хороший<adj><sint><m><an><sg><ins>$ ^мальчик<n><m><aa><sg><ins>$
+[/8m7rd6PDwott]
+[9Zsixn9r5Sx7#0] ^она<prn><pers><p3><f><sg><nom>$ ^девочка<n><f><aa><sg><nom>$
+[/9Zsixn9r5Sx7]
+[9bPXV6cyzQ9p#0] ^дом<n><m><nn><sg><nom>$
+[/9bPXV6cyzQ9p]
+[ATeL5Q3lsHNZ#0] ^книга<n><f><nn><sg><nom>$ ^ученик<n><m><aa><sg><gen>$
+[/ATeL5Q3lsHNZ]
+[BDIpDHoaL7VZ#0] ^с<pr>$ ^дом<n><m><nn><pl><ins>$
+[/BDIpDHoaL7VZ]
+[C4q4yE9dKu9c#0] ^под<n><m><nn><sg><nom>$ ^сад<n><m><nn><sg><ins>$
+[/C4q4yE9dKu9c]
+[DCi36Y6d58ve#0] ^твой<prn><pos><m><an><sg><nom>$ ^дом<n><m><nn><sg><nom>$
+[/DCi36Y6d58ve]
+[Doi2wFawQPg6#0] ^над<pr>$ ^хороший<adj><sint><m><an><sg><ins>$ ^сад<n><m><nn><sg><ins>$
+[/Doi2wFawQPg6]
+[ERdnOpAARSGb#0] ^самый<det><def><m><an><sg><nom>$ ^хороший<adj><sint><m><an><sg><nom>$
+[/ERdnOpAARSGb]
+[FLq8YiAB7ahi#0] ^над<pr>$ ^сад<n><m><nn><sg><ins>$
+[/FLq8YiAB7ahi]
+[FOVr7Ve_lJRu#0] ^в<pr>$ ^хороший<adj><sint><m><an><sg><prp>$ ^огород<n><m><nn><sg><prp>$
+[/FOVr7Ve_lJRu]
+[FyYx8DcxYxBK#0] ^дом<n><m><nn><sg><gen>$
+[/FyYx8DcxYxBK]
+[JrmIBRy7OCuD#0] ^он<prn><pers><p3><m><sg><nom>$ ^сказать<vblex><perf><iv><fut><p3><sg>$
+[/JrmIBRy7OCuD]
+[K2NwaMt4ltGN#0] ^вы<prn><pers><p2><mf><sg><nom>$ ^мальчик<n><m><aa><pl><nom>$
+[/K2NwaMt4ltGN]
+[KRylKn3tqEks#0] ^красивый<adj><sint><mfn><an><pl><nom>$ ^место<n><nt><nn><pl><nom>$
+[/KRylKn3tqEks]
+[Kok1zflJmZuv#0] ^хороший<adj><sint><f><an><sg><nom>$ ^книга<n><f><nn><sg><nom>$
+[/Kok1zflJmZuv]
+[LKHTfbIaRwwZ#0] ^я<prn><pers><p1><mf><sg><nom>$ ^сказать<vblex><perf><iv><fut><p1><sg>$
+[/LKHTfbIaRwwZ]
+[LkPuTbwsfQP1#0] ^мы<prn><pers><p1><mf><pl><nom>$ ^сказать<vblex><perf><iv><fut><p1><pl>$
+[/LkPuTbwsfQP1]
+[M3LxPzMZ0g1p#0] ^шесть<num><mfn><pl><gen>$ ^дом<n><m><nn><pl><gen>$
+[/M3LxPzMZ0g1p]
+[Mv2aABJ8lQph#0] ^ты<prn><pers><p2><mf><sg><nom>$ ^сказать<vblex><perf><iv><fut><p2><sg>$
+[/Mv2aABJ8lQph]
+[N_4xZzhfZOf8#0] ^ручка<n><f><nn><sg><nom>$ ^дверь<n><f><nn><sg><gen>$
+[/N_4xZzhfZOf8]
+[PvcLgKnVQ8HW#0] ^над<pr>$ ^восемь<num><mfn><pl><ins>$ ^хороший<adj><sint><mfn><an><pl><ins>$ ^сад<n><m><nn><pl><ins>$
+[/PvcLgKnVQ8HW]
+[SDQSbPa80pKM#0] ^хороший<adj><sint><m><an><sg><nom>$ ^мальчик<n><m><aa><sg><nom>$
+[/SDQSbPa80pKM]
+[U6p-xK9rUWJP#0] ^они<prn><pers><p3><mfn><pl><nom>$ ^быть<vbser><past><mfn><pl>$ ^подготовить<vblex><perf><tv><pp><pasv><short><mfn><pl>$
+[/U6p-xK9rUWJP]
+[U95LQtb3Q_2E#0] ^они<prn><pers><p3><mfn><pl><nom>$ ^мальчик<n><m><aa><pl><nom>$
+[/U95LQtb3Q_2E]
+[VHTV-EqdXdaf#0] ^мы<prn><pers><p1><mf><pl><nom>$ ^мальчик<n><m><aa><pl><nom>$
+[/VHTV-EqdXdaf]
+[VorXxVXgbmTB#0] ^быть<vbser><past><m><sg>$ ^построить<vblex><perf><tv><pp><pasv><short><m><sg>$ ^высокий<adj><sint><m><an><sg><nom>$ ^дом<n><m><nn><sg><nom>$
+[/VorXxVXgbmTB]
+[X7ghjw5GBPUm#0] ^под<pr>$ ^хороший<adj><sint><m><an><sg><ins>$ ^сад<n><m><nn><sg><ins>$
+[/X7ghjw5GBPUm]
+[XidI9uvrbXYK#0] ^в<pr>$ ^дом<n><m><nn><sg><acc>$
+[/XidI9uvrbXYK]
+[_G8aQpOhusu5#0] ^быть<vbser><fut><p3><sg>$ ^удовлетворять<vblex><impf><iv><inf>$
+[/_G8aQpOhusu5]
+[a77M5G1JtPv8#0] ^один<num><m><an><sg><nom>$ ^человек<n><m><aa><pl><gen>$ ^уйти<vblex><perf><iv><past><m><sg>$
+[/a77M5G1JtPv8]
+[aFULyBQACe8p#0] ^быть<vbser><past><m><sg>$ ^построить<vblex><perf><tv><pp><pasv><short><m><sg>$
+[/aFULyBQACe8p]
+[bFtJHLAQOJyB#0] ^я<prn><pers><p1><mf><sg><nom>$ ^мальчик<n><m><aa><sg><nom>$
+[/bFtJHLAQOJyB]
+[bL9q-RKsgeQd#0] ^в<pr>$ ^дом<n><m><nn><pl><acc>$
+[/bL9q-RKsgeQd]
+[cGOQkTnBagSE#0] ^они<prn><pers><p3><mfn><pl><nom>$ ^быть<vbser><past><mfn><pl>$ ^хорошо<adv>$ ^подготовить<vblex><perf><tv><pp><pasv><short><mfn><pl>$
+[/cGOQkTnBagSE]
+[cXJu_KiBlGE9#0] ^шесть<num><mfn><pl><nom>$ ^дом<n><m><nn><pl><gen>$
+[/cXJu_KiBlGE9]
+[et4rsB5xQhQg#0] ^в<pr>$ ^дом<n><m><nn><pl><prp>$
+[/et4rsB5xQhQg]
+[hMr5zW0Ttm1u#0] ^из<pr>$ ^дом<n><m><nn><pl><gen>$
+[/hMr5zW0Ttm1u]
+[hx6U41mEnT1-#0] ^мыть<vblex><impf><iv><imp><p2><sg>$ ^дом<n><m><nn><sg><nom>$
+[/hx6U41mEnT1-]
+[i7usX_FrLuhQ#0] ^твой<prn><pos><f><an><sg><nom>$ ^книга<n><f><nn><sg><nom>$
+[/i7usX_FrLuhQ]
+[iiQqTl2mKQXD#0] ^он<prn><pers><p3><m><sg><gen>$ ^дом<n><m><nn><sg><nom>$
+[/iiQqTl2mKQXD]
+[lQ-iIzy-oA5l#0] ^хороший<adj><sint><m><an><sg><gen>$ ^мальчик<n><m><aa><sg><gen>$
+[/lQ-iIzy-oA5l]
+[mh-ccujsDHGb#0] ^на<pr>$ ^весь<prn><def><mfn><aa><pl><acc>$ ^красивый<adj><sint><mfn><an><pl><gen>$ ^место<n><nt><nn><pl><prp>$
+[/mh-ccujsDHGb]
+[nZoWWcFQRMoD#0] ^в<pr>$ ^сад<n><m><nn><sg><loc>$
+[/nZoWWcFQRMoD]
+[oqULuA94htOx#0] ^ты<prn><pers><p2><mf><sg><nom>$ ^мальчик<n><m><aa><sg><nom>$
+[/oqULuA94htOx]
+[pkB-pMgKjIsw#0] ^один<num><f><an><sg><nom>$ ^машина<n><f><nn><sg><nom>$
+[/pkB-pMgKjIsw]
+[qmkqeRLyp2-B#0] ^мой<prn><pos><nt><an><sg><nom>$ ^дело<n><nt><nn><sg><nom>$
+[/qmkqeRLyp2-B]
+[s2niwI82LMwG#0] ^один<num><m><an><sg><nom>$ ^хороший<adj><sint><m><an><sg><nom>$ ^человек<n><m><aa><sg><nom>$ ^уйти<vblex><perf><iv><past><m><sg>$
+[/s2niwI82LMwG]
+[u-_YHA2povcm#0] ^хороший<adj><sint><nt><an><sg><nom>$ ^дело<n><nt><nn><sg><nom>$
+[/u-_YHA2povcm]
+[uFGsuhCAQYj2#0] ^твой<prn><pos><nt><an><sg><nom>$ ^дело<n><nt><nn><sg><nom>$
+[/uFGsuhCAQYj2]
+[uZshNgwroanS#0] ^президент<n><m><aa><sg><nom>$ ^республика<n><f><nn><sg><gen>$
+[/uZshNgwroanS]
+[viM9wQ6S9ZEP#0] ^дом<n><m><nn><sg><nom>$ ^нужный<adj><sint><short><m><sg>$
+[/viM9wQ6S9ZEP]
+[xP_py-98hWFT#0] ^ваш<prn><pos><m><an><sg><nom>$ ^дом<n><m><nn><sg><nom>$
+[/xP_py-98hWFT]
+[zQ8RKWXk3qmP#0] ^весь<prn><def><nt><an><sg><nom>$ ^красивый<adj><sint><mfn><an><pl><nom>$ ^место<n><nt><nn><pl><nom>$
+[/zQ8RKWXk3qmP]
+[zmAvUISCLFp8#0] ^быть<vbser><past><mfn><pl>$ ^подготовить<vblex><perf><tv><pp><pasv><short><mfn><pl>$
+[/zmAvUISCLFp8]

@@ -1,0 +1,294 @@
+[-AxcBw3xxlwn#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-ing-cont<SV><p1><pl>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/-AxcBw3xxlwn]
+[-YZI5d4Xy5kc#0] ^prn-pers1<NP>{^у<pr>$ ^Мы<prn><pers><p1><mf><pl><gen>$}$ ^n-dsfsd<SN><nom><pl>{ ^книга<n><f><nn><3><nom>$}$ ^adj+case<AdjP>{^@бар<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/-YZI5d4Xy5kc]
+[0KmaAk5-XXfW#0] ^prn-pers1<NP>{^к<pr>$ ^Вы<prn><pers><p2><mf><sg><dat>$}$ ^n-dsfsd<SN><nom><sg>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek-emes<SV><sg>{^не<adv>$ ^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/0KmaAk5-XXfW]
+[0VNOabYFrKpW#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><sg>$}$^dot<SENT>{^.<sent>$}$
+[/0VNOabYFrKpW]
+[0k7sP5iCnlV5#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^V+fut1<NP>{^мочь<vbmod><impf><iv><pres><p3><sg>$ ^играть<tv><pres><p3><sg>$}$^dot<SENT>{^.<sent>$}$
+[/0k7sP5iCnlV5]
+[0mS_ghDvWtrX#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-ing-cont<SV><p1><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/0mS_ghDvWtrX]
+[2FL7Lknuc8Lr#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-ing-cont<SV><p2><frm><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/2FL7Lknuc8Lr]
+[2P1yDtBy7e-7#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^adj1<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/2P1yDtBy7e-7]
+[2kmhuAu29P3q#0] ^prn-pers1<NP>{^от<pr>$ ^вы<prn><pers><p2><mf><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{^твой<det><pos><m><an><sg><nom>$ ^огород<n><m><nn><3><nom>$}$
+[/2kmhuAu29P3q]
+[2vqcpwIqpDWR#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^pr_n1<PP>{ ^в<pr>$  ^огород<n><m><nn><sg><prp>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/2vqcpwIqpDWR]
+[2xCgiz3VSzwt#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-ing-cont<SV><p1><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/2xCgiz3VSzwt]
+[30aa3cCFnyDm#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/30aa3cCFnyDm]
+[3NAXy1GS3TSi#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><sg>$}$^dot<SENT>{^.<sent>$}$
+[/3NAXy1GS3TSi]
+[3ed85NjDqqYY#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p3><sg>$}$^dot<SENT>{^.<sent>$}$
+[/3ed85NjDqqYY]
+[3z34Z9d1U9Tg#0] ^prn-pers1<NP>{ ^Она<prn><pers><p3><f><sg><nom>$}$ ^adj_n<SN>{ ^красивый<adj><sint><f><an><sg><nom>$ ^девочка<n><f><aa><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/3z34Z9d1U9Tg]
+[4cNsP1OS4_ag#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/4cNsP1OS4_ag]
+[5ZZ6L1RtRxBE#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-ing-cont<SV><p1><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/5ZZ6L1RtRxBE]
+[68Kbm8Lz6JED#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^adj_n_cop<SN>{ ^красивый<adj><sint><mfn><an><pl><nom>$ ^дочь<n><f><aa><pl><nom>$}$^dot<SENT>{^.<sent>$}$
+[/68Kbm8Lz6JED]
+[6AIARX7NaECr#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/6AIARX7NaECr]
+[6F2Ot9wqVZ-h#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^n-dsfsd<SN><nom><pl>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/6F2Ot9wqVZ-h]
+[6Vembx9HiRa7#0] ^unknown<unknown>{^*сусап$}$ ^vaux-pres<SV-vaux>{^лежать<vblex><impf><iv><pres><p1><sg>$}$
+[/6Vembx9HiRa7]
+[6i1N822deQqp#0] ^prn-pers1<NP>{^к<pr>$ ^Мы<prn><pers><p1><mf><pl><dat>$}$ ^n-dsfsd<SN><nom><pl>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek<SV><pl>{^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/6i1N822deQqp]
+[6wYqfYQRX2tP#0] ^n-dsfsd<SN><gen><sg>{ ^огород<n><m><nn><3><gen>$}$ ^pr<PREP>{^под<pr>$}$
+[/6wYqfYQRX2tP]
+[7PWzVXdzcVET#0] ^prn-pers1<NP>{^к<pr>$ ^Я<prn><pers><p1><mf><sg><dat>$}$ ^n-dsfsd<SN><nom><sg>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek-emes<SV><sg>{^не<adv>$ ^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/7PWzVXdzcVET]
+[7iw2F3Un3rar#0] ^n-dsfsd<SN><gen><sg>{ ^огород<n><m><nn><3><gen>$}$ ^pr<PREP>{^при<pr>$}$
+[/7iw2F3Un3rar]
+[8dQfQkEya4tx#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/8dQfQkEya4tx]
+[91FF5hJG3WDk#0] ^n-dsfsd<SN><gen><sg>{ ^огород<n><m><nn><3><gen>$}$ ^pr<PREP>{^на<pr>$}$
+[/91FF5hJG3WDk]
+[9WMa_YNZFt2c#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><sg>$}$^dot<SENT>{^.<sent>$}$
+[/9WMa_YNZFt2c]
+[Aj96r72e4yIB#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/Aj96r72e4yIB]
+[BHJyg4TOjQkV#0] ^prn-pers1<NP>{^у<pr>$ ^Ты<prn><pers><p2><mf><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$ ^adj+case<AdjP>{^@бар<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/BHJyg4TOjQkV]
+[BlZW6ANngoa-#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><sg>$}$^dot<SENT>{^.<sent>$}$
+[/BlZW6ANngoa-]
+[D7GM1xpEU_r1#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><pl>$}$^dot<SENT>{^.<sent>$}$
+[/D7GM1xpEU_r1]
+[DC1xh46HQGVu#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^num_n<SN>{^в<pr>$ ^семь<num><m><sg><prp>$ ^лет<n><m><nn><pl><prp>$}$^dot<SENT>{^.<sent>$}$
+[/DC1xh46HQGVu]
+[DYW8-tMGMJiB#0] ^prn-pers1<NP>{^у<pr>$ ^Мы<prn><pers><p1><mf><pl><gen>$}$ ^n-dsfsd<SN><nom><pl>{ ^книга<n><f><nn><3><nom>$}$ ^adj1<AdjP>{^@жоқ<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/DYW8-tMGMJiB]
+[Esj3tpnks-tJ#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p2><frm><sg>$}$^dot<SENT>{^.<sent>$}$
+[/Esj3tpnks-tJ]
+[F9fSjSqzRkS4#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-ing-cont<SV><p2><frm><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/F9fSjSqzRkS4]
+[FUzZhHly__Nw#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^num_lu1<SN-NUM>{^семь<num><mfn><pl><nom>$}$ ^pr_n1<PP>{ ^в<pr>$  ^лет<n><m><nn><sg><prp>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/FUzZhHly__Nw]
+[FdlPm_AxB8a2#0] ^prn-pers1<NP>{^у<pr>$ ^Вы<prn><pers><p2><mf><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$ ^adj+case<AdjP>{^@бар<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/FdlPm_AxB8a2]
+[FiMTLwtl53Ie#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/FiMTLwtl53Ie]
+[G5DQRUL6LWea#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><pl>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek<SV><pl>{^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/G5DQRUL6LWea]
+[G7GvwgkL6S92#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><pl>{ ^книга<n><f><nn><3><nom>$}$ ^adj+case<AdjP>{^@бар<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/G7GvwgkL6S92]
+[IieBtZ38AZpu#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^V+fut1<NP>{^мочь<vbmod><impf><iv><pres><p3><sg>$ ^играть<tv><pres><p3><sg>$}$^dot<SENT>{^.<sent>$}$
+[/IieBtZ38AZpu]
+[JpqmYrmqVBz8#0] ^prn-eto<DET>{^Он<prn><pers><p3><m><pl><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek<SV><sg>{^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/JpqmYrmqVBz8]
+[Km26RtJUvWB4#0] ^prn-pers1<NP>{^от<pr>$ ^наш<gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^огород<n><m><nn><3><nom>$}$
+[/Km26RtJUvWB4]
+[KxC6MPQ0AyYm#0] ^prn-pers1<NP>{ ^Ты<prn><pers><p2><mf><sg><nom>$}$ ^num_n<SN>{^в<pr>$ ^семь<num><m><sg><prp>$ ^лет<n><m><nn><pl><prp>$}$^dot<SENT>{^.<sent>$}$
+[/KxC6MPQ0AyYm]
+[L5bSck1pKq_Z#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-ing-cont<SV><p2><frm><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/L5bSck1pKq_Z]
+[LFqTXXPW5Evj#0] ^prn-pers1<NP>{^к<pr>$ ^Ты<prn><pers><p2><mf><sg><dat>$}$ ^n-dsfsd<SN><nom><sg>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek<SV><sg>{^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/LFqTXXPW5Evj]
+[MDquj089wXK-#0] ^prn-pers1<NP>{^у<pr>$ ^Он<prn><pers><p3><m><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$ ^adj1<AdjP>{^@жоқ<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/MDquj089wXK-]
+[Mg4v0oaDkc7y#0] ^prn-pers1<NP>{^с<pr>$ ^он<prn><pers><p3><m><sg><ins>$}$^dot<SENT>{^.<sent>$}$
+[/Mg4v0oaDkc7y]
+[MqSwKhI9eakQ#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/MqSwKhI9eakQ]
+[N8blH9DyuTs2#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><pl>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/N8blH9DyuTs2]
+[NDB54y-l0yAL#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/NDB54y-l0yAL]
+[NedhTQkHUzgv#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^num_lu1<SN-NUM>{^семь<num><mfn><pl><nom>$}$ ^pr_n1<PP>{ ^в<pr>$  ^лет<n><m><nn><sg><prp>$}$^dot<SENT>{^.<sent>$}$
+[/NedhTQkHUzgv]
+[Nov9WaGOrQWE#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/Nov9WaGOrQWE]
+[OS02BmCdWJbA#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-ing-cont<SV><p1><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/OS02BmCdWJbA]
+[Ops_dhVaqT2f#0] ^prn-pers1<NP>{^у<pr>$ ^Ты<prn><pers><p2><mf><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$ ^adj1<AdjP>{^@жоқ<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/Ops_dhVaqT2f]
+[PSxWGbMXir2u#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-ing-cont<SV><p1><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/PSxWGbMXir2u]
+[PgPWTw16vy_C#0] ^prn-pers1<NP>{^от<pr>$ ^наш<gen>$}$ ^num_lu<SN-NUM>{^пять<num><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^огород<n><m><nn><3><nom>$}$
+[/PgPWTw16vy_C]
+[PjoPV_wun26e#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/PjoPV_wun26e]
+[PnwXr3bXGH1c#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/PnwXr3bXGH1c]
+[Q2pdnI2UQPBG#0] ^verb-ing-cont<SV><p3><sg>{ ^гореть<vblex><impf><pres><4><5>$}$
+[/Q2pdnI2UQPBG]
+[QCSp36ig4GUp#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><pl>{ ^книга<n><f><nn><3><nom>$}$ ^adj1<AdjP>{^@жоқ<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/QCSp36ig4GUp]
+[RKXqJhyaSiTs#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^num_lu1<SN-NUM>{^семь<num><mfn><pl><nom>$}$ ^pr_n1<PP>{ ^в<pr>$  ^лет<n><m><nn><sg><prp>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/RKXqJhyaSiTs]
+[RQjBA2fIYPtc#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/RQjBA2fIYPtc]
+[RYHZg1uw4jLI#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/RYHZg1uw4jLI]
+[SkIX7AprXPe1#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^n_pers2<SN><nom><pl>{ ^врач<n><m><aa><3><nom>$}$^dot<SENT>{^.<sent>$}$
+[/SkIX7AprXPe1]
+[SyCjoNYOhGYQ#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-ing-cont<SV><p1><pl>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/SyCjoNYOhGYQ]
+[TB3Yp0-knjuj#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/TB3Yp0-knjuj]
+[Tngr7-cEjBoK#0] ^det_n<SN>{ ^несколько<det><qnt><m><an><pl><nom>$ ^огород<n><m><nn><pl><nom>$}$
+[/Tngr7-cEjBoK]
+[W-jfXd3ZagKr#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/W-jfXd3ZagKr]
+[WPNxmiHTrlbs#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/WPNxmiHTrlbs]
+[WQ_wml1x-k4a#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p3><sg>$}$^dot<SENT>{^.<sent>$}$
+[/WQ_wml1x-k4a]
+[WcknJqguXYGa#0] ^prn-pers1<NP>{^к<pr>$ ^Я<prn><pers><p1><mf><sg><dat>$}$ ^n-dsfsd<SN><nom><sg>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek<SV><sg>{^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/WcknJqguXYGa]
+[WuntwwNZo4_v#0] ^prn-pers1<NP>{^у<pr>$ ^Я<prn><pers><p1><mf><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$ ^adj1<AdjP>{^@жоқ<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/WuntwwNZo4_v]
+[X-gAbBfLo2xs#0] ^prn-pers1<NP>{^к<pr>$ ^Мы<prn><pers><p1><mf><pl><dat>$}$ ^n-dsfsd<SN><nom><pl>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek-emes<SV><pl>{^не<adv>$ ^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/X-gAbBfLo2xs]
+[YLPx6ddb3zVr#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^adj_n_cop<SN>{ ^красивый<adj><sint><f><an><sg><nom>$ ^дочь<n><f><aa><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/YLPx6ddb3zVr]
+[Y_9qpTmsvtPQ#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p1><pl>$}$^dot<SENT>{^.<sent>$}$
+[/Y_9qpTmsvtPQ]
+[YktNu-XLVmgT#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^num_lu1<SN-NUM>{^семь<num><mfn><pl><nom>$}$ ^pr_n1<PP>{ ^в<pr>$  ^лет<n><m><nn><sg><prp>$}$^dot<SENT>{^.<sent>$}$
+[/YktNu-XLVmgT]
+[YrGBxulmAY0b#0] ^prn-pers1<NP>{^к<pr>$ ^Вы<prn><pers><p2><mf><sg><dat>$}$ ^n-dsfsd<SN><nom><sg>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek<SV><sg>{^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/YrGBxulmAY0b]
+[ZQUuhGGzeQC0#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/ZQUuhGGzeQC0]
+[_VZExBCzHmI7#0] ^verb-ing-cont<SV><p3><sg>{ ^гореть<vblex><impf><pres><4><5>$}$
+[/_VZExBCzHmI7]
+[_i2F5NSSfPgE#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^V+fut1<NP>{^мочь<vbmod><impf><iv><pres><p3><sg>$ ^играть<tv><pres><p2><pl>$}$^dot<SENT>{^.<sent>$}$
+[/_i2F5NSSfPgE]
+[aFHA6mQ8yXv1#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p2><frm><sg>$}$^dot<SENT>{^.<sent>$}$
+[/aFHA6mQ8yXv1]
+[aRcyUQvx2gup#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^n_pers1<SN><nom><sg>{^я<prn><pers><p1><mf><sg><nom>$   ^врач<n><m><aa><3><nom>$}$^dot<SENT>{^.<sent>$}$
+[/aRcyUQvx2gup]
+[bly73-7cnz1y#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/bly73-7cnz1y]
+[c1ObMe5hDycS#0] ^n_pers2<SN><nom><sg>{ ^Казахстан<np><top><m><3><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^Республика<n><f><nn><3><nom>$}$
+[/c1ObMe5hDycS]
+[cET2xzxd4JpY#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^adj_n_cop<SN>{ ^красивый<adj><sint><f><an><sg><nom>$ ^дочь<n><f><aa><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/cET2xzxd4JpY]
+[cMTsQGfKYZS9#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/cMTsQGfKYZS9]
+[d0gTHayMPpay#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><sg>$}$^dot<SENT>{^.<sent>$}$
+[/d0gTHayMPpay]
+[d1C7T_07DGO6#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^n_pers2<SN><nom><pl>{ ^врач<n><m><aa><3><nom>$}$^dot<SENT>{^.<sent>$}$
+[/d1C7T_07DGO6]
+[dkizrk3NWDrU#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p1><sg>$}$^dot<SENT>{^.<sent>$}$
+[/dkizrk3NWDrU]
+[e2wM-ioFvNoJ#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p1><sg>$}$^dot<SENT>{^.<sent>$}$
+[/e2wM-ioFvNoJ]
+[e9w-zGd429Cj#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/e9w-zGd429Cj]
+[f30bI220GlHM#0] ^prn-pers1<NP>{^к<pr>$ ^Ты<prn><pers><p2><mf><sg><dat>$}$ ^n-dsfsd<SN><nom><sg>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek-emes<SV><sg>{^не<adv>$ ^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/f30bI220GlHM]
+[fQFdg3aK4-tb#0] ^prn-eto<DET>{^они<prn><pers><p3><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^огород<n><m><nn><3><nom>$}$
+[/fQFdg3aK4-tb]
+[fRBYt1l9vJX_#0] ^prn-pers1<NP>{^у<pr>$ ^Вы<prn><pers><p2><mf><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$ ^adj1<AdjP>{^@жоқ<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/fRBYt1l9vJX_]
+[h3GmmFpVMEPH#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-ing-cont<SV><p1><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/h3GmmFpVMEPH]
+[hCRYzl36wP4y#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/hCRYzl36wP4y]
+[hZPSie41q4aB#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><sg>$}$^dot<SENT>{^.<sent>$}$
+[/hZPSie41q4aB]
+[htO4QIsAF8Ig#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><sg>$}$^dot<SENT>{^.<sent>$}$
+[/htO4QIsAF8Ig]
+[hvBW4B5c00cX#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/hvBW4B5c00cX]
+[imsBy547A6O0#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^adj1<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/imsBy547A6O0]
+[ioqgnetaIi0u#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p3><sg>$}$^dot<SENT>{^.<sent>$}$
+[/ioqgnetaIi0u]
+[ixOPWFUixyiH#0] ^num_lu<SN-NUM>{^шесть<num><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><sg>{^мой<det><pos><nt><an><sg><nom>$ ^завершение<n><nt><nn><3><nom>$}$
+[/ixOPWFUixyiH]
+[j-GuBrfKaQfc#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/j-GuBrfKaQfc]
+[j8p34g0bQxLZ#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-ing-cont<SV><p2><frm><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/j8p34g0bQxLZ]
+[jKCk2TdKqPSq#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p1><pl>$}$^dot<SENT>{^.<sent>$}$
+[/jKCk2TdKqPSq]
+[jKwo39jrV05O#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/jKwo39jrV05O]
+[jygfvh-TjCJS#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^V+fut1<NP>{^мочь<vbmod><impf><iv><pres><p3><sg>$ ^играть<tv><pres><p1><sg>$}$^dot<SENT>{^.<sent>$}$
+[/jygfvh-TjCJS]
+[jyjZTSYwhVSs#0] ^np_n<SN>{^на<sg><prp>$ ^стол<n><m><nn><sg><gen>$}$ ^adj+case<AdjP>{^бумажный<adj><sint><m><an><sg><nom>$}$
+[/jyjZTSYwhVSs]
+[kQyP62zY88TH#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^num_n<SN>{^в<pr>$ ^семь<num><m><sg><prp>$ ^лет<n><m><nn><pl><prp>$}$^dot<SENT>{^.<sent>$}$
+[/kQyP62zY88TH]
+[kREr9Q2Dm8if#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/kREr9Q2Dm8if]
+[kwpl5aP_72Z1#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^adj1<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/kwpl5aP_72Z1]
+[l1d67UU847c3#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-ing-cont<SV><p1><pl>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/l1d67UU847c3]
+[lgGBpmO-VqgU#0] ^prn-pers1<NP>{^у<pr>$ ^Я<prn><pers><p1><mf><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$ ^adj+case<AdjP>{^@бар<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/lgGBpmO-VqgU]
+[m7JOSMxGQ0eA#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^n_pers2<SN><nom><sg>{ ^врач<n><m><aa><3><nom>$}$^dot<SENT>{^.<sent>$}$
+[/m7JOSMxGQ0eA]
+[mPFGpnfM-GyI#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-ing-cont<SV><p1><pl>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/mPFGpnfM-GyI]
+[mhkDcTZlgC6k#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^num_n<SN>{^в<pr>$ ^семь<num><m><sg><prp>$ ^лет<n><m><nn><pl><prp>$}$^dot<SENT>{^.<sent>$}$
+[/mhkDcTZlgC6k]
+[nz6qUNdNW75b#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/nz6qUNdNW75b]
+[oMqFa0AXaNaE#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-ing-cont<SV><p1><pl>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/oMqFa0AXaNaE]
+[p23cjJFpst0Q#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/p23cjJFpst0Q]
+[pMH2AYd0h_wD#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^adj_n_cop<SN>{ ^красивый<adj><sint><mfn><an><pl><nom>$ ^девочка<n><f><aa><pl><nom>$}$^dot<SENT>{^.<sent>$}$
+[/pMH2AYd0h_wD]
+[paW41gMNxtnO#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^pr_n1<PP>{ ^в<pr>$  ^огород<n><m><nn><sg><prp>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/paW41gMNxtnO]
+[pcHVXrHQ1dVB#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><pl>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/pcHVXrHQ1dVB]
+[q4Rce8qHg4oq#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^adj1<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/q4Rce8qHg4oq]
+[qMvE6D4S5B6n#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/qMvE6D4S5B6n]
+[r89AeUBcIKiW#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/r89AeUBcIKiW]
+[rsx6fwX9KRDM#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-ing-cont<SV><p2><frm><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/rsx6fwX9KRDM]
+[ryOX8CEuPi6K#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/ryOX8CEuPi6K]
+[sGvYWnj9Iy_X#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^adj1<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/sGvYWnj9Iy_X]
+[sMQdSkV-sTc0#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-ing-cont<SV><p1><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/sMQdSkV-sTc0]
+[t-WFOH5Z5J--#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^n-dsfsd<SN><nom><pl>{ ^врач<n><m><aa><3><nom>$}$ ^v+ifi4<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><past><mfn><pl>$}$^dot<SENT>{^.<sent>$}$
+[/t-WFOH5Z5J--]
+[t8DB7i66emBf#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^n-dsfsd<SN><nom><pl>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek-emes<SV><pl>{^не<adv>$ ^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/t8DB7i66emBf]
+[tCdurgvXf8_9#0] ^prn-pers1<NP>{^у<pr>$ ^Он<prn><pers><p3><m><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$ ^adj+case<AdjP>{^@бар<adj><m><an><sg><nom>$}$^dot<SENT>{^.<sent>$}$
+[/tCdurgvXf8_9]
+[tHm_cjyFCS-L#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^adj+case<AdjP>{^счастливый<adj><sint><m><an><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^оказаться<vblex><perf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/tHm_cjyFCS-L]
+[tNs-gvLL9mz4#0] ^n_pers2<SN><nom><sg>{ ^Алматы<np><top><f><3><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^город<n><m><nn><3><nom>$}$
+[/tNs-gvLL9mz4]
+[u2zl6FgkqSO2#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$ ^verb-ing-cont<SV><p1><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/u2zl6FgkqSO2]
+[uA17i2og04E9#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^V+fut1<NP>{^мочь<vbmod><impf><iv><pres><p3><sg>$ ^играть<tv><pres><p1><pl>$}$^dot<SENT>{^.<sent>$}$
+[/uA17i2og04E9]
+[uj2yEoUk7w6T#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/uj2yEoUk7w6T]
+[utjmM3Ox1TpL#0] ^prn-eto<DET>{^Он<prn><pers><p3><m><pl><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^сумка<n><f><nn><3><nom>$}$ ^kerek-emes<SV><sg>{^не<adv>$ ^нужно<pred>$}$^dot<SENT>{^.<sent>$}$
+[/utjmM3Ox1TpL]
+[wJ53ol9UsPL2#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^verb-pres<VP><ND><PD><pres><PXD><NXD><CD>{^играть<vblex><impf><tv><pres><p3><sg>$}$^dot<SENT>{^.<sent>$}$
+[/wJ53ol9UsPL2]
+[wMUJTXVTdi_5#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^играть<vblex><impf><ifi><m><sg>$}$^dot<SENT>{^.<sent>$}$
+[/wMUJTXVTdi_5]
+[xnYbaVH7HjTS#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><pl>$}$^dot<SENT>{^.<sent>$}$
+[/xnYbaVH7HjTS]
+[xwapTrtYwGAt#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/xwapTrtYwGAt]
+[zjR9OIjaUOut#0] ^prn-pers1<NP>{ ^Вы<prn><pers><p2><mf><sg><nom>$}$ ^verb-past<VP><ND><PD><past><PXD><NXD><CD>{^играть<vblex><impf><past><sg>$}$^dot<SENT>{^.<sent>$}$
+[/zjR9OIjaUOut]
+[zktWUH8JsXUw#0] ^prn-pers1<NP>{^от<pr>$ ^его<gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^огород<n><m><nn><3><nom>$}$
+[/zktWUH8JsXUw]
+[zwTx3kyHV6hh#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^verb-ing-cont<SV><p3><sg>{ ^играть<vblex><impf><pres><4><5>$}$^dot<SENT>{^.<sent>$}$
+[/zwTx3kyHV6hh]

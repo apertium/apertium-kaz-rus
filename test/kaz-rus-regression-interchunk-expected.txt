@@ -1,0 +1,108 @@
+[037UXzVJKAs5#0] ^n-cnjcoo2<PP>{   ^школа<n><f><nn><sg><nom>$ ^тоже<adv>$}$
+[/037UXzVJKAs5]
+[1gmBjGiePLF0#0] ^n-dsfsd<SN><nom><pl>{^ваш<det><pos><mfn><an><pl><nom>$ ^дом<n><m><nn><3><nom>$}$
+[/1gmBjGiePLF0]
+[7zG4WPgvPztO#0] ^n_pers2<SN><nom><sg>{ ^@бүгін<n><3><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^воскресенье<n><nt><nn><3><nom>$}$
+[/7zG4WPgvPztO]
+[Ccjq_nvu0BGh#0] ^n-dsfsd<SN><nom><sg>{ ^сад<n><m><nn><3><nom>$}$
+[/Ccjq_nvu0BGh]
+[CrANQry6rOvi#0] ^n-cnjcoo2<PP>{ ^в<pr>$ ^мой<det><pos><f><an><sg><prp>$ ^школа<n><f><nn><sg><prp>$ ^тоже<adv>$}$
+[/CrANQry6rOvi]
+[E33O3u5v0duc#0] ^kerek<SV>{^нужно<pred>$}$ ^default<default>{^<neg><aor><p3><sg>$}$
+[/E33O3u5v0duc]
+[ED3OFTl_RP9K#0] ^adj_n_cop<SN>{^из<pr>$ ^хороший<adj><sint><m><an><sg><gen>$ ^огород<n><m><nn><sg><gen>$}$ ^pr<PREP>{^после<pr>$}$
+[/ED3OFTl_RP9K]
+[Ek4AEtdAPq0c#0] ^adj+case<AdjP>{^красивый<adj><sint><m><an><sg><nom>$}$
+[/Ek4AEtdAPq0c]
+[FZrbQI7lrWXV#0] ^n-dsfsd<SN><nom><sg>{^твой<det><pos><m><an><sg><nom>$ ^дом<n><m><nn><3><nom>$}$
+[/FZrbQI7lrWXV]
+[IpQgZmqBeSNj#0] ^n-dsfsd<SN><gen><sg>{ ^огород<n><m><nn><3><gen>$}$ ^pr<PREP>{^за<pr>$}$
+[/IpQgZmqBeSNj]
+[J56C2FHwsrVe#0] ^n-dsfsd<SN><acc><pl>{ ^дом<n><m><nn><3><acc>$}$
+[/J56C2FHwsrVe]
+[J8KwDtmXyF48#0] ^prn-eto<DET>{^@мынау<prn><dem><pl><nom>$}$
+[/J8KwDtmXyF48]
+[KG2Fr_28uiEv#0] ^adj1<AdjP>{^красивый<adj><sint><m><an><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^дом<n><m><nn><3><nom>$}$
+[/KG2Fr_28uiEv]
+[NXoobDTsHRrP#0] ^n-dsfsd<SN><nom><sg>{ ^Казахстан<np><top><m><3><nom>$}$
+[/NXoobDTsHRrP]
+[OuqcomnB5FmX#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$ ^n_pers2<SN><nom><sg>{ ^врач<n><m><aa><3><nom>$}$^dot<SENT>{^.<sent>$}$
+[/OuqcomnB5FmX]
+[P_DgoZvTYLty#0] ^n-dsfsd<SN><nom><sg>{ ^мальчик<n><m><aa><3><nom>$}$
+[/P_DgoZvTYLty]
+[QEO3WW53pykH#0] ^prn+ol<NP>{ ^он<prn><pers><p3><m><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^мальчик<n><m><aa><3><nom>$}$
+[/QEO3WW53pykH]
+[SGcAqLoxRtiS#0] ^pr_n1<PP>{ ^с<pr>$  ^дом<n><m><nn><pl><ins>$}$
+[/SGcAqLoxRtiS]
+[SMVWeWYNN43f#0] ^adj_n_n<SN>{^с<pr>$ ^за<sg><ins>$ ^хороший<adj><sint><gen>$ ^огород<n><m><nn><sg><gen>$}$
+[/SMVWeWYNN43f]
+[UQMAzArfqfhk#0] ^adv<AdvP>{^сегодня<adv>$}$
+[/UQMAzArfqfhk]
+[UUHJQVykeyDh#0] ^n-dsfsd<SN><nom><pl>{^ваш<det><pos><mfn><an><pl><nom>$ ^дом<n><m><nn><3><nom>$}$
+[/UUHJQVykeyDh]
+[UlzLGg_2ZQ4b#0] ^prn-pers1<NP>{ ^Я<prn><pers><p1><mf><sg><nom>$}$
+[/UlzLGg_2ZQ4b]
+[V3DAHw9GtX2O#0] ^prn+ol<NP>{ ^@мынау<prn><dem><m><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^дом<n><m><nn><3><nom>$}$
+[/V3DAHw9GtX2O]
+[V7aQz_uFxfyJ#0] ^n_pers2<SN><gen><sg>{ ^огород<n><m><nn><3><gen>$}$ ^pr<PREP>{^после<pr>$}$
+[/V7aQz_uFxfyJ]
+[VLXRK6vpq0ZN#0] ^adv<AdvP>{^очень<adv>$}$ ^adj1<AdjP>{^красивый<adj><sint><m><an><sg><nom>$}$ ^verb-pprs<VP><ND><PD><pres><PXD><NXD><CD>{^перейти<vblex><perf><iv><pprs><adv>$}$
+[/VLXRK6vpq0ZN]
+[VOxCwPqvgM_l#0] ^prn-eto<DET>{^Они<prn><pers><p3><mfn><pl><nom>$}$ ^n_pers2<SN><nom><pl>{ ^врач<n><m><aa><3><nom>$}$^dot<SENT>{^.<sent>$}$
+[/VOxCwPqvgM_l]
+[WLoYQJA7filu#0] ^np_n<SN>{^книга<n><f><nn><sg><loc>$ ^Мадина<np><ant><f><sg><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^образ<n><m><nn><3><nom>$}$
+[/WLoYQJA7filu]
+[WjQUNBxpGCiQ#0] ^n-dsfsd<SN><nom><sg>{ ^дом<n><m><nn><3><nom>$}$
+[/WjQUNBxpGCiQ]
+[YH7P8saoyDv7#0] ^adj_n_n<SN>{ ^возле<sg><gen>$ ^хороший<adj><sint><gen>$ ^огород<n><m><nn><sg><gen>$}$
+[/YH7P8saoyDv7]
+[_QNKMtUqp8l0#0] ^n-dsfsd<SN><nom><pl>{ ^дом<n><m><nn><3><nom>$}$
+[/_QNKMtUqp8l0]
+[c0gEIhfkDFXl#0] ^adv<AdvP>{^однако<adv>$}$
+[/c0gEIhfkDFXl]
+[d-M4ir7pJpXv#0] ^n-dsfsd<SN><nom><sg>{ ^Астана<n><f><nn><3><nom>$}$
+[/d-M4ir7pJpXv]
+[dDrXIyH84jvM#0] ^n-dsfsd<SN><gen><sg>{ ^огород<n><m><nn><3><gen>$}$ ^pr<PREP>{^возле<pr>$}$
+[/dDrXIyH84jvM]
+[dM1J3JEd0ObT#0] ^v+ifi3<NP>{^оказываться<vblex><impf><iv><pres><p3><sg>$ ^добавить<vblex><perf><ifi><m><sg>$}$ ^pr<PREP>{^на<pr>$}$
+[/dM1J3JEd0ObT]
+[dotMDEBRdANK#0] ^prn+ol<NP>{ ^это<prn><dem><m><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^компания<n><f><nn><3><nom>$}$
+[/dotMDEBRdANK]
+[eK5YE-pGX-Ge#0] ^n-dsfsd<SN><nom><sg>{ ^дом<n><m><nn><3><nom>$}$
+[/eK5YE-pGX-Ge]
+[eR84tG_mYGQI#0] ^num1-2-cop<DET>{^один<num><m><an><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^дом<n><m><nn><3><nom>$}$
+[/eR84tG_mYGQI]
+[fGXs3n4YyB5e#0] ^adv<AdvP>{^очень<adv>$}$ ^adj+case<AdjP>{^красивый<adj><sint><m><an><sg><nom>$}$
+[/fGXs3n4YyB5e]
+[gW6ArN3-YVpZ#0] ^n-dsfsd<SN><nom><pl>{ ^дом<n><m><nn><3><nom>$}$
+[/gW6ArN3-YVpZ]
+[jV7Wo6BTgNPQ#0] ^n-dsfsd<SN><gen><sg>{ ^Мадина<np><ant><f><3><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^книга<n><f><nn><3><nom>$}$
+[/jV7Wo6BTgNPQ]
+[jir6Yp-2qaKW#0] ^prn-pers1<NP>{ ^Он<prn><pers><p3><m><sg><nom>$}$
+[/jir6Yp-2qaKW]
+[l_HPlNmb1x__#0] ^n-dsfsd<SN><gen><pl>{ ^дом<n><m><nn><3><gen>$}$
+[/l_HPlNmb1x__]
+[nLLjkLF8Tv40#0] ^prn-pers1<NP>{ ^Мы<prn><pers><p1><mf><pl><nom>$}$ ^n_pers2<SN><nom><pl>{ ^врач<n><m><aa><3><nom>$}$^dot<SENT>{^.<sent>$}$
+[/nLLjkLF8Tv40]
+[nQ7oPP5mGDE5#0] ^det<DET>{^этот<det><dem><m><an><sg><nom>$}$ ^adj1<AdjP>{^красивый<adj><sint><m><an><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^дом<n><m><nn><3><nom>$}$
+[/nQ7oPP5mGDE5]
+[naPTkGMmWjZm#0] ^n-dsfsd<SN><gen><sg>{ ^мальчик<n><m><aa><3><gen>$}$ ^n-dsfsd<SN><nom><sg>{ ^игрушка<n><f><nn><3><nom>$}$
+[/naPTkGMmWjZm]
+[oMpVb-dYKKuY#0] ^n-dsfsd<SN><nom><sg>{ ^дом<n><m><nn><3><nom>$}$
+[/oMpVb-dYKKuY]
+[oiPqCe3Zqkby#0] ^num1-2-cop<DET>{^один<num><m><an><sg><nom>$}$ ^n-dsfsd<SN><nom><sg>{ ^сад<n><m><nn><3><nom>$}$
+[/oiPqCe3Zqkby]
+[rxHYybAEmZRk#0] ^n-dsfsd<SN><sg>{ ^СССР<np><top><m><3>$}$
+[/rxHYybAEmZRk]
+[sLgbhffUShmr#0] ^np_n<SN>{^книга<n><f><nn><sg><nom>$ ^Мадина<np><ant><f><sg><gen>$}$ ^pr<PREP>{^о<pr>$}$
+[/sLgbhffUShmr]
+[sp2xqRw0GGIi#0] ^n-dsfsd<SN><nom><sg>{ ^Балжан<np><ant><f><3><nom>$}$
+[/sp2xqRw0GGIi]
+[uq-8GFsOfr0C#0] ^pr_n3<PP>{ ^как<adv>$ ^ваш<det><pos><mfn><an><pl><nom>$ ^школа<n><f><nn><pl><nom>$}$
+[/uq-8GFsOfr0C]
+[vO4c1VSxUwO8#0] ^adv<AdvP>{^очень<adv>$}$
+[/vO4c1VSxUwO8]
+[yqZ4GP26aPio#0] ^n-dsfsd<SN><gen><sg>{ ^мальчик<n><m><aa><3><gen>$}$
+[/yqZ4GP26aPio]
+[z20kd7Ih-6rD#0] ^adj_n_cop<SN>{^в<pr>$ ^красивый<adj><sint><m><an><sg><prp>$ ^город<n><m><nn><sg><prp>$}$ ^n-dsfsd<SN><nom><sg>{ ^базар<n><m><nn><3><nom>$}$
+[/z20kd7Ih-6rD]

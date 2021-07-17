@@ -20,3 +20,4 @@
 /*.prob
 /*.hfst
 /compiled/
+/test/*-output.txt
