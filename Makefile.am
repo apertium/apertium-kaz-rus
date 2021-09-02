@@ -2,7 +2,6 @@
 ## Makefile for Kazakh--Russian
 ###############################################################################
 
-VERSION=1.0.0
 LANG1=kaz
 LANG2=rus
 PREFIX1=$(LANG1)-$(LANG2)
@@ -182,7 +181,12 @@ apertium_kaz_rusdir=$(prefix)/share/apertium/$(BASENAME)/
 apertium_kaz_rus_DATA=$(TARGETS_COMMON) \
 	$(BASENAME).$(PREFIX1).t1x \
 	$(BASENAME).$(PREFIX1).t2x \
-	$(BASENAME).$(PREFIX1).t3x 
+	$(BASENAME).$(PREFIX1).t3x \
+	$(BASENAME).$(PREFIX1).t4x \
+	$(BASENAME).$(PREFIX2).t1x \
+	$(BASENAME).$(PREFIX2).t2x \
+	$(BASENAME).$(PREFIX2).t3x \
+	$(BASENAME).$(PREFIX2).t4x
 
 # MLF 20141127 we don't have probabilities in kaz for the time being
 #                    $(PREFIX1).prob
@@ -193,6 +197,7 @@ noinst_DATA=modes/$(PREFIX1).mode
 
 
 install-data-local: install-modes
+uninstall-local: uninstall-modes
 
 ###############################################################################
 ## Cleanup

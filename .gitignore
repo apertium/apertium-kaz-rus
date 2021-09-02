@@ -21,3 +21,5 @@
 /*.hfst
 /compiled/
 /test/*-output.txt
+/*.zhfst
+/.DS_Store
